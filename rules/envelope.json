@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "reserved_keys": ["event_name", "event_label", "event_category", "screen_view", "value", "user_id", "gender", "major"],
+  "notes": "공통 키를 params로 덮어쓰지 않는다. 사용자 속성 및 debug 전송 정책은 앱 통합 시 별도 확정한다. 이 파일은 기존 SDK의 전송 동작을 변경하지 않는다."
+}
