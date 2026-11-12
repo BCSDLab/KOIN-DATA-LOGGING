@@ -14,7 +14,8 @@
     "gen": "node cli/koin-log.mjs gen",
     "find": "node cli/koin-log.mjs find",
     "test": "node --test",
-    "verify": "npm run check && npm test && node cli/koin-log.mjs gen --check"
+    "verify": "npm run check && npm test && node cli/koin-log.mjs gen --check && npm run check:archive",
+    "check:archive": "node cli/archive.mjs"
   },
   "dependencies": {
     "yaml": "2.9.1"

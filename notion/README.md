@@ -1,12 +1,14 @@
 # Event Log 원문 이전
 
-수집일: 2026-11-12 (Asia/Seoul). 발견 문서 1434개, 저장 이미지 1456개. 생성용 specs와 분리한 읽기용 원문 스냅샷입니다.
+수집일: 2026-11-12 (Asia/Seoul). 보관 문서 1521개, 저장 이미지 1472개. 생성용 specs와 분리한 읽기용 원문 스냅샷입니다.
 
 **전체 이전 완료 선언이 아닙니다.** SQL 조회 한도 이후 일부 DB는 필터 보기의 합집합으로 수집했습니다. 보기에 없는 행·MCP가 표현하지 않는 블록·첨부까지 전수라고 단정하지 않습니다.
 
 [원문 루트](pages/f820221954bc82cfbe7e813b975c5be1.md) · [대응 목록](index.json) · [이미지 해시](assets-manifest.json) · [검증 결과](validation.json)
 
 상태·플랫폼·레거시·동결 표시는 원문 그대로이며 코드 생성 승인을 뜻하지 않습니다. 기존 9개 파일럿은 변경하지 않습니다. 사진의 원래 출처·참고사진 안내도 보존합니다.
+
+[누락 원본 87개 복구·내용 차이 8개 정리](recovery-review.md) · [원본 복구 목록](recovery-manifest.json)
 
 ## 문서 목록
 
@@ -1455,3 +1457,96 @@
 ## 원문 스냅샷 보존
 
 원문·속성·화면 출처의 원형은 [압축 JSONL 스냅샷](source-snapshots.jsonl.gz)에 보존했습니다. 각 명세는 pages/의 Markdown에서 읽고, 사진은 assets/의 실제 파일로 GitHub 문서 안에 표시됩니다. 압축 스냅샷은 검증용이며 코드 생성 입력이 아닙니다.
+
+
+## 복구 원본 87개
+
+| 제목 | 원문 경로 |
+| --- | --- |
+| [5-1. 목록_클릭](pages/2450221954bc824b8c1501a6f4961576.md) | Event Log / 배너 / 배너 로깅 |
+| [11-12.분실물_쪽지보내기_클릭](pages/87f0221954bc83329ea20157407117c2.md) | Event Log / 배너 / 배너 로깅 |
+| [6-1. 공지글 검색_클릭](pages/4db0221954bc826a8e4a01e906afb1d3.md) | Event Log / 배너 / 배너 로깅 |
+| [10-2. 푸터_교내 시설물 정보_클릭](pages/f6e0221954bc833d9d9d013f3cbb39ac.md) | Event Log / 배너 / 배너 로깅 |
+| [2-3. 햄버거_공지사항_클릭](pages/7c70221954bc8230b18881a41f98de50.md) | Event Log / 배너 / 배너 로깅 |
+| [7-2. 모두 보기_클릭](pages/cbd0221954bc83e599ff0186188117c9.md) | Event Log / 배너 / 배너 로깅 |
+| [9-1. 키워드 게시물_알림](pages/eec0221954bc83d9b7dd01b72ab8a850.md) | Event Log / 배너 / 배너 로깅 |
+| [5-3. 공지 원본 바로가기_클릭](pages/d1f0221954bc8296bea981977a0fa02a.md) | Event Log / 배너 / 배너 로깅 |
+| [11-13.분실물_신고하기_클릭](pages/a460221954bc828aad4e81e89cdd8a62.md) | Event Log / 배너 / 배너 로깅 |
+| [7-5. 추천 키워드_클릭](pages/74e0221954bc83928a03015a663d795a.md) | Event Log / 배너 / 배너 로깅 |
+| [3-4. 공지사항_새로운 서비스 요청하기_클릭](pages/8290221954bc835b9e7d0178b0eece5b.md) | Event Log / 배너 / 배너 로깅 |
+| [11-2.분실물_습득물신고_품목선택_클릭](pages/67d0221954bc829aa31d01b4fdcd7e90.md) | Event Log / 배너 / 배너 로깅 |
+| [3-2. 공지사항_코리아텍 바로가기_클릭](pages/4bd0221954bc830fbf8081c34c639eec.md) | Event Log / 배너 / 배너 로깅 |
+| [4-2. 공지사항 페이지_스크롤(상하)](pages/12e0221954bc8211966b01131cfa2859.md) | Event Log / 배너 / 배너 로깅 |
+| [5-2. 인기있는 공지_클릭](pages/3a60221954bc8200948081e81db8d86e.md) | Event Log / 배너 / 배너 로깅 |
+| [7-3. 새 키워드 추가_클릭](pages/9360221954bc83e49c8781b4784d4d2b.md) | Event Log / 배너 / 배너 로깅 |
+| [11-1.분실물_글쓰기_클릭](pages/d860221954bc839197140166ccb6103b.md) | Event Log / 배너 / 배너 로깅 |
+| [8-2. 지금 인기있는 공지 배너_클릭](pages/cbe0221954bc83678267011afd394fad.md) | Event Log / 배너 / 배너 로깅 |
+| [2-2. 푸터_공지사항_클릭](pages/d090221954bc82ef91ed81fe49980a28.md) | Event Log / 배너 / 배너 로깅 |
+| [7-6. 로그인팝업_로그인하기_클릭](pages/5e90221954bc83e58d6081e9c4b7bddd.md) | Event Log / 배너 / 배너 로깅 |
+| [3-1. 공지사항_가장 많이 본 게시물_클릭](pages/7d60221954bc82b6a55f8114a2a39a9b.md) | Event Log / 배너 / 배너 로깅 |
+| [11-4.분실물_습득물신고_작성완료_클릭](pages/1b10221954bc832b8752812eb3aaa340.md) | Event Log / 배너 / 배너 로깅 |
+| [새 페이지](pages/c1d0221954bc83878081014211eaac7c.md) | Event Log / 배너 / 배너 로깅 |
+| [3-5. 공지사항_BCSD Lab 알아보기_클릭](pages/fde0221954bc83c29ad801f853c20ed3.md) | Event Log / 배너 / 배너 로깅 |
+| [7-7. 로그인팝업_닫기_클릭](pages/0be0221954bc8390a68901cd61c14820.md) | Event Log / 배너 / 배너 로깅 |
+| [11-9.분실물_분실물신고_품목선택_클릭](pages/35c0221954bc8387b86f01410d4c06e7.md) | Event Log / 배너 / 배너 로깅 |
+| [2-1. 헤더_공지사항_클릭](pages/b9f0221954bc82f1a11c8114101c6b39.md) | Event Log / 배너 / 배너 로깅 |
+| [3-3. 공지사항_아우누리 바로가기_클릭](pages/3310221954bc83f48d500138f0d9b2a6.md) | Event Log / 배너 / 배너 로깅 |
+| [11-10.분실물_분실물신고_물품추가_클릭](pages/2a10221954bc82a5bd43813af587afdc.md) | Event Log / 배너 / 배너 로깅 |
+| [11-11.분실물_분실물신고_작성완료_클릭](pages/5210221954bc82468b3d0197ae387fd6.md) | Event Log / 배너 / 배너 로깅 |
+| [8-1. 더보기_클릭](pages/14f0221954bc83e092950105fc8e4bc2.md) | Event Log / 배너 / 배너 로깅 |
+| [7-1. 키워드 관리_클릭](pages/6a30221954bc838285eb81810120abd5.md) | Event Log / 배너 / 배너 로깅 |
+| [8-3. 키워드 관리 진입 배너_클릭](pages/de10221954bc8300b30d8107e140ad3e.md) | Event Log / 배너 / 배너 로깅 |
+| [6-2. 많이 검색되는 키워드_클릭](pages/2920221954bc839a967901009c062649.md) | Event Log / 배너 / 배너 로깅 |
+| [4-1. 탭 메뉴바_클릭](pages/6f80221954bc83aba7a6013fe9d9dfc3.md) | Event Log / 배너 / 배너 로깅 |
+| [11-16.쪽지리스트_대화창_클릭](pages/3d30221954bc8340af35815fad5295d0.md) | Event Log / 배너 / 배너 로깅 |
+| [11-6.분실물_습득물신고_삭제확인_클릭](pages/4e90221954bc832cb85f81b714e29903.md) | Event Log / 배너 / 배너 로깅 |
+| [7-8. 키워드 알림받기_토글](pages/a2d0221954bc8348921281e04f3f75c5.md) | Event Log / 배너 / 배너 로깅 |
+| [10-1. 헤더_교내 시설물 정보_클릭](pages/6ce0221954bc83a8bd120133314da21e.md) | Event Log / 배너 / 배너 로깅 |
+| [7-9. 알림설정_공지사항 키워드 알림_클릭](pages/af30221954bc83cf83db0147d223ce81.md) | Event Log / 배너 / 배너 로깅 |
+| [11-7.분실물_잃어버렸어요_클릭](pages/f810221954bc83d0809e01628492c45e.md) | Event Log / 배너 / 배너 로깅 |
+| [6-3. [검색 키워드] 입력값 >> DB저장](pages/24f0221954bc83f8bb4f81a9445c3c8d.md) | Event Log / 배너 / 배너 로깅 |
+| [11-8.분실물_주인을찾아요_클릭](pages/93e0221954bc829a9dd00113c5de6123.md) | Event Log / 배너 / 배너 로깅 |
+| [11-15.햄버거_쪽지_클릭](pages/b6a0221954bc82a5b60a8120f0d08237.md) | Event Log / 배너 / 배너 로깅 |
+| [6-4. 공지글 검색_검색하기_클릭](pages/e070221954bc8233817181646b5e6df1.md) | Event Log / 배너 / 배너 로깅 |
+| [새 페이지](pages/79f0221954bc821ab0108136b0cb721e.md) | Event Log / 배너 / 배너 로깅 |
+| [11-14.분실물_게시글신고하기_신고하기_클릭](pages/5bc0221954bc83588753017d0bdae4ff.md) | Event Log / 배너 / 배너 로깅 |
+| [11-17.헤더_쪽지_클릭](pages/84c0221954bc825ea826812c72c0eb8d.md) | Event Log / 배너 / 배너 로깅 |
+| [10-3. 햄버거_교내 시설물 정보_클릭](pages/96d0221954bc82e38b8601cfacc06256.md) | Event Log / 배너 / 배너 로깅 |
+| [11-3.분실물_습득물신고_물품추가_클릭](pages/6b00221954bc827c856a0175553bf08c.md) | Event Log / 배너 / 배너 로깅 |
+| [11-19.푸터_쪽지_클릭](pages/8f40221954bc82bdba648191e2954c8e.md) | Event Log / 배너 / 배너 로깅 |
+| [7-4. [알림받을 키워드] 입력값 >> DB저장](pages/1aa0221954bc83ec8ad301c1d54bb2f4.md) | Event Log / 배너 / 배너 로깅 |
+| [11-18.분실물_게시물종류_클릭](pages/c900221954bc827daf8a81b63360cb8c.md) | Event Log / 배너 / 배너 로깅 |
+| [11-5.분실물_습득물신고_삭제_클릭](pages/3c00221954bc835f816d8121b59607eb.md) | Event Log / 배너 / 배너 로깅 |
+| [2-1 가게 정보 수정](pages/a380221954bc833eba8081e730085961.md) | Event Log / Event Log (과거) / 사장님 / 사장님 로깅 |
+| [2-2 가게 정보 수정 - 확인](pages/4bd0221954bc8387b0f481849725421a.md) | Event Log / Event Log (과거) / 사장님 / 사장님 로깅 |
+| [2-3 가게 정보 수정 - 시간 수정 ](pages/0c80221954bc833095a881666fb2b657.md) | Event Log / Event Log (과거) / 사장님 / 사장님 로깅 |
+| [2-4 가게 정보 수정 - 이미지 추가 ](pages/dd30221954bc836a86b881430dc548be.md) | Event Log / Event Log (과거) / 사장님 / 사장님 로깅 |
+| [2-5 가게 정보 수정 - 취소 ](pages/a0a0221954bc82189a08815020757a91.md) | Event Log / Event Log (과거) / 사장님 / 사장님 로깅 |
+| [2-6 가게 정보 수정 - 닫기 ](pages/5470221954bc82058c3e01c7314a0e2b.md) | Event Log / Event Log (과거) / 사장님 / 사장님 로깅 |
+| [3-1 메뉴추가 ](pages/d740221954bc832f896e814a681758c8.md) | Event Log / Event Log (과거) / 사장님 / 사장님 로깅 |
+| [3-2 메뉴추가 - 확인](pages/7e90221954bc826d9a6e01b6d8446089.md) | Event Log / Event Log (과거) / 사장님 / 사장님 로깅 |
+| [3-3 메뉴추가 - 취소](pages/d2a0221954bc8342ad4981c2b2799f2f.md) | Event Log / Event Log (과거) / 사장님 / 사장님 로깅 |
+| [3-4 메뉴추가 - 메뉴사진](pages/4030221954bc82c8a1030122f97693f3.md) | Event Log / Event Log (과거) / 사장님 / 사장님 로깅 |
+| [[레거시] 메인_식단_더보기버튼_클릭(확인필요)](pages/9990221954bc832e91d3018d74d3477a.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [1-1.메인_식단_더보기버튼_클릭 (홈화면 리디자인 로깅으로 찍히고 있음) → 따라서  1-1부터 1-7까지 전부 다 수정할 필요 없음 (레거시)](pages/3df0221954bc833a9f6381766084d23b.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [1-2.메인_식단_클릭](pages/77e0221954bc82b7b9030139d648368f.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [1-3.메인_식단_A코너_클릭 (레거시)](pages/1560221954bc83afacc8015e25700762.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [1-4.메인_식단_B코너_클릭](pages/5b00221954bc82988ba401c3aff2571a.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [1-5.메인_식단_C코너_클릭](pages/a5e0221954bc83a9bbbf013df21f523a.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [1-6.메인_식단_능수관_클릭](pages/9b90221954bc82a6957101e87e1224c4.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [1-7.메인_식단_2캠퍼스_클릭](pages/1ae0221954bc834388268145704074e0.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [2-1. 헤더_식단_클릭](pages/3ab0221954bc8252aa2a8162a7fecc97.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [2-2. 푸터_식단_클릭](pages/ea00221954bc82db852e810195c314ce.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [2-3. 햄버거_식단_클릭 (삭제)](pages/66c0221954bc83e9af9b81f1151285a6.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [3-1. 식단_식사시간 선택 (클릭) - 3-2·3-3 통합](pages/8320221954bc82e0b41d8128f2e0b302.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [3-4. 식단_아침_스크롤](pages/dc00221954bc83f5923e01ff8270898e.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [3-5. 식단_점심_스크롤](pages/7c30221954bc8241a6ad812f7ce564ec.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [3-6. 식단_저녁_스크롤](pages/0dd0221954bc8381bf850126bf46c6e4.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [3-7. 식단_학생식당정보_클릭](pages/a680221954bc837e9c988117a7e8499d.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [3-8. (Android / iOS) 식단_카카오톡_공유하기_클릭](pages/9bb0221954bc82f6b4e301a447d0894e.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [3-9. (Android / iOS) 식단_카카오톡_코인이동_클릭 (카카오톡)](pages/75a0221954bc8271ad76810365b94708.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [4-1. 식단_코너 사진_클릭](pages/ae70221954bc83039c5401fa69a8ab05.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [5-1. (Android / iOS) 알림설정_클릭](pages/6970221954bc82d29e6301ca89419c5c.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [5-2. (Android / iOS) 알림설정_품절_토글](pages/8330221954bc8287b8be01c95c019076.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [5-3. (Android / iOS) 알림설정_품절_식사시간_토글](pages/e220221954bc82b5b4e0816e7122803a.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+| [5-6. (Android / iOS) 알림설정_식단사진 업로드_토글](pages/81a0221954bc82b6bec281c0096d3e42.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |

@@ -129,5 +129,14 @@
   },
   "collection-id:20f02219-54bc-82c7-8696-87e7814c4aa8": {
     "method": "filtered_view_union"
+  },
+  "followUpAudit": {
+    "unfilteredViewSources": 14,
+    "sources": 41,
+    "viewsEnumerated": 147,
+    "visibleUniqueRows": 1281,
+    "originalIdsRecovered": 87,
+    "fullSourceRowCountVerified": false,
+    "warning": "advancedFilter도 필터로 분류. 기존 수집 방식 표시는 당시 기록이며 전수 보증이 아님."
   }
 }

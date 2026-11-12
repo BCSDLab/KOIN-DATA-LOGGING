@@ -30261,5 +30261,1960 @@
     },
     "sourceEditedAt": "2026-11-12T05:07:46.513Z",
     "rawSha256": "598681154845ddaee96a926e1a0b5c95da25909dc8fde306cb983cca9ae7d1e6"
+  },
+  {
+    "id": "2450221954bc824b8c1501a6f4961576",
+    "title": "5-1. 목록_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:2450221954bc824b8c1501a6f4961576",
+    "file": "pages/2450221954bc824b8c1501a6f4961576.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:2450221954bc824b8c1501a6f4961576",
+      "상태": "완료",
+      "이름": "5-1. 목록\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:00.490Z",
+    "rawSha256": "0f63c14a39d48c2ce32b41ac709ff6c97835c5330fa95e99e595af164bbf4e7a",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "87f0221954bc83329ea20157407117c2",
+    "title": "11-12.분실물_쪽지보내기_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:87f0221954bc83329ea20157407117c2",
+    "file": "pages/87f0221954bc83329ea20157407117c2.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:87f0221954bc83329ea20157407117c2",
+      "상태": "완료",
+      "이름": "11-12.분실물\\_쪽지보내기\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:00.448Z",
+    "rawSha256": "c46f65cd58b8c223a0e9d4641c427562250741ea5ef7cfaec72be42bf18080c0",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "4db0221954bc826a8e4a01e906afb1d3",
+    "title": "6-1. 공지글 검색_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:4db0221954bc826a8e4a01e906afb1d3",
+    "file": "pages/4db0221954bc826a8e4a01e906afb1d3.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:4db0221954bc826a8e4a01e906afb1d3",
+      "상태": "완료",
+      "이름": "6-1. 공지글 검색\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:00.402Z",
+    "rawSha256": "2b4f3466caba7a5d0f2d5c6012698db1a3f4e52195a8b58dcc9dbdaad663e195",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "f6e0221954bc833d9d9d013f3cbb39ac",
+    "title": "10-2. 푸터_교내 시설물 정보_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:f6e0221954bc833d9d9d013f3cbb39ac",
+    "file": "pages/f6e0221954bc833d9d9d013f3cbb39ac.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:f6e0221954bc833d9d9d013f3cbb39ac",
+      "상태": "완료",
+      "이름": "10-2. 푸터\\_교내 시설물 정보\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:00.362Z",
+    "rawSha256": "9147c132abb572ce832b2445f803e71436aecb6b1705405e3c97aaea407f4eb1",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "7c70221954bc8230b18881a41f98de50",
+    "title": "2-3. 햄버거_공지사항_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:7c70221954bc8230b18881a41f98de50",
+    "file": "pages/7c70221954bc8230b18881a41f98de50.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:7c70221954bc8230b18881a41f98de50",
+      "상태": "완료",
+      "이름": "2-3. 햄버거\\_공지사항\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:00.315Z",
+    "rawSha256": "3de24fc42c68e1651ff9131208df6d4d75067c206b95d45bf4450ac0157882a9",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "cbd0221954bc83e599ff0186188117c9",
+    "title": "7-2. 모두 보기_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:cbd0221954bc83e599ff0186188117c9",
+    "file": "pages/cbd0221954bc83e599ff0186188117c9.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:cbd0221954bc83e599ff0186188117c9",
+      "상태": "완료",
+      "이름": "7-2. 모두 보기\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:00.273Z",
+    "rawSha256": "4489bd5d0413b43e86a7ba751e6522ff0c9076213c111ef7627e86e388b15c03",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "eec0221954bc83d9b7dd01b72ab8a850",
+    "title": "9-1. 키워드 게시물_알림",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:eec0221954bc83d9b7dd01b72ab8a850",
+    "file": "pages/eec0221954bc83d9b7dd01b72ab8a850.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:eec0221954bc83d9b7dd01b72ab8a850",
+      "상태": "완료",
+      "이름": "9-1. 키워드 게시물\\_알림"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:00.219Z",
+    "rawSha256": "c8af60818cf3a77616ae24a2f16f64c1d72027e69d488a11efb2067afea02d04",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "d1f0221954bc8296bea981977a0fa02a",
+    "title": "5-3. 공지 원본 바로가기_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:d1f0221954bc8296bea981977a0fa02a",
+    "file": "pages/d1f0221954bc8296bea981977a0fa02a.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:d1f0221954bc8296bea981977a0fa02a",
+      "상태": "완료",
+      "이름": "5-3. 공지 원본 바로가기\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:00.179Z",
+    "rawSha256": "c9b4ffb30eef5be7b2409dce7a3224c5625aa215697ca0b697cf4ad7cc2c92e4",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "a460221954bc828aad4e81e89cdd8a62",
+    "title": "11-13.분실물_신고하기_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:a460221954bc828aad4e81e89cdd8a62",
+    "file": "pages/a460221954bc828aad4e81e89cdd8a62.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:a460221954bc828aad4e81e89cdd8a62",
+      "상태": "완료",
+      "이름": "11-13.분실물\\_신고하기\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:00.167Z",
+    "rawSha256": "61dab0ccea012528ab89ebd0a6ebffa6b394636f9dcce49e3f7c1bbe9e6b7ed6",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "74e0221954bc83928a03015a663d795a",
+    "title": "7-5. 추천 키워드_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:74e0221954bc83928a03015a663d795a",
+    "file": "pages/74e0221954bc83928a03015a663d795a.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:74e0221954bc83928a03015a663d795a",
+      "상태": "완료",
+      "이름": "7-5. 추천 키워드\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:00.130Z",
+    "rawSha256": "343183d1090ecd7d8f19b2ed7e2243b441074b40a69aff9ec0722e0b89c754e6",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "8290221954bc835b9e7d0178b0eece5b",
+    "title": "3-4. 공지사항_새로운 서비스 요청하기_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:8290221954bc835b9e7d0178b0eece5b",
+    "file": "pages/8290221954bc835b9e7d0178b0eece5b.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:8290221954bc835b9e7d0178b0eece5b",
+      "상태": "완료",
+      "이름": "3-4. 공지사항\\_새로운 서비스 요청하기\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:00.113Z",
+    "rawSha256": "6e77c800317e322570a851b1236a4c1aefa0e4b36e280d2468ed482a298192eb",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "67d0221954bc829aa31d01b4fdcd7e90",
+    "title": "11-2.분실물_습득물신고_품목선택_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:67d0221954bc829aa31d01b4fdcd7e90",
+    "file": "pages/67d0221954bc829aa31d01b4fdcd7e90.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:67d0221954bc829aa31d01b4fdcd7e90",
+      "상태": "완료",
+      "이름": "11-2.분실물\\_습득물신고\\_품목선택\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:00.092Z",
+    "rawSha256": "4c45b468fe9ee8b1c27c55eab9f0afed50c3d454eb6970ca050caeffc9cfc595",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "4bd0221954bc830fbf8081c34c639eec",
+    "title": "3-2. 공지사항_코리아텍 바로가기_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:4bd0221954bc830fbf8081c34c639eec",
+    "file": "pages/4bd0221954bc830fbf8081c34c639eec.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:4bd0221954bc830fbf8081c34c639eec",
+      "상태": "완료",
+      "이름": "3-2. 공지사항\\_코리아텍 바로가기\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:00.067Z",
+    "rawSha256": "e332cbf2257058104e1be373edb2189c5a437905a59f3a0c60f096399bd86dc2",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "12e0221954bc8211966b01131cfa2859",
+    "title": "4-2. 공지사항 페이지_스크롤(상하)",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:12e0221954bc8211966b01131cfa2859",
+    "file": "pages/12e0221954bc8211966b01131cfa2859.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:12e0221954bc8211966b01131cfa2859",
+      "상태": "완료",
+      "이름": "4-2. 공지사항 페이지\\_스크롤(상하)"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:00.019Z",
+    "rawSha256": "df482417e9d64e2574166c52391990a592e076b379a7666157c3e3682299139e",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "3a60221954bc8200948081e81db8d86e",
+    "title": "5-2. 인기있는 공지_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:3a60221954bc8200948081e81db8d86e",
+    "file": "pages/3a60221954bc8200948081e81db8d86e.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:3a60221954bc8200948081e81db8d86e",
+      "상태": "완료",
+      "이름": "5-2. 인기있는 공지\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.846Z",
+    "rawSha256": "e5807d4db7197322d2c7b36c49a106328d3819135be60facf5655619cb05c269",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "9360221954bc83e49c8781b4784d4d2b",
+    "title": "7-3. 새 키워드 추가_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:9360221954bc83e49c8781b4784d4d2b",
+    "file": "pages/9360221954bc83e49c8781b4784d4d2b.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:9360221954bc83e49c8781b4784d4d2b",
+      "상태": "완료",
+      "이름": "7-3. 새 키워드 추가\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.769Z",
+    "rawSha256": "472045d8e1e67ae0310b6ee3677fbf01a5c3176a077263605f322d0211881e2e",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "d860221954bc839197140166ccb6103b",
+    "title": "11-1.분실물_글쓰기_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:d860221954bc839197140166ccb6103b",
+    "file": "pages/d860221954bc839197140166ccb6103b.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:d860221954bc839197140166ccb6103b",
+      "상태": "완료",
+      "이름": "11-1.분실물\\_글쓰기\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.677Z",
+    "rawSha256": "ef157e073fb3ef47f0c275b55f723a3b9228ff5b7d874c04f5382ad006a43f27",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "cbe0221954bc83678267011afd394fad",
+    "title": "8-2. 지금 인기있는 공지 배너_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:cbe0221954bc83678267011afd394fad",
+    "file": "pages/cbe0221954bc83678267011afd394fad.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:cbe0221954bc83678267011afd394fad",
+      "상태": "완료",
+      "이름": "8-2. 지금 인기있는 공지 배너\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.598Z",
+    "rawSha256": "777f0d704fbb1c9a8f50d486f86b405de8e219f43c4524c76d134fff32ef8043",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "d090221954bc82ef91ed81fe49980a28",
+    "title": "2-2. 푸터_공지사항_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:d090221954bc82ef91ed81fe49980a28",
+    "file": "pages/d090221954bc82ef91ed81fe49980a28.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:d090221954bc82ef91ed81fe49980a28",
+      "상태": "완료",
+      "이름": "2-2. 푸터\\_공지사항\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.554Z",
+    "rawSha256": "4b6ac9cb93196d18895a522d192f56acad959e2161f13056754f7fea0a4f8f0c",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "5e90221954bc83e58d6081e9c4b7bddd",
+    "title": "7-6. 로그인팝업_로그인하기_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:5e90221954bc83e58d6081e9c4b7bddd",
+    "file": "pages/5e90221954bc83e58d6081e9c4b7bddd.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:5e90221954bc83e58d6081e9c4b7bddd",
+      "상태": "완료",
+      "이름": "7-6. 로그인팝업\\_로그인하기\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.536Z",
+    "rawSha256": "de030b069d129146eb254a8a524fb151edb62b9ee0445ea9c196a0735bd8ca94",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "7d60221954bc82b6a55f8114a2a39a9b",
+    "title": "3-1. 공지사항_가장 많이 본 게시물_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:7d60221954bc82b6a55f8114a2a39a9b",
+    "file": "pages/7d60221954bc82b6a55f8114a2a39a9b.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:7d60221954bc82b6a55f8114a2a39a9b",
+      "상태": "완료",
+      "이름": "3-1. 공지사항\\_가장 많이 본 게시물\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.487Z",
+    "rawSha256": "398480cd93fd8bc54c3c15fa62ea5834902c436a34a79a6a58a451ac084bf007",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "1b10221954bc832b8752812eb3aaa340",
+    "title": "11-4.분실물_습득물신고_작성완료_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:1b10221954bc832b8752812eb3aaa340",
+    "file": "pages/1b10221954bc832b8752812eb3aaa340.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:1b10221954bc832b8752812eb3aaa340",
+      "상태": "완료",
+      "이름": "11-4.분실물\\_습득물신고\\_작성완료\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.483Z",
+    "rawSha256": "06c1882c87330b72ed3174d29be236818b9d6f5d17b6f38b7bfedeb0fdc1f5f2",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "c1d0221954bc83878081014211eaac7c",
+    "title": "새 페이지",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:c1d0221954bc83878081014211eaac7c",
+    "file": "pages/c1d0221954bc83878081014211eaac7c.md",
+    "properties": {
+      "url": "source-page-id:c1d0221954bc83878081014211eaac7c",
+      "상태": "로깅 필요",
+      "이름": ""
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.419Z",
+    "rawSha256": "667293a9e86442e9c5e77b11e654706c81f7fdbb6c82225a2eeed28a9ee1773a",
+    "recovered": true,
+    "recoveryClassification": "empty_page"
+  },
+  {
+    "id": "fde0221954bc83c29ad801f853c20ed3",
+    "title": "3-5. 공지사항_BCSD Lab 알아보기_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:fde0221954bc83c29ad801f853c20ed3",
+    "file": "pages/fde0221954bc83c29ad801f853c20ed3.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:fde0221954bc83c29ad801f853c20ed3",
+      "상태": "완료",
+      "이름": "3-5. 공지사항\\_BCSD Lab 알아보기\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.410Z",
+    "rawSha256": "c78a8fbb2439bb15103053c15d9d59fb3e47d2c5c01b31381ceb34dfe4041a58",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "0be0221954bc8390a68901cd61c14820",
+    "title": "7-7. 로그인팝업_닫기_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:0be0221954bc8390a68901cd61c14820",
+    "file": "pages/0be0221954bc8390a68901cd61c14820.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:0be0221954bc8390a68901cd61c14820",
+      "상태": "완료",
+      "이름": "7-7. 로그인팝업\\_닫기\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.370Z",
+    "rawSha256": "f70448c65d49aa3a6fb5ac46bc3e398ee8331f4457cb4611f30dc920d39c1e34",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "35c0221954bc8387b86f01410d4c06e7",
+    "title": "11-9.분실물_분실물신고_품목선택_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:35c0221954bc8387b86f01410d4c06e7",
+    "file": "pages/35c0221954bc8387b86f01410d4c06e7.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:35c0221954bc8387b86f01410d4c06e7",
+      "상태": "완료",
+      "이름": "11-9.분실물\\_분실물신고\\_품목선택\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.366Z",
+    "rawSha256": "6d1076bdfff6e8e533d2e0d26dc278c6fcf20370e70ba8be95c94e561a71d580",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "b9f0221954bc82f1a11c8114101c6b39",
+    "title": "2-1. 헤더_공지사항_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:b9f0221954bc82f1a11c8114101c6b39",
+    "file": "pages/b9f0221954bc82f1a11c8114101c6b39.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:b9f0221954bc82f1a11c8114101c6b39",
+      "상태": "완료",
+      "이름": "2-1. 헤더\\_공지사항\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.319Z",
+    "rawSha256": "c391232419cc155a4d78fb9e5871c20fd5ab291097e03e30c4ff454d2fa79714",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "3310221954bc83f48d500138f0d9b2a6",
+    "title": "3-3. 공지사항_아우누리 바로가기_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:3310221954bc83f48d500138f0d9b2a6",
+    "file": "pages/3310221954bc83f48d500138f0d9b2a6.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:3310221954bc83f48d500138f0d9b2a6",
+      "상태": "완료",
+      "이름": "3-3. 공지사항\\_아우누리 바로가기\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.263Z",
+    "rawSha256": "610a21cf8616880a7e88140f451e8fafb2323a37de442029d1e936d741a2794b",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "2a10221954bc82a5bd43813af587afdc",
+    "title": "11-10.분실물_분실물신고_물품추가_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:2a10221954bc82a5bd43813af587afdc",
+    "file": "pages/2a10221954bc82a5bd43813af587afdc.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:2a10221954bc82a5bd43813af587afdc",
+      "상태": "완료",
+      "이름": "11-10.분실물\\_분실물신고\\_물품추가\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.254Z",
+    "rawSha256": "31a04d14cf63da3c4237cbf5abd03f89533568215212c90ad3fabda4f41055e8",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "5210221954bc82468b3d0197ae387fd6",
+    "title": "11-11.분실물_분실물신고_작성완료_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:5210221954bc82468b3d0197ae387fd6",
+    "file": "pages/5210221954bc82468b3d0197ae387fd6.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:5210221954bc82468b3d0197ae387fd6",
+      "상태": "완료",
+      "이름": "11-11.분실물\\_분실물신고\\_작성완료\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.195Z",
+    "rawSha256": "f578dbd54b4732cd6829c67e11d69283c479ea06335d76d3ca8b3f2934f99fbb",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "14f0221954bc83e092950105fc8e4bc2",
+    "title": "8-1. 더보기_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:14f0221954bc83e092950105fc8e4bc2",
+    "file": "pages/14f0221954bc83e092950105fc8e4bc2.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:14f0221954bc83e092950105fc8e4bc2",
+      "상태": "완료",
+      "이름": "8-1. 더보기\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.146Z",
+    "rawSha256": "e0a07e246b1ac91ea155599591da633994a4e12def2516353c397377f97cedfe",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "6a30221954bc838285eb81810120abd5",
+    "title": "7-1. 키워드 관리_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:6a30221954bc838285eb81810120abd5",
+    "file": "pages/6a30221954bc838285eb81810120abd5.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:6a30221954bc838285eb81810120abd5",
+      "상태": "완료",
+      "이름": "7-1. 키워드 관리\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:59.092Z",
+    "rawSha256": "c50e80b578c263549021d41a1fa3d2bd0d766555bf554c5743f469ab5dab1d76",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "de10221954bc8300b30d8107e140ad3e",
+    "title": "8-3. 키워드 관리 진입 배너_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:de10221954bc8300b30d8107e140ad3e",
+    "file": "pages/de10221954bc8300b30d8107e140ad3e.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:de10221954bc8300b30d8107e140ad3e",
+      "상태": "완료",
+      "이름": "8-3. 키워드 관리 진입 배너\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.534Z",
+    "rawSha256": "70725de49a28b105446cd59c0272aae4fbf173f0ccdbc78c65b82d375b849698",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "2920221954bc839a967901009c062649",
+    "title": "6-2. 많이 검색되는 키워드_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:2920221954bc839a967901009c062649",
+    "file": "pages/2920221954bc839a967901009c062649.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:2920221954bc839a967901009c062649",
+      "상태": "완료",
+      "이름": "6-2. 많이 검색되는 키워드\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.470Z",
+    "rawSha256": "8899d9bcf777d751920291a77c28f6a64ea1a6a70fcfc2ac608ae698d73e0c51",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "6f80221954bc83aba7a6013fe9d9dfc3",
+    "title": "4-1. 탭 메뉴바_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:6f80221954bc83aba7a6013fe9d9dfc3",
+    "file": "pages/6f80221954bc83aba7a6013fe9d9dfc3.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:6f80221954bc83aba7a6013fe9d9dfc3",
+      "상태": "완료",
+      "이름": "4-1. 탭 메뉴바\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.421Z",
+    "rawSha256": "a81e5162d2d4b687628046f80acbdda8cb55984d1e587de4d99839384d53f617",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "3d30221954bc8340af35815fad5295d0",
+    "title": "11-16.쪽지리스트_대화창_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:3d30221954bc8340af35815fad5295d0",
+    "file": "pages/3d30221954bc8340af35815fad5295d0.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:3d30221954bc8340af35815fad5295d0",
+      "상태": "완료",
+      "이름": "11-16.쪽지리스트\\_대화창\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.418Z",
+    "rawSha256": "9bc87f0dc229ab6371c6b7e55be7eff6bdd731660c8f405369b79979dbcbef58",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "4e90221954bc832cb85f81b714e29903",
+    "title": "11-6.분실물_습득물신고_삭제확인_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:4e90221954bc832cb85f81b714e29903",
+    "file": "pages/4e90221954bc832cb85f81b714e29903.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:4e90221954bc832cb85f81b714e29903",
+      "상태": "완료",
+      "이름": "11-6.분실물\\_습득물신고\\_삭제확인\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.417Z",
+    "rawSha256": "f0839575aa8fc7e83ad8efc75c22eb2a484317c623fa9d6dc81b47c9b7dc125d",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "a2d0221954bc8348921281e04f3f75c5",
+    "title": "7-8. 키워드 알림받기_토글",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:a2d0221954bc8348921281e04f3f75c5",
+    "file": "pages/a2d0221954bc8348921281e04f3f75c5.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:a2d0221954bc8348921281e04f3f75c5",
+      "상태": "완료",
+      "이름": "7-8. 키워드 알림받기\\_토글"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.373Z",
+    "rawSha256": "6559ce9a5289a5c18b36aba3e9ee5d8af0517fde003447ca97762dff5b98a0f1",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "6ce0221954bc83a8bd120133314da21e",
+    "title": "10-1. 헤더_교내 시설물 정보_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:6ce0221954bc83a8bd120133314da21e",
+    "file": "pages/6ce0221954bc83a8bd120133314da21e.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:6ce0221954bc83a8bd120133314da21e",
+      "상태": "완료",
+      "이름": "10-1. 헤더\\_교내 시설물 정보\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.361Z",
+    "rawSha256": "7d1fcaab19a73663093011a2a5376d24de28020a48dca158256f9d6e626b919c",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "af30221954bc83cf83db0147d223ce81",
+    "title": "7-9. 알림설정_공지사항 키워드 알림_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:af30221954bc83cf83db0147d223ce81",
+    "file": "pages/af30221954bc83cf83db0147d223ce81.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:af30221954bc83cf83db0147d223ce81",
+      "상태": "완료",
+      "이름": "7-9. 알림설정\\_공지사항 키워드 알림\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.324Z",
+    "rawSha256": "9a2f796af023b354051851b2624cd15a116a6770234f0e867076941e2c710e5d",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "f810221954bc83d0809e01628492c45e",
+    "title": "11-7.분실물_잃어버렸어요_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:f810221954bc83d0809e01628492c45e",
+    "file": "pages/f810221954bc83d0809e01628492c45e.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:f810221954bc83d0809e01628492c45e",
+      "상태": "완료",
+      "이름": "11-7.분실물\\_잃어버렸어요\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.310Z",
+    "rawSha256": "af52ef869bc1e0c81c36387e03013574a62a323a1cc6e0b60bde94e1877a77b6",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "24f0221954bc83f8bb4f81a9445c3c8d",
+    "title": "6-3. [검색 키워드] 입력값 >> DB저장",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:24f0221954bc83f8bb4f81a9445c3c8d",
+    "file": "pages/24f0221954bc83f8bb4f81a9445c3c8d.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:24f0221954bc83f8bb4f81a9445c3c8d",
+      "상태": "완료",
+      "이름": "6-3. \\[검색 키워드\\] 입력값 >> DB저장"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.297Z",
+    "rawSha256": "a4c73d9ce23be6716a81eb9cb8bf3a5bf3f4e6a457627f4e2c2c55c373ecfc73",
+    "recovered": true,
+    "recoveryClassification": "empty_page"
+  },
+  {
+    "id": "93e0221954bc829a9dd00113c5de6123",
+    "title": "11-8.분실물_주인을찾아요_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:93e0221954bc829a9dd00113c5de6123",
+    "file": "pages/93e0221954bc829a9dd00113c5de6123.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:93e0221954bc829a9dd00113c5de6123",
+      "상태": "완료",
+      "이름": "11-8.분실물\\_주인을찾아요\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.263Z",
+    "rawSha256": "a2ab41484a5f2c34cea84d3deabab462aa9572c59ad5a80409779e6e3f935187",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "b6a0221954bc82a5b60a8120f0d08237",
+    "title": "11-15.햄버거_쪽지_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:b6a0221954bc82a5b60a8120f0d08237",
+    "file": "pages/b6a0221954bc82a5b60a8120f0d08237.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:b6a0221954bc82a5b60a8120f0d08237",
+      "상태": "완료",
+      "이름": "11-15.햄버거\\_쪽지\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.245Z",
+    "rawSha256": "afb21464d30b4ae59900309628520a359541365f23262aec2ed9ebac6f5eaa19",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "e070221954bc8233817181646b5e6df1",
+    "title": "6-4. 공지글 검색_검색하기_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:e070221954bc8233817181646b5e6df1",
+    "file": "pages/e070221954bc8233817181646b5e6df1.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:e070221954bc8233817181646b5e6df1",
+      "상태": "완료",
+      "이름": "6-4. 공지글 검색\\_검색하기\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.206Z",
+    "rawSha256": "c73e2ae72e1f0b1fc88887f1f8b36edd4d6a9b69556a7718e4cd4864687d32d7",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "79f0221954bc821ab0108136b0cb721e",
+    "title": "새 페이지",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:79f0221954bc821ab0108136b0cb721e",
+    "file": "pages/79f0221954bc821ab0108136b0cb721e.md",
+    "properties": {
+      "url": "source-page-id:79f0221954bc821ab0108136b0cb721e",
+      "상태": "로깅 필요",
+      "이름": ""
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.187Z",
+    "rawSha256": "f3dba8a217e61fa7460cfbb220e37459317c54db2cb1ef7f89e95c14465c98c0",
+    "recovered": true,
+    "recoveryClassification": "empty_page"
+  },
+  {
+    "id": "5bc0221954bc83588753017d0bdae4ff",
+    "title": "11-14.분실물_게시글신고하기_신고하기_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:5bc0221954bc83588753017d0bdae4ff",
+    "file": "pages/5bc0221954bc83588753017d0bdae4ff.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:5bc0221954bc83588753017d0bdae4ff",
+      "상태": "완료",
+      "이름": "11-14.분실물\\_게시글신고하기\\_신고하기\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.160Z",
+    "rawSha256": "5db245989f1f81a3be82ef90cc529ad53fa8018bdc0b9cbc2136eeaba9a67435",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "84c0221954bc825ea826812c72c0eb8d",
+    "title": "11-17.헤더_쪽지_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:84c0221954bc825ea826812c72c0eb8d",
+    "file": "pages/84c0221954bc825ea826812c72c0eb8d.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:84c0221954bc825ea826812c72c0eb8d",
+      "상태": "완료",
+      "이름": "11-17.헤더\\_쪽지\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.145Z",
+    "rawSha256": "32974bd3d32cc9e2b8758a8b22b9bdd2225fbd7cdab5874c9e999a16c35543b6",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "96d0221954bc82e38b8601cfacc06256",
+    "title": "10-3. 햄버거_교내 시설물 정보_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:96d0221954bc82e38b8601cfacc06256",
+    "file": "pages/96d0221954bc82e38b8601cfacc06256.md",
+    "properties": {
+      "platform": [
+        "ANDROID"
+      ],
+      "url": "source-page-id:96d0221954bc82e38b8601cfacc06256",
+      "상태": "완료",
+      "이름": "10-3. 햄버거\\_교내 시설물 정보\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.111Z",
+    "rawSha256": "7b18377e3acd5597d9dc936526b35830167539fc6a47e2830f946117fe5d08fc",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "6b00221954bc827c856a0175553bf08c",
+    "title": "11-3.분실물_습득물신고_물품추가_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:6b00221954bc827c856a0175553bf08c",
+    "file": "pages/6b00221954bc827c856a0175553bf08c.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:6b00221954bc827c856a0175553bf08c",
+      "상태": "완료",
+      "이름": "11-3.분실물\\_습득물신고\\_물품추가\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.082Z",
+    "rawSha256": "6c243e7e94aeb3d87f777e8ec364a100eb29d56785686e0767b4233f998d5caf",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "8f40221954bc82bdba648191e2954c8e",
+    "title": "11-19.푸터_쪽지_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:8f40221954bc82bdba648191e2954c8e",
+    "file": "pages/8f40221954bc82bdba648191e2954c8e.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:8f40221954bc82bdba648191e2954c8e",
+      "상태": "완료",
+      "이름": "11-19.푸터\\_쪽지\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.058Z",
+    "rawSha256": "abb50c1947c482148ef701c20bc1e78e826d676ff41eef441acc4c90f80f39b4",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "1aa0221954bc83ec8ad301c1d54bb2f4",
+    "title": "7-4. [알림받을 키워드] 입력값 >> DB저장",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:1aa0221954bc83ec8ad301c1d54bb2f4",
+    "file": "pages/1aa0221954bc83ec8ad301c1d54bb2f4.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:1aa0221954bc83ec8ad301c1d54bb2f4",
+      "상태": "완료",
+      "이름": "7-4. \\[알림받을 키워드\\] 입력값 >> DB저장"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:58.028Z",
+    "rawSha256": "bf6c00a0da071c8debda95e9f21d19c9114a686bc703b1040ca236223d8ffb41",
+    "recovered": true,
+    "recoveryClassification": "text_preserved_elsewhere"
+  },
+  {
+    "id": "c900221954bc827daf8a81b63360cb8c",
+    "title": "11-18.분실물_게시물종류_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:c900221954bc827daf8a81b63360cb8c",
+    "file": "pages/c900221954bc827daf8a81b63360cb8c.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:c900221954bc827daf8a81b63360cb8c",
+      "상태": "완료",
+      "이름": "11-18.분실물\\_게시물종류\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:57.979Z",
+    "rawSha256": "c417471c2528bb84c00c4a5a622eab2f56c8b7bf5bf98fc3254d27f0513eb470",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "3c00221954bc835f816d8121b59607eb",
+    "title": "11-5.분실물_습득물신고_삭제_클릭",
+    "path": "Event Log / 배너 / 배너 로깅",
+    "type": "page",
+    "source": "source-page-id:3c00221954bc835f816d8121b59607eb",
+    "file": "pages/3c00221954bc835f816d8121b59607eb.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:3c00221954bc835f816d8121b59607eb",
+      "상태": "완료",
+      "이름": "11-5.분실물\\_습득물신고\\_삭제\\_클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:07:57.939Z",
+    "rawSha256": "863565e1de8bf02ed6e5d70121213024a2769ba015117e1bb4448e8b1ff2c2dc",
+    "recovered": true,
+    "recoveryClassification": "needs_content_review"
+  },
+  {
+    "id": "a380221954bc833eba8081e730085961",
+    "title": "2-1 가게 정보 수정",
+    "path": "Event Log / Event Log (과거) / 사장님 / 사장님 로깅",
+    "type": "page",
+    "source": "source-page-id:a380221954bc833eba8081e730085961",
+    "file": "pages/a380221954bc833eba8081e730085961.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:a380221954bc833eba8081e730085961",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:53.542Z",
+      "이벤트 이름": "2-1 가게 정보 수정",
+      "태그": [
+        "2. 가게 정보 수정"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:53.542Z",
+    "rawSha256": "55f1330fa64b8488c670506a1266fb7f475f453e091d80bbe722247988fc47f7",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "4bd0221954bc8387b0f481849725421a",
+    "title": "2-2 가게 정보 수정 - 확인",
+    "path": "Event Log / Event Log (과거) / 사장님 / 사장님 로깅",
+    "type": "page",
+    "source": "source-page-id:4bd0221954bc8387b0f481849725421a",
+    "file": "pages/4bd0221954bc8387b0f481849725421a.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:4bd0221954bc8387b0f481849725421a",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:51.741Z",
+      "이벤트 이름": "2-2 가게 정보 수정 - 확인",
+      "태그": [
+        "2. 가게 정보 수정"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:51.741Z",
+    "rawSha256": "dfc73c6df7953c987db22df7e3595431b9d500ebc4071c8d244a9286c99a8a77",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "0c80221954bc833095a881666fb2b657",
+    "title": "2-3 가게 정보 수정 - 시간 수정 ",
+    "path": "Event Log / Event Log (과거) / 사장님 / 사장님 로깅",
+    "type": "page",
+    "source": "source-page-id:0c80221954bc833095a881666fb2b657",
+    "file": "pages/0c80221954bc833095a881666fb2b657.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:0c80221954bc833095a881666fb2b657",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:52.114Z",
+      "이벤트 이름": "<p>\n2-3 가게 정보 수정 - 시간 수정 \n</p>",
+      "태그": [
+        "2. 가게 정보 수정"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:52.114Z",
+    "rawSha256": "bb52d666af10a47fa5cd76d4922097303dfa68526941678bff0f355a1c9fb15a",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "dd30221954bc836a86b881430dc548be",
+    "title": "2-4 가게 정보 수정 - 이미지 추가 ",
+    "path": "Event Log / Event Log (과거) / 사장님 / 사장님 로깅",
+    "type": "page",
+    "source": "source-page-id:dd30221954bc836a86b881430dc548be",
+    "file": "pages/dd30221954bc836a86b881430dc548be.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:dd30221954bc836a86b881430dc548be",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:53.295Z",
+      "이벤트 이름": "<p>\n2-4 가게 정보 수정 - 이미지 추가 \n</p>",
+      "태그": [
+        "2. 가게 정보 수정"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:53.295Z",
+    "rawSha256": "71294d02835e48452c7f29dde41533c112a0ef207fe391819732799450be6d6d",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "a0a0221954bc82189a08815020757a91",
+    "title": "2-5 가게 정보 수정 - 취소 ",
+    "path": "Event Log / Event Log (과거) / 사장님 / 사장님 로깅",
+    "type": "page",
+    "source": "source-page-id:a0a0221954bc82189a08815020757a91",
+    "file": "pages/a0a0221954bc82189a08815020757a91.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:a0a0221954bc82189a08815020757a91",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:51.847Z",
+      "이벤트 이름": "<p>\n2-5 가게 정보 수정 - 취소 \n</p>",
+      "태그": [
+        "2. 가게 정보 수정"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:51.847Z",
+    "rawSha256": "3d437346a24cbcb6c3fa4f7dcf28afba0ce089495bf6ce2dda21623c9d9072b2",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "5470221954bc82058c3e01c7314a0e2b",
+    "title": "2-6 가게 정보 수정 - 닫기 ",
+    "path": "Event Log / Event Log (과거) / 사장님 / 사장님 로깅",
+    "type": "page",
+    "source": "source-page-id:5470221954bc82058c3e01c7314a0e2b",
+    "file": "pages/5470221954bc82058c3e01c7314a0e2b.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:5470221954bc82058c3e01c7314a0e2b",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:53.654Z",
+      "이벤트 이름": "<p>\n2-6 가게 정보 수정 - 닫기 \n</p>",
+      "태그": [
+        "2. 가게 정보 수정"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:53.654Z",
+    "rawSha256": "50c0f5ccd8339ec5b3e5fc27af35ba09809644ab742bc9d467d92bb433f76bea",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "d740221954bc832f896e814a681758c8",
+    "title": "3-1 메뉴추가 ",
+    "path": "Event Log / Event Log (과거) / 사장님 / 사장님 로깅",
+    "type": "page",
+    "source": "source-page-id:d740221954bc832f896e814a681758c8",
+    "file": "pages/d740221954bc832f896e814a681758c8.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:d740221954bc832f896e814a681758c8",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:53.988Z",
+      "이벤트 이름": "<p>\n3-1 메뉴추가 \n</p>",
+      "태그": [
+        "3. 메뉴 추가"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:53.988Z",
+    "rawSha256": "ae7fb0bf987dd1bf747b96e99b6f39223a29ec0fcd2ff40a5eebe82ea3060cdb",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "7e90221954bc826d9a6e01b6d8446089",
+    "title": "3-2 메뉴추가 - 확인",
+    "path": "Event Log / Event Log (과거) / 사장님 / 사장님 로깅",
+    "type": "page",
+    "source": "source-page-id:7e90221954bc826d9a6e01b6d8446089",
+    "file": "pages/7e90221954bc826d9a6e01b6d8446089.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:7e90221954bc826d9a6e01b6d8446089",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:52.907Z",
+      "이벤트 이름": "3-2 메뉴추가 - 확인",
+      "태그": [
+        "3. 메뉴 추가"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:52.907Z",
+    "rawSha256": "fdc1c2c8f20dea324a40396f82b558b822e746ae7140472e444da9299936ba7c",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "d2a0221954bc8342ad4981c2b2799f2f",
+    "title": "3-3 메뉴추가 - 취소",
+    "path": "Event Log / Event Log (과거) / 사장님 / 사장님 로깅",
+    "type": "page",
+    "source": "source-page-id:d2a0221954bc8342ad4981c2b2799f2f",
+    "file": "pages/d2a0221954bc8342ad4981c2b2799f2f.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:d2a0221954bc8342ad4981c2b2799f2f",
+      "상태": "진행 중",
+      "생성일": "2026-11-08T10:51:52.269Z",
+      "이벤트 이름": "3-3 메뉴추가 - 취소",
+      "태그": [
+        "3. 메뉴 추가"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:52.269Z",
+    "rawSha256": "700349d24ce25896fa710b9e9d11a4e0a8a78ac1eea112919816d1b16e64e0f4",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "4030221954bc82c8a1030122f97693f3",
+    "title": "3-4 메뉴추가 - 메뉴사진",
+    "path": "Event Log / Event Log (과거) / 사장님 / 사장님 로깅",
+    "type": "page",
+    "source": "source-page-id:4030221954bc82c8a1030122f97693f3",
+    "file": "pages/4030221954bc82c8a1030122f97693f3.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:4030221954bc82c8a1030122f97693f3",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:53.766Z",
+      "이벤트 이름": "3-4 메뉴추가 - 메뉴사진",
+      "태그": [
+        "3. 메뉴 추가"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:53.766Z",
+    "rawSha256": "3b0a4949f73503a56302c37b1758f435381d9a83c6de480357f4a5448c94c0ea",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "9990221954bc832e91d3018d74d3477a",
+    "title": "[레거시] 메인_식단_더보기버튼_클릭(확인필요)",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:9990221954bc832e91d3018d74d3477a",
+    "file": "pages/9990221954bc832e91d3018d74d3477a.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:9990221954bc832e91d3018d74d3477a",
+      "상태": "진행 중",
+      "생성일": "2026-11-08T10:51:34.702Z",
+      "이름": "\\[레거시\\] 메인\\_식단\\_더보기버튼\\_클릭(확인필요)",
+      "태그": [
+        "1. 메인_식단"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:34.702Z",
+    "rawSha256": "3e6e993859eee12b554c2fb39fdee43791260247d1f8ade629b886011a1cad51",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "3df0221954bc833a9f6381766084d23b",
+    "title": "1-1.메인_식단_더보기버튼_클릭 (홈화면 리디자인 로깅으로 찍히고 있음) → 따라서  1-1부터 1-7까지 전부 다 수정할 필요 없음 (레거시)",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:3df0221954bc833a9f6381766084d23b",
+    "file": "pages/3df0221954bc833a9f6381766084d23b.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:3df0221954bc833a9f6381766084d23b",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:34.303Z",
+      "이름": "1-1.메인\\_식단\\_더보기버튼\\_클릭 (홈화면 리디자인 로깅으로 찍히고 있음) → 따라서  1-1부터 1-7까지 전부 다 수정할 필요 없음 (레거시)",
+      "태그": [
+        "1. 메인_식단"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:34.303Z",
+    "rawSha256": "32f5a04d7b572ba7ff83ff9e0f9a28af3e3ef7ac720804e306c59f0a3c246e6e",
+    "recovered": true,
+    "recoveryClassification": "needs_content_review"
+  },
+  {
+    "id": "77e0221954bc82b7b9030139d648368f",
+    "title": "1-2.메인_식단_클릭",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:77e0221954bc82b7b9030139d648368f",
+    "file": "pages/77e0221954bc82b7b9030139d648368f.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:77e0221954bc82b7b9030139d648368f",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:34.399Z",
+      "이름": "1-2.메인\\_식단\\_클릭",
+      "태그": [
+        "1. 메인_식단"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:34.399Z",
+    "rawSha256": "d3e5af0beecb49c59b16f166679899e6761c29f49e3aa614e76c5122b0af1eaa",
+    "recovered": true,
+    "recoveryClassification": "needs_content_review"
+  },
+  {
+    "id": "1560221954bc83afacc8015e25700762",
+    "title": "1-3.메인_식단_A코너_클릭 (레거시)",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:1560221954bc83afacc8015e25700762",
+    "file": "pages/1560221954bc83afacc8015e25700762.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:1560221954bc83afacc8015e25700762",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:34.516Z",
+      "이름": "1-3.메인\\_식단\\_A코너\\_클릭 (레거시)",
+      "태그": [
+        "1. 메인_식단"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:34.516Z",
+    "rawSha256": "d0ef94511972baec0e49d1b55156ce3f02451cbcc3829ccd65ace7c0d0861532",
+    "recovered": true,
+    "recoveryClassification": "needs_content_review"
+  },
+  {
+    "id": "5b00221954bc82988ba401c3aff2571a",
+    "title": "1-4.메인_식단_B코너_클릭",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:5b00221954bc82988ba401c3aff2571a",
+    "file": "pages/5b00221954bc82988ba401c3aff2571a.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:5b00221954bc82988ba401c3aff2571a",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:35.732Z",
+      "이름": "1-4.메인\\_식단\\_B코너\\_클릭",
+      "태그": [
+        "1. 메인_식단"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:35.732Z",
+    "rawSha256": "77a25855a17f16da8916ac4283aa3e04fded862244df1a50417133363f9dbe6e",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "a5e0221954bc83a9bbbf013df21f523a",
+    "title": "1-5.메인_식단_C코너_클릭",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:a5e0221954bc83a9bbbf013df21f523a",
+    "file": "pages/a5e0221954bc83a9bbbf013df21f523a.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:a5e0221954bc83a9bbbf013df21f523a",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:35.826Z",
+      "이름": "1-5.메인\\_식단\\_C코너\\_클릭",
+      "태그": [
+        "1. 메인_식단"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:35.826Z",
+    "rawSha256": "c6957aec026f076b148c0fce889cc430fb62c8303baa0f955f3a29d6d0a0facf",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "9b90221954bc82a6957101e87e1224c4",
+    "title": "1-6.메인_식단_능수관_클릭",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:9b90221954bc82a6957101e87e1224c4",
+    "file": "pages/9b90221954bc82a6957101e87e1224c4.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:9b90221954bc82a6957101e87e1224c4",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:35.917Z",
+      "이름": "1-6.메인\\_식단\\_능수관\\_클릭",
+      "태그": [
+        "1. 메인_식단"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:35.917Z",
+    "rawSha256": "75c0cb9beabbf60167da1bc3f89b6fc7fc8935bf93543603a83b295178b18201",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "1ae0221954bc834388268145704074e0",
+    "title": "1-7.메인_식단_2캠퍼스_클릭",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:1ae0221954bc834388268145704074e0",
+    "file": "pages/1ae0221954bc834388268145704074e0.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:1ae0221954bc834388268145704074e0",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:36.005Z",
+      "이름": "1-7.메인\\_식단\\_2캠퍼스\\_클릭",
+      "태그": [
+        "1. 메인_식단"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:36.005Z",
+    "rawSha256": "288d97125d372114a1d285aa83c2a5f9d7e978c19c6e9fe5880057b7770cc8d0",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "3ab0221954bc8252aa2a8162a7fecc97",
+    "title": "2-1. 헤더_식단_클릭",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:3ab0221954bc8252aa2a8162a7fecc97",
+    "file": "pages/3ab0221954bc8252aa2a8162a7fecc97.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:3ab0221954bc8252aa2a8162a7fecc97",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:36.109Z",
+      "이름": "2-1. 헤더\\_식단\\_클릭",
+      "태그": [
+        "2. 헤더/푸터/햄버거_식단"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:36.109Z",
+    "rawSha256": "44c314a23b6aa077457a284004493b0ee859b977264ebc4a81a7bb6d4a74689a",
+    "recovered": true,
+    "recoveryClassification": "needs_content_review"
+  },
+  {
+    "id": "ea00221954bc82db852e810195c314ce",
+    "title": "2-2. 푸터_식단_클릭",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:ea00221954bc82db852e810195c314ce",
+    "file": "pages/ea00221954bc82db852e810195c314ce.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:ea00221954bc82db852e810195c314ce",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:35.698Z",
+      "이름": "2-2. 푸터\\_식단\\_클릭",
+      "태그": [
+        "2. 헤더/푸터/햄버거_식단"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:35.698Z",
+    "rawSha256": "98f40d68d4ccf64d5444dbd5bf26dcfac1e9cc4897bf9de6f346b8d52501b75f",
+    "recovered": true,
+    "recoveryClassification": "needs_content_review"
+  },
+  {
+    "id": "66c0221954bc83e9af9b81f1151285a6",
+    "title": "2-3. 햄버거_식단_클릭 (삭제)",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:66c0221954bc83e9af9b81f1151285a6",
+    "file": "pages/66c0221954bc83e9af9b81f1151285a6.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:66c0221954bc83e9af9b81f1151285a6",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:37.880Z",
+      "이름": "2-3. 햄버거\\_식단\\_클릭 (삭제)",
+      "태그": [
+        "2. 헤더/푸터/햄버거_식단"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:37.880Z",
+    "rawSha256": "1e8ae00493b90ff76b81cdf7613ca336e3d3092d402777a4b0b7a75cec884be2",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "8320221954bc82e0b41d8128f2e0b302",
+    "title": "3-1. 식단_식사시간 선택 (클릭) - 3-2·3-3 통합",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:8320221954bc82e0b41d8128f2e0b302",
+    "file": "pages/8320221954bc82e0b41d8128f2e0b302.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:8320221954bc82e0b41d8128f2e0b302",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:35.696Z",
+      "이름": "3-1. 식단\\_식사시간 선택 (클릭) - 3-2·3-3 통합",
+      "태그": [
+        "3. 식단 상세페이지"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:35.696Z",
+    "rawSha256": "11112f5dab2ef9e2ed7c4fab59ddbbbbadb25ba6ae934e533fa779b3d6bc12ce",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "dc00221954bc83f5923e01ff8270898e",
+    "title": "3-4. 식단_아침_스크롤",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:dc00221954bc83f5923e01ff8270898e",
+    "file": "pages/dc00221954bc83f5923e01ff8270898e.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:dc00221954bc83f5923e01ff8270898e",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:37.138Z",
+      "이름": "3-4. 식단\\_아침\\_스크롤",
+      "태그": [
+        "3. 식단 상세페이지"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:37.138Z",
+    "rawSha256": "605ea1e9fb2ef42573574fd9f81b3244c760e6cc7b43b8741d493a18f597a83b",
+    "recovered": true,
+    "recoveryClassification": "needs_content_review"
+  },
+  {
+    "id": "7c30221954bc8241a6ad812f7ce564ec",
+    "title": "3-5. 식단_점심_스크롤",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:7c30221954bc8241a6ad812f7ce564ec",
+    "file": "pages/7c30221954bc8241a6ad812f7ce564ec.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:7c30221954bc8241a6ad812f7ce564ec",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:35.477Z",
+      "이름": "3-5. 식단\\_점심\\_스크롤",
+      "태그": [
+        "3. 식단 상세페이지"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:35.477Z",
+    "rawSha256": "ce90f5ea80cd6bb1ffd4b5b2997cedc05e73dad456581d8c3701b1e0c6b220d5",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "0dd0221954bc8381bf850126bf46c6e4",
+    "title": "3-6. 식단_저녁_스크롤",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:0dd0221954bc8381bf850126bf46c6e4",
+    "file": "pages/0dd0221954bc8381bf850126bf46c6e4.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:0dd0221954bc8381bf850126bf46c6e4",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:37.495Z",
+      "이름": "3-6. 식단\\_저녁\\_스크롤",
+      "태그": [
+        "3. 식단 상세페이지"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:37.495Z",
+    "rawSha256": "b81fb5b8391c21ec728dd90d2dc0db50a8d68dbc134538d5f5c6658dfa0b1fe5",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "a680221954bc837e9c988117a7e8499d",
+    "title": "3-7. 식단_학생식당정보_클릭",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:a680221954bc837e9c988117a7e8499d",
+    "file": "pages/a680221954bc837e9c988117a7e8499d.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:a680221954bc837e9c988117a7e8499d",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:37.580Z",
+      "이름": "3-7. 식단\\_학생식당정보\\_클릭",
+      "태그": [
+        "3. 식단 상세페이지"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:37.580Z",
+    "rawSha256": "ab84509f9aed2cdb0438cab4826627b5955b0f46f14e1ae0487ed13dfa65ad48",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "9bb0221954bc82f6b4e301a447d0894e",
+    "title": "3-8. (Android / iOS) 식단_카카오톡_공유하기_클릭",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:9bb0221954bc82f6b4e301a447d0894e",
+    "file": "pages/9bb0221954bc82f6b4e301a447d0894e.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:9bb0221954bc82f6b4e301a447d0894e",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:35.479Z",
+      "이름": "3-8. (Android / iOS) 식단\\_카카오톡\\_공유하기\\_클릭",
+      "태그": [
+        "3. 식단 상세페이지"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:35.479Z",
+    "rawSha256": "4caf0faae9c0d693141fd52e5f23c2265e3a638fd781e00a3c0b98397a52a4f6",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "75a0221954bc8271ad76810365b94708",
+    "title": "3-9. (Android / iOS) 식단_카카오톡_코인이동_클릭 (카카오톡)",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:75a0221954bc8271ad76810365b94708",
+    "file": "pages/75a0221954bc8271ad76810365b94708.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:75a0221954bc8271ad76810365b94708",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:35.366Z",
+      "이름": "3-9. (Android / iOS) 식단\\_카카오톡\\_코인이동\\_클릭 (카카오톡)",
+      "태그": [
+        "3. 식단 상세페이지"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:35.366Z",
+    "rawSha256": "ff9b0f771a87f5078496043d2ae10979a9e8ab665cf2cf07f459ea5f5f00f3a1",
+    "recovered": true,
+    "recoveryClassification": "needs_content_review"
+  },
+  {
+    "id": "ae70221954bc83039c5401fa69a8ab05",
+    "title": "4-1. 식단_코너 사진_클릭",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:ae70221954bc83039c5401fa69a8ab05",
+    "file": "pages/ae70221954bc83039c5401fa69a8ab05.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:ae70221954bc83039c5401fa69a8ab05",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:37.464Z",
+      "이름": "4-1. 식단\\_코너 사진\\_클릭",
+      "태그": [
+        "4. 식단 상세_사진"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:37.464Z",
+    "rawSha256": "acd05e86e232812c16edba7649abff7fefa5cce2c4ce8e62bb126b40c4c708a0",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "6970221954bc82d29e6301ca89419c5c",
+    "title": "5-1. (Android / iOS) 알림설정_클릭",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:6970221954bc82d29e6301ca89419c5c",
+    "file": "pages/6970221954bc82d29e6301ca89419c5c.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:6970221954bc82d29e6301ca89419c5c",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:37.249Z",
+      "이름": "5-1. (Android / iOS) 알림설정\\_클릭",
+      "태그": [
+        "5. 알림설정 페이지 (Android / iOS)"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:37.249Z",
+    "rawSha256": "49734d4949844a94bc7f8a631d6f14961148f156617ac0bdb78e9fb4956138a0",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "8330221954bc8287b8be01c95c019076",
+    "title": "5-2. (Android / iOS) 알림설정_품절_토글",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:8330221954bc8287b8be01c95c019076",
+    "file": "pages/8330221954bc8287b8be01c95c019076.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:8330221954bc8287b8be01c95c019076",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:37.691Z",
+      "이름": "5-2. (Android / iOS) 알림설정\\_품절\\_토글",
+      "태그": [
+        "5. 알림설정 페이지 (Android / iOS)"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:37.691Z",
+    "rawSha256": "ab4f755f2f2a674d5559a2b9df0d40c6772f8b2850df7f07d0f5e3c3fc58efac",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "e220221954bc82b5b4e0816e7122803a",
+    "title": "5-3. (Android / iOS) 알림설정_품절_식사시간_토글",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:e220221954bc82b5b4e0816e7122803a",
+    "file": "pages/e220221954bc82b5b4e0816e7122803a.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:e220221954bc82b5b4e0816e7122803a",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:36.246Z",
+      "이름": "5-3. (Android / iOS) 알림설정\\_품절\\_식사시간\\_토글",
+      "태그": [
+        "5. 알림설정 페이지 (Android / iOS)"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:36.246Z",
+    "rawSha256": "9fc9e090706bc4872e1d39662d7d9311ab309092a9011ab76daf7c0a286da41f",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "81a0221954bc82b6bec281c0096d3e42",
+    "title": "5-6. (Android / iOS) 알림설정_식단사진 업로드_토글",
+    "path": "Event Log / Event Log (과거) / 식단 / 로깅 완료",
+    "type": "page",
+    "source": "source-page-id:81a0221954bc82b6bec281c0096d3e42",
+    "file": "pages/81a0221954bc82b6bec281c0096d3e42.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:81a0221954bc82b6bec281c0096d3e42",
+      "상태": "완료",
+      "생성일": "2026-11-08T10:51:36.899Z",
+      "이름": "5-6. (Android / iOS) 알림설정\\_식단사진 업로드\\_토글",
+      "태그": [
+        "5. 알림설정 페이지 (Android / iOS)"
+      ]
+    },
+    "sourceEditedAt": "2026-11-08T10:51:36.899Z",
+    "rawSha256": "866ae1760faae6d3942a56472d37aefe2b0c643a31acd9053026c5cb59e64a69",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere"
   }
 ]
