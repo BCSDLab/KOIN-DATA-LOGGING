@@ -135,8 +135,11 @@
     "sources": 41,
     "viewsEnumerated": 147,
     "visibleUniqueRows": 1281,
-    "originalIdsRecovered": 87,
+    "originalIdsRecovered": 129,
     "fullSourceRowCountVerified": false,
-    "warning": "advancedFilter도 필터로 분류. 기존 수집 방식 표시는 당시 기록이며 전수 보증이 아님."
+    "warning": "advancedFilter도 필터로 분류. 기존 수집 방식 표시는 당시 기록이며 전수 보증이 아님.",
+    "fullActiveRowEnumerationSources": 23,
+    "pendingSources": 18,
+    "auditFile": "database-audit.json"
   }
 }

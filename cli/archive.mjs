@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import zlib from 'node:zlib';
 import {pathToFileURL} from 'node:url';
 
 export function validateArchive(root, {inventory} = {}) {
@@ -16,7 +17,7 @@ export function validateArchive(root, {inventory} = {}) {
     if (path.relative(root, resolved).startsWith('..') || !exists(resolved)) errors.push(`Missing/unsafe link: ${path.relative(root,file)} -> ${target}`);
     links++;
   }
-  const files = ['README.md', 'notion/README.md', 'notion/recovery-review.md', ...index.map(e=>'notion/'+e.file)];
+  const files = ['README.md', 'notion/README.md', 'notion/recovery-review.md', 'notion/hidden-recovery.md', ...index.map(e=>'notion/'+e.file)];
   for (const file of new Set(files)) {
     const absolute = path.join(root, file);
     if (!fs.existsSync(absolute)) {errors.push('Missing document: '+file); continue;}
@@ -36,9 +37,25 @@ export function validateArchive(root, {inventory} = {}) {
       if(bytes.length!==asset.bytes||crypto.createHash('sha256').update(bytes).digest('hex')!==asset.sha256) errors.push('Asset integrity: '+asset.file);
     }
   }
-  const recovery = JSON.parse(fs.readFileSync(path.join(root,'notion/recovery-manifest.json'),'utf8'));
-  for(const r of recovery.pages) if(!ids.has(r.id))errors.push('Recovered source absent from index: '+r.id);
-  return {documents:index.length,assets:manifest.length,recoveredPages:recovery.pages.length,links,images,errors};
+  let recoveredPages = 0;
+  const recoveredIds = new Set();
+  for (const name of ['recovery-manifest.json', 'hidden-recovery-manifest.json']) {
+    const recovery = JSON.parse(fs.readFileSync(path.join(root,'notion',name),'utf8'));
+    recoveredPages += recovery.pages.length;
+    for (const r of recovery.pages) {
+      if(!ids.has(r.id))errors.push('Recovered source absent from index: '+r.id);
+      if(recoveredIds.has(r.id))errors.push('Duplicate recovered source: '+r.id);
+      recoveredIds.add(r.id);
+    }
+    if (recovery.snapshot) {
+      const compressed = fs.readFileSync(path.join(root,'notion',recovery.snapshot));
+      if (recovery.snapshotSha256 && crypto.createHash('sha256').update(compressed).digest('hex') !== recovery.snapshotSha256) errors.push('Snapshot integrity: '+name);
+      const records = zlib.gunzipSync(compressed).toString('utf8').trim().split('\n').filter(Boolean).map(JSON.parse);
+      const snapshotIds = new Set(records.map(r=>r.id));
+      if (records.length !== recovery.pages.length || snapshotIds.size !== records.length || recovery.pages.some(r=>!snapshotIds.has(r.id))) errors.push('Snapshot source IDs: '+name);
+    }
+  }
+  return {documents:index.length,assets:manifest.length,recoveredPages,links,images,errors};
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
   const result = validateArchive(process.cwd());

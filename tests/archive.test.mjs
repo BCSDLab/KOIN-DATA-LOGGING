@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import zlib from 'node:zlib';
 import {validateArchive} from '../cli/archive.mjs';
 
 test('archive validation catches Notion image tags, missing HTML image paths, lost source IDs and asset corruption', t=>{
@@ -11,9 +12,10 @@ test('archive validation catches Notion image tags, missing HTML image paths, lo
   t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
   fs.mkdirSync(path.join(root,'notion/pages'),{recursive:true});fs.mkdirSync(path.join(root,'notion/assets'));
   const write=(file,text)=>fs.writeFileSync(path.join(root,file),text);
-  for(const file of ['README.md','notion/README.md','notion/recovery-review.md'])write(file,'');
+  for(const file of ['README.md','notion/README.md','notion/recovery-review.md','notion/hidden-recovery.md'])write(file,'');
   write('notion/index.json',JSON.stringify([{id:'source',file:'pages/source.md'}]));
   write('notion/recovery-manifest.json',JSON.stringify({pages:[{id:'source'}]}));
+  write('notion/hidden-recovery-manifest.json',JSON.stringify({pages:[]}));
   const image=Buffer.from('test-image');write('notion/assets/image.png',image);
   write('notion/assets-manifest.json',JSON.stringify([{file:'assets/image.png',bytes:image.length,sha256:crypto.createHash('sha256').update(image).digest('hex')}]));
   write('notion/pages/source.md','![capture](../assets/image.png)');
@@ -23,6 +25,12 @@ test('archive validation catches Notion image tags, missing HTML image paths, lo
   write('notion/pages/source.md','<img src="assets/image.png">');
   assert.match(validateArchive(root).errors.join('\n'),/Missing\/unsafe link/);
   write('notion/pages/source.md','![capture](../assets/image.png)');
+  write('notion/hidden-recovery-manifest.json',JSON.stringify({pages:[{id:'hidden-missing'}]}));
+  assert.match(validateArchive(root).errors.join('\n'),/Recovered source absent.*hidden-missing/);
+  write('notion/hidden-recovery-manifest.json',JSON.stringify({pages:[],snapshot:'hidden.jsonl.gz'}));
+  write('notion/hidden.jsonl.gz',zlib.gzipSync(JSON.stringify({id:'unlisted'})+'\n'));
+  assert.match(validateArchive(root).errors.join('\n'),/Snapshot source IDs/);
+  write('notion/hidden-recovery-manifest.json',JSON.stringify({pages:[]}));
   write('notion/recovery-manifest.json',JSON.stringify({pages:[{id:'missing'}]}));
   assert.match(validateArchive(root).errors.join('\n'),/Recovered source absent/);
   write('notion/assets/image.png','corrupt');

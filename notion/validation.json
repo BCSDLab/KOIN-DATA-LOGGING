@@ -1,13 +1,13 @@
 {
-  "documents": 1521,
+  "documents": 1563,
   "images": 1472,
   "fullMigrationVerified": false,
-  "scope": "Known 87 omitted original IDs recovered; all hidden DB rows and visual matching not fully verified.",
+  "scope": "Known 129 omitted original IDs recovered. 23/41 sources have complete active-row enumeration; 18 sources remain pending.",
   "sourceDatabaseCount": 41,
-  "imageLinks": 3125,
-  "internalLinks": 7184,
+  "imageLinks": 3199,
+  "internalLinks": 7606,
   "brokenLinks": [],
-  "sourceSnapshots": 1521,
+  "sourceSnapshots": 1563,
   "sourceSnapshotArchives": [
     {
       "file": "source-snapshots.jsonl.gz",
@@ -18,6 +18,11 @@
       "file": "recovered-source-snapshots.jsonl.gz",
       "records": 87,
       "sha256": "472d42d622a54727fd99dc224c2a3d86ff1cc62df65c2e806e5a1aef5786bd11"
+    },
+    {
+      "file": "hidden-recovered-source-snapshots.jsonl.gz",
+      "records": 42,
+      "sha256": "8b0e1d3e57d9e95e0a238f4b89b295873b1f09140382f284a36b53cae8888893"
     }
   ],
   "formats": {
@@ -25,11 +30,11 @@
     "jpeg": 12
   },
   "visualReviewAllImages": false,
-  "recoveredOriginalIds": 87,
+  "recoveredOriginalIds": 129,
   "reviewedContentDifferences": 8,
   "convertedImageTags": 274,
   "sourceComparison": {
-    "pages": 1482,
+    "pages": 1524,
     "missingFieldsOrImageReferences": []
   },
   "validationMethod": {
@@ -39,8 +44,16 @@
   "databaseCoverage": {
     "sourceCount": 41,
     "trueUnfilteredViewSources": 14,
-    "fullRowCountVerified": false
+    "fullRowCountVerified": false,
+    "fullActiveRowEnumerationSources": 23,
+    "pendingSources": 18,
+    "auditFile": "database-audit.json"
   },
   "notionLinksRemoved": true,
-  "notionExternalLinks": 0
+  "notionExternalLinks": 0,
+  "hidden42SnapshotComparison": {
+    "pages": 42,
+    "normalizedFullTextAndPropertiesMatch": true,
+    "issues": []
+  }
 }

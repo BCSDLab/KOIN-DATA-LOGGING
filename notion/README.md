@@ -1,6 +1,6 @@
 # Event Log 원문 이전
 
-수집일: 2026-11-12 (Asia/Seoul). 보관 문서 1521개, 저장 이미지 1472개. 생성용 specs와 분리한 읽기용 원문 스냅샷입니다.
+수집일: 2026-11-12 (Asia/Seoul). 보관 문서 1563개, 저장 이미지 1472개. 생성용 specs와 분리한 읽기용 원문 스냅샷입니다.
 
 **전체 이전 완료 선언이 아닙니다.** SQL 조회 한도 이후 일부 DB는 필터 보기의 합집합으로 수집했습니다. 보기에 없는 행·MCP가 표현하지 않는 블록·첨부까지 전수라고 단정하지 않습니다.
 
@@ -1550,3 +1550,52 @@
 | [5-2. (Android / iOS) 알림설정_품절_토글](pages/8330221954bc8287b8be01c95c019076.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
 | [5-3. (Android / iOS) 알림설정_품절_식사시간_토글](pages/e220221954bc82b5b4e0816e7122803a.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
 | [5-6. (Android / iOS) 알림설정_식단사진 업로드_토글](pages/81a0221954bc82b6bec281c0096d3e42.md) | Event Log / Event Log (과거) / 식단 / 로깅 완료 |
+
+## 필터 밖 원본 42개 복구
+
+[복구·대조 설명](hidden-recovery.md) · [DB별 재개 목록](database-audit.json)
+
+| 제목 | 원문 경로 |
+| --- | --- |
+| [3-1. 동아리_동아리 생성취소](pages/6a30221954bc822cad9e019ceb46f64c.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [2-1. 동아리_동아리 클릭](pages/3d50221954bc82bcabe18176a83f56af.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [6.2동아리_행사필터 클릭](pages/ccc0221954bc827bb64a013093a859e7.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5.15동아리_모집알림 받기](pages/1f20221954bc834b8f4f81b9ba15ca3a.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5-1.동아리_수정하기 클릭](pages/9d20221954bc82788c8f01374d2d0e97.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5.16동아리_모집알림 취소](pages/fb60221954bc828fb321014976c860dd.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [2-3.동아리_동아리 카테고리 클릭](pages/4710221954bc839ea4d801a78abdcf7e.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [3-4. 동아리_동아리 권한요청](pages/9880221954bc8260bd94013cf1dac2fe.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [2.6 동아리_모집 중인 동아리 토글 클릭](pages/6780221954bc82c6a79f0110b9709435.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [6.8동아리_행사수정취소 클릭](pages/4470221954bc83d9bbf58108093b01d1.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5-5.동아리_권한위임 확인](pages/ee60221954bc830bb36001182c0f3e34.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5-10.동아리_상세소개 수정하기_저장하기 클릭](pages/c6d0221954bc8381bd7e81faf3d456a8.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [2.7 동아리_동아리 검색](pages/7af0221954bc829d9dd101f6fa0ed94a.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5-9.동아리_상세소개 수정하기_취소 클릭](pages/3180221954bc829592a601a3e281c053.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [2-5.동아리_동아리 메인화면 좋아요 해제](pages/efb0221954bc835eac21819ae656f250.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [4-3. 동아리_댓글 삭제](pages/dcc0221954bc828b8856013ad4c40742.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [6.9동아리_행사삭제 클릭](pages/f430221954bc829dab5d811b6097364c.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5-6.동아리_탭 클릭(추가사항)](pages/b660221954bc82af8bb2814b7aa8574a.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5-2.동아리_정보수정 저장](pages/81f0221954bc837baef201185e9fb4fd.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5-4.동아리_권한위임 클릭](pages/d770221954bc831aafc60183b0ba49f7.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [6.6동아리_행사수정 클릭](pages/6730221954bc82c7ae9e81dbfe1e4052.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5-11.동아리_상세소개 수정하기_취소하기 클릭](pages/8db0221954bc83ab9baf8175f0201e5f.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5.14동아리_모집알림 클릭](pages/3e70221954bc824896c281f3c8ac92ff.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [6.7동아리_행사수정확정 클릭](pages/4d30221954bc8343bead81e66c1fcfee.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [6.1동아리_행사 클릭](pages/d200221954bc83ac88950123902aa4ab.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [4-1. 동아리_Q&A추가](pages/a260221954bc8353b7b38155f131c036.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [새 페이지](pages/8f90221954bc820ab3488198396ab5e3.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5-13.동아리_상세소개 좋아요 해제](pages/9c70221954bc83449b2a01df96f54439.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5-7.동아리_상세소개 수정하기 클릭](pages/bcb0221954bc83dba4fb015f1947d68a.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [3-2. 동아리_동아리 생성요청](pages/c510221954bc83219e86812231e78af3.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [6.3동아리_행사생성 클릭](pages/c470221954bc83cfbb5681da32347a6b.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [6.5동아리_행사생성취소 클릭](pages/3510221954bc83d19b1081231607a5f5.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5-8.동아리_상세소개 수정하기_저장 클릭](pages/7ff0221954bc82ea91bd81710580f3f8.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [6.10동아리_행사삭제확정 클릭](pages/d080221954bc83298bdf81eb5d3dbb2f.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [2-4.동아리_동아리 메인화면 좋아요 클릭](pages/9a00221954bc825ab8380170dd8db4fc.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [3-3. 동아리_동아리 생성요청_확인](pages/8420221954bc83dab20481011b2cd2a8.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [2-2.동아리_동아리 생성하기 클릭](pages/1750221954bc821f956681a964404728.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [6.4동아리_행사생성확정 클릭](pages/24f0221954bc83f8915481e2d3dcd930.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5-3.동아리_정보수정 취소](pages/4590221954bc829ab506011b828959eb.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [4-2. 동아리_Q&A추가_확인](pages/7d80221954bc8207afc4013412e37652.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [새 페이지](pages/7ca0221954bc82af86c98132a9effafe.md) | Event Log / 콜밴팟 / 동아리 로깅 |
+| [5-12.동아리_상세소개 좋아요 클릭](pages/3540221954bc83a5b666815df3666578.md) | Event Log / 콜밴팟 / 동아리 로깅 |

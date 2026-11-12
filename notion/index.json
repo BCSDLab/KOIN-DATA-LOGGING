@@ -32216,5 +32216,945 @@
     "rawSha256": "866ae1760faae6d3942a56472d37aefe2b0c643a31acd9053026c5cb59e64a69",
     "recovered": true,
     "recoveryClassification": "fields_and_images_preserved_elsewhere"
+  },
+  {
+    "id": "6a30221954bc822cad9e019ceb46f64c",
+    "title": "3-1. 동아리_동아리 생성취소",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:6a30221954bc822cad9e019ceb46f64c",
+    "file": "pages/6a30221954bc822cad9e019ceb46f64c.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:6a30221954bc822cad9e019ceb46f64c",
+      "상태": "완료",
+      "이름": "3-1. 동아리\\_동아리 생성취소"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.615Z",
+    "rawSha256": "d58fc3f16cd76630285bb74ef1424d45ca7d24c1daa53cfca8862d9cdef071a0",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "3d50221954bc82bcabe18176a83f56af",
+    "title": "2-1. 동아리_동아리 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:3d50221954bc82bcabe18176a83f56af",
+    "file": "pages/3d50221954bc82bcabe18176a83f56af.md",
+    "properties": {
+      "platform": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:3d50221954bc82bcabe18176a83f56af",
+      "상태": "완료",
+      "이름": "2-1. 동아리\\_동아리 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:03.592Z",
+    "rawSha256": "9dcf08091f32b6d6281f129cc60496b05e8c0f54f26e783e381acefd663a882b",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "ccc0221954bc827bb64a013093a859e7",
+    "title": "6.2동아리_행사필터 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:ccc0221954bc827bb64a013093a859e7",
+    "file": "pages/ccc0221954bc827bb64a013093a859e7.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:ccc0221954bc827bb64a013093a859e7",
+      "상태": "로깅 필요",
+      "이름": "6.2동아리\\_행사필터 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.727Z",
+    "rawSha256": "0aa431863525da7c3df8044d4156722a324b14caddd678e9745ea811be9f05b8",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "1f20221954bc834b8f4f81b9ba15ca3a",
+    "title": "5.15동아리_모집알림 받기",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:1f20221954bc834b8f4f81b9ba15ca3a",
+    "file": "pages/1f20221954bc834b8f4f81b9ba15ca3a.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:1f20221954bc834b8f4f81b9ba15ca3a",
+      "상태": "로깅 필요",
+      "이름": "5.15동아리\\_모집알림 받기"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.678Z",
+    "rawSha256": "cbfea2f3dbecfed8513a2698f044b1150fe98c45a112bf0af212d173a0806699",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "9d20221954bc82788c8f01374d2d0e97",
+    "title": "5-1.동아리_수정하기 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:9d20221954bc82788c8f01374d2d0e97",
+    "file": "pages/9d20221954bc82788c8f01374d2d0e97.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:9d20221954bc82788c8f01374d2d0e97",
+      "상태": "완료",
+      "이름": "5-1.동아리\\_수정하기 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.639Z",
+    "rawSha256": "c12d9fcde5ed2a8c95b099792738dff8f43d830cdff184f96eac29a6029db68e",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "fb60221954bc828fb321014976c860dd",
+    "title": "5.16동아리_모집알림 취소",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:fb60221954bc828fb321014976c860dd",
+    "file": "pages/fb60221954bc828fb321014976c860dd.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:fb60221954bc828fb321014976c860dd",
+      "상태": "로깅 필요",
+      "이름": "5.16동아리\\_모집알림 취소"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.627Z",
+    "rawSha256": "51b629aeca06ddcd2643dd748ab7ebb9a9686af85c56ad3e898fc7419e96630a",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "4710221954bc839ea4d801a78abdcf7e",
+    "title": "2-3.동아리_동아리 카테고리 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:4710221954bc839ea4d801a78abdcf7e",
+    "file": "pages/4710221954bc839ea4d801a78abdcf7e.md",
+    "properties": {
+      "platform": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:4710221954bc839ea4d801a78abdcf7e",
+      "상태": "완료",
+      "이름": "2-3.동아리\\_동아리 카테고리 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.589Z",
+    "rawSha256": "22538df745f846d1a93db549f09f67a9e2d9991268a360116c68504d6a2c7100",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "9880221954bc8260bd94013cf1dac2fe",
+    "title": "3-4. 동아리_동아리 권한요청",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:9880221954bc8260bd94013cf1dac2fe",
+    "file": "pages/9880221954bc8260bd94013cf1dac2fe.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:9880221954bc8260bd94013cf1dac2fe",
+      "상태": "완료",
+      "이름": "3-4. 동아리\\_동아리 권한요청"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.581Z",
+    "rawSha256": "2071d499212aa18825eb67599b3479bdc2b11e0522fa84f32baa8becae7610a4",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "6780221954bc82c6a79f0110b9709435",
+    "title": "2.6 동아리_모집 중인 동아리 토글 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:6780221954bc82c6a79f0110b9709435",
+    "file": "pages/6780221954bc82c6a79f0110b9709435.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:6780221954bc82c6a79f0110b9709435",
+      "상태": "로깅 필요",
+      "이름": "2.6 동아리\\_모집 중인 동아리 토글 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.541Z",
+    "rawSha256": "98190c7e40185ab2b090ab486cd51de130b7ce88beb59ebb15ba0590d38e05c6",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "4470221954bc83d9bbf58108093b01d1",
+    "title": "6.8동아리_행사수정취소 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:4470221954bc83d9bbf58108093b01d1",
+    "file": "pages/4470221954bc83d9bbf58108093b01d1.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:4470221954bc83d9bbf58108093b01d1",
+      "상태": "로깅 필요",
+      "이름": "6.8동아리\\_행사수정취소 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.530Z",
+    "rawSha256": "c1e9c8eb61f090ef6c85ae1e69a71de45dc56a3b8fca7f021fc22f74c3ae7604",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "ee60221954bc830bb36001182c0f3e34",
+    "title": "5-5.동아리_권한위임 확인",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:ee60221954bc830bb36001182c0f3e34",
+    "file": "pages/ee60221954bc830bb36001182c0f3e34.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:ee60221954bc830bb36001182c0f3e34",
+      "상태": "완료",
+      "이름": "5-5.동아리\\_권한위임 확인"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.477Z",
+    "rawSha256": "26c0adb5c10fa25f4df469fcb625ce6617441cb17d6539426eeacfcfcf7c387e",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "c6d0221954bc8381bd7e81faf3d456a8",
+    "title": "5-10.동아리_상세소개 수정하기_저장하기 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:c6d0221954bc8381bd7e81faf3d456a8",
+    "file": "pages/c6d0221954bc8381bd7e81faf3d456a8.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:c6d0221954bc8381bd7e81faf3d456a8",
+      "상태": "완료",
+      "이름": "5-10.동아리\\_상세소개 수정하기\\_저장하기 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.425Z",
+    "rawSha256": "5cb0e4b012b975fea7d6a8d8df8be8423f1cebf833279ad8871fea6948f1e61c",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "7af0221954bc829d9dd101f6fa0ed94a",
+    "title": "2.7 동아리_동아리 검색",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:7af0221954bc829d9dd101f6fa0ed94a",
+    "file": "pages/7af0221954bc829d9dd101f6fa0ed94a.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:7af0221954bc829d9dd101f6fa0ed94a",
+      "상태": "로깅 필요",
+      "이름": "2.7 동아리\\_동아리 검색"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.421Z",
+    "rawSha256": "24dc9cdeb4ef08212dd71861a385129b33029c85b2f929aabbd25877dab3e471",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "3180221954bc829592a601a3e281c053",
+    "title": "5-9.동아리_상세소개 수정하기_취소 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:3180221954bc829592a601a3e281c053",
+    "file": "pages/3180221954bc829592a601a3e281c053.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:3180221954bc829592a601a3e281c053",
+      "상태": "완료",
+      "이름": "5-9.동아리\\_상세소개 수정하기\\_취소 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.369Z",
+    "rawSha256": "af4df2f6ba7964fd56bc11dd188cd5d57f43f68f9278445d04d6d6a648b8157e",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "efb0221954bc835eac21819ae656f250",
+    "title": "2-5.동아리_동아리 메인화면 좋아요 해제",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:efb0221954bc835eac21819ae656f250",
+    "file": "pages/efb0221954bc835eac21819ae656f250.md",
+    "properties": {
+      "platform": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:efb0221954bc835eac21819ae656f250",
+      "상태": "완료",
+      "이름": "2-5.동아리\\_동아리 메인화면 좋아요 해제"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.320Z",
+    "rawSha256": "1cfdb28bc95046d5fee8d13a71b40408705bc0eaa91d3c4da5c6ede2258cb40d",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "dcc0221954bc828b8856013ad4c40742",
+    "title": "4-3. 동아리_댓글 삭제",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:dcc0221954bc828b8856013ad4c40742",
+    "file": "pages/dcc0221954bc828b8856013ad4c40742.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:dcc0221954bc828b8856013ad4c40742",
+      "상태": "완료",
+      "이름": "4-3. 동아리\\_댓글 삭제"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.277Z",
+    "rawSha256": "d73e4908dc8fff466e44de72d9693a08dfb4c2c1862383d4bc57d883798082f6",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "f430221954bc829dab5d811b6097364c",
+    "title": "6.9동아리_행사삭제 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:f430221954bc829dab5d811b6097364c",
+    "file": "pages/f430221954bc829dab5d811b6097364c.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:f430221954bc829dab5d811b6097364c",
+      "상태": "로깅 필요",
+      "이름": "6.9동아리\\_행사삭제 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.271Z",
+    "rawSha256": "93fb2e5d5f9311383fe350895f84a3f6e7210157ac36522bbfe02cb3c51d26af",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "b660221954bc82af8bb2814b7aa8574a",
+    "title": "5-6.동아리_탭 클릭(추가사항)",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:b660221954bc82af8bb2814b7aa8574a",
+    "file": "pages/b660221954bc82af8bb2814b7aa8574a.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:b660221954bc82af8bb2814b7aa8574a",
+      "상태": "로깅 필요",
+      "이름": "5-6.동아리\\_탭 클릭(추가사항)"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:04.223Z",
+    "rawSha256": "c33457c6f69f9e646e0b425e20e42e5edcd6f780fdf5fa070c622b0eb84271dd",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "81f0221954bc837baef201185e9fb4fd",
+    "title": "5-2.동아리_정보수정 저장",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:81f0221954bc837baef201185e9fb4fd",
+    "file": "pages/81f0221954bc837baef201185e9fb4fd.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:81f0221954bc837baef201185e9fb4fd",
+      "상태": "완료",
+      "이름": "5-2.동아리\\_정보수정 저장"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:03.672Z",
+    "rawSha256": "8f38a1412f7b4a3ee28aca4942644a12efebcc3e62d74eef7ea14101a14b2fd6",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "d770221954bc831aafc60183b0ba49f7",
+    "title": "5-4.동아리_권한위임 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:d770221954bc831aafc60183b0ba49f7",
+    "file": "pages/d770221954bc831aafc60183b0ba49f7.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:d770221954bc831aafc60183b0ba49f7",
+      "상태": "완료",
+      "이름": "5-4.동아리\\_권한위임 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:03.631Z",
+    "rawSha256": "4be1583a78eed594688e4bb6a902670f445ec4a3e446162290d71d6e83452ea9",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "6730221954bc82c7ae9e81dbfe1e4052",
+    "title": "6.6동아리_행사수정 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:6730221954bc82c7ae9e81dbfe1e4052",
+    "file": "pages/6730221954bc82c7ae9e81dbfe1e4052.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:6730221954bc82c7ae9e81dbfe1e4052",
+      "상태": "로깅 필요",
+      "이름": "6.6동아리\\_행사수정 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:03.540Z",
+    "rawSha256": "cba0c27f970980792aac17984772e8d7d4fdd34947d56787d1fbb04fea54c477",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "8db0221954bc83ab9baf8175f0201e5f",
+    "title": "5-11.동아리_상세소개 수정하기_취소하기 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:8db0221954bc83ab9baf8175f0201e5f",
+    "file": "pages/8db0221954bc83ab9baf8175f0201e5f.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:8db0221954bc83ab9baf8175f0201e5f",
+      "상태": "완료",
+      "이름": "5-11.동아리\\_상세소개 수정하기\\_취소하기 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:03.449Z",
+    "rawSha256": "127d24ba5f5dc202d33ef90e60e0a16451ed2de06c5567153d5adff0bd422c30",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "3e70221954bc824896c281f3c8ac92ff",
+    "title": "5.14동아리_모집알림 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:3e70221954bc824896c281f3c8ac92ff",
+    "file": "pages/3e70221954bc824896c281f3c8ac92ff.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:3e70221954bc824896c281f3c8ac92ff",
+      "상태": "로깅 필요",
+      "이름": "5.14동아리\\_모집알림 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:03.429Z",
+    "rawSha256": "496d9cbae379236e2a7eb32bbd07f4ee05c0ac39fcee18cd607c202806fc8a08",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "4d30221954bc8343bead81e66c1fcfee",
+    "title": "6.7동아리_행사수정확정 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:4d30221954bc8343bead81e66c1fcfee",
+    "file": "pages/4d30221954bc8343bead81e66c1fcfee.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:4d30221954bc8343bead81e66c1fcfee",
+      "상태": "로깅 필요",
+      "이름": "6.7동아리\\_행사수정확정 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:03.389Z",
+    "rawSha256": "6546d2f467c7ee05a69f2000387a0cc53bf8d2423f28640f39bd782647b281e0",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "d200221954bc83ac88950123902aa4ab",
+    "title": "6.1동아리_행사 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:d200221954bc83ac88950123902aa4ab",
+    "file": "pages/d200221954bc83ac88950123902aa4ab.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:d200221954bc83ac88950123902aa4ab",
+      "상태": "로깅 필요",
+      "이름": "6.1동아리\\_행사 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:03.348Z",
+    "rawSha256": "d0afb98289e069d4d16a68d2b142b7f8057197562840403fd2bb112dfdb1b9b5",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "a260221954bc8353b7b38155f131c036",
+    "title": "4-1. 동아리_Q&A추가",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:a260221954bc8353b7b38155f131c036",
+    "file": "pages/a260221954bc8353b7b38155f131c036.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:a260221954bc8353b7b38155f131c036",
+      "상태": "완료",
+      "이름": "4-1. 동아리\\_Q&A추가"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:03.308Z",
+    "rawSha256": "6608de3dfc48bdbb0f0098bf7c16d9f4163d4f85fd9f0ded894bc829d30d14d0",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "8f90221954bc820ab3488198396ab5e3",
+    "title": "새 페이지",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:8f90221954bc820ab3488198396ab5e3",
+    "file": "pages/8f90221954bc820ab3488198396ab5e3.md",
+    "properties": {
+      "url": "source-page-id:8f90221954bc820ab3488198396ab5e3",
+      "상태": "로깅 필요",
+      "이름": ""
+    },
+    "sourceEditedAt": "2026-11-12T05:08:03.210Z",
+    "rawSha256": "476757becda5d679c59b1df33889cc40d282d1d19403fda93bb347ca88d42599",
+    "recovered": true,
+    "recoveryClassification": "empty_page",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "9c70221954bc83449b2a01df96f54439",
+    "title": "5-13.동아리_상세소개 좋아요 해제",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:9c70221954bc83449b2a01df96f54439",
+    "file": "pages/9c70221954bc83449b2a01df96f54439.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:9c70221954bc83449b2a01df96f54439",
+      "상태": "완료",
+      "이름": "5-13.동아리\\_상세소개 좋아요 해제"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.896Z",
+    "rawSha256": "ff4b9df5bcbeb46e31f2044831d412db32474ba8d1591292d0cf3852b6287522",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "bcb0221954bc83dba4fb015f1947d68a",
+    "title": "5-7.동아리_상세소개 수정하기 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:bcb0221954bc83dba4fb015f1947d68a",
+    "file": "pages/bcb0221954bc83dba4fb015f1947d68a.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:bcb0221954bc83dba4fb015f1947d68a",
+      "상태": "완료",
+      "이름": "5-7.동아리\\_상세소개 수정하기 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.892Z",
+    "rawSha256": "a1b86675cb5cb870e5038a74b7a544ddb13b39ababa8abc9c93d137f1079d2ad",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "c510221954bc83219e86812231e78af3",
+    "title": "3-2. 동아리_동아리 생성요청",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:c510221954bc83219e86812231e78af3",
+    "file": "pages/c510221954bc83219e86812231e78af3.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:c510221954bc83219e86812231e78af3",
+      "상태": "완료",
+      "이름": "3-2. 동아리\\_동아리 생성요청"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.834Z",
+    "rawSha256": "87675ffea3b3cfbce16b65f6baa6126b66e567fdab69ac82bf256c3a2629d156",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "c470221954bc83cfbb5681da32347a6b",
+    "title": "6.3동아리_행사생성 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:c470221954bc83cfbb5681da32347a6b",
+    "file": "pages/c470221954bc83cfbb5681da32347a6b.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:c470221954bc83cfbb5681da32347a6b",
+      "상태": "로깅 필요",
+      "이름": "6.3동아리\\_행사생성 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.824Z",
+    "rawSha256": "07a88de34f6daacbd43ee708e3f500a8ca91593c9854166369323f5ac6b9d7ea",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "3510221954bc83d19b1081231607a5f5",
+    "title": "6.5동아리_행사생성취소 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:3510221954bc83d19b1081231607a5f5",
+    "file": "pages/3510221954bc83d19b1081231607a5f5.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:3510221954bc83d19b1081231607a5f5",
+      "상태": "로깅 필요",
+      "이름": "6.5동아리\\_행사생성취소 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.770Z",
+    "rawSha256": "414e5a5577d2c736bb157d58104bf940cd699aec3c34f0141e3f7e50a7df1c65",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "7ff0221954bc82ea91bd81710580f3f8",
+    "title": "5-8.동아리_상세소개 수정하기_저장 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:7ff0221954bc82ea91bd81710580f3f8",
+    "file": "pages/7ff0221954bc82ea91bd81710580f3f8.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:7ff0221954bc82ea91bd81710580f3f8",
+      "상태": "완료",
+      "이름": "5-8.동아리\\_상세소개 수정하기\\_저장 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.768Z",
+    "rawSha256": "38efeb25f3dcf746b58e14c91d9fb6ae73c71fa2c7a95d163de3ce6db43b80d0",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "d080221954bc83298bdf81eb5d3dbb2f",
+    "title": "6.10동아리_행사삭제확정 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:d080221954bc83298bdf81eb5d3dbb2f",
+    "file": "pages/d080221954bc83298bdf81eb5d3dbb2f.md",
+    "properties": {
+      "platform": [
+        "WEB"
+      ],
+      "url": "source-page-id:d080221954bc83298bdf81eb5d3dbb2f",
+      "상태": "로깅 필요",
+      "이름": "6.10동아리\\_행사삭제확정 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.582Z",
+    "rawSha256": "f0b087dbe3abdae8f63f8683bd51ccb74dca2d7bae59c2ad97b03872db8e9a17",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "9a00221954bc825ab8380170dd8db4fc",
+    "title": "2-4.동아리_동아리 메인화면 좋아요 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:9a00221954bc825ab8380170dd8db4fc",
+    "file": "pages/9a00221954bc825ab8380170dd8db4fc.md",
+    "properties": {
+      "platform": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:9a00221954bc825ab8380170dd8db4fc",
+      "상태": "완료",
+      "이름": "2-4.동아리\\_동아리 메인화면 좋아요 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.528Z",
+    "rawSha256": "66a7211dedfc18720ad91a17bd5e436533b383a1fe8d9e49c9410dda2b2a80ee",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "8420221954bc83dab20481011b2cd2a8",
+    "title": "3-3. 동아리_동아리 생성요청_확인",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:8420221954bc83dab20481011b2cd2a8",
+    "file": "pages/8420221954bc83dab20481011b2cd2a8.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:8420221954bc83dab20481011b2cd2a8",
+      "상태": "완료",
+      "이름": "3-3. 동아리\\_동아리 생성요청\\_확인"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.473Z",
+    "rawSha256": "e042e54cf109ead09d12873ee8af79660a75b5dbcd47d20042bee9399d14fffe",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "1750221954bc821f956681a964404728",
+    "title": "2-2.동아리_동아리 생성하기 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:1750221954bc821f956681a964404728",
+    "file": "pages/1750221954bc821f956681a964404728.md",
+    "properties": {
+      "platform": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "url": "source-page-id:1750221954bc821f956681a964404728",
+      "상태": "완료",
+      "이름": "2-2.동아리\\_동아리 생성하기 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.466Z",
+    "rawSha256": "3cb97fa03598188ec7adcc784b27ff5b3027afab71f7fbb9ba8943d342a4c368",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "24f0221954bc83f8915481e2d3dcd930",
+    "title": "6.4동아리_행사생성확정 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:24f0221954bc83f8915481e2d3dcd930",
+    "file": "pages/24f0221954bc83f8915481e2d3dcd930.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:24f0221954bc83f8915481e2d3dcd930",
+      "상태": "로깅 필요",
+      "이름": "6.4동아리\\_행사생성확정 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.417Z",
+    "rawSha256": "9018e7e367386af306ee71b3a4f3b7c3e68f9f1d5431c8de7f4003235048ee37",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "4590221954bc829ab506011b828959eb",
+    "title": "5-3.동아리_정보수정 취소",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:4590221954bc829ab506011b828959eb",
+    "file": "pages/4590221954bc829ab506011b828959eb.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:4590221954bc829ab506011b828959eb",
+      "상태": "완료",
+      "이름": "5-3.동아리\\_정보수정 취소"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.357Z",
+    "rawSha256": "e00674cb690109beffc63e918517a4d31b81c8fdaa4e850ddaff0e71249a997d",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "7d80221954bc8207afc4013412e37652",
+    "title": "4-2. 동아리_Q&A추가_확인",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:7d80221954bc8207afc4013412e37652",
+    "file": "pages/7d80221954bc8207afc4013412e37652.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:7d80221954bc8207afc4013412e37652",
+      "상태": "완료",
+      "이름": "4-2. 동아리\\_Q&A추가\\_확인"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.321Z",
+    "rawSha256": "e8c656aa0b4789fafa6638a545a95a9146f785613dde91767fe748458587c5b5",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "7ca0221954bc82af86c98132a9effafe",
+    "title": "새 페이지",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:7ca0221954bc82af86c98132a9effafe",
+    "file": "pages/7ca0221954bc82af86c98132a9effafe.md",
+    "properties": {
+      "url": "source-page-id:7ca0221954bc82af86c98132a9effafe",
+      "상태": "로깅 필요",
+      "이름": ""
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.294Z",
+    "rawSha256": "a8bb84981e9f76452d606dc6f80ee6360b0e7f7562c3896cce0ca412673fccf8",
+    "recovered": true,
+    "recoveryClassification": "empty_page",
+    "recoveryBatch": "hidden-42"
+  },
+  {
+    "id": "3540221954bc83a5b666815df3666578",
+    "title": "5-12.동아리_상세소개 좋아요 클릭",
+    "path": "Event Log / 콜밴팟 / 동아리 로깅",
+    "type": "page",
+    "source": "source-page-id:3540221954bc83a5b666815df3666578",
+    "file": "pages/3540221954bc83a5b666815df3666578.md",
+    "properties": {
+      "platform": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "url": "source-page-id:3540221954bc83a5b666815df3666578",
+      "상태": "완료",
+      "이름": "5-12.동아리\\_상세소개 좋아요 클릭"
+    },
+    "sourceEditedAt": "2026-11-12T05:08:02.250Z",
+    "rawSha256": "db376534d752003b99e8f39ceb852fe429af389f10cef580f4ad18262919fd72",
+    "recovered": true,
+    "recoveryClassification": "fields_and_images_preserved_elsewhere",
+    "recoveryBatch": "hidden-42"
   }
 ]
