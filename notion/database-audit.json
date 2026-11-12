@@ -1,0 +1,416 @@
+{
+  "baselineCommit": "1f041865b7f9f5d008cec0fca52eb750785a7971",
+  "sources": 41,
+  "fullActiveRowEnumerationSources": 23,
+  "pendingSources": 18,
+  "fullyEnumeratedRows": 730,
+  "newOriginalIdsRecovered": 42,
+  "knownDbRowIdLowerBound": 1388,
+  "fullMigrationVerified": false,
+  "latestDirectQuery": {
+    "status": "usage_limit_reached",
+    "requestedSource": "b7202219-54bc-8398-b4a3-873021571d1c",
+    "executed": false
+  },
+  "resumePolicy": "Resume the pending sources in order when direct querying becomes available. No scheduled or background monitoring is configured.",
+  "coverage": [
+    {
+      "source": "fc102219-54bc-82ef-91fc-8754e480ecc2",
+      "database": "버스 로깅 (2)",
+      "databaseId": "5aa0221954bc833da5998127a23c6640",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_rows",
+      "rowCount": 60,
+      "missingIds": []
+    },
+    {
+      "source": "78902219-54bc-8331-aa4f-071acf64bdbe",
+      "database": "복덕방 로깅",
+      "databaseId": "58a0221954bc8353a9438138a98d080d",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_rows",
+      "rowCount": 5,
+      "missingIds": []
+    },
+    {
+      "source": "b5102219-54bc-82a4-a268-0777f3b6d12a",
+      "database": "사장님 로깅",
+      "databaseId": "2160221954bc83f995d681f226a2183d",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_rows",
+      "rowCount": 19,
+      "missingIds": []
+    },
+    {
+      "source": "93002219-54bc-8293-a605-870de88dc926",
+      "database": "BUSINESS NEW Log",
+      "databaseId": "e040221954bc83949daa81401ee55441",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_rows",
+      "rowCount": 86,
+      "missingIds": []
+    },
+    {
+      "source": "10602219-54bc-8235-912d-07c2ea517c9f",
+      "database": "BUSINESS NEW Log",
+      "databaseId": "4820221954bc831789430119bb73a641",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_rows",
+      "rowCount": 100,
+      "missingIds": []
+    },
+    {
+      "source": "82502219-54bc-8370-acd7-073b6298b332",
+      "database": "로깅 완료 및 새 데이터 소스",
+      "databaseId": "e620221954bc826fafe3019885892880",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_rows",
+      "rowCount": 29,
+      "missingIds": []
+    },
+    {
+      "source": "58602219-54bc-8256-bc4f-87435c8fb225",
+      "database": "로깅 완료 및 새 데이터 소스",
+      "databaseId": "e620221954bc826fafe3019885892880",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_rows",
+      "rowCount": 0,
+      "missingIds": []
+    },
+    {
+      "source": "0a402219-54bc-8389-9129-872d34afac1c",
+      "database": "버스 로깅",
+      "databaseId": "4a00221954bc83edaad20107d02a79cc",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_rows",
+      "rowCount": 43,
+      "missingIds": []
+    },
+    {
+      "source": "1a602219-54bc-828d-9841-0745dd1426cb",
+      "database": "커뮤니티 로깅",
+      "databaseId": "8010221954bc83f0ad4001e87869c863",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_rows",
+      "rowCount": 78,
+      "missingIds": []
+    },
+    {
+      "source": "b7202219-54bc-8398-b4a3-873021571d1c",
+      "database": "배너 로깅 ",
+      "databaseId": "6790221954bc82dabbf881cb021494ce",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "38802219-54bc-83d8-8129-87090586a53a",
+      "database": "버스 로깅 (3)",
+      "databaseId": "6ef0221954bc83988cbd012b63e1c614",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_saved_view",
+      "rowCount": 27,
+      "missingIds": []
+    },
+    {
+      "source": "2c502219-54bc-83b1-a613-0753d95c289a",
+      "database": "동아리 로깅 ",
+      "databaseId": "f930221954bc8331a24f01ffdad3190d",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_rows",
+      "rowCount": 66,
+      "missingIds": []
+    },
+    {
+      "source": "7ee02219-54bc-8288-8bc7-07326fbb8240",
+      "database": "버스 로깅 (3)",
+      "databaseId": "1230221954bc8284929081f3cf3146f8",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_saved_view",
+      "rowCount": 6,
+      "missingIds": []
+    },
+    {
+      "source": "49f02219-54bc-82f0-b068-07847998f7f9",
+      "database": "팀원 모집 로깅",
+      "databaseId": "4d90221954bc83c9b102811fdf9af082",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_saved_view",
+      "rowCount": 32,
+      "missingIds": []
+    },
+    {
+      "source": "80502219-54bc-8225-b570-07e34bc08f60",
+      "database": "버스 로깅 (1)",
+      "databaseId": "56e0221954bc8333bb0e01660972038f",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_saved_view",
+      "rowCount": 11,
+      "missingIds": []
+    },
+    {
+      "source": "c5d02219-54bc-82ff-a63c-875b84d1ea68",
+      "database": "버스 로깅 (1)",
+      "databaseId": "22a0221954bc82aab4b9018c514e179b",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "f8a02219-54bc-820d-b80c-074e4c92480c",
+      "database": "시간표 로깅",
+      "databaseId": "8e10221954bc821ab8d20122c7386af7",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_saved_view",
+      "rowCount": 29,
+      "missingIds": []
+    },
+    {
+      "source": "1fa02219-54bc-830b-a24a-871d977c3516",
+      "database": "동아리 로깅 (2)",
+      "databaseId": "ec40221954bc82d6afd5812eba5c35ea",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "d3a02219-54bc-8382-917f-8720ada28994",
+      "database": "동아리 로깅 ",
+      "databaseId": "2520221954bc82a69584812d22e3f378",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "4b602219-54bc-828b-9983-8754fd15a78e",
+      "database": "버스 로깅 (1)",
+      "databaseId": "1990221954bc8200aa748144382109da",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_saved_view",
+      "rowCount": 17,
+      "missingIds": []
+    },
+    {
+      "source": "1c702219-54bc-820a-ad1b-074b9dd8a859",
+      "database": "동아리 로깅 ",
+      "databaseId": "2040221954bc82ad8edd01244831348f",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "d9902219-54bc-829b-ba2c-87575b908b9c",
+      "database": "버스 로깅 (2)",
+      "databaseId": "5320221954bc8325817681925a8fabeb",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "a4302219-54bc-8354-b882-07b8382e0e31",
+      "database": "복덕방 로깅",
+      "databaseId": "78e0221954bc83d8bb5701827d66f858",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_saved_view",
+      "rowCount": 6,
+      "missingIds": []
+    },
+    {
+      "source": "9ad02219-54bc-8303-8fb9-077258d3f8ad",
+      "database": "사장님 로깅",
+      "databaseId": "87c0221954bc831da9d901a5b89dc0f5",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "23902219-54bc-828b-afaf-87c79a78eb19",
+      "database": "BUSINESS NEW Log",
+      "databaseId": "e180221954bc8391a32a81fe2fb00009",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "b8302219-54bc-8225-bff5-075bf99a149f",
+      "database": "BUSINESS NEW Log",
+      "databaseId": "4e40221954bc82a0bad501583db5a532",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "d3002219-54bc-837f-b590-87925075cf31",
+      "database": "로깅 완료 및 새 데이터 소스",
+      "databaseId": "67a0221954bc838693e6016b1d4e569b",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "cfd02219-54bc-8313-9da2-0708bc9b38ea",
+      "database": "버스 로깅",
+      "databaseId": "5e00221954bc836a89a50168685f47f3",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "40802219-54bc-8287-a826-8775ab85f6db",
+      "database": "커뮤니티 로깅",
+      "databaseId": "b260221954bc8333acdd81a556416db7",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "8fa02219-54bc-83c0-b806-07a6dfa55dbf",
+      "database": "배너 로깅 ",
+      "databaseId": "83d0221954bc8259b7e8813d963240a2",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "22102219-54bc-83a0-82e0-870d4c5aace3",
+      "database": "버스 로깅 (3)",
+      "databaseId": "fc30221954bc826fb24881ddd9404785",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_saved_view",
+      "rowCount": 26,
+      "missingIds": []
+    },
+    {
+      "source": "f2c02219-54bc-825c-9c82-87707a33abf9",
+      "database": "동아리 로깅 ",
+      "databaseId": "0cb0221954bc829fb9f6015ff7edeed9",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "79402219-54bc-8251-bc33-874cd301a1f5",
+      "database": "버스 로깅 (3)",
+      "databaseId": "fe10221954bc823e829581640e258fb2",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_saved_view",
+      "rowCount": 6,
+      "missingIds": []
+    },
+    {
+      "source": "bfb02219-54bc-8293-bc24-872ee9ee2baa",
+      "database": "팀원 모집 로깅",
+      "databaseId": "5c10221954bc8379af3281b3778916b0",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_saved_view",
+      "rowCount": 27,
+      "missingIds": []
+    },
+    {
+      "source": "78d02219-54bc-8330-a75c-073b6a469840",
+      "database": "버스 로깅 (1)",
+      "databaseId": "58f0221954bc831a8c0c01aa8270d398",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_saved_view",
+      "rowCount": 11,
+      "missingIds": []
+    },
+    {
+      "source": "5d202219-54bc-8336-8a30-07c05204d46e",
+      "database": "버스 로깅 (1)",
+      "databaseId": "ab90221954bc824bad11013895332879",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "6a602219-54bc-836a-bd65-078714dfedd4",
+      "database": "시간표 로깅",
+      "databaseId": "0990221954bc83f282b58186967f0233",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_saved_view",
+      "rowCount": 29,
+      "missingIds": []
+    },
+    {
+      "source": "c7002219-54bc-821e-abec-07eb9eee017a",
+      "database": "동아리 로깅 (2)",
+      "databaseId": "9670221954bc83c2b88d016e5fbf5576",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "18302219-54bc-8275-9570-878e5aa09f88",
+      "database": "버스 로깅 (1)",
+      "databaseId": "1640221954bc83dfa0b6814a50462e53",
+      "fullActiveRowsEnumerated": true,
+      "method": "unfiltered_saved_view",
+      "rowCount": 17,
+      "missingIds": []
+    },
+    {
+      "source": "53602219-54bc-831b-9416-07ed045d1eab",
+      "database": "동아리 로깅 ",
+      "databaseId": "3aa0221954bc836297a30190ddb094ae",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    },
+    {
+      "source": "20f02219-54bc-82c7-8696-87e7814c4aa8",
+      "database": "로깅 완료 및 새 데이터 소스",
+      "databaseId": "67a0221954bc838693e6016b1d4e569b",
+      "fullActiveRowsEnumerated": false,
+      "method": "filtered_view_union_or_no_view",
+      "rowCount": null,
+      "missingIds": null
+    }
+  ],
+  "resumeDataSourceUrls": [
+    "collection://b7202219-54bc-8398-b4a3-873021571d1c",
+    "collection://c5d02219-54bc-82ff-a63c-875b84d1ea68",
+    "collection://1fa02219-54bc-830b-a24a-871d977c3516",
+    "collection://d3a02219-54bc-8382-917f-8720ada28994",
+    "collection://1c702219-54bc-820a-ad1b-074b9dd8a859",
+    "collection://d9902219-54bc-829b-ba2c-87575b908b9c",
+    "collection://9ad02219-54bc-8303-8fb9-077258d3f8ad",
+    "collection://23902219-54bc-828b-afaf-87c79a78eb19",
+    "collection://b8302219-54bc-8225-bff5-075bf99a149f",
+    "collection://d3002219-54bc-837f-b590-87925075cf31",
+    "collection://cfd02219-54bc-8313-9da2-0708bc9b38ea",
+    "collection://40802219-54bc-8287-a826-8775ab85f6db",
+    "collection://8fa02219-54bc-83c0-b806-07a6dfa55dbf",
+    "collection://f2c02219-54bc-825c-9c82-87707a33abf9",
+    "collection://5d202219-54bc-8336-8a30-07c05204d46e",
+    "collection://c7002219-54bc-821e-abec-07eb9eee017a",
+    "collection://53602219-54bc-831b-9416-07ed045d1eab",
+    "collection://20f02219-54bc-82c7-8696-87e7814c4aa8"
+  ],
+  "zipExportVerification": {
+    "zipSha256": "20b7e670bdd011dae6f53167aa43fbbfd6045a8eccb2ea75689a6f7302315c60",
+    "verifiedSources": 41,
+    "previouslyPendingSourcesCovered": 18,
+    "scope": "user-provided exported snapshot",
+    "liveApiUnfilteredQueryCompleted": false,
+    "report": "zip-reconciliation.json",
+    "csvTitleExceptions": 1
+  }
+}

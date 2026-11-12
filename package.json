@@ -1,0 +1,26 @@
+{
+  "name": "koin-data-logging",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "koin-log": "cli/koin-log.mjs"
+  },
+  "scripts": {
+    "check": "node cli/koin-log.mjs check",
+    "gen": "node cli/koin-log.mjs gen",
+    "find": "node cli/koin-log.mjs find",
+    "test": "node --test",
+    "verify": "npm run check && npm test && node cli/koin-log.mjs gen --check && npm run check:archive",
+    "check:archive": "node cli/archive.mjs"
+  },
+  "dependencies": {
+    "yaml": "2.9.1"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}

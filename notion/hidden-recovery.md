@@ -1,0 +1,60 @@
+# 필터 밖 원본 42개 복구
+
+콜밴팟 데이터 소스의 필터 없는 행 조회에서 기존 보관 목록에 없던 원본 ID 42개를 발견했습니다. 제목은 동아리 관련 40개·무제 2개이며, 다른 서비스 제목의 행도 임의로 제외하지 않았습니다.
+
+- 40개: 주요 여섯 필드·이미지 ID는 다른 문서에서도 확인되지만 원본 ID·속성·본문은 별도 보존. 전체 본문 의미나 이미지 픽셀 동일성을 보증하는 분류는 아닙니다.
+- 2개: 원문 본문이 빈 페이지. 원본 ID와 속성을 그대로 보존.
+- 새 이미지 다운로드 없음. 기존 1,472개 이미지 파일에 상대 경로로 연결.
+- [원본 복구 목록](hidden-recovery-manifest.json) · [정규화 원문 스냅샷](hidden-recovered-source-snapshots.jsonl.gz)
+- Notion 페이지 URL만 원본 ID 표기로 정규화. 원본 경로·편집 시각·본문 해시와 원문 속성을 기록. 생성 계약으로 자동 승격하지 않음.
+
+## 원본별 목록
+
+| 원본 | 분류 | 관련 기존 보관본 |
+| --- | --- | --- |
+| [3-1. 동아리_동아리 생성취소](pages/6a30221954bc822cad9e019ceb46f64c.md) | fields_and_images_preserved_elsewhere | [57f0221954bc824abbfc81b6fbf59341](pages/57f0221954bc824abbfc81b6fbf59341.md), [4b90221954bc8203b42d81010372ff77](pages/4b90221954bc8203b42d81010372ff77.md) |
+| [2-1. 동아리_동아리 클릭](pages/3d50221954bc82bcabe18176a83f56af.md) | fields_and_images_preserved_elsewhere | [7870221954bc83889e5b0191130ac3f4](pages/7870221954bc83889e5b0191130ac3f4.md), [1860221954bc838eb7540139d066906e](pages/1860221954bc838eb7540139d066906e.md) |
+| [6.2동아리_행사필터 클릭](pages/ccc0221954bc827bb64a013093a859e7.md) | fields_and_images_preserved_elsewhere | [bff0221954bc824fb37e01374305760f](pages/bff0221954bc824fb37e01374305760f.md), [4c90221954bc8279b3fc01fdcedfcc01](pages/4c90221954bc8279b3fc01fdcedfcc01.md) |
+| [5.15동아리_모집알림 받기](pages/1f20221954bc834b8f4f81b9ba15ca3a.md) | fields_and_images_preserved_elsewhere | [5340221954bc82d38499815b398a48da](pages/5340221954bc82d38499815b398a48da.md), [a760221954bc82bbb1398113907a1663](pages/a760221954bc82bbb1398113907a1663.md) |
+| [5-1.동아리_수정하기 클릭](pages/9d20221954bc82788c8f01374d2d0e97.md) | fields_and_images_preserved_elsewhere | [5320221954bc82a9a2fe812dffd3724a](pages/5320221954bc82a9a2fe812dffd3724a.md), [c700221954bc8335bfec0135d56074d7](pages/c700221954bc8335bfec0135d56074d7.md) |
+| [5.16동아리_모집알림 취소](pages/fb60221954bc828fb321014976c860dd.md) | fields_and_images_preserved_elsewhere | [cf00221954bc83bfa51e015a5c69493f](pages/cf00221954bc83bfa51e015a5c69493f.md), [6690221954bc83ea9bbf813dde9a554b](pages/6690221954bc83ea9bbf813dde9a554b.md) |
+| [2-3.동아리_동아리 카테고리 클릭](pages/4710221954bc839ea4d801a78abdcf7e.md) | fields_and_images_preserved_elsewhere | [7f90221954bc83c394860174ee79624d](pages/7f90221954bc83c394860174ee79624d.md), [dd70221954bc82ca921f8172327a3bd5](pages/dd70221954bc82ca921f8172327a3bd5.md) |
+| [3-4. 동아리_동아리 권한요청](pages/9880221954bc8260bd94013cf1dac2fe.md) | fields_and_images_preserved_elsewhere | [62d0221954bc8242bec3018118ff27f6](pages/62d0221954bc8242bec3018118ff27f6.md), [6050221954bc83af82c2018f6674d3cb](pages/6050221954bc83af82c2018f6674d3cb.md) |
+| [2.6 동아리_모집 중인 동아리 토글 클릭](pages/6780221954bc82c6a79f0110b9709435.md) | fields_and_images_preserved_elsewhere | [a960221954bc82e98bde81be9d43511c](pages/a960221954bc82e98bde81be9d43511c.md), [8980221954bc82fea67581f48570b00b](pages/8980221954bc82fea67581f48570b00b.md) |
+| [6.8동아리_행사수정취소 클릭](pages/4470221954bc83d9bbf58108093b01d1.md) | fields_and_images_preserved_elsewhere | [c1b0221954bc831ba031810eaaf64e9e](pages/c1b0221954bc831ba031810eaaf64e9e.md), [f0e0221954bc82f2a55481f16825c84c](pages/f0e0221954bc82f2a55481f16825c84c.md) |
+| [5-5.동아리_권한위임 확인](pages/ee60221954bc830bb36001182c0f3e34.md) | fields_and_images_preserved_elsewhere | [f9d0221954bc8293925d8142db67fd37](pages/f9d0221954bc8293925d8142db67fd37.md), [24a0221954bc8353b99781b1c46a773f](pages/24a0221954bc8353b99781b1c46a773f.md) |
+| [5-10.동아리_상세소개 수정하기_저장하기 클릭](pages/c6d0221954bc8381bd7e81faf3d456a8.md) | fields_and_images_preserved_elsewhere | [a240221954bc82ee9cbb81d557c8577e](pages/a240221954bc82ee9cbb81d557c8577e.md), [b650221954bc839b8580819232895927](pages/b650221954bc839b8580819232895927.md) |
+| [2.7 동아리_동아리 검색](pages/7af0221954bc829d9dd101f6fa0ed94a.md) | fields_and_images_preserved_elsewhere | [2ac0221954bc832e85f501140086f891](pages/2ac0221954bc832e85f501140086f891.md), [cee0221954bc8238984601ee34b16a47](pages/cee0221954bc8238984601ee34b16a47.md) |
+| [5-9.동아리_상세소개 수정하기_취소 클릭](pages/3180221954bc829592a601a3e281c053.md) | fields_and_images_preserved_elsewhere | [6850221954bc82e794da0197a665ca21](pages/6850221954bc82e794da0197a665ca21.md), [5640221954bc83b7a1c501564ae6dda8](pages/5640221954bc83b7a1c501564ae6dda8.md) |
+| [2-5.동아리_동아리 메인화면 좋아요 해제](pages/efb0221954bc835eac21819ae656f250.md) | fields_and_images_preserved_elsewhere | [b8e0221954bc83f29a7b013dcf0b811b](pages/b8e0221954bc83f29a7b013dcf0b811b.md), [bad0221954bc83d0a60b0194b9ef29a7](pages/bad0221954bc83d0a60b0194b9ef29a7.md) |
+| [4-3. 동아리_댓글 삭제](pages/dcc0221954bc828b8856013ad4c40742.md) | fields_and_images_preserved_elsewhere | [bb50221954bc82c78e0d01fe1913325f](pages/bb50221954bc82c78e0d01fe1913325f.md), [d3d0221954bc83fd8a46811dcfe03cf3](pages/d3d0221954bc83fd8a46811dcfe03cf3.md) |
+| [6.9동아리_행사삭제 클릭](pages/f430221954bc829dab5d811b6097364c.md) | fields_and_images_preserved_elsewhere | [79a0221954bc83289b2d81ec83800649](pages/79a0221954bc83289b2d81ec83800649.md), [6880221954bc8230a28d013ef422e6b5](pages/6880221954bc8230a28d013ef422e6b5.md) |
+| [5-6.동아리_탭 클릭(추가사항)](pages/b660221954bc82af8bb2814b7aa8574a.md) | fields_and_images_preserved_elsewhere | [c040221954bc83ecaccd016a9960f119](pages/c040221954bc83ecaccd016a9960f119.md), [1c00221954bc82cbba2c8195fc85b251](pages/1c00221954bc82cbba2c8195fc85b251.md) |
+| [5-2.동아리_정보수정 저장](pages/81f0221954bc837baef201185e9fb4fd.md) | fields_and_images_preserved_elsewhere | [0490221954bc832799b7019e39a31f57](pages/0490221954bc832799b7019e39a31f57.md), [ba40221954bc82f1b99601b64285139c](pages/ba40221954bc82f1b99601b64285139c.md) |
+| [5-4.동아리_권한위임 클릭](pages/d770221954bc831aafc60183b0ba49f7.md) | fields_and_images_preserved_elsewhere | [f6f0221954bc82be861101a700e75959](pages/f6f0221954bc82be861101a700e75959.md), [8350221954bc829bbe2e01ec80ebf5a2](pages/8350221954bc829bbe2e01ec80ebf5a2.md) |
+| [6.6동아리_행사수정 클릭](pages/6730221954bc82c7ae9e81dbfe1e4052.md) | fields_and_images_preserved_elsewhere | [abd0221954bc8204b13781eeb1eb75f5](pages/abd0221954bc8204b13781eeb1eb75f5.md), [ae70221954bc820b8e8b013004754e67](pages/ae70221954bc820b8e8b013004754e67.md) |
+| [5-11.동아리_상세소개 수정하기_취소하기 클릭](pages/8db0221954bc83ab9baf8175f0201e5f.md) | fields_and_images_preserved_elsewhere | [7470221954bc83218e88814469efc743](pages/7470221954bc83218e88814469efc743.md), [5d70221954bc834d9b9a81ffbd18b0c5](pages/5d70221954bc834d9b9a81ffbd18b0c5.md) |
+| [5.14동아리_모집알림 클릭](pages/3e70221954bc824896c281f3c8ac92ff.md) | fields_and_images_preserved_elsewhere | [1210221954bc8285b6eb81f8d4e3ac0a](pages/1210221954bc8285b6eb81f8d4e3ac0a.md), [cbb0221954bc83158050819f58b601eb](pages/cbb0221954bc83158050819f58b601eb.md) |
+| [6.7동아리_행사수정확정 클릭](pages/4d30221954bc8343bead81e66c1fcfee.md) | fields_and_images_preserved_elsewhere | [d570221954bc83e7aeb681aa756457dd](pages/d570221954bc83e7aeb681aa756457dd.md), [be80221954bc8204a4b381119c747138](pages/be80221954bc8204a4b381119c747138.md) |
+| [6.1동아리_행사 클릭](pages/d200221954bc83ac88950123902aa4ab.md) | fields_and_images_preserved_elsewhere | [01c0221954bc835bba730116b29e9831](pages/01c0221954bc835bba730116b29e9831.md), [c1a0221954bc822fb24001500c513cdc](pages/c1a0221954bc822fb24001500c513cdc.md) |
+| [4-1. 동아리_Q&A추가](pages/a260221954bc8353b7b38155f131c036.md) | fields_and_images_preserved_elsewhere | [5770221954bc8248a7fc8179fb1f07bd](pages/5770221954bc8248a7fc8179fb1f07bd.md), [8bd0221954bc837b8e9481b564468dc9](pages/8bd0221954bc837b8e9481b564468dc9.md) |
+| [새 페이지](pages/8f90221954bc820ab3488198396ab5e3.md) | empty_page | [4970221954bc829a950681f7c1ef78db](pages/4970221954bc829a950681f7c1ef78db.md), [8cc0221954bc825db3f9017791290291](pages/8cc0221954bc825db3f9017791290291.md), [00a0221954bc837e830881248b6c5502](pages/00a0221954bc837e830881248b6c5502.md) |
+| [5-13.동아리_상세소개 좋아요 해제](pages/9c70221954bc83449b2a01df96f54439.md) | fields_and_images_preserved_elsewhere | [f170221954bc82ada2a501851bc0e726](pages/f170221954bc82ada2a501851bc0e726.md), [75c0221954bc829887f8811594a2303c](pages/75c0221954bc829887f8811594a2303c.md) |
+| [5-7.동아리_상세소개 수정하기 클릭](pages/bcb0221954bc83dba4fb015f1947d68a.md) | fields_and_images_preserved_elsewhere | [c300221954bc8368b178815f8c3f5171](pages/c300221954bc8368b178815f8c3f5171.md), [4310221954bc8258b43581efe5d48f07](pages/4310221954bc8258b43581efe5d48f07.md) |
+| [3-2. 동아리_동아리 생성요청](pages/c510221954bc83219e86812231e78af3.md) | fields_and_images_preserved_elsewhere | [ba40221954bc825ea3c5014c50b7ed9c](pages/ba40221954bc825ea3c5014c50b7ed9c.md), [1d20221954bc8227a4a18153e3b1db4b](pages/1d20221954bc8227a4a18153e3b1db4b.md) |
+| [6.3동아리_행사생성 클릭](pages/c470221954bc83cfbb5681da32347a6b.md) | fields_and_images_preserved_elsewhere | [71e0221954bc83b99a7701e089976313](pages/71e0221954bc83b99a7701e089976313.md), [c6b0221954bc836f8f620102268b70f5](pages/c6b0221954bc836f8f620102268b70f5.md) |
+| [6.5동아리_행사생성취소 클릭](pages/3510221954bc83d19b1081231607a5f5.md) | fields_and_images_preserved_elsewhere | [1b60221954bc822ea94701c19eccb76b](pages/1b60221954bc822ea94701c19eccb76b.md), [a040221954bc82d181708123d8ec5e00](pages/a040221954bc82d181708123d8ec5e00.md) |
+| [5-8.동아리_상세소개 수정하기_저장 클릭](pages/7ff0221954bc82ea91bd81710580f3f8.md) | fields_and_images_preserved_elsewhere | [efa0221954bc8227a104013817b7d4d7](pages/efa0221954bc8227a104013817b7d4d7.md), [10b0221954bc83dd865e018ba02d17f4](pages/10b0221954bc83dd865e018ba02d17f4.md) |
+| [6.10동아리_행사삭제확정 클릭](pages/d080221954bc83298bdf81eb5d3dbb2f.md) | fields_and_images_preserved_elsewhere | [1fb0221954bc82c6927701e8b353f0e2](pages/1fb0221954bc82c6927701e8b353f0e2.md), [f2b0221954bc83f49fd101ab138db85d](pages/f2b0221954bc83f49fd101ab138db85d.md) |
+| [2-4.동아리_동아리 메인화면 좋아요 클릭](pages/9a00221954bc825ab8380170dd8db4fc.md) | fields_and_images_preserved_elsewhere | [2db0221954bc83a2a7fb01f78dbc08ab](pages/2db0221954bc83a2a7fb01f78dbc08ab.md), [d820221954bc82fd91d381327b20f02d](pages/d820221954bc82fd91d381327b20f02d.md) |
+| [3-3. 동아리_동아리 생성요청_확인](pages/8420221954bc83dab20481011b2cd2a8.md) | fields_and_images_preserved_elsewhere | [7d00221954bc83b9b797811fd2909558](pages/7d00221954bc83b9b797811fd2909558.md), [6a60221954bc82cda4f501cee4924791](pages/6a60221954bc82cda4f501cee4924791.md) |
+| [2-2.동아리_동아리 생성하기 클릭](pages/1750221954bc821f956681a964404728.md) | fields_and_images_preserved_elsewhere | [b940221954bc83b39cd801f75a1c20db](pages/b940221954bc83b39cd801f75a1c20db.md), [a120221954bc828cbf43810d5fc2e7a7](pages/a120221954bc828cbf43810d5fc2e7a7.md) |
+| [6.4동아리_행사생성확정 클릭](pages/24f0221954bc83f8915481e2d3dcd930.md) | fields_and_images_preserved_elsewhere | [3160221954bc827e874f81cd040061d2](pages/3160221954bc827e874f81cd040061d2.md), [0310221954bc83ab99c1014de82f0a4e](pages/0310221954bc83ab99c1014de82f0a4e.md) |
+| [5-3.동아리_정보수정 취소](pages/4590221954bc829ab506011b828959eb.md) | fields_and_images_preserved_elsewhere | [7330221954bc82ef9c9e81172fa03a97](pages/7330221954bc82ef9c9e81172fa03a97.md), [1360221954bc83c5bff581cb6fb03a9f](pages/1360221954bc83c5bff581cb6fb03a9f.md) |
+| [4-2. 동아리_Q&A추가_확인](pages/7d80221954bc8207afc4013412e37652.md) | fields_and_images_preserved_elsewhere | [d260221954bc839e9bc3814b4a06d78a](pages/d260221954bc839e9bc3814b4a06d78a.md), [3510221954bc8232a9138168496258f8](pages/3510221954bc8232a9138168496258f8.md) |
+| [새 페이지](pages/7ca0221954bc82af86c98132a9effafe.md) | empty_page | [4970221954bc829a950681f7c1ef78db](pages/4970221954bc829a950681f7c1ef78db.md), [8cc0221954bc825db3f9017791290291](pages/8cc0221954bc825db3f9017791290291.md), [00a0221954bc837e830881248b6c5502](pages/00a0221954bc837e830881248b6c5502.md) |
+| [5-12.동아리_상세소개 좋아요 클릭](pages/3540221954bc83a5b666815df3666578.md) | fields_and_images_preserved_elsewhere | [07d0221954bc83478a190152617958f2](pages/07d0221954bc83478a190152617958f2.md), [1b30221954bc832ab7980139b7feb84e](pages/1b30221954bc832ab7980139b7feb84e.md) |
+
+## 남은 전수 검증
+
+41개 데이터 소스 중 23개는 전체 활성 행 목록을 확인했습니다. 나머지 18개는 직접 조회 사용량 제한으로 아직 미확정입니다. [DB별 대조와 재개 목록](database-audit.json)을 참고하세요. 휴지통·권한 없는 페이지는 활성 행 대조 범위 밖입니다. 전체 이전 완료나 모든 이미지의 UI 일치 전수 확인을 뜻하지 않습니다.

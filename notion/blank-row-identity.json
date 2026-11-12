@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "status": "resolved_by_template_registration_history_and_sibling_reconciliation",
+  "baselineCommit": "337121538e25182fa4672ed209a3fa33e84e9371",
+  "checkedOnKst": "2026-11-12",
+  "databaseId": "6ef0221954bc83988cbd012b63e1c614",
+  "dataSourceId": "38802219-54bc-83d8-8129-87090586a53a",
+  "csv": {
+    "file": "export-tables/6ef0221954bc83988cbd012b63e1c614.csv",
+    "sha256": "51752ecd252d9f4ee176aa89b2064b71e6be56bf83c38b06482461a232ccaa38",
+    "rowNumberIncludingHeader": 2,
+    "dataRowNumber": 1,
+    "properties": {
+      "이벤트 이름": "",
+      "platform": "",
+      "구분": "",
+      "상태": "로깅 필요",
+      "생성일": "2026년 11월 12일 오후 2:07",
+      "태그": ""
+    }
+  },
+  "resolvedPageId": "f4b0221954bc822c9b7b81490f4a78bd",
+  "archiveFile": "pages/f4b0221954bc822c9b7b81490f4a78bd.md",
+  "currentTitle": "0. 이벤트이름",
+  "kind": "database_template",
+  "isApprovedLoggingEvent": false,
+  "evidence": {
+    "earlyDatabaseVersion": {
+      "time": "2026-11-12T14:07:59+09:00",
+      "templates": [
+        {
+          "pageId": "f4b0221954bc822c9b7b81490f4a78bd",
+          "name": "제목 없음"
+        }
+      ],
+      "activeRows": 0
+    },
+    "databaseVersionNearZipDownload": {
+      "time": "2026-11-12T19:25:06+09:00",
+      "templates": [
+        {
+          "pageId": "f4b0221954bc822c9b7b81490f4a78bd",
+          "name": "0. 이벤트이름"
+        }
+      ],
+      "activeRows": 27
+    },
+    "currentUnfilteredActiveRows": 27,
+    "currentArchivedRows": 0,
+    "namedCsvRowsUniquelyMatched": 27,
+    "zipChildMarkdownIds": [
+      "f4b0221954bc822c9b7b81490f4a78bd",
+      "fee0221954bc83a49f7c0170fceecf9e",
+      "30a0221954bc8297844901591055351f",
+      "2020221954bc83f9b678814520e338d1",
+      "7990221954bc83febb7f816e42f45480",
+      "5cd0221954bc83f2957381e651426c21",
+      "a820221954bc83a68616012df15d8576",
+      "1f10221954bc82f6a17401f823455276",
+      "03a0221954bc82988da80160ab26ee4c",
+      "5870221954bc8399999b81660b28ea83",
+      "59d0221954bc82cdbbbe81dc5b0cb4ee",
+      "a990221954bc827cb049812194ccf592",
+      "80a0221954bc8321bf98019fb6fdee84",
+      "e030221954bc8389a5918184171d55af",
+      "aef0221954bc826481d601be32054523",
+      "c2a0221954bc83d08bb781131aa1d6b6",
+      "1a20221954bc82d79fd201b4a3b66841",
+      "2050221954bc8312a07a01eeb1985141",
+      "2a40221954bc83d3b22181a984089d28",
+      "c250221954bc829b8abc0108f5d894d9",
+      "ea70221954bc827f802181dc9cfb103c",
+      "3af0221954bc8252bfb801bde1ca194c",
+      "ff20221954bc8379b122015bcea232c0",
+      "5540221954bc83d0aed681206affda1b",
+      "ac80221954bc8306b94e018444468d85",
+      "50c0221954bc8211862701c53ee682cd",
+      "4210221954bc83489f4081147833e51f",
+      "e970221954bc8343a033814f6e351651"
+    ],
+    "remainingChildIds": [
+      "f4b0221954bc822c9b7b81490f4a78bd"
+    ],
+    "namedRowMatches": [
+      {
+        "csvRowNumber": 3,
+        "pageId": "1f10221954bc82f6a17401f823455276",
+        "title": "1-3 메인 식단 진입 클릭"
+      },
+      {
+        "csvRowNumber": 4,
+        "pageId": "03a0221954bc82988da80160ab26ee4c",
+        "title": "1-4 식단 코너 클릭"
+      },
+      {
+        "csvRowNumber": 5,
+        "pageId": "5870221954bc8399999b81660b28ea83",
+        "title": "1-5 서틀 탑승권 클릭"
+      },
+      {
+        "csvRowNumber": 6,
+        "pageId": "fee0221954bc83a49f7c0170fceecf9e",
+        "title": "1-1 알림 클릭"
+      },
+      {
+        "csvRowNumber": 7,
+        "pageId": "59d0221954bc82cdbbbe81dc5b0cb4ee",
+        "title": "1-6 콜벤팟 모집 보기 클릭"
+      },
+      {
+        "csvRowNumber": 8,
+        "pageId": "7990221954bc83febb7f816e42f45480",
+        "title": "1-2 알림 클릭 내부"
+      },
+      {
+        "csvRowNumber": 9,
+        "pageId": "a990221954bc827cb049812194ccf592",
+        "title": "1-7 버스 시간표 클릭"
+      },
+      {
+        "csvRowNumber": 10,
+        "pageId": "5cd0221954bc83f2957381e651426c21",
+        "title": "1-2-1 알림 클릭 내부"
+      },
+      {
+        "csvRowNumber": 11,
+        "pageId": "80a0221954bc8321bf98019fb6fdee84",
+        "title": "1-8 버스 노선 클릭"
+      },
+      {
+        "csvRowNumber": 12,
+        "pageId": "a820221954bc83a68616012df15d8576",
+        "title": "1-2-2 알림 클릭 내부"
+      },
+      {
+        "csvRowNumber": 13,
+        "pageId": "4210221954bc83489f4081147833e51f",
+        "title": "4-3 로그아웃 클릭"
+      },
+      {
+        "csvRowNumber": 14,
+        "pageId": "1a20221954bc82d79fd201b4a3b66841",
+        "title": "2-3 네비게이션 바 게시판 클릭"
+      },
+      {
+        "csvRowNumber": 15,
+        "pageId": "e970221954bc8343a033814f6e351651",
+        "title": "4-4 설정 클릭"
+      },
+      {
+        "csvRowNumber": 16,
+        "pageId": "2050221954bc8312a07a01eeb1985141",
+        "title": "2-4 네비게이션 바 프로필 클릭"
+      },
+      {
+        "csvRowNumber": 17,
+        "pageId": "2020221954bc83f9b678814520e338d1",
+        "title": "1-13 고정 배너 하단 점 선택"
+      },
+      {
+        "csvRowNumber": 18,
+        "pageId": "2a40221954bc83d3b22181a984089d28",
+        "title": "3-1 시간표 클릭 (과거 로깅) 2026.08.30 이후 로깅 중단"
+      },
+      {
+        "csvRowNumber": 19,
+        "pageId": "c250221954bc829b8abc0108f5d894d9",
+        "title": "3-2 분실물 클릭 (과거 로깅) 2026.08.30 이후 로깅 중단"
+      },
+      {
+        "csvRowNumber": 20,
+        "pageId": "e030221954bc8389a5918184171d55af",
+        "title": "1-9 주변 상점 전체보기 클릭"
+      },
+      {
+        "csvRowNumber": 21,
+        "pageId": "ea70221954bc827f802181dc9cfb103c",
+        "title": "3-3 캠퍼스 부분 세부기능 클릭 (과거 로깅) 2026.08.30 이후 로깅 중단"
+      },
+      {
+        "csvRowNumber": 22,
+        "pageId": "3af0221954bc8252bfb801bde1ca194c",
+        "title": "3-4 교통 부분 세부기능 클릭 (과거 로깅) 2026.08.30 이후 로깅 중단"
+      },
+      {
+        "csvRowNumber": 23,
+        "pageId": "30a0221954bc8297844901591055351f",
+        "title": "1-10 많이 찾는 상점 둘러보기 클릭"
+      },
+      {
+        "csvRowNumber": 24,
+        "pageId": "aef0221954bc826481d601be32054523",
+        "title": "2-1 네비게이션 바 홈 클릭"
+      },
+      {
+        "csvRowNumber": 25,
+        "pageId": "ff20221954bc8379b122015bcea232c0",
+        "title": "3-5 기타 부분 세부기능 클릭 (과거 로깅) 2026.08.30 이후 로깅 중단"
+      },
+      {
+        "csvRowNumber": 26,
+        "pageId": "c2a0221954bc83d08bb781131aa1d6b6",
+        "title": "2-2 네비게이션 바 카테고리 클릭"
+      },
+      {
+        "csvRowNumber": 27,
+        "pageId": "5540221954bc83d0aed681206affda1b",
+        "title": "3-6 카테고리 내부 클릭 (현재 로깅) 2026.08.30 이후 찍히는 로깅"
+      },
+      {
+        "csvRowNumber": 28,
+        "pageId": "ac80221954bc8306b94e018444468d85",
+        "title": "4-1 내 시간표 클릭"
+      },
+      {
+        "csvRowNumber": 29,
+        "pageId": "50c0221954bc8211862701c53ee682cd",
+        "title": "4-2 로그인 클릭"
+      }
+    ],
+    "currentPageCreatedTime": "2026-11-12T05:08:00.264Z",
+    "currentPageFields": {
+      "event_label": "example",
+      "value": "example",
+      "event_category": "click"
+    },
+    "zipMarkdownSha256": "405c8e94b8fecee245277fa7c5a2863d691f43846e01803bf57c6d9cec40eb65"
+  },
+  "fieldDifferencesPreserved": [
+    {
+      "property": "이벤트 이름",
+      "csv": "",
+      "markdown": "0. 이벤트이름",
+      "note": "동일 ID가 과거 DB 템플릿 등록에서는 제목 없음, 이후에는 0. 이벤트이름으로 나타남. CSV 원문은 수정하지 않음."
+    },
+    {
+      "property": "생성일",
+      "csv": "2026년 11월 12일 오후 2:07",
+      "markdown": "2026년 11월 12일 오후 2:08",
+      "note": "생성일 불일치의 원인은 확정하지 않음. ID 판정은 생성일 일치가 아닌 템플릿 등록 이력과 같은 폴더 28개 문서 중 27개 일반 행의 단일 대응에 근거."
+    }
+  ],
+  "unresolvedIdentityCount": 0,
+  "scope": "제공된 ZIP의 해당 CSV 행 식별만 해결. 라이브 워크스페이스 전체 검증·앱 적용·운영 계약 승인을 뜻하지 않음."
+}

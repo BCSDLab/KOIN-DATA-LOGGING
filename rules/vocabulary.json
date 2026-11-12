@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "categories": ["click", "select", "scroll", "swipe", "submit", "fail", "exposure", "toggle"],
+  "platforms": ["WEB", "WEB (모바일)", "ANDROID", "IOS"],
+  "services": {
+    "shop": "DA1", "cafeteria": "DA1", "bus": "DA1", "ticket": "DA1",
+    "real_estate": "DA1", "owner": "DA1", "team_recruit": "DA1", "timetable": "DA1",
+    "account": "DA2", "board": "DA2", "banner": "DA2", "callvan": "DA2", "chat": "DA2",
+    "course_practice": "DA2", "department": "DA2", "facility": "DA2", "main": "DA2"
+  },
+  "screen_overrides": [
+    { "service": "main", "screen_view": "forced_update", "event_name": "DA1", "reason": "2026-11-12 사용자 확정: 강제 업데이트는 DA1. main의 다른 화면은 DA2 유지." }
+  ]
+}

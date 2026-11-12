@@ -1,0 +1,108 @@
+{
+  "documents": 1709,
+  "images": 1472,
+  "fullMigrationVerified": false,
+  "scope": "User-provided ZIP reconciled: 1667 Markdown, 80 CSV, 1473 images. The blank CSV row identity is resolved through database template registration history and sibling reconciliation; title/created-time differences are preserved. Live workspace unfiltered API status is separate.",
+  "sourceDatabaseCount": 41,
+  "imageLinks": 3354,
+  "internalLinks": 9396,
+  "brokenLinks": [],
+  "sourceSnapshots": 1709,
+  "sourceSnapshotArchives": [
+    {
+      "file": "source-snapshots.jsonl.gz",
+      "records": 1434,
+      "sha256": "0612d8ce637dec38dd664448322a90cc973336735779f477f4dc26dcb691455e"
+    },
+    {
+      "file": "recovered-source-snapshots.jsonl.gz",
+      "records": 87,
+      "sha256": "472d42d622a54727fd99dc224c2a3d86ff1cc62df65c2e806e5a1aef5786bd11"
+    },
+    {
+      "file": "hidden-recovered-source-snapshots.jsonl.gz",
+      "records": 42,
+      "sha256": "8b0e1d3e57d9e95e0a238f4b89b295873b1f09140382f284a36b53cae8888893"
+    },
+    {
+      "file": "zip-export-snapshots.jsonl.gz",
+      "records": 1747,
+      "sha256": "adabc79d8f4498ea9e0120c19193ba2bcbc09931b93751bdfee79533d6e5b1ed"
+    },
+    {
+      "file": "pre-zip-refreshed-snapshots.jsonl.gz",
+      "records": 16,
+      "sha256": "efe44449184f0fb646fd780710c9877cc78d263b7c6467b6ca3021ee0ab62df7"
+    }
+  ],
+  "formats": {
+    "png": 1460,
+    "jpeg": 12
+  },
+  "visualReviewAllImages": false,
+  "recoveredOriginalIds": 129,
+  "reviewedContentDifferences": 8,
+  "convertedImageTags": 274,
+  "sourceComparison": {
+    "pages": 1524,
+    "missingFieldsOrImageReferences": []
+  },
+  "validationMethod": {
+    "local": "All link targets checked against current files plus unchanged baseline Git tree. New image hashes checked locally.",
+    "ci": "npm run check:archive checks physical files and all image hashes in a complete GitHub checkout."
+  },
+  "databaseCoverage": {
+    "sourceCount": 41,
+    "trueUnfilteredViewSources": 14,
+    "fullRowCountVerified": false,
+    "fullActiveRowEnumerationSources": 23,
+    "pendingSources": 18,
+    "auditFile": "database-audit.json"
+  },
+  "notionLinksRemoved": true,
+  "notionExternalLinks": 0,
+  "hidden42SnapshotComparison": {
+    "pages": 42,
+    "normalizedFullTextAndPropertiesMatch": true,
+    "issues": []
+  },
+  "zipExportVerification": {
+    "report": "zip-reconciliation.json",
+    "pages": 1667,
+    "dataSources": 41,
+    "images": 1473,
+    "missingPages": 0,
+    "missingImageFiles": 0,
+    "csvTitleExceptions": 0,
+    "liveWorkspaceVerified": false,
+    "validation": {
+      "zipMarkdownPagesCompared": 1667,
+      "fieldsCompared": 11314,
+      "imageReferencesCompared": 3354,
+      "missingFieldsOrImageReferences": [],
+      "notionExternalUrlFiles": [],
+      "unsupportedImageTagFiles": [],
+      "archive": {
+        "documents": 1709,
+        "assets": 1472,
+        "recoveredPages": 129,
+        "links": 9396,
+        "images": 3354,
+        "errors": []
+      },
+      "remoteAssetGitBlobsCompared": 1472,
+      "remoteAssetGitBlobMismatches": 0,
+      "localTestsPassed": 18,
+      "blankCsvRowIdentity": {
+        "resolvedPageId": "f4b0221954bc822c9b7b81490f4a78bd",
+        "namedRowMatches": 27,
+        "unresolvedIdentityCount": 0,
+        "noteLinks": 4
+      }
+    },
+    "csvFilesPreserved": 80,
+    "zipFilesMapped": 3220,
+    "csvTitleResolutions": 1,
+    "blankRowIdentityEvidence": "blank-row-identity.json"
+  }
+}
