@@ -1,0 +1,133 @@
+{
+  "collection-id:fc102219-54bc-82ef-91fc-8754e480ecc2": {
+    "method": "sql_all_pages",
+    "rows": 60
+  },
+  "collection-id:78902219-54bc-8331-aa4f-071acf64bdbe": {
+    "method": "sql_all_pages",
+    "rows": 5
+  },
+  "collection-id:b5102219-54bc-82a4-a268-0777f3b6d12a": {
+    "method": "sql_all_pages",
+    "rows": 19
+  },
+  "collection-id:93002219-54bc-8293-a605-870de88dc926": {
+    "method": "sql_all_pages",
+    "rows": 86
+  },
+  "collection-id:10602219-54bc-8235-912d-07c2ea517c9f": {
+    "method": "sql_all_pages",
+    "rows": 100
+  },
+  "collection-id:82502219-54bc-8370-acd7-073b6298b332": {
+    "method": "sql_all_pages",
+    "rows": 29
+  },
+  "collection-id:58602219-54bc-8256-bc4f-87435c8fb225": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:0a402219-54bc-8389-9129-872d34afac1c": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:1a602219-54bc-828d-9841-0745dd1426cb": {
+    "method": "sql_all_pages",
+    "rows": 78
+  },
+  "collection-id:b7202219-54bc-8398-b4a3-873021571d1c": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:38802219-54bc-83d8-8129-87090586a53a": {
+    "method": "sql_all_pages",
+    "rows": 27
+  },
+  "collection-id:2c502219-54bc-83b1-a613-0753d95c289a": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:7ee02219-54bc-8288-8bc7-07326fbb8240": {
+    "method": "unfiltered_view"
+  },
+  "collection-id:49f02219-54bc-82f0-b068-07847998f7f9": {
+    "method": "unfiltered_view"
+  },
+  "collection-id:80502219-54bc-8225-b570-07e34bc08f60": {
+    "method": "unfiltered_view"
+  },
+  "collection-id:c5d02219-54bc-82ff-a63c-875b84d1ea68": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:f8a02219-54bc-820d-b80c-074e4c92480c": {
+    "method": "unfiltered_view"
+  },
+  "collection-id:1fa02219-54bc-830b-a24a-871d977c3516": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:d3a02219-54bc-8382-917f-8720ada28994": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:4b602219-54bc-828b-9983-8754fd15a78e": {
+    "method": "unfiltered_view"
+  },
+  "collection-id:1c702219-54bc-820a-ad1b-074b9dd8a859": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:d9902219-54bc-829b-ba2c-87575b908b9c": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:a4302219-54bc-8354-b882-07b8382e0e31": {
+    "method": "unfiltered_view"
+  },
+  "collection-id:9ad02219-54bc-8303-8fb9-077258d3f8ad": {
+    "method": "unfiltered_view"
+  },
+  "collection-id:23902219-54bc-828b-afaf-87c79a78eb19": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:b8302219-54bc-8225-bff5-075bf99a149f": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:d3002219-54bc-837f-b590-87925075cf31": {
+    "method": "unfiltered_view"
+  },
+  "collection-id:cfd02219-54bc-8313-9da2-0708bc9b38ea": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:40802219-54bc-8287-a826-8775ab85f6db": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:8fa02219-54bc-83c0-b806-07a6dfa55dbf": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:22102219-54bc-83a0-82e0-870d4c5aace3": {
+    "method": "unfiltered_view"
+  },
+  "collection-id:f2c02219-54bc-825c-9c82-87707a33abf9": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:79402219-54bc-8251-bc33-874cd301a1f5": {
+    "method": "unfiltered_view"
+  },
+  "collection-id:bfb02219-54bc-8293-bc24-872ee9ee2baa": {
+    "method": "unfiltered_view"
+  },
+  "collection-id:78d02219-54bc-8330-a75c-073b6a469840": {
+    "method": "unfiltered_view"
+  },
+  "collection-id:5d202219-54bc-8336-8a30-07c05204d46e": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:6a602219-54bc-836a-bd65-078714dfedd4": {
+    "method": "unfiltered_view"
+  },
+  "collection-id:c7002219-54bc-821e-abec-07eb9eee017a": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:18302219-54bc-8275-9570-878e5aa09f88": {
+    "method": "unfiltered_view"
+  },
+  "collection-id:53602219-54bc-831b-9416-07ed045d1eab": {
+    "method": "filtered_view_union"
+  },
+  "collection-id:20f02219-54bc-82c7-8696-87e7814c4aa8": {
+    "method": "filtered_view_union"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "documents": 1434,
+  "images": 1456,
+  "internalLinks": 1011,
+  "missingImages": [],
+  "fullMigrationVerified": false,
+  "scope": "Reachable child pages and visible database rows; raw snapshots retained",
+  "sourceDatabaseCount": 41,
+  "imageLinks": 2703,
+  "pageLinks": 2077,
+  "brokenImages": [],
+  "brokenPageLinks": [],
+  "sourceSnapshots": 1434,
+  "sourceSnapshotArchive": "source-snapshots.jsonl.gz",
+  "sourceArchiveSha256": "0612d8ce637dec38dd664448322a90cc973336735779f477f4dc26dcb691455e",
+  "formats": {
+    "png": 1444,
+    "jpeg": 12
+  },
+  "visualReviewAllImages": false,
+  "databaseCoverage": {
+    "sql_all_pages": 8,
+    "unfiltered_view": 14,
+    "filtered_view_union": 19
+  },
+  "notionLinksRemoved": true,
+  "rawSha256Note": "index의 rawSha256은 링크 제거 전 로컬 원문 해시. 공개 스냅샷은 링크 제거 후 별도 archive 해시로 확인.",
+  "notionExternalLinks": 0,
+  "localImageReferences": 2703,
+  "missingLocalImageFiles": 0,
+  "linkRedactionNote": "미수집 원문 참조는 URL 대신 ID 텍스트로 보존. 이미지 1,456개는 저장소 파일이며 2,703개 이미지 참조가 연결됨."
+}

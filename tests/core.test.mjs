@@ -11,6 +11,15 @@ const root = path.resolve(import.meta.dirname,'..');
 const model = load(root);
 const copy = () => structuredClone(model);
 const first = m => m.specs[0].data.events[0];
+
+test('source references stay inside the GitHub archive',()=>{
+  for(const spec of model.specs) for(const event of spec.data.events) {
+    assert.match(event.source,/^notion\/pages\/[a-f0-9]{32}\.md$/);
+    assert.ok(fs.existsSync(path.join(root,event.source)));
+  }
+  const changed=copy(); first(changed).source='https://example.invalid/reference';
+  assert.match(validate(changed).join('\n'),/저장소 원문 문서 경로 필요/);
+});
 test('source contracts follow confirmed naming and DA1 forced-update override',()=>{
   assert.deepEqual(validate(model),[]);
   const forced = model.specs.find(s=>s.data.screen_view==='forced_update');

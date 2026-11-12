@@ -57,7 +57,7 @@ export function validate({ specs, vocabulary: v, envelope }) {
       allowed(e, ['description','event_name','event_label','event_category','value','params','platforms','status','source','decision','notes','platform_support'], where);
       if (!text(e.description)) fail(where, '발생 조건 description 필요');
       if (!['approved','draft','legacy','frozen'].includes(e.status)) fail(where, 'status 필요');
-      if (!text(e.source) || !/^https:\/\//.test(e.source)) fail(where, '원문 source URL 필요');
+      if (!text(e.source) || !/^notion\/pages\/[a-f0-9]{32}\.md$/.test(e.source)) fail(where, '저장소 원문 문서 경로 필요');
       if (own(e, 'decision') && !text(e.decision)) fail(where, 'decision은 문자열');
       const segments = typeof e.event_label === 'string' ? e.event_label.split('__') : [];
       if (![4,5].includes(segments.length) || segments.some(s => !snake.test(s))) fail(where, 'label은 snake_case 4~5구간');
@@ -133,6 +133,6 @@ export function generate(model, { preview = false } = {}) {
   }
   const mdEscape = s => String(s).replaceAll('|','\\|').replaceAll('\n',' ');
   let md = `# 로깅 명세 목록\n\n자동 생성. ${preview?'초안 포함 미리보기':'approved 계약만 포함'}. 앱 적용·배포·실수집 검증 완료를 뜻하지 않는다.\n\n| event_label | event_name | screen_view | 발생 조건 | 플랫폼 | 원문 |\n| --- | --- | --- | --- | --- | --- |\n`;
-  md += all.map(e=>`| ${e.event_label} | ${e.event_name} | ${e.screen_view} | ${mdEscape(e.description)} | ${e.platforms.join(', ')} | [원문](${e.source}) |`).join('\n')+'\n';
+  md += all.map(e=>`| ${e.event_label} | ${e.event_name} | ${e.screen_view} | ${mdEscape(e.description)} | ${e.platforms.join(', ')} | [원문](../${e.source}) |`).join('\n')+'\n';
   return { 'logging.ts': ts, 'KoinEvents.kt': kotlin, 'catalog.md': md, 'manifest.json': JSON.stringify({schema_version:1,revision,preview,event_count:all.length,web_count:web.length,android_count:android.length},null,2)+'\n' };
 }

@@ -2,10 +2,10 @@
 
 ## 근거
 
-- [Event Log](https://www.notion.so/f820221954bc82cfbe7e813b975c5be1)
-- [로깅 네이밍룰 v1.0](https://www.notion.so/4000221954bc81469ea6dbe19c7d8be7): 4~5구간·서비스별 DA 배정·2026-11-08 모바일 WEB 4개 카테고리 계약.
-- [새 담당자용 작성 가이드](https://www.notion.so/40b0221954bc81a3a0e6f7a85bc7c628): 기존 6개 필드와 과거/새 로깅 구분. 이 가이드의 링크·예시는 현행 원문과 충돌할 수 있어 계약별 원문을 우선 대조합니다.
-- [강제 업데이트](https://www.notion.so/4150221954bc81658736d9971120feaa) 및 각 YAML의 source에 연결한 상세 5페이지.
+- [Event Log](../notion/pages/f820221954bc82cfbe7e813b975c5be1.md)
+- [로깅 네이밍룰 v1.0](../notion/pages/4000221954bc81469ea6dbe19c7d8be7.md): 4~5구간·서비스별 DA 배정·2026-11-08 모바일 WEB 4개 카테고리 계약.
+- [새 담당자용 작성 가이드](../notion/pages/40b0221954bc81a3a0e6f7a85bc7c628.md): 기존 6개 필드와 과거/새 로깅 구분. 이 가이드의 링크·예시는 현행 원문과 충돌할 수 있어 계약별 원문을 우선 대조합니다.
+- [강제 업데이트](../notion/pages/4150221954bc81658736d9971120feaa.md) 및 각 YAML의 source에 연결한 상세 5페이지.
 
 ## 확정 사항
 

@@ -4,7 +4,7 @@
   "total_source_pages": null,
   "entries": [
     {
-      "source": "https://www.notion.so/4000221954bc81469ea6dbe19c7d8be7",
+      "source": "source-page-id:4000221954bc81469ea6dbe19c7d8be7",
       "event_label": "bus__main_category__category_navigation__timetable_entry__click",
       "status": "approved",
       "migration_state": "structured_pilot",
@@ -12,7 +12,7 @@
       "images_state": "pending"
     },
     {
-      "source": "https://www.notion.so/4000221954bc81469ea6dbe19c7d8be7",
+      "source": "source-page-id:4000221954bc81469ea6dbe19c7d8be7",
       "event_label": "bus__main_category__category_navigation__search_entry__click",
       "status": "approved",
       "migration_state": "structured_pilot",
@@ -20,7 +20,7 @@
       "images_state": "pending"
     },
     {
-      "source": "https://www.notion.so/4000221954bc81469ea6dbe19c7d8be7",
+      "source": "source-page-id:4000221954bc81469ea6dbe19c7d8be7",
       "event_label": "cafeteria__main_category__category_navigation__cafeteria_entry__click",
       "status": "approved",
       "migration_state": "structured_pilot",
@@ -28,7 +28,7 @@
       "images_state": "pending"
     },
     {
-      "source": "https://www.notion.so/4150221954bc8126ab91fa403975d406",
+      "source": "source-page-id:4150221954bc8126ab91fa403975d406",
       "event_label": "main__forced_update__app_update__exposure",
       "status": "approved",
       "migration_state": "structured_pilot",
@@ -36,7 +36,7 @@
       "images_state": "pending"
     },
     {
-      "source": "https://www.notion.so/4150221954bc81abb0fff0dc3714fcee",
+      "source": "source-page-id:4150221954bc81abb0fff0dc3714fcee",
       "event_label": "main__forced_update__app_update__store_entry__click",
       "status": "approved",
       "migration_state": "structured_pilot",
@@ -44,7 +44,7 @@
       "images_state": "pending"
     },
     {
-      "source": "https://www.notion.so/4150221954bc81a28e0fc946e1e57c27",
+      "source": "source-page-id:4150221954bc81a28e0fc946e1e57c27",
       "event_label": "main__forced_update__app_update__already_done__click",
       "status": "approved",
       "migration_state": "structured_pilot",
@@ -52,7 +52,7 @@
       "images_state": "pending"
     },
     {
-      "source": "https://www.notion.so/4150221954bc81eda804ff10d5d301bf",
+      "source": "source-page-id:4150221954bc81eda804ff10d5d301bf",
       "event_label": "main__forced_update__update_popup__close__click",
       "status": "approved",
       "migration_state": "structured_pilot",
@@ -60,7 +60,7 @@
       "images_state": "pending"
     },
     {
-      "source": "https://www.notion.so/4150221954bc81c4bd1ec8bb60a227e2",
+      "source": "source-page-id:4150221954bc81c4bd1ec8bb60a227e2",
       "event_label": "main__forced_update__update_popup__store_entry__click",
       "status": "approved",
       "migration_state": "structured_pilot",
@@ -68,7 +68,7 @@
       "images_state": "pending"
     },
     {
-      "source": "https://www.notion.so/4000221954bc81469ea6dbe19c7d8be7",
+      "source": "source-page-id:4000221954bc81469ea6dbe19c7d8be7",
       "event_label": "owner__main_category__category_navigation__owner_entry__click",
       "status": "approved",
       "migration_state": "structured_pilot",
@@ -76,7 +76,7 @@
       "images_state": "pending"
     },
     {
-      "source": "https://app.notion.com/p/4150221954bc814f8744f126ce0902f5",
+      "source": "source-page-id:4150221954bc814f8744f126ce0902f5",
       "event_label": "forced_update_exit",
       "proposed_label": "main__forced_update__app_update__exit__page_exit",
       "status": "review_pending",
