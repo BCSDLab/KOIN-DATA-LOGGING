@@ -141,5 +141,14 @@
     "fullActiveRowEnumerationSources": 23,
     "pendingSources": 18,
     "auditFile": "database-audit.json"
+  },
+  "zipExportVerification": {
+    "zipSha256": "20b7e670bdd011dae6f53167aa43fbbfd6045a8eccb2ea75689a6f7302315c60",
+    "verifiedSources": 41,
+    "previouslyPendingSourcesCovered": 18,
+    "scope": "user-provided exported snapshot",
+    "liveApiUnfilteredQueryCompleted": false,
+    "report": "zip-reconciliation.json",
+    "csvTitleExceptions": 1
   }
 }

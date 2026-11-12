@@ -403,5 +403,14 @@
     "collection://c7002219-54bc-821e-abec-07eb9eee017a",
     "collection://53602219-54bc-831b-9416-07ed045d1eab",
     "collection://20f02219-54bc-82c7-8696-87e7814c4aa8"
-  ]
+  ],
+  "zipExportVerification": {
+    "zipSha256": "20b7e670bdd011dae6f53167aa43fbbfd6045a8eccb2ea75689a6f7302315c60",
+    "verifiedSources": 41,
+    "previouslyPendingSourcesCovered": 18,
+    "scope": "user-provided exported snapshot",
+    "liveApiUnfilteredQueryCompleted": false,
+    "report": "zip-reconciliation.json",
+    "csvTitleExceptions": 1
+  }
 }

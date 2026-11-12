@@ -1,0 +1,642 @@
+[
+  {
+    "exportFile": "Event Log/Event Log (과거)/게시판/커뮤니티 로깅 b260221954bc8333acdd81a556416db7.csv",
+    "archiveFile": "export-tables/b260221954bc8333acdd81a556416db7-view.csv",
+    "sourceSha256": "352ef95e80801f79f3a1053894f690ced45ac3faeaef96065b67f8698428eb81",
+    "normalizedSha256": "6d4708c1368f10b5eada1ee0c245010b965e428d027a7f7786def59121b392c3",
+    "rows": 3,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/게시판/커뮤니티 로깅 b260221954bc8333acdd81a556416db7_all.csv",
+    "archiveFile": "export-tables/b260221954bc8333acdd81a556416db7.csv",
+    "sourceSha256": "b74e4477d7f8daac9ffadaa4f690061e0ea69a38a1b6b32a798b6fd29168317c",
+    "normalizedSha256": "7f0e65ce00a6449f93bd27039287a2e2f91461c93cfddb1e23d3e185b3291ff4",
+    "rows": 78,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/동아리 (레거시)/동아리 로깅 3aa0221954bc836297a30190ddb094ae.csv",
+    "archiveFile": "export-tables/3aa0221954bc836297a30190ddb094ae-view.csv",
+    "sourceSha256": "00fb9e4dfce7e19ee13fc33c1df52789b1efa3438e2d221dd7fe350ee2e52a1d",
+    "normalizedSha256": "f8fd3dc4be3aacd68339205bf598679bbd672b754fcb179f57c6f4d1ad2d56ab",
+    "rows": 1,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/동아리 (레거시)/동아리 로깅 3aa0221954bc836297a30190ddb094ae_all.csv",
+    "archiveFile": "export-tables/3aa0221954bc836297a30190ddb094ae.csv",
+    "sourceSha256": "58492cc7170235c197fe5c5a7a9abdf17d3e28f12f61cc5c8b70daa869fc9d13",
+    "normalizedSha256": "122b407a253c376fc395aafa26a0d8c180dcae033497bac8b9b24970338a974e",
+    "rows": 57,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/로그인 회원가입 정보수정/버스 로깅 (1) 58f0221954bc831a8c0c01aa8270d398.csv",
+    "archiveFile": "export-tables/58f0221954bc831a8c0c01aa8270d398-view.csv",
+    "sourceSha256": "8d25671d967d4a45a0829ecb95c754f185a1c27ce5c1a73fd4ae5ea67b81bab3",
+    "normalizedSha256": "ef87410d5a21400c8dcac51cd9f22891f38f6db2bbae2399e12c47a13551f3aa",
+    "rows": 11,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/로그인 회원가입 정보수정/버스 로깅 (1) 58f0221954bc831a8c0c01aa8270d398_all.csv",
+    "archiveFile": "export-tables/58f0221954bc831a8c0c01aa8270d398.csv",
+    "sourceSha256": "99d781e5f5b7c4d69746f18d9c813a237689ee6c25c6da6012e5d0b29748970a",
+    "normalizedSha256": "ec904f7a2fe2f7792bbfcad9e6ee9b8c4615d366543740df62601d21a52b9635",
+    "rows": 11,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/로그인 회원가입 정보수정 V2/버스 로깅 (1) ab90221954bc824bad11013895332879.csv",
+    "archiveFile": "export-tables/ab90221954bc824bad11013895332879-view.csv",
+    "sourceSha256": "ca4150fa2e4f8770bf9d9ccca3ea5c6efbcec8bb2fba5a693c56ff5311e95c47",
+    "normalizedSha256": "2835e2a7280c07ae34f948a31b1e99f83a110643287be13974a1ddb4a9ce9200",
+    "rows": 23,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/로그인 회원가입 정보수정 V2/버스 로깅 (1) ab90221954bc824bad11013895332879_all.csv",
+    "archiveFile": "export-tables/ab90221954bc824bad11013895332879.csv",
+    "sourceSha256": "ac948832e4d1019256e88d293d4212c9fc0957f70104e2165e38030b9427b039",
+    "normalizedSha256": "ca4000b02eb5b7540b12324c086eebf1b3e868740bbeb13967fb9547abddfac6",
+    "rows": 23,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/모의수강신청/동아리 로깅 (2) 9670221954bc83c2b88d016e5fbf5576.csv",
+    "archiveFile": "export-tables/9670221954bc83c2b88d016e5fbf5576-view.csv",
+    "sourceSha256": "c2f6946eb9ee6a301ea76abfd41939d955c9edba348637f7d018095e5daeddee",
+    "normalizedSha256": "fa29e6c1a770849bf652d8d12ca5b4ac5af8e8a2079edc51e6482358285a8476",
+    "rows": 1,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/모의수강신청/동아리 로깅 (2) 9670221954bc83c2b88d016e5fbf5576_all.csv",
+    "archiveFile": "export-tables/9670221954bc83c2b88d016e5fbf5576.csv",
+    "sourceSha256": "2c70fd217cca66fc12627d369da6ab2c69e6901db0678bdc8a7aab5b1ec30c9f",
+    "normalizedSha256": "133ce5fbe9ed9bad2855c33a53fa32a49b28dd2382d1c6a8028976bdf08ab39b",
+    "rows": 6,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/미래의 주변상점 (레거시)/BUSINESS NEW Log 4e40221954bc82a0bad501583db5a532.csv",
+    "archiveFile": "export-tables/4e40221954bc82a0bad501583db5a532-view.csv",
+    "sourceSha256": "46b1596f785a0811cbee38eae18a9828c1f4ee01fd475bc372ef421b1e0bcb85",
+    "normalizedSha256": "05d5a3ae178abcb020c7ecc64c4b2b82820e110cc1ade5933874fc1a9335ce20",
+    "rows": 100,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/미래의 주변상점 (레거시)/BUSINESS NEW Log 4e40221954bc82a0bad501583db5a532_all.csv",
+    "archiveFile": "export-tables/4e40221954bc82a0bad501583db5a532.csv",
+    "sourceSha256": "5ba396b54ad78ceba4ad9927225d814f468e7c8edea4f9d0c08994f3c4cef3ae",
+    "normalizedSha256": "648393de524623609c42d6d839b1563f04e4b223c8b77d38a3c5fb05965c1ce2",
+    "rows": 100,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/배너/배너 로깅 83d0221954bc8259b7e8813d963240a2.csv",
+    "archiveFile": "export-tables/83d0221954bc8259b7e8813d963240a2-view.csv",
+    "sourceSha256": "b75aff88aea09b14b325a7172e065a1236cb2189af86633b318f8e1bbf06e071",
+    "normalizedSha256": "219b1943fbe4bd5db9820e3eeb843fed2d8853e15cdde313144202bc7c7563cb",
+    "rows": 1,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/배너/배너 로깅 83d0221954bc8259b7e8813d963240a2_all.csv",
+    "archiveFile": "export-tables/83d0221954bc8259b7e8813d963240a2.csv",
+    "sourceSha256": "3214fb677d1193cf36f4c28cb32a72dbab97f27d125fd0d87b9155109076be40",
+    "normalizedSha256": "56e8e6425b1128e777de81dcb3f93c6cf401d59cd6a1a555cec7510e3250a75e",
+    "rows": 61,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/버스/버스 로깅 5e00221954bc836a89a50168685f47f3.csv",
+    "archiveFile": "export-tables/5e00221954bc836a89a50168685f47f3-view.csv",
+    "sourceSha256": "a21d9d5da611572a4d3ccf715d8815daf31007ab763a5970576b7ed82bdfe312",
+    "normalizedSha256": "251b0e9af78e2d3c5627c29e0d3f5ccc1bdc5f3d07714ed7388a851872c8c4d1",
+    "rows": 4,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/버스/버스 로깅 5e00221954bc836a89a50168685f47f3_all.csv",
+    "archiveFile": "export-tables/5e00221954bc836a89a50168685f47f3.csv",
+    "sourceSha256": "8bb031fc804b361d9755e2d524c5acb078dc2ee4953104749e0067467632e888",
+    "normalizedSha256": "4643ca2303e9a48c20ae38b20ea26fba935b26a398a3824875d3df094e204370",
+    "rows": 43,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/복덕방/복덕방 로깅 78e0221954bc83d8bb5701827d66f858.csv",
+    "archiveFile": "export-tables/78e0221954bc83d8bb5701827d66f858-view.csv",
+    "sourceSha256": "43acb8a83b6b9545727a3131c46045650b1e55907426fdf28322efe0e8d71a7c",
+    "normalizedSha256": "98d909ee96be3b771358be94e742cac148f0975e1e2b4698a837efc1761bffab",
+    "rows": 6,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/복덕방/복덕방 로깅 78e0221954bc83d8bb5701827d66f858_all.csv",
+    "archiveFile": "export-tables/78e0221954bc83d8bb5701827d66f858.csv",
+    "sourceSha256": "fa632bdbc2a29193caa39db71877faf72643367ebe878427c7b807a9e048e0e3",
+    "normalizedSha256": "1f0d506e2a5b1a1b39de38e057d987c8fbba4d87ae05db7e084746af2477f7a2",
+    "rows": 6,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/사장님/사장님 로깅 87c0221954bc831da9d901a5b89dc0f5.csv",
+    "archiveFile": "export-tables/87c0221954bc831da9d901a5b89dc0f5-view.csv",
+    "sourceSha256": "4418be6f715cac4dbd5733eedd2185563e349ad2fb1c8e18ef513e7ee1ddc7c8",
+    "normalizedSha256": "69fab2ab868940df05c8b994388a8582f5aeedd22c5e5ab96636dab860aa2a1b",
+    "rows": 5,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/사장님/사장님 로깅 87c0221954bc831da9d901a5b89dc0f5_all.csv",
+    "archiveFile": "export-tables/87c0221954bc831da9d901a5b89dc0f5.csv",
+    "sourceSha256": "161fd97dc763214a8c2c98c78eb08c8db73a08836eddfb123f17f9d67e7eb07f",
+    "normalizedSha256": "6f39a47243b944334ab460bcd606bfe6f9197b323631e529b3d6e005c03a3c80",
+    "rows": 19,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/새 주변상점 (레거시)/BUSINESS NEW Log e180221954bc8391a32a81fe2fb00009.csv",
+    "archiveFile": "export-tables/e180221954bc8391a32a81fe2fb00009-view.csv",
+    "sourceSha256": "4114e37722b67bebb6dad81491290e87e4c70fd68649df74b68158734d34dd64",
+    "normalizedSha256": "89dba6a9fe8de44c1e60d6512e33843cea021c55d1bb9132fccd12d9165d43bd",
+    "rows": 86,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/새 주변상점 (레거시)/BUSINESS NEW Log e180221954bc8391a32a81fe2fb00009_all.csv",
+    "archiveFile": "export-tables/e180221954bc8391a32a81fe2fb00009.csv",
+    "sourceSha256": "8497105c1bb1cc5641ba54dfc421721da1be3af46d6f2ecc08e64f4805c7b4de",
+    "normalizedSha256": "35ac8331d65d12ca52d492fcc82ae697acdd76c962cbc06d01149a197bd0f858",
+    "rows": 86,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/시간표/시간표 로깅 0990221954bc83f282b58186967f0233.csv",
+    "archiveFile": "export-tables/0990221954bc83f282b58186967f0233-view.csv",
+    "sourceSha256": "08abca36f8fffeea1c2030acba83ba8430ebe3761e153842b839d8581900104a",
+    "normalizedSha256": "0d0437d1721e93239a38f125a8844d83f38d88e4c90c64310432bab928b08532",
+    "rows": 29,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/시간표/시간표 로깅 0990221954bc83f282b58186967f0233_all.csv",
+    "archiveFile": "export-tables/0990221954bc83f282b58186967f0233.csv",
+    "sourceSha256": "e7f2aa1529ae5597efa0e5a00bb5b78fe244dfce7e8e942af0a9b1f64c76d5c7",
+    "normalizedSha256": "392ada009e3304c05e2125f644b9f22d66dcb240eb3246157d8efcc046cb3612",
+    "rows": 29,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/식단/제목 없음 67a0221954bc838693e6016b1d4e569b_로깅 완료 d300221954bc837fb59087925075cf31.csv",
+    "archiveFile": "export-tables/d300221954bc837fb59087925075cf31-view.csv",
+    "sourceSha256": "2eb4f9600b5a6cf9ebd3b5ca0b36ee7b8d555f3b3fedd237cd74b02aa8c77db6",
+    "normalizedSha256": "f4ed819f78d7c3a9b97563739b1dab703541fe0dcb6448f8a0b8dd3a1407a446",
+    "rows": 8,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/식단/제목 없음 67a0221954bc838693e6016b1d4e569b_로깅 완료 d300221954bc837fb59087925075cf31_all.csv",
+    "archiveFile": "export-tables/d300221954bc837fb59087925075cf31.csv",
+    "sourceSha256": "b05113e74f3fe3ed0205bc1083587cdc76fa4b116a9dbc1f06e22aa01c1e23a4",
+    "normalizedSha256": "328805775b924bd3d9db8002ea7fa8650923037e9bfa5a37b0c4c62c366a4db1",
+    "rows": 29,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/식단/제목 없음 67a0221954bc838693e6016b1d4e569b_새 데이터 소스 20f0221954bc82c7869687e7814c4aa8_all.csv",
+    "archiveFile": "export-tables/20f0221954bc82c7869687e7814c4aa8.csv",
+    "sourceSha256": "7f97940282cc97d96619124b1de45d1c44a595ab8c0217aec3a9d2c686320825",
+    "normalizedSha256": "0ec5f8f4a0fb55c32dc9b846627f89f7690bd7dc05376313d86374e2705e03a4",
+    "rows": 0,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/졸업학점 계산기 (레거시)/버스 로깅 (1) 1640221954bc83dfa0b6814a50462e53.csv",
+    "archiveFile": "export-tables/1640221954bc83dfa0b6814a50462e53-view.csv",
+    "sourceSha256": "8128af1181f121ab3cab1689378c0a2455e3b1a05010fbc7978a007a3a14888b",
+    "normalizedSha256": "e8dff5ea993b32a21f15d9595f75dcda7e17cc9cb2e9f2848fdc04d9cce2e7d9",
+    "rows": 17,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/졸업학점 계산기 (레거시)/버스 로깅 (1) 1640221954bc83dfa0b6814a50462e53_all.csv",
+    "archiveFile": "export-tables/1640221954bc83dfa0b6814a50462e53.csv",
+    "sourceSha256": "565d7dc451e1f41ec4d992106301abca5b11fe81671cfdf660c00af0e20e0329",
+    "normalizedSha256": "cca1096525c35b17c13f9bb1ea193e485f9b43b72f966d7fed022d9140d28f7f",
+    "rows": 17,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/주변상점/버스 로깅 (2) 5320221954bc8325817681925a8fabeb.csv",
+    "archiveFile": "export-tables/5320221954bc8325817681925a8fabeb-view.csv",
+    "sourceSha256": "e6742577b9b60ded1d75937974a9a778685c55da7515da3fcd850f632183f16f",
+    "normalizedSha256": "08122d340621f0129067835215284f524ca5c5034e81e422868589e21bbdb2d7",
+    "rows": 6,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/주변상점/버스 로깅 (2) 5320221954bc8325817681925a8fabeb_all.csv",
+    "archiveFile": "export-tables/5320221954bc8325817681925a8fabeb.csv",
+    "sourceSha256": "f8f89eb8d54fe39aba86e2924c7bb88abfb0e713dd9bd2c7951c617b24d639cb",
+    "normalizedSha256": "349a52923c3367963cd5a4ca72001928f698e669740897e83f5cc5a027740164",
+    "rows": 53,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/콜밴팟/동아리 로깅 0cb0221954bc829fb9f6015ff7edeed9.csv",
+    "archiveFile": "export-tables/0cb0221954bc829fb9f6015ff7edeed9-view.csv",
+    "sourceSha256": "63fcaedd954600d439feb29ef41e896435aea782222bc1ca5ff80274489c7ede",
+    "normalizedSha256": "d640e8f80637bfb081441f0236e094ff9167445d2803c76645dff28244df7ce5",
+    "rows": 2,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/콜밴팟/동아리 로깅 0cb0221954bc829fb9f6015ff7edeed9_all.csv",
+    "archiveFile": "export-tables/0cb0221954bc829fb9f6015ff7edeed9.csv",
+    "sourceSha256": "f6535611d37ef00a36056cd401666466ab716d9829c852114dc3b6e0c2f1d6b7",
+    "normalizedSha256": "4b4f58eab41518bd9aabb89302feccd79e86ccf7440afa3f5676e79304066959",
+    "rows": 60,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/팀원 모집/팀원 모집 로깅 5c10221954bc8379af3281b3778916b0.csv",
+    "archiveFile": "export-tables/5c10221954bc8379af3281b3778916b0-view.csv",
+    "sourceSha256": "4acb1e47b338f4dae85f9ed67a9bc0d06cb4418a4efb7ef443fd5427f799ef81",
+    "normalizedSha256": "d2b21f1b103437e87c977a585c43ec49406359d3af69b500c4cfa1e9222854e1",
+    "rows": 27,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/팀원 모집/팀원 모집 로깅 5c10221954bc8379af3281b3778916b0_all.csv",
+    "archiveFile": "export-tables/5c10221954bc8379af3281b3778916b0.csv",
+    "sourceSha256": "99de4f8852a4be736d8e5c9c2b8cc3cadb671821c0a6ac0671b00a5cf6fd6472",
+    "normalizedSha256": "5cc762f783e66ca1e2b83f884fb261a2b07a49834e1fdcb86061f880d9b485af",
+    "rows": 27,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/학교 부서 정보/버스 로깅 (3) fe10221954bc823e829581640e258fb2.csv",
+    "archiveFile": "export-tables/fe10221954bc823e829581640e258fb2-view.csv",
+    "sourceSha256": "2961b79045a4d1f5d0a225385352f3bd5cc89f0a9eb69b00b6f15fa9dd083154",
+    "normalizedSha256": "8091253e25ae9540a25f09e18642b339f79fc58dfc0e8d1894bf3cf6e080d1f6",
+    "rows": 6,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/학교 부서 정보/버스 로깅 (3) fe10221954bc823e829581640e258fb2_all.csv",
+    "archiveFile": "export-tables/fe10221954bc823e829581640e258fb2.csv",
+    "sourceSha256": "836f487d4f3bb579a6a5624d6a861ac35d8ed19944e46501af14da56c5bca047",
+    "normalizedSha256": "4f0d9c57fe5e3539f624551d548fbbe0aabc019701b3d3b3e2fddbbda1962e21",
+    "rows": 6,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/홈화면 리디자인/버스 로깅 (3) fc30221954bc826fb24881ddd9404785.csv",
+    "archiveFile": "export-tables/fc30221954bc826fb24881ddd9404785-view.csv",
+    "sourceSha256": "d274207f223c82c9beddfe4e80bc878f38f42c7eaee44fd887e84bc9fa9926ea",
+    "normalizedSha256": "584057db5b473e7dc12e01ef51c5d38966430139006a86c06d7efc4ddafa5514",
+    "rows": 26,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/Event Log (과거)/홈화면 리디자인/버스 로깅 (3) fc30221954bc826fb24881ddd9404785_all.csv",
+    "archiveFile": "export-tables/fc30221954bc826fb24881ddd9404785.csv",
+    "sourceSha256": "3d8228d1be5a446067c69c82916b70a90ef7893d53f049cf32e0f06653f19aff",
+    "normalizedSha256": "e6f7f569bba3cd0314ebc6769732dc8018523b1d5df3258f14e6a6643b869696",
+    "rows": 26,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/강제 업데이트/동아리 로깅 2520221954bc82a69584812d22e3f378.csv",
+    "archiveFile": "export-tables/2520221954bc82a69584812d22e3f378-view.csv",
+    "sourceSha256": "4f6c90d4d3da68d17258ce00fe29e72fc60296ebf974a9678f27495d0aff3f34",
+    "normalizedSha256": "e87676cd0b017c8fe5a8c46e27f8b335ba6886e8c9df837803b5966cd7a5dd43",
+    "rows": 6,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/강제 업데이트/동아리 로깅 2520221954bc82a69584812d22e3f378_all.csv",
+    "archiveFile": "export-tables/2520221954bc82a69584812d22e3f378.csv",
+    "sourceSha256": "4eed5038e486d03ebc7ba320d6420ca8227ee68e5826942bf5be73f1d6eb426f",
+    "normalizedSha256": "ff9406ce893abea77218a801d9340172d4a380d29c6f2367047b46f855a700b4",
+    "rows": 6,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/게시판/커뮤니티 로깅 8010221954bc83f0ad4001e87869c863.csv",
+    "archiveFile": "export-tables/8010221954bc83f0ad4001e87869c863-view.csv",
+    "sourceSha256": "352ef95e80801f79f3a1053894f690ced45ac3faeaef96065b67f8698428eb81",
+    "normalizedSha256": "6d4708c1368f10b5eada1ee0c245010b965e428d027a7f7786def59121b392c3",
+    "rows": 3,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/게시판/커뮤니티 로깅 8010221954bc83f0ad4001e87869c863_all.csv",
+    "archiveFile": "export-tables/8010221954bc83f0ad4001e87869c863.csv",
+    "sourceSha256": "57fdefc6e9e65505146ecc55f333b46effecddc199f164e7d4e8c03d234e8c9e",
+    "normalizedSha256": "83c1815aa96e2c48627737098bef2c7b955bf28b88ad6d5b5b2683b9dcab3ac4",
+    "rows": 78,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/동아리 - 레거시/동아리 로깅 2040221954bc82ad8edd01244831348f.csv",
+    "archiveFile": "export-tables/2040221954bc82ad8edd01244831348f-view.csv",
+    "sourceSha256": "00fb9e4dfce7e19ee13fc33c1df52789b1efa3438e2d221dd7fe350ee2e52a1d",
+    "normalizedSha256": "f8fd3dc4be3aacd68339205bf598679bbd672b754fcb179f57c6f4d1ad2d56ab",
+    "rows": 1,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/동아리 - 레거시/동아리 로깅 2040221954bc82ad8edd01244831348f_all.csv",
+    "archiveFile": "export-tables/2040221954bc82ad8edd01244831348f.csv",
+    "sourceSha256": "1c5e1eef9c6799a306a91a51fab8d2a5ccd0e6eac12cb65829853b334f1e1e83",
+    "normalizedSha256": "d13b71ad6d2afebb824485608bae9ab69c121e084be0fddbd322dd7f0393998d",
+    "rows": 57,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/로그인 회원가입 정보수정 - 레거시/버스 로깅 (1) 56e0221954bc8333bb0e01660972038f.csv",
+    "archiveFile": "export-tables/56e0221954bc8333bb0e01660972038f-view.csv",
+    "sourceSha256": "8d25671d967d4a45a0829ecb95c754f185a1c27ce5c1a73fd4ae5ea67b81bab3",
+    "normalizedSha256": "ef87410d5a21400c8dcac51cd9f22891f38f6db2bbae2399e12c47a13551f3aa",
+    "rows": 11,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/로그인 회원가입 정보수정 - 레거시/버스 로깅 (1) 56e0221954bc8333bb0e01660972038f_all.csv",
+    "archiveFile": "export-tables/56e0221954bc8333bb0e01660972038f.csv",
+    "sourceSha256": "1663e01e816991ed05a56e5951ab33308cd7d8491f81c916e9efab8dc7813801",
+    "normalizedSha256": "6e15de398c9598eb693bddc56e218a36be51ab2dc6db1bd0aae643957231eb87",
+    "rows": 11,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/로그인 회원가입 정보수정 V2/버스 로깅 (1) 22a0221954bc82aab4b9018c514e179b.csv",
+    "archiveFile": "export-tables/22a0221954bc82aab4b9018c514e179b-view.csv",
+    "sourceSha256": "d1cfcb60ba7202b278d37df6d25277d0216cf76fd0c560d3ae6bc01141a6f0fb",
+    "normalizedSha256": "9f82568cf15818049bd4b2d6fb45a0c3b5c323a8ce8d6f29a88e69bf5bdc2f5e",
+    "rows": 23,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/로그인 회원가입 정보수정 V2/버스 로깅 (1) 22a0221954bc82aab4b9018c514e179b_all.csv",
+    "archiveFile": "export-tables/22a0221954bc82aab4b9018c514e179b.csv",
+    "sourceSha256": "79bce8e19c450a6e24cbc8190622fa2f7e83b249eb2e5c9041b431be3c04ca76",
+    "normalizedSha256": "7b6d76227839456c2e2cb3caa929e1a996a9be85be193c585c96acc6e685b628",
+    "rows": 23,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/모의수강신청/동아리 로깅 (2) ec40221954bc82d6afd5812eba5c35ea.csv",
+    "archiveFile": "export-tables/ec40221954bc82d6afd5812eba5c35ea-view.csv",
+    "sourceSha256": "c2f6946eb9ee6a301ea76abfd41939d955c9edba348637f7d018095e5daeddee",
+    "normalizedSha256": "fa29e6c1a770849bf652d8d12ca5b4ac5af8e8a2079edc51e6482358285a8476",
+    "rows": 1,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/모의수강신청/동아리 로깅 (2) ec40221954bc82d6afd5812eba5c35ea_all.csv",
+    "archiveFile": "export-tables/ec40221954bc82d6afd5812eba5c35ea.csv",
+    "sourceSha256": "27078f4c6eb4c98a1fe2bdb089a50ef1ef940587049829f13dab8525af47cb1b",
+    "normalizedSha256": "cd85e9bf36ec4e46cd21f792f6be62310efaa0ecaa936c1b8c6604fd937a82e0",
+    "rows": 6,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/미래의 주변상점 - 레거시/BUSINESS NEW Log 4820221954bc831789430119bb73a641.csv",
+    "archiveFile": "export-tables/4820221954bc831789430119bb73a641-view.csv",
+    "sourceSha256": "4968a4041ac9bb82dbc67254776240510fe63a00c718941d4d89c2f99bac78cf",
+    "normalizedSha256": "151751c2ec30bdfa6d74e576c78274ce43a8902b3d6ebcd024acdfefc1251c74",
+    "rows": 100,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/미래의 주변상점 - 레거시/BUSINESS NEW Log 4820221954bc831789430119bb73a641_all.csv",
+    "archiveFile": "export-tables/4820221954bc831789430119bb73a641.csv",
+    "sourceSha256": "a95f047c72e48c74b3624567475480d9bc84a233173e2268a182b4653fc6a905",
+    "normalizedSha256": "b4564423f5ccb04af9b3bf975258a2f580286312fb3aa550e07dd1146738a108",
+    "rows": 100,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/배너/배너 로깅 6790221954bc82dabbf881cb021494ce.csv",
+    "archiveFile": "export-tables/6790221954bc82dabbf881cb021494ce-view.csv",
+    "sourceSha256": "b75aff88aea09b14b325a7172e065a1236cb2189af86633b318f8e1bbf06e071",
+    "normalizedSha256": "219b1943fbe4bd5db9820e3eeb843fed2d8853e15cdde313144202bc7c7563cb",
+    "rows": 1,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/배너/배너 로깅 6790221954bc82dabbf881cb021494ce_all.csv",
+    "archiveFile": "export-tables/6790221954bc82dabbf881cb021494ce.csv",
+    "sourceSha256": "46c8a8c52376c4c923113b9ace940e3a74774dbf1b8dd566f36be13d34e16654",
+    "normalizedSha256": "7d932c2262032408e0de4a114a243d68537168233c38c692f703bc9f8a4024bc",
+    "rows": 62,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/버스/버스 로깅 4a00221954bc83edaad20107d02a79cc.csv",
+    "archiveFile": "export-tables/4a00221954bc83edaad20107d02a79cc-view.csv",
+    "sourceSha256": "a21d9d5da611572a4d3ccf715d8815daf31007ab763a5970576b7ed82bdfe312",
+    "normalizedSha256": "251b0e9af78e2d3c5627c29e0d3f5ccc1bdc5f3d07714ed7388a851872c8c4d1",
+    "rows": 4,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/버스/버스 로깅 4a00221954bc83edaad20107d02a79cc_all.csv",
+    "archiveFile": "export-tables/4a00221954bc83edaad20107d02a79cc.csv",
+    "sourceSha256": "2bb8c7e4400df9696d6f968837dfd04c9cc1d9e47b1a60de06ee85196bc598cc",
+    "normalizedSha256": "ecc0cd3bc610b6b9ef8ad10ceceaa7d0a1d8625578800abdb9b6460302a74d46",
+    "rows": 43,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/복덕방/복덕방 로깅 58a0221954bc8353a9438138a98d080d.csv",
+    "archiveFile": "export-tables/58a0221954bc8353a9438138a98d080d-view.csv",
+    "sourceSha256": "1f759dc6d838650e62f2673dbdba4bb2514e99c120d4dcc79f26c4aa6b87d8d8",
+    "normalizedSha256": "ac170036e4ce6e320a1ade3bff4850e7442c065952126cfcac106816f44e9b62",
+    "rows": 5,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/복덕방/복덕방 로깅 58a0221954bc8353a9438138a98d080d_all.csv",
+    "archiveFile": "export-tables/58a0221954bc8353a9438138a98d080d.csv",
+    "sourceSha256": "c0edc6fd513c5058617233630866ad806c7886f682becc396d4531534d91ece5",
+    "normalizedSha256": "0a36ec116de062513a76a1358db53f87bf926589d8fd93ac0e042b84600a7daa",
+    "rows": 5,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/사장님/사장님 로깅 2160221954bc83f995d681f226a2183d.csv",
+    "archiveFile": "export-tables/2160221954bc83f995d681f226a2183d-view.csv",
+    "sourceSha256": "4418be6f715cac4dbd5733eedd2185563e349ad2fb1c8e18ef513e7ee1ddc7c8",
+    "normalizedSha256": "69fab2ab868940df05c8b994388a8582f5aeedd22c5e5ab96636dab860aa2a1b",
+    "rows": 5,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/사장님/사장님 로깅 2160221954bc83f995d681f226a2183d_all.csv",
+    "archiveFile": "export-tables/2160221954bc83f995d681f226a2183d.csv",
+    "sourceSha256": "a6c3440144f42ec2d5c83b6bfc9d319c34419c624bb631686b3a5dcb562bc511",
+    "normalizedSha256": "2c42ae066a47c2f5b555ba6285f073a98b94e2fc155d72ae34d45e163f6e426e",
+    "rows": 19,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/새 주변상점 - 레거시/BUSINESS NEW Log e040221954bc83949daa81401ee55441.csv",
+    "archiveFile": "export-tables/e040221954bc83949daa81401ee55441-view.csv",
+    "sourceSha256": "4114e37722b67bebb6dad81491290e87e4c70fd68649df74b68158734d34dd64",
+    "normalizedSha256": "89dba6a9fe8de44c1e60d6512e33843cea021c55d1bb9132fccd12d9165d43bd",
+    "rows": 86,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/새 주변상점 - 레거시/BUSINESS NEW Log e040221954bc83949daa81401ee55441_all.csv",
+    "archiveFile": "export-tables/e040221954bc83949daa81401ee55441.csv",
+    "sourceSha256": "9403ac14207c52b71517817fe9486478edf3675f27cfd2a1d7668667488127ec",
+    "normalizedSha256": "8430aa9683f633e07f72d1c9536be9de890d2449131f005109d57ce306cbb075",
+    "rows": 86,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/시간표/시간표 로깅 8e10221954bc821ab8d20122c7386af7.csv",
+    "archiveFile": "export-tables/8e10221954bc821ab8d20122c7386af7-view.csv",
+    "sourceSha256": "441c3db163d7370a21112abdb76628ebfd546f01bcbcb8d4d3cd50504e4551c6",
+    "normalizedSha256": "25d8bb9830a88e2887619f754f787f25149700670c16657b518245bdf8472c0e",
+    "rows": 29,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/시간표/시간표 로깅 8e10221954bc821ab8d20122c7386af7_all.csv",
+    "archiveFile": "export-tables/8e10221954bc821ab8d20122c7386af7.csv",
+    "sourceSha256": "5d492e4d6aa84fa49c849ccd4a46a01181f66bab71dd364a3ada060a60731d16",
+    "normalizedSha256": "e5eeebd91672ad802ebf79e6fd014b2739205caf6f722b0bc09d5693079e52aa",
+    "rows": 29,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/식단/제목 없음 e620221954bc826fafe3019885892880_로깅 완료 8250221954bc8370acd7073b6298b332.csv",
+    "archiveFile": "export-tables/8250221954bc8370acd7073b6298b332-view.csv",
+    "sourceSha256": "50304714137ec4ef5efcd47ddcae3498b098f2d05ce0887ef477d6db02298019",
+    "normalizedSha256": "0d211f09740286160cfb75f3d826775e9a9636970fc814fef2afeec6cf9773fd",
+    "rows": 8,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/식단/제목 없음 e620221954bc826fafe3019885892880_로깅 완료 8250221954bc8370acd7073b6298b332_all.csv",
+    "archiveFile": "export-tables/8250221954bc8370acd7073b6298b332.csv",
+    "sourceSha256": "aa5a5fe9a5d78f6a7b449502c639fdb6546b8b08dfd4990f946615026e5547f2",
+    "normalizedSha256": "56e2b2f838631fe44b47b9c059930e32bc106acb4c5323c88349973c565a8535",
+    "rows": 29,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/식단/제목 없음 e620221954bc826fafe3019885892880_새 데이터 소스 5860221954bc8256bc4f87435c8fb225_all.csv",
+    "archiveFile": "export-tables/5860221954bc8256bc4f87435c8fb225.csv",
+    "sourceSha256": "7f97940282cc97d96619124b1de45d1c44a595ab8c0217aec3a9d2c686320825",
+    "normalizedSha256": "0ec5f8f4a0fb55c32dc9b846627f89f7690bd7dc05376313d86374e2705e03a4",
+    "rows": 0,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/졸업학점 계산기 - 레거시/버스 로깅 (1) 1990221954bc8200aa748144382109da.csv",
+    "archiveFile": "export-tables/1990221954bc8200aa748144382109da-view.csv",
+    "sourceSha256": "8128af1181f121ab3cab1689378c0a2455e3b1a05010fbc7978a007a3a14888b",
+    "normalizedSha256": "e8dff5ea993b32a21f15d9595f75dcda7e17cc9cb2e9f2848fdc04d9cce2e7d9",
+    "rows": 17,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/졸업학점 계산기 - 레거시/버스 로깅 (1) 1990221954bc8200aa748144382109da_all.csv",
+    "archiveFile": "export-tables/1990221954bc8200aa748144382109da.csv",
+    "sourceSha256": "0a4d73f6bda7b5b3987d72eb97ce25cab18390adb31a3307273005541095ace9",
+    "normalizedSha256": "4eaa7e0c57a0c1ef1e506f38991188354fa1920031fc1b2ec04b703f9dde959e",
+    "rows": 17,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/주변상점/버스 로깅 (2) 5aa0221954bc833da5998127a23c6640.csv",
+    "archiveFile": "export-tables/5aa0221954bc833da5998127a23c6640-view.csv",
+    "sourceSha256": "c0fee4e5f750800af915c8b225c9d5653d5e0540e0212cfeff4cba9c4a5476b3",
+    "normalizedSha256": "cf31e56ab74d8fa9e5b16ec020bebc411aee548ae937daad510c514d07891659",
+    "rows": 6,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/주변상점/버스 로깅 (2) 5aa0221954bc833da5998127a23c6640_all.csv",
+    "archiveFile": "export-tables/5aa0221954bc833da5998127a23c6640.csv",
+    "sourceSha256": "bbcca1d1a6c9e6fe20efca3f9d418fe8113469c9f5da78032333e6dd0ea152e7",
+    "normalizedSha256": "8807c03c5044a5114986a0d1e21ca13665c5950dec323dd7abfa66e7f3857e6f",
+    "rows": 60,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/콜밴팟/동아리 로깅 f930221954bc8331a24f01ffdad3190d.csv",
+    "archiveFile": "export-tables/f930221954bc8331a24f01ffdad3190d-view.csv",
+    "sourceSha256": "bcbe99cbe819516aae18946900d9ddb94f484f21827f5841d0829191ca5e3c84",
+    "normalizedSha256": "0c9e90969eedc5ad7108491d4cdfa3276f3ff005b367c828de2e28d91d76a249",
+    "rows": 8,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/콜밴팟/동아리 로깅 f930221954bc8331a24f01ffdad3190d_all.csv",
+    "archiveFile": "export-tables/f930221954bc8331a24f01ffdad3190d.csv",
+    "sourceSha256": "8a3c0bc376eed3981a569bf3ed767e674950f8388793c01d37b452879640b61a",
+    "normalizedSha256": "4469dd7ab1c3aed17a8a10b144505a52e22b58952a5b594b4d71febb85235cf8",
+    "rows": 66,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/팀원 모집/팀원 모집 로깅 4d90221954bc83c9b102811fdf9af082.csv",
+    "archiveFile": "export-tables/4d90221954bc83c9b102811fdf9af082-view.csv",
+    "sourceSha256": "9b5773cdea389a4af15ed15725f2afa5e984b914926b5785ee0a9aab95508a95",
+    "normalizedSha256": "451fde070d5e673100558c6e85f9d2a69a8134b055ae934274a496e0074b11c5",
+    "rows": 32,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/팀원 모집/팀원 모집 로깅 4d90221954bc83c9b102811fdf9af082_all.csv",
+    "archiveFile": "export-tables/4d90221954bc83c9b102811fdf9af082.csv",
+    "sourceSha256": "08243f3004fe9fa075c973da9ca418edd11d70325c7a5c52305a9b50a75f6e40",
+    "normalizedSha256": "113234def5c4ab3ff3bda34ffb714bc533b35245446ab7d67f5ae73a051a3e72",
+    "rows": 32,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/학교 부서 정보/버스 로깅 (3) 1230221954bc8284929081f3cf3146f8.csv",
+    "archiveFile": "export-tables/1230221954bc8284929081f3cf3146f8-view.csv",
+    "sourceSha256": "2961b79045a4d1f5d0a225385352f3bd5cc89f0a9eb69b00b6f15fa9dd083154",
+    "normalizedSha256": "8091253e25ae9540a25f09e18642b339f79fc58dfc0e8d1894bf3cf6e080d1f6",
+    "rows": 6,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/학교 부서 정보/버스 로깅 (3) 1230221954bc8284929081f3cf3146f8_all.csv",
+    "archiveFile": "export-tables/1230221954bc8284929081f3cf3146f8.csv",
+    "sourceSha256": "72ae523b13c5b2afa6cc2246441d747b79aacd572ceb2a4bf15575dea96ed1df",
+    "normalizedSha256": "6994477a2150032ccf1da6617d309989158a8cae100d8b2eeb126be1d1fed9e3",
+    "rows": 6,
+    "fullList": true
+  },
+  {
+    "exportFile": "Event Log/홈화면 리디자인/버스 로깅 (3) 6ef0221954bc83988cbd012b63e1c614.csv",
+    "archiveFile": "export-tables/6ef0221954bc83988cbd012b63e1c614-view.csv",
+    "sourceSha256": "5c64ba611d7ca7ddc82d934d528f65befdfb282c9f5cf0ebf623199db311f858",
+    "normalizedSha256": "1d973dd8e0c9a17b39f478396f7d7f591ddfa0b620aa499446f5e341a707e5a8",
+    "rows": 28,
+    "fullList": false
+  },
+  {
+    "exportFile": "Event Log/홈화면 리디자인/버스 로깅 (3) 6ef0221954bc83988cbd012b63e1c614_all.csv",
+    "archiveFile": "export-tables/6ef0221954bc83988cbd012b63e1c614.csv",
+    "sourceSha256": "5e93d35cffec1b1f979e0ddea35d053157571cf3369bcde28f9882bd38519ebc",
+    "normalizedSha256": "51752ecd252d9f4ee176aa89b2064b71e6be56bf83c38b06482461a232ccaa38",
+    "rows": 28,
+    "fullList": true
+  }
+]

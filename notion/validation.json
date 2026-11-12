@@ -1,13 +1,13 @@
 {
-  "documents": 1563,
+  "documents": 1709,
   "images": 1472,
   "fullMigrationVerified": false,
-  "scope": "Known 129 omitted original IDs recovered. 23/41 sources have complete active-row enumeration; 18 sources remain pending.",
+  "scope": "User-provided ZIP reconciled: 1667 Markdown, 80 CSV, 1473 images. Live workspace unfiltered API status is separate; one blank CSV row lacks an unambiguous Markdown ID.",
   "sourceDatabaseCount": 41,
-  "imageLinks": 3199,
-  "internalLinks": 7606,
+  "imageLinks": 3354,
+  "internalLinks": 9392,
   "brokenLinks": [],
-  "sourceSnapshots": 1563,
+  "sourceSnapshots": 1709,
   "sourceSnapshotArchives": [
     {
       "file": "source-snapshots.jsonl.gz",
@@ -23,6 +23,16 @@
       "file": "hidden-recovered-source-snapshots.jsonl.gz",
       "records": 42,
       "sha256": "8b0e1d3e57d9e95e0a238f4b89b295873b1f09140382f284a36b53cae8888893"
+    },
+    {
+      "file": "zip-export-snapshots.jsonl.gz",
+      "records": 1747,
+      "sha256": "adabc79d8f4498ea9e0120c19193ba2bcbc09931b93751bdfee79533d6e5b1ed"
+    },
+    {
+      "file": "pre-zip-refreshed-snapshots.jsonl.gz",
+      "records": 16,
+      "sha256": "efe44449184f0fb646fd780710c9877cc78d263b7c6467b6ca3021ee0ab62df7"
     }
   ],
   "formats": {
@@ -55,5 +65,36 @@
     "pages": 42,
     "normalizedFullTextAndPropertiesMatch": true,
     "issues": []
+  },
+  "zipExportVerification": {
+    "report": "zip-reconciliation.json",
+    "pages": 1667,
+    "dataSources": 41,
+    "images": 1473,
+    "missingPages": 0,
+    "missingImageFiles": 0,
+    "csvTitleExceptions": 1,
+    "liveWorkspaceVerified": false,
+    "validation": {
+      "zipMarkdownPagesCompared": 1667,
+      "fieldsCompared": 11314,
+      "imageReferencesCompared": 3354,
+      "missingFieldsOrImageReferences": [],
+      "notionExternalUrlFiles": [],
+      "unsupportedImageTagFiles": [],
+      "archive": {
+        "documents": 1709,
+        "assets": 1472,
+        "recoveredPages": 129,
+        "links": 9392,
+        "images": 3354,
+        "errors": []
+      },
+      "remoteAssetGitBlobsCompared": 1472,
+      "remoteAssetGitBlobMismatches": 0,
+      "localTestsPassed": 18
+    },
+    "csvFilesPreserved": 80,
+    "zipFilesMapped": 3220
   }
 }
