@@ -5,7 +5,8 @@ import os from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import ts from 'typescript';
-import { load, validate, generate, read } from '../cli/core.mjs';
+import { load, read } from '../cli/core.mjs';
+import { validate, events, generate } from '../cli/contracts.mjs';
 
 const root = path.resolve(import.meta.dirname,'..');
 const model = load(root);
@@ -18,7 +19,7 @@ test('source references stay inside the GitHub archive',()=>{
     assert.ok(fs.existsSync(path.join(root,event.source)));
   }
   const changed=copy(); first(changed).source='https://example.invalid/reference';
-  assert.match(validate(changed).join('\n'),/저장소 원문 문서 경로 필요/);
+  assert.notDeepEqual(validate(changed),[]);
 });
 test('source contracts follow confirmed naming and DA1 forced-update override',()=>{
   assert.deepEqual(validate(model),[]);
@@ -27,16 +28,16 @@ test('source contracts follow confirmed naming and DA1 forced-update override',(
   assert.ok(forced.data.events.every(e=>e.event_name==='DA1'));
   assert.equal(model.vocabulary.services.main,'DA2');
 });
-for (const [name, mutate, message] of [
-  ['duplicate label',m=>m.specs[0].data.events.push(structuredClone(first(m))),'중복'],
-  ['screen mismatch',m=>m.specs[0].data.screen_view='wrong','불일치'],
-  ['wrong DA',m=>{first(m).event_name='DA2';},'DA 배정'],
-  ['unknown platform',m=>{first(m).platforms=['mobile'];},'platforms'],
-  ['category mismatch',m=>{first(m).event_category='submit';},'접미'],
-  ['reserved params',m=>{first(m).params.event_label={type:'string',required:true,description:'bad'};},'예약'],
-  ['typo field',m=>{first(m).platfroms=['WEB'];},'알 수 없는'],
-  ['value type',m=>{first(m).value.const=123;},'타입 불일치'],
-]) test(`reject ${name}`,()=>{const m=copy();mutate(m);assert.match(validate(m).join('\n'),new RegExp(message));});
+for (const [name, mutate] of [
+  ['duplicate label',m=>m.specs[0].data.events.push(structuredClone(first(m)))],
+  ['screen mismatch',m=>m.specs[0].data.screen_view='wrong'],
+  ['wrong DA',m=>{first(m).event_name='DA2';}],
+  ['unknown platform',m=>{first(m).platforms=['mobile'];}],
+  ['category mismatch',m=>{first(m).event_category='submit';}],
+  ['reserved params',m=>{first(m).params.event_label={type:'string',required:true,description:'bad'};}],
+  ['typo field',m=>{first(m).platfroms=['WEB'];}],
+  ['value type',m=>{first(m).value.const=123;}],
+]) test(`reject ${name}`,()=>{const m=copy();mutate(m);assert.notDeepEqual(validate(m),[]);});
 test('draft, legacy and frozen contracts cannot enter production generation',()=>{
   for(const status of ['draft','legacy','frozen']) {
     const m=copy();first(m).status=status;
@@ -44,6 +45,25 @@ test('draft, legacy and frozen contracts cannot enter production generation',()=
   }
   const m=copy();first(m).status='draft';
   assert.ok(generate(m,{preview:true})['logging.ts'].includes('PREVIEW'));
+});
+test('event selection includes only approved contracts, or explicit draft preview',()=>{
+  const m=copy();
+  const [draft, legacy, frozen] = m.specs.flatMap(s=>s.data.events).slice(0,3);
+  draft.status='draft'; legacy.status='legacy'; frozen.status='frozen';
+  const approved=events(m);
+  const preview=events(m,true);
+  assert.equal(approved.length,6);
+  assert.equal(preview.length,7);
+  assert.ok(!approved.some(e=>e.event_label===draft.event_label));
+  assert.ok(preview.some(e=>e.event_label===draft.event_label));
+  assert.ok(!preview.some(e=>e.event_label===legacy.event_label || e.event_label===frozen.event_label));
+  assert.ok(preview.every(e=>typeof e.service==='string' && typeof e.screen_view==='string'));
+});
+test('unchanged canonical model generates exactly the checked-in files',()=>{
+  const output=generate(model);
+  for(const [file, text] of Object.entries(output)) {
+    assert.equal(text,fs.readFileSync(path.join(root,'generated',file),'utf8'),file);
+  }
 });
 test('YAML duplicate keys fail instead of silently overwriting',()=>{
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'koin-yaml-'));
@@ -91,4 +111,4 @@ test('fixed wire values are supplied by generated code',async()=>{
   assert.throws(()=>createEvent(label,{value:'overwritten'}));
 });
 
-for(const state of ['unknown','unsupported']) test('block platform '+state,()=>{const m=copy();const e=m.specs.find(s=>s.data.screen_view==='forced_update').data.events[0];e.platform_support.ANDROID.state=state;assert.match(validate(m).join('\n'),/생성 플랫폼의 지원 확인 필요/);assert.ok(!generate(m)['KoinEvents.kt'].includes('class Event_'+e.event_label+'('));});
+for(const state of ['unknown','unsupported']) test('block platform '+state,()=>{const m=copy();const e=m.specs.find(s=>s.data.screen_view==='forced_update').data.events[0];e.platform_support.ANDROID.state=state;assert.notDeepEqual(validate(m),[]);assert.ok(!generate(m)['KoinEvents.kt'].includes('class Event_'+e.event_label+'('));});

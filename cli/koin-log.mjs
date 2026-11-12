@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
-import { load, validate, generate } from './core.mjs';
+import { load } from './core.mjs';
+import { validate, generate } from './contracts.mjs';
 
 try {
   const [command, ...args] = process.argv.slice(2);

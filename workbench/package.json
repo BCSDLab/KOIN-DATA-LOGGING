@@ -1,0 +1,26 @@
+{
+	"name": "koin-logging-workbench",
+	"private": true,
+	"type": "module",
+	"engines": {
+		"node": ">=24.22.0"
+	},
+	"scripts": {
+		"source:prepare": "node scripts/prepare.mjs",
+		"dev": "npm run source:prepare && cf dev",
+		"build": "npm run source:prepare && cf build",
+		"deploy": "npm run source:prepare && cf deploy",
+		"typecheck": "cf workers types && tsc",
+		"test": "npm run source:prepare && node --test test/*.test.mjs"
+	},
+	"devDependencies": {
+		"@cloudflare/vite-plugin": "beta",
+		"@types/node": "^24.19.2",
+		"cf": "^1.0.0-beta.29",
+		"typescript": "^7.0.2",
+		"vite": "^8.3.0"
+	},
+	"dependencies": {
+		"yaml": "^2.9.1"
+	}
+}

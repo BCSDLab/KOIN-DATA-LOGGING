@@ -1,0 +1,7 @@
+# Copy to .dev.vars and set a long random password. Never commit actual values.
+# HTTP Basic username is workbench.
+DASHBOARD_PASSWORD=
+# Optional fine-grained token, restricted to BCSDLab/KOIN-DATA-LOGGING.
+# Only needed to check remote HEAD or create a proposal PR; source viewing works without it.
+# Enable its binding with npm run dev -- --mode github (deploy uses the same mode).
+# GITHUB_TOKEN=

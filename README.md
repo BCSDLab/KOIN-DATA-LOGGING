@@ -9,7 +9,7 @@ KOIN의 로깅 계약을 YAML로 관리하고 TypeScript·Kotlin 코드를 생�
 - 강제 업데이트 5개 계약: 초기 코드 생성 대상은 Android입니다. iOS·웹은 지원 미확인으로 생성에서 제외합니다. **2026-11-12 사용자 결정에 따라 DA1**입니다. `main`의 다른 화면은 DA2를 유지합니다.
 - 모바일 WEB 카테고리 4개 계약: 식단·버스 시간표·교통편 조회·코인 for Business. 2026-11-08 네이밍 확정본에서 가져왔습니다.
 - 명세 검사, 검색, 플랫폼별 코드 생성, 자동 생성 목차, 생성물 불일치 검사 및 PR CI.
-- 노션 전체 이관·앱 코드 연결·SDK 배포·실수집 검증은 완료하지 않았습니다. iOS 코드 생성과 PNG 후보 추출·영역 표시도 후속 범위입니다.
+- 노션 원문을 플랫폼별 정본 계약으로 확정하는 작업·앱 코드 연결·SDK 배포·실수집 검증은 별도입니다. iOS 코드 생성과 이미지에서 로깅 후보를 자동 추출하는 기능은 제공하지 않습니다.
 
 `approved`는 명세 계약 확정을 뜻합니다. 해당 플랫폼의 구현·배포·수집 완료를 뜻하지 않습니다. WEB(PC)과 WEB(모바일), 네이티브 앱의 지원 범위를 사진만 보고 확대하지 않습니다.
 
@@ -28,6 +28,39 @@ npm run find -- forced_update
 
 `npm run gen`은 approved 계약만 `generated/`에 생성합니다. `node cli/koin-log.mjs gen --preview`는 draft도 포함한 검토용 파일을 `generated-preview/`에 생성합니다. 미리보기는 앱에 배포하지 않습니다. legacy·frozen 계약은 생성 대상에서 제외합니다.
 
+## Worker 로깅 작업실
+
+`workbench/`는 이 저장소의 원문·이미지·정본 계약을 사용하는 Cloudflare Worker입니다. 별도 명세 사본이나 지속적 동기화 서비스가 아니라, 현재 체크아웃에서 준비한 비공개 스냅샷을 제공합니다. 검증과 TypeScript·Kotlin 생성은 CLI와 동일한 `cli/contracts.mjs`를 사용합니다.
+
+Node.js **24.22 이상**에서 실행합니다.
+
+```sh
+npm ci
+npm --prefix workbench ci
+DASHBOARD_PASSWORD='사용할-비밀번호' npm run workbench:dev
+```
+
+`http://localhost:15173`의 HTTP Basic 사용자 이름은 `workbench`입니다. 비밀번호는 `DASHBOARD_PASSWORD`입니다. `workbench/.dev.vars.example`을 참고해 로컬 변수를 설정할 수도 있습니다. 모든 화면·API·이미지에 인증을 적용하며, 준비된 원본 파일의 직접 URL은 공개하지 않습니다. 비밀번호가 없으면 자료를 제공하지 않습니다. 배포 환경에는 HTTPS와 Worker secret 설정이 필요합니다.
+
+- 원문 1,709개를 제목·경로·Markdown 내용으로 검색하고, 속성·출처·커밋·연결된 참고 이미지 1,472개(PNG/JPG)를 확인합니다. 원문 아카이브와 approved 파일럿 이벤트 9개를 구분합니다.
+- 기존 YAML의 모든 필드를 보존해 편집하고 전체 정본 모델을 검사합니다. `WEB`, `WEB (모바일)`, `ANDROID`, `IOS`의 지원 근거를 별도로 표시하며, 사진만으로 지원을 확정하지 않습니다.
+- 기본 생성은 approved 전용입니다. draft 포함은 명시적 PREVIEW이며, legacy·frozen은 생성하지 않습니다. 생성 파일은 개별 다운로드합니다.
+- 참고 이미지에 원본 픽셀 좌표로 영역을 표시해 주석 PNG와 출처·이미지 SHA-256을 포함한 JSON sidecar를 내려받습니다. 주석은 정본 YAML이나 서버에 저장하지 않습니다. 이미지는 최신 웹·네이티브 실행 캡처의 증거가 아닙니다.
+- `GITHUB_TOKEN` 없이 조회·편집·검사·생성·다운로드가 동작합니다. 제안 PR 기능에는 해당 저장소의 Contents/Pull requests 쓰기 권한이 있는 토큰이 필요합니다. 서버는 원격 HEAD와 원본 파일 SHA를 검사한 뒤 YAML과 계산된 생성물만 새 브랜치에 원자적으로 커밋하고 PR을 만듭니다. 기본 브랜치 수정·자동 머지는 하지 않습니다.
+
+제안 기능을 사용할 때는 `GITHUB_TOKEN`을 설정하고 `npm --prefix workbench run dev -- --mode github`로 실행합니다. 배포할 때도 `npm --prefix workbench run deploy -- --mode github`를 사용합니다. 기본 모드는 GitHub secret 바인딩을 요구하지 않으며, `github` 모드에서만 이를 선언합니다.
+
+원본을 갱신한 뒤 개발 서버를 재시작하거나 아래 명령으로 다시 빌드합니다. 각 실행은 현재 `notion/`, `specs/`, `rules/`의 무결성을 검사하고 무시된 `workbench/public/__repo/` 스냅샷을 준비합니다. 별도 ZIP 업로드나 주기적 동기화는 없습니다. 원격 기준 커밋이 달라진 제안은 거절하므로 최신 저장소 체크아웃에서 다시 준비해야 합니다.
+
+```sh
+npm run workbench:test
+npm --prefix workbench run typecheck
+npm run workbench:build
+```
+
+배포는 `workbench`의 `npm run deploy`로 수행합니다. `DASHBOARD_PASSWORD`와 선택적 `GITHUB_TOKEN`은 secret으로 관리하고 Git에 커밋하지 않습니다. 비공개 원문·이미지를 인증 없는 정적 호스팅으로 따로 배포하면 안 됩니다.
+
+
 ## 저장소 구조
 
 ```text
@@ -37,6 +70,7 @@ cli/                    check · find · gen
 generated/              생성된 TS·Kotlin·목차·버전 해시 (커밋)
 docs/                   도입 절차·이관 범위·확정 사항
 tests/                  잘못된 명세 거절·타입 검사·전송 객체 검증
+workbench/              원문 검색·YAML 편집·주석 PNG·검증·생성·제안 PR Worker
 .github/workflows/      PR과 main 변경 검사
 ```
 
