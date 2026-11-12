@@ -2,10 +2,10 @@
   "documents": 1709,
   "images": 1472,
   "fullMigrationVerified": false,
-  "scope": "User-provided ZIP reconciled: 1667 Markdown, 80 CSV, 1473 images. Live workspace unfiltered API status is separate; one blank CSV row lacks an unambiguous Markdown ID.",
+  "scope": "User-provided ZIP reconciled: 1667 Markdown, 80 CSV, 1473 images. The blank CSV row identity is resolved through database template registration history and sibling reconciliation; title/created-time differences are preserved. Live workspace unfiltered API status is separate.",
   "sourceDatabaseCount": 41,
   "imageLinks": 3354,
-  "internalLinks": 9392,
+  "internalLinks": 9396,
   "brokenLinks": [],
   "sourceSnapshots": 1709,
   "sourceSnapshotArchives": [
@@ -73,7 +73,7 @@
     "images": 1473,
     "missingPages": 0,
     "missingImageFiles": 0,
-    "csvTitleExceptions": 1,
+    "csvTitleExceptions": 0,
     "liveWorkspaceVerified": false,
     "validation": {
       "zipMarkdownPagesCompared": 1667,
@@ -86,15 +86,23 @@
         "documents": 1709,
         "assets": 1472,
         "recoveredPages": 129,
-        "links": 9392,
+        "links": 9396,
         "images": 3354,
         "errors": []
       },
       "remoteAssetGitBlobsCompared": 1472,
       "remoteAssetGitBlobMismatches": 0,
-      "localTestsPassed": 18
+      "localTestsPassed": 18,
+      "blankCsvRowIdentity": {
+        "resolvedPageId": "f4b0221954bc822c9b7b81490f4a78bd",
+        "namedRowMatches": 27,
+        "unresolvedIdentityCount": 0,
+        "noteLinks": 4
+      }
     },
     "csvFilesPreserved": 80,
-    "zipFilesMapped": 3220
+    "zipFilesMapped": 3220,
+    "csvTitleResolutions": 1,
+    "blankRowIdentityEvidence": "blank-row-identity.json"
   }
 }

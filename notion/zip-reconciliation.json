@@ -18,16 +18,7 @@
   "newImageFiles": 0,
   "missingZipMarkdownIds": [],
   "missingZipImageHashes": [],
-  "csvTitleExceptions": [
-    {
-      "sourceId": "38802219-54bc-83d8-8129-87090586a53a",
-      "exportId": "6ef0221954bc83988cbd012b63e1c614",
-      "title": "제목 없음",
-      "markdown": 0,
-      "csv": 1,
-      "note": "CSV의 제목 없는 행과 Markdown 템플릿 제목이 달라 원본 ID 일대일 대응은 미확정. CSV 원문과 폴더 내 모든 문서를 둘 다 보존."
-    }
-  ],
+  "csvTitleExceptions": [],
   "exportedSnapshotCovered": true,
   "liveUnfilteredQueryPendingSources": 18,
   "fullLiveWorkspaceVerified": false,
@@ -17623,13 +17614,34 @@
       "documents": 1709,
       "assets": 1472,
       "recoveredPages": 129,
-      "links": 9392,
+      "links": 9396,
       "images": 3354,
       "errors": []
     },
     "remoteAssetGitBlobsCompared": 1472,
     "remoteAssetGitBlobMismatches": 0,
-    "localTestsPassed": 18
+    "localTestsPassed": 18,
+    "blankCsvRowIdentity": {
+      "resolvedPageId": "f4b0221954bc822c9b7b81490f4a78bd",
+      "namedRowMatches": 27,
+      "unresolvedIdentityCount": 0,
+      "noteLinks": 4
+    }
   },
-  "zipFilesMapped": 3220
+  "zipFilesMapped": 3220,
+  "csvTitleResolutions": [
+    {
+      "sourceId": "38802219-54bc-83d8-8129-87090586a53a",
+      "exportId": "6ef0221954bc83988cbd012b63e1c614",
+      "title": "제목 없음",
+      "markdown": 0,
+      "csv": 1,
+      "note": "이전 원본 ID 미확정은 해결. CSV 제목·생성일 표현 차이는 원문대로 유지.",
+      "resolvedPageId": "f4b0221954bc822c9b7b81490f4a78bd",
+      "kind": "database_template",
+      "status": "resolved",
+      "method": "템플릿 등록 이력과 같은 폴더의 일반 행 27개·템플릿 1개 대조",
+      "evidence": "blank-row-identity.json"
+    }
+  ]
 }
