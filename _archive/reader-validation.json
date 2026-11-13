@@ -1,0 +1,12 @@
+{
+  "services": 20,
+  "readerPages": 755,
+  "pastAndNewSections": 768,
+  "links": 4058,
+  "imageReferences": 1551,
+  "originalFilesPreserved": 3308,
+  "imagesChecked": 1472,
+  "notionZipImagesMapped": 1473,
+  "errors": [],
+  "scope": "제공된 Notion ZIP·보존 원문 기준의 파일, 정의, 페이지별 이미지 순서, 과거/새 구간 대응 검사. 모든 현재 Notion 페이지의 실시간·육안 전수 검수는 별도."
+}

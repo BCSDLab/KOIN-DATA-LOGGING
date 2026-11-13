@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-13",
+  "scope": "승인된 7페이지 문구 정리. 원본 ZIP·이전 원문 보존, 라벨·사진·강제 업데이트 이탈 미변경. 실수집 검증 아님.",
+  "pages": [
+    {
+      "id": "9ee0221954bc839f8822816a84a06a79",
+      "file": "event-log/08-게시판/3-5.-공지사항_BCSD-Lab-알아보기_클릭.md",
+      "originalSourceFile": "_archive/original/notion/pages/9ee0221954bc839f8822816a84a06a79.md",
+      "readerSha256": "b43a641ab8678c4c1df269863dc995a3db44e40fd1e71da313d411584bd01e1f",
+      "savedNotionSha256": "13e7abcddba6a3f1f71ade0adfdecd8eaab5014a477d71cf6b3c5717a1d59425",
+      "pastSectionUnchanged": true
+    },
+    {
+      "id": "a460221954bc82aa8e1881676f81d484",
+      "file": "event-log/08-게시판/3-3.-공지사항_아우누리-바로가기_클릭.md",
+      "originalSourceFile": "_archive/original/notion/pages/a460221954bc82aa8e1881676f81d484.md",
+      "readerSha256": "054b8fa1d346a6f185c98b95b18855ab92cfc8361236d1644f6bec317776abe5",
+      "savedNotionSha256": "d7a6da06e834ede124f5c05506401a2f6dde96c9423064abeab3d4b28a5abe89",
+      "pastSectionUnchanged": true
+    },
+    {
+      "id": "ea70221954bc831d915c812085433be2",
+      "file": "event-log/08-게시판/3-4.-공지사항_새로운-서비스-요청하기_클릭.md",
+      "originalSourceFile": "_archive/original/notion/pages/ea70221954bc831d915c812085433be2.md",
+      "readerSha256": "5bff4840a0aa5fc7ff621c5f287a010b46e359e8be3e712658ba56cc7d3651f4",
+      "savedNotionSha256": "bea8048464983d94f781fa3b7e36e8c86645e794dd07af6284995a242eb1604e",
+      "pastSectionUnchanged": true
+    },
+    {
+      "id": "a4e0221954bc8319ac0b01c9f0631a34",
+      "file": "event-log/16-시간표/2-13.-(웹,-반응형-앱)-시간표_학기-추가-(클릭).md",
+      "originalSourceFile": "_archive/original/notion/pages/a4e0221954bc8319ac0b01c9f0631a34.md",
+      "readerSha256": "c70d567251b8710a1ee87ee79ee932c38c673d24b218010e3a852ff4e25a5be9",
+      "savedNotionSha256": "63c77652562cb79f7307997a1f67fae670a25b5b308957edc6b80a7d425996df",
+      "pastSectionUnchanged": true
+    },
+    {
+      "id": "32a0221954bc825baa30012094f604b2",
+      "file": "event-log/16-시간표/2-14.-(웹,-반응형-앱)-시간표_학기-삭제_확정-(클릭).md",
+      "originalSourceFile": "_archive/original/notion/pages/32a0221954bc825baa30012094f604b2.md",
+      "readerSha256": "7d752e9dd371d995815343bc8b53e8d3d2718cc3caa68bd5a97a7070b2a8a2c3",
+      "savedNotionSha256": "081fb7fd0bb0471a2a99394fd8cad1271f8efaf20321ee947a6865ef4ac4dbd3",
+      "pastSectionUnchanged": true
+    },
+    {
+      "id": "1130221954bc83bd92b6016800ed6fa8",
+      "file": "event-log/09-배너/1-7.-(웹)-메인_모달_밑에-버튼-클릭.md",
+      "originalSourceFile": "_archive/original/notion/pages/1130221954bc83bd92b6016800ed6fa8.md",
+      "readerSha256": "bf12de3a9d69cd8b81c302494bdd9aba681166ff098520535a245c889c502e42",
+      "savedNotionSha256": "2449bb8262092db1331c3b390d892f3892a1cbae331b86431247cc656943fd4f",
+      "pastSectionUnchanged": true
+    },
+    {
+      "id": "2020221954bc83f9b678814520e338d1",
+      "file": "event-log/10-홈화면-리디자인/1-13-고정-배너-하단-점-선택.md",
+      "originalSourceFile": "_archive/original/notion/pages/2020221954bc83f9b678814520e338d1.md",
+      "readerSha256": "9ea94477ce026f32bb622261b56795d980701ca001608e56102d4f73c623ad98",
+      "savedNotionSha256": "a1f39fa75353c40d8bd25480ffd121c47f70388d5585f3a174cbed898ef254ac",
+      "pastSectionUnchanged": true
+    }
+  ],
+  "notionReadback": [
+    {
+      "id": "9ee0221954bc839f8822816a84a06a79",
+      "imagesUnchanged": true,
+      "labelsUnchanged": true,
+      "forcedExitUnchanged": null,
+      "unknown": 0,
+      "truncated": false
+    },
+    {
+      "id": "a460221954bc82aa8e1881676f81d484",
+      "imagesUnchanged": true,
+      "labelsUnchanged": true,
+      "forcedExitUnchanged": null,
+      "unknown": 0,
+      "truncated": false
+    },
+    {
+      "id": "ea70221954bc831d915c812085433be2",
+      "imagesUnchanged": true,
+      "labelsUnchanged": true,
+      "forcedExitUnchanged": null,
+      "unknown": 0,
+      "truncated": false
+    },
+    {
+      "id": "a4e0221954bc8319ac0b01c9f0631a34",
+      "imagesUnchanged": true,
+      "labelsUnchanged": true,
+      "forcedExitUnchanged": null,
+      "unknown": 0,
+      "truncated": false
+    },
+    {
+      "id": "32a0221954bc825baa30012094f604b2",
+      "imagesUnchanged": true,
+      "labelsUnchanged": true,
+      "forcedExitUnchanged": null,
+      "unknown": 0,
+      "truncated": false
+    },
+    {
+      "id": "1130221954bc83bd92b6016800ed6fa8",
+      "imagesUnchanged": true,
+      "labelsUnchanged": true,
+      "forcedExitUnchanged": null,
+      "unknown": 0,
+      "truncated": false
+    },
+    {
+      "id": "2020221954bc83f9b678814520e338d1",
+      "imagesUnchanged": true,
+      "labelsUnchanged": true,
+      "forcedExitUnchanged": null,
+      "unknown": 0,
+      "truncated": false
+    },
+    {
+      "id": "4150221954bc814f8744f126ce0902f5",
+      "imagesUnchanged": true,
+      "labelsUnchanged": true,
+      "forcedExitUnchanged": true,
+      "unknown": 0,
+      "truncated": false
+    },
+    {
+      "id": "8d40221954bc829e831601b2fdd18819",
+      "imagesUnchanged": true,
+      "labelsUnchanged": true,
+      "forcedExitUnchanged": true,
+      "unknown": 0,
+      "truncated": false
+    }
+  ]
+}

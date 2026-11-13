@@ -1,4 +1,4 @@
-name: Logging specification
+name: Event Log documentation
 on:
   pull_request:
   push:
@@ -12,6 +12,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: "22"
+      - run: node event-log/verify.mjs
+      - run: node event-log/verify-representatives.mjs
+      - run: node --test event-log/notion-comparison.test.mjs
+      - run: node event-log/verify-notion.mjs
       - run: npm ci
+        working-directory: _archive/original
       - run: npm run verify
+        working-directory: _archive/original
