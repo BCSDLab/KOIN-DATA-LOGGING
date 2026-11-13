@@ -8,7 +8,7 @@
 
 | 명세 | 원문 상태 | 플랫폼 |
 | --- | --- | --- |
-| [0-1. 메인_모달진입](0-1.-%EB%A9%94%EC%9D%B8_%EB%AA%A8%EB%8B%AC%EC%A7%84%EC%9E%85.md) | 레거시 | WEB · ANDROID · IOS |
+| **레거시** [0-1. 메인_모달진입](0-1.-%EB%A9%94%EC%9D%B8_%EB%AA%A8%EB%8B%AC%EC%A7%84%EC%9E%85.md) | 레거시 | WEB · ANDROID · IOS |
 | [1-1. 메인_모달진입](1-1.-%EB%A9%94%EC%9D%B8_%EB%AA%A8%EB%8B%AC%EC%A7%84%EC%9E%85.md) | 로깅 필요 | ANDROID · IOS |
 | [1-2. 메인_모달_클릭](1-2.-%EB%A9%94%EC%9D%B8_%EB%AA%A8%EB%8B%AC_%ED%81%B4%EB%A6%AD.md) | 로깅 필요 | ANDROID · IOS |
 | [1-3. 메인_모달닫기_클릭](1-3.-%EB%A9%94%EC%9D%B8_%EB%AA%A8%EB%8B%AC%EB%8B%AB%EA%B8%B0_%ED%81%B4%EB%A6%AD.md) | 로깅 필요 | ANDROID · IOS |

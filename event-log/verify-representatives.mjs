@@ -5,6 +5,7 @@ import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=p=>fs.readFileSync(path.join(root,p),'utf8'),json=p=>JSON.parse(read(p));
 const nav=json('_archive/navigation-map.json'),registry=json('_archive/representatives.json');
+const presentation=json('_archive/presentation-cleanup.json').changes;
 const pages=new Map(nav.pages.map(p=>[p.id,p])),errors=[];
 const listed=[];
 for(const service of nav.services){
@@ -35,7 +36,8 @@ for(const group of registry.groups){
 for(const p of registry.originalReaders){
  const current=read(p.file).replace(/<!-- representative-note:start -->[\s\S]*?<!-- representative-note:end -->\n?/g,'').replace(/<!-- representative-related:start -->[\s\S]*?<!-- representative-related:end -->\n?/g,'');
  const bytes=Buffer.from(current),hash=crypto.createHash('sha1').update(Buffer.from('blob '+bytes.length+'\0')).update(bytes).digest('hex');
- if(hash!==p.sha)errors.push('Original reader content changed: '+p.file);
+ const adjusted=presentation.find(c=>c.file===p.file);
+ if(adjusted?.representativeBodyAfterSha){if(adjusted.representativeBodyBeforeSha!==p.sha||hash!==adjusted.representativeBodyAfterSha)errors.push('Presentation provenance mismatch: '+p.file);}else if(hash!==p.sha)errors.push('Original reader content changed: '+p.file);
 }
 const allFiles=['README.md','_archive/README.md',...registry.originalReaders.map(p=>p.file)];
 for(const p of allFiles){for(const m of read(p).matchAll(/\[[^\]]+\]\(([^)\s]+)\)/g)){
@@ -43,7 +45,7 @@ for(const p of allFiles){for(const m of read(p).matchAll(/\[[^\]]+\]\(([^)\s]+)\
  const f=path.resolve(root,path.dirname(p),decodeURIComponent(m[1].split('#')[0]));
  if(path.relative(root,f).startsWith('..')||!fs.existsSync(f))errors.push('Broken source link: '+p+' -> '+m[1]);
 }}
-const result={groups:registry.groups.length,listedDocuments:nav.pages.filter(p=>p.readerRole==='representative').length,preservedAliasDocuments:nav.pages.filter(p=>p.readerRole==='preserved_alias').length,readerBodiesUnchanged:registry.originalReaders.length,conflictingGroups:registry.groups.filter(g=>g.definitionState==='conflicting_originals_transition_draft').length,errors};
+const result={groups:registry.groups.length,listedDocuments:nav.pages.filter(p=>p.readerRole==='representative').length,preservedAliasDocuments:nav.pages.filter(p=>p.readerRole==='preserved_alias').length,readerBodiesValidated:registry.originalReaders.length,presentationAdjustedBodies:presentation.filter(c=>c.representativeBodyAfterSha).length,conflictingGroups:registry.groups.filter(g=>g.definitionState==='conflicting_originals_transition_draft').length,errors};
 console.log(JSON.stringify(result,null,2));
 if(process.argv.includes('--report'))fs.writeFileSync(path.join(root,'_archive/representative-validation.json'),JSON.stringify(result,null,2)+'\n');
 if(errors.length)process.exitCode=1;

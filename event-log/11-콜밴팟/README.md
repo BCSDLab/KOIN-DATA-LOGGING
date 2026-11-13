@@ -8,8 +8,8 @@
 
 | 명세 | 원문 상태 | 플랫폼 |
 | --- | --- | --- |
-| [레거시 1-1 메인 → 콜밴팟 모집 보기](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-1-%EB%A9%94%EC%9D%B8-%E2%86%92-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%EB%AA%A8%EC%A7%91-%EB%B3%B4%EA%B8%B0.md) | 레거시 | ANDROID · IOS |
-| [레거시 1-3 카테고리 → 콜밴팟 모집](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-3-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%EB%AA%A8%EC%A7%91.md) | 로깅 필요 | ANDROID · IOS |
+| **레거시** [레거시 1-1 메인 → 콜밴팟 모집 보기](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-1-%EB%A9%94%EC%9D%B8-%E2%86%92-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%EB%AA%A8%EC%A7%91-%EB%B3%B4%EA%B8%B0.md) | 레거시 | ANDROID · IOS |
+| **레거시** [레거시 1-3 카테고리 → 콜밴팟 모집](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-3-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%EB%AA%A8%EC%A7%91.md) | 로깅 필요 | ANDROID · IOS |
 | [1-4 콜밴팟 알림 아이콘 클릭](1-4-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%EC%95%8C%EB%A6%BC-%EC%95%84%EC%9D%B4%EC%BD%98-%ED%81%B4%EB%A6%AD.md) | 로깅 필요 | ANDROID |
 | [1-5 콜밴팟 알림 모두 읽음 클릭](1-5-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%EC%95%8C%EB%A6%BC-%EB%AA%A8%EB%91%90-%EC%9D%BD%EC%9D%8C-%ED%81%B4%EB%A6%AD.md) | 로깅 필요 | ANDROID |
 | [1-6 콜밴팟 알림 전체 삭제 메뉴 클릭](1-6-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%EC%95%8C%EB%A6%BC-%EC%A0%84%EC%B2%B4-%EC%82%AD%EC%A0%9C-%EB%A9%94%EB%89%B4-%ED%81%B4%EB%A6%AD.md) | 로깅 필요 | ANDROID |
