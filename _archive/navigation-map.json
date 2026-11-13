@@ -22819,6 +22819,10 @@
           "value": "공지사항 화면의 BCSD Lab 알아보기 클릭."
         },
         {
+          "key": "screen_view",
+          "value": "notice_list"
+        },
+        {
           "key": "event_name",
           "value": "DA2"
         },
@@ -22873,6 +22877,10 @@
               "value": "공지사항 화면의 BCSD Lab 알아보기 클릭."
             },
             {
+              "key": "screen_view",
+              "value": "notice_list"
+            },
+            {
               "key": "event_name",
               "value": "DA2"
             },
@@ -22893,7 +22901,8 @@
         }
       ],
       "representativeId": "9ee0221954bc839f8822816a84a06a79",
-      "readerRole": "representative"
+      "readerRole": "representative",
+      "sourceClarification": "2026-11-13"
     },
     {
       "id": "9f00221954bc83a59b7b81fce0b079f0",
@@ -23174,6 +23183,10 @@
           "value": "공지사항 화면의 아우누리 바로가기 클릭."
         },
         {
+          "key": "screen_view",
+          "value": "notice_list"
+        },
+        {
           "key": "event_name",
           "value": "DA2"
         },
@@ -23228,6 +23241,10 @@
               "value": "공지사항 화면의 아우누리 바로가기 클릭."
             },
             {
+              "key": "screen_view",
+              "value": "notice_list"
+            },
+            {
               "key": "event_name",
               "value": "DA2"
             },
@@ -23248,7 +23265,8 @@
         }
       ],
       "representativeId": "a460221954bc82aa8e1881676f81d484",
-      "readerRole": "representative"
+      "readerRole": "representative",
+      "sourceClarification": "2026-11-13"
     },
     {
       "id": "a510221954bc8243963c01d45432380b",
@@ -25787,6 +25805,10 @@
           "value": "공지사항 화면의 새로운 서비스 요청하기 클릭."
         },
         {
+          "key": "screen_view",
+          "value": "notice_list"
+        },
+        {
           "key": "event_name",
           "value": "DA2"
         },
@@ -25841,6 +25863,10 @@
               "value": "공지사항 화면의 새로운 서비스 요청하기 클릭."
             },
             {
+              "key": "screen_view",
+              "value": "notice_list"
+            },
+            {
               "key": "event_name",
               "value": "DA2"
             },
@@ -25861,7 +25887,8 @@
         }
       ],
       "representativeId": "ea70221954bc831d915c812085433be2",
-      "readerRole": "representative"
+      "readerRole": "representative",
+      "sourceClarification": "2026-11-13"
     },
     {
       "id": "eaf0221954bc83dc8a8c0172550999e4",
@@ -27835,7 +27862,8 @@
         }
       ],
       "representativeId": "1130221954bc83bd92b6016800ed6fa8",
-      "readerRole": "representative"
+      "readerRole": "representative",
+      "sourceClarification": "2026-11-13"
     },
     {
       "id": "2450221954bc824b8c1501a6f4961576",
@@ -29738,7 +29766,8 @@
         }
       ],
       "representativeId": "2020221954bc83f9b678814520e338d1",
-      "readerRole": "representative"
+      "readerRole": "representative",
+      "sourceClarification": "2026-11-13"
     },
     {
       "id": "2050221954bc8312a07a01eeb1985141",
@@ -48748,7 +48777,8 @@
         }
       ],
       "representativeId": "a4e0221954bc8319ac0b01c9f0631a34",
-      "readerRole": "representative"
+      "readerRole": "representative",
+      "sourceClarification": "2026-11-13"
     },
     {
       "id": "32a0221954bc825baa30012094f604b2",
@@ -48846,7 +48876,8 @@
         }
       ],
       "representativeId": "32a0221954bc825baa30012094f604b2",
-      "readerRole": "representative"
+      "readerRole": "representative",
+      "sourceClarification": "2026-11-13"
     },
     {
       "id": "4780221954bc83be9a968138e6d14a34",
