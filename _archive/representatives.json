@@ -1,0 +1,357 @@
+{
+  "baselineCommit": "a100d42148a8610fd9e4ad566e0fa1605a6ffb9e",
+  "checkedOnKst": "2026-11-13",
+  "groups": [
+    {
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "1-7 정보입력_학생_외부인_구분(클릭)",
+      "representativeId": "7880221954bc83d7955381bce1882307",
+      "representativeFile": "event-log/15-로그인-회원가입-정보수정-V2/1-7-정보입력_학생_외부인_구분(클릭).md",
+      "aliasIds": [
+        "b600221954bc82919bf001f67d3f1c13"
+      ],
+      "aliasFiles": [
+        "event-log/15-로그인-회원가입-정보수정-V2/1-7-정보입력_학생_외부인_구분(클릭)-b6002219.md"
+      ],
+      "sourcePlatforms": [
+        {
+          "id": "7880221954bc83d7955381bce1882307",
+          "platforms": [
+            "WEB"
+          ],
+          "status": "로깅 필요"
+        },
+        {
+          "id": "b600221954bc82919bf001f67d3f1c13",
+          "platforms": [
+            "ANDROID",
+            "IOS"
+          ],
+          "status": "로깅 필요"
+        }
+      ],
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "definitionState": "same_current_definition",
+      "identityDecision": "Navigation representative only; no new transmission or source field rewrite."
+    },
+    {
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "3-4 비밀번호수정완료(클릭)",
+      "representativeId": "d4c0221954bc8357a10b81b3f8e521ea",
+      "representativeFile": "event-log/15-로그인-회원가입-정보수정-V2/3-4-비밀번호수정완료(클릭).md",
+      "aliasIds": [
+        "6ec0221954bc83e08706811705f676ac"
+      ],
+      "aliasFiles": [
+        "event-log/15-로그인-회원가입-정보수정-V2/3-4-비밀번호수정완료(클릭)-6ec02219.md"
+      ],
+      "sourcePlatforms": [
+        {
+          "id": "d4c0221954bc8357a10b81b3f8e521ea",
+          "platforms": [
+            "ANDROID",
+            "IOS"
+          ],
+          "status": "로깅 필요"
+        },
+        {
+          "id": "6ec0221954bc83e08706811705f676ac",
+          "platforms": [
+            "WEB"
+          ],
+          "status": "로깅 필요"
+        }
+      ],
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "definitionState": "same_current_definition",
+      "identityDecision": "Navigation representative only; no new transmission or source field rewrite."
+    },
+    {
+      "service": "강제 업데이트",
+      "title": "1. 강제 업데이트 화면 표시",
+      "representativeId": "4150221954bc8126ab91fa403975d406",
+      "representativeFile": "event-log/18-강제-업데이트/1.-강제-업데이트-화면-표시.md",
+      "aliasIds": [
+        "1b10221954bc8396bdc781ad0428b503"
+      ],
+      "aliasFiles": [
+        "event-log/18-강제-업데이트/1.-강제-업데이트-화면-표시-1b102219.md"
+      ],
+      "sourcePlatforms": [
+        {
+          "id": "4150221954bc8126ab91fa403975d406",
+          "platforms": [],
+          "status": null
+        },
+        {
+          "id": "1b10221954bc8396bdc781ad0428b503",
+          "platforms": [
+            "ANDROID",
+            "IOS"
+          ],
+          "status": "로깅 필요"
+        }
+      ],
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "definitionState": "same_current_definition",
+      "identityDecision": "Navigation representative only; no new transmission or source field rewrite."
+    },
+    {
+      "service": "강제 업데이트",
+      "title": "2. 업데이트하기 클릭",
+      "representativeId": "4150221954bc81abb0fff0dc3714fcee",
+      "representativeFile": "event-log/18-강제-업데이트/2.-업데이트하기-클릭.md",
+      "aliasIds": [
+        "d710221954bc827297ca0160269a1b86"
+      ],
+      "aliasFiles": [
+        "event-log/18-강제-업데이트/2.-업데이트하기-클릭-d7102219.md"
+      ],
+      "sourcePlatforms": [
+        {
+          "id": "4150221954bc81abb0fff0dc3714fcee",
+          "platforms": [],
+          "status": null
+        },
+        {
+          "id": "d710221954bc827297ca0160269a1b86",
+          "platforms": [
+            "ANDROID",
+            "IOS"
+          ],
+          "status": "로깅 필요"
+        }
+      ],
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "definitionState": "same_current_definition",
+      "identityDecision": "Navigation representative only; no new transmission or source field rewrite."
+    },
+    {
+      "service": "강제 업데이트",
+      "title": "3. 이미 업데이트했나요 클릭",
+      "representativeId": "4150221954bc81a28e0fc946e1e57c27",
+      "representativeFile": "event-log/18-강제-업데이트/3.-이미-업데이트했나요-클릭.md",
+      "aliasIds": [
+        "e2b0221954bc829e844681434ddf4197"
+      ],
+      "aliasFiles": [
+        "event-log/18-강제-업데이트/3.-이미-업데이트했나요-클릭-e2b02219.md"
+      ],
+      "sourcePlatforms": [
+        {
+          "id": "4150221954bc81a28e0fc946e1e57c27",
+          "platforms": [],
+          "status": null
+        },
+        {
+          "id": "e2b0221954bc829e844681434ddf4197",
+          "platforms": [
+            "ANDROID",
+            "IOS"
+          ],
+          "status": "로깅 필요"
+        }
+      ],
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "definitionState": "same_current_definition",
+      "identityDecision": "Navigation representative only; no new transmission or source field rewrite."
+    },
+    {
+      "service": "강제 업데이트",
+      "title": "4. 업데이트 확인 팝업 닫기",
+      "representativeId": "4150221954bc81eda804ff10d5d301bf",
+      "representativeFile": "event-log/18-강제-업데이트/4.-업데이트-확인-팝업-닫기.md",
+      "aliasIds": [
+        "0090221954bc835298320174498f5fe2"
+      ],
+      "aliasFiles": [
+        "event-log/18-강제-업데이트/4.-업데이트-확인-팝업-닫기-00902219.md"
+      ],
+      "sourcePlatforms": [
+        {
+          "id": "4150221954bc81eda804ff10d5d301bf",
+          "platforms": [],
+          "status": null
+        },
+        {
+          "id": "0090221954bc835298320174498f5fe2",
+          "platforms": [
+            "ANDROID",
+            "IOS"
+          ],
+          "status": "로깅 필요"
+        }
+      ],
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "definitionState": "same_current_definition",
+      "identityDecision": "Navigation representative only; no new transmission or source field rewrite."
+    },
+    {
+      "service": "강제 업데이트",
+      "title": "5. 업데이트 확인 팝업 스토어 가기",
+      "representativeId": "4150221954bc81c4bd1ec8bb60a227e2",
+      "representativeFile": "event-log/18-강제-업데이트/5.-업데이트-확인-팝업-스토어-가기.md",
+      "aliasIds": [
+        "8670221954bc83629bd0814d7b5d8548"
+      ],
+      "aliasFiles": [
+        "event-log/18-강제-업데이트/5.-업데이트-확인-팝업-스토어-가기-86702219.md"
+      ],
+      "sourcePlatforms": [
+        {
+          "id": "4150221954bc81c4bd1ec8bb60a227e2",
+          "platforms": [],
+          "status": null
+        },
+        {
+          "id": "8670221954bc83629bd0814d7b5d8548",
+          "platforms": [
+            "ANDROID",
+            "IOS"
+          ],
+          "status": "로깅 필요"
+        }
+      ],
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "definitionState": "same_current_definition",
+      "identityDecision": "Navigation representative only; no new transmission or source field rewrite."
+    },
+    {
+      "service": "강제 업데이트",
+      "title": "6. 강제 업데이트 화면 이탈",
+      "representativeId": "4150221954bc814f8744f126ce0902f5",
+      "representativeFile": "event-log/18-강제-업데이트/6.-강제-업데이트-화면-이탈.md",
+      "aliasIds": [
+        "8d40221954bc829e831601b2fdd18819"
+      ],
+      "aliasFiles": [
+        "event-log/18-강제-업데이트/6.-강제-업데이트-화면-이탈-8d402219.md"
+      ],
+      "sourcePlatforms": [
+        {
+          "id": "4150221954bc814f8744f126ce0902f5",
+          "platforms": [],
+          "status": null
+        },
+        {
+          "id": "8d40221954bc829e831601b2fdd18819",
+          "platforms": [],
+          "status": "로깅 필요"
+        }
+      ],
+      "platforms": [],
+      "definitionState": "conflicting_originals_transition_draft",
+      "identityDecision": "Navigation representative only; no new transmission or source field rewrite."
+    }
+  ],
+  "originalReaders": [
+    {
+      "id": "7880221954bc83d7955381bce1882307",
+      "file": "event-log/15-로그인-회원가입-정보수정-V2/1-7-정보입력_학생_외부인_구분(클릭).md",
+      "sha": "2c2238dc5d4b0ef03755860e8312fd99b7f578a1"
+    },
+    {
+      "id": "b600221954bc82919bf001f67d3f1c13",
+      "file": "event-log/15-로그인-회원가입-정보수정-V2/1-7-정보입력_학생_외부인_구분(클릭)-b6002219.md",
+      "sha": "8e64a66ce7e084bd9c4c46ad5674d14d4df9ef4a"
+    },
+    {
+      "id": "d4c0221954bc8357a10b81b3f8e521ea",
+      "file": "event-log/15-로그인-회원가입-정보수정-V2/3-4-비밀번호수정완료(클릭).md",
+      "sha": "fc39a766c44fd7d47a0df581a1cb4805e137bdf1"
+    },
+    {
+      "id": "6ec0221954bc83e08706811705f676ac",
+      "file": "event-log/15-로그인-회원가입-정보수정-V2/3-4-비밀번호수정완료(클릭)-6ec02219.md",
+      "sha": "43735bc7834d6713e6488d66120023b05000c71e"
+    },
+    {
+      "id": "4150221954bc8126ab91fa403975d406",
+      "file": "event-log/18-강제-업데이트/1.-강제-업데이트-화면-표시.md",
+      "sha": "d5383eb0e59fdcfa8814c56f9eb4a513b798816d"
+    },
+    {
+      "id": "1b10221954bc8396bdc781ad0428b503",
+      "file": "event-log/18-강제-업데이트/1.-강제-업데이트-화면-표시-1b102219.md",
+      "sha": "f72bbfc4bb34447596f0ab5b9d1f9ac26da95a94"
+    },
+    {
+      "id": "4150221954bc81abb0fff0dc3714fcee",
+      "file": "event-log/18-강제-업데이트/2.-업데이트하기-클릭.md",
+      "sha": "91906aadf67635abfcd72e1e060f99d19919af31"
+    },
+    {
+      "id": "d710221954bc827297ca0160269a1b86",
+      "file": "event-log/18-강제-업데이트/2.-업데이트하기-클릭-d7102219.md",
+      "sha": "7445a90ecd3ce1d3238e43641c749b8ef7d9ab3d"
+    },
+    {
+      "id": "4150221954bc81a28e0fc946e1e57c27",
+      "file": "event-log/18-강제-업데이트/3.-이미-업데이트했나요-클릭.md",
+      "sha": "c1bc42b43b7df8885272350874fa79a8e75b63ea"
+    },
+    {
+      "id": "e2b0221954bc829e844681434ddf4197",
+      "file": "event-log/18-강제-업데이트/3.-이미-업데이트했나요-클릭-e2b02219.md",
+      "sha": "5a387004b0ce2adcdd7f9d4c1cae76d345f62f67"
+    },
+    {
+      "id": "4150221954bc81eda804ff10d5d301bf",
+      "file": "event-log/18-강제-업데이트/4.-업데이트-확인-팝업-닫기.md",
+      "sha": "9ae6eecc67d3f92c7599ee509372587a1e7b1b94"
+    },
+    {
+      "id": "0090221954bc835298320174498f5fe2",
+      "file": "event-log/18-강제-업데이트/4.-업데이트-확인-팝업-닫기-00902219.md",
+      "sha": "69d47ff3e3ac85993628159109bd739b79dcfd53"
+    },
+    {
+      "id": "4150221954bc81c4bd1ec8bb60a227e2",
+      "file": "event-log/18-강제-업데이트/5.-업데이트-확인-팝업-스토어-가기.md",
+      "sha": "801a532fcf45eb6ca4257cceb30d5a8062ebe94a"
+    },
+    {
+      "id": "8670221954bc83629bd0814d7b5d8548",
+      "file": "event-log/18-강제-업데이트/5.-업데이트-확인-팝업-스토어-가기-86702219.md",
+      "sha": "913b374a6e7dd470126f795b2a4ba19a6ab7fac1"
+    },
+    {
+      "id": "4150221954bc814f8744f126ce0902f5",
+      "file": "event-log/18-강제-업데이트/6.-강제-업데이트-화면-이탈.md",
+      "sha": "c177b4b92326177c5e23da6b8abfa838640773d8"
+    },
+    {
+      "id": "8d40221954bc829e831601b2fdd18819",
+      "file": "event-log/18-강제-업데이트/6.-강제-업데이트-화면-이탈-8d402219.md",
+      "sha": "7a0671ca108f1c4535e8de8b00cf5f519be321f6"
+    }
+  ],
+  "preservedReaderDocuments": 755,
+  "listedRepresentativeDocuments": 747,
+  "hiddenDuplicateRows": 8,
+  "conflictingGroups": 1,
+  "policy": "Only same-titled duplicate reader pages were consolidated. Different UI contexts sharing a label and legacy definitions with different titles remain separate. All original field/image blocks and source archives are retained."
+}

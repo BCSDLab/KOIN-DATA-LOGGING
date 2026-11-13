@@ -10,3 +10,5 @@
 - [코드 생성 파일럿](original/docs/integration.md): 기존 9개 계약이며 개발자용 문서 열람과 별도입니다.
 - [서비스별 문서 대응표](navigation-map.json)
 - [문서·이미지 대응 검사 결과](reader-validation.json)
+
+- [대표 명세·보존 원본 대응표](representatives.json): 목록의 중복 8개만 숨겼으며 원본과 이미지는 그대로 보존합니다. 화면 이탈의 원문 충돌 1건은 전환값 미확정으로 표시합니다.

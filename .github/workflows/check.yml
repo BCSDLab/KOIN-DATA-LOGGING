@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: "22"
       - run: node event-log/verify.mjs
+      - run: node event-log/verify-representatives.mjs
       - run: npm ci
         working-directory: _archive/original
       - run: npm run verify
