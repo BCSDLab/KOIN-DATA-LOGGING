@@ -8,10 +8,10 @@
 
 | 명세 | 원문 상태 | 플랫폼 |
 | --- | --- | --- |
-| [레거시 2-2 로그인 진입(클릭)](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2-2-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%A7%84%EC%9E%85%28%ED%81%B4%EB%A6%AD%29.md) | 레거시 | ANDROID · IOS |
-| [레거시 4-2 로그아웃(클릭)](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-4-2-%EB%A1%9C%EA%B7%B8%EC%95%84%EC%9B%83%28%ED%81%B4%EB%A6%AD%29.md) | 레거시 | ANDROID · IOS |
+| **레거시** [레거시 2-2 로그인 진입(클릭)](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2-2-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%A7%84%EC%9E%85%28%ED%81%B4%EB%A6%AD%29.md) | 레거시 | ANDROID · IOS |
+| **레거시** [레거시 4-2 로그아웃(클릭)](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-4-2-%EB%A1%9C%EA%B7%B8%EC%95%84%EC%9B%83%28%ED%81%B4%EB%A6%AD%29.md) | 레거시 | ANDROID · IOS |
 | [1-1 헤더_회원가입진입(클릭)](1-1-%ED%97%A4%EB%8D%94_%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EC%A7%84%EC%9E%85%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | WEB |
-| [1-2 회원가입진입(클릭) - 레거시](1-2-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EC%A7%84%EC%9E%85%28%ED%81%B4%EB%A6%AD%29-%EB%A0%88%EA%B1%B0%EC%8B%9C.md) | 로깅 필요 | ANDROID · IOS · WEB |
+| **레거시** [1-2 회원가입진입(클릭) - 레거시](1-2-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EC%A7%84%EC%9E%85%28%ED%81%B4%EB%A6%AD%29-%EB%A0%88%EA%B1%B0%EC%8B%9C.md) | 로깅 필요 | ANDROID · IOS · WEB |
 | [1-3 로그인 화면_회원가입진입(클릭)](1-3-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%99%94%EB%A9%B4_%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EC%A7%84%EC%9E%85%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | ANDROID · IOS · WEB |
 | [1-4 약관동의(클릭)](1-4-%EC%95%BD%EA%B4%80%EB%8F%99%EC%9D%98%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | ANDROID · IOS · WEB |
 | [1-5 본인인증_인증번호_발송(클릭)](1-5-%EB%B3%B8%EC%9D%B8%EC%9D%B8%EC%A6%9D_%EC%9D%B8%EC%A6%9D%EB%B2%88%ED%98%B8_%EB%B0%9C%EC%86%A1%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | ANDROID · IOS · WEB |

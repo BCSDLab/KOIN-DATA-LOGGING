@@ -8,7 +8,7 @@
 
 | 명세 | 원문 상태 | 플랫폼 |
 | --- | --- | --- |
-| [레거시·중복 원문 14. 카테고리_팀원 모집 진입 (클릭) - 추가된 로깅](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%C2%B7%EC%A4%91%EB%B3%B5-%EC%9B%90%EB%AC%B8%5D-14.-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC_%ED%8C%80%EC%9B%90-%EB%AA%A8%EC%A7%91-%EC%A7%84%EC%9E%85-%28%ED%81%B4%EB%A6%AD%29-%EC%B6%94%EA%B0%80%EB%90%9C-%EB%A1%9C%EA%B9%85.md) | 로깅 필요 | ANDROID · IOS |
+| **레거시** [레거시·중복 원문 14. 카테고리_팀원 모집 진입 (클릭) - 추가된 로깅](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%C2%B7%EC%A4%91%EB%B3%B5-%EC%9B%90%EB%AC%B8%5D-14.-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC_%ED%8C%80%EC%9B%90-%EB%AA%A8%EC%A7%91-%EC%A7%84%EC%9E%85-%28%ED%81%B4%EB%A6%AD%29-%EC%B6%94%EA%B0%80%EB%90%9C-%EB%A1%9C%EA%B9%85.md) | 로깅 필요 | ANDROID · IOS |
 | [0-1. 알림 내부_알림 항목 클릭](0-1.-%EC%95%8C%EB%A6%BC-%EB%82%B4%EB%B6%80_%EC%95%8C%EB%A6%BC-%ED%95%AD%EB%AA%A9-%ED%81%B4%EB%A6%AD.md) | 로깅 필요 | IOS · ANDROID · WEB |
 | [0-2. 알림 내부_개별 삭제 버튼 클릭](0-2.-%EC%95%8C%EB%A6%BC-%EB%82%B4%EB%B6%80_%EA%B0%9C%EB%B3%84-%EC%82%AD%EC%A0%9C-%EB%B2%84%ED%8A%BC-%ED%81%B4%EB%A6%AD.md) | 로깅 필요 | ANDROID · IOS · WEB |
 | [0-3. 알림 내부_스와이프로 개별 삭제](0-3.-%EC%95%8C%EB%A6%BC-%EB%82%B4%EB%B6%80_%EC%8A%A4%EC%99%80%EC%9D%B4%ED%94%84%EB%A1%9C-%EA%B0%9C%EB%B3%84-%EC%82%AD%EC%A0%9C.md) | 로깅 필요 | ANDROID · IOS · WEB |

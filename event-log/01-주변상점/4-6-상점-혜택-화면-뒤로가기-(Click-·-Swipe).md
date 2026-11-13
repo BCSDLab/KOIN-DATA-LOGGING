@@ -7,11 +7,8 @@
 
 과거 로깅·새 로깅과 각 참고사진은 원문의 구간별 연결을 유지합니다.
 
-
-
 <!-- logging-section:past:start -->
 ## 과거 로깅
-
 
 - event\_label: <code>shop_benefit_back</code>
 - value: \{상점이름\}
@@ -19,10 +16,8 @@
 
 <!-- logging-section:past:end -->
 
-
 <!-- logging-section:new:start -->
 ## 새 로깅
-
 
 ### 뒤로가기 버튼
 
@@ -44,23 +39,15 @@
 
 ### 참고사진
 
-
-<b>웹</b>
-
 PC 웹: 이벤트/공지 탭 방식이며 별도 혜택 화면의 뒤로가기 버튼 없음.
-
 
 <b>모바일</b>
 
-
 ![참고 이미지](../../assets/917bb4dd-2097-4707-8e5f-f1e3c0163ba7.png)
-
 
 Stage 모바일 웹 · 해당 상점의 이벤트/공지 화면 뒤로가기
 
-
 <!-- logging-section:new:end -->
-
 
 ---
 

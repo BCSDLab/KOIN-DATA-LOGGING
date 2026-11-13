@@ -2,7 +2,8 @@
   "groups": 8,
   "listedDocuments": 747,
   "preservedAliasDocuments": 8,
-  "readerBodiesUnchanged": 16,
+  "readerBodiesValidated": 16,
+  "presentationAdjustedBodies": 14,
   "conflictingGroups": 1,
   "errors": []
 }
