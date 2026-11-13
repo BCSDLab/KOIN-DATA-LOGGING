@@ -12,3 +12,5 @@
 - [문서·이미지 대응 검사 결과](reader-validation.json)
 
 - [대표 명세·보존 원본 대응표](representatives.json): 목록의 중복 8개만 숨겼으며 원본과 이미지는 그대로 보존합니다. 화면 이탈의 원문 충돌 1건은 전환값 미확정으로 표시합니다.
+
+- [현재 Notion 원본 755개·이미지 전체 대조](live-notion-validation.md)

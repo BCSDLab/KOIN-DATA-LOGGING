@@ -1,0 +1,532 @@
+{
+  "pages": [
+    {
+      "id": "1c50221954bc8272bc980115492da6db",
+      "fields": [
+        {
+          "key": "event_label",
+          "value": "\"bus_timetable_time\""
+        },
+        {
+          "key": "value",
+          "value": "\"{드롭다운 목록}\""
+        },
+        {
+          "key": "event_category",
+          "value": "\"click\""
+        }
+      ],
+      "sections": [
+        {
+          "kind": "past",
+          "title": "과거 로깅",
+          "fields": [
+            {
+              "key": "event_label",
+              "value": "\"bus_timetable_time\""
+            },
+            {
+              "key": "value",
+              "value": "\"{드롭다운 목록}\""
+            },
+            {
+              "key": "event_category",
+              "value": "\"click\""
+            }
+          ],
+          "images": [
+            "a1c54ccd-0863-4210-8273-f0bee77ebc39"
+          ]
+        },
+        {
+          "kind": "new",
+          "title": "새 로깅",
+          "fields": [],
+          "images": []
+        }
+      ],
+      "source": {
+        "reason": "ZIP에서 평탄화된 과거·새 토글을 연결된 Notion 원본 기준으로 복원",
+        "fetchedAt": "2026-11-13T05:55:10.075Z"
+      }
+    },
+    {
+      "id": "6650221954bc8242a2a2814d77d4d350",
+      "fields": [
+        {
+          "key": "event_label",
+          "value": "\"area_specific_route\""
+        },
+        {
+          "key": "value",
+          "value": "(세부 노선 변경시 업데이트 필요){노선_세부 노선} 형식"
+        },
+        {
+          "key": "event_category",
+          "value": "\"click\""
+        },
+        {
+          "key": "설명",
+          "value": "버스 시간표 화면 셔틀 탭에서 노선(예: 천안 셔틀)을 클릭해 셔틀버스 시간표 상세 화면으로 들어가는 경우"
+        },
+        {
+          "key": "screen_view",
+          "value": "bus_timetable"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "bus__bus_timetable__shuttle_route__entry__click"
+        },
+        {
+          "key": "value",
+          "value": "{노선 구분}_{세부 노선} (예: 순환_천안 셔틀, 주중_천안역)"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "sections": [
+        {
+          "kind": "past",
+          "title": "과거 로깅",
+          "fields": [
+            {
+              "key": "event_label",
+              "value": "\"area_specific_route\""
+            },
+            {
+              "key": "value",
+              "value": "(세부 노선 변경시 업데이트 필요){노선_세부 노선} 형식"
+            },
+            {
+              "key": "event_category",
+              "value": "\"click\""
+            }
+          ],
+          "images": [
+            "3b51582a-3ee3-4da1-b6bc-9feb23214cf8",
+            "e704d3b3-47f6-4ccd-ba34-d3cd20ef8b14"
+          ]
+        },
+        {
+          "kind": "new",
+          "title": "새 로깅",
+          "fields": [
+            {
+              "key": "설명",
+              "value": "버스 시간표 화면 셔틀 탭에서 노선(예: 천안 셔틀)을 클릭해 셔틀버스 시간표 상세 화면으로 들어가는 경우"
+            },
+            {
+              "key": "screen_view",
+              "value": "bus_timetable"
+            },
+            {
+              "key": "event_name",
+              "value": "DA1"
+            },
+            {
+              "key": "event_label",
+              "value": "bus__bus_timetable__shuttle_route__entry__click"
+            },
+            {
+              "key": "value",
+              "value": "{노선 구분}_{세부 노선} (예: 순환_천안 셔틀, 주중_천안역)"
+            },
+            {
+              "key": "event_category",
+              "value": "click"
+            }
+          ],
+          "images": [
+            "aa8bcddf-80ea-43f0-895e-20915b4646ff",
+            "84dab763-9fcb-4e64-acef-a6e01e314f1b"
+          ]
+        }
+      ],
+      "source": {
+        "reason": "ZIP에서 평탄화된 과거·새 토글을 연결된 Notion 원본 기준으로 복원",
+        "fetchedAt": "2026-11-13T05:55:16.881Z"
+      }
+    },
+    {
+      "id": "e640221954bc82429edd8117e763ab61",
+      "fields": [
+        {
+          "key": "event_name",
+          "value": "CAMPUS"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        },
+        {
+          "key": "event_label",
+          "value": "callvan_write_departure"
+        },
+        {
+          "key": "설명",
+          "value": "모집글 작성 화면 위 출발지 선택 바텀시트에서 장소를 선택하고 선택하기를 클릭한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "callvan_write"
+        },
+        {
+          "key": "event_label",
+          "value": "callvan__callvan_write__callvan_write__departure_confirm__click"
+        },
+        {
+          "key": "event_name",
+          "value": "DA2"
+        },
+        {
+          "key": "value",
+          "value": "- 예시 : 교내, 정문- 예시 : 교외, 천안 터미널- 예시 : 교내, 기타, 인문경영관"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "sections": [
+        {
+          "kind": "past",
+          "title": "과거 로깅",
+          "fields": [
+            {
+              "key": "event_name",
+              "value": "CAMPUS"
+            },
+            {
+              "key": "event_category",
+              "value": "click"
+            },
+            {
+              "key": "event_label",
+              "value": "callvan_write_departure"
+            }
+          ],
+          "images": [
+            "8308c27d-8b1e-46d8-a761-393075722688"
+          ]
+        },
+        {
+          "kind": "new",
+          "title": "새 로깅",
+          "fields": [
+            {
+              "key": "설명",
+              "value": "모집글 작성 화면 위 출발지 선택 바텀시트에서 장소를 선택하고 선택하기를 클릭한다."
+            },
+            {
+              "key": "screen_view",
+              "value": "callvan_write"
+            },
+            {
+              "key": "event_label",
+              "value": "callvan__callvan_write__callvan_write__departure_confirm__click"
+            },
+            {
+              "key": "event_name",
+              "value": "DA2"
+            },
+            {
+              "key": "value",
+              "value": "- 예시 : 교내, 정문- 예시 : 교외, 천안 터미널- 예시 : 교내, 기타, 인문경영관"
+            },
+            {
+              "key": "event_category",
+              "value": "click"
+            }
+          ],
+          "images": [
+            "f2faea6a-11b5-49f1-a127-847814d79609"
+          ]
+        }
+      ],
+      "source": {
+        "reason": "ZIP에서 평탄화된 과거·새 토글을 연결된 Notion 원본 기준으로 복원",
+        "fetchedAt": "2026-11-13T05:59:52.825Z"
+      }
+    },
+    {
+      "id": "b790221954bc8365a0d3811f1c79910b",
+      "fields": [
+        {
+          "key": "event_name",
+          "value": "CAMPUS"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        },
+        {
+          "key": "event_label",
+          "value": "callvan_write_arrival"
+        },
+        {
+          "key": "설명",
+          "value": "모집글 작성 화면 위 도착지 선택 바텀시트에서 장소를 선택하고 선택하기를 클릭한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "callvan_write"
+        },
+        {
+          "key": "event_label",
+          "value": "callvan__callvan_write__callvan_write__arrival_confirm__click"
+        },
+        {
+          "key": "event_name",
+          "value": "DA2"
+        },
+        {
+          "key": "value",
+          "value": "- 예시 : 교내, 정문- 예시 : 교외, 천안 터미널- 예시 : 교내, 기타, 인문경영관"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "sections": [
+        {
+          "kind": "past",
+          "title": "과거 로깅",
+          "fields": [
+            {
+              "key": "event_name",
+              "value": "CAMPUS"
+            },
+            {
+              "key": "event_category",
+              "value": "click"
+            },
+            {
+              "key": "event_label",
+              "value": "callvan_write_arrival"
+            }
+          ],
+          "images": [
+            "8308c27d-8b1e-46d8-a761-393075722688"
+          ]
+        },
+        {
+          "kind": "new",
+          "title": "새 로깅",
+          "fields": [
+            {
+              "key": "설명",
+              "value": "모집글 작성 화면 위 도착지 선택 바텀시트에서 장소를 선택하고 선택하기를 클릭한다."
+            },
+            {
+              "key": "screen_view",
+              "value": "callvan_write"
+            },
+            {
+              "key": "event_label",
+              "value": "callvan__callvan_write__callvan_write__arrival_confirm__click"
+            },
+            {
+              "key": "event_name",
+              "value": "DA2"
+            },
+            {
+              "key": "value",
+              "value": "- 예시 : 교내, 정문- 예시 : 교외, 천안 터미널- 예시 : 교내, 기타, 인문경영관"
+            },
+            {
+              "key": "event_category",
+              "value": "click"
+            }
+          ],
+          "images": [
+            "f5ea34eb-cf71-42ef-a851-feabc2b80a88"
+          ]
+        }
+      ],
+      "source": {
+        "reason": "ZIP에서 평탄화된 과거·새 토글을 연결된 Notion 원본 기준으로 복원",
+        "fetchedAt": "2026-11-13T05:59:53.464Z"
+      }
+    },
+    {
+      "id": "c8e0221954bc83c9b38881d86e381fb5",
+      "fields": [
+        {
+          "key": "설명",
+          "value": "모집글 상세 화면 왼쪽 위 뒤로가기(<) 버튼을 클릭해 이전 화면(팀원 모집 목록 등)으로 돌아가는 경우"
+        },
+        {
+          "key": "screen_view",
+          "value": "team_detail"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "team_recruit__team_detail__navigation__back__click"
+        },
+        {
+          "key": "value",
+          "value": "뒤로가기"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "sections": [
+        {
+          "kind": "past",
+          "title": "과거 로깅",
+          "fields": [],
+          "images": []
+        },
+        {
+          "kind": "new",
+          "title": "새 로깅",
+          "fields": [
+            {
+              "key": "설명",
+              "value": "모집글 상세 화면 왼쪽 위 뒤로가기(<) 버튼을 클릭해 이전 화면(팀원 모집 목록 등)으로 돌아가는 경우"
+            },
+            {
+              "key": "screen_view",
+              "value": "team_detail"
+            },
+            {
+              "key": "event_name",
+              "value": "DA1"
+            },
+            {
+              "key": "event_label",
+              "value": "team_recruit__team_detail__navigation__back__click"
+            },
+            {
+              "key": "value",
+              "value": "뒤로가기"
+            },
+            {
+              "key": "event_category",
+              "value": "click"
+            }
+          ],
+          "images": [
+            "3804368c-3b8c-4bdd-938c-6b423607d32a"
+          ]
+        }
+      ],
+      "source": {
+        "reason": "ZIP에서 평탄화된 과거·새 토글을 연결된 Notion 원본 기준으로 복원",
+        "fetchedAt": "2026-11-13T06:05:03.010Z"
+      }
+    },
+    {
+      "id": "daa0221954bc83fd9ea98165d8b666db",
+      "fields": [
+        {
+          "key": "event_label",
+          "value": "\"timetable_back\""
+        },
+        {
+          "key": "value",
+          "value": "\"뒤로가기버튼\""
+        },
+        {
+          "key": "event_category",
+          "value": "\"click\""
+        },
+        {
+          "key": "설명",
+          "value": "모바일 시간표 화면 왼쪽 위 뒤로가기(<) 버튼을 눌러 시간표에서 나가는 경우"
+        },
+        {
+          "key": "screen_view",
+          "value": "timetable"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "timetable__timetable__navigation__back__click"
+        },
+        {
+          "key": "value",
+          "value": "뒤로가기"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "sections": [
+        {
+          "kind": "past",
+          "title": "과거 로깅",
+          "fields": [
+            {
+              "key": "event_label",
+              "value": "\"timetable_back\""
+            },
+            {
+              "key": "value",
+              "value": "\"뒤로가기버튼\""
+            },
+            {
+              "key": "event_category",
+              "value": "\"click\""
+            }
+          ],
+          "images": []
+        },
+        {
+          "kind": "new",
+          "title": "새 로깅",
+          "fields": [
+            {
+              "key": "설명",
+              "value": "모바일 시간표 화면 왼쪽 위 뒤로가기(<) 버튼을 눌러 시간표에서 나가는 경우"
+            },
+            {
+              "key": "screen_view",
+              "value": "timetable"
+            },
+            {
+              "key": "event_name",
+              "value": "DA1"
+            },
+            {
+              "key": "event_label",
+              "value": "timetable__timetable__navigation__back__click"
+            },
+            {
+              "key": "value",
+              "value": "뒤로가기"
+            },
+            {
+              "key": "event_category",
+              "value": "click"
+            }
+          ],
+          "images": [
+            "f501d462-b5d9-42f2-b163-c93de63c9c50"
+          ]
+        }
+      ],
+      "source": {
+        "reason": "ZIP에서 평탄화된 과거·새 토글을 연결된 Notion 원본 기준으로 복원",
+        "fetchedAt": "2026-11-13T06:07:30.305Z"
+      }
+    }
+  ]
+}

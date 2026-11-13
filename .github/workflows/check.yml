@@ -15,6 +15,8 @@ jobs:
           node-version: "22"
       - run: node event-log/verify.mjs
       - run: node event-log/verify-representatives.mjs
+      - run: node --test event-log/notion-comparison.test.mjs
+      - run: node event-log/verify-notion.mjs
       - run: npm ci
         working-directory: _archive/original
       - run: npm run verify
