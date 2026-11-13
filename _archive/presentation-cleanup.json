@@ -4619,7 +4619,7 @@
       "file": "event-log/08-게시판/8-1.-더보기_클릭.md",
       "id": "0d70221954bc8297bbe48128dcf74499",
       "beforeSha": "6831023846c449ae841e7b607b1881f00f711832",
-      "afterSha": "6eec1930b62018e3f011923ace55aa792f8c5d46",
+      "afterSha": "21d66c7843ba627840ec30c6647a7e3d9551248c",
       "counts": {
         "bareLabels": 1,
         "duplicateLabels": 0,
@@ -4627,7 +4627,8 @@
         "referenceLinks": 1,
         "legacy": true,
         "emptyHtml": 0
-      }
+      },
+      "beforeReviewSha": "6eec1930b62018e3f011923ace55aa792f8c5d46"
     },
     {
       "file": "event-log/08-게시판/[레거시]-11-15.카테고리_채팅(쪽지)_클릭.md",
@@ -4969,7 +4970,7 @@
       "file": "event-log/08-게시판/6-3.-[검색-키워드]-입력값-DB저장.md",
       "id": "7c30221954bc832ab4ec012abb278477",
       "beforeSha": "efda4107a4c306389fe4c5ff48d0461efc9279eb",
-      "afterSha": "9a69e6b9451ac31d509888fc3acd1b9832b4b989",
+      "afterSha": "1e02ce5ec91b191b812914fc30772b1c6892c8c3",
       "counts": {
         "bareLabels": 0,
         "duplicateLabels": 0,
@@ -4977,7 +4978,8 @@
         "referenceLinks": 0,
         "legacy": true,
         "emptyHtml": 0
-      }
+      },
+      "beforeReviewSha": "9a69e6b9451ac31d509888fc3acd1b9832b4b989"
     },
     {
       "file": "event-log/08-게시판/6-3.-공지글-검색_검색하기_클릭.md",
@@ -5123,7 +5125,7 @@
       "file": "event-log/08-게시판/3-5.-공지사항_BCSD-Lab-알아보기_클릭.md",
       "id": "9ee0221954bc839f8822816a84a06a79",
       "beforeSha": "f0f06b20585ec6b54c7c567763c6ff0f9e8f5a33",
-      "afterSha": "a1f6be3943ff9134fc744ecf77214a4051e32575",
+      "afterSha": "672ca27fadc74487e2f1ba7d3ab94a3b6f0f4202",
       "counts": {
         "bareLabels": 1,
         "duplicateLabels": 0,
@@ -5131,7 +5133,8 @@
         "referenceLinks": 1,
         "legacy": true,
         "emptyHtml": 0
-      }
+      },
+      "beforeReviewSha": "a1f6be3943ff9134fc744ecf77214a4051e32575"
     },
     {
       "file": "event-log/08-게시판/11-11.분실물_분실물신고_작성완료_클릭.md",
@@ -5165,7 +5168,7 @@
       "file": "event-log/08-게시판/3-3.-공지사항_아우누리-바로가기_클릭.md",
       "id": "a460221954bc82aa8e1881676f81d484",
       "beforeSha": "b32553785daa376056fcea8fd192e6448e52d069",
-      "afterSha": "4a7727713a2ecf23d11dc0773f45094c6129bedb",
+      "afterSha": "2927b838950443ad8a55a63716d9d88a22a87a92",
       "counts": {
         "bareLabels": 1,
         "duplicateLabels": 0,
@@ -5173,13 +5176,14 @@
         "referenceLinks": 1,
         "legacy": true,
         "emptyHtml": 0
-      }
+      },
+      "beforeReviewSha": "4a7727713a2ecf23d11dc0773f45094c6129bedb"
     },
     {
       "file": "event-log/08-게시판/7-3.-새-키워드-추가_클릭.md",
       "id": "a510221954bc8243963c01d45432380b",
       "beforeSha": "e4ee7d5985e3e4f4815a2d5cf21a0558e863347a",
-      "afterSha": "3ab67e674ab4b76a2fa33babc0b22fda480dfcb1",
+      "afterSha": "d40950a3faaed7fd2b016d695206a8d1dfe87267",
       "counts": {
         "bareLabels": 0,
         "duplicateLabels": 0,
@@ -5187,7 +5191,8 @@
         "referenceLinks": 1,
         "legacy": true,
         "emptyHtml": 0
-      }
+      },
+      "beforeReviewSha": "3ab67e674ab4b76a2fa33babc0b22fda480dfcb1"
     },
     {
       "file": "event-log/08-게시판/11-7·11-8.분실물_글종류선택(잃어버렸어요·주인을찾아요)_클릭.md",
@@ -5445,7 +5450,7 @@
       "file": "event-log/08-게시판/7-4.-[알림받을-키워드]-입력값-DB저장-(1).md",
       "id": "e0c0221954bc83d2b094017a952ec735",
       "beforeSha": "f7ac28e2596ae75c5a65be31f68ec6e762677994",
-      "afterSha": "0f83a49f954a9bbe8a79d18af8bb015c09f8e6b6",
+      "afterSha": "8f5910eed8539c26e5edcf38ea25bd139dcc4ef1",
       "counts": {
         "bareLabels": 0,
         "duplicateLabels": 0,
@@ -5453,7 +5458,8 @@
         "referenceLinks": 0,
         "legacy": true,
         "emptyHtml": 0
-      }
+      },
+      "beforeReviewSha": "0f83a49f954a9bbe8a79d18af8bb015c09f8e6b6"
     },
     {
       "file": "event-log/08-게시판/2-2.-푸터_공지사항_클릭.md",
@@ -5487,7 +5493,7 @@
       "file": "event-log/08-게시판/8-2.-지금-인기있는-공지-배너_클릭.md",
       "id": "e450221954bc82908813819138dad6c1",
       "beforeSha": "fb75e13817f55e72071dc9c6fa572ee8f52c7a56",
-      "afterSha": "bc430f53985888925ce4e76d0fc9a71687c94f3b",
+      "afterSha": "4c1dd1bd27f630eb168cc064de44d65f5c979af8",
       "counts": {
         "bareLabels": 1,
         "duplicateLabels": 0,
@@ -5495,7 +5501,8 @@
         "referenceLinks": 1,
         "legacy": true,
         "emptyHtml": 0
-      }
+      },
+      "beforeReviewSha": "bc430f53985888925ce4e76d0fc9a71687c94f3b"
     },
     {
       "file": "event-log/08-게시판/11-18.분실물_게시물종류_클릭-(11-23-통합).md",
@@ -5515,7 +5522,7 @@
       "file": "event-log/08-게시판/3-4.-공지사항_새로운-서비스-요청하기_클릭.md",
       "id": "ea70221954bc831d915c812085433be2",
       "beforeSha": "7a8db3bd7a51c568c36e3863b35bb71778a9a231",
-      "afterSha": "b3e0eccfc027422d5c1d857f5768a40989c803ef",
+      "afterSha": "b9dc11c0f46e3d286165e6b156ada35150f50e77",
       "counts": {
         "bareLabels": 1,
         "duplicateLabels": 0,
@@ -5523,7 +5530,8 @@
         "referenceLinks": 1,
         "legacy": true,
         "emptyHtml": 0
-      }
+      },
+      "beforeReviewSha": "b3e0eccfc027422d5c1d857f5768a40989c803ef"
     },
     {
       "file": "event-log/08-게시판/11-31.-푸터_분실물_클릭.md",
@@ -5627,7 +5635,7 @@
       "file": "event-log/08-게시판/8-3.-키워드-관리-진입-배너_클릭.md",
       "id": "fa20221954bc8295ab7101d34c0e80c9",
       "beforeSha": "66da792b89b6cc12c78202c648e2b6d746791556",
-      "afterSha": "db69a2b44f3c4612960c3b4ddedab995e92ae23d",
+      "afterSha": "b153ce8a9c65688c1f2b9b7ba96c93d4c09f3163",
       "counts": {
         "bareLabels": 1,
         "duplicateLabels": 0,
@@ -5635,7 +5643,8 @@
         "referenceLinks": 1,
         "legacy": true,
         "emptyHtml": 0
-      }
+      },
+      "beforeReviewSha": "db69a2b44f3c4612960c3b4ddedab995e92ae23d"
     },
     {
       "file": "event-log/08-게시판/7-1.-키워드-관리_클릭.md",
@@ -5711,7 +5720,7 @@
       "file": "event-log/09-배너/1-3.-메인_모달닫기_클릭.md",
       "id": "8b40221954bc82cd91bf01330ca8180a",
       "beforeSha": "19482cc278d39f46d5d64fb7cc09923fe0b29b7b",
-      "afterSha": "20d3114cc271e2a1412e8892a494ebd08f9d4bb0",
+      "afterSha": "8c9140bceca346ea3aeac07aafe5319772256cca",
       "counts": {
         "bareLabels": 1,
         "duplicateLabels": 0,
@@ -5719,13 +5728,14 @@
         "referenceLinks": 0,
         "legacy": false,
         "emptyHtml": 0
-      }
+      },
+      "beforeReviewSha": "20d3114cc271e2a1412e8892a494ebd08f9d4bb0"
     },
     {
       "file": "event-log/09-배너/1-4.-메인_모달일주일닫기_클릭.md",
       "id": "e150221954bc83d2a710011bc95be70b",
       "beforeSha": "e73ac219c7eece497da9c0fdc6fea196026ecd5e",
-      "afterSha": "f60bcee6b39cf924aa4b326f45b0913b71f71fab",
+      "afterSha": "c1e5c1c1e1f985d12d17a8d20e22d9e660923e29",
       "counts": {
         "bareLabels": 1,
         "duplicateLabels": 0,
@@ -5733,7 +5743,8 @@
         "referenceLinks": 0,
         "legacy": false,
         "emptyHtml": 0
-      }
+      },
+      "beforeReviewSha": "f60bcee6b39cf924aa4b326f45b0913b71f71fab"
     },
     {
       "file": "event-log/09-배너/1-5.-(모바일)메인_다음모달-swipe.md",
@@ -7279,7 +7290,7 @@
       "file": "event-log/12-학교-부서-정보/1-3-전화번호-복사.md",
       "id": "d720221954bc83418e9b8149330b3ffb",
       "beforeSha": "061a0958ac606d8bda6c4a140832e60277230072",
-      "afterSha": "a123b6ebb3ad01cfd8d325673f9b7180fde0b0b4",
+      "afterSha": "cc052ab49659b5e4b93b325f4dbb85e838fc27ef",
       "counts": {
         "bareLabels": 0,
         "duplicateLabels": 1,
@@ -7287,7 +7298,8 @@
         "referenceLinks": 0,
         "legacy": false,
         "emptyHtml": 0
-      }
+      },
+      "beforeReviewSha": "a123b6ebb3ad01cfd8d325673f9b7180fde0b0b4"
     },
     {
       "file": "event-log/12-학교-부서-정보/1-1-카테고리-클릭.md",
@@ -9895,5 +9907,136 @@
       "legacyService": true
     }
   ],
-  "legacyPolicy": "서비스 이름이 - 레거시이거나, 기존 제목에 레거시가 있거나, 원문 상태가 레거시인 경우만 표시. 과거 로깅 구간이 있다는 이유로 현행 문서를 레거시로 분류하지 않음."
+  "legacyPolicy": "서비스 이름이 - 레거시이거나, 기존 제목에 레거시가 있거나, 원문 상태가 레거시인 경우만 표시. 과거 로깅 구간이 있다는 이유로 현행 문서를 레거시로 분류하지 않음.",
+  "reviewAmendment": {
+    "baseCommit": "928cd23b7c7f8053616552b665f154ebd928c6b3",
+    "scope": "게시판 9개의 레거시 상태와 새 명세 공존 안내, WEB 검색 결과 구분 제목 및 배너 2개 WEB 사진 부재 안내 복원. 로깅 값·이미지·원문·분류는 유지.",
+    "legacyNotesUpdated": 9,
+    "definitionHeadingsRestored": 1,
+    "photoAbsenceNoticesRestored": 2,
+    "changes": [
+      {
+        "file": "event-log/08-게시판/8-1.-더보기_클릭.md",
+        "beforeSha": "6eec1930b62018e3f011923ace55aa792f8c5d46",
+        "afterSha": "21d66c7843ba627840ec30c6647a7e3d9551248c"
+      },
+      {
+        "file": "event-log/08-게시판/6-3.-[검색-키워드]-입력값-DB저장.md",
+        "beforeSha": "9a69e6b9451ac31d509888fc3acd1b9832b4b989",
+        "afterSha": "1e02ce5ec91b191b812914fc30772b1c6892c8c3"
+      },
+      {
+        "file": "event-log/08-게시판/3-5.-공지사항_BCSD-Lab-알아보기_클릭.md",
+        "beforeSha": "a1f6be3943ff9134fc744ecf77214a4051e32575",
+        "afterSha": "672ca27fadc74487e2f1ba7d3ab94a3b6f0f4202"
+      },
+      {
+        "file": "event-log/08-게시판/3-3.-공지사항_아우누리-바로가기_클릭.md",
+        "beforeSha": "4a7727713a2ecf23d11dc0773f45094c6129bedb",
+        "afterSha": "2927b838950443ad8a55a63716d9d88a22a87a92"
+      },
+      {
+        "file": "event-log/08-게시판/7-3.-새-키워드-추가_클릭.md",
+        "beforeSha": "3ab67e674ab4b76a2fa33babc0b22fda480dfcb1",
+        "afterSha": "d40950a3faaed7fd2b016d695206a8d1dfe87267"
+      },
+      {
+        "file": "event-log/08-게시판/7-4.-[알림받을-키워드]-입력값-DB저장-(1).md",
+        "beforeSha": "0f83a49f954a9bbe8a79d18af8bb015c09f8e6b6",
+        "afterSha": "8f5910eed8539c26e5edcf38ea25bd139dcc4ef1"
+      },
+      {
+        "file": "event-log/08-게시판/8-2.-지금-인기있는-공지-배너_클릭.md",
+        "beforeSha": "bc430f53985888925ce4e76d0fc9a71687c94f3b",
+        "afterSha": "4c1dd1bd27f630eb168cc064de44d65f5c979af8"
+      },
+      {
+        "file": "event-log/08-게시판/3-4.-공지사항_새로운-서비스-요청하기_클릭.md",
+        "beforeSha": "b3e0eccfc027422d5c1d857f5768a40989c803ef",
+        "afterSha": "b9dc11c0f46e3d286165e6b156ada35150f50e77"
+      },
+      {
+        "file": "event-log/08-게시판/8-3.-키워드-관리-진입-배너_클릭.md",
+        "beforeSha": "db69a2b44f3c4612960c3b4ddedab995e92ae23d",
+        "afterSha": "b153ce8a9c65688c1f2b9b7ba96c93d4c09f3163"
+      },
+      {
+        "file": "event-log/12-학교-부서-정보/1-3-전화번호-복사.md",
+        "beforeSha": "a123b6ebb3ad01cfd8d325673f9b7180fde0b0b4",
+        "afterSha": "cc052ab49659b5e4b93b325f4dbb85e838fc27ef"
+      },
+      {
+        "file": "event-log/09-배너/1-3.-메인_모달닫기_클릭.md",
+        "beforeSha": "20d3114cc271e2a1412e8892a494ebd08f9d4bb0",
+        "afterSha": "8c9140bceca346ea3aeac07aafe5319772256cca"
+      },
+      {
+        "file": "event-log/09-배너/1-4.-메인_모달일주일닫기_클릭.md",
+        "beforeSha": "f60bcee6b39cf924aa4b326f45b0913b71f71fab",
+        "afterSha": "c1e5c1c1e1f985d12d17a8d20e22d9e660923e29"
+      }
+    ],
+    "checks": [
+      {
+        "file": "event-log/08-게시판/8-1.-더보기_클릭.md",
+        "fieldsUnchanged": true,
+        "imagesUnchanged": true
+      },
+      {
+        "file": "event-log/08-게시판/6-3.-[검색-키워드]-입력값-DB저장.md",
+        "fieldsUnchanged": true,
+        "imagesUnchanged": true
+      },
+      {
+        "file": "event-log/08-게시판/3-5.-공지사항_BCSD-Lab-알아보기_클릭.md",
+        "fieldsUnchanged": true,
+        "imagesUnchanged": true
+      },
+      {
+        "file": "event-log/08-게시판/3-3.-공지사항_아우누리-바로가기_클릭.md",
+        "fieldsUnchanged": true,
+        "imagesUnchanged": true
+      },
+      {
+        "file": "event-log/08-게시판/7-3.-새-키워드-추가_클릭.md",
+        "fieldsUnchanged": true,
+        "imagesUnchanged": true
+      },
+      {
+        "file": "event-log/08-게시판/7-4.-[알림받을-키워드]-입력값-DB저장-(1).md",
+        "fieldsUnchanged": true,
+        "imagesUnchanged": true
+      },
+      {
+        "file": "event-log/08-게시판/8-2.-지금-인기있는-공지-배너_클릭.md",
+        "fieldsUnchanged": true,
+        "imagesUnchanged": true
+      },
+      {
+        "file": "event-log/08-게시판/3-4.-공지사항_새로운-서비스-요청하기_클릭.md",
+        "fieldsUnchanged": true,
+        "imagesUnchanged": true
+      },
+      {
+        "file": "event-log/08-게시판/8-3.-키워드-관리-진입-배너_클릭.md",
+        "fieldsUnchanged": true,
+        "imagesUnchanged": true
+      },
+      {
+        "file": "event-log/12-학교-부서-정보/1-3-전화번호-복사.md",
+        "fieldsUnchanged": true,
+        "imagesUnchanged": true
+      },
+      {
+        "file": "event-log/09-배너/1-3.-메인_모달닫기_클릭.md",
+        "fieldsUnchanged": true,
+        "imagesUnchanged": true
+      },
+      {
+        "file": "event-log/09-배너/1-4.-메인_모달일주일닫기_클릭.md",
+        "fieldsUnchanged": true,
+        "imagesUnchanged": true
+      }
+    ]
+  }
 }
