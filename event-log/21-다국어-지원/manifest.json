@@ -1,0 +1,762 @@
+{
+  "service": "다국어 지원",
+  "folder": "event-log/21-다국어-지원",
+  "pages": [
+    {
+      "id": "https://app.notion.com/7880221954bc832696f30163b2421086",
+      "title": "1-1 언어 설정 진입 클릭 (모바일)",
+      "path": "event-log/21-다국어-지원/1-1-언어-설정-진입-클릭-(모바일).md",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB(모바일)"
+      ],
+      "fields": [
+        {
+          "key": "설명",
+          "value": "설정 화면의 언어 설정 행을 클릭해 언어 선택 화면으로 이동을 요청할 때 1회 기록한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "account_config"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "account__account_config__language_setting__entry__click"
+        },
+        {
+          "key": "value",
+          "value": "언어 설정"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "images": [
+        "9a84a889-1fb0-48a8-873a-25689f630763"
+      ]
+    },
+    {
+      "id": "https://app.notion.com/0a10221954bc82df8848016e27f092f1",
+      "title": "1-1-1 언어 메뉴 열기 클릭 (웹)",
+      "path": "event-log/21-다국어-지원/1-1-1-언어-메뉴-열기-클릭-(웹).md",
+      "platforms": [
+        "WEB"
+      ],
+      "fields": [
+        {
+          "key": "설명",
+          "value": "홈 화면 헤더의 현재 언어 선택 버튼을 클릭해 닫혀 있던 언어 목록 메뉴를 열 때 1회 기록한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "main"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "main__main__language_setting__entry__click"
+        },
+        {
+          "key": "value",
+          "value": "언어 설정"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "images": [
+        "86fcde57-b698-4f2b-8c9a-5aad0cf8464e"
+      ]
+    },
+    {
+      "id": "https://app.notion.com/0230221954bc839a861e8170f761c97b",
+      "title": "1-2 언어 선택 (모바일)",
+      "path": "event-log/21-다국어-지원/1-2-언어-선택-(모바일).md",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB(모바일)"
+      ],
+      "fields": [
+        {
+          "key": "설명",
+          "value": "언어 선택 목록에서 현재 선택과 다른 언어를 눌러 유효한 변경 선택이 받아들여질 때 1회 기록한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "language_setting"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "account__language_setting__language_setting__select"
+        },
+        {
+          "key": "value",
+          "value": "{선택한 언어} (예: 영어)"
+        },
+        {
+          "key": "event_category",
+          "value": "select"
+        }
+      ],
+      "images": [
+        "efa8ffc4-8709-452f-ba69-6cdad01bbd10"
+      ]
+    },
+    {
+      "id": "https://app.notion.com/1ba0221954bc834cb1e481f52d19ea29",
+      "title": "1-2-1 언어 선택 (웹)",
+      "path": "event-log/21-다국어-지원/1-2-1-언어-선택-(웹).md",
+      "platforms": [
+        "WEB"
+      ],
+      "fields": [
+        {
+          "key": "설명",
+          "value": "홈 화면 헤더에서 열린 언어 목록의 항목을 눌러 현재 선택과 다른 언어로 유효한 변경 선택이 받아들여질 때 1회 기록한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "main"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "main__main__language_setting__select"
+        },
+        {
+          "key": "value",
+          "value": "{선택한 언어} (예: 한국어, English)"
+        },
+        {
+          "key": "event_category",
+          "value": "select"
+        }
+      ],
+      "images": [
+        "f255472f-7e80-4d01-bc5e-bcf83d49c0c3"
+      ]
+    },
+    {
+      "id": "https://app.notion.com/7620221954bc826791e88152bd0a280e",
+      "title": "2-1 공지사항 번역 클릭",
+      "path": "event-log/21-다국어-지원/2-1-공지사항-번역-클릭.md",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "fields": [
+        {
+          "key": "설명",
+          "value": "공지사항 상세의 AI 요약 영역에서 활성화된 번역 버튼을 클릭해 번역 요청을 시작할 때 1회 기록한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "notice_detail"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "board__notice_detail__translation__request__click"
+        },
+        {
+          "key": "value",
+          "value": "번역"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "images": [
+        "0db4f314-950c-4ab1-bf32-722048b5faf2",
+        "2ac7f114-a281-4f1a-90ec-e74bb6c22839"
+      ]
+    },
+    {
+      "id": "https://app.notion.com/3ba0221954bc83528fb5810aeff7cc8a",
+      "title": "2-2 공지사항 원문보기 클릭",
+      "path": "event-log/21-다국어-지원/2-2-공지사항-원문보기-클릭.md",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "fields": [
+        {
+          "key": "설명",
+          "value": "공지사항 상세의 번역된 AI 요약 영역에서 원문보기 버튼을 클릭해 원문으로 되돌릴 때 1회 기록한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "notice_detail"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "board__notice_detail__translation__original__click"
+        },
+        {
+          "key": "value",
+          "value": "원문보기"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "images": [
+        "7f5faab9-ecc1-4c3a-a91c-043e6e1de44a",
+        "d9f1c7a3-a006-40ab-b1d2-e321e7658bb9"
+      ]
+    },
+    {
+      "id": "https://app.notion.com/1c60221954bc830ab43e011caeeb6d4e",
+      "title": "3-1 분실물 번역 클릭",
+      "path": "event-log/21-다국어-지원/3-1-분실물-번역-클릭.md",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "fields": [
+        {
+          "key": "설명",
+          "value": "분실물 게시글 상세 화면에서 활성화된 번역 버튼을 클릭해 해당 게시글의 번역 요청을 시작할 때 1회 기록한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "lost_item_detail"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "board__lost_item_detail__translation__request__click"
+        },
+        {
+          "key": "value",
+          "value": "번역"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "images": [
+        "ad709ea7-e5ff-4937-8c5b-ec0a967f0414",
+        "86512541-bf08-4f32-9319-3c34c37f6cd3"
+      ]
+    },
+    {
+      "id": "https://app.notion.com/7560221954bc82de960481a890aca84e",
+      "title": "3-2 분실물 원문보기 클릭",
+      "path": "event-log/21-다국어-지원/3-2-분실물-원문보기-클릭.md",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "fields": [
+        {
+          "key": "설명",
+          "value": "분실물 게시글 상세에서 번역된 콘텐츠의 원문보기 버튼을 클릭해 원문으로 되돌릴 때 1회 기록한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "lost_item_detail"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "board__lost_item_detail__translation__original__click"
+        },
+        {
+          "key": "value",
+          "value": "원문보기"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "images": [
+        "0ec90faf-57a8-41c2-9013-cfb9c1f2edd3",
+        "0cf74312-0f9d-47dd-a276-f8b23cb38e89"
+      ]
+    },
+    {
+      "id": "https://app.notion.com/1420221954bc82759e3401b5526a7968",
+      "title": "4-1 팀원모집 번역 클릭",
+      "path": "event-log/21-다국어-지원/4-1-팀원모집-번역-클릭.md",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "fields": [
+        {
+          "key": "설명",
+          "value": "팀원모집 상세 화면의 활성화된 번역 버튼을 클릭해 해당 모집글의 번역 요청을 시작할 때 1회 기록한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "team_detail"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "team_recruit__team_detail__translation__request__click"
+        },
+        {
+          "key": "value",
+          "value": "번역"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "images": [
+        "f79e4be3-e049-4bb3-a13d-9b5e47cb1d9b",
+        "8dc3abe5-7613-4dbb-b511-47c7d8bc425b"
+      ]
+    },
+    {
+      "id": "https://app.notion.com/4bf0221954bc83d38e9301452d32239e",
+      "title": "4-2 팀원모집 원문보기 클릭",
+      "path": "event-log/21-다국어-지원/4-2-팀원모집-원문보기-클릭.md",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "fields": [
+        {
+          "key": "설명",
+          "value": "팀원모집 상세에서 번역된 모집글의 원문보기 버튼을 클릭해 원문으로 되돌릴 때 1회 기록한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "team_detail"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "team_recruit__team_detail__translation__original__click"
+        },
+        {
+          "key": "value",
+          "value": "원문보기"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "images": [
+        "87c55ba5-669b-4866-8eda-ded2e72176af",
+        "75e274c5-4e69-47ae-a205-6988f0ab16f4"
+      ]
+    },
+    {
+      "id": "https://app.notion.com/b400221954bc8207830c01823b6b8688",
+      "title": "5-1 콜밴팟 메시지 번역 클릭",
+      "path": "event-log/21-다국어-지원/5-1-콜밴팟-메시지-번역-클릭.md",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "fields": [
+        {
+          "key": "설명",
+          "value": "콜밴팟 채팅 화면에서 개별 메시지 아래의 활성화된 번역 버튼을 클릭해 그 메시지의 번역 요청을 시작할 때 1회 기록한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "callvan_chat"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "callvan__callvan_chat__translation__request__click"
+        },
+        {
+          "key": "value",
+          "value": "번역"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "images": [
+        "73a7344f-7151-40db-b2ed-6a30f04c53dc",
+        "a591be8d-fcd4-4003-a1b1-f5cffc8635c9"
+      ]
+    },
+    {
+      "id": "https://app.notion.com/9950221954bc82a6b7b601fe1ff2a952",
+      "title": "5-2 콜밴팟 메시지 원문보기 클릭",
+      "path": "event-log/21-다국어-지원/5-2-콜밴팟-메시지-원문보기-클릭.md",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "fields": [
+        {
+          "key": "설명",
+          "value": "콜밴팟 채팅에서 번역된 개별 메시지 아래의 원문보기 버튼을 클릭해 그 메시지의 원문으로 되돌릴 때 1회 기록한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "callvan_chat"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "callvan__callvan_chat__translation__original__click"
+        },
+        {
+          "key": "value",
+          "value": "원문보기"
+        },
+        {
+          "key": "event_category",
+          "value": "click"
+        }
+      ],
+      "images": [
+        "824e7405-f9db-4823-9c4d-1c578e428c77",
+        "f5d2f087-16a7-4369-a2f3-4efca40801f6"
+      ]
+    },
+    {
+      "id": "https://app.notion.com/92d0221954bc8214876a012bc158db78",
+      "title": "6-1 번역 미제공 안내 노출 (공지사항)",
+      "path": "event-log/21-다국어-지원/6-1-번역-미제공-안내-노출-(공지사항).md",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "fields": [
+        {
+          "key": "설명",
+          "value": "공지사항 상세에서 번역을 제공할 수 없어요 안내 모달이 실제 화면에 표시될 때 모달이 열린 회차당 1회 기록한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "notice_detail"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "board__notice_detail__translation__unavailable__exposure"
+        },
+        {
+          "key": "value",
+          "value": "번역미제공"
+        },
+        {
+          "key": "event_category",
+          "value": "exposure"
+        }
+      ],
+      "images": [
+        "2381390d-0408-47c4-b99b-85d396af194e",
+        "80dc345f-a51b-40ba-b101-69b91ced9afc"
+      ]
+    },
+    {
+      "id": "https://app.notion.com/13a0221954bc822fadb581260d094a4e",
+      "title": "6-2 번역 실패 안내 노출 (공지사항)",
+      "path": "event-log/21-다국어-지원/6-2-번역-실패-안내-노출-(공지사항).md",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "fields": [
+        {
+          "key": "설명",
+          "value": "공지사항 상세에서 일시적 오류로 번역에 실패했어요 안내 모달이 실제 화면에 표시될 때 모달이 열린 회차당 1회 기록한다."
+        },
+        {
+          "key": "screen_view",
+          "value": "notice_detail"
+        },
+        {
+          "key": "event_name",
+          "value": "DA1"
+        },
+        {
+          "key": "event_label",
+          "value": "board__notice_detail__translation__error__exposure"
+        },
+        {
+          "key": "value",
+          "value": "번역실패"
+        },
+        {
+          "key": "event_category",
+          "value": "exposure"
+        }
+      ],
+      "images": [
+        "755abeaf-687a-4b16-bd7e-a22589c0bd68",
+        "c8057274-8c37-4cd3-976c-0b0be9c09ec2"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "efa8ffc4-8709-452f-ba69-6cdad01bbd10",
+      "name": "02_language_options.png",
+      "path": "assets/multilingual/efa8ffc4-8709-452f-ba69-6cdad01bbd10.png",
+      "bytes": 1054345,
+      "sha256": "efc3fd27e799a311a7e9dff83c63681876cb84c0afb9a7a0fe215a40d464556b",
+      "blobSha": "c886712163c0fd76f77fc6ae52f78fc710363aaf"
+    },
+    {
+      "id": "86fcde57-b698-4f2b-8c9a-5aad0cf8464e",
+      "name": "web01_home_language_entry.png",
+      "path": "assets/multilingual/86fcde57-b698-4f2b-8c9a-5aad0cf8464e.png",
+      "bytes": 573892,
+      "sha256": "6cbd7a36fc672cd867b8345a9bc4cfdccd7fd32093da60c62881d102af6b303b",
+      "blobSha": "0cfd772a609f272454eae921686163ea0027f6f6"
+    },
+    {
+      "id": "755abeaf-687a-4b16-bd7e-a22589c0bd68",
+      "name": "15_translation_failure_dialog.png",
+      "path": "assets/multilingual/755abeaf-687a-4b16-bd7e-a22589c0bd68.png",
+      "bytes": 1240161,
+      "sha256": "023aad017e6f55a2d177f559d688f3327a5e476a686a0f36562ecd0962ac72c2",
+      "blobSha": "60903bcdc4c80ff302c3e932cfdf932bbc82567a"
+    },
+    {
+      "id": "c8057274-8c37-4cd3-976c-0b0be9c09ec2",
+      "name": "web03_failure_dialog.png",
+      "path": "assets/multilingual/c8057274-8c37-4cd3-976c-0b0be9c09ec2.png",
+      "bytes": 1199617,
+      "sha256": "89fbe2164789eb84ca8558cc720e46f799860a36a0d62ab986b6ef2d22751033",
+      "blobSha": "b8b116e9960bd1cdfeda9e680faac103d4f28c12"
+    },
+    {
+      "id": "f79e4be3-e049-4bb3-a13d-9b5e47cb1d9b",
+      "name": "07_team_translate.png",
+      "path": "assets/multilingual/f79e4be3-e049-4bb3-a13d-9b5e47cb1d9b.png",
+      "bytes": 1033732,
+      "sha256": "ef033a53615e40534f1ed84bda6fb09fc9b48086960d4eba31f06ad7d94b6310",
+      "blobSha": "f0005f466acfbf1ef7441c82b4d6719540f136b9"
+    },
+    {
+      "id": "8dc3abe5-7613-4dbb-b511-47c7d8bc425b",
+      "name": "web09_team_translate.png",
+      "path": "assets/multilingual/8dc3abe5-7613-4dbb-b511-47c7d8bc425b.png",
+      "bytes": 677205,
+      "sha256": "4bb6eff6324a5b01904e9a0968092be546dda00c0dc4a9059156749bc2a73db9",
+      "blobSha": "a247fab35c988c369e77322b230fbf55ab139f1b"
+    },
+    {
+      "id": "f255472f-7e80-4d01-bc5e-bcf83d49c0c3",
+      "name": "web02_home_language_select.png",
+      "path": "assets/multilingual/f255472f-7e80-4d01-bc5e-bcf83d49c0c3.png",
+      "bytes": 1193055,
+      "sha256": "6d8a04a49c16083baf156f3182a1a617a42a058ac7cb21f958cfb2cab48acf56",
+      "blobSha": "c806d2bafce3497a3fd147ee3ec8414ef84072a3"
+    },
+    {
+      "id": "ad709ea7-e5ff-4937-8c5b-ec0a967f0414",
+      "name": "06_lost_item_translate.png",
+      "path": "assets/multilingual/ad709ea7-e5ff-4937-8c5b-ec0a967f0414.png",
+      "bytes": 1144804,
+      "sha256": "6e33ee56a95fa9781b8895f19e44dcd6cfe2c23583633ac3e2f3c48fa05e02a7",
+      "blobSha": "a311f24ff09edcc8c010d050e3c55e958ce5a36a"
+    },
+    {
+      "id": "86512541-bf08-4f32-9319-3c34c37f6cd3",
+      "name": "web07_lost_translate.png",
+      "path": "assets/multilingual/86512541-bf08-4f32-9319-3c34c37f6cd3.png",
+      "bytes": 846635,
+      "sha256": "2e2831ba8482d3984c9e820e0f9c5b371515c1fadc5503459b7e3db0264d3b11",
+      "blobSha": "27ef82d6552c64bfa09ff61f3a03eaa1d37f6910"
+    },
+    {
+      "id": "7f5faab9-ecc1-4c3a-a91c-043e6e1de44a",
+      "name": "04_notice_original.png",
+      "path": "assets/multilingual/7f5faab9-ecc1-4c3a-a91c-043e6e1de44a.png",
+      "bytes": 1344302,
+      "sha256": "a2397c673542cb0f3d22a494379f1573e2273e91ccd00835f0e02e37110d45ad",
+      "blobSha": "bbe0550800024a55c44325f904b34dc1f68ed4fd"
+    },
+    {
+      "id": "d9f1c7a3-a006-40ab-b1d2-e321e7658bb9",
+      "name": "web06_notice_original.png",
+      "path": "assets/multilingual/d9f1c7a3-a006-40ab-b1d2-e321e7658bb9.png",
+      "bytes": 1422802,
+      "sha256": "17a6138bb6414512225cdb9294ae2ceb5c78da4cbf732c17161dc775738ab1ca",
+      "blobSha": "023d772346a785545785e6b10041dd05aa46890d"
+    },
+    {
+      "id": "87c55ba5-669b-4866-8eda-ded2e72176af",
+      "name": "08_team_original.png",
+      "path": "assets/multilingual/87c55ba5-669b-4866-8eda-ded2e72176af.png",
+      "bytes": 1089390,
+      "sha256": "309c537100edcf02011f55568663efc0c07565385cff4bc19b8b5ab2e3c8f3c6",
+      "blobSha": "998968c95abdb6ca40b0467e063e53188bad6f2e"
+    },
+    {
+      "id": "75e274c5-4e69-47ae-a205-6988f0ab16f4",
+      "name": "web10_team_original.png",
+      "path": "assets/multilingual/75e274c5-4e69-47ae-a205-6988f0ab16f4.png",
+      "bytes": 699065,
+      "sha256": "f5910b2853038712d9b3b6e0f76422f367b4ba589b65f4680eeb4cca1e123e7f",
+      "blobSha": "934057a9aeee311e378e75b4ea75ddc1af9ec24e"
+    },
+    {
+      "id": "0ec90faf-57a8-41c2-9013-cfb9c1f2edd3",
+      "name": "16_lost_item_original.png",
+      "path": "assets/multilingual/0ec90faf-57a8-41c2-9013-cfb9c1f2edd3.png",
+      "bytes": 1037102,
+      "sha256": "67d8c429c38345df48c4749ad48ed1704aea08faf3fabef556a0552835996722",
+      "blobSha": "d1a5dce37253754310f223d5d5acedeac5edde10"
+    },
+    {
+      "id": "0cf74312-0f9d-47dd-a276-f8b23cb38e89",
+      "name": "web08_lost_original.png",
+      "path": "assets/multilingual/0cf74312-0f9d-47dd-a276-f8b23cb38e89.png",
+      "bytes": 867887,
+      "sha256": "f27d3cb29b7560a93cdb203ca17a7fe36ecf3816605aeb096f6565930884092d",
+      "blobSha": "a1e2fe400176af9841d2fd0167155bd8abd09bba"
+    },
+    {
+      "id": "0db4f314-950c-4ab1-bf32-722048b5faf2",
+      "name": "03_notice_translate.png",
+      "path": "assets/multilingual/0db4f314-950c-4ab1-bf32-722048b5faf2.png",
+      "bytes": 1319238,
+      "sha256": "85094b9d0d5874027eaea9ca625157c4edf7a4d350983b067fbf47ffad4a72ae",
+      "blobSha": "5b4299f181b32cb440939655a7f806230e6d3568"
+    },
+    {
+      "id": "2ac7f114-a281-4f1a-90ec-e74bb6c22839",
+      "name": "web05_notice_translate.png",
+      "path": "assets/multilingual/2ac7f114-a281-4f1a-90ec-e74bb6c22839.png",
+      "bytes": 1196416,
+      "sha256": "ecc643d99ad8ff77615392f5e65c0a36c4a31ca0e53b1727f0bbdf3dad859d52",
+      "blobSha": "b3c5b3dcdc511636f7a83c5eec40dc4cadcb619f"
+    },
+    {
+      "id": "9a84a889-1fb0-48a8-873a-25689f630763",
+      "name": "01_language_settings_entry.png",
+      "path": "assets/multilingual/9a84a889-1fb0-48a8-873a-25689f630763.png",
+      "bytes": 1042754,
+      "sha256": "89e081de5664551705f1638b01aba7810fbad12052d87afc74591ccc42597995",
+      "blobSha": "7c724418bf89a2b422208fa60a5d23941380a834"
+    },
+    {
+      "id": "2381390d-0408-47c4-b99b-85d396af194e",
+      "name": "14_translation_unavailable_dialog.png",
+      "path": "assets/multilingual/2381390d-0408-47c4-b99b-85d396af194e.png",
+      "bytes": 1273476,
+      "sha256": "a973f308bd87e65e84d1f553934dbec0af47e5595f6958f4c242c94fc95cf261",
+      "blobSha": "9168cf6b44855f50aedacad9df4170689c68c387"
+    },
+    {
+      "id": "80dc345f-a51b-40ba-b101-69b91ced9afc",
+      "name": "web04_unavailable_dialog.png",
+      "path": "assets/multilingual/80dc345f-a51b-40ba-b101-69b91ced9afc.png",
+      "bytes": 1150314,
+      "sha256": "77274a861979592ab72798993069309a123449159791147ea20142a3916b70af",
+      "blobSha": "cf05dfd4f239d5f11a4b9533074c177ef5e8f7e3"
+    },
+    {
+      "id": "824e7405-f9db-4823-9c4d-1c578e428c77",
+      "name": "11_callvan_original.png",
+      "path": "assets/multilingual/824e7405-f9db-4823-9c4d-1c578e428c77.png",
+      "bytes": 1096068,
+      "sha256": "163206d9a87c5df242a9b94238ffbb531e27b8a9f45c6c6c66d516509b3a1f7d",
+      "blobSha": "f963a492342c8aa6f73317400f816313070d07dd"
+    },
+    {
+      "id": "f5d2f087-16a7-4369-a2f3-4efca40801f6",
+      "name": "web14_callvan_original.png",
+      "path": "assets/multilingual/f5d2f087-16a7-4369-a2f3-4efca40801f6.png",
+      "bytes": 1002051,
+      "sha256": "52a88a63326e53d2ce7116b89e8dd5b961299a06b4d9823f747098d3af79ba0d",
+      "blobSha": "5681b73e8365a93e81f9b4fae100d0f36e5d209a"
+    },
+    {
+      "id": "73a7344f-7151-40db-b2ed-6a30f04c53dc",
+      "name": "10_callvan_translate.png",
+      "path": "assets/multilingual/73a7344f-7151-40db-b2ed-6a30f04c53dc.png",
+      "bytes": 1110895,
+      "sha256": "6c03346d5902235d24dcd4c73f79426a2bc2e84f023b0e48c041275dc9adccfa",
+      "blobSha": "62b06bf61a91be71f1588a8a36986830bb3bce15"
+    },
+    {
+      "id": "a591be8d-fcd4-4003-a1b1-f5cffc8635c9",
+      "name": "web13_callvan_translate.png",
+      "path": "assets/multilingual/a591be8d-fcd4-4003-a1b1-f5cffc8635c9.png",
+      "bytes": 1169472,
+      "sha256": "44f5bae859596923f7cdfa861cadace9b551f567f9adc30833398ef6777c8d15",
+      "blobSha": "26c3ed90d9f0cda08ca9ec56930b7da2c4a54ae7"
+    }
+  ]
+}
