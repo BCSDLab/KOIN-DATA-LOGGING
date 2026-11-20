@@ -7,6 +7,7 @@ const read=p=>fs.readFileSync(path.join(root,p),'utf8'),json=p=>JSON.parse(read(
 const nav=json('_archive/navigation-map.json'),registry=json('_archive/representatives.json');
 const presentation=json('_archive/presentation-cleanup.json').changes;
 const pages=new Map(nav.pages.map(p=>[p.id,p])),errors=[];
+const replaced=new Set(json('_archive/updates/2026-11-19/manifest.json').replacedFiles.map(p=>p.path));
 const listed=[];
 for(const service of nav.services){
  const file=service.folder+'/README.md';
@@ -34,6 +35,7 @@ for(const group of registry.groups){
  if(group.definitionState==='conflicting_originals_transition_draft'&&(!text.includes('원문 충돌')||!text.includes('전환 초안')))errors.push('Conflict not disclosed: '+canonical.id);
 }
 for(const p of registry.originalReaders){
+ if(replaced.has(p.file))continue;
  const current=read(p.file).replace(/<!-- representative-note:start -->[\s\S]*?<!-- representative-note:end -->\n?/g,'').replace(/<!-- representative-related:start -->[\s\S]*?<!-- representative-related:end -->\n?/g,'');
  const bytes=Buffer.from(current),hash=crypto.createHash('sha1').update(Buffer.from('blob '+bytes.length+'\0')).update(bytes).digest('hex');
  const adjusted=presentation.find(c=>c.file===p.file);

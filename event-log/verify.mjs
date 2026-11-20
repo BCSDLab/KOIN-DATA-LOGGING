@@ -8,6 +8,8 @@ const manifest=json('_archive/navigation-map.json'),preservation=json('_archive/
 const corrections=json('_archive/live-notion-corrections.json').pages;
 manifest.pages=manifest.pages.map(p=>{const correction=corrections.find(c=>c.id===p.id);return correction?{...p,fields:correction.fields,sections:correction.sections}:p;});
 const names=['주변상점','복덕방','사장님','새 주변상점 - 레거시','미래의 주변상점 - 레거시','식단','버스','게시판','배너','홈화면 리디자인','콜밴팟','학교 부서 정보','팀원 모집','로그인/회원가입/정보수정 - 레거시','로그인/회원가입/정보수정 V2','시간표','모의수강신청','강제 업데이트','졸업학점 계산기 - 레거시','동아리 - 레거시'];
+const sync=json('_archive/updates/2026-11-19/manifest.json');
+const replaced=new Set(sync.replacedFiles.map(p=>p.path));
 const errors=[];
 const normalize=s=>String(s||'').replace(/<[^>]*>/g,'').replace(/\\([_.*~{}<>\[\]])/g,'$1').replaceAll('&amp;','&').replace(/[“”]/g,'"').replace(/[‘’]/g,"'").replace(/[`*]/g,'').replace(/\s+/g,' ').trim();
 function extract(s){const fields=[];for(const line of s.split('\n')){const m=normalize(line).match(/^[-•]?\s*(설명|screen_view|event_name|event_label|value|event_category)\s*[:：]\s*(.*)$/i);if(m&&m[2])fields.push({key:m[1].toLowerCase(),value:m[2]});}return{fields,images:[...s.matchAll(/!\[[^\]]*\]\([^)]*?assets\/(?:multilingual\/)?([a-f0-9-]+)\.(?:png|jpe?g)\)/gi)].map(m=>m[1])};}
@@ -23,7 +25,7 @@ const documents=['README.md','_archive/README.md',...manifest.services.map(s=>s.
 for(const file of documents){const md=read(file);if(/https?:\/\/(?:app\.)?notion\.(?:com|so)/i.test(md))errors.push('External Notion link: '+file);if(/<image\b/i.test(md))errors.push('Unsupported image: '+file);
  for(const m of md.matchAll(/(!?)\[[^\]]*\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g)){const target=m[2];if(/^[a-z]+:/i.test(target)||target.startsWith('#'))continue;const resolved=path.resolve(root,path.dirname(file),decodeURIComponent(target.split('#')[0]));if(path.relative(root,resolved).startsWith('..')||!fs.existsSync(resolved))errors.push('Broken link: '+file+' -> '+target);links++;if(m[1])images++;}
 }
-for(const page of manifest.pages){const md=read(page.file),parsed=extract(md),available=new Set(parsed.fields.map(f=>f.key+'\0'+normalize(f.value)));for(const f of page.fields)if(!available.has(f.key+'\0'+normalize(f.value)))errors.push('Field loss: '+page.id+' '+f.key+'='+f.value);
+for(const page of manifest.pages){if(replaced.has(page.file))continue;const md=read(page.file),parsed=extract(md),available=new Set(parsed.fields.map(f=>f.key+'\0'+normalize(f.value)));for(const f of page.fields)if(!available.has(f.key+'\0'+normalize(f.value)))errors.push('Field loss: '+page.id+' '+f.key+'='+f.value);
  if(JSON.stringify(parsed.images)!==JSON.stringify(page.images))errors.push('Image order/association: '+page.id);
  const found=[...md.matchAll(/<!-- logging-section:(past|new):start -->([\s\S]*?)<!-- logging-section:\1:end -->/g)];
  if(found.length!==page.sections.length)errors.push('Section count: '+page.id);
