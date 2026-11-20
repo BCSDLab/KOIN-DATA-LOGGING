@@ -29,4 +29,4 @@
 | [3-4 복덕방 확대 사진_닫기 클릭](3-4-%EB%B3%B5%EB%8D%95%EB%B0%A9-%ED%99%95%EB%8C%80-%EC%82%AC%EC%A7%84_%EB%8B%AB%EA%B8%B0-%ED%81%B4%EB%A6%AD.md) | WEB |
 | [3-5 복덕방 상세_전화 문의하기 클릭 (모바일)](3-5-%EB%B3%B5%EB%8D%95%EB%B0%A9-%EC%83%81%EC%84%B8_%EC%A0%84%ED%99%94-%EB%AC%B8%EC%9D%98%ED%95%98%EA%B8%B0-%ED%81%B4%EB%A6%AD-%28%EB%AA%A8%EB%B0%94%EC%9D%BC%29.md) | ANDROID · IOS |
 
-[복덕방 레거시 명세](../22-복덕방-레거시/README.md) · [동기화·검토 기록](../../_archive/updates/2026-11-19/README.md)
+[동기화·검토 기록](../../_archive/updates/2026-11-19/README.md)

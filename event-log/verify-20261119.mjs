@@ -8,6 +8,7 @@ const manifest=JSON.parse(read('_archive/updates/2026-11-19/manifest.json'));
 const sources=JSON.parse(read('_archive/updates/2026-11-19/source-pages.json'));
 const gitsha=b=>crypto.createHash('sha1').update(Buffer.from('blob '+b.length+'\0')).update(b).digest('hex');
 const errors=[];let references=0,links=0;
+for(const removed of manifest.removedReaderPages||[])if(fs.existsSync(path.join(root,removed)))errors.push('Removed reader still exists: '+removed);
 const normalize=s=>s.replace(/<code>(.*?)<\/code>/g,'$1').replace(/<[^>]*>/g,'').replace(/\\([_{}()[\].])/g,'$1').replace(/[*`]/g,'').replace(/\s+/g,' ').trim();
 function current(t){const lines=t.split('\n');const start=lines.findIndex(l=>/^\s*(?:[-*]\s*)?(?:#{1,6}\s*)?새\s*로깅(?:\s|$|\()/.test(l));return start<0?'':lines.slice(start).join('\n');}
 function fieldLines(t){const result=[];for(const line of t.split('\n')){if(/^\s*(?:[-*]\s*)?(?:설명|screen_view|event_name|event_label|value|event_category)\s*[:：]/.test(line))result.push(normalize(line));}return result;}
