@@ -8,7 +8,7 @@
 
 | 명세 | 원문 플랫폼 |
 | --- | --- |
-| [[레거시] [레거시] 1-3 햄버거_복덕방 진입 (클릭)](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-3-%ED%96%84%EB%B2%84%EA%B1%B0_%EB%B3%B5%EB%8D%95%EB%B0%A9-%EC%A7%84%EC%9E%85-%28%ED%81%B4%EB%A6%AD%29.md) | WEB |
+| [레거시 1-3 햄버거_복덕방 진입 (클릭)](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-3-%ED%96%84%EB%B2%84%EA%B1%B0_%EB%B3%B5%EB%8D%95%EB%B0%A9-%EC%A7%84%EC%9E%85-%28%ED%81%B4%EB%A6%AD%29.md) | WEB |
 | [1-1 헤더_복덕방 진입(클릭)](1-1-%ED%97%A4%EB%8D%94_%EB%B3%B5%EB%8D%95%EB%B0%A9-%EC%A7%84%EC%9E%85%28%ED%81%B4%EB%A6%AD%29.md) | WEB |
 | [1-2 푸터_복덕방 진입 (클릭)](1-2-%ED%91%B8%ED%84%B0_%EB%B3%B5%EB%8D%95%EB%B0%A9-%EC%A7%84%EC%9E%85-%28%ED%81%B4%EB%A6%AD%29.md) | WEB |
 | [2-1 복덕방 목록_방 카드 클릭](2-1-%EB%B3%B5%EB%8D%95%EB%B0%A9-%EB%AA%A9%EB%A1%9D_%EB%B0%A9-%EC%B9%B4%EB%93%9C-%28%ED%81%B4%EB%A6%AD%29-%EC%B6%94%EA%B0%80%EB%90%9C-%EB%A1%9C%EA%B9%85.md) | ANDROID · IOS · WEB |
