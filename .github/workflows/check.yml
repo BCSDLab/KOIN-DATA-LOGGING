@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - run: node event-log/verify-20261119.mjs
       - run: node event-log/verify.mjs
       - run: node event-log/verify-representatives.mjs
       - run: node --test event-log/notion-comparison.test.mjs
