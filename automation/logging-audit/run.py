@@ -12,6 +12,7 @@ from koin_weekly_audit.notion_source import NotionSource, IncompleteSource
 from koin_weekly_audit.notify import send_once, slack_text, slack_payload, detail_markdown
 from koin_weekly_audit.agent import investigate
 from koin_weekly_audit.github_source import GitHubSource
+from koin_weekly_audit.actions import summary_url
 
 ROOT = 'f820221954bc82cfbe7e813b975c5be1'
 SOURCES = {'stage': ('koin-stage-438512', 'analytics_427218788'),
@@ -59,6 +60,7 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                 discovered_data_sources=len(collector.databases), discovered_rows=len(collector.rows),
                 visited_pages=len(collector.visited))
     reports = {}
+    detail_url = summary_url()
     for environment, (project, dataset) in SOURCES.items():
         primary = []
         report = dict(complete=False, failure_type=source_error or 'UnknownFailure')
@@ -96,9 +98,8 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                 report['agent'] = investigator(catalog, report, primary)
         except Exception as exc:
             report['agent'] = dict(status='failed', failure_type=type(exc).__name__)
-        server, repo, run_id = (os.getenv(k) for k in ('GITHUB_SERVER_URL', 'GITHUB_REPOSITORY', 'GITHUB_RUN_ID'))
-        if server and repo and run_id:
-            report['detail_url'] = f'{server}/{repo}/actions/runs/{run_id}'
+        if detail_url:
+            report['detail_url'] = detail_url
         message = slack_text(environment, start.isoformat(), end.isoformat(), report)
         (output / f'{environment}-slack.txt').write_text(message, encoding='utf8')
         payload = slack_payload(environment, start.isoformat(), end.isoformat(), report)
@@ -110,7 +111,7 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                     phase = 'complete' if report.get('complete') else 'incomplete'
                     import hashlib
                     destination = hashlib.sha256(webhook.encode()).hexdigest()[:12]
-                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-platform-audit-v2-delivery.json')
+                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-platform-audit-v3-delivery.json')
                     report['delivery_status'] = receipt['status']
                 except Exception as exc:
                     report['delivery_status'] = 'failed'
@@ -148,7 +149,11 @@ def main(argv=None):
     if os.getenv('GITHUB_STEP_SUMMARY'):
         Path(os.environ['GITHUB_STEP_SUMMARY']).write_text(
             detail_markdown(reports), encoding='utf8')
-    return 0 if all(r.get('complete') and r.get('agent', {}).get('status') == 'completed' and
+    for environment, report in reports.items():
+        if report.get('agent', {}).get('status') != 'completed':
+            print(f'::warning title=AI 추가 조사 미완료::{environment}: 규칙 검수 결과와 별도로 AI 추가 조사를 완료하지 못했습니다. 상세 보고서를 확인하세요.')
+    # Findings are audit results, not execution failures. Optional AI is separate.
+    return 0 if reports and all(r.get('complete') and
                    (not args.send or r.get('delivery_status') == 'sent') for r in reports.values()) else 1
 
 

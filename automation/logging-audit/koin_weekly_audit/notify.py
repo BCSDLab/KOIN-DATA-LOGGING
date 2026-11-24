@@ -72,6 +72,11 @@ def slack_payload(environment, start, end, report):
 def detail_markdown(reports):
     lines = ['# 주간 로깅 검수', '', '기준: GitHub main의 전체 현행·과거 명세. DA1·DA2 및 CAMPUS·BUSINESS·USER를 플랫폼별 대조합니다.',
              '미관측 명세는 오류로 판정하지 않습니다. 동적 value는 존재 여부만 검사합니다. 구버전 적용 시점과 명세 충돌은 담당자 확인 대상입니다.', '']
+    lines += ['## 문제 로그 바로가기', '']
+    for env, report in reports.items():
+        title = 'Stage' if env == 'stage' else 'Prod'
+        links = ['[' + name + ' (' + str(len(platform_findings(report, platform))) + '개 항목)](#audit-' + env + '-' + platform.lower() + ')' for platform, name in PLATFORM_NAMES]
+        lines += ['**' + title + '**: ' + ' · '.join(links), '']
     for env, report in reports.items():
         lines += ['## ' + env, '', '기간: ' + report['start'] + ' ~ ' + report['end'],
                   '명세 커밋: `' + report.get('source_revision', '미확인') + '`', '']
@@ -79,12 +84,12 @@ def detail_markdown(reports):
             lines += notification_sections(report) + ['']
         for platform, name in PLATFORM_NAMES:
             findings = platform_findings(report, platform)
-            lines += ['### ' + name, '']
+            lines += ['<a name="audit-' + env + '-' + platform.lower() + '"></a>', '', '### ' + ('Stage' if env == 'stage' else 'Prod') + ' · ' + name, '']
             if not findings:
                 stats = report.get('platform_summary', {}).get(platform)
                 lines += [('이상 없음' if report.get('complete') and stats and stats['events'] else '판정 대상 없음 또는 조회 불완전'), '']
                 continue
-            lines += ['| event_label | 확인 사항 | 명세 기준 | 실제 수집 | 수집 건수 | 앱 버전 | 명세 |', '| --- | --- | --- | --- | ---: | --- | --- |']
+            lines += ['**아래는 실제 수집에서 확인된 전체 문제 목록입니다.** 같은 label의 필드별 문제는 각각 표시합니다.', '', '| event_label | 확인 사항 | 명세 기준 | 실제 수집 | 수집 건수 | 앱 버전 | 명세 |', '| --- | --- | --- | --- | ---: | --- | --- |']
             for f in findings:
                 refs = ' · '.join('[명세](' + u + ')' for u in f.get('specification_urls', []) if u.startswith('https://github.com/BCSDLab/KOIN-DATA-LOGGING/')) or '등록된 명세 없음'
                 versions = ', '.join(f.get('platform_versions', {}).get(platform, []))

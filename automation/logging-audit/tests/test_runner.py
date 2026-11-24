@@ -5,7 +5,7 @@ from datetime import date
 from pathlib import Path
 from unittest.mock import patch
 
-from run import audit, week_start
+from run import audit, week_start, main
 
 
 class Collector:
@@ -36,6 +36,18 @@ class RunnerTest(unittest.TestCase):
                             investigator=lambda *a: dict(status='skipped'))
             sender.assert_not_called()
             self.assertTrue(all(r['delivery_status'] == 'secret_missing' for r in reports.values()))
+
+    def test_exit_status_preserves_failures_but_optional_ai_is_warning(self):
+        cases = [
+            (dict(complete=True, delivery_status='sent', agent=dict(status='failed')), True, 0),
+            (dict(complete=True, delivery_status='not_requested', agent=dict(status='failed')), False, 0),
+            (dict(complete=False, delivery_status='sent', agent=dict(status='completed')), True, 1),
+            (dict(complete=True, delivery_status='failed', agent=dict(status='completed')), True, 1),
+            (dict(complete=True, delivery_status='secret_missing', agent=dict(status='completed')), True, 1),
+        ]
+        for report, send, expected in cases:
+            with self.subTest(report=report), patch('run.audit', return_value={'stage':report}), patch.dict('os.environ', {}, clear=True):
+                self.assertEqual(main(['--send'] if send else []), expected)
 
     def test_completed_calendar_week(self):
         self.assertEqual(week_start(today=date(2026, 11, 24)), date(2026, 11, 16))
