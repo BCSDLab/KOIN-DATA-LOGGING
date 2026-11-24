@@ -100,7 +100,7 @@ def detail_markdown(reports):
             for f in findings:
                 refs = ' · '.join('[명세](' + u + ')' for u in f.get('specification_urls', []) if u.startswith('https://github.com/BCSDLab/KOIN-DATA-LOGGING/')) or '등록된 명세 없음'
                 versions = ', '.join(f.get('platform_versions', {}).get(platform, []))
-                expected = ', '.join(f.get('expected_values', [])) or '등록된 현행 계약 없음 또는 명세 확인 필요'
+                expected = ', '.join(f.get('platform_expected_values', {}).get(platform, f.get('expected_values', []))) or '등록된 현행 계약 없음 또는 명세 확인 필요'
                 actual_counts = f.get('platform_value_counts', {}).get(platform, {})
                 actual = '; '.join(str(v) + ' (' + str(n) + '건)' for v, n in sorted(actual_counts.items())) if actual_counts else ', '.join(f.get('platform_observed_values', {}).get(platform, [])) or '확인 필요'
                 cells = [safe(f['label']), safe(REASONS.get(f['reason'], f['reason'])), html.escape(expected).replace('\n',' '), html.escape(actual).replace('\n',' '), str(f.get('platform_counts', {}).get(platform, 0)), safe(versions), refs]
