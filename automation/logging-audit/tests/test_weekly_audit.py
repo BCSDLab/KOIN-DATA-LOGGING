@@ -83,7 +83,7 @@ class ContractsTest(unittest.TestCase):
     def test_missing_and_unregistered_label(self):
         cat = build_catalog([page(SPEC)])
         self.assertEqual(compare(cat, [dict(OBS, event_label=None)])['findings'][0]['reason'], 'event_label_missing')
-        self.assertEqual(compare(cat, [dict(OBS, event_label='old_label')])['findings'][0]['reason'], 'unregistered_label_or_old_version')
+        self.assertEqual(compare(cat, [dict(OBS, event_label='old_label')])['findings'][0]['reason'], 'unregistered_label')
 
     def test_swipe_separate_category(self):
         swipe = SPEC.replace('__click', '__swipe').replace('category: `click`', 'category: `swipe`')

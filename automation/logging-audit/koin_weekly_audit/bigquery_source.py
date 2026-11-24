@@ -17,7 +17,7 @@ def build_query(project, dataset):
       FROM `{project}.{dataset}.events_*`
       WHERE _TABLE_SUFFIX BETWEEN @start_suffix AND @end_suffix
         AND REGEXP_CONTAINS(_TABLE_SUFFIX, r'^[0-9]{{8}}$')
-        AND event_name IN ('DA1','DA2')
+        AND (event_name IN ('DA1','DA2') OR UPPER(event_name) IN ('CAMPUS','BUSINESS','USER'))
     )
     SELECT *, COUNT(*) AS event_count FROM events GROUP BY ALL"""
 

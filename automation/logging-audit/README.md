@@ -7,13 +7,25 @@ Airflow·Docker·Tailscale·개인 PC 없이 GitHub Actions에서 실행합니�
 - 예약: 월요일 09:00 KST (`0 0 * * 1`, UTC). GitHub 예약 실행은 대기열 등으로 늦어질 수 있어 정각 전달을 보장하지 않습니다.
 - Stage: `koin-stage-438512.analytics_427218788`.
 - Production: `kap-chat.analytics_432041405`.
-- WEB·ANDROID·IOS의 **DA1·DA2 전체**. CAMPUS 등 다른 event_name은 제외합니다.
+- WEB·ANDROID·IOS의 **DA1·DA2 전체**를 현행 명세와 비교합니다. 추가로 기존 event_name **CAMPUS·BUSINESS·USER**가 수집되는 경우도 감지합니다(대소문자 무관). 그 외 event_name은 제외합니다.
 - 직전 완료된 월요일~일요일 7일의 daily export를 검사합니다. 이전 기간 마지막 3일도 지연 도착 확인을 위해 재검사합니다. intraday와 daily를 중복 합산하지 않습니다.
 - 현재 Event Log 루트 `f820221954bc82cfbe7e813b975c5be1`에서 서비스·DB·하위 블록을 찾고, saved view 필터 없이 전체 행을 페이지네이션으로 조회합니다. `Event Log (과거)` 보관본은 중복 집계하지 않습니다.
-- 레거시 서비스도 읽되 현재 명시된 DA1·DA2 계약만 검사합니다. 새 event_name·label을 임의로 만들거나 기존 명세를 수정하지 않습니다.
+- 레거시 서비스와 과거 로깅 구간의 명시적 event_label도 읽어 과거 label 목록을 만듭니다. 새 event_name·label을 임의로 만들거나 기존 명세를 수정하지 않습니다.
 - 매번 최신 Notion을 읽습니다. GitHub Markdown이나 과거 ZIP을 최신 명세 대신 사용하는 fallback은 없습니다.
 
 ## 자동 판정과 한계
+
+Stage·Prod 각각의 메시지 안에 **IOS / ANDROID / WEB 세 플랫폼을 항상 표시**하고, 플랫폼별로 다음 세 유형을 구분합니다. 해당 플랫폼에 로그가 없어도 `수집 0건`을 표시하며, 조회가 실패한 경우에는 0건이 아니라 `미확인`으로 표시합니다.
+
+| 유형 | 판정 |
+| --- | --- |
+| ① 미등록 로그 | DA1·DA2의 label이 현행·과거 명세 모두에 없음 |
+| ② 과거 로깅 지속 수집 | DA1·DA2에서 과거에만 있는 label 수집, 또는 event_name이 CAMPUS·BUSINESS·USER |
+| ③ 현행 명세 불일치·검토 | 현행 계약의 필드·플랫폼·고정값 불일치, label 누락, 명세 충돌·미확정 |
+
+label이 현행과 과거에 모두 있으면 현행 계약을 우선합니다. 단, CAMPUS·BUSINESS·USER는 label이 현행과 같아도 기존 event_name 수집으로 알립니다. 과거 label은 과거 구간의 `event_label` 필드 또는 명시적으로 레거시인 문서에서 읽으며 설명 문장에서 추측하지 않습니다. 레거시 상태 문서의 새 정의도 현행 허용 목록으로 자동 승격하지 않습니다.
+
+발생 건수는 플랫폼별 실제 건수이며, 한 로그에 여러 필드 오류가 있어도 유형별 발생 건수를 중복 합산하지 않습니다. 상세 오류 항목 수와 발생 로그 건수는 서로 다른 지표입니다. 과거 로그가 구버전의 정상 동작일 수 있으므로 앱 버전·적용 시점은 담당자가 함께 확인합니다.
 
 event_label 등록 여부, event_name·screen_view·category·플랫폼 불일치, 필수 value 누락, 명확한 단일 고정 value 불일치, 중복 파라미터 키를 검사합니다. 여러 계약이 충돌하거나 강제 업데이트 이탈처럼 미확정인 경우에는 명세 검토 대상으로 표시합니다.
 

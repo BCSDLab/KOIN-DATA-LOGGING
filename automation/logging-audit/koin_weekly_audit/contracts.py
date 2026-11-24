@@ -4,6 +4,9 @@ import re
 from collections import defaultdict
 
 FIELDS = ('설명', 'screen_view', 'event_name', 'event_label', 'value', 'event_category')
+LEGACY_EVENT_NAMES = frozenset(('CAMPUS', 'BUSINESS', 'USER'))
+CATEGORIES = ('unregistered', 'legacy_logging', 'current_mismatch')
+PLATFORMS = ('IOS', 'ANDROID', 'WEB')
 
 
 def clean(text):
@@ -13,15 +16,61 @@ def clean(text):
     return text.replace('**', '').replace('`', '').strip()
 
 
+def legacy_page(page):
+    return bool(re.search(r'레거시|\blegacy\b', ' '.join(str(page.get(k, '')) for k in
+                ('title', 'service', 'lifecycle_status')), re.I))
+
+
+def historical_labels(page):
+    """Read explicit label fields, never guess historical labels from prose."""
+    lines = clean(page['text']).splitlines()
+    has_sections = any(re.match(r'^\s*(?:[-*]\s*)?(?:#+\s*)?(?:과거|이전|새)\s*로깅', l) for l in lines)
+    whole = legacy_page(page) or (not has_sections and not re.search(r'event_name\s*:\s*[”"\']?DA[12]\b', clean(page['text'])))
+    section, in_label, values = 'plain', False, []
+    for line in lines:
+        marker = re.match(r'^\s*(?:[-*]\s*)?(?:#+\s*)?(과거|이전|새)\s*로깅', line)
+        if marker:
+            section, in_label = marker.group(1), False
+            continue
+        if not whole and section not in ('과거', '이전'):
+            continue
+        field = re.match(r'^\s*(?:[-*]\s*)?([a-z_]+)\s*[:：]\s*(.*)', line)
+        if field:
+            in_label = field.group(1) == 'event_label'
+            if in_label:
+                values.append(field.group(2))
+        elif in_label and re.match(r'^\s+[-*]\s+', line):
+            values.append(line)
+        elif line.strip():
+            in_label = False
+    labels = set()
+    for value in values:
+        labels.update(re.findall(r'\b[a-z][a-z0-9_]*(?:__[a-z0-9_]+)+\b', value))
+        labels.update(re.findall(r'["“”‘’\']\s*([A-Za-z][A-Za-z0-9_]*)\s*["“”‘’\']', value))
+        literal = value.strip(' -”“‘’\'"')
+        if re.fullmatch(r'[A-Za-z][A-Za-z0-9_]*', literal):
+            labels.add(literal)
+    return sorted(labels)
+
+
 def parse_page(page):
     """Do not infer deployment, enum values or version cutovers from prose."""
+    if legacy_page(page):
+        return [], 'legacy_document'
     text = page['text']
     lines = clean(text).splitlines()
     new = next((i for i, line in enumerate(lines)
                 if re.match(r'^\s*(?:[-*]\s*)?(?:#+\s*)?새\s*로깅', line)), None)
     if new is None:
         return [], 'no_current_contract'
-    lines = lines[new:]
+    selected, in_new = [], False
+    for line in lines[new:]:
+        marker = re.match(r'^\s*(?:[-*]\s*)?(?:#+\s*)?(과거|이전|새)\s*로깅', line)
+        if marker:
+            in_new = marker.group(1) == '새'
+        if in_new:
+            selected.append(line)
+    lines = selected
     # A page may explicitly contain more than one contract.
     chunks, current, current_key = [], {}, None
     for line in lines:
@@ -75,11 +124,17 @@ def parse_page(page):
 
 def build_catalog(pages):
     by_label = defaultdict(list)
+    legacy_by_label = defaultdict(list)
     coverage = []
     for page in pages:
         contracts, status = parse_page(page)
+        past = historical_labels(page)
         coverage.append(dict(url=page['url'], title=page['title'], service=page.get('service'), status=status,
-                             labels=[x['label'] for x in contracts]))
+                             labels=[x['label'] for x in contracts], historical_labels=past))
+        for label in past:
+            reference = {k: page.get(k, '') for k in ('url', 'title', 'service')}
+            if reference not in legacy_by_label[label]:
+                legacy_by_label[label].append(reference)
         for contract in contracts:
             if contract not in by_label[contract['label']]:
                 by_label[contract['label']].append(contract)
@@ -90,26 +145,45 @@ def build_catalog(pages):
         if len(signatures) > 1 or any(c['status'] == 'unresolved' for c in contracts):
             conflicts.append(label)
     fingerprint = hashlib.sha256(json.dumps(pages, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
-    return dict(by_label=dict(by_label), conflicts=sorted(conflicts), coverage=coverage, snapshot_sha256=fingerprint)
+    return dict(by_label=dict(by_label), legacy_by_label=dict(legacy_by_label),
+                conflicts=sorted(conflicts), coverage=coverage, snapshot_sha256=fingerprint)
 
 
 def compare(catalog, observations):
-    issues = defaultdict(lambda: dict(count=0, versions=set(), platforms=set()))
+    issues = defaultdict(lambda: dict(count=0, versions=set(), platforms=set(), event_names=set(),
+                                      platform_counts=defaultdict(int), platform_versions=defaultdict(set),
+                                      platform_event_names=defaultdict(set)))
     observed_labels = set()
     observed_pairs = set()
+    counts = {p: dict(events=0, labels=set(), categories={k: dict(events=0, labels=set()) for k in CATEGORIES},
+                      event_names=defaultdict(int)) for p in PLATFORMS}
     total = 0
     for obs in observations:
+        event_name = obs['event_name']
+        if event_name not in ('DA1', 'DA2') and event_name.upper() not in LEGACY_EVENT_NAMES:
+            continue
         count = int(obs['event_count'])
+        platform = obs['platform']
+        if platform not in counts:
+            counts[platform] = dict(events=0, labels=set(), categories={k: dict(events=0, labels=set()) for k in CATEGORIES}, event_names=defaultdict(int))
         total += count
         label = obs.get('event_label')
         observed_labels.add(label)
-        observed_pairs.add((label, obs['platform']))
+        observed_pairs.add((label, platform))
+        counts[platform]['events'] += count
+        counts[platform]['labels'].add(label)
+        counts[platform]['event_names'][event_name] += count
         candidates = catalog['by_label'].get(label, [])
         reasons = []
-        if not label:
+        category = 'current_mismatch'
+        if event_name.upper() in LEGACY_EVENT_NAMES:
+            category, reasons = 'legacy_logging', ['legacy_event_name']
+        elif not label:
             reasons = ['event_label_missing']
+        elif not candidates and label in catalog.get('legacy_by_label', {}):
+            category, reasons = 'legacy_logging', ['historical_label_still_collected']
         elif not candidates:
-            reasons = ['unregistered_label_or_old_version']
+            category, reasons = 'unregistered', ['unregistered_label']
         elif label in catalog['conflicts']:
             reasons = ['specification_conflict']
         else:
@@ -133,20 +207,34 @@ def compare(catalog, observations):
                 failures.append(bad)
             # A match to any explicitly supported contract is sufficient.
             reasons = min(failures, key=len)
+        if reasons:
+            counts[platform]['categories'][category]['events'] += count
+            counts[platform]['categories'][category]['labels'].add(label)
+        version = obs.get('app_version') or ('WEB' if platform == 'WEB' else 'unknown')
         for reason in reasons:
-            key = (label or '(missing)', reason)
+            key = (category, label or '(missing)', reason)
             issue = issues[key]
             issue['count'] += count
-            issue['versions'].add(obs.get('app_version') or 'WEB/unknown')
-            issue['platforms'].add(obs['platform'])
+            issue['versions'].add(version)
+            issue['platforms'].add(platform)
+            issue['event_names'].add(event_name)
+            issue['platform_counts'][platform] += count
+            issue['platform_versions'][platform].add(version)
+            issue['platform_event_names'][platform].add(event_name)
     findings = []
-    for (label, reason), data in sorted(issues.items()):
-        contracts = catalog['by_label'].get(label, [])
-        findings.append(dict(label=label, reason=reason, count=data['count'],
+    for (category, label, reason), data in sorted(issues.items()):
+        contracts = (catalog.get('legacy_by_label', {}).get(label, []) or catalog['by_label'].get(label, [])) if category == 'legacy_logging' else catalog['by_label'].get(label, [])
+        findings.append(dict(category=category, label=label, reason=reason, count=data['count'],
                              versions=sorted(data['versions']), platforms=sorted(data['platforms']),
+                             event_names=sorted(data['event_names']), platform_counts=dict(data['platform_counts']),
+                             platform_versions={p: sorted(v) for p, v in data['platform_versions'].items()},
+                             platform_event_names={p: sorted(v) for p, v in data['platform_event_names'].items()},
                              specification_urls=sorted(set(x['url'] for x in contracts))))
     expected_pairs = {(label, p) for label, cs in catalog['by_label'].items() for c in cs for p in c['platforms']}
+    platform_summary = {p: dict(events=v['events'], observed_labels=len(v['labels']), event_names=dict(v['event_names']),
+                               categories={k: dict(events=c['events'], labels=len(c['labels'])) for k, c in v['categories'].items()}) for p, v in counts.items()}
     return dict(events=total, observed_labels=len(observed_labels), findings=findings,
+                platform_summary=platform_summary,
                 unobserved_labels=sorted(set(catalog['by_label']) - observed_labels),
                 unobserved_platform_contracts=[dict(label=l, platform=p) for l, p in sorted(expected_pairs - observed_pairs)],
                 snapshot_sha256=catalog['snapshot_sha256'],

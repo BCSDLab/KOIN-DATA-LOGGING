@@ -124,8 +124,10 @@ class NotionSource:
         rendered = '\n'.join(self.render(blocks))
         props = obj.get('properties', {})
         platforms = [x['name'] for x in props.get('platform', {}).get('multi_select', [])]
+        lifecycle = props.get('상태', {})
+        lifecycle_status = (lifecycle.get('status') or lifecycle.get('select') or {}).get('name', '')
         row = dict(id=page_id, url='https://www.notion.so/' + page_id, title=title, service=service,
-                   platforms=platforms, text=rendered, edited=obj.get('last_edited_time'), is_row=is_row,
+                   platforms=platforms, lifecycle_status=lifecycle_status, text=rendered, edited=obj.get('last_edited_time'), is_row=is_row,
                    unresolved='forced_update' in rendered and ('__app_update__exit' in rendered or 'forced_update_exit' in rendered))
         if is_row:
             self.pages.append(row)

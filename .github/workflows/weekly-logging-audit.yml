@@ -70,7 +70,7 @@ jobs:
         uses: google-github-actions/auth@v3
         with:
           credentials_json: ${{ secrets.GCP_AUDIT_CREDENTIALS_JSON }}
-      - name: Notion 전체 명세와 Stage/Prod DA1·DA2 검사
+      - name: Notion 전체 명세·Stage/Prod DA1·DA2 및 기존 event_name 검사
         if: always() && steps.week.outcome == 'success'
         env:
           NOTION_LOGGING_READ_TOKEN: ${{ secrets.NOTION_LOGGING_READ_TOKEN }}

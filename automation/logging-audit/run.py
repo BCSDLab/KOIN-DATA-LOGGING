@@ -68,7 +68,8 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                               query_job_id=fetched.get('job_id'), bytes_processed=fetched.get('bytes_processed'),
                               coverage=dict(rows=source['row_count'], databases=len(source['databases']),
                                             parsed_pages=sum(r['status'] == 'parsed' for r in catalog['coverage']),
-                                            unparsed_pages=sum(r['status'] != 'parsed' for r in catalog['coverage'])))
+                                            unparsed_pages=sum(r['status'] != 'parsed' for r in catalog['coverage']),
+                                            historical_labels=len(catalog['legacy_by_label'])))
             except Exception as exc:
                 report = dict(complete=False, failure_type=type(exc).__name__, snapshot_sha256=catalog['snapshot_sha256'])
         report.update(environment=environment, start=start.isoformat(), end=end.isoformat())
