@@ -171,7 +171,7 @@ def build_catalog(pages):
 def compare(catalog, observations):
     issues = defaultdict(lambda: dict(count=0, versions=set(), platforms=set(), event_names=set(),
                                       platform_counts=defaultdict(int), platform_versions=defaultdict(set),
-                                      platform_event_names=defaultdict(set)))
+                                      platform_event_names=defaultdict(set), platform_observed_values=defaultdict(set)))
     observed_labels = set()
     observed_pairs = set()
     current_labels_seen = set()
@@ -243,15 +243,33 @@ def compare(catalog, observations):
             issue['platform_counts'][platform] += count
             issue['platform_versions'][platform].add(version)
             issue['platform_event_names'][platform].add(event_name)
+            field = {'event_name_mismatch': 'event_name', 'legacy_event_name': 'event_name',
+                     'screen_view_mismatch': 'screen_view', 'event_category_mismatch': 'event_category',
+                     'platform_mismatch': 'platform', 'unregistered_label': 'event_label',
+                     'historical_label_still_collected': 'event_label', 'event_label_missing': 'event_label'}.get(reason)
+            if field:
+                observed = obs.get(field)
+                observed = '(누락)' if observed in (None, '') else str(observed)
+                observed = observed if observed == '(누락)' or re.fullmatch(r'[A-Za-z][A-Za-z0-9_]{0,159}', observed) else '(형식 오류)'
+            else:
+                observed = '(누락)' if reason == 'value_missing' else '값 불일치(원본 값 비공개)' if reason == 'fixed_value_mismatch' else '확인 필요'
+            issue['platform_observed_values'][platform].add(observed)
     findings = []
     for (category, label, reason), data in sorted(issues.items()):
         contracts = (catalog.get('legacy_by_label', {}).get(label, []) or catalog['by_label'].get(label, [])) if category == 'legacy_logging' else catalog['by_label'].get(label, [])
+        expected_key = {'event_name_mismatch': 'names', 'legacy_event_name': 'names', 'screen_view_mismatch': 'screens',
+                        'event_category_mismatch': 'categories', 'platform_mismatch': 'platforms'}.get(reason)
+        expected = sorted({v for c in catalog['by_label'].get(label, []) for v in c.get(expected_key, [])}) if expected_key else []
+        if reason == 'legacy_event_name': expected = ['DA1', 'DA2']
+        if reason == 'value_missing': expected = ['필수 value']
+        if reason == 'fixed_value_mismatch': expected = ['명세 고정 value']
         findings.append(dict(category=category, label=label, reason=reason, count=data['count'],
                              versions=sorted(data['versions']), platforms=sorted(data['platforms']),
                              event_names=sorted(data['event_names']), platform_counts=dict(data['platform_counts']),
                              platform_versions={p: sorted(v) for p, v in data['platform_versions'].items()},
                              platform_event_names={p: sorted(v) for p, v in data['platform_event_names'].items()},
-                             specification_urls=sorted(set(x['url'] for x in contracts))))
+                             specification_urls=sorted(set(x['url'] for x in contracts)), expected_values=expected,
+                             platform_observed_values={p: sorted(v) for p, v in data['platform_observed_values'].items()}))
     expected_pairs = {(label, p) for label, cs in catalog['by_label'].items() for c in cs for p in c['platforms']}
     platform_summary = {p: dict(events=v['events'], observed_labels=len(v['labels']), event_names=dict(v['event_names']),
                                categories={k: dict(events=c['events'], labels=len(c['labels'])) for k, c in v['categories'].items()}) for p, v in counts.items()}

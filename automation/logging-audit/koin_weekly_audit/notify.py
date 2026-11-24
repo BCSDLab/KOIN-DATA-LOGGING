@@ -7,99 +7,96 @@ import urllib.request
 from pathlib import Path
 
 
+REASONS = {
+    'event_label_missing': 'event_label 누락', 'unregistered_label': '명세에 없는 label',
+    'historical_label_still_collected': '과거 명세 label 수집', 'legacy_event_name': '과거 event_name 수집',
+    'specification_conflict': '명세 충돌·미확정 — 담당자 확인 필요',
+    'event_name_mismatch': 'event_name 불일치', 'screen_view_mismatch': 'screen_view 불일치',
+    'event_category_mismatch': 'event_category 불일치', 'platform_mismatch': '지원 플랫폼 불일치',
+    'value_missing': '필수 value 누락', 'fixed_value_mismatch': '고정 value 불일치',
+    'duplicate_parameter_key': '파라미터 키 중복',
+}
+PLATFORM_NAMES = (('IOS', 'iOS'), ('ANDROID', 'Android'), ('WEB', 'Web'))
+
+
+def safe(value):
+    return html.escape(str(value).replace('`', '').replace('\n', ' ')[:160])
+
+
+def platform_findings(report, platform):
+    return sorted((f for f in report.get('findings', []) if platform in f.get('platforms', [])),
+                  key=lambda f: (-f.get('platform_counts', {}).get(platform, 0), f['label'], f['reason']))
+
+
+def notification_sections(report):
+    if not report.get('complete'):
+        missing = report.get('missing_daily_tables', [])
+        reason = ('일별 데이터 누락: ' + ', '.join(x.removeprefix('events_') for x in missing)) if missing else (
+            'GitHub 명세 수집 실패' if report.get('failure_type') == 'IncompleteSource' else report.get('failure_type') or '조회 범위 미확인')
+        return ['⚠️ 검수 불완전 · ' + safe(reason), 'iOS·Android·Web: 판정 불가']
+    lines = []
+    for platform, name in PLATFORM_NAMES:
+        stats = report.get('platform_summary', {}).get(platform)
+        findings = platform_findings(report, platform)
+        if stats is None:
+            lines.append(name + ': 판정 불가')
+        elif not stats['events']:
+            lines.append(name + ': 수집 0건 · 판정 대상 없음')
+        elif not findings:
+            lines.append(name + ': 이상 없음')
+        else:
+            labels = list(dict.fromkeys(f['label'] for f in findings))
+            lines.append(f'{name}: 이상·확인 필요 {len(labels)}개 label')
+    return lines
+
+
 def slack_text(environment, start, end, report):
     title = '[Stage]' if environment == 'stage' else '[Prod]'
-    lines = [f'{title} 주간 로깅 검수 · {start[5:]}~{end[5:]}']
-    if not report.get('complete'):
-        lines.append('⚠️ 검수 불완전 · 로그 집계 불가')
-        diagnostic = report.get('source_diagnostics') or {}
-        if diagnostic.get('http_status') == 404:
-            reason = 'Notion 원본 페이지 접근 실패 (404)'
-        elif diagnostic.get('code') == 'root_not_unique':
-            reason = '연결된 Event Log 원본을 하나로 지정해야 합니다'
-        elif report.get('failure_type') == 'IncompleteSource':
-            reason = 'Notion 명세 전체 수집 실패'
-        else:
-            reason = report.get('failure_type', '수집 범위 미확인')
-        lines += ['원인: ' + html.escape(reason), 'iOS·Android·Web 모두 판정 미확인']
-    else:
-        lines += ['✅ 비교 완료 | DA1·DA2 + CAMPUS·BUSINESS·USER',
-                  '문제 label 수', '```', '             미등록 / 과거 / 명세 불일치']
-        for platform, name in (('IOS', 'iOS'), ('ANDROID', 'Android'), ('WEB', 'Web')):
-            stats = report.get('platform_summary', {}).get(platform)
-            if stats is None:
-                lines.append(name + ': 판정 미확인')
-                continue
-            groups = stats['categories']
-            counts = [groups.get(c, {}).get('labels', 0) for c in
-                      ('unregistered', 'legacy_logging', 'current_mismatch')]
-            lines.append(f"{name:<12} {counts[0]:>6} / {counts[1]:>4} / {counts[2]:>11}")
-        lines.append('```')
-        zero = [name for p, name in (('IOS', 'iOS'), ('ANDROID', 'Android'), ('WEB', 'Web'))
-                if report.get('platform_summary', {}).get(p, {}).get('events') == 0]
-        if zero:
-            lines.append('수집 0건: ' + '·'.join(zero))
-        agent = report.get('agent', {})
-        ai = 'AI 조사 완료' if agent.get('status') == 'completed' else 'AI 추가 조사 미확인'
-        lines.append(f"전체 수집 {report.get('events', 0):,}건 · {ai}")
-        findings = sorted(report.get('findings', []), key=lambda x: -x.get('count', 0))
-        examples = list(dict.fromkeys(x['label'] for x in findings))[:3]
-        if examples:
-            lines.append('문제 label 예시: ' + ', '.join(html.escape(x.replace('`', '')[:110]) for x in examples))
-        revision = report.get('source_revision')
-        if revision:
-            lines.append('기준: GitHub main · ' + revision[:7])
+    lines = [f'{title} 주간 로깅 검수 · {start[5:]}~{end[5:]}'] + notification_sections(report)
     if report.get('detail_url'):
-        lines.append('상세 결과: ' + report['detail_url'])
+        lines.append('상세보기: ' + report['detail_url'])
     return '\n'.join(lines)
 
 
 def slack_payload(environment, start, end, report):
-    """Native Slack table avoids Korean/Latin monospace alignment differences."""
-    text = slack_text(environment, start, end, report)
     blocks = [dict(type='header', text=dict(type='plain_text', text=('[Stage]' if environment == 'stage' else '[Prod]') + ' 주간 로깅 검수')),
               dict(type='context', elements=[dict(type='mrkdwn', text=f'{start} ~ {end} · KST')])]
-    def section(value):
-        blocks.append(dict(type='section', text=dict(type='mrkdwn', text=value)))
-    if report.get('complete'):
-        section('*규칙 비교 완료* · DA1·DA2 / CAMPUS·BUSINESS·USER')
-        rows = [[dict(type='raw_text', text=x) for x in ('플랫폼', '미등록', '과거', '명세 불일치')]]
-        for platform, name in (('IOS', 'iOS'), ('ANDROID', 'Android'), ('WEB', 'Web')):
-            stats = report.get('platform_summary', {}).get(platform)
-            counts = [str(stats['categories'].get(c, {}).get('labels', 0)) if stats else '미확인'
-                      for c in ('unregistered', 'legacy_logging', 'current_mismatch')]
-            rows.append([dict(type='raw_text', text=x) for x in [name] + counts])
-        blocks.append(dict(type='table', column_settings=[dict(align='left')] + [dict(align='right') for _ in range(3)], rows=rows))
-        agent = report.get('agent', {})
-        ai = 'AI 조사 완료' if agent.get('status') == 'completed' else 'AI 조사 실패: ' + agent.get('failure_code', agent.get('failure_type', '미확인'))
-        section(f"수집 *{report.get('events', 0):,}건* · {html.escape(ai)}\n숫자는 문제 label 수이며, 항목 간 중복될 수 있습니다.")
-        examples = []
-        for category, name in (('unregistered', '미등록'), ('legacy_logging', '과거'), ('current_mismatch', '명세 불일치')):
-            items = [x for x in report.get('findings', []) if x.get('category') == category]
-            items.sort(key=lambda x: -x.get('count', 0))
-            if items:
-                label = html.escape(items[0]['label'].replace('`', '')[:120])
-                examples.append(f'• {name}: `{label}`')
-        if examples:
-            section('*확인할 label 예시*\n' + '\n'.join(examples))
-    else:
-        missing = report.get('missing_daily_tables', [])
-        if missing:
-            dates = [x.removeprefix('events_') for x in missing]
-            reason = f"일별 데이터 {len(dates)}일 누락: " + ', '.join(dates[:10])
-        elif report.get('failure_type') == 'IncompleteSource':
-            reason = 'GitHub 명세 전체 수집 실패'
-        else:
-            reason = report.get('failure_type') or '조회 범위 확인 필요'
-        section('*검수 불완전*\n' + html.escape(reason))
-        observed = report.get('events')
-        section((f'현재 조회 {observed:,}건 · ' if observed is not None else '') + 'iOS·Android·Web 최종 판정 보류')
-    revision = report.get('source_revision')
-    if revision:
-        blocks.append(dict(type='context', elements=[dict(type='mrkdwn', text='기준: GitHub main · `' + revision[:7] + '`')]))
+    for section in notification_sections(report):
+        # Each platform is independent; never show AI failure as an event error.
+        blocks.append(dict(type='section', text=dict(type='mrkdwn', text=section[:2900])))
     if report.get('detail_url'):
-        section('<' + report['detail_url'] + '|상세 결과 보기>')
-    return dict(text=text, blocks=blocks, unfurl_links=False, unfurl_media=False)
+        blocks.append(dict(type='section', text=dict(type='mrkdwn', text='<' + report['detail_url'] + '|상세보기>')))
+    return dict(text=slack_text(environment, start, end, report), blocks=blocks, unfurl_links=False, unfurl_media=False)
+
+
+def detail_markdown(reports):
+    lines = ['# 주간 로깅 검수', '', '기준: GitHub main의 전체 현행·과거 명세. DA1·DA2 및 CAMPUS·BUSINESS·USER를 플랫폼별 대조합니다.',
+             '미관측 명세는 오류로 판정하지 않습니다. 동적 value는 존재 여부만 검사합니다. 구버전 적용 시점과 명세 충돌은 담당자 확인 대상입니다.', '']
+    for env, report in reports.items():
+        lines += ['## ' + env, '', '기간: ' + report['start'] + ' ~ ' + report['end'],
+                  '명세 커밋: `' + report.get('source_revision', '미확인') + '`', '']
+        if not report.get('complete'):
+            lines += notification_sections(report) + ['']
+        for platform, name in PLATFORM_NAMES:
+            findings = platform_findings(report, platform)
+            lines += ['### ' + name, '']
+            if not findings:
+                stats = report.get('platform_summary', {}).get(platform)
+                lines += [('이상 없음' if report.get('complete') and stats and stats['events'] else '판정 대상 없음 또는 조회 불완전'), '']
+                continue
+            lines += ['| event_label | 확인 사항 | 명세 기준 | 실제 수집 | 수집 건수 | 앱 버전 | 명세 |', '| --- | --- | --- | --- | ---: | --- | --- |']
+            for f in findings:
+                refs = ' · '.join('[명세](' + u + ')' for u in f.get('specification_urls', []) if u.startswith('https://github.com/BCSDLab/KOIN-DATA-LOGGING/')) or '등록된 명세 없음'
+                versions = ', '.join(f.get('platform_versions', {}).get(platform, []))
+                expected = ', '.join(f.get('expected_values', [])) or '등록된 현행 계약 없음 또는 명세 확인 필요'
+                actual = ', '.join(f.get('platform_observed_values', {}).get(platform, [])) or '확인 필요'
+                cells = [safe(f['label']), safe(REASONS.get(f['reason'], f['reason'])), safe(expected), safe(actual), str(f.get('platform_counts', {}).get(platform, 0)), safe(versions), refs]
+                lines.append('| ' + ' | '.join(c.replace('|', '&#124;') for c in cells) + ' |')
+            lines += ['']
+        previous = report.get('previous_period_recheck', {})
+        lines += ['이전 기간 재검사: ' + ('완료' if previous.get('complete') else '불완전') + ' · 누락 ' + ', '.join(previous.get('missing_daily_tables', [])),
+                  'AI 추가 조사: ' + report.get('agent', {}).get('status', '미확인') + ' · ' + report.get('agent', {}).get('failure_type', ''), '']
+    return '\n'.join(lines)
 
 
 def send_once(webhook, text, receipt):

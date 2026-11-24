@@ -28,6 +28,15 @@ OBS = dict(event_date='20261122', event_name='DA1', platform='IOS', app_version=
 
 
 class ContractsTest(unittest.TestCase):
+    def test_details_separate_expected_actual_by_platform_without_raw_values(self):
+        cat = build_catalog([page(SPEC, ['IOS', 'ANDROID'])])
+        result = compare(cat, [dict(OBS, screen_view='wrong_ios', value='PRIVATE'),
+                               dict(OBS, platform='ANDROID', screen_view='wrong_android')])
+        issue = next(f for f in result['findings'] if f['reason'] == 'screen_view_mismatch')
+        self.assertEqual(issue['expected_values'], ['room_common'])
+        self.assertEqual(issue['platform_observed_values'], {'IOS': ['wrong_ios'], 'ANDROID': ['wrong_android']})
+        self.assertNotIn('PRIVATE', json.dumps(result))
+
     def test_web_mobile_platform_and_per_platform_coverage(self):
         cat = build_catalog([page(SPEC, ['WEB (모바일)', 'IOS'])])
         result = compare(cat, [dict(OBS, platform='WEB')])
@@ -100,6 +109,29 @@ class ContractsTest(unittest.TestCase):
 
 
 class SourceTest(unittest.TestCase):
+    def test_unique_accessible_copy_resolves_after_root_404(self):
+        copy = dict(id='b'*32, properties={'title': {'type': 'title', 'title': [{'plain_text': 'Event Log'}]}})
+        def request(path, payload):
+            if path.startswith('pages/'):
+                raise IncompleteSource('missing', http_status=404)
+            self.assertEqual(path, 'search')
+            return dict(results=[copy], has_more=False)
+        source = NotionSource('x', 'a'*32, request=request)
+        self.assertEqual(source.resolve_root(), copy)
+        self.assertEqual(source.root, 'b'*32)
+
+    def test_ambiguous_roots_are_not_guessed(self):
+        copies = [dict(id=c*32, properties={'title': {'type': 'title', 'title': [{'plain_text': 'Event Log'}]}}) for c in 'bc']
+        def request(path, payload):
+            if path.startswith('pages/'):
+                raise IncompleteSource('missing', http_status=404)
+            return dict(results=copies, has_more=False)
+        source = NotionSource('x', 'a'*32, request=request)
+        with self.assertRaises(IncompleteSource) as raised:
+            source.resolve_root()
+        self.assertEqual(raised.exception.diagnostics['code'], 'root_not_unique')
+        self.assertEqual(source.root, 'a'*32)
+
     def test_http_diagnostics_do_not_include_secret_or_response(self):
         import urllib.error
         error = urllib.error.HTTPError('https://api.notion.com/v1/pages/' + 'a'*32, 404, 'secret response', {}, None)
