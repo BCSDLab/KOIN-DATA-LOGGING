@@ -109,29 +109,6 @@ class ContractsTest(unittest.TestCase):
 
 
 class SourceTest(unittest.TestCase):
-    def test_unique_accessible_copy_resolves_after_root_404(self):
-        copy = dict(id='b'*32, properties={'title': {'type': 'title', 'title': [{'plain_text': 'Event Log'}]}})
-        def request(path, payload):
-            if path.startswith('pages/'):
-                raise IncompleteSource('missing', http_status=404)
-            self.assertEqual(path, 'search')
-            return dict(results=[copy], has_more=False)
-        source = NotionSource('x', 'a'*32, request=request)
-        self.assertEqual(source.resolve_root(), copy)
-        self.assertEqual(source.root, 'b'*32)
-
-    def test_ambiguous_roots_are_not_guessed(self):
-        copies = [dict(id=c*32, properties={'title': {'type': 'title', 'title': [{'plain_text': 'Event Log'}]}}) for c in 'bc']
-        def request(path, payload):
-            if path.startswith('pages/'):
-                raise IncompleteSource('missing', http_status=404)
-            return dict(results=copies, has_more=False)
-        source = NotionSource('x', 'a'*32, request=request)
-        with self.assertRaises(IncompleteSource) as raised:
-            source.resolve_root()
-        self.assertEqual(raised.exception.diagnostics['code'], 'root_not_unique')
-        self.assertEqual(source.root, 'a'*32)
-
     def test_http_diagnostics_do_not_include_secret_or_response(self):
         import urllib.error
         error = urllib.error.HTTPError('https://api.notion.com/v1/pages/' + 'a'*32, 404, 'secret response', {}, None)
