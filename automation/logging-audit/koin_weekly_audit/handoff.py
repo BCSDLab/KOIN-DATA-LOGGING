@@ -31,11 +31,15 @@ def developer_handoff(reports, reasons=None):
                 lines += ['#### [' + issue_id + '] ' + text(f['label']), '',
                     '- 구분: ' + ('명세 담당자 확인 필요' if f['reason']=='specification_conflict' else text((reasons or {}).get(f['reason'],f['reason']))),
                     '- 다른 필드: ' + text(f.get('field') or f['reason']),
-                    '- 명세 값: ' + text(', '.join(f.get('platform_expected_values', {}).get(platform, f.get('expected_values', []))) or '현행 계약 확인 필요'),
+                    ('- 자동 판정 기준: ' if f.get('field')=='value' else '- 명세 값: ') + text(', '.join(f.get('platform_expected_values', {}).get(platform, f.get('expected_values', []))) or '현행 계약 확인 필요'),
                     '- 실제 수집: ' + text(actual),
                     '- 해당 오류 발생: ' + str(f.get('platform_counts', {}).get(platform,0)) + '건',
                     '- 앱 버전: ' + text(', '.join(f.get('platform_versions', {}).get(platform, []))),
                     '- 관측 날짜(event_date): ' + text(', '.join(f.get('platform_dates', {}).get(platform, [])) or '미확인')]
+                value_source = f.get('platform_value_source', {}).get(platform)
+                if value_source:
+                    lines += ['- GitHub 원문 value 표기: ' + text('; '.join(s['raw_text'] for s in value_source['sources']) or ('현행 계약 연결 없음' if value_source['status']=='no_current_contract' else '원문 추출 미확인'))]
+                    lines += ['- value 원문 출처: [원문 ' + str(s['line']) + '행](' + s['url'] + ')' for s in value_source['sources'] if s['url'].startswith('https://github.com/BCSDLab/KOIN-DATA-LOGGING/')]
                 for source in (f.get('expectation_sources', []) if f.get('field') == 'event_name' else []):
                     if source.get('platforms') and platform not in source['platforms']:
                         continue

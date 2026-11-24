@@ -101,6 +101,10 @@ def detail_markdown(reports):
                 refs = ' · '.join('[명세](' + u + ')' for u in f.get('specification_urls', []) if u.startswith('https://github.com/BCSDLab/KOIN-DATA-LOGGING/')) or '등록된 명세 없음'
                 versions = ', '.join(f.get('platform_versions', {}).get(platform, []))
                 expected = ', '.join(f.get('platform_expected_values', {}).get(platform, f.get('expected_values', []))) or '등록된 현행 계약 없음 또는 명세 확인 필요'
+                source = f.get('platform_value_source', {}).get(platform)
+                if source:
+                    raw = '; '.join(x['raw_text'] for x in source['sources']) or ('해당 label·플랫폼의 현행 계약 연결 없음' if source['status']=='no_current_contract' else '원문 value 추출 미확인 — 명세 확인 필요')
+                    expected = 'GitHub 원문: ' + raw + ' / 자동 판정 기준: ' + expected
                 actual_counts = f.get('platform_value_counts', {}).get(platform, {})
                 actual = '; '.join(str(v) + ' (' + str(n) + '건)' for v, n in sorted(actual_counts.items())) if actual_counts else ', '.join(f.get('platform_observed_values', {}).get(platform, [])) or '확인 필요'
                 cells = [safe(f['label']), safe(REASONS.get(f['reason'], f['reason'])), html.escape(expected).replace('\n',' '), html.escape(actual).replace('\n',' '), str(f.get('platform_counts', {}).get(platform, 0)), safe(versions), refs]
@@ -110,7 +114,10 @@ def detail_markdown(reports):
         for row in report.get('value_collection', []):
             values = '; '.join(str(v) + ' (' + str(n) + '건)' for v,n in sorted(row['actual'].items()))
             escape = lambda v: html.escape(str(v)).replace('\n',' ')
-            lines += ['#### [' + escape(row['platform']) + '] ' + escape(row['label']), '', '- 명세 value: ' + escape(', '.join(row['expected'])), '- 실제 value: ' + escape(values), '- 총 수집: ' + str(row['events']) + '건 · 앱 버전: ' + escape(', '.join(row['versions'])), '']
+            source = row.get('source', {})
+            raw = '; '.join(x['raw_text'] for x in source.get('sources', [])) or ('해당 label·플랫폼의 현행 계약 연결 없음' if source.get('status')=='no_current_contract' else '원문 value 추출 미확인 — 명세 확인 필요')
+            source_links = ' · '.join('[원문 ' + str(x['line']) + '행](' + x['url'] + ')' for x in source.get('sources', []) if x['url'].startswith('https://github.com/BCSDLab/KOIN-DATA-LOGGING/'))
+            lines += ['#### [' + escape(row['platform']) + '] ' + escape(row['label']), '', '- GitHub 원문 value 표기: ' + escape(raw), '- 원문 출처: ' + (source_links or '현행 계약·원문 구조 확인 필요'), '- 자동 판정 기준: ' + escape(', '.join(row['expected'])), '- 실제 value: ' + escape(values), '- 총 수집: ' + str(row['events']) + '건 · 앱 버전: ' + escape(', '.join(row['versions'])), '']
         if not report.get('value_collection'):
             lines += ['관측 없음 또는 조회 불완전']
         lines += ['']
