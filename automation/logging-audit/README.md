@@ -55,7 +55,7 @@ GitHub 추적 문서 누락·커밋 불일치·소스 범위 축소(21개 미만
 
 | 종류 | 이름 | 내용 |
 | --- | --- | --- |
-| Secret | `SLACK_LOGGING_AUDIT_WEBHOOK` | 기존 `#코인_이벤트알림` 채널로 연결된 Incoming Webhook URL |
+| Secret | `SLACK_LOGGING_AUDIT_STAGE_WEBHOOK` | Stage 채널에 연결된 전용 Incoming Webhook URL. 기존 운영 채널 웹훅을 넣지 않습니다 |
 | Secret | `OPENAI_API_KEY` | OpenAI 프로젝트 API 키. Agents 읽기·쓰기 및 모델 추론 권한과 사용 가능한 API 잔액/한도 필요 |
 | Variable | `OPENAI_AGENT_MODEL` | 선택 사항. 기본 `gpt-6-astra`(공식 Agents quickstart 기준). 프로젝트 접근 가능 여부는 실제 실행에서 확인 |
 | Variable | `GCP_AUDIT_WIF_PROVIDER` | 권장: 이 저장소 main 전용 Workload Identity Provider 전체 경로 |
@@ -101,4 +101,6 @@ AI 테스트는 가짜 API 세션으로 도구 선택·근거 검증·실패·�
 
 Stage·Prod 각각 기간·검수 상태와 iOS/Android/Web의 미등록·과거·명세 불일치 label 수를 Slack 기본 표로 표시합니다. 문제 label은 유형별 1개씩 최대 3개만 줄을 나눠 예시로 보여줍니다. 전체 오류·AI 조사·제약·명세 snapshot은 실행 artifact에서 확인합니다. 수집 실패는 0건이 아니라 집계 불가로 표시합니다. 실패 알림과 복구 후 정상 결과는 서로 다른 전송 상태로 보존해, 실패 알림 때문에 정상 결과가 차단되지 않습니다. 같은 주·환경·결과 상태의 반복 전송은 방지합니다.
 
-2026-11-24 시험 운영: Stage·Prod 두 결과 모두 `SLACK_LOGGING_AUDIT_WEBHOOK`에 연결된 Stage 채널로 전송합니다. 환경 표시는 메시지의 [Stage]/[Prod]로 구분합니다. 정상 동작 확인 후 채널을 분리할 예정입니다. 전송 영수증은 환경·완료 상태·대상 웹훅의 단방향 해시로 구분하므로, 대상 채널 변경 시 한 번 새 채널에 전송합니다. 웹훅 원문은 기록하지 않습니다.
+2026-11-24 시험 운영: Stage·Prod 두 결과 모두 `SLACK_LOGGING_AUDIT_STAGE_WEBHOOK`에 연결된 Stage 채널로 전송합니다. 환경 표시는 메시지의 [Stage]/[Prod]로 구분합니다. 정상 동작 확인 후 채널을 분리할 예정입니다. 전송 영수증은 환경·완료 상태·대상 웹훅의 단방향 해시로 구분하므로, 대상 채널 변경 시 한 번 새 채널에 전송합니다. 웹훅 원문은 기록하지 않습니다.
+
+대상 채널 오발송 방지: Stage 시험 운영은 `SLACK_LOGGING_AUDIT_STAGE_WEBHOOK`만 읽습니다. 기존 `SLACK_LOGGING_AUDIT_WEBHOOK`으로 자동 대체하지 않으며 Stage 전용 Secret이 없으면 전송하지 않습니다. 새 웹훅 생성 화면의 Channel이 실제 Stage 채널인지 확인한 후 등록해야 합니다.

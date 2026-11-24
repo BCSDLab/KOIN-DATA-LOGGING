@@ -100,7 +100,7 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
         payload = slack_payload(environment, start.isoformat(), end.isoformat(), report)
         (output / f'{environment}-slack.json').write_text(json.dumps(payload, ensure_ascii=False), encoding='utf8')
         if send:
-            webhook = os.getenv('SLACK_LOGGING_AUDIT_WEBHOOK')
+            webhook = os.getenv('SLACK_LOGGING_AUDIT_STAGE_WEBHOOK')
             if webhook:
                 try:
                     phase = 'complete' if report.get('complete') else 'incomplete'
