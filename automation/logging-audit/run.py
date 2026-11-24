@@ -11,6 +11,7 @@ from koin_weekly_audit.contracts import build_catalog, compare
 from koin_weekly_audit.notion_source import NotionSource, IncompleteSource
 from koin_weekly_audit.notify import send_once, slack_text
 from koin_weekly_audit.agent import investigate
+from koin_weekly_audit.github_source import GitHubSource
 
 ROOT = 'f820221954bc82cfbe7e813b975c5be1'
 SOURCES = {'stage': ('koin-stage-438512', 'analytics_427218788'),
@@ -40,12 +41,9 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
     catalog, source_error, source, source_diagnostics = None, None, None, None
     try:
         if collector is None:
-            token = os.getenv('NOTION_LOGGING_READ_TOKEN')
-            if not token:
-                raise NotionTokenMissing()
-            collector = NotionSource(token, os.getenv('NOTION_EVENT_LOG_ROOT', ROOT))
+            collector = GitHubSource()
         source = collector.collect()
-        if not source.get('complete') or len(source['databases']) < 22 or source['row_count'] < 700:
+        if not source.get('complete') or len(source['databases']) < 21 or source['row_count'] < 700:
             raise IncompleteSource('Source completeness check failed')
         catalog = build_catalog(source['pages'])
         if not catalog['by_label']:
@@ -83,6 +81,8 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
             except Exception as exc:
                 report = dict(complete=False, failure_type=type(exc).__name__, snapshot_sha256=catalog['snapshot_sha256'])
         report.update(environment=environment, start=start.isoformat(), end=end.isoformat())
+        if source:
+            report.update(source_kind=source.get('source_kind'), source_revision=source.get('source_revision'))
         try:
             if investigator is investigate:
                 checkpoint = lambda result: (output / f'{environment}-agent.json').write_text(
@@ -101,7 +101,8 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
             webhook = os.getenv('SLACK_LOGGING_AUDIT_WEBHOOK')
             if webhook:
                 try:
-                    receipt = sender(webhook, message, state / f'{environment}-delivery.json')
+                    phase = 'complete' if report.get('complete') else 'incomplete'
+                    receipt = sender(webhook, message, state / f'{environment}-{phase}-delivery.json')
                     report['delivery_status'] = receipt['status']
                 except Exception as exc:
                     report['delivery_status'] = 'failed'

@@ -168,11 +168,11 @@ class AgentTest(unittest.TestCase):
         catalog, report, rows = fixture()
         report['agent'] = dict(status='failed', failure_type='PermissionDeniedError')
         message = slack_text('stage', report['start'], report['end'], report)
-        self.assertIn('추가 조사 미확인', message)
-        self.assertIn('③ 현행 명세 불일치', message)
+        self.assertIn('AI 추가 조사 미확인', message)
+        self.assertIn('명세 불일치', message)
         self.assertIn('4건', message)
         report['agent'] = investigate(catalog, report, rows, client(FakeSessions()))
-        self.assertIn('[E2]', slack_text('stage', report['start'], report['end'], report))
+        self.assertIn('AI 조사 완료', slack_text('stage', report['start'], report['end'], report))
 
     def test_runner_agent_failure_isolated_and_reported(self):
         def query(*args, **kw):
