@@ -74,6 +74,7 @@ jobs:
         if: always() && steps.week.outcome == 'success'
         env:
           NOTION_LOGGING_READ_TOKEN: ${{ secrets.NOTION_LOGGING_READ_TOKEN }}
+          NOTION_EVENT_LOG_ROOT: ${{ vars.NOTION_EVENT_LOG_ROOT || 'f820221954bc82cfbe7e813b975c5be1' }}
           SLACK_LOGGING_AUDIT_WEBHOOK: ${{ secrets.SLACK_LOGGING_AUDIT_WEBHOOK }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_AGENT_MODEL: ${{ vars.OPENAI_AGENT_MODEL || 'gpt-6-astra' }}

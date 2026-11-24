@@ -6,7 +6,15 @@ import urllib.request
 
 
 class IncompleteSource(RuntimeError):
-    pass
+    def __init__(self, message, *, code='source_incomplete', http_status=None, resource=None, block_id=None):
+        super().__init__(message)
+        self.diagnostics = dict(code=code)
+        if type(http_status) is int:
+            self.diagnostics['http_status'] = http_status
+        if resource and re.fullmatch(r'(?:pages|blocks|databases|data_sources)/[a-f0-9-]+(?:/children|/query)?', resource):
+            self.diagnostics['resource'] = resource
+        if block_id and re.fullmatch(r'[a-f0-9-]+', block_id):
+            self.diagnostics['block_id'] = block_id
 
 
 def text_of(rich_text):
@@ -34,7 +42,8 @@ class NotionSource:
                 if exc.code in (429, 500, 502, 503, 504, 529) and attempt < 5:
                     self.sleep(min(120, max(float(exc.headers.get('Retry-After', 0)), 2 ** attempt)))
                     continue
-                raise IncompleteSource('Notion HTTP ' + str(exc.code)) from None
+                raise IncompleteSource('Notion HTTP ' + str(exc.code), code='notion_http_error',
+                                       http_status=exc.code, resource=path.split('?')[0]) from None
             except (OSError, ValueError):
                 if attempt < 5:
                     self.sleep(2 ** attempt)
@@ -68,7 +77,8 @@ class NotionSource:
         result = []
         for block in self.all_results('blocks/' + page_id + '/children'):
             if block.get('type') == 'unsupported':
-                raise IncompleteSource('Unsupported Notion block')
+                raise IncompleteSource('Unsupported Notion block', code='unsupported_block',
+                                       resource='blocks/' + page_id + '/children', block_id=block['id'])
             if block.get('has_children') and block['type'] not in ('child_page', 'child_database'):
                 block['_children'] = self.blocks(block['id'])
             result.append(block)
