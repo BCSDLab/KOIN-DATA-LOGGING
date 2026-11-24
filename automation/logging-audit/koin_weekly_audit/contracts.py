@@ -176,10 +176,23 @@ def build_catalog(pages):
                 conflicts=sorted(conflicts), coverage=coverage, snapshot_sha256=fingerprint)
 
 
+def contract_failures(c, obs):
+    bad = []
+    if obs['event_name'] not in c['names']: bad.append('event_name_mismatch')
+    if c['screens'] and obs.get('screen_view') not in c['screens']: bad.append('screen_view_mismatch')
+    if c['categories'] and obs.get('event_category') not in c['categories']: bad.append('event_category_mismatch')
+    if c['platforms'] and obs['platform'] not in c['platforms']: bad.append('platform_mismatch')
+    if c['value_required'] and obs.get('value') in (None, ''): bad.append('value_missing')
+    elif c.get('allowed_values') and obs.get('value') not in c['allowed_values']: bad.append('enum_value_mismatch')
+    elif c['fixed_value'] is not None and obs.get('value') != c['fixed_value']: bad.append('fixed_value_mismatch')
+    if obs.get('duplicate_param_keys', 0): bad.append('duplicate_parameter_key')
+    return bad
+
+
 def compare(catalog, observations):
     issues = defaultdict(lambda: dict(count=0, versions=set(), platforms=set(), event_names=set(),
                                       platform_counts=defaultdict(int), platform_versions=defaultdict(set),
-                                      platform_event_names=defaultdict(set), platform_observed_values=defaultdict(set),
+                                      platform_event_names=defaultdict(set), platform_dates=defaultdict(set), platform_observed_values=defaultdict(set),
                                       platform_value_counts=defaultdict(lambda: defaultdict(int))))
     observed_labels = set()
     observed_pairs = set()
@@ -189,7 +202,7 @@ def compare(catalog, observations):
     total = 0
     for obs in observations:
         event_name = obs['event_name']
-        if event_name not in ('DA1', 'DA2') and event_name.upper() not in LEGACY_EVENT_NAMES:
+        if event_name not in ('DA1', 'DA2') and event_name.upper() not in LEGACY_EVENT_NAMES and not obs.get('event_label') and not obs.get('event_label_parameter_present'):
             continue
         count = int(obs['event_count'])
         platform = obs['platform']
@@ -218,28 +231,16 @@ def compare(catalog, observations):
         elif label in catalog['conflicts']:
             reasons = ['specification_conflict']
         else:
-            failures = []
-            for c in candidates:
-                bad = []
-                if obs['event_name'] not in c['names']:
-                    bad.append('event_name_mismatch')
-                if c['screens'] and obs.get('screen_view') not in c['screens']:
-                    bad.append('screen_view_mismatch')
-                if c['categories'] and obs.get('event_category') not in c['categories']:
-                    bad.append('event_category_mismatch')
-                if c['platforms'] and obs['platform'] not in c['platforms']:
-                    bad.append('platform_mismatch')
-                if c['value_required'] and obs.get('value') in (None, ''):
-                    bad.append('value_missing')
-                elif c.get('allowed_values') and obs.get('value') not in c['allowed_values']:
-                    bad.append('enum_value_mismatch')
-                elif c['fixed_value'] is not None and obs.get('value') != c['fixed_value']:
-                    bad.append('fixed_value_mismatch')
-                if obs.get('duplicate_param_keys', 0):
-                    bad.append('duplicate_parameter_key')
-                failures.append(bad)
-            # A match to any explicitly supported contract is sufficient.
-            reasons = min(failures, key=len)
+            reasons = min((contract_failures(c, obs) for c in candidates), key=len)
+        if event_name.upper() in LEGACY_EVENT_NAMES and not candidates:
+            reasons.append('event_label_missing' if not label else 'historical_label_still_collected' if label in catalog.get('legacy_by_label', {}) else 'unregistered_label')
+        if event_name.upper() in LEGACY_EVENT_NAMES and candidates and label not in catalog['conflicts']:
+            other = min((contract_failures(c, obs) for c in candidates), key=len)
+            reasons += [r for r in other if r != 'event_name_mismatch' and r not in reasons]
+        if event_name not in ('DA1','DA2') and event_name.upper() not in LEGACY_EVENT_NAMES and 'event_name_mismatch' not in reasons:
+            reasons.append('unexpected_event_name')
+        if obs.get('duplicate_param_keys', 0) and 'duplicate_parameter_key' not in reasons:
+            reasons.append('duplicate_parameter_key')
         if reasons:
             counts[platform]['categories'][category]['events'] += count
             counts[platform]['categories'][category]['labels'].add(label)
@@ -253,8 +254,10 @@ def compare(catalog, observations):
             issue['event_names'].add(event_name)
             issue['platform_counts'][platform] += count
             issue['platform_versions'][platform].add(version)
+            if re.fullmatch(r'\d{8}', str(obs.get('event_date', ''))):
+                issue['platform_dates'][platform].add(obs['event_date'])
             issue['platform_event_names'][platform].add(event_name)
-            field = {'event_name_mismatch': 'event_name', 'legacy_event_name': 'event_name',
+            field = {'event_name_mismatch': 'event_name', 'legacy_event_name': 'event_name', 'unexpected_event_name':'event_name',
                      'screen_view_mismatch': 'screen_view', 'event_category_mismatch': 'event_category',
                      'platform_mismatch': 'platform', 'unregistered_label': 'event_label',
                      'historical_label_still_collected': 'event_label', 'event_label_missing': 'event_label'}.get(reason)
@@ -262,6 +265,10 @@ def compare(catalog, observations):
                 observed = obs.get(field)
                 observed = '(누락)' if observed in (None, '') else str(observed)
                 observed = observed if observed == '(누락)' or re.fullmatch(r'[A-Za-z][A-Za-z0-9_]{0,159}', observed) else '(형식 오류)'
+            elif reason == 'specification_conflict':
+                observed = '; '.join(k + '=' + (str(obs.get(k)) if re.fullmatch(r'[A-Za-z][A-Za-z0-9_]{0,159}', str(obs.get(k))) else '(누락/형식 오류)') for k in ('event_name','screen_view','event_category'))
+            elif reason == 'duplicate_parameter_key':
+                observed = '중복 파라미터 키 ' + str(obs.get('duplicate_param_keys', 0)) + '개'
             else:
                 observed = display_value(obs.get('value'), obs.get('value_parameter_present')) if reason in ('value_missing', 'fixed_value_mismatch', 'enum_value_mismatch') else '확인 필요'
             issue['platform_value_counts'][platform][observed] += count
@@ -272,13 +279,21 @@ def compare(catalog, observations):
         expected_key = {'event_name_mismatch': 'names', 'legacy_event_name': 'names', 'screen_view_mismatch': 'screens',
                         'event_category_mismatch': 'categories', 'platform_mismatch': 'platforms'}.get(reason)
         expected = sorted({v for c in catalog['by_label'].get(label, []) for v in c.get(expected_key, [])}) if expected_key else []
-        if reason == 'legacy_event_name': expected = ['DA1', 'DA2']
+        if reason in ('legacy_event_name','unexpected_event_name'): expected = ['DA1', 'DA2']
         if reason in ('value_missing', 'fixed_value_mismatch', 'enum_value_mismatch'):
             expected = expected_value(catalog['by_label'].get(label, []))
-        findings.append(dict(category=category, label=label, reason=reason, count=data['count'],
+        if reason == 'specification_conflict':
+            expected = ['; '.join(k + '=' + ','.join(c.get(k, [])) for k in ('names','screens','categories','platforms')) + '; value=' + ','.join(expected_value([c])) for c in catalog['by_label'].get(label, [])]
+        if reason == 'duplicate_parameter_key': expected = ['각 파라미터 키는 1개씩']
+        if reason == 'unregistered_label': expected = ['현행·과거 명세에 이 event_label 없음']
+        if reason == 'historical_label_still_collected': expected = ['현행 명세의 event_label 사용 (과거 명세 링크 참고)']
+        if reason == 'event_label_missing': expected = ['명세에 등록된 event_label 필수']
+        field = {'legacy_event_name':'event_name','unexpected_event_name':'event_name','event_name_mismatch':'event_name','screen_view_mismatch':'screen_view','event_category_mismatch':'event_category','platform_mismatch':'platform','event_label_missing':'event_label','unregistered_label':'event_label','historical_label_still_collected':'event_label','specification_conflict':'contract','duplicate_parameter_key':'event_params'}.get(reason, 'value')
+        findings.append(dict(field=field, category=category, label=label, reason=reason, count=data['count'],
                              versions=sorted(data['versions']), platforms=sorted(data['platforms']),
                              event_names=sorted(data['event_names']), platform_counts=dict(data['platform_counts']),
                              platform_versions={p: sorted(v) for p, v in data['platform_versions'].items()},
+                             platform_dates={p: sorted(v) for p, v in data['platform_dates'].items()},
                              platform_event_names={p: sorted(v) for p, v in data['platform_event_names'].items()},
                              specification_urls=sorted(set(x['url'] for x in contracts)), expected_values=expected,
                              platform_observed_values={p: sorted(v) for p, v in data['platform_observed_values'].items()},

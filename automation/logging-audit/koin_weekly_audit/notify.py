@@ -6,13 +6,14 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 from .environment_evidence import compare_environments
+from .handoff import developer_handoff
 
 
 REASONS = {
     'event_label_missing': 'event_label 누락', 'unregistered_label': '명세에 없는 label',
     'historical_label_still_collected': '과거 명세 label 수집', 'legacy_event_name': '과거 event_name 수집',
     'specification_conflict': '명세 충돌·미확정 — 담당자 확인 필요',
-    'event_name_mismatch': 'event_name 불일치', 'screen_view_mismatch': 'screen_view 불일치',
+    'event_name_mismatch': 'event_name 불일치', 'unexpected_event_name':'예상하지 않은 event_name', 'screen_view_mismatch': 'screen_view 불일치',
     'event_category_mismatch': 'event_category 불일치', 'platform_mismatch': '지원 플랫폼 불일치',
     'value_missing': '필수 value 누락', 'fixed_value_mismatch': '고정 value 불일치', 'enum_value_mismatch': '허용 value 불일치',
     'duplicate_parameter_key': '파라미터 키 중복',
@@ -75,11 +76,11 @@ def slack_payload(environment, start, end, report):
 def detail_markdown(reports):
     lines = ['# 주간 로깅 검수', '', '기준: GitHub main의 전체 현행·과거 명세. DA1·DA2 및 CAMPUS·BUSINESS·USER를 플랫폼별 대조합니다.',
              '미관측 명세는 오류로 판정하지 않습니다. 동적 value는 존재 여부만 검사합니다. 구버전 적용 시점과 명세 충돌은 담당자 확인 대상입니다.', '']
-    lines += ['## 문제 로그 바로가기', '', '[Stage · Prod 실제 수집 비교](#user-content-audit-environments)', '']
+    lines += ['## 문제 로그 바로가기', '', '[Stage · Prod 실제 수집 비교](#user-content-audit-environments) · [개발자 전달용 상세](#user-content-developer-handoff)', '']
     for env, report in reports.items():
         title = 'Stage' if env == 'stage' else 'Prod'
         links = ['[' + name + ' (' + str(len(platform_findings(report, platform))) + '개 항목)](#user-content-audit-' + env + '-' + platform.lower() + ')' for platform, name in PLATFORM_NAMES]
-        lines += ['**' + title + '**: ' + ' · '.join(links), '']
+        lines += ['**' + title + '**: ' + ' · '.join(links) + ' · [실제 value 수집 현황](#user-content-values-' + env + ')', '']
     for env, report in reports.items():
         lines += ['## ' + env, '', '기간: ' + report['start'] + ' ~ ' + report['end'],
                   '명세 커밋: `' + (report.get('source_revision') or '미확인') + '`',
@@ -105,6 +106,14 @@ def detail_markdown(reports):
                 cells = [safe(f['label']), safe(REASONS.get(f['reason'], f['reason'])), html.escape(expected).replace('\n',' '), html.escape(actual).replace('\n',' '), str(f.get('platform_counts', {}).get(platform, 0)), safe(versions), refs]
                 lines.append('| ' + ' | '.join(c.replace('|', '&#124;') for c in cells) + ' |')
             lines += ['']
+        lines += ['<a name="values-' + env + '"></a>', '', '### 실제 value 수집 현황 (이상 여부와 별도)', '', '검수 범위에 실제 수집된 모든 label의 value 상태와 값별 건수입니다. value 미지정은 오류가 아니며, 파라미터 없음·NULL·빈 문자열·문자열 null을 구분합니다. 민감정보 가능 패턴은 가립니다. 가로 스크롤 없이 label별로 명세와 실제 값을 읽을 수 있습니다.', '']
+        for row in report.get('value_collection', []):
+            values = '; '.join(str(v) + ' (' + str(n) + '건)' for v,n in sorted(row['actual'].items()))
+            escape = lambda v: html.escape(str(v)).replace('\n',' ')
+            lines += ['#### [' + escape(row['platform']) + '] ' + escape(row['label']), '', '- 명세 value: ' + escape(', '.join(row['expected'])), '- 실제 value: ' + escape(values), '- 총 수집: ' + str(row['events']) + '건 · 앱 버전: ' + escape(', '.join(row['versions'])), '']
+        if not report.get('value_collection'):
+            lines += ['관측 없음 또는 조회 불완전']
+        lines += ['']
         scope = report.get('version_scope', {})
         lines += ['### 구버전·기타 버전 참고 (이상 판정 제외)', '', '모바일 검수 기준은 담당자가 확인한 버전입니다. Web은 전체 수집을 검사합니다. 구버전 및 기준 외 버전은 아래 집계로만 보존하며 AI 조사와 이상 알림에서 제외합니다.', '', '| 플랫폼 | 버전 | 구분 | 수집 건수 | label 수 |', '| --- | --- | --- | ---: | ---: |']
         for row in scope.get('reference', []):
@@ -130,6 +139,7 @@ def detail_markdown(reports):
             lines += ['| ' + ' | '.join(html.escape(str(c)).replace('\n',' ').replace('|','&#124;') for c in cells) + ' |']
         if not comparison['differences']:
             lines += ['| — | — | — | ' + ('관측한 비교 대상 필드에서 값 차이 없음' if comparison['common_labels'] else '양쪽 공통 관측 없어 비교 대상 없음') + ' | — | — |']
+    lines += ['', developer_handoff(reports, REASONS)]
     return '\n'.join(lines)
 
 

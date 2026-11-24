@@ -10,6 +10,7 @@ def build_query(project, dataset):
     return f"""WITH events AS (
       SELECT event_date, platform, stream_id, app_info.version AS app_version, event_name,
         {param('event_label')} AS event_label,
+        EXISTS(SELECT 1 FROM UNNEST(event_params) p WHERE p.key='event_label') AS event_label_parameter_present,
         {param('screen_view')} AS screen_view,
         {param('event_category')} AS event_category,
         {param('value')} AS value,
@@ -18,7 +19,7 @@ def build_query(project, dataset):
       FROM `{project}.{dataset}.events_*`
       WHERE _TABLE_SUFFIX BETWEEN @start_suffix AND @end_suffix
         AND REGEXP_CONTAINS(_TABLE_SUFFIX, r'^[0-9]{{8}}$')
-        AND (event_name IN ('DA1','DA2') OR UPPER(event_name) IN ('CAMPUS','BUSINESS','USER'))
+        AND (event_name IN ('DA1','DA2') OR UPPER(event_name) IN ('CAMPUS','BUSINESS','USER') OR EXISTS(SELECT 1 FROM UNNEST(event_params) p WHERE p.key='event_label'))
     )
     SELECT *, COUNT(*) AS event_count FROM events GROUP BY ALL"""
 

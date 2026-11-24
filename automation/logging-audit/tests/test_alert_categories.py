@@ -67,9 +67,9 @@ class AlertCategoriesTest(unittest.TestCase):
                 self.assertEqual(finding['reason'], 'legacy_event_name')
                 self.assertEqual(finding['event_names'], [name])
 
-    def test_other_event_names_are_excluded(self):
-        result = compare(build_catalog([page(SPEC)]), [dict(OBS, event_name='screen_view'),
-                                                      dict(OBS, event_name='CAMPUS_debug')])
+    def test_non_app_events_without_label_are_excluded(self):
+        result = compare(build_catalog([page(SPEC)]), [dict(OBS, event_name='screen_view', event_label=None),
+                                                      dict(OBS, event_name='CAMPUS_debug', event_label=None)])
         self.assertEqual(result['events'], 0)
         self.assertEqual(result['findings'], [])
 

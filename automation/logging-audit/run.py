@@ -13,8 +13,9 @@ from koin_weekly_audit.notify import send_once, slack_text, slack_payload, detai
 from koin_weekly_audit.agent import investigate
 from koin_weekly_audit.github_source import GitHubSource
 from koin_weekly_audit.actions import summary_url
+from koin_weekly_audit.handoff import developer_handoff
 from koin_weekly_audit.version_scope import targets_for, select_scope
-from koin_weekly_audit.environment_evidence import observations, compare_environments
+from koin_weekly_audit.environment_evidence import observations, compare_environments, value_collections
 
 ROOT = 'f820221954bc82cfbe7e813b975c5be1'
 SOURCES = {'stage': ('koin-stage-438512', 'analytics_427218788'),
@@ -80,6 +81,7 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                 report = compare(catalog, primary)
                 report['version_scope'] = version_scope
                 report['observed_evidence'] = observations(catalog, primary)
+                report['value_collection'] = value_collections(catalog, primary)
                 report['previous_period_recheck'] = compare(catalog, late)
                 report['previous_period_recheck']['version_scope'] = previous_scope
                 missing = fetched['missing_daily_tables']
@@ -120,7 +122,7 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                     import hashlib
                     destination = hashlib.sha256(webhook.encode()).hexdigest()[:12]
                     scope_key = hashlib.sha256(json.dumps(report.get('version_scope', {}).get('targets', {}), sort_keys=True).encode()).hexdigest()[:10]
-                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-{scope_key}-platform-audit-v7-delivery.json')
+                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-{scope_key}-platform-audit-v8-delivery.json')
                     report['delivery_status'] = receipt['status']
                 except Exception as exc:
                     report['delivery_status'] = 'failed'
@@ -132,6 +134,7 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
         # Only sanitized summaries are uploaded as GitHub artifacts.
         (output / f'{environment}-report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf8')
         reports[environment] = report
+    (output / 'developer-handoff.md').write_text(developer_handoff(reports), encoding='utf8')
     (output / 'environment-comparison.json').write_text(json.dumps(compare_environments(reports), ensure_ascii=False, indent=2), encoding='utf8')
     return reports
 
