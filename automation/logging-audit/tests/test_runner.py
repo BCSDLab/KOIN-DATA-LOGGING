@@ -1,4 +1,5 @@
 import tempfile
+import json
 import unittest
 from datetime import date
 from pathlib import Path
@@ -36,7 +37,8 @@ class RunnerTest(unittest.TestCase):
             self.assertFalse(reports['stage']['complete'])
             self.assertTrue(reports['production']['complete'])
             self.assertEqual(len(messages), 2)
-            self.assertNotIn('DO NOT PRINT SECRET', ''.join(messages))
+            self.assertNotIn('DO NOT PRINT SECRET', json.dumps(messages))
+            self.assertTrue(all('blocks' in message for message in messages))
             self.assertEqual(calls[0][1:], ('2026-11-13', '2026-11-22'))
 
     def test_source_failure_cannot_query_or_claim_success(self):

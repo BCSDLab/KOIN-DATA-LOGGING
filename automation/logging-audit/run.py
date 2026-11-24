@@ -9,7 +9,7 @@ from pathlib import Path
 from koin_weekly_audit.bigquery_source import fetch
 from koin_weekly_audit.contracts import build_catalog, compare
 from koin_weekly_audit.notion_source import NotionSource, IncompleteSource
-from koin_weekly_audit.notify import send_once, slack_text
+from koin_weekly_audit.notify import send_once, slack_text, slack_payload
 from koin_weekly_audit.agent import investigate
 from koin_weekly_audit.github_source import GitHubSource
 
@@ -97,12 +97,16 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
             report['detail_url'] = f'{server}/{repo}/actions/runs/{run_id}'
         message = slack_text(environment, start.isoformat(), end.isoformat(), report)
         (output / f'{environment}-slack.txt').write_text(message, encoding='utf8')
+        payload = slack_payload(environment, start.isoformat(), end.isoformat(), report)
+        (output / f'{environment}-slack.json').write_text(json.dumps(payload, ensure_ascii=False), encoding='utf8')
         if send:
             webhook = os.getenv('SLACK_LOGGING_AUDIT_WEBHOOK')
             if webhook:
                 try:
                     phase = 'complete' if report.get('complete') else 'incomplete'
-                    receipt = sender(webhook, message, state / f'{environment}-{phase}-delivery.json')
+                    import hashlib
+                    destination = hashlib.sha256(webhook.encode()).hexdigest()[:12]
+                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-delivery.json')
                     report['delivery_status'] = receipt['status']
                 except Exception as exc:
                     report['delivery_status'] = 'failed'
@@ -131,7 +135,11 @@ def main(argv=None):
         return 0
     reports = audit(start, args.output, args.state, send=args.send)
     summary = {k: {**{field: r.get(field) for field in ('complete', 'events', 'observed_labels', 'failure_type', 'delivery_status', 'source_diagnostics')},
-                   'agent_status': r.get('agent', {}).get('status')} for k, r in reports.items()}
+                   'agent_status': r.get('agent', {}).get('status'),
+                   'agent_failure_type': r.get('agent', {}).get('failure_type'),
+                   'agent_failure_code': r.get('agent', {}).get('failure_code'),
+                   'missing_daily_tables': r.get('missing_daily_tables'),
+                   'coverage': r.get('coverage')} for k, r in reports.items()}
     print(json.dumps(summary, ensure_ascii=False))
     if os.getenv('GITHUB_STEP_SUMMARY'):
         Path(os.environ['GITHUB_STEP_SUMMARY']).write_text(
