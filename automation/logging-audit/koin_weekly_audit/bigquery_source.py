@@ -13,6 +13,7 @@ def build_query(project, dataset):
         {param('screen_view')} AS screen_view,
         {param('event_category')} AS event_category,
         {param('value')} AS value,
+        EXISTS(SELECT 1 FROM UNNEST(event_params) p WHERE p.key='value') AS value_parameter_present,
         ARRAY_LENGTH(event_params) - (SELECT COUNT(DISTINCT key) FROM UNNEST(event_params)) AS duplicate_param_keys
       FROM `{project}.{dataset}.events_*`
       WHERE _TABLE_SUFFIX BETWEEN @start_suffix AND @end_suffix

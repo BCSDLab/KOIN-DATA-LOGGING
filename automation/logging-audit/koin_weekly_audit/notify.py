@@ -5,6 +5,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+from .environment_evidence import compare_environments
 
 
 REASONS = {
@@ -13,7 +14,7 @@ REASONS = {
     'specification_conflict': '명세 충돌·미확정 — 담당자 확인 필요',
     'event_name_mismatch': 'event_name 불일치', 'screen_view_mismatch': 'screen_view 불일치',
     'event_category_mismatch': 'event_category 불일치', 'platform_mismatch': '지원 플랫폼 불일치',
-    'value_missing': '필수 value 누락', 'fixed_value_mismatch': '고정 value 불일치',
+    'value_missing': '필수 value 누락', 'fixed_value_mismatch': '고정 value 불일치', 'enum_value_mismatch': '허용 value 불일치',
     'duplicate_parameter_key': '파라미터 키 중복',
 }
 PLATFORM_NAMES = (('IOS', 'iOS'), ('ANDROID', 'Android'), ('WEB', 'Web'))
@@ -74,14 +75,15 @@ def slack_payload(environment, start, end, report):
 def detail_markdown(reports):
     lines = ['# 주간 로깅 검수', '', '기준: GitHub main의 전체 현행·과거 명세. DA1·DA2 및 CAMPUS·BUSINESS·USER를 플랫폼별 대조합니다.',
              '미관측 명세는 오류로 판정하지 않습니다. 동적 value는 존재 여부만 검사합니다. 구버전 적용 시점과 명세 충돌은 담당자 확인 대상입니다.', '']
-    lines += ['## 문제 로그 바로가기', '']
+    lines += ['## 문제 로그 바로가기', '', '[Stage · Prod 실제 수집 비교](#user-content-audit-environments)', '']
     for env, report in reports.items():
         title = 'Stage' if env == 'stage' else 'Prod'
         links = ['[' + name + ' (' + str(len(platform_findings(report, platform))) + '개 항목)](#user-content-audit-' + env + '-' + platform.lower() + ')' for platform, name in PLATFORM_NAMES]
         lines += ['**' + title + '**: ' + ' · '.join(links), '']
     for env, report in reports.items():
         lines += ['## ' + env, '', '기간: ' + report['start'] + ' ~ ' + report['end'],
-                  '명세 커밋: `' + (report.get('source_revision') or '미확인') + '`', '']
+                  '명세 커밋: `' + (report.get('source_revision') or '미확인') + '`',
+                  'BigQuery 조회 job: `' + str(report.get('query_job_id') or '미확인') + '`', '']
         if not report.get('complete'):
             lines += notification_sections(report) + ['']
         for platform, name in PLATFORM_NAMES:
@@ -98,8 +100,9 @@ def detail_markdown(reports):
                 refs = ' · '.join('[명세](' + u + ')' for u in f.get('specification_urls', []) if u.startswith('https://github.com/BCSDLab/KOIN-DATA-LOGGING/')) or '등록된 명세 없음'
                 versions = ', '.join(f.get('platform_versions', {}).get(platform, []))
                 expected = ', '.join(f.get('expected_values', [])) or '등록된 현행 계약 없음 또는 명세 확인 필요'
-                actual = ', '.join(f.get('platform_observed_values', {}).get(platform, [])) or '확인 필요'
-                cells = [safe(f['label']), safe(REASONS.get(f['reason'], f['reason'])), safe(expected), safe(actual), str(f.get('platform_counts', {}).get(platform, 0)), safe(versions), refs]
+                actual_counts = f.get('platform_value_counts', {}).get(platform, {})
+                actual = '; '.join(str(v) + ' (' + str(n) + '건)' for v, n in sorted(actual_counts.items())) if actual_counts else ', '.join(f.get('platform_observed_values', {}).get(platform, [])) or '확인 필요'
+                cells = [safe(f['label']), safe(REASONS.get(f['reason'], f['reason'])), html.escape(expected).replace('\n',' '), html.escape(actual).replace('\n',' '), str(f.get('platform_counts', {}).get(platform, 0)), safe(versions), refs]
                 lines.append('| ' + ' | '.join(c.replace('|', '&#124;') for c in cells) + ' |')
             lines += ['']
         scope = report.get('version_scope', {})
@@ -113,6 +116,20 @@ def detail_markdown(reports):
         previous = report.get('previous_period_recheck', {})
         lines += ['이전 기간 재검사: ' + ('완료' if previous.get('complete') else '불완전') + ' · 누락 ' + ', '.join(previous.get('missing_daily_tables', [])),
                   'AI 추가 조사: ' + report.get('agent', {}).get('status', '미확인') + ' · ' + report.get('agent', {}).get('failure_type', ''), '']
+    comparison = compare_environments(reports)
+    lines += ['<a name="audit-environments"></a>', '', '## Stage · Prod 실제 수집 비교', '']
+    if not comparison['complete']:
+        lines += ['비교 불완전: ' + comparison['reason']]
+    else:
+        lines += ['동일 기간·동일 명세의 같은 label·플랫폼에서 관측한 값 집합을 비교합니다. 건수 차이는 오류로 판정하지 않습니다. 값 차이는 사용 동작·기준 버전 차이 때문일 수 있어 검토 대상이며, 양쪽 값이 같아도 명세에 맞는지는 위 환경별 검수로 판단합니다. 동적 value는 제외합니다.', '',
+            '양쪽 관측 ' + str(comparison['common_labels']) + '개 · 비교 대상 필드의 관측 값 동일 ' + str(comparison['same_observed_labels']) + '개 · Stage만 관측 ' + str(comparison['stage_only']) + '개 · Prod만 관측 ' + str(comparison['production_only']) + '개 · 민감정보 가림으로 값 비교 제외 ' + str(comparison['masked_fields']) + '개 필드 (label·플랫폼 조합)', '',
+            '| 플랫폼 | event_label | 필드 | 명세 | Stage 실제 값 (건수) | Prod 실제 값 (건수) |', '| --- | --- | --- | --- | --- | --- |']
+        for row in comparison['differences']:
+            values = lambda counts: '; '.join(str(v) + ' (' + str(n) + '건)' for v,n in sorted(counts.items()))
+            cells = [row['platform'], row['label'], row['field'], ', '.join(row['expected']) or '현행 명세 없음', values(row['stage']), values(row['production'])]
+            lines += ['| ' + ' | '.join(html.escape(str(c)).replace('\n',' ').replace('|','&#124;') for c in cells) + ' |']
+        if not comparison['differences']:
+            lines += ['| — | — | — | ' + ('관측한 비교 대상 필드에서 값 차이 없음' if comparison['common_labels'] else '양쪽 공통 관측 없어 비교 대상 없음') + ' | — | — |']
     return '\n'.join(lines)
 
 
