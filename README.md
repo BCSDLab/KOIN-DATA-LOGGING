@@ -42,3 +42,7 @@
 같은 명세는 목록에서 대표 하나로 안내하며 추가 원본·플랫폼별 과거 정의·사진은 대표 페이지에서 연결합니다. 목록 대표는 776개, 보존 열람 문서는 784개이며 고유 이벤트 개수가 아닙니다. 강제 업데이트 화면 이탈은 원문 간 충돌을 표시한 전환 초안입니다.
 
 [2026-11-19 Notion ZIP 동기화 범위·검토사항](_archive/updates/2026-11-19/README.md)
+
+## 주간 로깅 검수
+
+[Notion·BigQuery 자동 검수 및 AI 조사 에이전트·Slack 연결 설정](automation/logging-audit/README.md) — 매주 월요일 오전 9시(KST), Stage·Production의 IOS·ANDROID·WEB별 미등록·과거 로깅 지속 수집·현행 명세 불일치를 알립니다. DA1·DA2를 검사하며 CAMPUS·BUSINESS·USER 수집도 감지합니다. AI가 중요한 항목의 명세·날짜·버전 집계를 추가 조사해 근거와 원인 가설을 붙입니다. 인증 연결과 실제 API·최초 수신 시험이 필요합니다.
