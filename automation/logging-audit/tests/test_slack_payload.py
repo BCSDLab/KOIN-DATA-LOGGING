@@ -40,6 +40,8 @@ class SlackPayloadTest(unittest.TestCase):
         self.assertIn('room_common',details);self.assertIn('room_detail',details)
         self.assertIn('screen_view 불일치',details)
         self.assertIn('5.2.6',details)
+        self.assertIn('(#audit-stage-ios)',details)
+        self.assertIn('<a name="audit-stage-ios"></a>',details)
         self.assertLess(len(slack_text('stage',r['start'],r['end'],r)),400)
 
     def test_zero_traffic_and_incomplete_are_not_healthy(self):
