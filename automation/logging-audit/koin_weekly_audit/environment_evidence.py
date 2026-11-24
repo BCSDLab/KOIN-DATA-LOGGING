@@ -2,6 +2,7 @@
 import re
 from collections import defaultdict
 from .value_evidence import display_value, expected_value
+from .source_value import contract_value_sources
 
 
 def value_collections(catalog, rows):
@@ -18,7 +19,7 @@ def value_collections(catalog, rows):
         expected = expected_value(contracts) if contracts else ['현행 명세 없음']
         if contracts and all(not c.get('value_required') for c in contracts):
             expected = ['value 미지정 · 명세: ' + str(c.get('raw_fields', {}).get('value') or '미기재') for c in contracts]
-        result.append(dict(platform=platform,label=label,expected=expected,
+        result.append(dict(platform=platform,label=label,expected=expected,source=contract_value_sources(catalog,label,platform),
             rules=sorted({c.get('value_rule','unspecified') for c in contracts}),
             actual=dict(group['values']),events=group['events'],versions=sorted(group['versions'])))
     return result

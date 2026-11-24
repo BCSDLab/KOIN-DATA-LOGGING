@@ -3,6 +3,7 @@ import json
 import re
 from collections import defaultdict
 from .value_evidence import display_value, expected_value
+from .source_value import source_values, contract_value_sources
 
 FIELDS = ('설명', 'screen_view', 'event_name', 'event_label', 'value', 'event_category')
 LEGACY_EVENT_NAMES = frozenset(('CAMPUS', 'BUSINESS', 'USER'))
@@ -156,8 +157,13 @@ def build_catalog(pages):
     for page in pages:
         contracts, status = parse_page(page)
         past = historical_labels(page)
+        value_source = source_values(page)
+        for contract in contracts:
+            contract['value_source'] = value_source
+            if value_source and 'value' not in contract['raw_fields']:
+                contract['status'] = 'unresolved'
         coverage.append(dict(url=page['url'], title=page['title'], service=page.get('service'), status=status,
-                             labels=[x['label'] for x in contracts], historical_labels=past))
+                             labels=[x['label'] for x in contracts], historical_labels=past, value_source=value_source))
         for label in past:
             reference = {k: page.get(k, '') for k in ('url', 'title', 'service')}
             if reference not in legacy_by_label[label]:
@@ -310,6 +316,7 @@ def compare(catalog, observations):
                              platform_event_names={p: sorted(v) for p, v in data['platform_event_names'].items()},
                              specification_urls=sorted(set(x['url'] for x in contracts)), expected_values=expected,
                              platform_expected_values=per_platform_expected,
+                             platform_value_source={p:contract_value_sources(catalog,label,p) for p in data['platforms']} if field == 'value' else {},
                              expectation_sources=[dict(url=c['url'],event_names=c['names'],platforms=c['platforms']) for c in catalog['by_label'].get(label, [])],
                              platform_observed_values={p: sorted(v) for p, v in data['platform_observed_values'].items()},
                              platform_value_counts={p: dict(v) for p, v in data['platform_value_counts'].items()}))

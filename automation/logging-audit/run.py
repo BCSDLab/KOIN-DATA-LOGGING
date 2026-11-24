@@ -14,6 +14,7 @@ from koin_weekly_audit.agent import investigate
 from koin_weekly_audit.github_source import GitHubSource
 from koin_weekly_audit.actions import summary_url
 from koin_weekly_audit.handoff import developer_handoff
+from koin_weekly_audit.source_value import audit_markdown
 from koin_weekly_audit.version_scope import targets_for, select_scope
 from koin_weekly_audit.environment_evidence import observations, compare_environments, value_collections
 
@@ -52,6 +53,7 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
         catalog = build_catalog(source['pages'])
         if not catalog['by_label']:
             raise IncompleteSource('No current DA1/DA2 contracts found')
+        (output / 'spec-value-audit.md').write_text(audit_markdown(catalog['coverage']), encoding='utf8')
         # Keep a reproducible specification snapshot, without tokens or raw events.
         (output / 'contract-snapshot.json').write_text(json.dumps(catalog, ensure_ascii=False), encoding='utf8')
     except Exception as exc:
@@ -122,7 +124,7 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                     import hashlib
                     destination = hashlib.sha256(webhook.encode()).hexdigest()[:12]
                     scope_key = hashlib.sha256(json.dumps(report.get('version_scope', {}).get('targets', {}), sort_keys=True).encode()).hexdigest()[:10]
-                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-{scope_key}-platform-audit-v9-delivery.json')
+                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-{scope_key}-platform-audit-v10-delivery.json')
                     report['delivery_status'] = receipt['status']
                 except Exception as exc:
                     report['delivery_status'] = 'failed'
