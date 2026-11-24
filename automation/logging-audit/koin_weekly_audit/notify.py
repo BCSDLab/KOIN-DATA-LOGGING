@@ -75,7 +75,7 @@ def detail_markdown(reports):
     lines += ['## 문제 로그 바로가기', '']
     for env, report in reports.items():
         title = 'Stage' if env == 'stage' else 'Prod'
-        links = ['[' + name + ' (' + str(len(platform_findings(report, platform))) + '개 항목)](#audit-' + env + '-' + platform.lower() + ')' for platform, name in PLATFORM_NAMES]
+        links = ['[' + name + ' (' + str(len(platform_findings(report, platform))) + '개 항목)](#user-content-audit-' + env + '-' + platform.lower() + ')' for platform, name in PLATFORM_NAMES]
         lines += ['**' + title + '**: ' + ' · '.join(links), '']
     for env, report in reports.items():
         lines += ['## ' + env, '', '기간: ' + report['start'] + ' ~ ' + report['end'],

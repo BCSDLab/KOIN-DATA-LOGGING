@@ -111,7 +111,7 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                     phase = 'complete' if report.get('complete') else 'incomplete'
                     import hashlib
                     destination = hashlib.sha256(webhook.encode()).hexdigest()[:12]
-                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-platform-audit-v3-delivery.json')
+                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-platform-audit-v4-delivery.json')
                     report['delivery_status'] = receipt['status']
                 except Exception as exc:
                     report['delivery_status'] = 'failed'
