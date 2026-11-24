@@ -122,7 +122,7 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                     import hashlib
                     destination = hashlib.sha256(webhook.encode()).hexdigest()[:12]
                     scope_key = hashlib.sha256(json.dumps(report.get('version_scope', {}).get('targets', {}), sort_keys=True).encode()).hexdigest()[:10]
-                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-{scope_key}-platform-audit-v8-delivery.json')
+                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-{scope_key}-platform-audit-v9-delivery.json')
                     report['delivery_status'] = receipt['status']
                 except Exception as exc:
                     report['delivery_status'] = 'failed'

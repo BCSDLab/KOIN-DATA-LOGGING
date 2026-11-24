@@ -135,7 +135,7 @@ def parse_page(page):
             if allowed or unspecified_value:
                 fixed = None
             status = 'unresolved' if page.get('unresolved') else 'current'
-            if not names or not screens or not categories:
+            if len(names) != 1 or not screens or not categories:
                 status = 'unresolved'
             label_screen = label.split('__')[1] if '__' in label else None
             selected_screens = [label_screen] if label_screen in screens else sorted(set(screens))
@@ -187,6 +187,16 @@ def contract_failures(c, obs):
     elif c['fixed_value'] is not None and obs.get('value') != c['fixed_value']: bad.append('fixed_value_mismatch')
     if obs.get('duplicate_param_keys', 0): bad.append('duplicate_parameter_key')
     return bad
+
+
+def event_name_expectation(catalog, label, platform):
+    contracts = [c for c in catalog['by_label'].get(label, []) if not c['platforms'] or platform in c['platforms']]
+    if not contracts:
+        return ['해당 label·플랫폼의 현행 명세 없음 — event_name 정답 미확정']
+    names = sorted({name for c in contracts for name in c['names']})
+    if len(names) == 1 and all(c['names'] for c in contracts):
+        return names
+    return ['원문 event_name 충돌·미확정: ' + (' / '.join(names) or '미기재') + ' — 담당자 확인 필요']
 
 
 def compare(catalog, observations):
@@ -279,7 +289,10 @@ def compare(catalog, observations):
         expected_key = {'event_name_mismatch': 'names', 'legacy_event_name': 'names', 'screen_view_mismatch': 'screens',
                         'event_category_mismatch': 'categories', 'platform_mismatch': 'platforms'}.get(reason)
         expected = sorted({v for c in catalog['by_label'].get(label, []) for v in c.get(expected_key, [])}) if expected_key else []
-        if reason in ('legacy_event_name','unexpected_event_name'): expected = ['DA1', 'DA2']
+        per_platform_expected = {}
+        if reason in ('legacy_event_name','unexpected_event_name','event_name_mismatch'):
+            per_platform_expected = {p:event_name_expectation(catalog,label,p) for p in data['platforms']}
+            expected = sorted({v for values in per_platform_expected.values() for v in values})
         if reason in ('value_missing', 'fixed_value_mismatch', 'enum_value_mismatch'):
             expected = expected_value(catalog['by_label'].get(label, []))
         if reason == 'specification_conflict':
@@ -296,6 +309,8 @@ def compare(catalog, observations):
                              platform_dates={p: sorted(v) for p, v in data['platform_dates'].items()},
                              platform_event_names={p: sorted(v) for p, v in data['platform_event_names'].items()},
                              specification_urls=sorted(set(x['url'] for x in contracts)), expected_values=expected,
+                             platform_expected_values=per_platform_expected,
+                             expectation_sources=[dict(url=c['url'],event_names=c['names'],platforms=c['platforms']) for c in catalog['by_label'].get(label, [])],
                              platform_observed_values={p: sorted(v) for p, v in data['platform_observed_values'].items()},
                              platform_value_counts={p: dict(v) for p, v in data['platform_value_counts'].items()}))
     expected_pairs = {(label, p) for label, cs in catalog['by_label'].items() for c in cs for p in c['platforms']}
