@@ -87,6 +87,8 @@ def parse_page(page):
         elif current_key and re.match(r'^\s+[-*]\s+', line) and (
                 len(line) - len(line.lstrip()) > key_indent or
                 (current_key == 'value' and re.match(r'^\s*[-*]\s*예시', line))):
+            if current_key == 'value' and re.search(r'해주세요|해 주세요|부탁|따라 달리', line):
+                continue  # Explanatory child note is not part of a literal/enum value.
             current[current_key] += ' ' + re.sub(r'^\s+[-*]\s+', '', line)
         elif line.strip():
             current_key = None
@@ -126,10 +128,11 @@ def parse_page(page):
                 platforms = ['IOS']
             raw_value = fields.get('value', '').strip(' ”“\'"')
             # Only unambiguous single literal values are checked as literals.
-            fixed = raw_value if raw_value and len(raw_value) < 65 and not re.search(r'[{}<>/~():：]|예시|예:|ex\)|동적|STRING|INT|선택한|실제|→', raw_value, re.I) else None
+            fixed = raw_value if raw_value and len(raw_value) < 65 and not re.search(r'[{}<>/~():：]|예시|예:|ex\)|동적|STRING|INT|선택한|해당하는|실제|→', raw_value, re.I) else None
             choices = re.split(r'\s+(?:또는|or)\s+', raw_value, flags=re.I)
-            allowed = sorted(set(x.strip(' \"“”‘’') for x in choices)) if len(choices) > 1 and all(x and len(x) < 65 and not re.search(r'[{}<>/~():：]|예시|예:|동적|STRING|INT|선택한|실제|→', x, re.I) for x in choices) else []
-            if allowed:
+            allowed = sorted(set(x.strip(' \"“”‘’') for x in choices)) if len(choices) > 1 and all(x and len(x) < 65 and not re.search(r'[{}<>/~():：]|예시|예:|동적|STRING|INT|선택한|해당하는|실제|→', x, re.I) for x in choices) else []
+            unspecified_value = raw_value in ('기존 미기재 유지', '미기재 유지', '기존 값 미기재 유지')
+            if allowed or unspecified_value:
                 fixed = None
             status = 'unresolved' if page.get('unresolved') else 'current'
             if not names or not screens or not categories:
@@ -139,8 +142,8 @@ def parse_page(page):
             if action == 'swipe' and '모바일' in fields.get('event_label', '') and platforms == ['WEB']:
                 status = 'unresolved'  # Body and platform metadata conflict; don't guess support.
             contracts.append(dict(label=label, names=sorted(names), screens=selected_screens,
-                                  categories=cats, platforms=platforms, value_required=bool(raw_value),
-                                  fixed_value=fixed, allowed_values=allowed, value_rule='enum' if allowed else 'fixed' if fixed else 'presence_only' if raw_value else 'unspecified',
+                                  categories=cats, platforms=platforms, value_required=bool(raw_value) and not unspecified_value,
+                                  fixed_value=fixed, allowed_values=allowed, value_rule='enum' if allowed else 'fixed' if fixed else 'presence_only' if raw_value and not unspecified_value else 'unspecified',
                                   status=status, url=page['url'], title=page['title'], service=page.get('service', ''),
                                   raw_fields=fields, inherited_fields=inherited))
     return contracts, 'parsed' if contracts else 'unparsed_or_legacy'
