@@ -1,0 +1,5 @@
+{
+  "confirmed_on": "2026-11-24",
+  "stage": {"IOS": "5.2.6", "ANDROID": "5.2.4"},
+  "production": {"IOS": "5.2.5", "ANDROID": "5.2.4"}
+}

@@ -13,6 +13,7 @@ from koin_weekly_audit.notify import send_once, slack_text, slack_payload, detai
 from koin_weekly_audit.agent import investigate
 from koin_weekly_audit.github_source import GitHubSource
 from koin_weekly_audit.actions import summary_url
+from koin_weekly_audit.version_scope import targets_for, select_scope
 
 ROOT = 'f820221954bc82cfbe7e813b975c5be1'
 SOURCES = {'stage': ('koin-stage-438512', 'analytics_427218788'),
@@ -68,12 +69,17 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
             report['source_diagnostics'] = source_diagnostics
         if source_error is None:
             try:
+                targets = targets_for(environment)
                 fetched = query(project, dataset, (start - timedelta(days=3)).isoformat(), end.isoformat(),
                                 max_bytes=int(os.getenv('AUDIT_MAX_BYTES', str(5 * 1024**3))))
                 primary = [r for r in fetched['rows'] if start.strftime('%Y%m%d') <= r['event_date'] <= end.strftime('%Y%m%d')]
                 late = [r for r in fetched['rows'] if r['event_date'] < start.strftime('%Y%m%d')]
+                primary, version_scope = select_scope(primary, targets)
+                late, previous_scope = select_scope(late, targets)
                 report = compare(catalog, primary)
+                report['version_scope'] = version_scope
                 report['previous_period_recheck'] = compare(catalog, late)
+                report['previous_period_recheck']['version_scope'] = previous_scope
                 missing = fetched['missing_daily_tables']
                 primary_missing = [t for t in missing if start.strftime('%Y%m%d') <= t.removeprefix('events_') <= end.strftime('%Y%m%d')]
                 previous_missing = [t for t in missing if t.removeprefix('events_') < start.strftime('%Y%m%d')]
@@ -111,7 +117,8 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                     phase = 'complete' if report.get('complete') else 'incomplete'
                     import hashlib
                     destination = hashlib.sha256(webhook.encode()).hexdigest()[:12]
-                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-platform-audit-v4-delivery.json')
+                    scope_key = hashlib.sha256(json.dumps(report.get('version_scope', {}).get('targets', {}), sort_keys=True).encode()).hexdigest()[:10]
+                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-{scope_key}-platform-audit-v5-delivery.json')
                     report['delivery_status'] = receipt['status']
                 except Exception as exc:
                     report['delivery_status'] = 'failed'
@@ -139,7 +146,7 @@ def main(argv=None):
         print(start.isoformat())
         return 0
     reports = audit(start, args.output, args.state, send=args.send)
-    summary = {k: {**{field: r.get(field) for field in ('complete', 'events', 'observed_labels', 'failure_type', 'delivery_status', 'source_diagnostics')},
+    summary = {k: {**{field: r.get(field) for field in ('complete', 'events', 'observed_labels', 'failure_type', 'delivery_status', 'source_diagnostics', 'version_scope')},
                    'agent_status': r.get('agent', {}).get('status'),
                    'agent_failure_type': r.get('agent', {}).get('failure_type'),
                    'agent_failure_code': r.get('agent', {}).get('failure_code'),

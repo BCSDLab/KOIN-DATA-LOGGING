@@ -36,6 +36,8 @@ def notification_sections(report):
         return ['⚠️ 검수 불완전 · ' + safe(reason), 'iOS·Android·Web: 판정 불가']
     lines = []
     for platform, name in PLATFORM_NAMES:
+        target = report.get('version_scope', {}).get('targets', {}).get(platform)
+        name = name + (' ' + target if target else '')
         stats = report.get('platform_summary', {}).get(platform)
         findings = platform_findings(report, platform)
         if stats is None:
@@ -79,11 +81,13 @@ def detail_markdown(reports):
         lines += ['**' + title + '**: ' + ' · '.join(links), '']
     for env, report in reports.items():
         lines += ['## ' + env, '', '기간: ' + report['start'] + ' ~ ' + report['end'],
-                  '명세 커밋: `' + report.get('source_revision', '미확인') + '`', '']
+                  '명세 커밋: `' + (report.get('source_revision') or '미확인') + '`', '']
         if not report.get('complete'):
             lines += notification_sections(report) + ['']
         for platform, name in PLATFORM_NAMES:
             findings = platform_findings(report, platform)
+            target = report.get('version_scope', {}).get('targets', {}).get(platform)
+            name = name + (' ' + target if target else '')
             lines += ['<a name="audit-' + env + '-' + platform.lower() + '"></a>', '', '### ' + ('Stage' if env == 'stage' else 'Prod') + ' · ' + name, '']
             if not findings:
                 stats = report.get('platform_summary', {}).get(platform)
@@ -98,6 +102,14 @@ def detail_markdown(reports):
                 cells = [safe(f['label']), safe(REASONS.get(f['reason'], f['reason'])), safe(expected), safe(actual), str(f.get('platform_counts', {}).get(platform, 0)), safe(versions), refs]
                 lines.append('| ' + ' | '.join(c.replace('|', '&#124;') for c in cells) + ' |')
             lines += ['']
+        scope = report.get('version_scope', {})
+        lines += ['### 구버전·기타 버전 참고 (이상 판정 제외)', '', '모바일 검수 기준은 담당자가 확인한 버전입니다. Web은 전체 수집을 검사합니다. 구버전 및 기준 외 버전은 아래 집계로만 보존하며 AI 조사와 이상 알림에서 제외합니다.', '', '| 플랫폼 | 버전 | 구분 | 수집 건수 | label 수 |', '| --- | --- | --- | ---: | ---: |']
+        for row in scope.get('reference', []):
+            kind = {'older':'구버전', 'newer_or_other':'기준보다 높은 버전·기타 빌드', 'unknown':'버전 미확인'}[row['classification']]
+            lines.append('| ' + ' | '.join([safe(row['platform']), safe(row['app_version']), kind, str(row['events']), str(row['labels'])]) + ' |')
+        if not scope.get('reference'):
+            lines += ['| — | — | 참고 집계 없음 | 0 | 0 |']
+        lines += ['']
         previous = report.get('previous_period_recheck', {})
         lines += ['이전 기간 재검사: ' + ('완료' if previous.get('complete') else '불완전') + ' · 누락 ' + ', '.join(previous.get('missing_daily_tables', [])),
                   'AI 추가 조사: ' + report.get('agent', {}).get('status', '미확인') + ' · ' + report.get('agent', {}).get('failure_type', ''), '']
