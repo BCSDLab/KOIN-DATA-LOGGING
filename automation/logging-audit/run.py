@@ -37,7 +37,7 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
     output, state = Path(output) / start.isoformat(), Path(state) / start.isoformat()
     output.mkdir(parents=True, exist_ok=True)
     state.mkdir(parents=True, exist_ok=True)
-    catalog, source_error, source = None, None, None
+    catalog, source_error, source, source_diagnostics = None, None, None, None
     try:
         if collector is None:
             token = os.getenv('NOTION_LOGGING_READ_TOKEN')
@@ -54,10 +54,18 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
         (output / 'contract-snapshot.json').write_text(json.dumps(catalog, ensure_ascii=False), encoding='utf8')
     except Exception as exc:
         source_error = type(exc).__name__
+        if isinstance(exc, IncompleteSource):
+            source_diagnostics = exc.diagnostics
+        if isinstance(collector, NotionSource):
+            source_diagnostics = dict(source_diagnostics or {}, root=collector.root,
+                discovered_data_sources=len(collector.databases), discovered_rows=len(collector.rows),
+                visited_pages=len(collector.visited))
     reports = {}
     for environment, (project, dataset) in SOURCES.items():
         primary = []
         report = dict(complete=False, failure_type=source_error or 'UnknownFailure')
+        if source_diagnostics:
+            report['source_diagnostics'] = source_diagnostics
         if source_error is None:
             try:
                 fetched = query(project, dataset, (start - timedelta(days=3)).isoformat(), end.isoformat(),
@@ -121,7 +129,7 @@ def main(argv=None):
         print(start.isoformat())
         return 0
     reports = audit(start, args.output, args.state, send=args.send)
-    summary = {k: {**{field: r.get(field) for field in ('complete', 'events', 'observed_labels', 'failure_type', 'delivery_status')},
+    summary = {k: {**{field: r.get(field) for field in ('complete', 'events', 'observed_labels', 'failure_type', 'delivery_status', 'source_diagnostics')},
                    'agent_status': r.get('agent', {}).get('status')} for k, r in reports.items()}
     print(json.dumps(summary, ensure_ascii=False))
     if os.getenv('GITHUB_STEP_SUMMARY'):

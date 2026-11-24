@@ -100,6 +100,25 @@ class ContractsTest(unittest.TestCase):
 
 
 class SourceTest(unittest.TestCase):
+    def test_http_diagnostics_do_not_include_secret_or_response(self):
+        import urllib.error
+        error = urllib.error.HTTPError('https://api.notion.com/v1/pages/' + 'a'*32, 404, 'secret response', {}, None)
+        source = NotionSource('private-token', 'a'*32)
+        with patch('urllib.request.urlopen', side_effect=error):
+            with self.assertRaises(IncompleteSource) as raised:
+                source.request('pages/' + 'a'*32)
+        self.assertEqual(raised.exception.diagnostics['http_status'], 404)
+        self.assertNotIn('private-token', json.dumps(raised.exception.diagnostics))
+        self.assertNotIn('secret response', json.dumps(raised.exception.diagnostics))
+
+    def test_unsupported_diagnostic_identifies_exact_block(self):
+        block_id = 'b'*32
+        source = NotionSource('x', 'a'*32, request=lambda *_: dict(results=[{'id': block_id, 'type': 'unsupported'}], has_more=False))
+        with self.assertRaises(IncompleteSource) as raised:
+            source.blocks('a'*32)
+        self.assertEqual(raised.exception.diagnostics['code'], 'unsupported_block')
+        self.assertEqual(raised.exception.diagnostics['block_id'], block_id)
+
     def test_paginates_no_filter(self):
         calls = []
         def request(path, payload):
