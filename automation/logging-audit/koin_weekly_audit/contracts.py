@@ -2,6 +2,7 @@ import hashlib
 import json
 import re
 from collections import defaultdict
+from .value_evidence import display_value, expected_value
 
 FIELDS = ('설명', 'screen_view', 'event_name', 'event_label', 'value', 'event_category')
 LEGACY_EVENT_NAMES = frozenset(('CAMPUS', 'BUSINESS', 'USER'))
@@ -126,6 +127,10 @@ def parse_page(page):
             raw_value = fields.get('value', '').strip(' ”“\'"')
             # Only unambiguous single literal values are checked as literals.
             fixed = raw_value if raw_value and len(raw_value) < 65 and not re.search(r'[{}<>/~():：]|예시|예:|ex\)|동적|STRING|INT|선택한|실제|→', raw_value, re.I) else None
+            choices = re.split(r'\s+(?:또는|or)\s+', raw_value, flags=re.I)
+            allowed = sorted(set(x.strip(' \"“”‘’') for x in choices)) if len(choices) > 1 and all(x and len(x) < 65 and not re.search(r'[{}<>/~():：]|예시|예:|동적|STRING|INT|선택한|실제|→', x, re.I) for x in choices) else []
+            if allowed:
+                fixed = None
             status = 'unresolved' if page.get('unresolved') else 'current'
             if not names or not screens or not categories:
                 status = 'unresolved'
@@ -135,7 +140,7 @@ def parse_page(page):
                 status = 'unresolved'  # Body and platform metadata conflict; don't guess support.
             contracts.append(dict(label=label, names=sorted(names), screens=selected_screens,
                                   categories=cats, platforms=platforms, value_required=bool(raw_value),
-                                  fixed_value=fixed, value_rule='fixed' if fixed else 'presence_only' if raw_value else 'unspecified',
+                                  fixed_value=fixed, allowed_values=allowed, value_rule='enum' if allowed else 'fixed' if fixed else 'presence_only' if raw_value else 'unspecified',
                                   status=status, url=page['url'], title=page['title'], service=page.get('service', ''),
                                   raw_fields=fields, inherited_fields=inherited))
     return contracts, 'parsed' if contracts else 'unparsed_or_legacy'
@@ -159,7 +164,7 @@ def build_catalog(pages):
                 by_label[contract['label']].append(contract)
     conflicts = []
     for label, contracts in by_label.items():
-        signatures = {json.dumps({k: c[k] for k in ('names', 'screens', 'categories', 'fixed_value')}, sort_keys=True) for c in contracts}
+        signatures = {json.dumps({k: c[k] for k in ('names', 'screens', 'categories', 'fixed_value', 'allowed_values')}, sort_keys=True) for c in contracts}
         # Platform-specific signatures need explicit resolution; accepting any would hide drift.
         if len(signatures) > 1 or any(c['status'] == 'unresolved' for c in contracts):
             conflicts.append(label)
@@ -171,7 +176,8 @@ def build_catalog(pages):
 def compare(catalog, observations):
     issues = defaultdict(lambda: dict(count=0, versions=set(), platforms=set(), event_names=set(),
                                       platform_counts=defaultdict(int), platform_versions=defaultdict(set),
-                                      platform_event_names=defaultdict(set), platform_observed_values=defaultdict(set)))
+                                      platform_event_names=defaultdict(set), platform_observed_values=defaultdict(set),
+                                      platform_value_counts=defaultdict(lambda: defaultdict(int))))
     observed_labels = set()
     observed_pairs = set()
     current_labels_seen = set()
@@ -222,6 +228,8 @@ def compare(catalog, observations):
                     bad.append('platform_mismatch')
                 if c['value_required'] and obs.get('value') in (None, ''):
                     bad.append('value_missing')
+                elif c.get('allowed_values') and obs.get('value') not in c['allowed_values']:
+                    bad.append('enum_value_mismatch')
                 elif c['fixed_value'] is not None and obs.get('value') != c['fixed_value']:
                     bad.append('fixed_value_mismatch')
                 if obs.get('duplicate_param_keys', 0):
@@ -252,7 +260,8 @@ def compare(catalog, observations):
                 observed = '(누락)' if observed in (None, '') else str(observed)
                 observed = observed if observed == '(누락)' or re.fullmatch(r'[A-Za-z][A-Za-z0-9_]{0,159}', observed) else '(형식 오류)'
             else:
-                observed = '(누락)' if reason == 'value_missing' else '값 불일치(원본 값 비공개)' if reason == 'fixed_value_mismatch' else '확인 필요'
+                observed = display_value(obs.get('value'), obs.get('value_parameter_present')) if reason in ('value_missing', 'fixed_value_mismatch', 'enum_value_mismatch') else '확인 필요'
+            issue['platform_value_counts'][platform][observed] += count
             issue['platform_observed_values'][platform].add(observed)
     findings = []
     for (category, label, reason), data in sorted(issues.items()):
@@ -261,15 +270,16 @@ def compare(catalog, observations):
                         'event_category_mismatch': 'categories', 'platform_mismatch': 'platforms'}.get(reason)
         expected = sorted({v for c in catalog['by_label'].get(label, []) for v in c.get(expected_key, [])}) if expected_key else []
         if reason == 'legacy_event_name': expected = ['DA1', 'DA2']
-        if reason == 'value_missing': expected = ['필수 value']
-        if reason == 'fixed_value_mismatch': expected = ['명세 고정 value']
+        if reason in ('value_missing', 'fixed_value_mismatch', 'enum_value_mismatch'):
+            expected = expected_value(catalog['by_label'].get(label, []))
         findings.append(dict(category=category, label=label, reason=reason, count=data['count'],
                              versions=sorted(data['versions']), platforms=sorted(data['platforms']),
                              event_names=sorted(data['event_names']), platform_counts=dict(data['platform_counts']),
                              platform_versions={p: sorted(v) for p, v in data['platform_versions'].items()},
                              platform_event_names={p: sorted(v) for p, v in data['platform_event_names'].items()},
                              specification_urls=sorted(set(x['url'] for x in contracts)), expected_values=expected,
-                             platform_observed_values={p: sorted(v) for p, v in data['platform_observed_values'].items()}))
+                             platform_observed_values={p: sorted(v) for p, v in data['platform_observed_values'].items()},
+                             platform_value_counts={p: dict(v) for p, v in data['platform_value_counts'].items()}))
     expected_pairs = {(label, p) for label, cs in catalog['by_label'].items() for c in cs for p in c['platforms']}
     platform_summary = {p: dict(events=v['events'], observed_labels=len(v['labels']), event_names=dict(v['event_names']),
                                categories={k: dict(events=c['events'], labels=len(c['labels'])) for k, c in v['categories'].items()}) for p, v in counts.items()}

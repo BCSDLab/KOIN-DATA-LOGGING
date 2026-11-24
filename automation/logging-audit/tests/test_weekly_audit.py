@@ -30,12 +30,12 @@ OBS = dict(event_date='20261122', event_name='DA1', platform='IOS', app_version=
 class ContractsTest(unittest.TestCase):
     def test_details_separate_expected_actual_by_platform_without_raw_values(self):
         cat = build_catalog([page(SPEC, ['IOS', 'ANDROID'])])
-        result = compare(cat, [dict(OBS, screen_view='wrong_ios', value='PRIVATE'),
+        result = compare(cat, [dict(OBS, screen_view='wrong_ios', value='private@example.com'),
                                dict(OBS, platform='ANDROID', screen_view='wrong_android')])
         issue = next(f for f in result['findings'] if f['reason'] == 'screen_view_mismatch')
         self.assertEqual(issue['expected_values'], ['room_common'])
         self.assertEqual(issue['platform_observed_values'], {'IOS': ['wrong_ios'], 'ANDROID': ['wrong_android']})
-        self.assertNotIn('PRIVATE', json.dumps(result))
+        self.assertNotIn('private@example.com', json.dumps(result))
 
     def test_web_mobile_platform_and_per_platform_coverage(self):
         cat = build_catalog([page(SPEC, ['WEB (모바일)', 'IOS'])])
