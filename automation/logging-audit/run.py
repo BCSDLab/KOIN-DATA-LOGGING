@@ -9,7 +9,7 @@ from pathlib import Path
 from koin_weekly_audit.bigquery_source import fetch
 from koin_weekly_audit.contracts import build_catalog, compare
 from koin_weekly_audit.notion_source import NotionSource, IncompleteSource
-from koin_weekly_audit.notify import send_once, slack_text, slack_payload
+from koin_weekly_audit.notify import send_once, slack_text, slack_payload, detail_markdown
 from koin_weekly_audit.agent import investigate
 from koin_weekly_audit.github_source import GitHubSource
 
@@ -72,7 +72,11 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                 late = [r for r in fetched['rows'] if r['event_date'] < start.strftime('%Y%m%d')]
                 report = compare(catalog, primary)
                 report['previous_period_recheck'] = compare(catalog, late)
-                report.update(complete=fetched['complete'], missing_daily_tables=fetched['missing_daily_tables'],
+                missing = fetched['missing_daily_tables']
+                primary_missing = [t for t in missing if start.strftime('%Y%m%d') <= t.removeprefix('events_') <= end.strftime('%Y%m%d')]
+                previous_missing = [t for t in missing if t.removeprefix('events_') < start.strftime('%Y%m%d')]
+                report['previous_period_recheck'].update(complete=not previous_missing, missing_daily_tables=previous_missing)
+                report.update(complete=not primary_missing and (fetched['complete'] or bool(missing)), missing_daily_tables=primary_missing,
                               query_job_id=fetched.get('job_id'), bytes_processed=fetched.get('bytes_processed'),
                               coverage=dict(rows=source['row_count'], databases=len(source['databases']),
                                             parsed_pages=sum(r['status'] == 'parsed' for r in catalog['coverage']),
@@ -106,7 +110,7 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                     phase = 'complete' if report.get('complete') else 'incomplete'
                     import hashlib
                     destination = hashlib.sha256(webhook.encode()).hexdigest()[:12]
-                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-delivery.json')
+                    receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-platform-audit-v2-delivery.json')
                     report['delivery_status'] = receipt['status']
                 except Exception as exc:
                     report['delivery_status'] = 'failed'
@@ -143,8 +147,7 @@ def main(argv=None):
     print(json.dumps(summary, ensure_ascii=False))
     if os.getenv('GITHUB_STEP_SUMMARY'):
         Path(os.environ['GITHUB_STEP_SUMMARY']).write_text(
-            '# 주간 로깅 검수\n\n```json\n' + json.dumps(summary, ensure_ascii=False, indent=2) + '\n```\n\n'
-            + '상세 결과는 이 실행의 logging-audit-results artifact에 있습니다. 불일치는 배포 버전 확인이 필요한 후보입니다.\n', encoding='utf8')
+            detail_markdown(reports), encoding='utf8')
     return 0 if all(r.get('complete') and r.get('agent', {}).get('status') == 'completed' and
                    (not args.send or r.get('delivery_status') == 'sent') for r in reports.values()) else 1
 

@@ -16,6 +16,17 @@ class Collector:
 
 
 class RunnerTest(unittest.TestCase):
+    def test_previous_period_missing_table_does_not_invalidate_primary_week(self):
+        with tempfile.TemporaryDirectory() as folder:
+            reports = audit(date(2026, 11, 16), folder, folder + '/state', collector=Collector(),
+                            query=lambda *a, **kw: dict(rows=[], complete=False, missing_daily_tables=['events_20261114']),
+                            investigator=lambda *a: dict(status='skipped'))
+            for report in reports.values():
+                self.assertTrue(report['complete'])
+                self.assertEqual(report['missing_daily_tables'], [])
+                self.assertFalse(report['previous_period_recheck']['complete'])
+                self.assertEqual(report['previous_period_recheck']['missing_daily_tables'], ['events_20261114'])
+
     def test_stage_trial_never_falls_back_to_existing_channel(self):
         with tempfile.TemporaryDirectory() as folder, patch.dict('os.environ',
                 {'SLACK_LOGGING_AUDIT_WEBHOOK': 'OLD-CHANNEL'}, clear=True), patch('run.send_once') as sender:

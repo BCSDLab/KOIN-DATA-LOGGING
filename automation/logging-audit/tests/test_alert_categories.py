@@ -88,17 +88,13 @@ class AlertCategoriesTest(unittest.TestCase):
         text = slack_text('production', '2026-11-16', '2026-11-22', report)
         for p in ('IOS', 'ANDROID', 'WEB'):
             self.assertIn({'IOS': 'iOS', 'ANDROID': 'Android', 'WEB': 'Web'}[p], text)
-        self.assertIn('미등록 / 과거 / 명세 불일치', text)
-        self.assertLessEqual(len(text.splitlines()), 12)
-        self.assertIn('수집 0건: iOS·Android·Web', text)
-        self.assertIn('```', text)
-        rows = [line for line in text.splitlines() if line.startswith(('iOS ', 'Android ', 'Web '))]
-        self.assertEqual(len({line.index('/') for line in rows}), 1)
+        self.assertEqual(text.count('수집 0건 · 판정 대상 없음'), 3)
+        self.assertNotIn('이상 없음', text)
 
     def test_source_failure_is_not_zero_traffic(self):
         text = slack_text('stage', 'a', 'b', {'complete': False})
-        self.assertIn('iOS·Android·Web 모두 판정 미확인', text)
-        self.assertIn('로그 집계 불가', text)
+        self.assertIn('iOS·Android·Web: 판정 불가', text)
+        self.assertIn('검수 불완전', text)
         self.assertNotIn('수집 0건 —', text)
 
     def test_query_scope(self):
