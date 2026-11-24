@@ -15,6 +15,11 @@ PAST = '''- 과거 로깅
 
 
 class AlertCategoriesTest(unittest.TestCase):
+    def test_legacy_name_does_not_hide_unobserved_current_contract(self):
+        report = compare(build_catalog([page(SPEC)]), [dict(OBS, event_name='CAMPUS')])
+        self.assertIn(OBS['event_label'], report['unobserved_labels'])
+        self.assertIn(dict(label=OBS['event_label'], platform='IOS'), report['unobserved_platform_contracts'])
+
     def test_past_section_after_new_does_not_overwrite_current(self):
         cat = build_catalog([page(SPEC + '\n' + PAST)])
         self.assertIn(OBS['event_label'], cat['by_label'])

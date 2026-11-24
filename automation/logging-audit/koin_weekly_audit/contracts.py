@@ -72,33 +72,50 @@ def parse_page(page):
             selected.append(line)
     lines = selected
     # A page may explicitly contain more than one contract.
-    chunks, current, current_key = [], {}, None
+    chunks, current, current_key, key_indent = [], {}, None, 0
     for line in lines:
         match = re.match(r'^\s*(?:[-*]\s*)?(' + '|'.join(FIELDS) + r')\s*[:：]\s*(.*)', line)
         if match:
             key, val = match.groups()
-            if key == 'event_label' and key in current:
+            if 'event_label' in current and key in current:
                 chunks.append(current)
                 current = {}
             current[key] = val.strip()
             current_key = key
-        elif current_key and re.match(r'^\s+[-*]\s+', line):
+            key_indent = len(line) - len(line.lstrip())
+        elif current_key and re.match(r'^\s+[-*]\s+', line) and (
+                len(line) - len(line.lstrip()) > key_indent or
+                (current_key == 'value' and re.match(r'^\s*[-*]\s*예시', line))):
             current[current_key] += ' ' + re.sub(r'^\s+[-*]\s+', '', line)
         elif line.strip():
             current_key = None
     if current:
         chunks.append(current)
+    # Some pages declare event_name/value/category once after screen-specific
+    # blocks. Only reuse a field when its explicit page-wide value is unique;
+    # conflicting values stay unresolved rather than being guessed or dropped.
+    shared = {}
+    for key in ('event_name', 'screen_view', 'value', 'event_category'):
+        values = {c[key] for c in chunks if c.get(key)}
+        if len(values) == 1:
+            shared[key] = next(iter(values))
     contracts = []
     for fields in chunks:
+        inherited = []
+        if not fields.get('event_name'):
+            fields = dict(fields)
+            for key, value in shared.items():
+                if not fields.get(key):
+                    fields[key] = value
+                    inherited.append(key)
         names = set(re.findall(r'\bDA[12]\b', fields.get('event_name', '')))
-        if not names:
-            continue
         labels = re.findall(r'\b[a-z][a-z0-9_]*(?:__[a-z0-9_]+)+\b', fields.get('event_label', ''))
         if not labels:
             literal = fields.get('event_label', '').strip(' ”“\'"')
             labels = [literal] if re.fullmatch(r'[a-zA-Z][a-zA-Z0-9_]*', literal) else []
         screens = re.findall(r'\b[a-z][a-z0-9_]*\b', fields.get('screen_view', ''))
-        categories = re.findall(r'\b(click|swipe|scroll|view|submit|toggle|exit|page_exit|entry|show|impression|complete)\b', fields.get('event_category', ''))
+        category_text = re.sub(r'\([^)]*\)', '', fields.get('event_category', ''))
+        categories = re.findall(r'\b[a-z][a-z0-9_]*\b', category_text)
         for label in labels:
             action = label.split('__')[-1]
             cats = [action] if action in categories else sorted(set(categories))
@@ -110,6 +127,8 @@ def parse_page(page):
             # Only unambiguous single literal values are checked as literals.
             fixed = raw_value if raw_value and len(raw_value) < 65 and not re.search(r'[{}<>/~():：]|예시|예:|ex\)|동적|STRING|INT|선택한|실제|→', raw_value, re.I) else None
             status = 'unresolved' if page.get('unresolved') else 'current'
+            if not names or not screens or not categories:
+                status = 'unresolved'
             label_screen = label.split('__')[1] if '__' in label else None
             selected_screens = [label_screen] if label_screen in screens else sorted(set(screens))
             if action == 'swipe' and '모바일' in fields.get('event_label', '') and platforms == ['WEB']:
@@ -118,7 +137,7 @@ def parse_page(page):
                                   categories=cats, platforms=platforms, value_required=bool(raw_value),
                                   fixed_value=fixed, value_rule='fixed' if fixed else 'presence_only' if raw_value else 'unspecified',
                                   status=status, url=page['url'], title=page['title'], service=page.get('service', ''),
-                                  raw_fields=fields))
+                                  raw_fields=fields, inherited_fields=inherited))
     return contracts, 'parsed' if contracts else 'unparsed_or_legacy'
 
 
@@ -155,6 +174,7 @@ def compare(catalog, observations):
                                       platform_event_names=defaultdict(set)))
     observed_labels = set()
     observed_pairs = set()
+    current_labels_seen = set()
     counts = {p: dict(events=0, labels=set(), categories={k: dict(events=0, labels=set()) for k in CATEGORIES},
                       event_names=defaultdict(int)) for p in PLATFORMS}
     total = 0
@@ -169,7 +189,9 @@ def compare(catalog, observations):
         total += count
         label = obs.get('event_label')
         observed_labels.add(label)
-        observed_pairs.add((label, platform))
+        if event_name in ('DA1', 'DA2'):
+            observed_pairs.add((label, platform))
+            current_labels_seen.add(label)
         counts[platform]['events'] += count
         counts[platform]['labels'].add(label)
         counts[platform]['event_names'][event_name] += count
@@ -235,7 +257,7 @@ def compare(catalog, observations):
                                categories={k: dict(events=c['events'], labels=len(c['labels'])) for k, c in v['categories'].items()}) for p, v in counts.items()}
     return dict(events=total, observed_labels=len(observed_labels), findings=findings,
                 platform_summary=platform_summary,
-                unobserved_labels=sorted(set(catalog['by_label']) - observed_labels),
+                unobserved_labels=sorted(set(catalog['by_label']) - current_labels_seen),
                 unobserved_platform_contracts=[dict(label=l, platform=p) for l, p in sorted(expected_pairs - observed_pairs)],
                 snapshot_sha256=catalog['snapshot_sha256'],
                 interpretation='Latest-spec mismatches are candidates; deployment/version cutovers are not inferred. Dynamic values are checked for presence only.')
