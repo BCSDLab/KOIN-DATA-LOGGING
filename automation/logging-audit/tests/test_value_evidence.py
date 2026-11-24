@@ -33,6 +33,16 @@ class ValueEvidenceTest(unittest.TestCase):
             self.assertEqual(bad['reason'],'enum_value_mismatch')
             self.assertEqual(set(bad['expected_values']),{'"'+v+'"' for v in values})
 
+    def test_editor_notes_and_dynamic_descriptions_are_not_literals(self):
+        text=SPEC.replace('value: 뒤로가기','value: 설정 아이콘 or 새 키워드 추가\n  - 클릭하는 진입점에 따라 달리 해주세요')
+        cat=build_catalog([page(text)])
+        self.assertEqual(compare(cat,[dict(OBS,value='설정 아이콘'),dict(OBS,value='새 키워드 추가')])['findings'],[])
+        dynamic=build_catalog([page(SPEC.replace('value: 뒤로가기','value: - 해당하는 시각'))])
+        self.assertEqual(compare(dynamic,[dict(OBS,value='오후 10:40')])['findings'],[])
+        self.assertNotIn('value',observations(dynamic,[dict(OBS,value='오후 10:40')])[0]['fields'])
+        unspecified=build_catalog([page(SPEC.replace('value: 뒤로가기','value: 기존 미기재 유지'))])
+        self.assertEqual(compare(unspecified,[dict(OBS,value=None,value_parameter_present=False)])['findings'],[])
+
     def test_sensitive_fixed_values_masked_and_dynamic_never_exported(self):
         cat=build_catalog([page(SPEC)])
         for value in ('private@example.com','010-1234-5678','https://secret.example/key','sk-proj-secret'):
