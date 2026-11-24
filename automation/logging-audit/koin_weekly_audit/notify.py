@@ -106,13 +106,13 @@ def detail_markdown(reports):
                 cells = [safe(f['label']), safe(REASONS.get(f['reason'], f['reason'])), html.escape(expected).replace('\n',' '), html.escape(actual).replace('\n',' '), str(f.get('platform_counts', {}).get(platform, 0)), safe(versions), refs]
                 lines.append('| ' + ' | '.join(c.replace('|', '&#124;') for c in cells) + ' |')
             lines += ['']
-        lines += ['<a name="values-' + env + '"></a>', '', '### 실제 value 수집 현황 (이상 여부와 별도)', '', '검수 범위에 실제 수집된 모든 label의 value 상태와 값별 건수입니다. value 미지정은 오류가 아니며, 파라미터 없음·NULL·빈 문자열·문자열 null을 구분합니다. 민감정보 가능 패턴은 가립니다.', '', '| 플랫폼 | event_label | 명세 value | 실제 value (건수) | 총 수집 | 앱 버전 |', '| --- | --- | --- | --- | ---: | --- |']
+        lines += ['<a name="values-' + env + '"></a>', '', '### 실제 value 수집 현황 (이상 여부와 별도)', '', '검수 범위에 실제 수집된 모든 label의 value 상태와 값별 건수입니다. value 미지정은 오류가 아니며, 파라미터 없음·NULL·빈 문자열·문자열 null을 구분합니다. 민감정보 가능 패턴은 가립니다. 가로 스크롤 없이 label별로 명세와 실제 값을 읽을 수 있습니다.', '']
         for row in report.get('value_collection', []):
             values = '; '.join(str(v) + ' (' + str(n) + '건)' for v,n in sorted(row['actual'].items()))
-            cells = [row['platform'],row['label'],', '.join(row['expected']),values,str(row['events']),', '.join(row['versions'])]
-            lines += ['| ' + ' | '.join(html.escape(str(c)).replace('\n',' ').replace('|','&#124;') for c in cells) + ' |']
+            escape = lambda v: html.escape(str(v)).replace('\n',' ')
+            lines += ['#### [' + escape(row['platform']) + '] ' + escape(row['label']), '', '- 명세 value: ' + escape(', '.join(row['expected'])), '- 실제 value: ' + escape(values), '- 총 수집: ' + str(row['events']) + '건 · 앱 버전: ' + escape(', '.join(row['versions'])), '']
         if not report.get('value_collection'):
-            lines += ['| — | — | — | 관측 없음 또는 조회 불완전 | — | — |']
+            lines += ['관측 없음 또는 조회 불완전']
         lines += ['']
         scope = report.get('version_scope', {})
         lines += ['### 구버전·기타 버전 참고 (이상 판정 제외)', '', '모바일 검수 기준은 담당자가 확인한 버전입니다. Web은 전체 수집을 검사합니다. 구버전 및 기준 외 버전은 아래 집계로만 보존하며 AI 조사와 이상 알림에서 제외합니다.', '', '| 플랫폼 | 버전 | 구분 | 수집 건수 | label 수 |', '| --- | --- | --- | ---: | ---: |']
