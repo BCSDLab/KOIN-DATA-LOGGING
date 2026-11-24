@@ -16,6 +16,16 @@ class Collector:
 
 
 class RunnerTest(unittest.TestCase):
+    def test_stage_trial_never_falls_back_to_existing_channel(self):
+        with tempfile.TemporaryDirectory() as folder, patch.dict('os.environ',
+                {'SLACK_LOGGING_AUDIT_WEBHOOK': 'OLD-CHANNEL'}, clear=True), patch('run.send_once') as sender:
+            reports = audit(date(2026, 11, 16), folder, folder + '/state', send=True,
+                            collector=Collector(), sender=sender,
+                            query=lambda *a, **kw: dict(rows=[], complete=True, missing_daily_tables=[]),
+                            investigator=lambda *a: dict(status='skipped'))
+            sender.assert_not_called()
+            self.assertTrue(all(r['delivery_status'] == 'secret_missing' for r in reports.values()))
+
     def test_completed_calendar_week(self):
         self.assertEqual(week_start(today=date(2026, 11, 24)), date(2026, 11, 16))
         self.assertEqual(week_start(today=date(2026, 11, 30)), date(2026, 11, 23))
@@ -31,7 +41,7 @@ class RunnerTest(unittest.TestCase):
         def sender(webhook, message, receipt):
             messages.append(message)
             return {'status': 'sent'}
-        with tempfile.TemporaryDirectory() as folder, patch.dict('os.environ', {'SLACK_LOGGING_AUDIT_WEBHOOK': 'dummy'}):
+        with tempfile.TemporaryDirectory() as folder, patch.dict('os.environ', {'SLACK_LOGGING_AUDIT_STAGE_WEBHOOK': 'dummy'}):
             reports = audit(date(2026, 11, 16), folder + '/reports', folder + '/state', True,
                             Collector(), query, sender)
             self.assertFalse(reports['stage']['complete'])
