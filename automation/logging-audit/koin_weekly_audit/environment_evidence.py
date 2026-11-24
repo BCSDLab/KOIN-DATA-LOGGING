@@ -4,6 +4,26 @@ from collections import defaultdict
 from .value_evidence import display_value, expected_value
 
 
+def value_collections(catalog, rows):
+    groups = defaultdict(lambda: dict(values=defaultdict(int), versions=set(), events=0))
+    for row in rows:
+        label, platform = row.get('event_label') or '(missing)', row['platform']
+        group = groups[(platform,label)]
+        group['values'][display_value(row.get('value'),row.get('value_parameter_present'))] += int(row['event_count'])
+        group['events'] += int(row['event_count'])
+        group['versions'].add(row.get('app_version') or ('WEB' if platform == 'WEB' else 'unknown'))
+    result = []
+    for (platform,label), group in sorted(groups.items()):
+        contracts = catalog['by_label'].get(label, [])
+        expected = expected_value(contracts) if contracts else ['현행 명세 없음']
+        if contracts and all(not c.get('value_required') for c in contracts):
+            expected = ['value 미지정 · 명세: ' + str(c.get('raw_fields', {}).get('value') or '미기재') for c in contracts]
+        result.append(dict(platform=platform,label=label,expected=expected,
+            rules=sorted({c.get('value_rule','unspecified') for c in contracts}),
+            actual=dict(group['values']),events=group['events'],versions=sorted(group['versions'])))
+    return result
+
+
 def observations(catalog, rows):
     groups = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
     for row in rows:

@@ -12,7 +12,7 @@ from test_runner import Collector
 
 def row(platform, version, count=1, day='20261118'):
     return dict(platform=platform, app_version=version, event_count=count, event_date=day,
-                event_name='DA1', event_label='unregistered_' + str(version), value='PRIVATE',
+                event_name='DA1', event_label='unregistered_' + str(version), value='private@example.com',
                 screen_view='screen', event_category='click')
 
 
@@ -24,7 +24,7 @@ class VersionScopeTest(unittest.TestCase):
         self.assertEqual([(r['platform'],r['app_version']) for r in selected], [('IOS','5.2.6'),('ANDROID','5.2.4'),('WEB',None)])
         self.assertEqual(scope['excluded_events'],9)
         self.assertEqual({r['classification'] for r in scope['reference']},{'older','newer_or_other'})
-        self.assertNotIn('PRIVATE',json.dumps(scope))
+        self.assertNotIn('private@example.com',json.dumps(scope))
 
     def test_unknown_and_semantic_versions_are_reference_only(self):
         selected, scope = select_scope([row('IOS','5.2.9'),row('IOS',None),row('IOS','SECRET')], {'IOS':'5.2.10','ANDROID':'5.2.4'})
@@ -62,7 +62,7 @@ class VersionScopeTest(unittest.TestCase):
         self.assertIn('iOS 5.2.6:',text)
         self.assertNotIn('5.3.0',text)
         self.assertIn('5.3.0',detail_markdown(reports))
-        self.assertNotIn('PRIVATE',detail_markdown(reports))
+        self.assertNotIn('private@example.com',detail_markdown(reports))
 
     def test_no_target_events_is_not_healthy(self):
         with tempfile.TemporaryDirectory() as folder:
