@@ -10,6 +10,7 @@ from koin_weekly_audit.bigquery_source import fetch
 from koin_weekly_audit.contracts import build_catalog, compare
 from koin_weekly_audit.notion_source import NotionSource, IncompleteSource
 from koin_weekly_audit.notify import send_once, slack_text
+from koin_weekly_audit.agent import investigate
 
 ROOT = 'f820221954bc82cfbe7e813b975c5be1'
 SOURCES = {'stage': ('koin-stage-438512', 'analytics_427218788'),
@@ -31,7 +32,7 @@ def week_start(value=None, today=None):
     return today - timedelta(days=today.weekday() + 7)
 
 
-def audit(start, output, state, send=False, collector=None, query=fetch, sender=send_once):
+def audit(start, output, state, send=False, collector=None, query=fetch, sender=send_once, investigator=investigate):
     end = start + timedelta(days=6)
     output, state = Path(output) / start.isoformat(), Path(state) / start.isoformat()
     output.mkdir(parents=True, exist_ok=True)
@@ -55,6 +56,7 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
         source_error = type(exc).__name__
     reports = {}
     for environment, (project, dataset) in SOURCES.items():
+        primary = []
         report = dict(complete=False, failure_type=source_error or 'UnknownFailure')
         if source_error is None:
             try:
@@ -73,6 +75,15 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
             except Exception as exc:
                 report = dict(complete=False, failure_type=type(exc).__name__, snapshot_sha256=catalog['snapshot_sha256'])
         report.update(environment=environment, start=start.isoformat(), end=end.isoformat())
+        try:
+            if investigator is investigate:
+                checkpoint = lambda result: (output / f'{environment}-agent.json').write_text(
+                    json.dumps(result, ensure_ascii=False, indent=2), encoding='utf8')
+                report['agent'] = investigator(catalog, report, primary, checkpoint=checkpoint)
+            else:
+                report['agent'] = investigator(catalog, report, primary)
+        except Exception as exc:
+            report['agent'] = dict(status='failed', failure_type=type(exc).__name__)
         server, repo, run_id = (os.getenv(k) for k in ('GITHUB_SERVER_URL', 'GITHUB_REPOSITORY', 'GITHUB_RUN_ID'))
         if server and repo and run_id:
             report['detail_url'] = f'{server}/{repo}/actions/runs/{run_id}'
@@ -110,13 +121,15 @@ def main(argv=None):
         print(start.isoformat())
         return 0
     reports = audit(start, args.output, args.state, send=args.send)
-    summary = {k: {field: r.get(field) for field in ('complete', 'events', 'observed_labels', 'failure_type', 'delivery_status')} for k, r in reports.items()}
+    summary = {k: {**{field: r.get(field) for field in ('complete', 'events', 'observed_labels', 'failure_type', 'delivery_status')},
+                   'agent_status': r.get('agent', {}).get('status')} for k, r in reports.items()}
     print(json.dumps(summary, ensure_ascii=False))
     if os.getenv('GITHUB_STEP_SUMMARY'):
         Path(os.environ['GITHUB_STEP_SUMMARY']).write_text(
             '# 주간 로깅 검수\n\n```json\n' + json.dumps(summary, ensure_ascii=False, indent=2) + '\n```\n\n'
             + '상세 결과는 이 실행의 logging-audit-results artifact에 있습니다. 불일치는 배포 버전 확인이 필요한 후보입니다.\n', encoding='utf8')
-    return 0 if all(r.get('complete') and (not args.send or r.get('delivery_status') == 'sent') for r in reports.values()) else 1
+    return 0 if all(r.get('complete') and r.get('agent', {}).get('status') == 'completed' and
+                   (not args.send or r.get('delivery_status') == 'sent') for r in reports.values()) else 1
 
 
 if __name__ == '__main__':

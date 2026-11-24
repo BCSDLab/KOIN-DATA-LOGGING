@@ -58,6 +58,21 @@ def slack_text(environment, start, end, report):
                     lines.append('  ' + item['specification_urls'][0])
             if len(items) > 2:
                 lines.append(f'  나머지 {len(items) - 2}개 점검 항목은 전체 결과 참조')
+    agent = report.get('agent', {})
+    lines.append('\n*AI 에이전트 추가 조사*')
+    if agent.get('status') == 'completed':
+        lines.append('중요 항목 표본 조사 완료 · 원인은 가설이며 규칙 집계와 별도입니다.')
+        for note in agent['analysis']['investigations']:
+            refs = ', '.join(note['evidence_ids'])
+            lines.append('• 관측: ' + html.escape(note['observation']) + f' [{refs}]')
+            lines.append('  가설: ' + html.escape(note['hypothesis']))
+            lines.append('  다음 확인: ' + html.escape(note['next_action']))
+        for limitation in agent['analysis']['limitations']:
+            lines.append('  한계: ' + html.escape(limitation))
+    else:
+        lines.append('추가 조사 미확인: ' + html.escape(agent.get('failure_type', 'NotRun')) + ' · 위 규칙 검사 결과는 유지합니다.')
+    if agent.get('cleanup_status') == 'pending_manual_cleanup':
+        lines.append('AI 세션 정리 실패: artifact의 세션 ID로 정리가 필요합니다.')
     lines += ['\n최근 날짜는 지연 수집으로 잠정 집계하며 다음 주에 재검사합니다.',
               '현행·과거에 같은 label이 있으면 현행 계약으로 검사합니다. 기존 event_name은 별도로 감지합니다.',
               '미관측은 구현 누락을 의미하지 않습니다. 동적 value는 존재 여부만 검사합니다.',
