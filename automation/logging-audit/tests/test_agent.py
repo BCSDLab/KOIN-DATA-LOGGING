@@ -176,7 +176,7 @@ class AgentTest(unittest.TestCase):
 
     def test_runner_agent_failure_isolated_and_reported(self):
         def query(*args, **kw):
-            return dict(rows=fixture()[2], complete=True, missing_daily_tables=[])
+            return dict(rows=[dict(r, platform='ANDROID', app_version='5.2.4') for r in fixture()[2]], complete=True, missing_daily_tables=[])
         calls = []
         def investigator(catalog, report, rows):
             calls.append((report['environment'], len(rows)))
