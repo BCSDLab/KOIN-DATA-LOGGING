@@ -2,11 +2,17 @@ name: 로깅 검수 코드 검사
 on:
   pull_request:
     paths:
+      - event-log/**
+      - _archive/updates/2026-11-27/notion-sync/**
+      - docs/current/additional-notion-pages.json
       - automation/logging-audit/**
       - .github/workflows/*logging-audit*.yml
   push:
     branches: [main]
     paths:
+      - event-log/**
+      - _archive/updates/2026-11-27/notion-sync/**
+      - docs/current/additional-notion-pages.json
       - automation/logging-audit/**
       - .github/workflows/*logging-audit*.yml
 permissions:
@@ -20,4 +26,6 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m unittest discover -s tests -v
+        working-directory: automation/logging-audit
+      - run: python current_spec_check.py
         working-directory: automation/logging-audit

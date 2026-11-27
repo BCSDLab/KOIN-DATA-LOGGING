@@ -95,6 +95,7 @@ jobs:
         run: |
           python -m unittest discover -s tests
           python offline_check.py
+          python current_spec_check.py
       - name: 전송 상태 보존
         if: ${{ always() && !inputs.offline_check && steps.week.outcome == 'success' && steps.receipt.outputs.cache-hit != 'true' && hashFiles('automation/logging-audit/.audit-state/**') != '' }}
         uses: actions/cache/save@v4
