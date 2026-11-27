@@ -62,6 +62,8 @@
 
 - [모바일 WEB 햄버거 패널 로그 — 레거시](docs/current/mobile-web-hamburger-legacy.md): Notion과 같은 폐기 범위·과거 값 보존. 웹 구형 패널만 대상이며 Android·iOS는 일괄 삭제하지 않습니다.
 
+- [졸업학점 계산기 라우트·로그 종료 결정](docs/current/graduation-retirement.md): WEB `/graduation`과 전용 로그를 제거하는 리뷰용 변경입니다. 과거 명세·사진·데이터와 일반 시간표는 보존합니다.
+
 ## 주간 로깅 검수
 
 [GitHub 명세·BigQuery 규칙 검수 및 Slack 연결 설정](automation/logging-audit/README.md) — 매주 월요일 오전 9시(KST), Stage·Production의 IOS·ANDROID·WEB별 미등록·과거 로깅 지속 수집·현행 명세 불일치를 알립니다. DA1·DA2와 Android 디버그를 검사하며 CAMPUS·BUSINESS·USER 수집도 감지합니다. 중요한 항목은 날짜·버전별 집계와 명세 출처·고정된 확인 항목을 붙입니다. 외부 AI API는 사용하지 않습니다. Notion 직접 자동 대조는 미실행이며 실제 명세 기준과 검수 범위는 연결 문서에 명시합니다.

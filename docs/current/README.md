@@ -11,6 +11,7 @@
 | [팀원모집 로깅 검수 (09.12)](team-recruitment-review-20260912.md) | 현재 연결된 과거 검수 참고문서. 오늘의 수집 결과가 아님 |
 | [참고 자료·문서 정리 기록](reference-status.md) | 유효한 관련 자료·조회 불가 링크 제거·빈 페이지 처리 |
 | [16페이지·18계약 value 확정 기록](../../_archive/updates/2026-11-27/notion-sync/value-definitions.md) | 확정 문자열과 개발·실수집 확인 범위 |
+| [졸업학점 계산기 라우트·로깅 종료 결정](graduation-retirement.md) | Notion 원문 동기화. WEB 라우트·전용 로그 제거, 과거 16개 명세·사진 보존 |
 | [모바일 WEB 햄버거 패널 로깅 — 레거시](mobile-web-hamburger-legacy.md) | Notion 원문 동기화. 구형 WEB 패널의 로그 제거, 앱은 별도 검토 |
 | [코인 사장님 헤더·푸터 진입 로그 — 레거시](owner-web-entry-legacy.md) | 해당 메뉴의 과거 전송값 보존. 사장님 서비스 내부 명세 전체를 종료하지 않음 |
 
