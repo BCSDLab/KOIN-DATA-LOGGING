@@ -63,3 +63,5 @@ Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 
 | [[레거시] <p>
 7.6동아리_모집수정취소 클릭
 </p>](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.6%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%88%98%EC%A0%95%EC%B7%A8%EC%86%8C-%ED%81%B4%EB%A6%AD.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/71f0221954bc8220b9a101b5d8dd5600) |
+| [[레거시] 새 페이지 · 53e02219](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-%EC%83%88-%ED%8E%98%EC%9D%B4%EC%A7%80-53e02219.md) |  | [원문](https://app.notion.com/p/53e0221954bc83f2aebe01244944f9f4) |
+| [[레거시] 새 페이지 · 27702219](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-%EC%83%88-%ED%8E%98%EC%9D%B4%EC%A7%80-27702219.md) |  | [원문](https://app.notion.com/p/2770221954bc83ac9cf3017b53f9d266) |
