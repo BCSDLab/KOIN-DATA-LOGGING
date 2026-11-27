@@ -1,16 +1,7 @@
 {
-  "base_sha": "83dceb33db1f2b48e2a392f92adad792827e5933",
-  "checked_date": "2026-11-27",
+  "base_sha": "597224574fa02f7126d5aadde2a3591141edcd04",
+  "checked_date": "2026-11-28",
   "pages": [
-    {
-      "path": "docs/current/logging-guide.md",
-      "notion_id": "3c30221954bc8214b1c481c5bbb6fba5",
-      "title": "로깅 통합 가이드",
-      "source_url": "https://app.notion.com/p/3c30221954bc8214b1c481c5bbb6fba5",
-      "source_last_edited_at": "2026-11-27T02:35:11.406Z",
-      "source_body_sha256": "77bd9cc95acab7561901703ed11c86937416df80bd9db545f470c3d651849a19",
-      "output_sha256": "5e9a6f50667b95527298a8c5793ab1299413e24500d8d494c0614c815f7d5c45"
-    },
     {
       "path": "docs/current/board-overview.md",
       "notion_id": "69c0221954bc8267b14801439f33c216",
@@ -28,6 +19,42 @@
       "source_last_edited_at": "2026-10-21T12:29:26.417Z",
       "source_body_sha256": "324bd91d9547b56b3863f6b7322f3db12bd347d91bbbacfe97403bd106fe8674",
       "output_sha256": "81deb558a52b8d51751c973c6f4cb5c280c2e9f10ec2303c5aebe02f862e553e"
+    },
+    {
+      "path": "docs/current/logging-guide.md",
+      "notion_id": "3c30221954bc8214b1c481c5bbb6fba5",
+      "title": "로깅 통합 가이드",
+      "source_url": "https://app.notion.com/p/3c30221954bc8214b1c481c5bbb6fba5",
+      "source_last_edited_at": "2026-11-27T16:10:43.638Z",
+      "source_body_sha256": "cea107d270a44346148de6b5eba2e9fb5677571991968a59fb8b320c118946d8",
+      "output_sha256": "e9f130106f6b4b090689a54ef5b56136360a8c98a8e50b09efcf63f195ca5263"
+    },
+    {
+      "path": "docs/current/naming-rule.md",
+      "notion_id": "4000221954bc81469ea6dbe19c7d8be7",
+      "title": "🧭 로깅 네이밍룰 v1.0 — DA1·DA2 공통 확정본",
+      "source_url": "https://app.notion.com/p/4000221954bc81469ea6dbe19c7d8be7",
+      "source_last_edited_at": "2026-11-27T16:10:42.707Z",
+      "source_body_sha256": "bd6b52f85e7189d142f9b4a221974df34be5ef63d19c4879851a5cf4e35a8f06",
+      "output_sha256": "169ee62c2b93497d13a1c24666a2ca89fb6840a711eb8301d7e6505c8aef9f33"
+    },
+    {
+      "path": "docs/current/owner-web-entry-legacy.md",
+      "notion_id": "4250221954bc81959952e6ee9ed9a1e0",
+      "title": "코인 사장님 헤더·푸터 진입 로그 — 레거시",
+      "source_url": "https://app.notion.com/p/4250221954bc81959952e6ee9ed9a1e0",
+      "source_last_edited_at": "2026-11-27T16:11:02.814Z",
+      "source_body_sha256": "bdf31a3d245cc95808778267ae72b8f2ebbdc2475ee0f01388d94cef05616f20",
+      "output_sha256": "b0c71b78d179e752202f6f12f301d517d0d57450f03e89b1d5517b8a03c47b4b"
+    },
+    {
+      "path": "docs/current/main-to-bus-retirement.md",
+      "notion_id": "4250221954bc817f85c0dbed4e2f5d55",
+      "title": "PC 교통 제목 main_to_bus — 레거시",
+      "source_url": "https://app.notion.com/p/4250221954bc817f85c0dbed4e2f5d55",
+      "source_last_edited_at": "2026-11-27T16:31:57.590Z",
+      "source_body_sha256": "1086967a759b8e009b2ec6c72bd5871f68772e550d5f87a6a38ac4a23f03a1b1",
+      "output_sha256": "d1b2a571c1df2527568bb367bde8652a926a9bcb6341d4dae4f5095c02e7811e"
     }
   ],
   "image": {
@@ -46,7 +73,7 @@
     "assets/",
     "event-log individual specifications"
   ],
-  "notion_logging_fields_changed": false,
+  "notion_logging_fields_changed": true,
   "runtime_changed": false,
   "removed_reference_links": {
     "count": 4,

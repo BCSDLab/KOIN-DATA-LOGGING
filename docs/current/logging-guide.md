@@ -2,12 +2,15 @@
 
 [← 현행 문서와 참고 자료](README.md)
 
-> Notion 현행 본문입니다. 본문 안의 날짜별 결정과 과거 이력을 함께 보존했습니다. 2026-11-27의 value 확정은 이전 미기재 유지 규정을 대체합니다. SDK 배포·실제 수집 완료를 의미하지 않습니다.
+[Notion 기준 원문](https://app.notion.com/p/3c30221954bc8214b1c481c5bbb6fba5) · 원문 편집 시각: 2026-11-27T16:10:43.638Z
 
-[Notion 기준 원문](https://app.notion.com/p/3c30221954bc8214b1c481c5bbb6fba5) · 원문 편집 시각: 2026-11-27T02:35:11.406Z  
-조회·동기화 기준일: 2026-11-27. [참고 자료와 문서 정리 기록](reference-status.md).
+조회·동기화 기준일: 2026-11-28. 구현·배포·실수집 검증과 구분합니다.
 
 <!-- notion-body:start -->
+<b>event\_name 현재 기준 · </b><b>2026-11-28</b>
+
+작업 담당자는 서비스별로 고정되지 않는다. 전송·검수 기준은 각 개별 명세에 적힌 event\_name이며 service나 담당자만으로 DA1/DA2를 추정하지 않는다. 다국어 명세의 DA1은 그대로 유지한다. 과거 배정 기록을 이유로 기존 DA2·CAMPUS 등 개별 값이나 수집 데이터를 일괄 변경하지 않는다.
+
 남은 프론트 요청 적용 기준 · 2026-11-08
 
 사용자 요청으로 PC 식단 클릭 영역·동결 대상의 전송 범위·공지 스크롤·변경 없는 학기 편집 조건을 원본에 반영했다. 해당 원본 5개의 WEB (모바일) 속성도 맞춰 이번 플랫폼 반영은 누적 27개 명세이며, 게시판·식단 데이터소스에도 기존 옵션을 보존하고 WEB (모바일)만 추가했다. 기존 event\_label·DA·category·value·screen\_view는 유지한다. 아래 과거의 해당 미확정·권고·조건부 메모는 이번 기준으로 대체하며 SDK 배포·실수집 검수는 별도다.
@@ -32,9 +35,9 @@
 
 상세 현황: <a href="https://app.notion.com/p/4120221954bc81edbdd5ea742eb94a0e">프론트엔드 로깅 질의 회신안 · 모바일 웹 카테고리</a>
 
-<b>카테고리 13개 최종 기준 · 서비스별 event\_name / category\_navigation · </b><b>2026-11-08</b>
+<b>카테고리 13개 최종 기준 · 개별 계약의 event\_name / category\_navigation · </b><b>2026-11-08</b>
 
-사용자 요청으로 홈 <a href="https://app.notion.com/p/d950221954bc83f5b0c401cb41bbc359">3-6 카테고리 내부 클릭 (현재 로깅) 2026.08.30 이후 찍히는 로깅</a>의 13개 메뉴를 <code>service__main_category__category_navigation__진입대상__click</code> 형식으로 통일했다. 카테고리 13개 계약의 event\_name도 라벨 첫 구간의 서비스별 배정값으로 통일한다. 서비스명·value·발생 조건·사진·플랫폼 범위는 유지한다. 발생 화면·플랫폼·카테고리 여부와 관계없이 같은 서비스에는 같은 event\_name을 사용한다. 버스는 <code>timetable_entry</code>와 <code>search_entry</code>로 목적지를 구분하고, 시간표 서비스의 <code>timetable_entry</code>는 service 구간으로 구분한다.
+사용자 요청으로 홈 <a href="https://app.notion.com/p/d950221954bc83f5b0c401cb41bbc359">3-6 카테고리 내부 클릭 (현재 로깅) 2026.08.30 이후 찍히는 로깅</a>의 13개 메뉴를 <code>service__main_category__category_navigation__진입대상__click</code> 형식으로 통일했다. 카테고리 13개 계약의 event\_name은 각 개별 명세에 명시된 값을 따른다. 서비스명·value·발생 조건·사진·플랫폼 범위는 유지한다. 서비스명·발생 화면·플랫폼만으로 DA1/DA2를 추정하거나 일괄 변경하지 않는다. 버스는 <code>timetable_entry</code>와 <code>search_entry</code>로 목적지를 구분하고, 시간표 서비스의 <code>timetable_entry</code>는 service 구간으로 구분한다.
 
 아래 이전 4개 계약의 feature·detail 설명과 옛 라벨은 이 후속 결정을 따른다. 신규 공용 feature는 category\_navigation이며 cafeteria\_entry·shop\_entry·owner\_entry 등은 해당 메뉴의 detail이다. 기존 4개 라벨 유지 + 나머지 9개 라벨 표기 변경이다. 문서 네이밍 결정일 뿐 팀원 모집 SDK 동결 해제·기존 9개 계약 WEB 지원 확대·SDK 배포·실수집 검수 완료를 뜻하지 않는다. 신·구 이중 전송과 과거 로그 소급 개명은 하지 않는다. Silver·Gold·데이터·설정은 변경하지 않았다.
 
@@ -42,7 +45,7 @@
 
 사용자 요청으로 식단·버스 시간표·교통편 조회하기·코인 for Business의 미확정 네이밍을 아래 계약으로 확정했다. 기준 본문은 <a href="https://app.notion.com/p/d950221954bc83f5b0c401cb41bbc359">3-6 카테고리 내부 클릭 (현재 로깅) 2026.08.30 이후 찍히는 로깅</a>의 새 로깅이며 각 항목은 설명·screen\_view·event\_name·event\_label·value·event\_category와 사진만 표시한다.
 
-공통: screen\_view=<code>main_category</code>, feature=<code>category_navigation</code>, event\_category=<code>click</code>. event\_name은 서비스별 배정표를 따르며 카테고리만의 일괄 DA2 예외는 두지 않는다. 이 네 계약의 WEB 모바일 적용 범위는 유지한다.
+공통: screen\_view=<code>main_category</code>, feature=<code>category_navigation</code>, event\_category=<code>click</code>. event\_name은 각 개별 명세의 명시값을 따른다. 카테고리라는 이유로 DA1/DA2를 일괄 지정하지 않는다. 이 네 계약의 WEB 모바일 적용 범위는 유지한다.
 
 - 식단: <code>cafeteria__main_category__category_navigation__cafeteria_entry__click</code> / value=식단. <a href="https://app.notion.com/p/4120221954bc817faa33c64ee9f9ad13">Notion 원문</a>
 - 버스 시간표: <code>bus__main_category__category_navigation__timetable_entry__click</code> / value=버스 시간표. <a href="https://app.notion.com/p/4120221954bc81c08b5ed63eff880be6">Notion 원문</a>
@@ -132,22 +135,22 @@ screen\_view는 event\_label을 <code>__</code>로 나눈 두 번째 구간과 �
 
 <b>화면 확인 → 명세 작성 → 사진 정리 → 문서 검수 → 개발·수집 검수</b>
 
-2026-10-27 현행: DA1 7개 서비스의 공용 기능명·화면명을 정렬하고 기능 사전 등록을 완료했다. 아래의 네 구간 고정·단일 담당자 예시는 최신 문법과 담당자 규칙으로 갱신했다. SDK·dbt 반영과 실제 수집 검수는 개발 후속이다.
+2026-10-27 작업 이력: DA1 7개 서비스의 공용 기능명·화면명을 정렬하고 기능 사전 등록을 완료했다. 아래의 네 구간 고정·단일 담당자 예시는 당시의 공통 문법과 작성 기준으로 갱신했다. 현재 담당자·event\_name 판단은 2026-11-28 정정 기준을 따른다. SDK·dbt 반영과 실제 수집 검수는 개발 후속이다.
 
 <details>
 <summary>적용 범위·플랫폼 예외</summary>
 
-- 담당자별 event\_name 유지: DA1은 주변상점·식단·버스·복덕방·사장님·팀원 모집·시간표, DA2는 계정·로그인·게시판·배너·분실물·콜밴팟·쪽지·채팅·모의수강신청·학교 부서·교내 시설물·홈화면 리디자인의 새 명세다. 홈화면은 사용자 승인(2026-11-01)으로 추가했으며 기존 CAMPUS 원문은 보존한다. 기능 사전과 label 문법은 공통으로 사용한다. 홈 3-6의 카테고리 13개 계약에도 같은 서비스별 event\_name 배정표를 적용하며 feature=category\_navigation은 유지한다.
+- event\_name과 작업 담당자를 구분한다. 담당 서비스는 고정 배정이 아니며, 전송값은 각 개별 명세의 명시값을 따른다. 서비스명·작업 담당자·홈 이관 경로만으로 DA1/DA2를 바꾸지 않는다. 기존 CAMPUS 등 과거 원문을 보존하고 기능 사전과 label 문법은 공통으로 사용한다. 홈 3-6 카테고리 13개 계약도 개별 event\_name을 유지하며 feature=category\_navigation은 유지한다.
 - mobile은 ANDROID·IOS 공통 디자인이며 DB 속성에 두 값을 지정한다. 실제 검수 출처는 Android다. WEB은 리디자인 전 데스크톱 화면을 기준으로 한다.
 - 카테고리·콜밴팟에는 WEB을 적용하지 않는다. ‘햄버거’는 현행 명세에서 ‘카테고리’로 쓴다. 모의수강신청은 WEB만 적용하며 시간표 진입 클릭은 <code>timetable</code>, 서비스 내부는 <code>course_practice</code>다.
 - 졸학계는 레거시로 제외하고 과거 명세·사진을 보존한다. 대상 외 서비스에 DA2 규칙을 확대 적용하지 않는다.
-- 서비스 배정표 (이 표를 단일 출처로 참조):
-  | 기존 event\_name | 서비스 | 수 | 담당 확인 상태 |
+- 과거 서비스 배정 기록 (당시 작성·분업 참고 자료이며 현재 event\_name 판정 기준이 아님):
+  | 당시 event\_name | 당시 서비스 구분 | 수 | 당시 기록·현재 해석 |
   | --- | --- | --- | --- |
-  | <code>DA1</code> | 주변상점, 식단, 버스, 복덕방, 사장님, 팀원 모집, 시간표 | 7 | 주변상점·식단·버스는 담당 미확인. 나머지는 기존 배정 원문 유지. |
-  | <code>DA2</code> | 계정·로그인, 게시판, 배너, 분실물, 콜밴팟, 쪽지·채팅, 모의수강신청, 학교 부서 정보, 교내 시설물, 홈화면 리디자인 | 10 | 홈 service=main의 새 명세는 이관 경로와 관계없이 DA2다. 이관 전 DA1 값은 과거 로깅에 보존한다. 기존 CAMPUS 원문 보존. 실명 담당 승인과 구분한다. |
-  | 미지정 | 새 주변상점, 미래의 주변상점, 동아리, 졸업학점 계산기 | 4 | 담당 미확인. 임의 배정하지 않는다. |
-- 위 표의 DA1/DA2는 기존 event\_name 보존 기준이며 실명 담당 확정 표시가 아니다. 품절 동결 5페이지·팀원 모집·새 주변상점·미래의 주변상점은 이번 수정에서 제외한다.
+  | <code>DA1</code> | 주변상점, 식단, 버스, 복덕방, 사장님, 팀원 모집, 시간표 | 7 | 작성 당시 주변상점·식단·버스는 담당 미확인이었으며 나머지는 당시 배정 원문이다. 현재의 고정 담당자나 서비스별 전송값을 뜻하지 않는다. |
+  | <code>DA2</code> | 계정·로그인, 게시판, 배너, 분실물, 콜밴팟, 쪽지·채팅, 모의수강신청, 학교 부서 정보, 교내 시설물, 홈화면 리디자인 | 10 | 작성 당시 DA2 작성·이관 기록이다. 이전 DA1·CAMPUS 원문은 보존하며 현재 계약의 값은 개별 명세에서 확인한다. main이라는 이유로 DA2를 강제하지 않는다. |
+  | 미지정 | 새 주변상점, 미래의 주변상점, 동아리, 졸업학점 계산기 | 4 | 당시 담당 미확인 기록이다. 이 표로 현행 event\_name을 새로 배정하지 않는다. |
+- 위 표는 과거 작성·분업 이력이다. 실제 event\_name의 기준은 개별 계약이며 담당자 변경만으로 전송값을 바꾸지 않는다. 품절 동결 5페이지·팀원 모집·새 주변상점·미래의 주변상점의 개별 필드는 이번 설명 정리로 변경하지 않는다.
 
 </details>
 
@@ -166,7 +169,7 @@ screen\_view는 event\_label을 <code>__</code>로 나눈 두 번째 구간과 �
 
 | 필드 | 작성 기준 |
 | --- | --- |
-| <code>event_name</code> | 라벨 첫 구간 service별로 DA1 또는 DA2 하나를 사용한다. DA1: shop·cafeteria·bus·ticket·real\_estate·owner·team\_recruit·timetable. DA2: account·board·banner·callvan·chat·course\_practice·department·facility·main. |
+| <code>event_name</code> | 개별 명세에 명시된 DA1 또는 DA2 값을 사용한다. 라벨의 service나 현재 작업 담당자만으로 추정하지 않으며 동일 서비스의 모든 계약을 한 값으로 강제하지 않는다. |
 | <code>event_label</code> | 예: <code>board__lost_item_list__filter__apply__click</code>. 일반 페이지 구간은 <code>screen_view</code>와 동일. 헤더·푸터도 label page와 screen\_view를 각각 <code>header</code> / <code>footer</code> 고정값으로 일치시킨다. |
 | <code>event_category</code> | 기존 승인값 유지. 이름을 바꾼다는 이유로 행동 종류·전송 시점을 바꾸지 않는다. |
 | <code>value</code>·추가 파라미터 | 고정값·동적 매핑·타입·기본값·예시를 명시한다. 콜밴팟 메시지 본문은 수집하지 않고 전송 행동만 기록한다. |
@@ -179,7 +182,7 @@ screen\_view는 event\_label을 <code>__</code>로 나눈 두 번째 구간과 �
 ```txt
 설명 / 정확한 발생 시점:
 screen_view:
-event_name: DA1 또는 DA2 (서비스 담당자 기준)
+event_name: DA1 또는 DA2 (개별 명세의 명시값 기준)
 event_label: service__page__feature[__detail]__category
 event_category:
 value / 추가 파라미터(해당 시):

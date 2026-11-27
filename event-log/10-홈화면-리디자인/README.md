@@ -39,3 +39,6 @@ PC 홈 시간표는 1-14 제목 클릭(value=`시간표`)과 1-15 위젯 본문 
 | [4-2 로그인 클릭](4-2-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/eeb0221954bc8211937181c4678c723b) |
 | [4-3 로그아웃 클릭](4-3-%EB%A1%9C%EA%B7%B8%EC%95%84%EC%9B%83-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/8380221954bc839b835b819e6eecff8d) |
 | [4-4 설정 클릭](4-4-%EC%84%A4%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/a750221954bc82f38a888192a2b3b33e) |
+| [1-11 PC 홈 고정 배너 이미지 클릭](1-11-PC-%ED%99%88-%EA%B3%A0%EC%A0%95-%EB%B0%B0%EB%84%88-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%81%B4%EB%A6%AD.md) | WEB | [원문](https://app.notion.com/p/4250221954bc81519f9ce0161b7528ea) |
+
+[PC 교통 제목 main_to_bus 신규 전송 중단 — 카드 명세와 별개](../../docs/current/main-to-bus-retirement.md)

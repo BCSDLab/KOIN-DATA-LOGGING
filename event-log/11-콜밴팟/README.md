@@ -15,7 +15,7 @@ Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 
 | [2-1 콜밴팟 검색바 클릭](2-1-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%EA%B2%80%EC%83%89%EB%B0%94-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/7770221954bc826a864201306b07869e) |
 | [2-1. 동아리_동아리 클릭](2-1.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%ED%81%B4%EB%A6%AD.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/9700221954bc8218a50c01dc154164c7) |
 | [2-10 콜밴팟 채팅방 입장 클릭](2-10-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%EC%B1%84%ED%8C%85%EB%B0%A9-%EC%9E%85%EC%9E%A5-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/6d00221954bc83c4a2ca011e1d083230) |
-| [2-11  콜밴팟 찾기 이탈](2-11-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%EC%B0%BE%EA%B8%B0-%EC%9D%B4%ED%83%88.md) | ANDROID, IOS | [원문](https://app.notion.com/p/0d50221954bc8277b81781104e8776f9) |
+| [2-11  콜밴팟 찾기 이탈](2-11-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%EC%B0%BE%EA%B8%B0-%EC%9D%B4%ED%83%88.md) | ANDROID, IOS, WEB (모바일) | [원문](https://app.notion.com/p/0d50221954bc8277b81781104e8776f9) |
 | [2-2  콜밴팟 필터 클릭](2-2-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%ED%95%84%ED%84%B0-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/eba0221954bc827d869b81c4360fb4de) |
 | [2-2.동아리_동아리 생성하기 클릭](2-2.%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0-%ED%81%B4%EB%A6%AD.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/79b0221954bc831292bf81ee7a39c7b2) |
 | [2-3  콜밴팟 필터 적용하기](2-3-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%ED%95%84%ED%84%B0-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/f7b0221954bc830a877501bf42a919c0) |
