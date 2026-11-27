@@ -258,5 +258,13 @@
     "android_value_keys_present": 0,
     "sdk_deployed": false,
     "operating_data_modified": false
+  },
+  "source_snapshot": {
+    "path": "_archive/updates/2026-11-27/notion-sync/source-pages.json.gz",
+    "sha256": "1d3ef596c56e0e77743d6889ac181555f25ac87481cb25436d7f816bf6a79ee4",
+    "records": 807,
+    "raw_bytes": 1475526,
+    "compressed_bytes": 222298,
+    "retrieved_as": "current Notion page fetch; stable file references only"
   }
 }
