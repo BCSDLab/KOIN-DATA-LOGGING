@@ -2,12 +2,21 @@
 
 [← 주변상점 목록](README.md)
 
-플랫폼: IOS, ANDROID  
+플랫폼: ANDROID, IOS  
 원문 상태: 로깅 필요  
 [Notion 기준 명세](https://app.notion.com/p/4c30221954bc82b5afb4016b1b3be6a7)  
 원본 ID: `4c30221954bc82b5afb4016b1b3be6a7`
 
 <!-- notion-body:start -->
+### 플랫폼별 계약 범위
+
+2026-11-27 사용자 확정: <b>swipe는 IOS 전용</b>이다. Android·Web의 기존 swipe 수집은 지원 범위 밖 전송으로 검수하며, 과거 기록을 개명하거나 click으로 자동 치환하지 않는다. 아래 표는 이 페이지의 개별 계약 범위이며 페이지 platform 속성은 확정된 범위의 합집합이다. 문서 수정은 SDK 배포·실수집 정상 완료를 뜻하지 않는다.
+
+| event\_label | platform |
+| --- | --- |
+| <code>shop__shop_list__navigation__back__click</code> | ANDROID, IOS |
+| <code>shop__shop_list__navigation__back__swipe</code> | IOS |
+
 ## 과거 로깅
 
 - event\_label: <code>shop_categories_back</code>
@@ -52,8 +61,8 @@ Stage 모바일 웹 · 상점 목록 뒤로가기 버튼
 ```json
 {
   "platform": [
-    "IOS",
-    "ANDROID"
+    "ANDROID",
+    "IOS"
   ],
   "url": "https://app.notion.com/p/4c30221954bc82b5afb4016b1b3be6a7",
   "상태": "로깅 필요",

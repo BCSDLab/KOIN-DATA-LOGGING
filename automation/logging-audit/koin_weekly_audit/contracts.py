@@ -60,11 +60,36 @@ def historical_labels(page):
     return sorted(labels)
 
 
+def platform_scopes(text):
+    """Read only explicit per-label rows under the platform contract heading."""
+    scopes = {}
+    active = False
+    for line in clean(text).splitlines():
+        if line.strip() == '### 플랫폼별 계약 범위':
+            active = True
+            continue
+        if active and line.startswith('#'):
+            active = False
+        if not active:
+            continue
+        match = re.fullmatch(r'\s*\|\s*([a-z][a-z0-9_]*(?:__[a-z0-9_]+)+)\s*\|\s*(IOS|ANDROID|WEB|미확정|[A-Z, ]+)\s*\|\s*', line)
+        if match:
+            label, value = match.groups()
+            values = None if value == '미확정' else sorted(set(v.strip() for v in value.split(',')))
+            if values is not None and (not values or any(v not in PLATFORMS for v in values)):
+                raise ValueError('Invalid explicit platform scope')
+            if label in scopes:
+                raise ValueError('Duplicate explicit platform scope')
+            scopes[label] = values
+    return scopes
+
+
 def parse_page(page):
     """Do not infer deployment, enum values or version cutovers from prose."""
     if legacy_page(page):
         return [], 'legacy_document'
     text = page['text']
+    scopes = platform_scopes(text)
     lines = clean(text).splitlines()
     new = next((i for i, line in enumerate(lines)
                 if re.match(r'^\s*(?:[-*]\s*)?(?:#+\s*)?새\s*로깅', line)), None)
@@ -132,6 +157,12 @@ def parse_page(page):
                                    for p in page.get('platforms', [])))
             if action == 'swipe' and re.search(r'iOS만|IOS만|iOS\s*전용', fields.get('event_label', '') + fields.get('event_category', '')):
                 platforms = ['IOS']
+            scope_pending = label in scopes and scopes[label] is None
+            if label in scopes:
+                platforms = scopes[label] or []
+            swipe_policy_conflict = (action == 'swipe' or cats == ['swipe']) and platforms != ['IOS']
+            if action == 'swipe' or cats == ['swipe']:
+                platforms = ['IOS']
             raw_value = fields.get('value', '').strip(' ”“\'"')
             # Only unambiguous single literal values are checked as literals.
             fixed = raw_value if raw_value and len(raw_value) < 65 and not re.search(r'[{}<>/~():：]|예시|예:|ex\)|동적|STRING|INT|선택한|해당하는|실제|→', raw_value, re.I) else None
@@ -145,8 +176,8 @@ def parse_page(page):
                 status = 'unresolved'
             label_screen = label.split('__')[1] if '__' in label else None
             selected_screens = [label_screen] if label_screen in screens else sorted(set(screens))
-            if action == 'swipe' and '모바일' in fields.get('event_label', '') and platforms == ['WEB']:
-                status = 'unresolved'  # Body and platform metadata conflict; don't guess support.
+            if scope_pending or swipe_policy_conflict:
+                status = 'unresolved'  # Source must explicitly agree with iOS-only swipe policy.
             contracts.append(dict(label=label, names=sorted(names), screens=selected_screens,
                                   categories=cats, platforms=platforms, value_required=bool(raw_value) and not unspecified_value,
                                   fixed_value=fixed, allowed_values=allowed, value_rule='enum' if allowed else 'fixed' if fixed else 'presence_only' if raw_value and not unspecified_value else 'unspecified',
