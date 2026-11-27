@@ -1,0 +1,882 @@
+{
+  "service": "버스",
+  "pages": [
+    {
+      "notion_id": "e550221954bc83fca3508135c012c504",
+      "service": "버스",
+      "title": "1-11. 셔틀 탑승권_클릭 (레거시)",
+      "path": "event-log/07-버스/1-11.-셔틀-탑승권_클릭-(레거시).md",
+      "notion_url": "https://app.notion.com/p/e550221954bc83fca3508135c012c504",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:27.721Z",
+      "source_body_sha256": "5e722e0a28e8b34d291078a37bc618592468e923b0e207c407859dbd90df2feb",
+      "output_sha256": "ffd0e4e55915f4454a410a1123e50bc99c9b6c150f3eb3a6404328cdd5d4c167",
+      "image_ids": [
+        "12649cc7-bfc5-4791-be36-da611fb1ad30",
+        "6dc7f557-3692-460a-8a65-055124cbe542"
+      ]
+    },
+    {
+      "notion_id": "9310221954bc8278a36f01f028ea8014",
+      "service": "버스",
+      "title": "1-12. 버스 시간표_클릭 (레거시)",
+      "path": "event-log/07-버스/1-12.-버스-시간표_클릭-(레거시).md",
+      "notion_url": "https://app.notion.com/p/9310221954bc8278a36f01f028ea8014",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:27.966Z",
+      "source_body_sha256": "18874015293bb98be2bd5743560300252ef75f24250271b9bf9f5a13473303b4",
+      "output_sha256": "f779bb155c5fdb1a7d8c610a874e18d3c55956f400d2bceceafc050b39636684",
+      "image_ids": [
+        "0618655c-93a1-4167-9fe3-3d8e85e4d346",
+        "1f75c4ba-114b-4b83-8df5-64109519e99a",
+        "802dc3b6-0df4-4044-917a-e6cfb4bf8887"
+      ]
+    },
+    {
+      "notion_id": "2b30221954bc827b952a81d9c6dc5b1e",
+      "service": "버스",
+      "title": "1-13. 교통편 조회하기_클릭 (레거시)",
+      "path": "event-log/07-버스/1-13.-교통편-조회하기_클릭-(레거시).md",
+      "notion_url": "https://app.notion.com/p/2b30221954bc827b952a81d9c6dc5b1e",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:28.142Z",
+      "source_body_sha256": "83916ba27a55ffe62dc7f7dcfee8002bc2eef6548a3de684c6ceeb58a0c6bae6",
+      "output_sha256": "df6ad1cf704e4bcb52321e9255c297e93b07449aa0e7fdcfd5a19011faf7f9de",
+      "image_ids": [
+        "7e2551e6-af41-460a-a651-af79d5c6abce",
+        "0e87ba01-22ff-4d02-992d-30441241cd31",
+        "386b66ae-21ba-41ea-b3f2-09f283dc3838"
+      ]
+    },
+    {
+      "notion_id": "28a0221954bc839eb21e81298d0de8fa",
+      "service": "버스",
+      "title": "2-1. 헤더_버스 시간표_클릭",
+      "path": "event-log/07-버스/2-1.-헤더_버스-시간표_클릭.md",
+      "notion_url": "https://app.notion.com/p/28a0221954bc839eb21e81298d0de8fa",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:26.735Z",
+      "source_body_sha256": "80564673b0918f6e92a6b5f712923db98afec169279701e53a49627f62268d71",
+      "output_sha256": "464da6cfaf74915800cbaacef10acdd500e4ceb89081f82320358d8686a8462c",
+      "image_ids": [
+        "d56bc7ab-9728-461e-89d3-6a13fa0027c5",
+        "97101f99-9a03-4dda-8db5-395b3a2cd5a7"
+      ]
+    },
+    {
+      "notion_id": "4690221954bc8279b61001155cdbc34e",
+      "service": "버스",
+      "title": "2-2. 푸터_버스 시간표_클릭",
+      "path": "event-log/07-버스/2-2.-푸터_버스-시간표_클릭.md",
+      "notion_url": "https://app.notion.com/p/4690221954bc8279b61001155cdbc34e",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:33.355Z",
+      "source_body_sha256": "73e14439dcf1fc89f1d152f37e37dffb9e00692d9a99cf8fa42a49d9d3c8ff52",
+      "output_sha256": "7e03e61cbfe1f3ab59d278e6dbaefae6c6645678bae9ce7b430a77c37e92b727",
+      "image_ids": [
+        "f0c8b774-f0da-4c4f-802c-0ec770ab5c5e",
+        "f011b51c-125d-4aed-bb68-3b586a6a83cc"
+      ]
+    },
+    {
+      "notion_id": "4c30221954bc823eb7e7011f96a4964b",
+      "service": "버스",
+      "title": "2-3. 헤더_버스 교통편_클릭",
+      "path": "event-log/07-버스/2-3.-헤더_버스-교통편_클릭.md",
+      "notion_url": "https://app.notion.com/p/4c30221954bc823eb7e7011f96a4964b",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:30.510Z",
+      "source_body_sha256": "e3b6b3c5d6d36c00378aed35719b3a229f5aa3e679f3019cbbdaccd4b8952431",
+      "output_sha256": "26c9f76d4d069b5a8dd027de615e5cf06b428ffa4de8324101155e0bfe790389",
+      "image_ids": [
+        "45eaac43-a969-4261-9377-f1dcbd62d7a5",
+        "7fe101e7-e9f2-471d-8ca0-0c23f294e987"
+      ]
+    },
+    {
+      "notion_id": "92e0221954bc833cb7fe0117dbf7ea59",
+      "service": "버스",
+      "title": "2-4. 푸터_버스 교통편_클릭",
+      "path": "event-log/07-버스/2-4.-푸터_버스-교통편_클릭.md",
+      "notion_url": "https://app.notion.com/p/92e0221954bc833cb7fe0117dbf7ea59",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:26.640Z",
+      "source_body_sha256": "f93d214c0cb3df8ac3d092d5e099adc15e54a246eec1baaf4c0f3409fa23ca24",
+      "output_sha256": "0db2d87d58cd8a7e6fb8535b770707aedebd6a395147de4125b2dc6680c06f97",
+      "image_ids": [
+        "f866e38e-2168-47b0-8c79-c1af348e2765",
+        "29612b54-f706-456a-b5d8-93140f8661c1"
+      ]
+    },
+    {
+      "notion_id": "0f80221954bc8391ad5d8142d80ac447",
+      "service": "버스",
+      "title": "2-5. (앱) 햄버거_교통편 조회하기_클릭 → 삭제",
+      "path": "event-log/07-버스/2-5.-(앱)-햄버거_교통편-조회하기_클릭-→-삭제.md",
+      "notion_url": "https://app.notion.com/p/0f80221954bc8391ad5d8142d80ac447",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:30.588Z",
+      "source_body_sha256": "b2e1f358105eaccb3acd7038574c232da2ffdf152b50e0abcfb51fbf52b23a3f",
+      "output_sha256": "3148e9d95fcf8b2f81f1c69f78ceea7b9b49f2cded85e623b8d6cd8c91065703",
+      "image_ids": [
+        "25f266cb-f57a-4caf-847f-2e7f653d39b4"
+      ]
+    },
+    {
+      "notion_id": "8200221954bc83788da80178098d09aa",
+      "service": "버스",
+      "title": "2-6. (앱) 햄버거_버스 시간표_클릭 → 삭제",
+      "path": "event-log/07-버스/2-6.-(앱)-햄버거_버스-시간표_클릭-→-삭제.md",
+      "notion_url": "https://app.notion.com/p/8200221954bc83788da80178098d09aa",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:29.265Z",
+      "source_body_sha256": "0fba0bdd772d1b504ddd60d87972d280f8515484e8243ff8ce358d859c880107",
+      "output_sha256": "62dae357889b1a7e51d68f41f103cca591b754048298b9a01279961aa409a78c",
+      "image_ids": [
+        "b557f164-0904-49d6-98f4-47f54c83c2e6"
+      ]
+    },
+    {
+      "notion_id": "4100221954bc826db6ba81230c082b94",
+      "service": "버스",
+      "title": "3-1. (Android / iOS) 버스_탭 메뉴_클릭",
+      "path": "event-log/07-버스/3-1.-(Android-iOS)-버스_탭-메뉴_클릭.md",
+      "notion_url": "https://app.notion.com/p/4100221954bc826db6ba81230c082b94",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:33.451Z",
+      "source_body_sha256": "36408d4cd59c4674c3c4e9d7d99ef0f3d4f921d5d27bc0fdebb978bfb9cd9c0e",
+      "output_sha256": "e6a050eafa1507d87ea7e96906fd48e36119e65bdbe24b194cd284df4e31ee9b",
+      "image_ids": [
+        "589f5d9f-7a80-4564-a5da-dd7f7c682fad"
+      ]
+    },
+    {
+      "notion_id": "16a0221954bc82999ea90189fa66e1be",
+      "service": "버스",
+      "title": "3-10. 버스_시간표_대성고속_목적지_클릭",
+      "path": "event-log/07-버스/3-10.-버스_시간표_대성고속_목적지_클릭.md",
+      "notion_url": "https://app.notion.com/p/16a0221954bc82999ea90189fa66e1be",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:33.381Z",
+      "source_body_sha256": "4deee6f92f6d656ff1a8dcd4020adedf401f7727c25a644d246faf5ac3bf4c40",
+      "output_sha256": "1322a7846df7dd3a76ab90c3cf73f26411ca0d3c240749b23899d510c6838044",
+      "image_ids": [
+        "a1c54ccd-0863-4210-8273-f0bee77ebc39",
+        "b1138ac8-2d03-438f-b68c-05c9ea7dbd9e"
+      ]
+    },
+    {
+      "notion_id": "9ad0221954bc823cbf5781cc98e20226",
+      "service": "버스",
+      "title": "3-11. 버스_시간표_시내버스_목적지_클릭",
+      "path": "event-log/07-버스/3-11.-버스_시간표_시내버스_목적지_클릭.md",
+      "notion_url": "https://app.notion.com/p/9ad0221954bc823cbf5781cc98e20226",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:33.053Z",
+      "source_body_sha256": "c0bbcc8bd9f9385f521356a92c391b2f0a716bd3eb57008f6fe37dd9f5f68891",
+      "output_sha256": "ff66c20415551142566456a6c76b52a3fd6de999ffe16509de34932d24b2bb84",
+      "image_ids": [
+        "af3e5dfd-4c44-44ff-b7c2-575845cab611"
+      ]
+    },
+    {
+      "notion_id": "cbf0221954bc82668ac38186162a54c3",
+      "service": "버스",
+      "title": "3-12. 버스_시간표_시내버스_버스 번호_클릭",
+      "path": "event-log/07-버스/3-12.-버스_시간표_시내버스_버스-번호_클릭.md",
+      "notion_url": "https://app.notion.com/p/cbf0221954bc82668ac38186162a54c3",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:29.457Z",
+      "source_body_sha256": "7885dda8a1dc2989fb191243984f96a7a0174176e213a71f71bb50fbf00432c4",
+      "output_sha256": "0d49369d3ff5845a9c05fcf0a000a77c6353ed0d7982041190635ba13dd696ba",
+      "image_ids": [
+        "056b6698-096b-407a-b777-b9747cac36ec"
+      ]
+    },
+    {
+      "notion_id": "27d0221954bc8392a64c81fed0bf3722",
+      "service": "버스",
+      "title": "3-2. 버스_운행정보_출발지_클릭",
+      "path": "event-log/07-버스/3-2.-버스_운행정보_출발지_클릭.md",
+      "notion_url": "https://app.notion.com/p/27d0221954bc8392a64c81fed0bf3722",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:28.888Z",
+      "source_body_sha256": "55874c0da51440221503cdc96e642ff0b9d40704c80d1d50bbe6b887ddb96d15",
+      "output_sha256": "3b8fea69846624d4cd8cc91180b593f64509947504ac227ded7113a0760db8aa",
+      "image_ids": []
+    },
+    {
+      "notion_id": "a3a0221954bc83d3a90e01a0cf64c5f1",
+      "service": "버스",
+      "title": "3-3. 버스_운행정보_도착지_클릭",
+      "path": "event-log/07-버스/3-3.-버스_운행정보_도착지_클릭.md",
+      "notion_url": "https://app.notion.com/p/a3a0221954bc83d3a90e01a0cf64c5f1",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:32.579Z",
+      "source_body_sha256": "bc1a4404cbfd1866eb35ee3907154e92f82fc203e2f8b4da19f7f2cda210c157",
+      "output_sha256": "1220ec35f3ad0c1d0143e121d3187dfcabaaeff6a28c04d61367bb51e07ed1d5",
+      "image_ids": []
+    },
+    {
+      "notion_id": "47e0221954bc83e9a4090117ede06706",
+      "service": "버스",
+      "title": "3-4. (Android / iOS) 버스_운행정보검색_출발지_클릭",
+      "path": "event-log/07-버스/3-4.-(Android-iOS)-버스_운행정보검색_출발지_클릭.md",
+      "notion_url": "https://app.notion.com/p/47e0221954bc83e9a4090117ede06706",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:33.187Z",
+      "source_body_sha256": "cfe9682344578543714f0892894860b8aec61fa8cef626fa91fb8b2f6b91a6d1",
+      "output_sha256": "62f2ff9f2a60c6a2f70bd9ddda9d38acae24d0ae2df75aad9814bd45020307fa",
+      "image_ids": [
+        "18cde484-1320-4648-8d85-a0e5bfb902df"
+      ]
+    },
+    {
+      "notion_id": "98d0221954bc835dbe50816d4e9e65a8",
+      "service": "버스",
+      "title": "3-5. (Android / iOS) 버스_운행정보검색_목적지_클릭",
+      "path": "event-log/07-버스/3-5.-(Android-iOS)-버스_운행정보검색_목적지_클릭.md",
+      "notion_url": "https://app.notion.com/p/98d0221954bc835dbe50816d4e9e65a8",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:30.246Z",
+      "source_body_sha256": "ea46cc7d2005e9d0159622be3675e4d6ce7b754745576cb0f227dbbed1b5401d",
+      "output_sha256": "ed5e6a3ee9fce70e50e36c73880b3da8b83d670c7e73a57c3a52eb104c81a536",
+      "image_ids": [
+        "d46ab313-37e9-4811-94a8-a181516b8313"
+      ]
+    },
+    {
+      "notion_id": "6f20221954bc83b7af1181d906c691cb",
+      "service": "버스",
+      "title": "3-6. (Android / iOS) 버스_운행정보검색_조회_클릭",
+      "path": "event-log/07-버스/3-6.-(Android-iOS)-버스_운행정보검색_조회_클릭.md",
+      "notion_url": "https://app.notion.com/p/6f20221954bc83b7af1181d906c691cb",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:29.527Z",
+      "source_body_sha256": "8bc4d6697c8bc70ab2f2d2ff43d8619668c364d110e5c7db13171292de85858b",
+      "output_sha256": "8cc08192311f39299f2b1814e436a7a2bfcb7e465179fa0a8c923977684bf28c",
+      "image_ids": [
+        "b289765f-cc9d-4325-8e76-4e53e7df5701"
+      ]
+    },
+    {
+      "notion_id": "6ce0221954bc8304bf2c0188ce32c3ef",
+      "service": "버스",
+      "title": "3-9. 버스_시간표_학교셔틀_시간&장소_클릭",
+      "path": "event-log/07-버스/3-9.-버스_시간표_학교셔틀_시간&장소_클릭.md",
+      "notion_url": "https://app.notion.com/p/6ce0221954bc8304bf2c0188ce32c3ef",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:32.399Z",
+      "source_body_sha256": "ce091d50b4be8e407760b102f23efb5abbf3421f17ed0f545d9dd5a6a2d18a47",
+      "output_sha256": "730837309e1dd0a6c8d0711230ee5e43a9e85ebee1b5c6560ee3cb3b54d97d59",
+      "image_ids": [
+        "a1c54ccd-0863-4210-8273-f0bee77ebc39"
+      ]
+    },
+    {
+      "notion_id": "acc0221954bc8280a3170104a55bd6c3",
+      "service": "버스",
+      "title": "4-1. 정보가 정확하지 않나요?_클릭 (세부 노선 변경시 업데이트 필요)",
+      "path": "event-log/07-버스/4-1.-정보가-정확하지-않나요-_클릭-(세부-노선-변경시-업데이트-필요).md",
+      "notion_url": "https://app.notion.com/p/acc0221954bc8280a3170104a55bd6c3",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:28.916Z",
+      "source_body_sha256": "333b7f04390bf38f736fa52437a49aa57930e17861c50bad4f802d9c75af711d",
+      "output_sha256": "523ebb59907383348395b7c6eb72116c4a5f2312f8df5af3b773297391ae1595",
+      "image_ids": [
+        "999d9fbf-729a-4c33-8e14-988516c52c10",
+        "73ce26c6-a1a4-4d41-aaac-b28fdcfae2de",
+        "9056b8aa-7441-4379-b07b-38af03a81f88",
+        "f5fe015e-393a-40e2-a6ed-3a40b6227c27",
+        "c1d687b3-ca6c-4899-b0da-b88bdee5a8f9",
+        "4dec3c42-5257-45b0-b7e6-7b3a72ff57f8"
+      ]
+    },
+    {
+      "notion_id": "e220221954bc8269b3320166c0f5606d",
+      "service": "버스",
+      "title": "4-10. 시내버스 노선_클릭",
+      "path": "event-log/07-버스/4-10.-시내버스-노선_클릭.md",
+      "notion_url": "https://app.notion.com/p/e220221954bc8269b3320166c0f5606d",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:29.446Z",
+      "source_body_sha256": "379b329fd3e5f92a6d7ed0481983686a574860e572d8e0876fc2a7f8819261ee",
+      "output_sha256": "f579ca3cf3ea8286f3bfc740ba30581253698a873abd3166cb8fdf7bec2b8714",
+      "image_ids": [
+        "95678f38-8bc5-4bf9-8efb-a78e81087e9a",
+        "bbfb49fb-1882-4340-8612-a00d327549c0",
+        "98b53485-99b4-4ec9-8f84-1b8b6496464d",
+        "107d9a30-28ba-40cf-8b92-2129d70d89b8"
+      ]
+    },
+    {
+      "notion_id": "bf30221954bc839689638190893fd5d2",
+      "service": "버스",
+      "title": "4-11. 시내버스 운행방면_클릭",
+      "path": "event-log/07-버스/4-11.-시내버스-운행방면_클릭.md",
+      "notion_url": "https://app.notion.com/p/bf30221954bc839689638190893fd5d2",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:27.193Z",
+      "source_body_sha256": "2c05fe8e9cb1e399699b4da2ea0acde2da2f5160df8ecaec457ad3a592d2e0e1",
+      "output_sha256": "ed827836f65359b7af0fdcb3607bf285b603d06f4c6deb1b2d8da7f99daa61e9",
+      "image_ids": [
+        "143e532e-15db-454a-a754-9743f6f0fdcc",
+        "8909cdb2-54c5-4f1f-a01f-39a342ae0410",
+        "504f4422-1d60-4f45-bfdc-8732cd5e221c",
+        "95eb64b6-853f-4b6e-aa51-0d3299987348"
+      ]
+    },
+    {
+      "notion_id": "59d0221954bc82fb8d8081c3dc394b37",
+      "service": "버스",
+      "title": "4-2. 버스 공지_클릭",
+      "path": "event-log/07-버스/4-2.-버스-공지_클릭.md",
+      "notion_url": "https://app.notion.com/p/59d0221954bc82fb8d8081c3dc394b37",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:30.254Z",
+      "source_body_sha256": "edd49096ff91a4e502e5d048361e76eff505cab5b212a39ccd01a9f127c41b64",
+      "output_sha256": "bf9f5ea958f86a9a58dbe092c22298b5ccbd571c5f9faebd0dae1f75d8afc506",
+      "image_ids": [
+        "11129f10-e4fa-4ef1-a73d-07a8361cc117",
+        "364b64a2-1fb9-4a5a-9faf-f060c6adee11",
+        "5ee282d7-d469-4bd3-bf6d-da085006a236",
+        "c1d50637-a235-4795-a941-004f7921eec2",
+        "18237f44-7c19-4211-be3b-81dca6c8c864"
+      ]
+    },
+    {
+      "notion_id": "bd50221954bc8228b6e1816fb7782f22",
+      "service": "버스",
+      "title": "4-3. 버스 공지_닫기_클릭",
+      "path": "event-log/07-버스/4-3.-버스-공지_닫기_클릭.md",
+      "notion_url": "https://app.notion.com/p/bd50221954bc8228b6e1816fb7782f22",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:33.866Z",
+      "source_body_sha256": "6a1e940a04432272935e2eb9fa6e457c6b0479c9431244f655c75aad000f1e7b",
+      "output_sha256": "afb9d758ce6952f92fc6019210568dfb41267147061995da8276a2bb12586ac8",
+      "image_ids": [
+        "437fa250-dbd2-41ea-b7b7-0d99d8e58ff4",
+        "10be8ec2-6e2c-470e-a728-717b7d597f72",
+        "95fe6aa6-04be-4b87-998e-6b660c2aadd2",
+        "e0f96dc3-8d28-458d-97de-3ad153f34003",
+        "c9ced0ea-b99d-444c-9a05-d244c9ebe897"
+      ]
+    },
+    {
+      "notion_id": "07b0221954bc82068ad9019b66293079",
+      "service": "버스",
+      "title": "4-4. 버스 종류 탭_클릭",
+      "path": "event-log/07-버스/4-4.-버스-종류-탭_클릭.md",
+      "notion_url": "https://app.notion.com/p/07b0221954bc82068ad9019b66293079",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:30.463Z",
+      "source_body_sha256": "04292d597f258cb9676a6d9425d65d17c4a8ab6f3db33519898be094f2f6434f",
+      "output_sha256": "4b4a3e88d6b3ee22a27a31207456b8d2fd417a607e371de44f0353dc5a5114dd",
+      "image_ids": [
+        "9ad6b724-6857-438b-a480-22244f6e3f51",
+        "49a8a318-453f-4942-b88d-8e75f823acb5",
+        "04b5702c-e18d-48ee-890b-638c416129c2",
+        "12be8486-97e7-4738-9388-c8cb0acc6440"
+      ]
+    },
+    {
+      "notion_id": "cff0221954bc83bcbde881b3c51add19",
+      "service": "버스",
+      "title": "4-5. 셔틀버스 노선_클릭",
+      "path": "event-log/07-버스/4-5.-셔틀버스-노선_클릭.md",
+      "notion_url": "https://app.notion.com/p/cff0221954bc83bcbde881b3c51add19",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:32.118Z",
+      "source_body_sha256": "6aa2455ff4f05788fa44f467bdf5de78cdb06b7af2efc35eef0497604f66ee37",
+      "output_sha256": "428ff56b5ee267c592b659e306de5e57a7a83a66f676defde2f319f2a261f31c",
+      "image_ids": [
+        "b794db5c-632b-459a-8183-c6d1b51cc501",
+        "ce3c0763-27ae-4139-8538-4fe40abb0b2e",
+        "f6d805a5-0a72-41ef-b66e-9829e659d206",
+        "09293973-99de-4d0d-9d9b-02868e96d0b4"
+      ]
+    },
+    {
+      "notion_id": "4660221954bc8236ba5f811e009399ef",
+      "service": "버스",
+      "title": "4-6. 지역별 세부 노선_클릭 (세부 노선 변경시 업데이트 필요)",
+      "path": "event-log/07-버스/4-6.-지역별-세부-노선_클릭-(세부-노선-변경시-업데이트-필요).md",
+      "notion_url": "https://app.notion.com/p/4660221954bc8236ba5f811e009399ef",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:27.306Z",
+      "source_body_sha256": "7060b673c7a235bf214a0eac31a21a45cca897837d9db0af97d626e73608fc4d",
+      "output_sha256": "c062491bed0aa6639611b69f6b3d01dd4da33f97c4913f320bb80911a6a6e4ad",
+      "image_ids": [
+        "3b51582a-3ee3-4da1-b6bc-9feb23214cf8",
+        "e704d3b3-47f6-4ccd-ba34-d3cd20ef8b14",
+        "aa8bcddf-80ea-43f0-895e-20915b4646ff",
+        "84dab763-9fcb-4e64-acef-a6e01e314f1b"
+      ]
+    },
+    {
+      "notion_id": "4b40221954bc83f7927101f90f7e4a4c",
+      "service": "버스",
+      "title": "4-7. 셔틀버스_등교_클릭 (세부 노선 변경시 업데이트 필요)",
+      "path": "event-log/07-버스/4-7.-셔틀버스_등교_클릭-(세부-노선-변경시-업데이트-필요).md",
+      "notion_url": "https://app.notion.com/p/4b40221954bc83f7927101f90f7e4a4c",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:30.460Z",
+      "source_body_sha256": "90626a6939500f30cfd379c223f1ed6e28af3259ad5a153acd26bcf21fed6993",
+      "output_sha256": "bb575a0ef1564b971d7335906e712daca2481f98fb2feedc25f9c494e261673d",
+      "image_ids": [
+        "b60306d1-7b71-443f-b569-d33fdd950076",
+        "884a1dc3-6a55-403c-9500-d3109a886e77",
+        "faa71bb2-3e23-472d-87b8-061ac40d6dbc",
+        "8d9cd787-1071-4152-94d8-26e201d8c2f2"
+      ]
+    },
+    {
+      "notion_id": "59f0221954bc8354beb981c63ccfbf3e",
+      "service": "버스",
+      "title": "4-8. 셔틀버스_하교_클릭 (세부 노선 변경시 업데이트 필요)",
+      "path": "event-log/07-버스/4-8.-셔틀버스_하교_클릭-(세부-노선-변경시-업데이트-필요).md",
+      "notion_url": "https://app.notion.com/p/59f0221954bc8354beb981c63ccfbf3e",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:30.192Z",
+      "source_body_sha256": "386a7f1fa00c578ec65a84b2f897b0528512856075fdc1af16bc25b0351a4ac0",
+      "output_sha256": "58645827a720066a0b56021ff35f84478dd58a3648c4ee91743af2111f981a69",
+      "image_ids": [
+        "5dbf110f-e748-424b-a1b6-1a4919c88db5",
+        "8f42610b-0a55-45fb-9fa3-84d0765763d0",
+        "3051714f-978f-47bb-859a-0f666b80a66b",
+        "8564703f-486a-45f7-867a-0249e1505bb6"
+      ]
+    },
+    {
+      "notion_id": "36a0221954bc8238910a8131abbfe5bd",
+      "service": "버스",
+      "title": "4-9. 대성버스 운행방면_클릭",
+      "path": "event-log/07-버스/4-9.-대성버스-운행방면_클릭.md",
+      "notion_url": "https://app.notion.com/p/36a0221954bc8238910a8131abbfe5bd",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:29.687Z",
+      "source_body_sha256": "4687d92f55d0808e07758a53c358582f640c1120dcb6025f2bbf4adf8bcc29b9",
+      "output_sha256": "41de4bec49b9f2504a107195287b66af01f5e29d90d3647665a456f4791ac72e",
+      "image_ids": [
+        "b7933b74-5215-4787-a3d0-2db96cb58449",
+        "45d743ef-5f55-4e7c-b4f8-44e69cc832ea",
+        "86614d3e-a1ae-4284-b98b-71c5f940fab6",
+        "30c374d2-88ca-47f9-985f-4083d4e505df"
+      ]
+    },
+    {
+      "notion_id": "49a0221954bc8298b088818423cfb967",
+      "service": "버스",
+      "title": "5-1. 출발지 박스_클릭",
+      "path": "event-log/07-버스/5-1.-출발지-박스_클릭.md",
+      "notion_url": "https://app.notion.com/p/49a0221954bc8298b088818423cfb967",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:30.357Z",
+      "source_body_sha256": "d4ce8a3fbddf61cd36b119b678c0c99e1260921211f5aab8a65fe30c7e544d60",
+      "output_sha256": "acbe33d5c229176aaaa062d2a6aa7d136c788bd1d2fb45969448a486550b007c",
+      "image_ids": [
+        "21fef8c7-7df7-4c9c-9117-3d880ea4ad1c",
+        "13bb17bd-70cc-47ac-b15a-dca28ca9dcde",
+        "61a40353-9101-426c-a3ee-ed8c8b7cf030",
+        "e98946f1-78a3-4705-84c5-13ac3954e715"
+      ]
+    },
+    {
+      "notion_id": "2f20221954bc8203b60b8184d2a74302",
+      "service": "버스",
+      "title": "5-10. 지금 출발_클릭",
+      "path": "event-log/07-버스/5-10.-지금-출발_클릭.md",
+      "notion_url": "https://app.notion.com/p/2f20221954bc8203b60b8184d2a74302",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:32.523Z",
+      "source_body_sha256": "08cc2352005cef337afeaf1bf8d8aff463bc94f5ec8a86dc1932c23243200b95",
+      "output_sha256": "be311d8bd4d3534b684c91545bfd089bee928a200a405338c4a1bd9fa2858a6d",
+      "image_ids": [
+        "2a4d8371-2bd0-4ea7-9bcf-a257c7bbff8c",
+        "1781363c-84be-41a3-a61d-eb4a2767b00e",
+        "04573bb0-52dd-4309-bf90-512287eb7f43",
+        "588b34db-e485-42b2-82ee-261d7e099b55"
+      ]
+    },
+    {
+      "notion_id": "5fb0221954bc8305bdb881a1ac276e17",
+      "service": "버스",
+      "title": "5-11. 완료_클릭",
+      "path": "event-log/07-버스/5-11.-완료_클릭.md",
+      "notion_url": "https://app.notion.com/p/5fb0221954bc8305bdb881a1ac276e17",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB (모바일)"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:29.959Z",
+      "source_body_sha256": "a0d357a9dfb40954bfbeebd39b2e0ce6dd640571d71c772e83c1aa645308e2a8",
+      "output_sha256": "71b8028f349eb9fb67e726bfd0a471a62899040a49ee6a0889cc8b4f3b673140",
+      "image_ids": [
+        "c1e0da00-8d56-4868-af24-6eeb71770216",
+        "9efc695d-58cf-4d9a-bbbd-4ca4652c4fe0"
+      ]
+    },
+    {
+      "notion_id": "f200221954bc82ac9ead814894d5d1f8",
+      "service": "버스",
+      "title": "5-12. 교통편 차종_클릭",
+      "path": "event-log/07-버스/5-12.-교통편-차종_클릭.md",
+      "notion_url": "https://app.notion.com/p/f200221954bc82ac9ead814894d5d1f8",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:28.335Z",
+      "source_body_sha256": "6d28b7c2cdf8c7652ad02a4912f1eb2d75409296a54a81be2268b33153f97b4b",
+      "output_sha256": "646a99656a3a61ddf84b54556a1b83fdec38952b0e6cd4ead7fd45b3a3aa8693",
+      "image_ids": [
+        "10bb8761-02d3-403e-a7d8-14d913cf7d9d",
+        "3d80dcdc-db69-46f3-b702-4e0f7b623720",
+        "aebfd472-19a9-4d98-be88-6d638ab2f453",
+        "15bae106-d733-4a88-802d-7d6623b5fe90"
+      ]
+    },
+    {
+      "notion_id": "cec0221954bc828f9ef9818bf3a57ff6",
+      "service": "버스",
+      "title": "5-2. 출발지_확인_클릭",
+      "path": "event-log/07-버스/5-2.-출발지_확인_클릭.md",
+      "notion_url": "https://app.notion.com/p/cec0221954bc828f9ef9818bf3a57ff6",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:27.053Z",
+      "source_body_sha256": "1ccf174c1f0f0efaed82eb04fc4d36250cac48d997bb64d47ba6b9b6cc6030dc",
+      "output_sha256": "13703655464564d41d5b40eb7b499df27205a0415357007f002cd95cbfd8ed63",
+      "image_ids": [
+        "c5f498b3-f279-409c-a7fb-e5d0f4fcfc0b",
+        "96feda77-ec41-4ecf-be22-395b2b956fc9",
+        "29126682-3306-4143-808e-6ba4e1286fe5",
+        "334f2b51-ce6f-4155-b294-d0c107389344",
+        "6e5a71a8-664f-4981-97dd-91ef211bf9eb"
+      ]
+    },
+    {
+      "notion_id": "e330221954bc824e867f01a153085584",
+      "service": "버스",
+      "title": "5-3. 도착지 박스_클릭",
+      "path": "event-log/07-버스/5-3.-도착지-박스_클릭.md",
+      "notion_url": "https://app.notion.com/p/e330221954bc824e867f01a153085584",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:26.861Z",
+      "source_body_sha256": "c153cba7637803993df911158f82061794feab47d06f86caecda4c5157613379",
+      "output_sha256": "cbdf0fd598b655caee89b586496f6a8ab6ef586c2eab6e21df24f07d644a8f19",
+      "image_ids": [
+        "db564f58-1ebb-4c93-a960-8dbbb0b1e678",
+        "a95a3516-f6ba-4a14-bfd0-a203ec35ab9a",
+        "24e40847-d397-4f73-b57e-1de38f971202",
+        "9acbac50-9882-402a-a26a-268a1d7a5ed7"
+      ]
+    },
+    {
+      "notion_id": "2480221954bc82d8a689011b4a63d210",
+      "service": "버스",
+      "title": "5-4. 도착지_확인_클릭",
+      "path": "event-log/07-버스/5-4.-도착지_확인_클릭.md",
+      "notion_url": "https://app.notion.com/p/2480221954bc82d8a689011b4a63d210",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:28.852Z",
+      "source_body_sha256": "c499dd8de8175ef358b03afb90e932d915738a68eace42997158d8e3ac7f88f1",
+      "output_sha256": "c7a5e9295692d0d767006b8a0b7c899facc58937b117f8f7b46b0e6fac40ce6e",
+      "image_ids": [
+        "edc0cf6c-925b-4b8b-9eb2-50a3140368e7",
+        "bbb86be6-a70e-4335-8489-f2dd58cd3c1e",
+        "328bd3db-621b-4699-aed4-02c2849ff233",
+        "38b29106-ee30-445a-9e19-a57df3a6fd00",
+        "1320aaa2-ab45-471e-b540-581dd19127e9"
+      ]
+    },
+    {
+      "notion_id": "3910221954bc829fa2a0813f0c2a459c",
+      "service": "버스",
+      "title": "5-5. 출발지/도착지 변경_클릭",
+      "path": "event-log/07-버스/5-5.-출발지-도착지-변경_클릭.md",
+      "notion_url": "https://app.notion.com/p/3910221954bc829fa2a0813f0c2a459c",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:32.737Z",
+      "source_body_sha256": "f677f8dec04a8c3e2635faa837a7c458b69e3fcfd890221b309cf1e2cc1d2bd9",
+      "output_sha256": "e65d3a7d28f4b08cab55d0913f03fda9a59d8ad69f0c3ade5fac81628cf8454c",
+      "image_ids": [
+        "b2b2b77b-02e0-4ac0-87cd-746e8665d3ad",
+        "cdb96dd4-b4c6-4535-aa0b-2cc87355e6a4",
+        "b41b6b3c-fd28-47f6-81f1-5f359acbe938",
+        "d00d7dfc-3195-4787-9fcb-98f3dc759dd2"
+      ]
+    },
+    {
+      "notion_id": "ae70221954bc825dae4e013953990e99",
+      "service": "버스",
+      "title": "5-6. 조회하기_클릭",
+      "path": "event-log/07-버스/5-6.-조회하기_클릭.md",
+      "notion_url": "https://app.notion.com/p/ae70221954bc825dae4e013953990e99",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:33.109Z",
+      "source_body_sha256": "29c1594a231846fdae87f04d84de658a4896e28713549f6e2f80c26187f581bd",
+      "output_sha256": "e55ba1f577e6f34fdf4de842372b72476fa35df3b088f8678dbbd7c721e0495c",
+      "image_ids": [
+        "a13eb8e7-bd84-4785-9cc7-58ec1eccc965",
+        "ebd546d8-cf69-49ca-8f06-86dacf7865e8",
+        "3644c399-332f-455d-a5b8-b004b4cf32eb"
+      ]
+    },
+    {
+      "notion_id": "0860221954bc83deaa2081008af6e0ea",
+      "service": "버스",
+      "title": "5-7. 뒤로가기_클릭",
+      "path": "event-log/07-버스/5-7.-뒤로가기_클릭.md",
+      "notion_url": "https://app.notion.com/p/0860221954bc83deaa2081008af6e0ea",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:28.360Z",
+      "source_body_sha256": "d4dab7497bf06ba0bdd48215b0fed50c34117bffb16a7277e2687aba2402feaa",
+      "output_sha256": "312898b242bec68e6cb5a38749f2217de9b8b9b1883f9e67d47544f206c739ef",
+      "image_ids": [
+        "42f85064-90ff-4e8e-8a33-655c0cba7bee"
+      ]
+    },
+    {
+      "notion_id": "c3b0221954bc8335a4a001de5c0e03f4",
+      "service": "버스",
+      "title": "5-8. 닫기_클릭",
+      "path": "event-log/07-버스/5-8.-닫기_클릭.md",
+      "notion_url": "https://app.notion.com/p/c3b0221954bc8335a4a001de5c0e03f4",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:30.073Z",
+      "source_body_sha256": "d53ce2e21f373d01137015d6da95aadd8d667df577f3c74e28cfcc4144fcae52",
+      "output_sha256": "452c54d5dfa2aaf8c7042b1364a0c699aa5ed49a50b8b4275310b3e126c768ac",
+      "image_ids": [
+        "f65920d5-0666-4a86-a7cb-c890283faf9d"
+      ]
+    },
+    {
+      "notion_id": "a470221954bc82199dfa81002cf96ee2",
+      "service": "버스",
+      "title": "5-9. 출발 시각 설정_클릭",
+      "path": "event-log/07-버스/5-9.-출발-시각-설정_클릭.md",
+      "notion_url": "https://app.notion.com/p/a470221954bc82199dfa81002cf96ee2",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:28.390Z",
+      "source_body_sha256": "d7fd67f1acf00335a926d45c9cf1e9fdb2f82f791a4e258edd25a48774b9d376",
+      "output_sha256": "d25a708288161cb45007053674d3e6a8a6cff6e1396bc411d9049a51ec35b539",
+      "image_ids": [
+        "f77391df-da6a-442b-a938-32bccb4c97fb",
+        "adb9ebdd-c41b-4e42-a73e-aa86175fa027",
+        "4c2bf303-952e-45fd-be9b-9805e0e86ad9",
+        "ad16396a-18e6-47b1-96a3-0d5be33867ba"
+      ]
+    },
+    {
+      "notion_id": "5960221954bc83a58f77813a873d7e1d",
+      "service": "버스",
+      "title": "[레거시] 1-14. 메인_버스_클릭",
+      "path": "event-log/07-버스/[레거시]-1-14.-메인_버스_클릭.md",
+      "notion_url": "https://app.notion.com/p/5960221954bc83a58f77813a873d7e1d",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:26.250Z",
+      "source_body_sha256": "a50bb64c5852dcf17d70f4e471a7a084ec386ddd721d4d60d64e57a58ee6d571",
+      "output_sha256": "e5cd560fe20aaf3ec27bfffc5efdcfc8bbdcd1f839ba6e338b5d143e2097249c",
+      "image_ids": [
+        "755aaf1a-bde8-4bfc-8184-353c0f332d44",
+        "1836f8f7-cf40-4805-a1e4-986c12f11ac9"
+      ]
+    }
+  ],
+  "blank_pages": []
+}

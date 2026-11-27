@@ -1,0 +1,270 @@
+{
+  "base_sha": "3105e0c7ed27a5f66355725d8e8337129b4fc697",
+  "retrieval_date": "2026-11-27",
+  "source": "Notion current page fetch (not historical view)",
+  "notion_rows": 807,
+  "nonblank_pages": 785,
+  "blank_pages": 22,
+  "current_contract_rows": 449,
+  "current_unique_labels": 439,
+  "images": {
+    "occurrences": 1588,
+    "unique_files": 1272,
+    "byte_identical_repo_assets": 1272
+  },
+  "validation": {
+    "pages": 785,
+    "field_and_contract_differences": 0,
+    "body_text_and_order_differences": 0,
+    "reference_link_differences": 0,
+    "image_order_differences": 0
+  },
+  "fixed_time_historical_recheck": {
+    "required_for_current_fetch": false,
+    "checked": 99,
+    "remaining": 708,
+    "status": "incomplete; historical view quota"
+  },
+  "services": [
+    {
+      "service": "주변상점",
+      "path": "services/01.json",
+      "pages": 58,
+      "blank_pages": 2
+    },
+    {
+      "service": "복덕방",
+      "path": "services/02.json",
+      "pages": 20,
+      "blank_pages": 0
+    },
+    {
+      "service": "사장님",
+      "path": "services/03.json",
+      "pages": 19,
+      "blank_pages": 0
+    },
+    {
+      "service": "식단",
+      "path": "services/04.json",
+      "pages": 29,
+      "blank_pages": 0
+    },
+    {
+      "service": "버스",
+      "path": "services/05.json",
+      "pages": 43,
+      "blank_pages": 0
+    },
+    {
+      "service": "게시판",
+      "path": "services/06.json",
+      "pages": 75,
+      "blank_pages": 2
+    },
+    {
+      "service": "배너",
+      "path": "services/07.json",
+      "pages": 60,
+      "blank_pages": 2
+    },
+    {
+      "service": "홈화면 리디자인",
+      "path": "services/08.json",
+      "pages": 27,
+      "blank_pages": 0
+    },
+    {
+      "service": "콜밴팟",
+      "path": "services/09.json",
+      "pages": 64,
+      "blank_pages": 2
+    },
+    {
+      "service": "학교 부서 정보",
+      "path": "services/10.json",
+      "pages": 6,
+      "blank_pages": 0
+    },
+    {
+      "service": "팀원 모집",
+      "path": "services/11.json",
+      "pages": 32,
+      "blank_pages": 0
+    },
+    {
+      "service": "로그인/회원가입/정보수정 V2",
+      "path": "services/12.json",
+      "pages": 23,
+      "blank_pages": 0
+    },
+    {
+      "service": "시간표",
+      "path": "services/13.json",
+      "pages": 29,
+      "blank_pages": 0
+    },
+    {
+      "service": "모의수강신청",
+      "path": "services/14.json",
+      "pages": 6,
+      "blank_pages": 0
+    },
+    {
+      "service": "강제 업데이트",
+      "path": "services/15.json",
+      "pages": 6,
+      "blank_pages": 0
+    },
+    {
+      "service": "다국어 지원",
+      "path": "services/16.json",
+      "pages": 14,
+      "blank_pages": 0
+    },
+    {
+      "service": "동아리 - 레거시",
+      "path": "services/17.json",
+      "pages": 55,
+      "blank_pages": 0
+    },
+    {
+      "service": "로그인/회원가입/정보수정 - 레거시",
+      "path": "services/18.json",
+      "pages": 10,
+      "blank_pages": 1
+    },
+    {
+      "service": "미래의 주변상점 - 레거시",
+      "path": "services/19.json",
+      "pages": 94,
+      "blank_pages": 7
+    },
+    {
+      "service": "복덕방 (레거시)",
+      "path": "services/20.json",
+      "pages": 18,
+      "blank_pages": 0
+    },
+    {
+      "service": "새 주변상점 - 레거시",
+      "path": "services/21.json",
+      "pages": 81,
+      "blank_pages": 5
+    },
+    {
+      "service": "졸업학점 계산기 - 레거시",
+      "path": "services/22.json",
+      "pages": 16,
+      "blank_pages": 1
+    }
+  ],
+  "previous_exports": [
+    {
+      "previous_path": "event-log/01-주변상점/해결-(1)-0b602219.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/01-주변상점/해결-(1)-0b602219.md"
+    },
+    {
+      "previous_path": "event-log/01-주변상점/해결-(1)-48002219.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/01-주변상점/해결-(1)-48002219.md"
+    },
+    {
+      "previous_path": "event-log/01-주변상점/해결-(1)-5c502219.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/01-주변상점/해결-(1)-5c502219.md"
+    },
+    {
+      "previous_path": "event-log/01-주변상점/해결-(1)-87002219.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/01-주변상점/해결-(1)-87002219.md"
+    },
+    {
+      "previous_path": "event-log/01-주변상점/해결-(1)-e7b02219.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/01-주변상점/해결-(1)-e7b02219.md"
+    },
+    {
+      "previous_path": "event-log/01-주변상점/해결-(1).md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/01-주변상점/해결-(1).md"
+    },
+    {
+      "previous_path": "event-log/01-주변상점/해결.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/01-주변상점/해결.md"
+    },
+    {
+      "previous_path": "event-log/04-새-주변상점-레거시/해결-(1)-5a602219.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/04-새-주변상점-레거시/해결-(1)-5a602219.md"
+    },
+    {
+      "previous_path": "event-log/04-새-주변상점-레거시/해결-(1)-6c202219.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/04-새-주변상점-레거시/해결-(1)-6c202219.md"
+    },
+    {
+      "previous_path": "event-log/04-새-주변상점-레거시/해결-(1).md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/04-새-주변상점-레거시/해결-(1).md"
+    },
+    {
+      "previous_path": "event-log/04-새-주변상점-레거시/해결.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/04-새-주변상점-레거시/해결.md"
+    },
+    {
+      "previous_path": "event-log/05-미래의-주변상점-레거시/해결-(1)-21d02219.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/05-미래의-주변상점-레거시/해결-(1)-21d02219.md"
+    },
+    {
+      "previous_path": "event-log/05-미래의-주변상점-레거시/해결-(1)-7e702219.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/05-미래의-주변상점-레거시/해결-(1)-7e702219.md"
+    },
+    {
+      "previous_path": "event-log/05-미래의-주변상점-레거시/해결-(1).md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/05-미래의-주변상점-레거시/해결-(1).md"
+    },
+    {
+      "previous_path": "event-log/05-미래의-주변상점-레거시/해결.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/05-미래의-주변상점-레거시/해결.md"
+    },
+    {
+      "previous_path": "event-log/18-강제-업데이트/1.-강제-업데이트-화면-표시.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/18-강제-업데이트/1.-강제-업데이트-화면-표시.md"
+    },
+    {
+      "previous_path": "event-log/18-강제-업데이트/2.-업데이트하기-클릭.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/18-강제-업데이트/2.-업데이트하기-클릭.md"
+    },
+    {
+      "previous_path": "event-log/18-강제-업데이트/3.-이미-업데이트했나요-클릭.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/18-강제-업데이트/3.-이미-업데이트했나요-클릭.md"
+    },
+    {
+      "previous_path": "event-log/18-강제-업데이트/4.-업데이트-확인-팝업-닫기.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/18-강제-업데이트/4.-업데이트-확인-팝업-닫기.md"
+    },
+    {
+      "previous_path": "event-log/18-강제-업데이트/5.-업데이트-확인-팝업-스토어-가기.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/18-강제-업데이트/5.-업데이트-확인-팝업-스토어-가기.md"
+    },
+    {
+      "previous_path": "event-log/18-강제-업데이트/6.-강제-업데이트-화면-이탈.md",
+      "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/18-강제-업데이트/6.-강제-업데이트-화면-이탈.md"
+    }
+  ],
+  "boundary": "Notion source value fields updated for 16 pages by explicit user instruction; related common-guide rules and personal list aligned. No SDK edits, operating data changes, Slack delivery, paid AI API, or merge.",
+  "value_definition_update": {
+    "date": "2026-11-27",
+    "source_pages_changed": 16,
+    "fixed_string_contracts": 18,
+    "previous_marker_remaining": 0,
+    "android_observed_events": {
+      "Stage": 308,
+      "Production": 134
+    },
+    "android_value_keys_present": 0,
+    "sdk_deployed": false,
+    "operating_data_modified": false
+  },
+  "source_snapshot": {
+    "path": "_archive/updates/2026-11-27/notion-sync/source-pages.json.gz",
+    "sha256": "1d3ef596c56e0e77743d6889ac181555f25ac87481cb25436d7f816bf6a79ee4",
+    "records": 807,
+    "raw_bytes": 1475526,
+    "compressed_bytes": 222298,
+    "retrieved_as": "current Notion page fetch; stable file references only"
+  }
+}

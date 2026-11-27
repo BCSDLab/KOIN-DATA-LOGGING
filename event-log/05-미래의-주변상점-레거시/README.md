@@ -1,115 +1,114 @@
 # 미래의 주변상점 - 레거시
 
-> **레거시 서비스** · 과거 구현과 로깅을 확인하기 위한 보존 자료입니다.
-
 [← 전체 서비스](../../README.md)
 
-명세를 누르면 한 페이지에서 로그 정의와 해당 이미지를 함께 확인할 수 있습니다. 과거·새 로깅은 원문 구간대로 구분합니다. 상태는 원문 표기이며 구현·배포 승인을 뜻하지 않습니다.
+Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 목록입니다.
 
-## 로깅 목록
-
-| 명세 | 원문 상태 | 플랫폼 |
+| 명세 | 플랫폼 | Notion |
 | --- | --- | --- |
-| [1-1 메인 → 상점 카테고리 (클릭)](1-1-%EB%A9%94%EC%9D%B8-%E2%86%92-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | ANDROID · IOS |
-| [1-2 햄버거 → 상점 카테고리 (클릭)](1-2-%ED%96%84%EB%B2%84%EA%B1%B0-%E2%86%92-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | ANDROID · IOS |
-| [1-3 헤더 → 주변상점 (클릭)](1-3-%ED%97%A4%EB%8D%94-%E2%86%92-%EC%A3%BC%EB%B3%80%EC%83%81%EC%A0%90-%28%ED%81%B4%EB%A6%AD%29.md) | 완료 | WEB |
-| [1-4 푸터 → 주변상점 (클릭)](1-4-%ED%91%B8%ED%84%B0-%E2%86%92-%EC%A3%BC%EB%B3%80%EC%83%81%EC%A0%90-%28%ED%81%B4%EB%A6%AD%29.md) | 완료 | WEB |
-| [2-1 상점 카테고리 → 상점 카테고리 (클릭)](2-1-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | ANDROID · IOS |
-| [2-2 상점 카테고리 (스크롤)](2-2-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%28%EC%8A%A4%ED%81%AC%EB%A1%A4%29.md) | 로깅 필요 | ANDROID · IOS |
-| [2-3 상점카테고리 이벤트 (클릭)](2-3-%EC%83%81%EC%A0%90%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | ANDROID · IOS |
-| [2-4 상점카테고리 검색 (클릭)](2-4-%EC%83%81%EC%A0%90%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EA%B2%80%EC%83%89-%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | ANDROID · IOS |
-| [2-5 상점 카테고리 → 카트](2-5-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%EC%B9%B4%ED%8A%B8.md) | 로깅 필요 | ANDROID · IOS |
-| [2-6~8 상점 카테고리 정렬](2-6~8-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%A0%95%EB%A0%AC.md) | 로깅 필요 | ANDROID · IOS |
-| [2-9 ~ 13 상점 카테고리 필터](2-9-~-13-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%ED%95%84%ED%84%B0.md) | 로깅 필요 | ANDROID · IOS |
-| [2-14 상점 카테고리 최소주문금액 설정](2-14-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%B5%9C%EC%86%8C%EC%A3%BC%EB%AC%B8%EA%B8%88%EC%95%A1-%EC%84%A4%EC%A0%95.md) | 로깅 필요 | ANDROID · IOS |
-| [2-15 상점 카테고리 → 홈](2-15-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%ED%99%88.md) | 로깅 필요 | ANDROID · IOS |
-| [2-16 상점 카테고리 → 주변상점](2-16-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%EC%A3%BC%EB%B3%80%EC%83%81%EC%A0%90.md) | 로깅 필요 | ANDROID · IOS |
-| [2-17 상점 카테고리 → 주문내역](2-17-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD.md) | 로깅 필요 | ANDROID · IOS |
-| [2-18 상점 카테고리 이탈](2-18-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%9D%B4%ED%83%88.md) | 로깅 필요 | ANDROID · IOS |
-| [2-19 상점 카테고리 → 플로팅 바](2-19-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%ED%94%8C%EB%A1%9C%ED%8C%85-%EB%B0%94.md) | 로깅 필요 | 원문 미기재 |
-| [3-1 메뉴추가](3-1-%EB%A9%94%EB%89%B4%EC%B6%94%EA%B0%80.md) | 완료 | WEB |
-| [3-1 상점 카테고리 → 상점상세 (클릭)](3-1-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | ANDROID · IOS |
-| [3-2 메뉴추가 - 확인](3-2-%EB%A9%94%EB%89%B4%EC%B6%94%EA%B0%80-%ED%99%95%EC%9D%B8.md) | 완료 | WEB |
-| [3-2 상점상세 사진 슬라이드](3-2-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EC%82%AC%EC%A7%84-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C.md) | 로깅 필요 | ANDROID · IOS |
-| [3-3 메뉴추가 - 취소](3-3-%EB%A9%94%EB%89%B4%EC%B6%94%EA%B0%80-%EC%B7%A8%EC%86%8C.md) | 진행 중 | WEB |
-| [3-3-1, 3-3-2 상점상세 메뉴 (클릭,스크롤)](3-3-1%2C-3-3-2-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A9%94%EB%89%B4-%28%ED%81%B4%EB%A6%AD%2C%EC%8A%A4%ED%81%AC%EB%A1%A4%29.md) | 로깅 필요 | ANDROID · IOS |
-| [3-4 메뉴추가 - 메뉴사진](3-4-%EB%A9%94%EB%89%B4%EC%B6%94%EA%B0%80-%EB%A9%94%EB%89%B4%EC%82%AC%EC%A7%84.md) | 완료 | WEB |
-| [3-4-1, 3-4-2 상점상세 뒤로 가기](3-4-1%2C-3-4-2-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%92%A4%EB%A1%9C-%EA%B0%80%EA%B8%B0.md) | 로깅 필요 | ANDROID · IOS |
-| [3-5 상점상세 상점정보](3-5-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EC%83%81%EC%A0%90%EC%A0%95%EB%B3%B4.md) | 로깅 필요 | ANDROID · IOS |
-| [3-6 상점상세 카트 클릭(상단)](3-6-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EC%B9%B4%ED%8A%B8-%ED%81%B4%EB%A6%AD%28%EC%83%81%EB%8B%A8%29.md) | 로깅 필요 | ANDROID · IOS |
-| [3-7 상점상세 카트 클릭(하단)](3-7-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EC%B9%B4%ED%8A%B8-%ED%81%B4%EB%A6%AD%28%ED%95%98%EB%8B%A8%29.md) | 로깅 필요 | ANDROID · IOS |
-| [3-8 상점상세 가게정보 카트 클릭](3-8-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EA%B0%80%EA%B2%8C%EC%A0%95%EB%B3%B4-%EC%B9%B4%ED%8A%B8-%ED%81%B4%EB%A6%AD.md) | 로깅 필요 | ANDROID · IOS |
-| [3-9-1, 3-9-2 메뉴 선택 후 뒤로 가기](3-9-1%2C-3-9-2-%EB%A9%94%EB%89%B4-%EC%84%A0%ED%83%9D-%ED%9B%84-%EB%92%A4%EB%A1%9C-%EA%B0%80%EA%B8%B0.md) | 로깅 필요 | ANDROID · IOS |
-| [3-10 메뉴 선택 후 카트 클릭](3-10-%EB%A9%94%EB%89%B4-%EC%84%A0%ED%83%9D-%ED%9B%84-%EC%B9%B4%ED%8A%B8-%ED%81%B4%EB%A6%AD.md) | 로깅 필요 | ANDROID · IOS |
-| [3-11 메뉴 선택 후 카트 추가 클릭](3-11-%EB%A9%94%EB%89%B4-%EC%84%A0%ED%83%9D-%ED%9B%84-%EC%B9%B4%ED%8A%B8-%EC%B6%94%EA%B0%80-%ED%81%B4%EB%A6%AD.md) | 로깅 필요 | ANDROID · IOS |
-| [3-12 영업시간으로 인한 카트 추가 실패](3-12-%EC%98%81%EC%97%85%EC%8B%9C%EA%B0%84%EC%9C%BC%EB%A1%9C-%EC%9D%B8%ED%95%9C-%EC%B9%B4%ED%8A%B8-%EC%B6%94%EA%B0%80-%EC%8B%A4%ED%8C%A8.md) | 로깅 필요 | ANDROID · IOS |
-| [3-13 다른 가게 메뉴로 인한 카트 추가 실패](3-13-%EB%8B%A4%EB%A5%B8-%EA%B0%80%EA%B2%8C-%EB%A9%94%EB%89%B4%EB%A1%9C-%EC%9D%B8%ED%95%9C-%EC%B9%B4%ED%8A%B8-%EC%B6%94%EA%B0%80-%EC%8B%A4%ED%8C%A8.md) | 로깅 필요 | ANDROID · IOS |
-| [4-1 전화 주문 혜택 클릭 (메인 페이지)](4-1-%EC%A0%84%ED%99%94-%EC%A3%BC%EB%AC%B8-%ED%98%9C%ED%83%9D-%ED%81%B4%EB%A6%AD-%28%EB%A9%94%EC%9D%B8-%ED%8E%98%EC%9D%B4%EC%A7%80%29.md) | 완료 | WEB · ANDROID · IOS |
-| [4-2 전화 주문 혜택 페이지 버튼 → 버튼](4-2-%EC%A0%84%ED%99%94-%EC%A3%BC%EB%AC%B8-%ED%98%9C%ED%83%9D-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B2%84%ED%8A%BC-%E2%86%92-%EB%B2%84%ED%8A%BC.md) | 완료 | WEB · ANDROID · IOS |
-| [4-3 카테고리에서 혜택페이지(클릭)](4-3-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EC%97%90%EC%84%9C-%ED%98%9C%ED%83%9D%ED%8E%98%EC%9D%B4%EC%A7%80%28%ED%81%B4%EB%A6%AD%29.md) | 완료 | WEB · ANDROID · IOS |
-| [4-4 전화 주문 혜택 상점상세 페이지(클릭)](4-4-%EC%A0%84%ED%99%94-%EC%A3%BC%EB%AC%B8-%ED%98%9C%ED%83%9D-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%ED%8E%98%EC%9D%B4%EC%A7%80%28%ED%81%B4%EB%A6%AD%29.md) | 완료 | WEB · ANDROID · IOS |
-| [4-5 전화 주문 혜택 상점상세 전화 (클릭)](4-5-%EC%A0%84%ED%99%94-%EC%A3%BC%EB%AC%B8-%ED%98%9C%ED%83%9D-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EC%A0%84%ED%99%94-%28%ED%81%B4%EB%A6%AD%29.md) | 완료 | WEB · ANDROID · IOS |
-| [5-1 상점상세 리뷰 (클릭)](5-1-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | ANDROID · IOS |
-| [5-2 상점상세 리뷰 (스크롤)](5-2-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%28%EC%8A%A4%ED%81%AC%EB%A1%A4%29.md) | 로깅 필요 | ANDROID · IOS |
-| [5-3 상점상세 리뷰 작성 들어간 후 작성하기 (클릭)](5-3-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%EC%9E%91%EC%84%B1-%EB%93%A4%EC%96%B4%EA%B0%84-%ED%9B%84-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0-%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | ANDROID · IOS |
-| [5-4 상점상세 리뷰 신고 (클릭)](5-4-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%EC%8B%A0%EA%B3%A0-%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | ANDROID · IOS |
-| [5-5 상점상세 리뷰 탭 탈출](5-5-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%ED%83%AD-%ED%83%88%EC%B6%9C.md) | 로깅 필요 | ANDROID · IOS |
-| [5-6 상점상세 리뷰 삭제하기 (클릭)](5-6-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0-%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | ANDROID · IOS |
-| [5-7 상점상세 리뷰 최종삭제하기 (클릭)](5-7-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%EC%B5%9C%EC%A2%85%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0-%28%ED%81%B4%EB%A6%AD%29.md) | 로깅 필요 | ANDROID · IOS |
-| [5-8 상점상세 리뷰 정렬](5-8-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%EC%A0%95%EB%A0%AC.md) | 로깅 필요 | ANDROID · IOS |
-| [6-1 장바구니 진입 후 뒤로가기](6-1-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%A7%84%EC%9E%85-%ED%9B%84-%EB%92%A4%EB%A1%9C%EA%B0%80%EA%B8%B0.md) | 로깅 필요 | ANDROID · IOS |
-| [6-2 장바구니 삭제](6-2-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%82%AD%EC%A0%9C.md) | 로깅 필요 | ANDROID · IOS |
-| [6-3 빈 장바구니 메뉴 추가](6-3-%EB%B9%88-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EB%A9%94%EB%89%B4-%EC%B6%94%EA%B0%80.md) | 로깅 필요 | ANDROID · IOS |
-| [6-4 장바구니 배달 여부 선택](6-4-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EB%B0%B0%EB%8B%AC-%EC%97%AC%EB%B6%80-%EC%84%A0%ED%83%9D.md) | 로깅 필요 | ANDROID · IOS |
-| [6-5 장바구니 포장 여부 선택](6-5-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%ED%8F%AC%EC%9E%A5-%EC%97%AC%EB%B6%80-%EC%84%A0%ED%83%9D.md) | 로깅 필요 | ANDROID · IOS |
-| [6-6 장바구니 상점 클릭](6-6-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%83%81%EC%A0%90-%ED%81%B4%EB%A6%AD.md) | 로깅 필요 | ANDROID · IOS |
-| [6-7 장바구니 옵션 변경](6-7-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%98%B5%EC%85%98-%EB%B3%80%EA%B2%BD.md) | 로깅 필요 | ANDROID · IOS |
-| [6-8 장바구니 메뉴 수량 추가](6-8-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EB%A9%94%EB%89%B4-%EC%88%98%EB%9F%89-%EC%B6%94%EA%B0%80.md) | 로깅 필요 | ANDROID · IOS |
-| [6-9 장바구니 메뉴 수량 감소](6-9-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EB%A9%94%EB%89%B4-%EC%88%98%EB%9F%89-%EA%B0%90%EC%86%8C.md) | 로깅 필요 | ANDROID · IOS |
-| [6-10 장바구니 더 담으러가기](6-10-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EB%8D%94-%EB%8B%B4%EC%9C%BC%EB%9F%AC%EA%B0%80%EA%B8%B0.md) | 로깅 필요 | ANDROID · IOS |
-| [6-11 장바구니 주문하기](6-11-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%A3%BC%EB%AC%B8%ED%95%98%EA%B8%B0.md) | 로깅 필요 | ANDROID · IOS |
-| [6-12 장바구니 주문하기 실패](6-12-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%A3%BC%EB%AC%B8%ED%95%98%EA%B8%B0-%EC%8B%A4%ED%8C%A8.md) | 로깅 필요 | ANDROID · IOS |
-| [6-13 장바구니 비로그인 모달](6-13-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EB%B9%84%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EB%AA%A8%EB%8B%AC.md) | 로깅 필요 | ANDROID · IOS |
-| [7-1 결제 페이지 이탈](7-1-%EA%B2%B0%EC%A0%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%9D%B4%ED%83%88.md) | 로깅 필요 | WEB |
-| [7-2 결제 페이지 배달 위치 클릭](7-2-%EA%B2%B0%EC%A0%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%B0%EB%8B%AC-%EC%9C%84%EC%B9%98-%ED%81%B4%EB%A6%AD.md) | 로깅 필요 | WEB |
-| [7-3 결제 → 교내 주문 페이지 이탈](7-3-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EB%82%B4-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%9D%B4%ED%83%88.md) | 로깅 필요 | WEB |
-| [7-4 결제 → 교내 주문 페이지 교내 주소 맵 설정](7-4-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EB%82%B4-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B5%90%EB%82%B4-%EC%A3%BC%EC%86%8C-%EB%A7%B5-%EC%84%A4%EC%A0%95.md) | 로깅 필요 | WEB |
-| [7-5 결제 → 교내 주문 페이지 기숙사 위치 설정](7-5-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EB%82%B4-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EC%88%99%EC%82%AC-%EC%9C%84%EC%B9%98-%EC%84%A4%EC%A0%95.md) | 로깅 필요 | WEB |
-| [7-6 결제 → 교내 주문 페이지 공학관 위치 설정](7-6-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EB%82%B4-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B3%B5%ED%95%99%EA%B4%80-%EC%9C%84%EC%B9%98-%EC%84%A4%EC%A0%95.md) | 로깅 필요 | WEB |
-| [7-7 결제 → 교내 주문 페이지 기타 지역 위치 설정](7-7-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EB%82%B4-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%ED%83%80-%EC%A7%80%EC%97%AD-%EC%9C%84%EC%B9%98-%EC%84%A4%EC%A0%95.md) | 로깅 필요 | WEB |
-| [7-8 결제 → 교외 주문 페이지 이탈](7-8-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EC%99%B8-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%9D%B4%ED%83%88.md) | 로깅 필요 | WEB |
-| [7-9 결제 → 교외 주문 페이지 주소 검색 클릭(6월 29일 수정)](7-9-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EC%99%B8-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A3%BC%EC%86%8C-%EA%B2%80%EC%83%89-%ED%81%B4%EB%A6%AD%286%EC%9B%94-29%EC%9D%BC-%EC%88%98%EC%A0%95%29.md) | 로깅 필요 | WEB |
-| [7-10 결제 → 교외 주문 페이지 주소 선택 (6월 29일 수정)](7-10-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EC%99%B8-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A3%BC%EC%86%8C-%EC%84%A0%ED%83%9D-%286%EC%9B%94-29%EC%9D%BC-%EC%88%98%EC%A0%95%29.md) | 로깅 필요 | WEB |
-| [7-11 결제 → 교외 주문 페이지 주소 재설정](7-11-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EC%99%B8-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A3%BC%EC%86%8C-%EC%9E%AC%EC%84%A4%EC%A0%95.md) | 로깅 필요 | WEB |
-| [7-12 결제 → 교외 주문 페이지 배달 불가능 지역](7-12-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EC%99%B8-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%B0%EB%8B%AC-%EB%B6%88%EA%B0%80%EB%8A%A5-%EC%A7%80%EC%97%AD.md) | 로깅 필요 | WEB |
-| [7-13 결제 → 교내 및 교외 주문 페이지 기사님 요청사항](7-13-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EB%82%B4-%EB%B0%8F-%EA%B5%90%EC%99%B8-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EC%82%AC%EB%8B%98-%EC%9A%94%EC%B2%AD%EC%82%AC%ED%95%AD.md) | 로깅 필요 | WEB |
-| [7-14 결제 → 교내 및 교외 주문 페이지 주소 선택](7-14-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EB%82%B4-%EB%B0%8F-%EA%B5%90%EC%99%B8-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A3%BC%EC%86%8C-%EC%84%A0%ED%83%9D.md) | 로깅 필요 | WEB |
-| [7-15 결제 페이지 가게 요청사항 클릭](7-15-%EA%B2%B0%EC%A0%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B0%80%EA%B2%8C-%EC%9A%94%EC%B2%AD%EC%82%AC%ED%95%AD-%ED%81%B4%EB%A6%AD.md) | 로깅 필요 | WEB |
-| [7-16 결제 페이지 가게 요청사항 설정](7-16-%EA%B2%B0%EC%A0%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B0%80%EA%B2%8C-%EC%9A%94%EC%B2%AD%EC%82%AC%ED%95%AD-%EC%84%A4%EC%A0%95.md) | 로깅 필요 | WEB |
-| [7-17 결제 페이지 결제 실패 (교외만 배달 가능, 6월 29일 수정)](7-17-%EA%B2%B0%EC%A0%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B2%B0%EC%A0%9C-%EC%8B%A4%ED%8C%A8-%28%EA%B5%90%EC%99%B8%EB%A7%8C-%EB%B0%B0%EB%8B%AC-%EA%B0%80%EB%8A%A5%2C-6%EC%9B%94-29%EC%9D%BC-%EC%88%98%EC%A0%95%29.md) | 로깅 필요 | WEB |
-| [7-18 결제 페이지 결제 실패 (교내만 배달 가능, 6월 29일 수정)](7-18-%EA%B2%B0%EC%A0%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B2%B0%EC%A0%9C-%EC%8B%A4%ED%8C%A8-%28%EA%B5%90%EB%82%B4%EB%A7%8C-%EB%B0%B0%EB%8B%AC-%EA%B0%80%EB%8A%A5%2C-6%EC%9B%94-29%EC%9D%BC-%EC%88%98%EC%A0%95%29.md) | 로깅 필요 | WEB |
-| [8-1 주문 완료 페이지 이탈](8-1-%EC%A3%BC%EB%AC%B8-%EC%99%84%EB%A3%8C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%9D%B4%ED%83%88.md) | 로깅 필요 | WEB |
-| [8-2 주문 완료 페이지 주문 취소하기(6월 29일 수정)](8-2-%EC%A3%BC%EB%AC%B8-%EC%99%84%EB%A3%8C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A3%BC%EB%AC%B8-%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0%286%EC%9B%94-29%EC%9D%BC-%EC%88%98%EC%A0%95%29.md) | 로깅 필요 | WEB |
-| [8-3 주문 완료 페이지 배달 완료](8-3-%EC%A3%BC%EB%AC%B8-%EC%99%84%EB%A3%8C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%B0%EB%8B%AC-%EC%99%84%EB%A3%8C.md) | 로깅 필요 | WEB |
-| [8-4 주문 완료 페이지 배달 미도착 이탈](8-4-%EC%A3%BC%EB%AC%B8-%EC%99%84%EB%A3%8C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%B0%EB%8B%AC-%EB%AF%B8%EB%8F%84%EC%B0%A9-%EC%9D%B4%ED%83%88.md) | 로깅 필요 | WEB |
-| [8-5 주문 완료 페이지 배달 미도착 전화](8-5-%EC%A3%BC%EB%AC%B8-%EC%99%84%EB%A3%8C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%B0%EB%8B%AC-%EB%AF%B8%EB%8F%84%EC%B0%A9-%EC%A0%84%ED%99%94.md) | 로깅 필요 | WEB |
-| [9-1 주문내역 상단 탭](9-1-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EC%83%81%EB%8B%A8-%ED%83%AD.md) | 로깅 필요 | ANDROID · IOS |
-| [9-2 주문내역 검색](9-2-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EA%B2%80%EC%83%89.md) | 로깅 필요 | ANDROID · IOS |
-| [9-3 주문내역 검색창 리뷰쓰기](9-3-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EA%B2%80%EC%83%89%EC%B0%BD-%EB%A6%AC%EB%B7%B0%EC%93%B0%EA%B8%B0.md) | 로깅 필요 | ANDROID · IOS |
-| [9-4 주문내역 검색창 같은 메뉴 담기](9-4-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EA%B2%80%EC%83%89%EC%B0%BD-%EA%B0%99%EC%9D%80-%EB%A9%94%EB%89%B4-%EB%8B%B4%EA%B8%B0.md) | 로깅 필요 | ANDROID · IOS |
-| [9-5 주문내역 필터 적용하기](9-5-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%ED%95%84%ED%84%B0-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.md) | 로깅 필요 | ANDROID · IOS |
-| [9-6 주문내역 리뷰쓰기](9-6-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EB%A6%AC%EB%B7%B0%EC%93%B0%EA%B8%B0.md) | 로깅 필요 | ANDROID · IOS |
-| [9-7 주문내역 같은 메뉴 담기](9-7-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EA%B0%99%EC%9D%80-%EB%A9%94%EB%89%B4-%EB%8B%B4%EA%B8%B0.md) | 로깅 필요 | ANDROID · IOS |
-| [9-8 주문내역 준비 중 주문 상세보기](9-8-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EC%A4%80%EB%B9%84-%EC%A4%91-%EC%A3%BC%EB%AC%B8-%EC%83%81%EC%84%B8%EB%B3%B4%EA%B8%B0.md) | 로깅 필요 | ANDROID · IOS |
-| [9-9 주문내역 장바구니 진입](9-9-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%A7%84%EC%9E%85.md) | 로깅 필요 | ANDROID · IOS |
-| [9-10 주문내역 이탈](9-10-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EC%9D%B4%ED%83%88.md) | 로깅 필요 | ANDROID · IOS |
+| [1-1 메인 → 상점 카테고리 (클릭) ](1-1-%EB%A9%94%EC%9D%B8-%E2%86%92-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%28%ED%81%B4%EB%A6%AD%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/7430221954bc8355af8801c7b7a85722) |
+| [1-2 햄버거 → 상점 카테고리 (클릭)](1-2-%ED%96%84%EB%B2%84%EA%B1%B0-%E2%86%92-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%28%ED%81%B4%EB%A6%AD%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/fe60221954bc8320b69981c821e4d5d3) |
+| [1-3 헤더 → 주변상점 (클릭)](1-3-%ED%97%A4%EB%8D%94-%E2%86%92-%EC%A3%BC%EB%B3%80%EC%83%81%EC%A0%90-%28%ED%81%B4%EB%A6%AD%29.md) | WEB | [원문](https://app.notion.com/p/1270221954bc823196fa012d030bbff1) |
+| [1-4 푸터 → 주변상점 (클릭) ](1-4-%ED%91%B8%ED%84%B0-%E2%86%92-%EC%A3%BC%EB%B3%80%EC%83%81%EC%A0%90-%28%ED%81%B4%EB%A6%AD%29.md) | WEB | [원문](https://app.notion.com/p/4570221954bc83319eb601a66290fdaa) |
+| [2-1 상점 카테고리 → 상점 카테고리 (클릭) ](2-1-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%28%ED%81%B4%EB%A6%AD%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/3860221954bc82a690c981afe39600b2) |
+| [2-14 상점 카테고리 최소주문금액 설정](2-14-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%B5%9C%EC%86%8C%EC%A3%BC%EB%AC%B8%EA%B8%88%EC%95%A1-%EC%84%A4%EC%A0%95.md) | ANDROID, IOS | [원문](https://app.notion.com/p/c8e0221954bc8225b72e0171c8c9fc95) |
+| [2-15 상점 카테고리 → 홈](2-15-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%ED%99%88.md) | ANDROID, IOS | [원문](https://app.notion.com/p/bba0221954bc82419e87811df7e73f68) |
+| [2-16 상점 카테고리 → 주변상점](2-16-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%EC%A3%BC%EB%B3%80%EC%83%81%EC%A0%90.md) | ANDROID, IOS | [원문](https://app.notion.com/p/60e0221954bc83f6938481532c7e8372) |
+| [2-17 상점 카테고리 → 주문내역](2-17-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/0d30221954bc833e9c608116495e140b) |
+| [2-18 상점 카테고리 이탈](2-18-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%9D%B4%ED%83%88.md) | ANDROID, IOS | [원문](https://app.notion.com/p/c1e0221954bc83d8ace401d2436a8b79) |
+| [2-19 상점 카테고리 → 플로팅 바](2-19-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%ED%94%8C%EB%A1%9C%ED%8C%85-%EB%B0%94.md) |  | [원문](https://app.notion.com/p/a480221954bc8311b1c4014e6867acd2) |
+| [2-2 상점 카테고리 (스크롤)](2-2-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%28%EC%8A%A4%ED%81%AC%EB%A1%A4%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/0390221954bc827e8e87818ced3bf498) |
+| [2-3 상점카테고리 이벤트 (클릭) ](2-3-%EC%83%81%EC%A0%90%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%28%ED%81%B4%EB%A6%AD%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/55a0221954bc82c8b8be012d94505674) |
+| [2-4 상점카테고리 검색 (클릭) ](2-4-%EC%83%81%EC%A0%90%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EA%B2%80%EC%83%89-%28%ED%81%B4%EB%A6%AD%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/4a60221954bc8219894681eef86cef5e) |
+| [2-5 상점 카테고리 → 카트](2-5-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%EC%B9%B4%ED%8A%B8.md) | ANDROID, IOS | [원문](https://app.notion.com/p/4410221954bc83b0ae1801cc24e9128e) |
+| [2-6~8 상점 카테고리 정렬 ](2-6~8-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%A0%95%EB%A0%AC.md) | ANDROID, IOS | [원문](https://app.notion.com/p/38c0221954bc83c8983d01e94bcc5348) |
+| [2-9 ~ 13 상점 카테고리 필터](2-9-~-13-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%ED%95%84%ED%84%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/c540221954bc837f8f0681ae8c90ffe3) |
+| [3-1 메뉴추가 ](3-1-%EB%A9%94%EB%89%B4%EC%B6%94%EA%B0%80.md) | WEB | [원문](https://app.notion.com/p/f780221954bc835c95bf0173fe7c659b) |
+| [3-1 상점 카테고리 → 상점상세 (클릭) ](3-1-%EC%83%81%EC%A0%90-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%28%ED%81%B4%EB%A6%AD%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/4280221954bc833a8e9c014068363aa4) |
+| [3-10 메뉴 선택 후 카트 클릭](3-10-%EB%A9%94%EB%89%B4-%EC%84%A0%ED%83%9D-%ED%9B%84-%EC%B9%B4%ED%8A%B8-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/d690221954bc827ea31101beccf7dbf2) |
+| [3-11 메뉴 선택 후 카트 추가 클릭](3-11-%EB%A9%94%EB%89%B4-%EC%84%A0%ED%83%9D-%ED%9B%84-%EC%B9%B4%ED%8A%B8-%EC%B6%94%EA%B0%80-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/3290221954bc83c3b03c016d7df65751) |
+| [3-12 영업시간으로 인한 카트 추가 실패](3-12-%EC%98%81%EC%97%85%EC%8B%9C%EA%B0%84%EC%9C%BC%EB%A1%9C-%EC%9D%B8%ED%95%9C-%EC%B9%B4%ED%8A%B8-%EC%B6%94%EA%B0%80-%EC%8B%A4%ED%8C%A8.md) | ANDROID, IOS | [원문](https://app.notion.com/p/f050221954bc832f81ad810328120777) |
+| [3-13 다른 가게 메뉴로 인한 카트 추가 실패](3-13-%EB%8B%A4%EB%A5%B8-%EA%B0%80%EA%B2%8C-%EB%A9%94%EB%89%B4%EB%A1%9C-%EC%9D%B8%ED%95%9C-%EC%B9%B4%ED%8A%B8-%EC%B6%94%EA%B0%80-%EC%8B%A4%ED%8C%A8.md) | ANDROID, IOS | [원문](https://app.notion.com/p/f1a0221954bc82e086eb01941167f525) |
+| [3-2 메뉴추가 - 확인](3-2-%EB%A9%94%EB%89%B4%EC%B6%94%EA%B0%80-%ED%99%95%EC%9D%B8.md) | WEB | [원문](https://app.notion.com/p/a210221954bc837c911f81fc08b40e67) |
+| [3-2 상점상세 사진 슬라이드](3-2-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EC%82%AC%EC%A7%84-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C.md) | ANDROID, IOS | [원문](https://app.notion.com/p/db10221954bc827e876e0101f434ee33) |
+| [3-3 메뉴추가 - 취소](3-3-%EB%A9%94%EB%89%B4%EC%B6%94%EA%B0%80-%EC%B7%A8%EC%86%8C.md) | WEB | [원문](https://app.notion.com/p/c630221954bc83ebabc80192455be066) |
+| [3-3-1, 3-3-2 상점상세 메뉴 (클릭,스크롤) ](3-3-1%2C-3-3-2-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A9%94%EB%89%B4-%28%ED%81%B4%EB%A6%AD%2C%EC%8A%A4%ED%81%AC%EB%A1%A4%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/a3c0221954bc8223b9708121c5bb1e63) |
+| [3-4 메뉴추가 - 메뉴사진](3-4-%EB%A9%94%EB%89%B4%EC%B6%94%EA%B0%80-%EB%A9%94%EB%89%B4%EC%82%AC%EC%A7%84.md) | WEB | [원문](https://app.notion.com/p/3760221954bc83a6aade0134fb3d758b) |
+| [3-4-1, 3-4-2 상점상세 뒤로 가기 ](3-4-1%2C-3-4-2-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%92%A4%EB%A1%9C-%EA%B0%80%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/fdf0221954bc82349b82010d993caf12) |
+| [3-5 상점상세 상점정보](3-5-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EC%83%81%EC%A0%90%EC%A0%95%EB%B3%B4.md) | ANDROID, IOS | [원문](https://app.notion.com/p/6f20221954bc8359b9fb01e2c4a4c384) |
+| [3-6 상점상세 카트 클릭(상단)](3-6-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EC%B9%B4%ED%8A%B8-%ED%81%B4%EB%A6%AD%28%EC%83%81%EB%8B%A8%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/fa20221954bc826084dd81c800e20643) |
+| [3-7 상점상세 카트 클릭(하단)](3-7-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EC%B9%B4%ED%8A%B8-%ED%81%B4%EB%A6%AD%28%ED%95%98%EB%8B%A8%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/9310221954bc82fd96d1017ac37f7076) |
+| [3-8 상점상세 가게정보 카트 클릭](3-8-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EA%B0%80%EA%B2%8C%EC%A0%95%EB%B3%B4-%EC%B9%B4%ED%8A%B8-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/27b0221954bc8295b4c301e3fbd4b803) |
+| [3-9-1, 3-9-2 메뉴 선택 후 뒤로 가기](3-9-1%2C-3-9-2-%EB%A9%94%EB%89%B4-%EC%84%A0%ED%83%9D-%ED%9B%84-%EB%92%A4%EB%A1%9C-%EA%B0%80%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/5b30221954bc826096d28198237425ea) |
+| [4-1 전화 주문 혜택 클릭 (메인 페이지)](4-1-%EC%A0%84%ED%99%94-%EC%A3%BC%EB%AC%B8-%ED%98%9C%ED%83%9D-%ED%81%B4%EB%A6%AD-%28%EB%A9%94%EC%9D%B8-%ED%8E%98%EC%9D%B4%EC%A7%80%29.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/1570221954bc82f6b35881982f11f1b1) |
+| [4-2 전화 주문 혜택 페이지 버튼 → 버튼 ](4-2-%EC%A0%84%ED%99%94-%EC%A3%BC%EB%AC%B8-%ED%98%9C%ED%83%9D-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B2%84%ED%8A%BC-%E2%86%92-%EB%B2%84%ED%8A%BC.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/fce0221954bc832bbcb9012c9a587eba) |
+| [4-3 카테고리에서 혜택페이지(클릭) ](4-3-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EC%97%90%EC%84%9C-%ED%98%9C%ED%83%9D%ED%8E%98%EC%9D%B4%EC%A7%80%28%ED%81%B4%EB%A6%AD%29.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/fe30221954bc821eb67001b9ed75e429) |
+| [4-4 전화 주문 혜택 상점상세 페이지(클릭)](4-4-%EC%A0%84%ED%99%94-%EC%A3%BC%EB%AC%B8-%ED%98%9C%ED%83%9D-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%ED%8E%98%EC%9D%B4%EC%A7%80%28%ED%81%B4%EB%A6%AD%29.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/2f20221954bc827d8d7e81d0ac3602e1) |
+| [4-5 전화 주문 혜택 상점상세 전화 (클릭) ](4-5-%EC%A0%84%ED%99%94-%EC%A3%BC%EB%AC%B8-%ED%98%9C%ED%83%9D-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EC%A0%84%ED%99%94-%28%ED%81%B4%EB%A6%AD%29.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/62e0221954bc82ea908f01d75e6836e6) |
+| [5-1 상점상세 리뷰 (클릭) ](5-1-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%28%ED%81%B4%EB%A6%AD%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/bc30221954bc82168e5b01cd5b2f5fb1) |
+| [5-2 상점상세 리뷰 (스크롤) ](5-2-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%28%EC%8A%A4%ED%81%AC%EB%A1%A4%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/0c20221954bc83459b3301984cd87745) |
+| [5-3 상점상세 리뷰 작성 들어간 후 작성하기 (클릭)  ](5-3-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%EC%9E%91%EC%84%B1-%EB%93%A4%EC%96%B4%EA%B0%84-%ED%9B%84-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0-%28%ED%81%B4%EB%A6%AD%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/0730221954bc834b8e82818e0e27cd86) |
+| [5-4 상점상세 리뷰 신고 (클릭) ](5-4-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%EC%8B%A0%EA%B3%A0-%28%ED%81%B4%EB%A6%AD%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/3b70221954bc82ae83d281c8996af1a6) |
+| [5-5 상점상세 리뷰 탭 탈출 ](5-5-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%ED%83%AD-%ED%83%88%EC%B6%9C.md) | ANDROID, IOS | [원문](https://app.notion.com/p/3140221954bc8275995c01402a49717b) |
+| [5-6 상점상세 리뷰 삭제하기  (클릭) ](5-6-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0-%28%ED%81%B4%EB%A6%AD%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/bc70221954bc8236b60201eaf28091a2) |
+| [5-7 상점상세 리뷰 최종삭제하기  (클릭) ](5-7-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%EC%B5%9C%EC%A2%85%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0-%28%ED%81%B4%EB%A6%AD%29.md) | ANDROID, IOS | [원문](https://app.notion.com/p/efd0221954bc833094d6010a964dd6ed) |
+| [5-8 상점상세 리뷰 정렬](5-8-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EB%A6%AC%EB%B7%B0-%EC%A0%95%EB%A0%AC.md) | ANDROID, IOS | [원문](https://app.notion.com/p/8520221954bc83c1913c81a365c49a79) |
+| [6-1 장바구니 진입 후 뒤로가기](6-1-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%A7%84%EC%9E%85-%ED%9B%84-%EB%92%A4%EB%A1%9C%EA%B0%80%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/8320221954bc826cbbed01e1e9d05795) |
+| [6-10 장바구니 더 담으러가기 ](6-10-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EB%8D%94-%EB%8B%B4%EC%9C%BC%EB%9F%AC%EA%B0%80%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/e470221954bc82699985011a6f4bec02) |
+| [6-11 장바구니 주문하기 ](6-11-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%A3%BC%EB%AC%B8%ED%95%98%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/acc0221954bc838aab87814945917c5b) |
+| [6-12 장바구니 주문하기 실패](6-12-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%A3%BC%EB%AC%B8%ED%95%98%EA%B8%B0-%EC%8B%A4%ED%8C%A8.md) | ANDROID, IOS | [원문](https://app.notion.com/p/f170221954bc833a9b6a01ac037b0b81) |
+| [6-13 장바구니 비로그인 모달](6-13-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EB%B9%84%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EB%AA%A8%EB%8B%AC.md) | ANDROID, IOS | [원문](https://app.notion.com/p/1700221954bc820a82eb0139f8523390) |
+| [6-2 장바구니 삭제 ](6-2-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%82%AD%EC%A0%9C.md) | ANDROID, IOS | [원문](https://app.notion.com/p/c920221954bc831889d801f74a74cc4d) |
+| [6-3 빈 장바구니 메뉴 추가](6-3-%EB%B9%88-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EB%A9%94%EB%89%B4-%EC%B6%94%EA%B0%80.md) | ANDROID, IOS | [원문](https://app.notion.com/p/6ba0221954bc83feac0301797d116182) |
+| [6-4 장바구니 배달 여부 선택](6-4-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EB%B0%B0%EB%8B%AC-%EC%97%AC%EB%B6%80-%EC%84%A0%ED%83%9D.md) | ANDROID, IOS | [원문](https://app.notion.com/p/1480221954bc820cb47701a5664d66fd) |
+| [6-5 장바구니 포장 여부 선택](6-5-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%ED%8F%AC%EC%9E%A5-%EC%97%AC%EB%B6%80-%EC%84%A0%ED%83%9D.md) | ANDROID, IOS | [원문](https://app.notion.com/p/0500221954bc822ab738810780c45449) |
+| [6-6 장바구니 상점 클릭](6-6-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%83%81%EC%A0%90-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/4150221954bc82cb8dab81afd4397c01) |
+| [6-7 장바구니 옵션 변경](6-7-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%98%B5%EC%85%98-%EB%B3%80%EA%B2%BD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/e690221954bc8293a54b81b5dab2fb69) |
+| [6-8 장바구니 메뉴 수량 추가 ](6-8-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EB%A9%94%EB%89%B4-%EC%88%98%EB%9F%89-%EC%B6%94%EA%B0%80.md) | ANDROID, IOS | [원문](https://app.notion.com/p/a3a0221954bc83f7a16181340b1fea42) |
+| [6-9 장바구니 메뉴 수량 감소](6-9-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EB%A9%94%EB%89%B4-%EC%88%98%EB%9F%89-%EA%B0%90%EC%86%8C.md) | ANDROID, IOS | [원문](https://app.notion.com/p/0d80221954bc82c0a73a8184b61fbe3d) |
+| [7-1 결제 페이지 이탈](7-1-%EA%B2%B0%EC%A0%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%9D%B4%ED%83%88.md) | WEB | [원문](https://app.notion.com/p/1880221954bc8203b5b901d89fcb7e8d) |
+| [7-10 결제 → 교외 주문 페이지 주소 선택 (6월 29일 수정)](7-10-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EC%99%B8-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A3%BC%EC%86%8C-%EC%84%A0%ED%83%9D-%286%EC%9B%94-29%EC%9D%BC-%EC%88%98%EC%A0%95%29.md) | WEB | [원문](https://app.notion.com/p/80d0221954bc83b6b336813201e634e1) |
+| [7-11 결제 → 교외 주문 페이지 주소 재설정](7-11-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EC%99%B8-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A3%BC%EC%86%8C-%EC%9E%AC%EC%84%A4%EC%A0%95.md) | WEB | [원문](https://app.notion.com/p/8c40221954bc837c84fb0145a56c9689) |
+| [7-12 결제 → 교외 주문 페이지 배달 불가능 지역](7-12-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EC%99%B8-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%B0%EB%8B%AC-%EB%B6%88%EA%B0%80%EB%8A%A5-%EC%A7%80%EC%97%AD.md) | WEB | [원문](https://app.notion.com/p/b9c0221954bc83beac62817ebe2b6255) |
+| [7-13 결제 → 교내 및 교외 주문 페이지 기사님 요청사항](7-13-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EB%82%B4-%EB%B0%8F-%EA%B5%90%EC%99%B8-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EC%82%AC%EB%8B%98-%EC%9A%94%EC%B2%AD%EC%82%AC%ED%95%AD.md) | WEB | [원문](https://app.notion.com/p/b0e0221954bc832a8247810a1ff675d4) |
+| [7-14 결제 → 교내 및 교외 주문 페이지 주소 선택](7-14-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EB%82%B4-%EB%B0%8F-%EA%B5%90%EC%99%B8-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A3%BC%EC%86%8C-%EC%84%A0%ED%83%9D.md) | WEB | [원문](https://app.notion.com/p/c660221954bc8256b641019633f7cf75) |
+| [7-15 결제 페이지 가게 요청사항 클릭](7-15-%EA%B2%B0%EC%A0%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B0%80%EA%B2%8C-%EC%9A%94%EC%B2%AD%EC%82%AC%ED%95%AD-%ED%81%B4%EB%A6%AD.md) | WEB | [원문](https://app.notion.com/p/9050221954bc836c95d48194cab36b2d) |
+| [7-16 결제 페이지 가게 요청사항 설정](7-16-%EA%B2%B0%EC%A0%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B0%80%EA%B2%8C-%EC%9A%94%EC%B2%AD%EC%82%AC%ED%95%AD-%EC%84%A4%EC%A0%95.md) | WEB | [원문](https://app.notion.com/p/87c0221954bc82338b520109a5e16358) |
+| [7-17 결제 페이지 결제 실패 (교외만 배달 가능, 6월 29일 수정)](7-17-%EA%B2%B0%EC%A0%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B2%B0%EC%A0%9C-%EC%8B%A4%ED%8C%A8-%28%EA%B5%90%EC%99%B8%EB%A7%8C-%EB%B0%B0%EB%8B%AC-%EA%B0%80%EB%8A%A5%2C-6%EC%9B%94-29%EC%9D%BC-%EC%88%98%EC%A0%95%29.md) | WEB | [원문](https://app.notion.com/p/3ad0221954bc82609471813d5f44d55b) |
+| [7-18 결제 페이지 결제 실패 (교내만 배달 가능, 6월 29일 수정)](7-18-%EA%B2%B0%EC%A0%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B2%B0%EC%A0%9C-%EC%8B%A4%ED%8C%A8-%28%EA%B5%90%EB%82%B4%EB%A7%8C-%EB%B0%B0%EB%8B%AC-%EA%B0%80%EB%8A%A5%2C-6%EC%9B%94-29%EC%9D%BC-%EC%88%98%EC%A0%95%29.md) | WEB | [원문](https://app.notion.com/p/4640221954bc8343b6d5810eb80052f2) |
+| [7-2 결제 페이지 배달 위치 클릭](7-2-%EA%B2%B0%EC%A0%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%B0%EB%8B%AC-%EC%9C%84%EC%B9%98-%ED%81%B4%EB%A6%AD.md) | WEB | [원문](https://app.notion.com/p/18f0221954bc83ea94078136b3ff080d) |
+| [7-3 결제 → 교내 주문 페이지 이탈](7-3-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EB%82%B4-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%9D%B4%ED%83%88.md) | WEB | [원문](https://app.notion.com/p/e400221954bc8377968a010d01ee8e6d) |
+| [7-4 결제 → 교내 주문 페이지 교내 주소 맵 설정](7-4-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EB%82%B4-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B5%90%EB%82%B4-%EC%A3%BC%EC%86%8C-%EB%A7%B5-%EC%84%A4%EC%A0%95.md) | WEB | [원문](https://app.notion.com/p/8a90221954bc82aba7cd81d21f35eaf5) |
+| [7-5 결제 → 교내 주문 페이지 기숙사 위치 설정](7-5-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EB%82%B4-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EC%88%99%EC%82%AC-%EC%9C%84%EC%B9%98-%EC%84%A4%EC%A0%95.md) | WEB | [원문](https://app.notion.com/p/b340221954bc837e91cb010aed991236) |
+| [7-6 결제 → 교내 주문 페이지 공학관 위치 설정](7-6-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EB%82%B4-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B3%B5%ED%95%99%EA%B4%80-%EC%9C%84%EC%B9%98-%EC%84%A4%EC%A0%95.md) | WEB | [원문](https://app.notion.com/p/dee0221954bc822296b981612ab09e37) |
+| [7-7 결제 → 교내 주문 페이지 기타 지역 위치 설정](7-7-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EB%82%B4-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%ED%83%80-%EC%A7%80%EC%97%AD-%EC%9C%84%EC%B9%98-%EC%84%A4%EC%A0%95.md) | WEB | [원문](https://app.notion.com/p/1ab0221954bc82d3846481236db15aab) |
+| [7-8 결제 → 교외 주문 페이지 이탈 ](7-8-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EC%99%B8-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%9D%B4%ED%83%88.md) | WEB | [원문](https://app.notion.com/p/f670221954bc834c9b7f8186dd78339a) |
+| [7-9 결제 → 교외 주문 페이지 주소 검색 클릭(6월 29일 수정)](7-9-%EA%B2%B0%EC%A0%9C-%E2%86%92-%EA%B5%90%EC%99%B8-%EC%A3%BC%EB%AC%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A3%BC%EC%86%8C-%EA%B2%80%EC%83%89-%ED%81%B4%EB%A6%AD%286%EC%9B%94-29%EC%9D%BC-%EC%88%98%EC%A0%95%29.md) | WEB | [원문](https://app.notion.com/p/63e0221954bc83b588b381dc4ad02bfa) |
+| [8-1 주문 완료 페이지 이탈](8-1-%EC%A3%BC%EB%AC%B8-%EC%99%84%EB%A3%8C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%9D%B4%ED%83%88.md) | WEB | [원문](https://app.notion.com/p/e600221954bc82eca50f81c14429b9a7) |
+| [8-2 주문 완료 페이지 주문 취소하기(6월 29일 수정)](8-2-%EC%A3%BC%EB%AC%B8-%EC%99%84%EB%A3%8C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A3%BC%EB%AC%B8-%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0%286%EC%9B%94-29%EC%9D%BC-%EC%88%98%EC%A0%95%29.md) | WEB | [원문](https://app.notion.com/p/4420221954bc8238954a019def3168ea) |
+| [8-3 주문 완료 페이지 배달 완료](8-3-%EC%A3%BC%EB%AC%B8-%EC%99%84%EB%A3%8C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%B0%EB%8B%AC-%EC%99%84%EB%A3%8C.md) | WEB | [원문](https://app.notion.com/p/0250221954bc832b89a781263611ba29) |
+| [8-4 주문 완료 페이지 배달 미도착 이탈](8-4-%EC%A3%BC%EB%AC%B8-%EC%99%84%EB%A3%8C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%B0%EB%8B%AC-%EB%AF%B8%EB%8F%84%EC%B0%A9-%EC%9D%B4%ED%83%88.md) | WEB | [원문](https://app.notion.com/p/8ac0221954bc822d9654012f7b14a5b1) |
+| [8-5 주문 완료 페이지 배달 미도착 전화](8-5-%EC%A3%BC%EB%AC%B8-%EC%99%84%EB%A3%8C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%B0%EB%8B%AC-%EB%AF%B8%EB%8F%84%EC%B0%A9-%EC%A0%84%ED%99%94.md) | WEB | [원문](https://app.notion.com/p/5c40221954bc83b9bbbf0104eb954075) |
+| [9-1 주문내역 상단 탭](9-1-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EC%83%81%EB%8B%A8-%ED%83%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/3770221954bc8219a49a81d33fbca058) |
+| [9-10 주문내역 이탈](9-10-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EC%9D%B4%ED%83%88.md) | ANDROID, IOS | [원문](https://app.notion.com/p/9ed0221954bc820cb15281b00c8b57eb) |
+| [9-2 주문내역 검색](9-2-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EA%B2%80%EC%83%89.md) | ANDROID, IOS | [원문](https://app.notion.com/p/3190221954bc832ba4a1017e066e774d) |
+| [9-3 주문내역 검색창 리뷰쓰기](9-3-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EA%B2%80%EC%83%89%EC%B0%BD-%EB%A6%AC%EB%B7%B0%EC%93%B0%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/f400221954bc831aa44e8128afeea811) |
+| [9-4 주문내역 검색창 같은 메뉴 담기](9-4-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EA%B2%80%EC%83%89%EC%B0%BD-%EA%B0%99%EC%9D%80-%EB%A9%94%EB%89%B4-%EB%8B%B4%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/72e0221954bc8363862181c9cdc03089) |
+| [9-5 주문내역 필터 적용하기](9-5-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%ED%95%84%ED%84%B0-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/50e0221954bc821eab8b01abc0221588) |
+| [9-6 주문내역 리뷰쓰기](9-6-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EB%A6%AC%EB%B7%B0%EC%93%B0%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/5340221954bc823fbc280194bf4206db) |
+| [9-7 주문내역 같은 메뉴 담기](9-7-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EA%B0%99%EC%9D%80-%EB%A9%94%EB%89%B4-%EB%8B%B4%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/90d0221954bc8277a0f3816cab2ede4e) |
+| [9-8 주문내역 준비 중 주문 상세보기 ](9-8-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EC%A4%80%EB%B9%84-%EC%A4%91-%EC%A3%BC%EB%AC%B8-%EC%83%81%EC%84%B8%EB%B3%B4%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/0890221954bc83af95af01a733bfd2f4) |
+| [9-9 주문내역 장바구니 진입](9-9-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%A7%84%EC%9E%85.md) | ANDROID, IOS | [원문](https://app.notion.com/p/de10221954bc82a694eb0193a4bf7c07) |
+| [해결 (1)](%ED%95%B4%EA%B2%B0-%281%29-fb602219.md) |  | [원문](https://app.notion.com/p/4030221954bc8390a35281f0c4b348b1) |
 
-## 참고 문서
+## 본문이 없는 Notion 항목
 
-- [해결](%ED%95%B4%EA%B2%B0.md)
-- [해결 (1)](%ED%95%B4%EA%B2%B0-%281%29.md)
-- [해결 (1)](%ED%95%B4%EA%B2%B0-%281%29-fb602219.md)
-- [해결 (1)](%ED%95%B4%EA%B2%B0-%281%29-7e702219.md)
-- [해결 (1)](%ED%95%B4%EA%B2%B0-%281%29-21d02219.md)
+로깅 계약으로 추정하지 않고 원문 링크만 보존합니다.
 
-과거 Event Log 전체·템플릿·빈 페이지·수집 검증 기록은 [보존 자료](../../_archive/README.md)에서 확인할 수 있습니다.
+- [7-30 ~ 결제 수단 (확정 시 명세)](https://app.notion.com/p/1d40221954bc83e3bf25817045b9a75e)
+- [7-31 ~  결제 페이지 동의 클릭  (동의 페이지 확정시 명세)](https://app.notion.com/p/9150221954bc82c1926201a3dde71a4d)
+- [새 페이지](https://app.notion.com/p/37c0221954bc82e7a49601a906330dc8)
+- [새 페이지](https://app.notion.com/p/fd40221954bc82efa9c481378146ad70)
+- [새 페이지](https://app.notion.com/p/8440221954bc821fbbce814412789ef7)
+- [새 페이지](https://app.notion.com/p/a6f0221954bc82a5bb18818418529729)
+- [새 페이지](https://app.notion.com/p/04f0221954bc83beabde81be25f52793)

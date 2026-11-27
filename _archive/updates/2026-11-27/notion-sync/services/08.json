@@ -1,0 +1,546 @@
+{
+  "service": "홈화면 리디자인",
+  "pages": [
+    {
+      "notion_id": "0f20221954bc836fb2c10178919a2a43",
+      "service": "홈화면 리디자인",
+      "title": "1-1 알림 클릭",
+      "path": "event-log/10-홈화면-리디자인/1-1-알림-클릭.md",
+      "notion_url": "https://app.notion.com/p/0f20221954bc836fb2c10178919a2a43",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:47.390Z",
+      "source_body_sha256": "92f4e9f5bf3e3b19bcaebd154c88cdd31dd9539ae0d4878f0771efb4072c59be",
+      "output_sha256": "38b5bfc702fcf141b2974d8e3db743cabd430ee381e9b5e74caac75c52668d2f",
+      "image_ids": [
+        "64e2648b-0ebe-4136-a828-bffb9e9093a7",
+        "bf716a3b-7cc4-499b-b215-95d36a4ec577"
+      ]
+    },
+    {
+      "notion_id": "b2e0221954bc8234869c0157e41a0f06",
+      "service": "홈화면 리디자인",
+      "title": "1-10 많이 찾는 상점 둘러보기 클릭",
+      "path": "event-log/10-홈화면-리디자인/1-10-많이-찾는-상점-둘러보기-클릭.md",
+      "notion_url": "https://app.notion.com/p/b2e0221954bc8234869c0157e41a0f06",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:48.643Z",
+      "source_body_sha256": "0165d8990835414fea0052eea536631ed0b32697d7d7cc3383403580ad766d7e",
+      "output_sha256": "546aab4142e406fbfb15fd34b051fe20cf1b33dbe2710e79564bc05e61098291",
+      "image_ids": [
+        "72d2a3f5-d3e4-4502-bfb3-3a1262ec51e2",
+        "4f770787-561e-4698-84d0-13eac4c89e37"
+      ]
+    },
+    {
+      "notion_id": "ba90221954bc83d2b27301fe44d60405",
+      "service": "홈화면 리디자인",
+      "title": "1-13 고정 배너 하단 점 선택",
+      "path": "event-log/10-홈화면-리디자인/1-13-고정-배너-하단-점-선택.md",
+      "notion_url": "https://app.notion.com/p/ba90221954bc83d2b27301fe44d60405",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:50.805Z",
+      "source_body_sha256": "dc3239f3f72d4292a670a9bc2eceacb7b0b3607b9d9161830cc8a3e082532e9c",
+      "output_sha256": "a05f33a54360113b05e1d2298903f1c1f2190735dfb97cfe7e9228b0a8947034",
+      "image_ids": [
+        "01f1207c-38e1-45d6-8257-aaad220ba818"
+      ]
+    },
+    {
+      "notion_id": "4fe0221954bc836e824c016c36ef659d",
+      "service": "홈화면 리디자인",
+      "title": "1-2 알림 클릭 내부",
+      "path": "event-log/10-홈화면-리디자인/1-2-알림-클릭-내부.md",
+      "notion_url": "https://app.notion.com/p/4fe0221954bc836e824c016c36ef659d",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:47.444Z",
+      "source_body_sha256": "43e632f84d6ac7dfa664d9157fc40441458b556edb496f7b4a287031c64a8987",
+      "output_sha256": "7b1cfd559465831ea9056cca7dd9de8957efc80ad36af630eab3833364821be9",
+      "image_ids": [
+        "05cec8d5-7322-495a-9009-e1113a8ed446"
+      ]
+    },
+    {
+      "notion_id": "3c60221954bc8340b26181442675cd08",
+      "service": "홈화면 리디자인",
+      "title": "1-2-1 알림 클릭 내부",
+      "path": "event-log/10-홈화면-리디자인/1-2-1-알림-클릭-내부.md",
+      "notion_url": "https://app.notion.com/p/3c60221954bc8340b26181442675cd08",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:47.502Z",
+      "source_body_sha256": "38b60a97818de1caaa347c91d70e51ba226e6095084862e49a5959a99c1d8c6e",
+      "output_sha256": "70b3c7327ca8ede22c0ef70311b4b2cf6328a2c4251e115b6aec203d30e0ab5b",
+      "image_ids": [
+        "7ebd76de-07e1-4f6b-8434-a6ed3b664b8f"
+      ]
+    },
+    {
+      "notion_id": "9090221954bc8323811b81a79ba224d3",
+      "service": "홈화면 리디자인",
+      "title": "1-2-2 알림 클릭 내부 ",
+      "path": "event-log/10-홈화면-리디자인/1-2-2-알림-클릭-내부.md",
+      "notion_url": "https://app.notion.com/p/9090221954bc8323811b81a79ba224d3",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:47.565Z",
+      "source_body_sha256": "1627d583e6c40c707b9a121b51c33aaffb679619b794c97c96f0f39223511e1c",
+      "output_sha256": "e0d52e4b9648fce7c1576989be743b7a0214e69a13bdc24f4a131567142f7239",
+      "image_ids": [
+        "bbd821f0-8311-4412-a2d9-d7d8220abaec",
+        "0b2944e3-4a8d-4044-929e-82adf75d468a"
+      ]
+    },
+    {
+      "notion_id": "1900221954bc83fc825c011c5fbaad93",
+      "service": "홈화면 리디자인",
+      "title": "1-3 메인 식단 진입 클릭",
+      "path": "event-log/10-홈화면-리디자인/1-3-메인-식단-진입-클릭.md",
+      "notion_url": "https://app.notion.com/p/1900221954bc83fc825c011c5fbaad93",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB (모바일)"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:47.628Z",
+      "source_body_sha256": "8645fbc3d052a25aaffef2c84ce9de5a0031bb77186e48fb389cfe50aba9a7f9",
+      "output_sha256": "ca6dc4f2e738d46a63c8b0388e66f6d20341a350d2b4616ab113259dca73cda1",
+      "image_ids": [
+        "9a1c9a55-acae-4b0b-8845-7361352a2c78",
+        "0d1846c1-775c-4031-ba5c-b8719ea2967d",
+        "10fa510e-7c5d-41ae-bfd3-8e777060b3fd",
+        "5f404884-708c-40b4-8e16-7ea24f0c2646",
+        "ffbb15a9-097c-4fd8-a33a-cd480f43adfe",
+        "10fa510e-7c5d-41ae-bfd3-8e777060b3fd",
+        "193b3373-4cfd-4f1d-9867-35d923cbe136",
+        "5f404884-708c-40b4-8e16-7ea24f0c2646"
+      ]
+    },
+    {
+      "notion_id": "bc00221954bc83aba6ff816a73420376",
+      "service": "홈화면 리디자인",
+      "title": "1-4 식단 코너 클릭",
+      "path": "event-log/10-홈화면-리디자인/1-4-식단-코너-클릭.md",
+      "notion_url": "https://app.notion.com/p/bc00221954bc83aba6ff816a73420376",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:48.786Z",
+      "source_body_sha256": "95a1e3b063191c39e39abcbfe05acb677917074a2fe6dcc6964373fa3b40fb0e",
+      "output_sha256": "98577b36e1fbc47ea7eaefaf9762d791d4a9dab4431367f1fcd72bea622f0b36",
+      "image_ids": [
+        "e977bd1b-9c6f-46d2-b53e-fab7a0a63cab",
+        "4206fe2b-8fdf-4ce1-8279-0ab252c2c387",
+        "34f5664d-324f-4e74-b02e-28c891470e3e"
+      ]
+    },
+    {
+      "notion_id": "5cf0221954bc8356b2b981d586d648af",
+      "service": "홈화면 리디자인",
+      "title": "1-5 서틀 탑승권 클릭",
+      "path": "event-log/10-홈화면-리디자인/1-5-서틀-탑승권-클릭.md",
+      "notion_url": "https://app.notion.com/p/5cf0221954bc8356b2b981d586d648af",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB (모바일)"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:48.851Z",
+      "source_body_sha256": "c62e7b0aebc52b710caaf9263b62b6c768b19c3741c0e51efffc0fa83a060642",
+      "output_sha256": "a105b8a42a5f6beadb96aee30d0aea732b70b76d3546857e22d690b2966b38e6",
+      "image_ids": [
+        "826359a7-4eb7-4635-972d-8009fa022b96",
+        "74e86a9b-9c06-4c95-af21-930763a8c6a5"
+      ]
+    },
+    {
+      "notion_id": "5440221954bc8223842101bfb898159a",
+      "service": "홈화면 리디자인",
+      "title": "1-6 콜벤팟 모집 보기 클릭",
+      "path": "event-log/10-홈화면-리디자인/1-6-콜벤팟-모집-보기-클릭.md",
+      "notion_url": "https://app.notion.com/p/5440221954bc8223842101bfb898159a",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:48.195Z",
+      "source_body_sha256": "fa0bb8521fb9c0a772284d3d5ec4946b7da987dd9eacbe389f423f2f18ebf1b9",
+      "output_sha256": "7a38fce91c95c470daf5181a711ca979cea005149e190e70f2430bfe809cbe04",
+      "image_ids": [
+        "aaab6ebd-823f-4520-b4ea-803730898098",
+        "07a085aa-7835-4511-8dd2-b195e0fb5cba"
+      ]
+    },
+    {
+      "notion_id": "e0b0221954bc8353b2dd011d65ad586e",
+      "service": "홈화면 리디자인",
+      "title": "1-7 버스 시간표 클릭",
+      "path": "event-log/10-홈화면-리디자인/1-7-버스-시간표-클릭.md",
+      "notion_url": "https://app.notion.com/p/e0b0221954bc8353b2dd011d65ad586e",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:48.296Z",
+      "source_body_sha256": "a23266dba024c5da9b04cbd70533fc13fca26f752535dc0f13f410b06a73dd34",
+      "output_sha256": "703dd9d6c02f34a432947f5f2f5fe96a9917fe11c421a1c579a5d2981e2b55df",
+      "image_ids": [
+        "2336a499-75a2-4727-816e-e96d1d9cc106",
+        "0618655c-93a1-4167-9fe3-3d8e85e4d346",
+        "ca6eca1b-81d1-4e92-a72c-fa91a8e6ae1d"
+      ]
+    },
+    {
+      "notion_id": "93c0221954bc82a5b20701ce5f75c697",
+      "service": "홈화면 리디자인",
+      "title": "1-8 버스 노선 클릭",
+      "path": "event-log/10-홈화면-리디자인/1-8-버스-노선-클릭.md",
+      "notion_url": "https://app.notion.com/p/93c0221954bc82a5b20701ce5f75c697",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:48.394Z",
+      "source_body_sha256": "47ab0be4b5dca0f5b0cee012a071ca76b8b9cfaa88e6e1f07927b7cc171f7164",
+      "output_sha256": "3864943a10dbc2dbb0246e181af95975993db283c1b0686c844a9b5ddfdbcd74",
+      "image_ids": [
+        "4cde986f-4abe-4a91-b268-3bc47c19371f",
+        "7e2551e6-af41-460a-a651-af79d5c6abce",
+        "11d49ba4-2e27-45bd-90eb-e3dc65e01906"
+      ]
+    },
+    {
+      "notion_id": "a3a0221954bc839dab9e01d137ff675f",
+      "service": "홈화면 리디자인",
+      "title": "1-9 주변 상점 전체보기 클릭",
+      "path": "event-log/10-홈화면-리디자인/1-9-주변-상점-전체보기-클릭.md",
+      "notion_url": "https://app.notion.com/p/a3a0221954bc839dab9e01d137ff675f",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:48.483Z",
+      "source_body_sha256": "9051fc207ae1f756730235565b091c51d02f56c67918c37525ad7b02576ed958",
+      "output_sha256": "9f6753cdfcf311f38bfea4412a885825c330cdd18dc467643646cee15ee580ad",
+      "image_ids": [
+        "c88e10b4-2b4e-44f7-8652-7c103a2a92f6",
+        "dfe05c2c-f5e4-46da-9adf-8b28c88dac00"
+      ]
+    },
+    {
+      "notion_id": "fff0221954bc836ca4ba8132a790122d",
+      "service": "홈화면 리디자인",
+      "title": "2-1 네비게이션 바 홈 클릭 ",
+      "path": "event-log/10-홈화면-리디자인/2-1-네비게이션-바-홈-클릭.md",
+      "notion_url": "https://app.notion.com/p/fff0221954bc836ca4ba8132a790122d",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB (모바일)"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:48.947Z",
+      "source_body_sha256": "ef1af84b3e4d48ba97594694db3896091dabb36cb445d4a4a14a6784c37e5111",
+      "output_sha256": "795a8c6ed7a5927ad813a32a36f4f5e97254e8886a55ba8b0e2376d60cc66bdb",
+      "image_ids": [
+        "1f70b942-ce9b-4b05-8247-a520adf839aa"
+      ]
+    },
+    {
+      "notion_id": "eb80221954bc837a94aa81ae2d1fddaf",
+      "service": "홈화면 리디자인",
+      "title": "2-2 네비게이션 바 카테고리 클릭",
+      "path": "event-log/10-홈화면-리디자인/2-2-네비게이션-바-카테고리-클릭.md",
+      "notion_url": "https://app.notion.com/p/eb80221954bc837a94aa81ae2d1fddaf",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB (모바일)"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:50.576Z",
+      "source_body_sha256": "5f9e6561907ad2f13fd771f4b14edc58725ef604a6431f30e88c7e08d1cd44df",
+      "output_sha256": "89c326c6aef2a4550c0d299286e28d72150db15cd24df657ec78e751e1baaa62",
+      "image_ids": [
+        "a8287f4c-d3c3-4129-a294-0f61d789ea64"
+      ]
+    },
+    {
+      "notion_id": "8d80221954bc823d8ff78144ad5d2c41",
+      "service": "홈화면 리디자인",
+      "title": "2-3 네비게이션 바 게시판 클릭",
+      "path": "event-log/10-홈화면-리디자인/2-3-네비게이션-바-게시판-클릭.md",
+      "notion_url": "https://app.notion.com/p/8d80221954bc823d8ff78144ad5d2c41",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB (모바일)"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:50.966Z",
+      "source_body_sha256": "9906ee83a06111b54725e119bd1757f36486c9eb03af68fc00c77587c2a837dd",
+      "output_sha256": "0f1cde54700083a922779139a05f4f7ddb3bb930eda94a793fbfde51d1a6f79e",
+      "image_ids": [
+        "7dd9561c-0e3e-437e-881e-83a8f31793cc",
+        "dc2547da-06ee-4fdc-bf1d-0f41910afbf4"
+      ]
+    },
+    {
+      "notion_id": "b5f0221954bc83069b5481456aaacab0",
+      "service": "홈화면 리디자인",
+      "title": "2-4 네비게이션 바 프로필 클릭",
+      "path": "event-log/10-홈화면-리디자인/2-4-네비게이션-바-프로필-클릭.md",
+      "notion_url": "https://app.notion.com/p/b5f0221954bc83069b5481456aaacab0",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB (모바일)"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:51.365Z",
+      "source_body_sha256": "1d622da0a0c5c7823662820012c4afc002ea91b3ee43a941b52ac210a316176c",
+      "output_sha256": "9bff3db9bb05290b5024d42f2674724501bcdc6d1e8b6f7904c328cf9e1ac2d4",
+      "image_ids": [
+        "7267c7ea-f112-4f4e-be39-6442ed1d97c1"
+      ]
+    },
+    {
+      "notion_id": "1780221954bc82378a5f010ff53328c5",
+      "service": "홈화면 리디자인",
+      "title": "3-1 시간표 클릭 (과거 로깅) 2026.08.30 이후 로깅 중단",
+      "path": "event-log/10-홈화면-리디자인/3-1-시간표-클릭-(과거-로깅)-2026.08.30-이후-로깅-중단.md",
+      "notion_url": "https://app.notion.com/p/1780221954bc82378a5f010ff53328c5",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:51.489Z",
+      "source_body_sha256": "79a9a96de0707225240a8171aa8e2c5f0f9924c04093a66bf28bb414e714485d",
+      "output_sha256": "569b0d425912ec43d2f592ca3d7cd72b021702b65c557eb9703d3d332dd9ece0",
+      "image_ids": [
+        "a733fcb6-4ccc-4181-acdb-27a64014b434"
+      ]
+    },
+    {
+      "notion_id": "e300221954bc8315afa68198943793a9",
+      "service": "홈화면 리디자인",
+      "title": "3-2 분실물 클릭 (과거 로깅) 2026.08.30 이후 로깅 중단",
+      "path": "event-log/10-홈화면-리디자인/3-2-분실물-클릭-(과거-로깅)-2026.08.30-이후-로깅-중단.md",
+      "notion_url": "https://app.notion.com/p/e300221954bc8315afa68198943793a9",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:48.181Z",
+      "source_body_sha256": "4f80741500ce996cdf98f66b22f389a8042f46dde0441dbbe28ef5d87d3221ce",
+      "output_sha256": "f3324c85f0ea264d561ff09935e14bd08abf59059aad6b1b60a7decb098ceb16",
+      "image_ids": [
+        "69b4b719-036c-4f37-908c-4a8adac22c3e"
+      ]
+    },
+    {
+      "notion_id": "aba0221954bc82b6b9f3010bb8906080",
+      "service": "홈화면 리디자인",
+      "title": "3-3 캠퍼스 부분 세부기능 클릭 (과거 로깅) 2026.08.30 이후 로깅 중단",
+      "path": "event-log/10-홈화면-리디자인/3-3-캠퍼스-부분-세부기능-클릭-(과거-로깅)-2026.08.30-이후-로깅-중단.md",
+      "notion_url": "https://app.notion.com/p/aba0221954bc82b6b9f3010bb8906080",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:48.258Z",
+      "source_body_sha256": "c0b5cc0a3835ce3c5df941a6770b8596c9c5d780db5aac1d4f70b303e4820cfe",
+      "output_sha256": "77b082cd06ff336ce815f02fecd52622e2042cde8461d7918f69a82a13108a09",
+      "image_ids": [
+        "183db4b9-d3f1-4662-84e0-d69d45f8c299"
+      ]
+    },
+    {
+      "notion_id": "38e0221954bc83288ed901f62ce45614",
+      "service": "홈화면 리디자인",
+      "title": "3-4 교통 부분 세부기능 클릭 (과거 로깅) 2026.08.30 이후 로깅 중단",
+      "path": "event-log/10-홈화면-리디자인/3-4-교통-부분-세부기능-클릭-(과거-로깅)-2026.08.30-이후-로깅-중단.md",
+      "notion_url": "https://app.notion.com/p/38e0221954bc83288ed901f62ce45614",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:48.329Z",
+      "source_body_sha256": "177b05aee1d4535bb675d78bc3a58dcc740d8079c3281f3814dfbd8fd7ef081a",
+      "output_sha256": "68c5fe20a9167f3612e52c820680a80eb1bbd44705bcee0e40a72d8fb6fece03",
+      "image_ids": [
+        "7fc58235-80d3-478d-ae08-c4a73f4fca75"
+      ]
+    },
+    {
+      "notion_id": "1580221954bc8207965101bc12ce0e12",
+      "service": "홈화면 리디자인",
+      "title": "3-5 기타 부분 세부기능 클릭 (과거 로깅) 2026.08.30 이후 로깅 중단",
+      "path": "event-log/10-홈화면-리디자인/3-5-기타-부분-세부기능-클릭-(과거-로깅)-2026.08.30-이후-로깅-중단.md",
+      "notion_url": "https://app.notion.com/p/1580221954bc8207965101bc12ce0e12",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:48.422Z",
+      "source_body_sha256": "fd27eceaf9a180219f6962c06bbabcee14126d9f1e31b37cec5d20446cef0cd9",
+      "output_sha256": "1407977f452c4f507db8820645f57e99acf9970cddbeec8c97baf4785617e4d1",
+      "image_ids": [
+        "ba37c527-4ea4-4ee7-b3d4-34731339da05"
+      ]
+    },
+    {
+      "notion_id": "ea70221954bc837d824b81d034d72403",
+      "service": "홈화면 리디자인",
+      "title": "3-6 카테고리 내부 클릭 (현재 로깅) 2026.08.30 이후 찍히는 로깅",
+      "path": "event-log/10-홈화면-리디자인/3-6-카테고리-내부-클릭-(현재-로깅)-2026.08.30-이후-찍히는-로깅.md",
+      "notion_url": "https://app.notion.com/p/ea70221954bc837d824b81d034d72403",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB (모바일)"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:49.996Z",
+      "source_body_sha256": "bf27cbf02e2502d6032bdd0c11497c36ea789a2584cb32d63cc2ab7a3845d9af",
+      "output_sha256": "a5361d939cd4216e555025aa56ddb5fcb2afe2bad1ab6f978a500f58087a41c9",
+      "image_ids": [
+        "70f83a19-9154-4335-92f1-8f82a558040c",
+        "cc163e19-b510-4462-985e-f3aa217d87c1",
+        "46fc4a83-18f4-48af-b5f9-348060ae5996",
+        "001da31f-402a-468b-8d15-8a95d9b9ad46",
+        "0328d7fe-78af-4901-991c-0337ea64f372",
+        "97c4daec-14a9-400c-88ea-44d630860860",
+        "7d5d94dc-4b2a-42b7-a2e9-1d6e7f65a21c",
+        "b3776891-0140-4f1d-bd1b-f0cfb851cf50",
+        "2bc2a533-8a7f-4cf3-8ad8-92042aa820d0",
+        "e367c947-68c7-45bb-9f3e-437dbdc69773",
+        "0e73e761-7507-4e70-9445-a6da695368cb",
+        "88d7833e-a480-4150-b7d6-9a1d7d656890",
+        "1461f9ef-d605-4eef-beec-96b22c443399"
+      ]
+    },
+    {
+      "notion_id": "9480221954bc8373976081128db48fe4",
+      "service": "홈화면 리디자인",
+      "title": "4-1 내 시간표 클릭",
+      "path": "event-log/10-홈화면-리디자인/4-1-내-시간표-클릭.md",
+      "notion_url": "https://app.notion.com/p/9480221954bc8373976081128db48fe4",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB (모바일)"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:50.076Z",
+      "source_body_sha256": "27234c0c3c450db717c19611d97776ff154bd08a6c5b4061e807f3e9dd7b3b1f",
+      "output_sha256": "a7ee04e4bb3f55ece3fe0eae76b056b8976aa86a9dd79be4fe132857d7358b4f",
+      "image_ids": [
+        "903187d9-a83c-4623-bab3-72e21857ccff",
+        "5e5cd343-caaf-4df9-8379-58cb0830ecc2"
+      ]
+    },
+    {
+      "notion_id": "eeb0221954bc8211937181c4678c723b",
+      "service": "홈화면 리디자인",
+      "title": "4-2 로그인 클릭",
+      "path": "event-log/10-홈화면-리디자인/4-2-로그인-클릭.md",
+      "notion_url": "https://app.notion.com/p/eeb0221954bc8211937181c4678c723b",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:50.220Z",
+      "source_body_sha256": "bbf908a1bcf3e6d80d48ab5c7847cf1bfd36a5697cdff356934808ac05792ade",
+      "output_sha256": "65ca185f3dfde54c7fdaf75e2c97634442a204ea8c05bc737806c4daf18b3882",
+      "image_ids": [
+        "8957b4bd-9854-436a-8fde-53fe80c546b8",
+        "71bb2f50-3341-484b-9f80-85d27e2d6139"
+      ]
+    },
+    {
+      "notion_id": "8380221954bc839b835b819e6eecff8d",
+      "service": "홈화면 리디자인",
+      "title": "4-3 로그아웃 클릭",
+      "path": "event-log/10-홈화면-리디자인/4-3-로그아웃-클릭.md",
+      "notion_url": "https://app.notion.com/p/8380221954bc839b835b819e6eecff8d",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:50.339Z",
+      "source_body_sha256": "5932f6f13ab05b13b2fcdbc528bc64f33ed2afbc939c0d0d38f7eeb2cdad10a7",
+      "output_sha256": "e4ea105ccf03cef581908004876efb41791c7ccb06a015c237516c16d65638f2",
+      "image_ids": [
+        "acf48618-bc28-475a-bf26-c56a9ebcee37",
+        "80d60aa8-e177-4dca-973a-455f6d73b4a0"
+      ]
+    },
+    {
+      "notion_id": "a750221954bc82f38a888192a2b3b33e",
+      "service": "홈화면 리디자인",
+      "title": "4-4 설정 클릭",
+      "path": "event-log/10-홈화면-리디자인/4-4-설정-클릭.md",
+      "notion_url": "https://app.notion.com/p/a750221954bc82f38a888192a2b3b33e",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:50.453Z",
+      "source_body_sha256": "eeda5fd002a4eb1f65207f51ac89cb7af4c2d875a174d0c38ee268c7738803d7",
+      "output_sha256": "1bb845a5a54758cd04a3c3d21c84b0ccd8b12043fe7c3889fdfa1fc4f4320693",
+      "image_ids": [
+        "2d76ef5e-252b-4933-940c-74fb12814412",
+        "5f056b17-81f1-4018-a4ea-a28b46819b4a"
+      ]
+    }
+  ],
+  "blank_pages": []
+}

@@ -1,0 +1,1246 @@
+{
+  "service": "콜밴팟",
+  "pages": [
+    {
+      "notion_id": "61f0221954bc82eeaae10151ec86ca7e",
+      "service": "콜밴팟",
+      "title": "1-4 콜밴팟 알림 아이콘 클릭",
+      "path": "event-log/11-콜밴팟/1-4-콜밴팟-알림-아이콘-클릭.md",
+      "notion_url": "https://app.notion.com/p/61f0221954bc82eeaae10151ec86ca7e",
+      "platforms": [
+        "ANDROID"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:49.492Z",
+      "source_body_sha256": "46e52b7f2c414475469c05926fb76ba282c3e413efd23ad1514a91e22efacfe1",
+      "output_sha256": "30eedfd3e928af6b765f1618db7bc2845853c00dd5d705f51d96d354943edf52",
+      "image_ids": [
+        "2685c29f-33c8-4d81-b461-95a494a6f993",
+        "2685c29f-33c8-4d81-b461-95a494a6f993"
+      ]
+    },
+    {
+      "notion_id": "f510221954bc8392b6408180dc198418",
+      "service": "콜밴팟",
+      "title": "1-5 콜밴팟 알림 모두 읽음 클릭",
+      "path": "event-log/11-콜밴팟/1-5-콜밴팟-알림-모두-읽음-클릭.md",
+      "notion_url": "https://app.notion.com/p/f510221954bc8392b6408180dc198418",
+      "platforms": [
+        "ANDROID"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:49.564Z",
+      "source_body_sha256": "2d004e49ef99a75a2940a3fe6f1ffe5dcc3a27c8a3bbaec9a8650e4101a2c6fc",
+      "output_sha256": "9eefd46eb618791cc106f48b2b0d8d81e30571721c4cefe6f542e1a8f6eed183",
+      "image_ids": [
+        "587901d8-cfef-4bd8-8dda-93421e1243f6",
+        "b412ca87-87f0-4c74-8163-d769a06fe0fa"
+      ]
+    },
+    {
+      "notion_id": "5d90221954bc8310977681b1bacd631a",
+      "service": "콜밴팟",
+      "title": "1-6 콜밴팟 알림 전체 삭제 메뉴 클릭",
+      "path": "event-log/11-콜밴팟/1-6-콜밴팟-알림-전체-삭제-메뉴-클릭.md",
+      "notion_url": "https://app.notion.com/p/5d90221954bc8310977681b1bacd631a",
+      "platforms": [
+        "ANDROID"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:49.648Z",
+      "source_body_sha256": "cf563460cfcdff531b7704866df1ba4af3c61ad7e687568617d5fc38d2095d80",
+      "output_sha256": "dffc6f9880607bdbc089a9e4373be55e58af3535faea4b484cd7c061ac1a35c2",
+      "image_ids": [
+        "587901d8-cfef-4bd8-8dda-93421e1243f6",
+        "587901d8-cfef-4bd8-8dda-93421e1243f6"
+      ]
+    },
+    {
+      "notion_id": "a2e0221954bc838fb22a81dde14de0ea",
+      "service": "콜밴팟",
+      "title": "1-7 콜밴팟 알림 전체 삭제 확인 클릭",
+      "path": "event-log/11-콜밴팟/1-7-콜밴팟-알림-전체-삭제-확인-클릭.md",
+      "notion_url": "https://app.notion.com/p/a2e0221954bc838fb22a81dde14de0ea",
+      "platforms": [
+        "ANDROID"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:49.727Z",
+      "source_body_sha256": "d195709d7d4ba3e4218fa6e75677bad03066e9085b520357dc0fe24ff8eb7b0a",
+      "output_sha256": "9f100a763666e6dede096ba8ce41e4ba0dbf183a9a0f182c6912ad01cdef2c80",
+      "image_ids": [
+        "d94fe761-2d64-4b5e-90a7-0174966e5986",
+        "42beb235-7075-4842-a610-c4091426e9cd"
+      ]
+    },
+    {
+      "notion_id": "b200221954bc83eb80ac818974e3470b",
+      "service": "콜밴팟",
+      "title": "1-8 콜밴팟 알림 전체 삭제 취소 클릭",
+      "path": "event-log/11-콜밴팟/1-8-콜밴팟-알림-전체-삭제-취소-클릭.md",
+      "notion_url": "https://app.notion.com/p/b200221954bc83eb80ac818974e3470b",
+      "platforms": [
+        "ANDROID"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:51.083Z",
+      "source_body_sha256": "5c3126d22cf3b1c51a848b8f538807765254f26cafef1e27127c12513b64dbb8",
+      "output_sha256": "675e78b70623ecb160e9ef44e5ada61801334eb96ff27119f2c634e84dd18b21",
+      "image_ids": [
+        "81b5a0cb-2872-4ec6-a2ec-0e4a8238af51",
+        "5aa23b67-b486-4966-96ad-08c5ec6b7b35"
+      ]
+    },
+    {
+      "notion_id": "7740221954bc8367a3ca01ec993e4170",
+      "service": "콜밴팟",
+      "title": "1-9. 콜밴팟 알림 개별 삭제 버튼 클릭 or 스와이프",
+      "path": "event-log/11-콜밴팟/1-9.-콜밴팟-알림-개별-삭제-버튼-클릭-or-스와이프.md",
+      "notion_url": "https://app.notion.com/p/7740221954bc8367a3ca01ec993e4170",
+      "platforms": [],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:49.224Z",
+      "source_body_sha256": "9c597ec4c50b02fa5ba03e998d8a383fb82b4ec9328319e616b4385323461db4",
+      "output_sha256": "3985042c39b62cac9cc30387b07df2cb4dc4fd7566cdcb3d2003e165a9646c41",
+      "image_ids": [
+        "7ebd76de-07e1-4f6b-8434-a6ed3b664b8f"
+      ]
+    },
+    {
+      "notion_id": "7770221954bc826a864201306b07869e",
+      "service": "콜밴팟",
+      "title": "2-1 콜밴팟 검색바 클릭",
+      "path": "event-log/11-콜밴팟/2-1-콜밴팟-검색바-클릭.md",
+      "notion_url": "https://app.notion.com/p/7770221954bc826a864201306b07869e",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-27T02:33:57.553Z",
+      "source_body_sha256": "d5c46137f3d1e62e2cecbe4d2f72b24e238a49f353b688b5fa012f3f1958148b",
+      "output_sha256": "9ef341fcf28b7fc15cd3585fe2aeeec598187908b895a20ce1cda147dc9e06f9",
+      "image_ids": [
+        "32a23e45-2bbf-4e81-80fa-4d8ab61fd287",
+        "f8d599e0-b1a2-4335-b419-c3be5106033a"
+      ]
+    },
+    {
+      "notion_id": "9700221954bc8218a50c01dc154164c7",
+      "service": "콜밴팟",
+      "title": "2-1. 동아리_동아리 클릭",
+      "path": "event-log/11-콜밴팟/2-1.-동아리_동아리-클릭.md",
+      "notion_url": "https://app.notion.com/p/9700221954bc8218a50c01dc154164c7",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:52.629Z",
+      "source_body_sha256": "679fc1e4605ff18ca58bfad8048d8711483216dd6b5df7b615a09718c7775555",
+      "output_sha256": "4ba94cbf1877a40d8d4f2a975f4459e6cd9c4ad71baa9025ae7363eac1cd5b79",
+      "image_ids": [
+        "001272d3-b03d-4169-b074-87880bf22a72",
+        "43088852-ab6a-4f3d-b879-a62a82dabfdd"
+      ]
+    },
+    {
+      "notion_id": "6d00221954bc83c4a2ca011e1d083230",
+      "service": "콜밴팟",
+      "title": "2-10 콜밴팟 채팅방 입장 클릭",
+      "path": "event-log/11-콜밴팟/2-10-콜밴팟-채팅방-입장-클릭.md",
+      "notion_url": "https://app.notion.com/p/6d00221954bc83c4a2ca011e1d083230",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-27T02:33:58.896Z",
+      "source_body_sha256": "f5ca4dad6d6b4e40f0921bad856952b6b498e6a79bcc6c6752b66eb430f51fc4",
+      "output_sha256": "b2ac09b3a2d074f44b611e8483096d98ad09ab0ab15f0e66634e97564c1ae0ab",
+      "image_ids": [
+        "5357560e-3fd0-4749-80ea-64bf29db7852",
+        "93051166-cd6a-41cf-a328-b30068a16ec9"
+      ]
+    },
+    {
+      "notion_id": "0d50221954bc8277b81781104e8776f9",
+      "service": "콜밴팟",
+      "title": "2-11  콜밴팟 찾기 이탈",
+      "path": "event-log/11-콜밴팟/2-11-콜밴팟-찾기-이탈.md",
+      "notion_url": "https://app.notion.com/p/0d50221954bc8277b81781104e8776f9",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-27T02:33:58.256Z",
+      "source_body_sha256": "b4862a9284a7321f87eadf7f377e022531f65bb40c18c97fa831b225472d1718",
+      "output_sha256": "ad10b5f94ca6e76f22f7f38a5d23d53103f928b5f78a6475bc72a27375730766",
+      "image_ids": [
+        "f856fbf2-211e-4ad9-ab46-c5d5e70047a6",
+        "b98f239c-c74a-41be-a2d7-7090449863d9"
+      ]
+    },
+    {
+      "notion_id": "eba0221954bc827d869b81c4360fb4de",
+      "service": "콜밴팟",
+      "title": "2-2  콜밴팟 필터 클릭",
+      "path": "event-log/11-콜밴팟/2-2-콜밴팟-필터-클릭.md",
+      "notion_url": "https://app.notion.com/p/eba0221954bc827d869b81c4360fb4de",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-27T02:33:59.751Z",
+      "source_body_sha256": "e696af55eeae63cae6414f054154bdab0ae860a42afc1f1557db01783fe75f8f",
+      "output_sha256": "976e781a24251bbd3a97b1fd4a34f33c097069bccb1c28ddeeaeb620664aef56",
+      "image_ids": [
+        "d236dac0-147f-499b-a1a9-4af43f05a2f4",
+        "d1bfb1c7-acba-4ecf-8c11-ac09109105da"
+      ]
+    },
+    {
+      "notion_id": "79b0221954bc831292bf81ee7a39c7b2",
+      "service": "콜밴팟",
+      "title": "2-2.동아리_동아리 생성하기 클릭",
+      "path": "event-log/11-콜밴팟/2-2.동아리_동아리-생성하기-클릭.md",
+      "notion_url": "https://app.notion.com/p/79b0221954bc831292bf81ee7a39c7b2",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:52.570Z",
+      "source_body_sha256": "1493c3ba5df5345cc7ab1e4786f095cb5f4e59f49335b31f18d435317751e621",
+      "output_sha256": "4d6e5fce6bbc0b4b0b260a6967c21a2cbaeb11343cb139dc22823d0206883f1d",
+      "image_ids": [
+        "cb8fdb0f-347b-4a3c-a7f4-90e116731e0b",
+        "6509897e-bd07-4cc4-a67f-1da9cc16fdb4"
+      ]
+    },
+    {
+      "notion_id": "f7b0221954bc830a877501bf42a919c0",
+      "service": "콜밴팟",
+      "title": "2-3  콜밴팟 필터 적용하기",
+      "path": "event-log/11-콜밴팟/2-3-콜밴팟-필터-적용하기.md",
+      "notion_url": "https://app.notion.com/p/f7b0221954bc830a877501bf42a919c0",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-27T02:34:05.280Z",
+      "source_body_sha256": "0b6e72d62a0e4786a36ed909295886360e2ec702a1bf9599d47d3eff61361351",
+      "output_sha256": "57a152c0f5569b6bd3a294793d30e470b7d7b1e399a99ea8b375cbe70969270a",
+      "image_ids": [
+        "ff3aa9f4-59b8-4432-b64f-75cf032c644d",
+        "00714fd3-f159-4d0f-b477-546d3788b8c7"
+      ]
+    },
+    {
+      "notion_id": "39f0221954bc8379bb518116cec36fb5",
+      "service": "콜밴팟",
+      "title": "2-3.동아리_동아리 카테고리 클릭",
+      "path": "event-log/11-콜밴팟/2-3.동아리_동아리-카테고리-클릭.md",
+      "notion_url": "https://app.notion.com/p/39f0221954bc8379bb518116cec36fb5",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:52.728Z",
+      "source_body_sha256": "3cbf6cd9944f2795e4adc2429f8b53dcb534cc7060dbfa36239688d2b515cc1b",
+      "output_sha256": "9f85e67e2d257518e191b4b339dbfabf70f45fb6b2d88802c231a2bf976e1735",
+      "image_ids": [
+        "c87dd163-5f14-47d6-83d9-20e35ef93ef2",
+        "e39fdbf8-2e53-4094-ae57-6ee81cd9c029"
+      ]
+    },
+    {
+      "notion_id": "0730221954bc82a0bc2b81cc5c4eec18",
+      "service": "콜밴팟",
+      "title": "2-4  콜밴팟 참여하기",
+      "path": "event-log/11-콜밴팟/2-4-콜밴팟-참여하기.md",
+      "notion_url": "https://app.notion.com/p/0730221954bc82a0bc2b81cc5c4eec18",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:51.347Z",
+      "source_body_sha256": "b104f68a7cd4d160b0cf35b1bdc2c10160439775ba69cbf2899067b810a25342",
+      "output_sha256": "24246acd3908570d156b4a5cb3b57d5504341c2652647da9a9fb639c07565017",
+      "image_ids": [
+        "057909e9-e382-4c7a-b2db-e057e9c79b73",
+        "bbe908cc-c8c6-4f97-a17f-2dafc48a5e3b"
+      ]
+    },
+    {
+      "notion_id": "6930221954bc82f588ed015453c82e40",
+      "service": "콜밴팟",
+      "title": "2-4.동아리_동아리 메인화면 좋아요 클릭",
+      "path": "event-log/11-콜밴팟/2-4.동아리_동아리-메인화면-좋아요-클릭.md",
+      "notion_url": "https://app.notion.com/p/6930221954bc82f588ed015453c82e40",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:49.338Z",
+      "source_body_sha256": "0075fc13d86d7fbe3f90f81810321ed2acb6aaacba62704485e007caef9fa63b",
+      "output_sha256": "9ad58c3606f6f058ec18691c8e005ce98a47b44254654762dfb624934fb7bf8d",
+      "image_ids": [
+        "f5260bc0-9981-4451-a2ef-44b7a3e0d6d4",
+        "96183ec1-3ae2-498a-a0a1-94ece2a85c1e"
+      ]
+    },
+    {
+      "notion_id": "3850221954bc8312866f81f3aff55dae",
+      "service": "콜밴팟",
+      "title": "2-5  콜밴팟 참여 취소하기",
+      "path": "event-log/11-콜밴팟/2-5-콜밴팟-참여-취소하기.md",
+      "notion_url": "https://app.notion.com/p/3850221954bc8312866f81f3aff55dae",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:52.923Z",
+      "source_body_sha256": "6a898e497c151ed3a9b95c0a849ef2116a2d6a5ba25c267ced04fd6eac2c24c6",
+      "output_sha256": "c7786a0ce86c5552b76f3192013d6f11089dd4904c217f91be3f26e68ee49f09",
+      "image_ids": [
+        "509b3b3d-33cc-4f44-b76f-c44fcf9832e6",
+        "d993d295-c24f-4460-b9d2-8cca87eb1924"
+      ]
+    },
+    {
+      "notion_id": "3500221954bc839b9f1381344d0b4033",
+      "service": "콜밴팟",
+      "title": "2-5.동아리_동아리 메인화면 좋아요 해제",
+      "path": "event-log/11-콜밴팟/2-5.동아리_동아리-메인화면-좋아요-해제.md",
+      "notion_url": "https://app.notion.com/p/3500221954bc839b9f1381344d0b4033",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:53.082Z",
+      "source_body_sha256": "ebb13667a6b0d841acc3eeeb0ff739d1070659d2e27bb2b8f463a1a477186ce6",
+      "output_sha256": "3fbfc8e10a628579f836110ad9edd51d56f310620286861e0bcc7ec9ac2e3d32",
+      "image_ids": [
+        "a0cfa020-1fd9-48c9-b3b0-5281dfa9d6a3",
+        "df97c371-3b47-4db0-8d89-8dcbfe9e32cb"
+      ]
+    },
+    {
+      "notion_id": "52d0221954bc83ccb88281fef33b5eba",
+      "service": "콜밴팟",
+      "title": "2-6  콜밴팟 채팅 클릭",
+      "path": "event-log/11-콜밴팟/2-6-콜밴팟-채팅-클릭.md",
+      "notion_url": "https://app.notion.com/p/52d0221954bc83ccb88281fef33b5eba",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-27T02:34:02.873Z",
+      "source_body_sha256": "940b09f146d3091ca2d731feea3ccf90b033e088cc88d96c9a38def9664aa7cf",
+      "output_sha256": "bd8d602b0cbd21f0d6ee239c6e9deaeaf465ba396100dc69347e5a2853d4507a",
+      "image_ids": [
+        "5a526871-3be2-4028-9e06-602684a273bc",
+        "35ecd037-582a-452c-bec1-beee07eaac61"
+      ]
+    },
+    {
+      "notion_id": "d1b0221954bc83559f3f0181593cc36b",
+      "service": "콜밴팟",
+      "title": "2-7  콜밴팟 채팅 전송",
+      "path": "event-log/11-콜밴팟/2-7-콜밴팟-채팅-전송.md",
+      "notion_url": "https://app.notion.com/p/d1b0221954bc83559f3f0181593cc36b",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-27T02:34:01.432Z",
+      "source_body_sha256": "c0f78f4464b4495341bfb00a2a642d3369d7995cce99a82ad5233d33494ae786",
+      "output_sha256": "fa8fde72dd545c500067c315efed37421228a127030e45deb67b74b40ab5595a",
+      "image_ids": [
+        "fcbe99f3-ef4d-401c-8233-d2f6df996409",
+        "959da91d-d0d5-4d38-a3dd-51f3bbd62c73"
+      ]
+    },
+    {
+      "notion_id": "0610221954bc8359a9c4013f54bf8a3e",
+      "service": "콜밴팟",
+      "title": "2-8  콜밴팟 전화 클릭",
+      "path": "event-log/11-콜밴팟/2-8-콜밴팟-전화-클릭.md",
+      "notion_url": "https://app.notion.com/p/0610221954bc8359a9c4013f54bf8a3e",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-27T02:34:00.711Z",
+      "source_body_sha256": "abf5bf50e7a3545f367c9b4da19cd55696fbc279d09397f741f7db605a21d272",
+      "output_sha256": "4f0533ac87a615d47c3c51c93ec083cdf6e58d4433907a9b8f9458352f000200",
+      "image_ids": [
+        "b96e562c-526a-48db-a826-260d02999cec",
+        "18e3c671-5bcf-4d96-9e52-fc03a2619b2b"
+      ]
+    },
+    {
+      "notion_id": "aaf0221954bc838392610164dea9dfac",
+      "service": "콜밴팟",
+      "title": "2-9·3-6 콜밴팟 목록 → 모집하기",
+      "path": "event-log/11-콜밴팟/2-9·3-6-콜밴팟-목록-→-모집하기.md",
+      "notion_url": "https://app.notion.com/p/aaf0221954bc838392610164dea9dfac",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-27T02:34:04.418Z",
+      "source_body_sha256": "7579d26afe546cfe43576729499c90533e8281e98be5cfacb921b0791ad8a184",
+      "output_sha256": "c3ed21dc6c73bba5a8eaf4e108ab9d7e1c3f2f5891929cfb77f598f13b2bca2e",
+      "image_ids": [
+        "5d37670e-2c0c-4760-aff7-66f6917a79af",
+        "1487702c-3d39-4eab-a967-c85f20019344",
+        "f89ce16d-ab0a-41a1-abc1-e560d5a3109c",
+        "e7707211-a632-456d-95a0-577fb4052b3b"
+      ]
+    },
+    {
+      "notion_id": "2e50221954bc8311942a010a84a9948a",
+      "service": "콜밴팟",
+      "title": "2.6 동아리_모집 중인 동아리 토글 클릭",
+      "path": "event-log/11-콜밴팟/2.6-동아리_모집-중인-동아리-토글-클릭.md",
+      "notion_url": "https://app.notion.com/p/2e50221954bc8311942a010a84a9948a",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:52.610Z",
+      "source_body_sha256": "e0c978dba5281e86c9391e052d75ab471dff06a5e9be1fac5adaf7f961a05e2b",
+      "output_sha256": "bb9d37b9948059abc2f82d9a28a82015e49de3b87a3cd9772bcf10a16e39300d",
+      "image_ids": [
+        "89ba2e45-34bb-4311-b82b-408ebe46bae3",
+        "915386dc-fbd6-4150-94ea-99a6d88e4738"
+      ]
+    },
+    {
+      "notion_id": "8090221954bc835080fd818d4da5e5f8",
+      "service": "콜밴팟",
+      "title": "2.7 동아리_동아리 검색",
+      "path": "event-log/11-콜밴팟/2.7-동아리_동아리-검색.md",
+      "notion_url": "https://app.notion.com/p/8090221954bc835080fd818d4da5e5f8",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:52.385Z",
+      "source_body_sha256": "371a894a3270e749e52587715892426e8cb935ae5a2f82490d937f1a22027c55",
+      "output_sha256": "8c073dc96fa34d807206342292f0d2e9e94ece4a713cc36cd1d88d623a61db39",
+      "image_ids": [
+        "eaf8c9b2-c17b-4b91-85cd-85a416a5edfa",
+        "727d6bd0-969d-464e-a2ec-9175e633ad1c"
+      ]
+    },
+    {
+      "notion_id": "7a90221954bc8307b7da01f13fe138ef",
+      "service": "콜밴팟",
+      "title": "3-1 콜밴팟 출발지 선택",
+      "path": "event-log/11-콜밴팟/3-1-콜밴팟-출발지-선택.md",
+      "notion_url": "https://app.notion.com/p/7a90221954bc8307b7da01f13fe138ef",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:53.064Z",
+      "source_body_sha256": "37617c0be3211fb743a83f5bfc9799d2dcfe7d2cc28ec74a17c7c3e0a9c4f970",
+      "output_sha256": "b9ad827122aaaaafa9b42586ff4605c3d34670847ee375b3fcbc73b6be0859f4",
+      "image_ids": [
+        "8308c27d-8b1e-46d8-a761-393075722688",
+        "f2faea6a-11b5-49f1-a127-847814d79609"
+      ]
+    },
+    {
+      "notion_id": "5ec0221954bc82abb8228102239cfeb5",
+      "service": "콜밴팟",
+      "title": "3-1. 동아리_동아리 생성취소",
+      "path": "event-log/11-콜밴팟/3-1.-동아리_동아리-생성취소.md",
+      "notion_url": "https://app.notion.com/p/5ec0221954bc82abb8228102239cfeb5",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:51.573Z",
+      "source_body_sha256": "d72573b7bed0d62856939c56598a6d2f0ec20d3bd128b851c5413ba4c58a7908",
+      "output_sha256": "cae7b7b1007e6b797950a6a1af84e88372eb560629396c525ddc16abf98bef4e",
+      "image_ids": [
+        "6d23e9d1-9482-4f25-854a-921882a60337",
+        "55c98874-793c-4968-bf83-34f2809ac2bc"
+      ]
+    },
+    {
+      "notion_id": "0be0221954bc8330b8190100e63deb68",
+      "service": "콜밴팟",
+      "title": "3-2 콜밴팟 도착지 선택",
+      "path": "event-log/11-콜밴팟/3-2-콜밴팟-도착지-선택.md",
+      "notion_url": "https://app.notion.com/p/0be0221954bc8330b8190100e63deb68",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:50.759Z",
+      "source_body_sha256": "c53d25341fdeade376c98cbf2bd17505c5c8a9af81c21f513aa03f9092627e4a",
+      "output_sha256": "720c48bc18a6b26054fbbee03f5c6c456ab3070cd40d5423fec8cae08d984953",
+      "image_ids": [
+        "8308c27d-8b1e-46d8-a761-393075722688",
+        "f5ea34eb-cf71-42ef-a851-feabc2b80a88"
+      ]
+    },
+    {
+      "notion_id": "eaa0221954bc826c821581567b5c1063",
+      "service": "콜밴팟",
+      "title": "3-2. 동아리_동아리 생성요청",
+      "path": "event-log/11-콜밴팟/3-2.-동아리_동아리-생성요청.md",
+      "notion_url": "https://app.notion.com/p/eaa0221954bc826c821581567b5c1063",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:50.884Z",
+      "source_body_sha256": "24e4f36723761427e7e3430bf5108112078105c9383d86e3c21ef75ff06efd18",
+      "output_sha256": "d3964a5b6e5125b29883ae681cfc4c42c7b999c7f0285599e74ed65bc4669aa8",
+      "image_ids": [
+        "a68758fd-6040-4802-af17-77e7f674b4dc",
+        "cdf70674-2de0-4814-b11a-466ded517424"
+      ]
+    },
+    {
+      "notion_id": "2b40221954bc82e3934101250b7e2189",
+      "service": "콜밴팟",
+      "title": "3-3 콜밴팟 출발 시각 선택",
+      "path": "event-log/11-콜밴팟/3-3-콜밴팟-출발-시각-선택.md",
+      "notion_url": "https://app.notion.com/p/2b40221954bc82e3934101250b7e2189",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:52.521Z",
+      "source_body_sha256": "b4ae156f8579e1c1b2a433da5f976148da9f10910248c63a751513b1d001b8f9",
+      "output_sha256": "159c796e50e85b380f2e9f0b1c4c2a6d5b2c5424b899323e431b406ac94df6c2",
+      "image_ids": [
+        "d5111653-c9d3-4920-886c-1d683f76de3a",
+        "4c9b5c15-fc51-420d-9fdf-4f51d53f0c65"
+      ]
+    },
+    {
+      "notion_id": "0d00221954bc83e9b229812d9584e321",
+      "service": "콜밴팟",
+      "title": "3-3. 동아리_동아리 생성요청_확인",
+      "path": "event-log/11-콜밴팟/3-3.-동아리_동아리-생성요청_확인.md",
+      "notion_url": "https://app.notion.com/p/0d00221954bc83e9b229812d9584e321",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:49.280Z",
+      "source_body_sha256": "061f59357978f35d266add5a31732c47b915ab1f0a885190dc62afd1ade84915",
+      "output_sha256": "765530695d8cdb4695fe7be444dc4aee8531960335b0174305fe1f960547761f",
+      "image_ids": [
+        "ffaef3a4-4793-44e2-851b-6cd525c020e1",
+        "59065538-fc60-41e0-a513-1f8e9caf3b7e"
+      ]
+    },
+    {
+      "notion_id": "7830221954bc83beb94581d75e38565a",
+      "service": "콜밴팟",
+      "title": "3-4 콜밴팟 모집 작성 완료",
+      "path": "event-log/11-콜밴팟/3-4-콜밴팟-모집-작성-완료.md",
+      "notion_url": "https://app.notion.com/p/7830221954bc83beb94581d75e38565a",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-27T02:34:03.615Z",
+      "source_body_sha256": "53c674e1782da2b189fdc9f820f5354f8121803b62daebbc6bcdb031496597ea",
+      "output_sha256": "ca5fd24b6455522d38ee05d0a52c0a1dc4be1f48a15e89739f26581d7dc02499",
+      "image_ids": [
+        "009b5c3f-5f04-4a19-882b-ae3e0618ae0f",
+        "6f07c308-bfd9-4f93-9418-ba0dc1927766"
+      ]
+    },
+    {
+      "notion_id": "9cb0221954bc83d88fa7014e63259e2b",
+      "service": "콜밴팟",
+      "title": "3-4. 동아리_동아리 권한요청",
+      "path": "event-log/11-콜밴팟/3-4.-동아리_동아리-권한요청.md",
+      "notion_url": "https://app.notion.com/p/9cb0221954bc83d88fa7014e63259e2b",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:52.571Z",
+      "source_body_sha256": "871ac2aca6a2c6d8a04e5b4ca85035909009cf913e628bdbd2a82583a074c150",
+      "output_sha256": "bdc6d6813b62b7d55293a2644c2cd76f406372295b9f9bf6adcc730a0a59ef1f",
+      "image_ids": [
+        "f8d21d3d-63a3-4b3c-be3e-69ff09b10fb9",
+        "4e1d0611-5e67-42ed-90c7-81e615ff77fa"
+      ]
+    },
+    {
+      "notion_id": "be30221954bc83f1b8a5019f78b03299",
+      "service": "콜밴팟",
+      "title": "3-5 콜밴팟 모집 이탈",
+      "path": "event-log/11-콜밴팟/3-5-콜밴팟-모집-이탈.md",
+      "notion_url": "https://app.notion.com/p/be30221954bc83f1b8a5019f78b03299",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-27T02:34:02.082Z",
+      "source_body_sha256": "b8d8db3388824675233c8b7fab72ed885d6e1798ecee9eb241628a21c6aebcc5",
+      "output_sha256": "966571607c00a1aee641481298fe2de89c90ea8d8850fbf50359c0c7201bac95",
+      "image_ids": [
+        "1eb2b2b2-53de-469c-ab8e-bfd602a28f9d",
+        "bc36cc7e-3471-45f4-9a1e-7629462c8386"
+      ]
+    },
+    {
+      "notion_id": "cf50221954bc8329ace681369c068db0",
+      "service": "콜밴팟",
+      "title": "5-1.동아리_수정하기 클릭",
+      "path": "event-log/11-콜밴팟/5-1.동아리_수정하기-클릭.md",
+      "notion_url": "https://app.notion.com/p/cf50221954bc8329ace681369c068db0",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:52.808Z",
+      "source_body_sha256": "5be1fde494add27c59ec65aa109df7b36d574cae9ff86c49105bfed4b2d8865b",
+      "output_sha256": "4f29fd0588ee0ebcda0845c2de619a48d4a95b53700e4211d4466899d40f080e",
+      "image_ids": [
+        "3021ae1f-898d-4eaf-8e1e-539add68dbd2",
+        "1942de6e-cb6d-4e6a-b688-1b482b3d476e"
+      ]
+    },
+    {
+      "notion_id": "86c0221954bc827487be8160a1020457",
+      "service": "콜밴팟",
+      "title": "5-10.동아리_상세소개 수정하기_저장하기 클릭",
+      "path": "event-log/11-콜밴팟/5-10.동아리_상세소개-수정하기_저장하기-클릭.md",
+      "notion_url": "https://app.notion.com/p/86c0221954bc827487be8160a1020457",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:52.310Z",
+      "source_body_sha256": "41c65625c2cc3f33fac6184a6df6c237fdb7829b25eade9e405fac93d9268fa3",
+      "output_sha256": "dd12fef3c0839f1232ceb83d6143aa713c9a1d7ebb16ec41b546d00aae4ab4b9",
+      "image_ids": [
+        "adc1231c-f26b-4bb8-9377-6f5ad0518c70"
+      ]
+    },
+    {
+      "notion_id": "5020221954bc82f9bd54013ab1fc22dc",
+      "service": "콜밴팟",
+      "title": "5-11.동아리_상세소개 수정하기_취소하기 클릭",
+      "path": "event-log/11-콜밴팟/5-11.동아리_상세소개-수정하기_취소하기-클릭.md",
+      "notion_url": "https://app.notion.com/p/5020221954bc82f9bd54013ab1fc22dc",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:49.522Z",
+      "source_body_sha256": "8a8ffb0e0302042e07982ac55d01ca7291ecbc21073f144999e4cf1ce5e28ce3",
+      "output_sha256": "28d9880093d000416b3b30d568f3d9d8ee6a6092c292172289ee5bdf2d098036",
+      "image_ids": [
+        "eb8d08cf-a6b2-4161-96b8-d8d84243b60c"
+      ]
+    },
+    {
+      "notion_id": "fb90221954bc8366ba480186a6f3a003",
+      "service": "콜밴팟",
+      "title": "5-12.동아리_상세소개 좋아요 클릭",
+      "path": "event-log/11-콜밴팟/5-12.동아리_상세소개-좋아요-클릭.md",
+      "notion_url": "https://app.notion.com/p/fb90221954bc8366ba480186a6f3a003",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:51.240Z",
+      "source_body_sha256": "eb5924bf3b53e9a1248e6b236d6ce3e872712582d160581255f59781f9f9266a",
+      "output_sha256": "18af6b5e9fbdbf9633ddeb5a05a7ab383dac66aaf4b1756a221f272ae0ac67b3",
+      "image_ids": [
+        "4a8e36f8-01fd-45d4-8b42-5f2175393082",
+        "d18410d4-cb42-4854-8e1b-1cfba7052153"
+      ]
+    },
+    {
+      "notion_id": "a5e0221954bc83e696c60140889f9234",
+      "service": "콜밴팟",
+      "title": "5-13.동아리_상세소개 좋아요 해제",
+      "path": "event-log/11-콜밴팟/5-13.동아리_상세소개-좋아요-해제.md",
+      "notion_url": "https://app.notion.com/p/a5e0221954bc83e696c60140889f9234",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:50.939Z",
+      "source_body_sha256": "6e3a9c809e42171403df64502510cc14e8a5e8e0ab10c6712011e7186bc6fdbc",
+      "output_sha256": "656c5202837310f45ca9713a808f52c21e43462292b7e7d5b2a53b8ed7cce2de",
+      "image_ids": [
+        "e435ffd1-4719-489d-b769-c617928b7afd",
+        "37419178-bf8d-43ed-8481-6fae4a9a0ba3"
+      ]
+    },
+    {
+      "notion_id": "f390221954bc825ba26a015234d783db",
+      "service": "콜밴팟",
+      "title": "5-2.동아리_정보수정 저장",
+      "path": "event-log/11-콜밴팟/5-2.동아리_정보수정-저장.md",
+      "notion_url": "https://app.notion.com/p/f390221954bc825ba26a015234d783db",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:52.824Z",
+      "source_body_sha256": "4c4c39627b0f8ce174641eacaaccea4702503dd8784f95d25179115d69b8a1da",
+      "output_sha256": "42c79bb789792c275a1950c1edd3a9a39bb0688e2206f5fca84649b624717eea",
+      "image_ids": [
+        "11c718b8-2c88-4f78-86ef-c999b37b12a9",
+        "2c577197-f64c-4310-a026-f25f223b0b5e"
+      ]
+    },
+    {
+      "notion_id": "38e0221954bc827083078171a7f29f98",
+      "service": "콜밴팟",
+      "title": "5-3.동아리_정보수정 취소",
+      "path": "event-log/11-콜밴팟/5-3.동아리_정보수정-취소.md",
+      "notion_url": "https://app.notion.com/p/38e0221954bc827083078171a7f29f98",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:49.736Z",
+      "source_body_sha256": "fe03e388ea4fbf27918e95b61964bd6a73a09920457739cb6c99f76fff24acc4",
+      "output_sha256": "3e27f4d02c55eb770dd859a53939d7bbfb795c4ce2eaf2091c60e95f9137802b",
+      "image_ids": [
+        "a7b41f91-3038-4401-8a7e-b98239ceb287",
+        "b7e9c52a-c7c0-419a-a63e-5ddaee09bf77"
+      ]
+    },
+    {
+      "notion_id": "4b60221954bc828f9a930115f18a2235",
+      "service": "콜밴팟",
+      "title": "5-4.동아리_권한위임 클릭",
+      "path": "event-log/11-콜밴팟/5-4.동아리_권한위임-클릭.md",
+      "notion_url": "https://app.notion.com/p/4b60221954bc828f9a930115f18a2235",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:52.741Z",
+      "source_body_sha256": "8333e8d2c521d2bc9a4fd19bad3a932a48ca47b9e7c530fc412b7bb04d607648",
+      "output_sha256": "7567b32e9cd75af6eca424b3d8168a2795e406b9c3cae6fe17d7013b2daac999",
+      "image_ids": [
+        "c60dc5df-6077-44fd-92b8-ec562fc19dd8",
+        "4ad69efe-dd5f-4a26-bde4-301378c66c2b"
+      ]
+    },
+    {
+      "notion_id": "6fd0221954bc82a3ae0001ca81b572ac",
+      "service": "콜밴팟",
+      "title": "5-5.동아리_권한위임 확인",
+      "path": "event-log/11-콜밴팟/5-5.동아리_권한위임-확인.md",
+      "notion_url": "https://app.notion.com/p/6fd0221954bc82a3ae0001ca81b572ac",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:52.399Z",
+      "source_body_sha256": "19e3a5b8dd9e7abee93fe77f1718fee7ef2a268877b10f94129f24018a2547ec",
+      "output_sha256": "64e38c9a33682bd086aa19a64223855b87f49b9bcd5f06a7e8d67520a46eafce",
+      "image_ids": [
+        "0ca30237-329f-4995-a66a-37e0c7d513b2",
+        "87129c07-b539-457d-af76-ccbc244abd53"
+      ]
+    },
+    {
+      "notion_id": "8330221954bc832aa767819373b6d754",
+      "service": "콜밴팟",
+      "title": "5-6.동아리_탭 클릭(추가사항)",
+      "path": "event-log/11-콜밴팟/5-6.동아리_탭-클릭(추가사항).md",
+      "notion_url": "https://app.notion.com/p/8330221954bc832aa767819373b6d754",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:52.920Z",
+      "source_body_sha256": "c553d99b51aa511e9cbf150832c99cd9c87048c029c5f7c051e5c54409c3ca6f",
+      "output_sha256": "05b03c900306dd23e1d4f003d076c7041ad3f79b6aba4ac0eb12a8d8eb0f36df",
+      "image_ids": [
+        "1455bb2e-6eb9-4a13-afdf-b4fb03d0190e",
+        "e6f50a45-c739-4c73-b0f1-cbfaa4cff2dc"
+      ]
+    },
+    {
+      "notion_id": "d450221954bc822d8db9811f34a1fb29",
+      "service": "콜밴팟",
+      "title": "5-7.동아리_상세소개 수정하기 클릭",
+      "path": "event-log/11-콜밴팟/5-7.동아리_상세소개-수정하기-클릭.md",
+      "notion_url": "https://app.notion.com/p/d450221954bc822d8db9811f34a1fb29",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:51.846Z",
+      "source_body_sha256": "a7ea7c8daedb5c30794feb5c10c5b754979d51a74dd882eceb83f7fb9aadc120",
+      "output_sha256": "e7c5c948abff29a444ce6ef627a0b4b025285a156711e36817d0113cfd2c7d1e",
+      "image_ids": [
+        "c41c559a-a571-4704-b544-ed8ac6d43a1c",
+        "620b10fc-88dc-4517-9b76-a502056a76a1"
+      ]
+    },
+    {
+      "notion_id": "3340221954bc8270bda8018bab247d76",
+      "service": "콜밴팟",
+      "title": "5-8.동아리_상세소개 수정하기_저장 클릭",
+      "path": "event-log/11-콜밴팟/5-8.동아리_상세소개-수정하기_저장-클릭.md",
+      "notion_url": "https://app.notion.com/p/3340221954bc8270bda8018bab247d76",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:50.822Z",
+      "source_body_sha256": "6b1e43d0f7d582334f958128aea96354f8421374e9299d49af7ceb13cc998483",
+      "output_sha256": "32fb411f18a7bb24f80d5476612079d080650eefa667a47c954549ed4693ee35",
+      "image_ids": [
+        "a3b67424-c8a3-4f9b-9d16-5f2f2512511a",
+        "98dbd414-904f-4fce-948c-9549cb8f3a5b"
+      ]
+    },
+    {
+      "notion_id": "b4e0221954bc82038fe281ddf90b3e66",
+      "service": "콜밴팟",
+      "title": "5-9.동아리_상세소개 수정하기_취소 클릭",
+      "path": "event-log/11-콜밴팟/5-9.동아리_상세소개-수정하기_취소-클릭.md",
+      "notion_url": "https://app.notion.com/p/b4e0221954bc82038fe281ddf90b3e66",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:52.305Z",
+      "source_body_sha256": "cd0a0312e38f18a0f4060d6383d4ad76f3f7da1257dfc293da6bc4ff967f3220",
+      "output_sha256": "7e25b72b8faa77eb92e2621b7b480b6a6a5005ab46fcd8351d7d36e49a6bd256",
+      "image_ids": [
+        "571957d3-e49d-4694-a227-d11825d84127",
+        "539084d5-a066-43a1-8e10-2391931c777c"
+      ]
+    },
+    {
+      "notion_id": "1bf0221954bc8278a05601ec1c617aa9",
+      "service": "콜밴팟",
+      "title": "5.14동아리_모집알림 클릭",
+      "path": "event-log/11-콜밴팟/5.14동아리_모집알림-클릭.md",
+      "notion_url": "https://app.notion.com/p/1bf0221954bc8278a05601ec1c617aa9",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:52.470Z",
+      "source_body_sha256": "9483e66f8c2ba2550c3a2c1fdd483ccdbd06abc9f48c39071c2c875cdc72dbf4",
+      "output_sha256": "13519b1addeba292fec778588d299c6343cb524e25856370a83611f0fe3d8381",
+      "image_ids": [
+        "c8a2f015-f705-4a13-bc3a-6bda94dbf41e"
+      ]
+    },
+    {
+      "notion_id": "ebc0221954bc83cfbd1701078774d54b",
+      "service": "콜밴팟",
+      "title": "5.15동아리_모집알림 받기",
+      "path": "event-log/11-콜밴팟/5.15동아리_모집알림-받기.md",
+      "notion_url": "https://app.notion.com/p/ebc0221954bc83cfbd1701078774d54b",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:52.755Z",
+      "source_body_sha256": "e60d021717fc808d96715a6074eed8ccf159281feaeda13ef62fd44f5ec00ce2",
+      "output_sha256": "1d921630796f2a38e1fe0a0de8c567bc15300eee313d22a2b5a0fc9d15d0ff59",
+      "image_ids": [
+        "55ef6cb9-4bff-4b4e-a9d5-23aa3a58152e"
+      ]
+    },
+    {
+      "notion_id": "2ef0221954bc8275bada017c27727d3d",
+      "service": "콜밴팟",
+      "title": "5.16동아리_모집알림 취소",
+      "path": "event-log/11-콜밴팟/5.16동아리_모집알림-취소.md",
+      "notion_url": "https://app.notion.com/p/2ef0221954bc8275bada017c27727d3d",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:52.663Z",
+      "source_body_sha256": "125fddf5eec3e1f0dbe5afbfae7a9636f341692a5a580d2b50a05599b2a68094",
+      "output_sha256": "73732bf7bbad6cb4270de6cc390d4bf8a9056e751418d87d2b0b771638136282",
+      "image_ids": [
+        "5b303005-129e-4f63-9e07-9460a7a9cf80"
+      ]
+    },
+    {
+      "notion_id": "f6f0221954bc8303adbb0153cb5be7c4",
+      "service": "콜밴팟",
+      "title": "6.10동아리_행사삭제확정 클릭",
+      "path": "event-log/11-콜밴팟/6.10동아리_행사삭제확정-클릭.md",
+      "notion_url": "https://app.notion.com/p/f6f0221954bc8303adbb0153cb5be7c4",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:49.389Z",
+      "source_body_sha256": "edb073444e200ef89e79fdec839def8e44f0da5acb9eca4f7ac853a4b5c1367d",
+      "output_sha256": "3741e86d4b509f5509e1569c8f2f99078ed46f5aab33e33712750175b3307d21",
+      "image_ids": [
+        "9689b6e2-c487-4bb1-ae6e-b00d41d02992"
+      ]
+    },
+    {
+      "notion_id": "02b0221954bc8373891501f125e9eac0",
+      "service": "콜밴팟",
+      "title": "6.1동아리_행사 클릭",
+      "path": "event-log/11-콜밴팟/6.1동아리_행사-클릭.md",
+      "notion_url": "https://app.notion.com/p/02b0221954bc8373891501f125e9eac0",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:52.297Z",
+      "source_body_sha256": "272b8854c37cd5f77949b298de4fc06badcdc5f958f474f6ebe67d2c8ba7bcc1",
+      "output_sha256": "9aa1781b9eae3eaa8c73de698155b9832f767a10d7e478cd31f491c07cf344ab",
+      "image_ids": [
+        "d09f1273-fcf1-4528-9e8c-8b2c7ec125cb",
+        "3a1bb5a6-7b60-462c-82fd-064d283d721b"
+      ]
+    },
+    {
+      "notion_id": "8950221954bc825d9bb58133f47d9ab0",
+      "service": "콜밴팟",
+      "title": "6.2동아리_행사필터 클릭",
+      "path": "event-log/11-콜밴팟/6.2동아리_행사필터-클릭.md",
+      "notion_url": "https://app.notion.com/p/8950221954bc825d9bb58133f47d9ab0",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:52.833Z",
+      "source_body_sha256": "81c5b03c0d955f022215ed6a47769fd867a04f4c53f70da37f34d58527fa748d",
+      "output_sha256": "df64b500f475c92d3e0d2c9c76fae7b7bf0954994c3c84cab47215b9baf081d7",
+      "image_ids": [
+        "41c98ff1-f7f0-45aa-9b16-a6becfad9e52",
+        "42426300-3948-4430-bf9f-5c7ae9a417db"
+      ]
+    },
+    {
+      "notion_id": "d750221954bc8272bf9781df840dd0d9",
+      "service": "콜밴팟",
+      "title": "6.3동아리_행사생성 클릭",
+      "path": "event-log/11-콜밴팟/6.3동아리_행사생성-클릭.md",
+      "notion_url": "https://app.notion.com/p/d750221954bc8272bf9781df840dd0d9",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:51.784Z",
+      "source_body_sha256": "689b379d83bf908bc03e4bbf598c7f5813e852cfe5eb035b97e23f6b919e9539",
+      "output_sha256": "476a8f229f8f7ef249ef47686477409cd2b82b3add4103390ad44ff6aef78e16",
+      "image_ids": [
+        "b7c496cf-cfb9-46ba-bba4-d14d984a8403",
+        "b254e4c5-66a6-4b64-93a8-9cd8e4814ee3"
+      ]
+    },
+    {
+      "notion_id": "a300221954bc83178c1b81ca7c24ddff",
+      "service": "콜밴팟",
+      "title": "6.4동아리_행사생성확정 클릭",
+      "path": "event-log/11-콜밴팟/6.4동아리_행사생성확정-클릭.md",
+      "notion_url": "https://app.notion.com/p/a300221954bc83178c1b81ca7c24ddff",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:50.193Z",
+      "source_body_sha256": "f2fd2ce4fe1ccb3a4122c69f6303399ddfe5e9dbea057c6883d8f6164d8343b0",
+      "output_sha256": "86eaafcdb475fe298a8cfa2920bd23612611ce25fbd407b26c0553dd1041e338",
+      "image_ids": [
+        "06eff9a0-023d-4b7e-95f0-f9dd49be55ce",
+        "9ef87674-522c-4364-ac2e-e1629226b32f"
+      ]
+    },
+    {
+      "notion_id": "f690221954bc82d2b8c08120b2f5cba4",
+      "service": "콜밴팟",
+      "title": "6.5동아리_행사생성취소 클릭",
+      "path": "event-log/11-콜밴팟/6.5동아리_행사생성취소-클릭.md",
+      "notion_url": "https://app.notion.com/p/f690221954bc82d2b8c08120b2f5cba4",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:51.722Z",
+      "source_body_sha256": "b7215868d05a8f188492dc29b9f5f9d0e044bbd6993ad1f174672adf11ca1f43",
+      "output_sha256": "6e981946a242818bc8b986c39e1c432bf3093751c0c964135adbed795236c479",
+      "image_ids": [
+        "a2c6f7ce-d093-4166-a984-33102de37230",
+        "ecc6ff58-481e-4a14-a8af-ee6e8af5f92a"
+      ]
+    },
+    {
+      "notion_id": "0470221954bc83e6876501502fb26b22",
+      "service": "콜밴팟",
+      "title": "6.6동아리_행사수정 클릭",
+      "path": "event-log/11-콜밴팟/6.6동아리_행사수정-클릭.md",
+      "notion_url": "https://app.notion.com/p/0470221954bc83e6876501502fb26b22",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:52.539Z",
+      "source_body_sha256": "295e9cde44b039ec4a43416d7a5d0d110a131569cfaafdde11d598aef6f5f575",
+      "output_sha256": "b0c16c85ed42ee6c6952a5eb1144595906efbe355a2540670fd7f5b6d2bb197e",
+      "image_ids": [
+        "c2c1d534-9279-4a69-b52c-1ec2f1b1dba5",
+        "f1439a8d-3d38-4541-83ca-a66375fad2b3"
+      ]
+    },
+    {
+      "notion_id": "b120221954bc83438484818c41305a51",
+      "service": "콜밴팟",
+      "title": "6.7동아리_행사수정확정 클릭",
+      "path": "event-log/11-콜밴팟/6.7동아리_행사수정확정-클릭.md",
+      "notion_url": "https://app.notion.com/p/b120221954bc83438484818c41305a51",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:52.389Z",
+      "source_body_sha256": "8eb3f01b7e574fd61a10126344f6c99bf532d4529617b98a22964ff45d99916b",
+      "output_sha256": "c403017daff688b0849ea67b99403d328891c15a1ffa0d1ffee0fa4bea48a4de",
+      "image_ids": [
+        "0b667f98-d20a-43ac-bb39-b97b53b2ce99",
+        "4a4a9e1e-7f0d-4e13-9d73-b252ef0ceca0"
+      ]
+    },
+    {
+      "notion_id": "da20221954bc8213bf4d814e0b03f51a",
+      "service": "콜밴팟",
+      "title": "6.8동아리_행사수정취소 클릭",
+      "path": "event-log/11-콜밴팟/6.8동아리_행사수정취소-클릭.md",
+      "notion_url": "https://app.notion.com/p/da20221954bc8213bf4d814e0b03f51a",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:52.486Z",
+      "source_body_sha256": "8a2a3e7911331b7462dea224a7187a6c199343d5b51edfa7de304dc7720df4f9",
+      "output_sha256": "5350f9ad2c2868500c7cd93e9679821571c52dd2f87d4b92d60653f570997844",
+      "image_ids": [
+        "00f75984-845a-46c1-aeef-cf19d975c0c1",
+        "77c57c61-5670-4a68-9a3e-cebf19f7999b"
+      ]
+    },
+    {
+      "notion_id": "2830221954bc82248a99814370e9b303",
+      "service": "콜밴팟",
+      "title": "6.9동아리_행사삭제 클릭",
+      "path": "event-log/11-콜밴팟/6.9동아리_행사삭제-클릭.md",
+      "notion_url": "https://app.notion.com/p/2830221954bc82248a99814370e9b303",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:53.007Z",
+      "source_body_sha256": "f74be2ffbf3ac8dbe5a21a2a50416ab8f2a67f32bef8395120ab76051d28e5ac",
+      "output_sha256": "a18d184d325874b4494786b57bd022b3897dad5a212be7df04645edb352d7874",
+      "image_ids": [
+        "c698071f-1f2c-4729-a30b-45796d0f0309",
+        "a1b96d51-1807-40fe-8b77-aaaf09e322ea"
+      ]
+    },
+    {
+      "notion_id": "aa70221954bc83f0b9c301f5cbbadf5a",
+      "service": "콜밴팟",
+      "title": "[레거시] 1-1 메인 → 콜밴팟 모집 보기",
+      "path": "event-log/11-콜밴팟/[레거시]-1-1-메인-→-콜밴팟-모집-보기.md",
+      "notion_url": "https://app.notion.com/p/aa70221954bc83f0b9c301f5cbbadf5a",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:49.341Z",
+      "source_body_sha256": "41e54ddac989bb78ff4d213e15aed71ce39a7284e387a0c9695714a04c868e0b",
+      "output_sha256": "93468e165841d965e3ae8ef3961186dca310f2a88149d3bde8235fbb31a1ace1",
+      "image_ids": [
+        "27a45cc4-3504-4793-904a-1bcae7c350db",
+        "120b5274-fc4f-4c38-a96a-1a54415d204a"
+      ]
+    },
+    {
+      "notion_id": "9270221954bc8315a1b901f156c7d7d7",
+      "service": "콜밴팟",
+      "title": "[레거시] 1-3 카테고리 → 콜밴팟 모집",
+      "path": "event-log/11-콜밴팟/[레거시]-1-3-카테고리-→-콜밴팟-모집.md",
+      "notion_url": "https://app.notion.com/p/9270221954bc8315a1b901f156c7d7d7",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:49.410Z",
+      "source_body_sha256": "98bf0349cf0192a33adbb1103aa6702c6ccc9f1d25ad7b2688d4b21616ee310e",
+      "output_sha256": "0495e72bef3d1ef17b7bdafe2977e0881d30de2423319d9e171ad5afa246a82e",
+      "image_ids": [
+        "61ff974e-3ca0-4835-877d-3480a2923fa2",
+        "a91d5592-53eb-42d4-8ae0-c88428154f4b"
+      ]
+    },
+    {
+      "notion_id": "41a0221954bc834cad6e01fd66c7ca83",
+      "service": "콜밴팟",
+      "title": "4-1. 동아리_Q&A추가",
+      "path": "event-log/11-콜밴팟/4-1.-동아리_Q&A추가.md",
+      "notion_url": "https://app.notion.com/p/41a0221954bc834cad6e01fd66c7ca83",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:51.404Z",
+      "source_body_sha256": "ba33ff924b5deffdaa43971b18698b51a5b986f7b80b35e0649a817c3e6f0743",
+      "output_sha256": "411dd4765e4c5007e0c2535cb104e14babb146e23fcfb94566af0d0b02e1ed32",
+      "image_ids": [
+        "b931adbc-e125-443c-9372-554ba46ee2d1"
+      ]
+    },
+    {
+      "notion_id": "7bc0221954bc83df82fa817ac8b3f63c",
+      "service": "콜밴팟",
+      "title": "4-2. 동아리_Q&A추가_확인",
+      "path": "event-log/11-콜밴팟/4-2.-동아리_Q&A추가_확인.md",
+      "notion_url": "https://app.notion.com/p/7bc0221954bc83df82fa817ac8b3f63c",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:51.026Z",
+      "source_body_sha256": "233702d3dd9472ba84718691110a37634d78ebec328352c353876f7ab58881c2",
+      "output_sha256": "c0676e967150c25ac560002e008449445c2c4757c17173ab92534a1c65bb4076",
+      "image_ids": [
+        "5d76f959-ee8b-4f0c-86bd-f2180feeeea8",
+        "7477fc95-dc36-4348-9838-74a14e63d963"
+      ]
+    },
+    {
+      "notion_id": "7b00221954bc832bb07901cf3383c22b",
+      "service": "콜밴팟",
+      "title": "4-3. 동아리_댓글 삭제",
+      "path": "event-log/11-콜밴팟/4-3.-동아리_댓글-삭제.md",
+      "notion_url": "https://app.notion.com/p/7b00221954bc832bb07901cf3383c22b",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:53.118Z",
+      "source_body_sha256": "caa22910ddfeb50de63984151321ca2eca18af8fee4552e689db76191a6f3305",
+      "output_sha256": "7fad68abfe1c1d5830508a86022be0b53dc8085a13109d4110f178785b9da108",
+      "image_ids": [
+        "f2b5ef07-18fb-4eb9-acc0-795d88b52676",
+        "f97509e4-dbcb-4d93-90e9-0d13f481aec0",
+        "7db6236b-bfa1-467b-abba-4c5d8a7a3487"
+      ]
+    }
+  ],
+  "blank_pages": [
+    {
+      "notion_id": "29f0221954bc8363b576819bcce4d68e",
+      "title": "새 페이지",
+      "service": "콜밴팟",
+      "url": "https://app.notion.com/p/29f0221954bc8363b576819bcce4d68e"
+    },
+    {
+      "notion_id": "b3a0221954bc83429c30017b91b839ec",
+      "title": "새 페이지",
+      "service": "콜밴팟",
+      "url": "https://app.notion.com/p/b3a0221954bc83429c30017b91b839ec"
+    }
+  ]
+}

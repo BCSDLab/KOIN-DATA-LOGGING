@@ -1,22 +1,19 @@
 # 2-23 상점 목록 뒤로가기 (Click · Swipe)
 
-[← 주변상점 로깅 목록](README.md)
+[← 주변상점 목록](README.md)
 
-플랫폼: IOS · ANDROID  
-원문 상태: 로깅 필요
+플랫폼: IOS, ANDROID  
+원문 상태: 로깅 필요  
+[Notion 기준 명세](https://app.notion.com/p/4c30221954bc82b5afb4016b1b3be6a7)  
+원본 ID: `4c30221954bc82b5afb4016b1b3be6a7`
 
-과거 로깅·새 로깅과 각 참고사진은 원문의 구간별 연결을 유지합니다.
-
-<!-- logging-section:past:start -->
+<!-- notion-body:start -->
 ## 과거 로깅
 
 - event\_label: <code>shop_categories_back</code>
 - value: 기존 명세 미기재
 - event\_category: click / swipe
 
-<!-- logging-section:past:end -->
-
-<!-- logging-section:new:start -->
 ## 새 로깅
 
 ### 뒤로가기 버튼
@@ -39,22 +36,33 @@
 
 ### 참고사진
 
+<b>웹</b>
+
 PC 웹: 상점 목록에 대응하는 뒤로가기 버튼 없음.
 
 <b>모바일</b>
 
-![참고 이미지](../../assets/2d945e53-8693-470f-b94b-502c9a911b53.png)
-
+![참고사진](../../assets/2d945e53-8693-470f-b94b-502c9a911b53.png)
 Stage 모바일 웹 · 상점 목록 뒤로가기 버튼
-
-<!-- logging-section:new:end -->
-
----
+<!-- notion-body:end -->
 
 <details>
-<summary>원문 정보</summary>
+<summary>Notion 원문 속성 전체</summary>
 
-원본 ID: `ff80221954bc83ae983c01e2a49554a9`  
-[보존 원문](../../_archive/original/notion/pages/ff80221954bc83ae983c01e2a49554a9.md)
+```json
+{
+  "platform": [
+    "IOS",
+    "ANDROID"
+  ],
+  "url": "https://app.notion.com/p/4c30221954bc82b5afb4016b1b3be6a7",
+  "상태": "로깅 필요",
+  "생성일": "2026-11-23T13:38:19.511Z",
+  "이벤트 이름": "2-23 상점 목록 뒤로가기 (Click · Swipe)",
+  "태그": [
+    "2. 상점 카테고리"
+  ]
+}
+```
 
 </details>

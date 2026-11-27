@@ -13,12 +13,27 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - run: node event-log/verify-20261119.mjs
-      - run: node event-log/verify.mjs
-      - run: node event-log/verify-representatives.mjs
-      - run: node --test event-log/notion-comparison.test.mjs
-      - run: node event-log/verify-notion.mjs
+      - name: 현재 Notion 스냅샷 검사 회귀 테스트
+        run: node --test event-log/verify-current-notion.test.mjs event-log/notion-comparison.test.mjs
+      - name: 현재 명세·속성·본문·링크·이미지 전체 검증
+        run: node event-log/verify-current-notion.mjs
+      - name: 이전 문서 검사용 고정 체크아웃 준비
+        env:
+          HISTORICAL_BASE: 3105e0c7ed27a5f66355725d8e8337129b4fc697
+        run: |
+          git fetch --no-tags --depth=1 origin "$HISTORICAL_BASE"
+          git diff --exit-code "$HISTORICAL_BASE" HEAD -- _archive/original assets _archive/updates/2026-11-19 _archive/navigation-map.json _archive/preservation-manifest.json _archive/representatives.json _archive/presentation-cleanup.json _archive/live-notion-snapshots.jsonl.gz _archive/live-notion-images.json _archive/live-notion-corrections.json
+          git worktree add --detach "$RUNNER_TEMP/logging-docs-history" "$HISTORICAL_BASE"
+      - name: 2026-11-19 문서·이미지·보존 원본 검사
+        run: node "$RUNNER_TEMP/logging-docs-history/event-log/verify-20261119.mjs"
+      - name: 이전 내보내기 필드·서비스·이미지 무결성 검사
+        run: node "$RUNNER_TEMP/logging-docs-history/event-log/verify.mjs"
+      - name: 이전 대표 문서·별칭 보존 검사
+        run: node "$RUNNER_TEMP/logging-docs-history/event-log/verify-representatives.mjs"
+      - name: 이전 Notion 스냅샷 대응 검사
+        run: node "$RUNNER_TEMP/logging-docs-history/event-log/verify-notion.mjs"
       - run: npm ci
         working-directory: _archive/original
       - run: npm run verify
         working-directory: _archive/original
+

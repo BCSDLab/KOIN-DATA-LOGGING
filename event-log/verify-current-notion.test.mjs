@@ -1,0 +1,50 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import os from 'node:os';
+import zlib from 'node:zlib';
+import crypto from 'node:crypto';
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {verifyCurrent,sha256,META} from './verify-current-notion.mjs';
+
+function fixture(t){
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'notion-sync-test-'));
+ t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+ const write=(p,s)=>{fs.mkdirSync(path.dirname(path.join(root,p)),{recursive:true});fs.writeFileSync(path.join(root,p),s);};
+ const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+ const doc='event-log/01-service/sample.md',id='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',blankId='bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb';
+ const a='11111111-1111-1111-1111-111111111111',b='22222222-2222-2222-2222-222222222222';
+ const image=id=>'<image source="notion-file-block://00000000-0000-0000-0000-000000000000/'+id+'?name=image.png" />';
+ const md=id=>'![참고사진](../../assets/'+id+'.png)';
+ const source='<toggle>\n과거 로깅\n- event_label: old\n- value: 예전\n'+image(a)+'\n</toggle>\n<toggle>\n새 로깅\n- event_label: service__screen__target__click\n- value: 새 값\n'+image(b)+'\n</toggle>';
+ const properties={platform:['ANDROID'],상태:'로깅 필요',url:'https://app.notion.com/p/'+id};
+ const tick=String.fromCharCode(96),body='## 과거 로깅\n- event_label: old\n- value: 예전\n'+md(a)+'\n## 새 로깅\n- event_label: service__screen__target__click\n- value: 새 값\n'+md(b);
+ const output='# Sample\n\n플랫폼: ANDROID\n[Notion 기준 명세]('+properties.url+')\n원본 ID: '+tick+id+tick+'\n\n<!-- notion-body:start -->\n'+body+'\n<!-- notion-body:end -->\n<details>\n<summary>Notion 원문 속성 전체</summary>\n\n'+tick.repeat(3)+'json\n'+JSON.stringify(properties)+'\n'+tick.repeat(3)+'\n</details>\n';
+ write(doc,output);
+ const images=[a,b].map((id,i)=>{const bytes=Buffer.from('image-'+i),asset='assets/'+id+'.png';write(asset,bytes);return {id,asset,bytes:bytes.length,sha256:sha256(bytes),git_blob_sha:crypto.createHash('sha1').update(Buffer.from('blob '+bytes.length+'\0')).update(bytes).digest('hex')};});
+ const sourcePages=[{id,title:'Sample',service:'주변상점',url:properties.url,original_body:source,platforms:['ANDROID'],properties},{id:blankId,service:'주변상점',original_body:'',url:'https://app.notion.com/p/'+blankId}];
+ const gz=zlib.gzipSync(JSON.stringify(sourcePages));write(META+'/source-pages.json.gz',gz);
+ const entry={notion_id:id,title:'Sample',service:'주변상점',path:doc,notion_url:properties.url,source_body_sha256:sha256(source),output_sha256:sha256(output),platforms:['ANDROID'],image_ids:[a,b]};
+ const manifest={service:'주변상점',pages:[entry],blank_pages:[{notion_id:blankId,service:'주변상점',url:'https://app.notion.com/p/'+blankId}]};
+ write(META+'/services/01.json',JSON.stringify(manifest));
+ write(META+'/images/01.json',JSON.stringify(images));
+ write(META+'/summary.json',JSON.stringify({notion_rows:2,nonblank_pages:1,blank_pages:1,source_snapshot:{path:META+'/source-pages.json.gz',sha256:sha256(gz),records:2},services:[{path:'services/01.json'}],images:{unique_files:2,occurrences:2},previous_exports:[]}));
+ write('event-log/01-service/README.md','[Sample](sample.md)\n[Blank](https://app.notion.com/p/'+blankId+')\n');
+ const active=['주변상점','복덕방','사장님','식단','버스','게시판','배너','홈화면 리디자인','콜밴팟','학교 부서 정보','팀원 모집','로그인/회원가입/정보수정 V2','시간표','모의수강신청','강제 업데이트','다국어 지원'];
+ write('README.md',active.map(n=>'['+n+'](event-log/01-service/README.md)').join('\n')+'\n## 레거시 서비스\n');
+ const mutate=fn=>{const changed=fn(read(doc));write(doc,changed);manifest.pages[0].output_sha256=sha256(changed);write(META+'/services/01.json',JSON.stringify(manifest));};
+ return {root,write,read,doc,mutate,a,b,md,manifest};
+}
+test('current source snapshot, metadata, references and image bytes all pass',t=>{const f=fixture(t);assert.deepEqual(verifyCurrent(f.root).errors,[]);});
+test('changed current value fails even after refreshing output hash',t=>{const f=fixture(t);f.mutate(s=>s.replace('- value: 새 값','- value: 다른 값'));assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Source prose')));});
+test('changed past value is rejected',t=>{const f=fixture(t);f.mutate(s=>s.replace('- value: 예전','- value: 손실'));assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Source prose')));});
+test('moving a photo into the wrong section fails with its page sequence intact',t=>{const f=fixture(t);f.mutate(s=>s.replace(f.md(f.a)+'\n## 새 로깅','## 새 로깅\n'+f.md(f.a)));assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Source prose')));});
+test('changed image bytes are rejected',t=>{const f=fixture(t);f.write('assets/'+f.a+'.png','corrupted');assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Image bytes')));});
+test('changed platform property is rejected despite a new output hash',t=>{const f=fixture(t);f.mutate(s=>s.replace('"platform":["ANDROID"]','"platform":["WEB"]'));assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Properties')));});
+test('unlisted reader documents are rejected',t=>{const f=fixture(t);f.write('event-log/01-service/extra.md','# Unexpected');assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Unmapped')));});
+test('missing service-list entry is rejected',t=>{const f=fixture(t);f.write('event-log/01-service/README.md','[Blank](https://app.notion.com/p/bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb)');assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Service index')));});
+test('logging fields inserted outside the source body are rejected',t=>{const f=fixture(t);f.mutate(s=>s+'\n## 새 로깅\n- value: injected\n');assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('outside source body')));});
+test('duplicate body markers are rejected',t=>{const f=fixture(t);f.mutate(s=>s+'\n<!-- notion-body:start -->\n<!-- notion-body:end -->\n');assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('marker uniqueness')));});
+test('changed Notion source snapshot is rejected',t=>{const f=fixture(t);f.write(META+'/source-pages.json.gz',zlib.gzipSync('[]'));assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Source snapshot file hash')));});
+test('percent-encoded parentheses in a valid service-list filename are accepted',t=>{const f=fixture(t);const renamed='event-log/01-service/(sample).md';f.write(renamed,f.read(f.doc));fs.unlinkSync(path.join(f.root,f.doc));f.manifest.pages[0].path=renamed;f.write(META+'/services/01.json',JSON.stringify(f.manifest));f.write('event-log/01-service/README.md',f.read('event-log/01-service/README.md').replace('sample.md','%28sample%29.md'));assert.deepEqual(verifyCurrent(f.root).errors,[]);});
+

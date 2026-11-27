@@ -1,0 +1,111 @@
+{
+  "service": "강제 업데이트",
+  "pages": [
+    {
+      "notion_id": "93b0221954bc82458324014da77573b0",
+      "service": "강제 업데이트",
+      "title": "1. 강제 업데이트 화면 표시",
+      "path": "event-log/18-강제-업데이트/1.-강제-업데이트-화면-표시-1b102219.md",
+      "notion_url": "https://app.notion.com/p/93b0221954bc82458324014da77573b0",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:03.849Z",
+      "source_body_sha256": "63015413ab7aade415b3a0783c720dfff242eebef2d0f6ab1b1bb1c875180fe9",
+      "output_sha256": "405c74a409b0d523ec4b38cacf3b93e07a19fd937ca7f2f0b9d33f6856432eb6",
+      "image_ids": [
+        "0ddbea7e-c8bb-413e-8f2d-7301a725cfbd"
+      ]
+    },
+    {
+      "notion_id": "c390221954bc82ffaec401e93ba69ace",
+      "service": "강제 업데이트",
+      "title": "2. 업데이트하기 클릭",
+      "path": "event-log/18-강제-업데이트/2.-업데이트하기-클릭-d7102219.md",
+      "notion_url": "https://app.notion.com/p/c390221954bc82ffaec401e93ba69ace",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:04.275Z",
+      "source_body_sha256": "44b96fccd78ff150c0bcdfa2974c6ebaa82f4d85954f16fedf83773804328919",
+      "output_sha256": "8f7605905a451e4ee5c692e57acf3a079f21fddfbb026f8f9087aee115269426",
+      "image_ids": [
+        "356a8bbc-ea31-451c-bb76-14e6338a9b36"
+      ]
+    },
+    {
+      "notion_id": "f810221954bc837d9bb1019406ff292d",
+      "service": "강제 업데이트",
+      "title": "3. 이미 업데이트했나요 클릭",
+      "path": "event-log/18-강제-업데이트/3.-이미-업데이트했나요-클릭-e2b02219.md",
+      "notion_url": "https://app.notion.com/p/f810221954bc837d9bb1019406ff292d",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:03.935Z",
+      "source_body_sha256": "4b1d7c5e382308841d2f85b129cea08c72bd9cf63c4632efbf572dae2638b067",
+      "output_sha256": "fa932f7c66142944cf24889a853043aa5ff9a62b6b0dc6d5c72e9fe506c8c3fb",
+      "image_ids": [
+        "a1b8611c-f7ac-4b3a-940f-176c314ff9d5"
+      ]
+    },
+    {
+      "notion_id": "daf0221954bc838aaa5a81b7321f1bad",
+      "service": "강제 업데이트",
+      "title": "4. 업데이트 확인 팝업 닫기",
+      "path": "event-log/18-강제-업데이트/4.-업데이트-확인-팝업-닫기-00902219.md",
+      "notion_url": "https://app.notion.com/p/daf0221954bc838aaa5a81b7321f1bad",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:04.031Z",
+      "source_body_sha256": "bb6a7f502f3b56e299b798ee286b59cfc8857440446a7d429deea8873c05b029",
+      "output_sha256": "25944bd70e3ddac0e19c56eb1ed922b5089c99cdc1d36fc0916fcb319454c1c2",
+      "image_ids": [
+        "689028c5-8385-4aef-949a-afd0a16dec5b"
+      ]
+    },
+    {
+      "notion_id": "1850221954bc838fbc4b01a67f0f71a0",
+      "service": "강제 업데이트",
+      "title": "5. 업데이트 확인 팝업 스토어 가기",
+      "path": "event-log/18-강제-업데이트/5.-업데이트-확인-팝업-스토어-가기-86702219.md",
+      "notion_url": "https://app.notion.com/p/1850221954bc838fbc4b01a67f0f71a0",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:04.119Z",
+      "source_body_sha256": "b7d49c59e59ae59f8bcf8f2c63e4bbb2187b172e132a54238a946ced8c1d1957",
+      "output_sha256": "27bb6180f4ada7ac0ce9e8642849c59583fa51518a9adcb53f38eeba53d37862",
+      "image_ids": [
+        "b64d26d4-5b81-4305-bf1c-ae9e6e26f862"
+      ]
+    },
+    {
+      "notion_id": "3a90221954bc831f887781b869e16ba6",
+      "service": "강제 업데이트",
+      "title": "6. 강제 업데이트 화면 이탈",
+      "path": "event-log/18-강제-업데이트/6.-강제-업데이트-화면-이탈-8d402219.md",
+      "notion_url": "https://app.notion.com/p/3a90221954bc831f887781b869e16ba6",
+      "platforms": [],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:04.191Z",
+      "source_body_sha256": "9f93bd41136734c69ec8c76fd3448f6587b1b2efc301fef70cc376a94e0177b8",
+      "output_sha256": "faf948f6ec003be438a1a709b118dd408a864387ec12bb54e362b74e83885d12",
+      "image_ids": [
+        "0ddbea7e-c8bb-413e-8f2d-7301a725cfbd"
+      ]
+    }
+  ],
+  "blank_pages": []
+}

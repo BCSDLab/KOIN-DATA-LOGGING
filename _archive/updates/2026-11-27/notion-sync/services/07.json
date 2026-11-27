@@ -1,0 +1,1139 @@
+{
+  "service": "배너",
+  "pages": [
+    {
+      "notion_id": "7b60221954bc82b884ca01988afdbbc2",
+      "service": "배너",
+      "title": "0-1. 메인_모달진입",
+      "path": "event-log/09-배너/0-1.-메인_모달진입.md",
+      "notion_url": "https://app.notion.com/p/7b60221954bc82b884ca01988afdbbc2",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:33.802Z",
+      "source_body_sha256": "ea4cca93cf6d261f8006ef19570ed49a66c5fc177581e606d5f959e8e219aa14",
+      "output_sha256": "f21e9c4b541e310efbd40610f042de69cd497b4f983b2325a5e0580d089cabaf",
+      "image_ids": []
+    },
+    {
+      "notion_id": "eb70221954bc82048a20811f2461c24e",
+      "service": "배너",
+      "title": "1-1. 메인_모달진입",
+      "path": "event-log/09-배너/1-1.-메인_모달진입.md",
+      "notion_url": "https://app.notion.com/p/eb70221954bc82048a20811f2461c24e",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:35.582Z",
+      "source_body_sha256": "4cda07b8f4c72150e138dfa465c4a5e055e7eb3148aa68ff49fb866bd1186a97",
+      "output_sha256": "c51dfa2d39e3f7abe2fd6fb420323760ae0aa1b97694b09c4a9917bffb6d726c",
+      "image_ids": [
+        "6181e03f-d715-416f-855e-5a8491c91931",
+        "fcc43c84-e398-4df0-894d-8a268a0f601e",
+        "dc6de882-c824-4b65-baa7-f466698bd47c",
+        "28876784-88f3-4e70-afd5-0d905b213893"
+      ]
+    },
+    {
+      "notion_id": "49e0221954bc82e3b43401a38f1ca782",
+      "service": "배너",
+      "title": "1-2. 메인_모달_클릭",
+      "path": "event-log/09-배너/1-2.-메인_모달_클릭.md",
+      "notion_url": "https://app.notion.com/p/49e0221954bc82e3b43401a38f1ca782",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:45.192Z",
+      "source_body_sha256": "6f54a406886b467048cf19fda89b4b459cc63ed7e1c4c4c7034b452158192780",
+      "output_sha256": "2301fc1ef4922e0dfbc1d6ee78bfd5db5536599cdb8f435a99379b50100c3787",
+      "image_ids": [
+        "9f2849a3-bce7-4c1a-aea6-e2e5606d4b8d",
+        "33eb65fd-644b-4f61-b748-02c6489ad097",
+        "dc6de882-c824-4b65-baa7-f466698bd47c",
+        "3cf19ffa-1c37-4032-8a2c-ab31a202376d"
+      ]
+    },
+    {
+      "notion_id": "be30221954bc82bcb2258136d370dfc3",
+      "service": "배너",
+      "title": "1-3. 메인_모달닫기_클릭",
+      "path": "event-log/09-배너/1-3.-메인_모달닫기_클릭.md",
+      "notion_url": "https://app.notion.com/p/be30221954bc82bcb2258136d370dfc3",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:34.318Z",
+      "source_body_sha256": "7027c65b338b6d197f4ffabe58f7084c7882545214ec3c59c2879b6c2b1d7104",
+      "output_sha256": "c3def0a470242003bd307a79bdf4c794eb5168dc30df782774e462e68e36c756",
+      "image_ids": [
+        "cf2d017f-5e0e-4c2c-93bc-53dea7fcc8e4",
+        "f15f7efc-a5cf-413f-b4ba-dc788468c821",
+        "7ecb8eeb-8126-4ccd-a63f-c838b151cafa",
+        "e79b1a78-89bc-4952-9611-e60f0ec55de2"
+      ]
+    },
+    {
+      "notion_id": "8f60221954bc83cdb57b0168d676d053",
+      "service": "배너",
+      "title": "1-4. 메인_모달일주일닫기_클릭",
+      "path": "event-log/09-배너/1-4.-메인_모달일주일닫기_클릭.md",
+      "notion_url": "https://app.notion.com/p/8f60221954bc83cdb57b0168d676d053",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:45.483Z",
+      "source_body_sha256": "912630c140f9589b0f64fe0b62be92497ad91ab2bff98f4dbe7a0804dbd9266e",
+      "output_sha256": "2ede7f39209033746a8e9bbe3be53b0c59119ed38b2d2d43baff4371233d1719",
+      "image_ids": [
+        "baef994d-eb56-4319-a822-29491ee21318",
+        "105bdd66-40d3-433b-b56f-11c5c2205447",
+        "66552bfc-8082-4a76-9fff-8dae05c85371",
+        "0f8f940a-9014-4a5a-85c0-6826664884bf",
+        "6aa14108-8a45-440b-afe7-04a2f63b9caf"
+      ]
+    },
+    {
+      "notion_id": "fc10221954bc83859fae0174bd9ba9bd",
+      "service": "배너",
+      "title": "1-5. (모바일)메인_다음모달 - swipe",
+      "path": "event-log/09-배너/1-5.-(모바일)메인_다음모달-swipe.md",
+      "notion_url": "https://app.notion.com/p/fc10221954bc83859fae0174bd9ba9bd",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:46.041Z",
+      "source_body_sha256": "6f78e007db7ab5a2592a77dbf5dfd9507c08cb0386418a3aad08aed6def731f6",
+      "output_sha256": "e935839cb49012148d8948129547eb44fe796d49c9d2aafd1052dcac34f30531",
+      "image_ids": [
+        "82ad29fc-3481-4cb9-a555-67cf3d847099",
+        "12a78967-f6e4-4293-82e8-0c324c1c0ab4",
+        "737f3c5e-d383-4cb7-89d7-9c5950941f13"
+      ]
+    },
+    {
+      "notion_id": "33b0221954bc83a7819901fa52d09fa0",
+      "service": "배너",
+      "title": "1-6. (웹)메인_다음모달_클릭",
+      "path": "event-log/09-배너/1-6.-(웹)메인_다음모달_클릭.md",
+      "notion_url": "https://app.notion.com/p/33b0221954bc83a7819901fa52d09fa0",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:43.176Z",
+      "source_body_sha256": "fabd81bbcb6a5c8a660e723435d429f440bf1316744f85461d47bfecc34feb89",
+      "output_sha256": "015c6aaf418031849f310b5296465af266d292f0203bc1275fb255667987b4d4",
+      "image_ids": [
+        "12a78967-f6e4-4293-82e8-0c324c1c0ab4",
+        "3b263e94-4ea1-436b-9b57-1285cf3dd95b",
+        "4ed4b222-6caf-4cda-9453-5a7d7bb0f33e",
+        "039ffcd6-f960-4835-852c-5d30f669a517"
+      ]
+    },
+    {
+      "notion_id": "43e0221954bc83cb9971017df2603e80",
+      "service": "배너",
+      "title": "1-7. (웹) 메인_모달_밑에 버튼 클릭",
+      "path": "event-log/09-배너/1-7.-(웹)-메인_모달_밑에-버튼-클릭.md",
+      "notion_url": "https://app.notion.com/p/43e0221954bc83cb9971017df2603e80",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:35.968Z",
+      "source_body_sha256": "d31146bb18b3042b443d4447f4344880ee25125ef7235b07d9a3ad362a28f75c",
+      "output_sha256": "76b995feee88da836455ef69f0feef0d3c704e4cc1c2cdc6ad4ae486d8bc292f",
+      "image_ids": [
+        "01f1207c-38e1-45d6-8257-aaad220ba818"
+      ]
+    },
+    {
+      "notion_id": "d1f0221954bc8288a9b481707a8a54f5",
+      "service": "배너",
+      "title": "10-1. 헤더_교내 시설물 정보_클릭",
+      "path": "event-log/09-배너/10-1.-헤더_교내-시설물-정보_클릭.md",
+      "notion_url": "https://app.notion.com/p/d1f0221954bc8288a9b481707a8a54f5",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:33.994Z",
+      "source_body_sha256": "b665a6326ed6345b1d73c217eb806064fb44f745138022f1695bd44c6ea17aeb",
+      "output_sha256": "5b25469f77443c52be1e44bd23ee4d2bbeba23407fe1ff7e019fdde58fa814d4",
+      "image_ids": [
+        "a6b33a82-4966-49a1-8441-84c538a89f6f"
+      ]
+    },
+    {
+      "notion_id": "b7a0221954bc83ec8b1001047840bf63",
+      "service": "배너",
+      "title": "10-2. 푸터_교내 시설물 정보_클릭",
+      "path": "event-log/09-배너/10-2.-푸터_교내-시설물-정보_클릭.md",
+      "notion_url": "https://app.notion.com/p/b7a0221954bc83ec8b1001047840bf63",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:46.182Z",
+      "source_body_sha256": "9717c559ce3e2a7014ab7feaf501f49c981e849b29c6b78f9f9f38b8f8050b50",
+      "output_sha256": "9201656221ed817de40a774c6363eda179cc570659054d8002e7eb56236bc9d1",
+      "image_ids": [
+        "4af9be75-6dcd-481a-80c3-88fc58b6b1c9"
+      ]
+    },
+    {
+      "notion_id": "dbe0221954bc8215bd750155ed4820f9",
+      "service": "배너",
+      "title": "10-3. 햄버거_교내 시설물 정보_클릭",
+      "path": "event-log/09-배너/10-3.-햄버거_교내-시설물-정보_클릭.md",
+      "notion_url": "https://app.notion.com/p/dbe0221954bc8215bd750155ed4820f9",
+      "platforms": [
+        "ANDROID"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:35.128Z",
+      "source_body_sha256": "bdc12e7f6a61960dc0e0b7d6ff2d707e6eac4e2c6717f0a78e782d7e73651517",
+      "output_sha256": "3ee1b3a4d9b1e3073221ce0f962d2a4129721acc5cf06215c74645213049600f",
+      "image_ids": [
+        "2018cae6-a0b8-456a-84b3-aa414812b4b0"
+      ]
+    },
+    {
+      "notion_id": "5cd0221954bc83328fcc011f31ceff9f",
+      "service": "배너",
+      "title": "11-1.분실물_글쓰기_클릭",
+      "path": "event-log/09-배너/11-1.분실물_글쓰기_클릭.md",
+      "notion_url": "https://app.notion.com/p/5cd0221954bc83328fcc011f31ceff9f",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:44.782Z",
+      "source_body_sha256": "39492594b851a8a7130f5eb53799354a725ee2a62dfa365dc317e55e4fbcd0c7",
+      "output_sha256": "ea0d3065ac173559e0175aafbb4e5473355c65bacad45f1e8796ac58b1c246b0",
+      "image_ids": [
+        "3ebbdbf0-dd7f-4ab7-bbab-28bc7bcf4ca5",
+        "e7ffc0cc-0884-4045-9fdc-946201323e81",
+        "c401587e-36c3-4c39-ae79-ff304519d946"
+      ]
+    },
+    {
+      "notion_id": "2330221954bc83be9890813e7a3f42cb",
+      "service": "배너",
+      "title": "11-10.분실물_분실물신고_물품추가_클릭",
+      "path": "event-log/09-배너/11-10.분실물_분실물신고_물품추가_클릭.md",
+      "notion_url": "https://app.notion.com/p/2330221954bc83be9890813e7a3f42cb",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:45.067Z",
+      "source_body_sha256": "aed4f9b3de353c688b5c6ceb9388099240e3a8953eede4a40e2cc3b4f655abe3",
+      "output_sha256": "5d0627a63d864f068cefc1e6f4a2d17a95d757bdeed2fb9fa7d010bcb4e893bf",
+      "image_ids": [
+        "089230bc-d727-4c83-998e-e3520ad78307",
+        "4b0ac106-22cd-4aed-9e40-5b0139f12021"
+      ]
+    },
+    {
+      "notion_id": "c130221954bc823a841c010fe252d1ed",
+      "service": "배너",
+      "title": "11-11.분실물_분실물신고_작성완료_클릭",
+      "path": "event-log/09-배너/11-11.분실물_분실물신고_작성완료_클릭.md",
+      "notion_url": "https://app.notion.com/p/c130221954bc823a841c010fe252d1ed",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:44.315Z",
+      "source_body_sha256": "79ec31d80e0e22d6f8df576e70260309ced6eb2be4e96909c5c6f6472e86dc9c",
+      "output_sha256": "f06013deae6f42531bee39b32b35b3b815d3f4fe066a2fda14f47c36e8e2e878",
+      "image_ids": [
+        "0b2c6773-d842-48be-9549-588c231233bb",
+        "e81167df-1c7a-4122-9c9c-39533961b525"
+      ]
+    },
+    {
+      "notion_id": "d860221954bc8398a699813b3c4b9127",
+      "service": "배너",
+      "title": "11-12.분실물_쪽지보내기_클릭",
+      "path": "event-log/09-배너/11-12.분실물_쪽지보내기_클릭.md",
+      "notion_url": "https://app.notion.com/p/d860221954bc8398a699813b3c4b9127",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:46.284Z",
+      "source_body_sha256": "da9aa4b8f01677e7ad7714b4d21f452402a2974fe5e8f2270e5921687d98f135",
+      "output_sha256": "1cf1dcad388143940a044810aaec8500cf85b80f1113681c461798b8b7a23102",
+      "image_ids": [
+        "e85a69f2-fd47-4bc9-82aa-6fbdc94ffffc",
+        "781ae33d-b42f-4a88-afc7-987333b66a7c",
+        "ea1d235a-7263-4df4-9480-d1e3f0a27829"
+      ]
+    },
+    {
+      "notion_id": "a060221954bc839a9bae81832ce4c1dd",
+      "service": "배너",
+      "title": "11-13.분실물_신고하기_클릭",
+      "path": "event-log/09-배너/11-13.분실물_신고하기_클릭.md",
+      "notion_url": "https://app.notion.com/p/a060221954bc839a9bae81832ce4c1dd",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:47.177Z",
+      "source_body_sha256": "c4adbe499d28c048157ee94f969ad311ba5e8d18f24ba36ae40497182b30d886",
+      "output_sha256": "db7ceff700715742a1fe21796674d0cbc9be6df4d2fc54b8caf481bd31ea6580",
+      "image_ids": [
+        "d4230b63-72f6-4715-8901-826b72d86957",
+        "a35d86fa-0eb1-4461-84bd-8e31bec2896b",
+        "da7c8a8a-7d06-4a4b-ab9a-1dfaf006bf2f"
+      ]
+    },
+    {
+      "notion_id": "2250221954bc822581ab81e7101fc627",
+      "service": "배너",
+      "title": "11-14.분실물_게시글신고하기_신고하기_클릭",
+      "path": "event-log/09-배너/11-14.분실물_게시글신고하기_신고하기_클릭.md",
+      "notion_url": "https://app.notion.com/p/2250221954bc822581ab81e7101fc627",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:35.317Z",
+      "source_body_sha256": "19ec494b384ec0347b442e3f6e07e2e9ecb703c3189b95a30651269f4fb53c62",
+      "output_sha256": "e1ecbdfacaa5a6b69fee0dba4d8b3079ea9382d8cd9043e02da586a0d2750eee",
+      "image_ids": [
+        "0853e6f1-b799-407e-92a6-08cf776c1d42",
+        "bb5a063e-58a2-4b2a-87fd-2919bf031a0f",
+        "9dc5aa81-3764-4bd1-bd29-e083943d3a3e"
+      ]
+    },
+    {
+      "notion_id": "a6b0221954bc8210a25281a5491b47d6",
+      "service": "배너",
+      "title": "11-15.햄버거_쪽지_클릭",
+      "path": "event-log/09-배너/11-15.햄버거_쪽지_클릭.md",
+      "notion_url": "https://app.notion.com/p/a6b0221954bc8210a25281a5491b47d6",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:33.870Z",
+      "source_body_sha256": "8ccda67bf41bd1c36149742b3f50fc576b68b3bf6326802c6b7e81121fdbc3f1",
+      "output_sha256": "b4e56b4f69c8b8f1a622ceb502470e4d148afa61ec9855d5d06d2b970f2a1ba6",
+      "image_ids": [
+        "15c675ba-df70-44a8-ab66-9e2d44f9e98f"
+      ]
+    },
+    {
+      "notion_id": "6990221954bc82ecb64f8100d1daa5d2",
+      "service": "배너",
+      "title": "11-16.쪽지리스트_대화창_클릭",
+      "path": "event-log/09-배너/11-16.쪽지리스트_대화창_클릭.md",
+      "notion_url": "https://app.notion.com/p/6990221954bc82ecb64f8100d1daa5d2",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:36.273Z",
+      "source_body_sha256": "9e31aa0073ac39864c590233881f44269f1dfe3458e3469a2f61772c37707f4a",
+      "output_sha256": "f29db2c76321fb9598547bb137dea374d058807d6dea3bb9a7fcddb652210be3",
+      "image_ids": [
+        "5a7d6a27-2550-4f3e-a74c-009b40a3f43d",
+        "008e223e-02e8-4031-a651-f64700ddb694"
+      ]
+    },
+    {
+      "notion_id": "3570221954bc8352995a01b782815e2d",
+      "service": "배너",
+      "title": "11-17.헤더_쪽지_클릭",
+      "path": "event-log/09-배너/11-17.헤더_쪽지_클릭.md",
+      "notion_url": "https://app.notion.com/p/3570221954bc8352995a01b782815e2d",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:42.117Z",
+      "source_body_sha256": "80abdf0bfffeb9173056b15dcc034a8cd9ef1a8995e00d81d7837e4ad095f2f1",
+      "output_sha256": "9b802412351565f61a8733372ac7d5d7730054f6afb879d7f940e0cc835bf2d8",
+      "image_ids": [
+        "75014c5e-5fd4-49b6-8450-57dd2ed3420b"
+      ]
+    },
+    {
+      "notion_id": "0290221954bc831c8de78111f8908eed",
+      "service": "배너",
+      "title": "11-18.분실물_게시물종류_클릭",
+      "path": "event-log/09-배너/11-18.분실물_게시물종류_클릭.md",
+      "notion_url": "https://app.notion.com/p/0290221954bc831c8de78111f8908eed",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:36.469Z",
+      "source_body_sha256": "9b7343997aa7453ff25090bf51430ce605a2cde38c94ad56ce19b12d49d874c1",
+      "output_sha256": "55818f6e9f3a83fecd24e08bfdafa248eff7c7c4b4656fffc34394f392b2d378",
+      "image_ids": [
+        "746dcf8d-6c59-47e8-b6e4-56e965d60400",
+        "ace304d2-3731-4e66-a5e2-ec2516661475"
+      ]
+    },
+    {
+      "notion_id": "c4d0221954bc83fda54781874dbcebe5",
+      "service": "배너",
+      "title": "11-19.푸터_쪽지_클릭",
+      "path": "event-log/09-배너/11-19.푸터_쪽지_클릭.md",
+      "notion_url": "https://app.notion.com/p/c4d0221954bc83fda54781874dbcebe5",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:34.973Z",
+      "source_body_sha256": "5acefa73b166a8c97a9e89641d583671cb12ee927e5d230b138a7d664fe447d7",
+      "output_sha256": "0c4df87267f279b79a9bd7c39baadc821264b8fab6bf7121d8234d32e42cf906",
+      "image_ids": [
+        "bfecb910-bdd5-4533-ae7c-6092534e528f"
+      ]
+    },
+    {
+      "notion_id": "efa0221954bc8234a54b0187db002627",
+      "service": "배너",
+      "title": "11-2.분실물_습득물신고_품목선택_클릭",
+      "path": "event-log/09-배너/11-2.분실물_습득물신고_품목선택_클릭.md",
+      "notion_url": "https://app.notion.com/p/efa0221954bc8234a54b0187db002627",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:45.545Z",
+      "source_body_sha256": "5f6ac12610f826c01c636afe5f76437b68bfb9df029a783dba60bb6715393d96",
+      "output_sha256": "2cf4b1d15684bea4bfb53775844041a7d422f965dc9569040d4d9e1afbdb2baa",
+      "image_ids": [
+        "b7b39d33-a6df-4ffb-b5a9-5046df91e8ac",
+        "98576b5e-8535-4b74-af67-97b9da56f140",
+        "4dfa0783-ec83-452a-b583-a297cc6033fd"
+      ]
+    },
+    {
+      "notion_id": "99d0221954bc835898c701ab30e1fd14",
+      "service": "배너",
+      "title": "11-3.분실물_습득물신고_물품추가_클릭",
+      "path": "event-log/09-배너/11-3.분실물_습득물신고_물품추가_클릭.md",
+      "notion_url": "https://app.notion.com/p/99d0221954bc835898c701ab30e1fd14",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:47.096Z",
+      "source_body_sha256": "3de94fd870f101d2b88e044ef8d839fb11f48d2382ab57a6247f6187917827f8",
+      "output_sha256": "0ef66811bea2df2079a47435c42e66614aea844f65f003db80c9eb8fa5248398",
+      "image_ids": [
+        "4946114d-c9c0-43cb-877e-74693b9d9971",
+        "4b0ac106-22cd-4aed-9e40-5b0139f12021",
+        "bcd1cb04-da68-461a-be4d-2eeedf1a9611"
+      ]
+    },
+    {
+      "notion_id": "1b20221954bc82299ddd81e3564b9e88",
+      "service": "배너",
+      "title": "11-4.분실물_습득물신고_작성완료_클릭",
+      "path": "event-log/09-배너/11-4.분실물_습득물신고_작성완료_클릭.md",
+      "notion_url": "https://app.notion.com/p/1b20221954bc82299ddd81e3564b9e88",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:43.475Z",
+      "source_body_sha256": "7279f2bc87f194525c97f20c74509d951d603644f8c99b584d4a54c7dd7db545",
+      "output_sha256": "ec5a9ed155e5a233d110c3005d01dd02cdeb568aca4a3e90b9425df0cc18fbe5",
+      "image_ids": [
+        "0895cb76-e97b-40a3-bb61-f82f9724ec68",
+        "e81167df-1c7a-4122-9c9c-39533961b525",
+        "03632526-a28e-4e25-89a7-f5cb439157eb"
+      ]
+    },
+    {
+      "notion_id": "44f0221954bc8202ad6981f13d51f49f",
+      "service": "배너",
+      "title": "11-5.분실물_습득물신고_삭제_클릭",
+      "path": "event-log/09-배너/11-5.분실물_습득물신고_삭제_클릭.md",
+      "notion_url": "https://app.notion.com/p/44f0221954bc8202ad6981f13d51f49f",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:34.241Z",
+      "source_body_sha256": "071d2e858cb2aca0f4e9b48aecd4bbc7d76508d28a7493395b3aebe87acacefc",
+      "output_sha256": "0bb0ceafbb77ea7a63326899025df15781c5e4f72093c3b7eb1b7c7d50a97783",
+      "image_ids": [
+        "5d9529db-fae8-4521-8142-d526a865c4c2",
+        "29e8f102-abb4-49cd-aaf2-d386e87de04d",
+        "f317bced-34bd-45ee-b122-2efdfab5225c"
+      ]
+    },
+    {
+      "notion_id": "2520221954bc835c8b4d01474b9a4c99",
+      "service": "배너",
+      "title": "11-6.분실물_습득물신고_삭제확인_클릭",
+      "path": "event-log/09-배너/11-6.분실물_습득물신고_삭제확인_클릭.md",
+      "notion_url": "https://app.notion.com/p/2520221954bc835c8b4d01474b9a4c99",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:34.051Z",
+      "source_body_sha256": "bd65ca1de5e964004eb7b1a9a52e10e203fd2c161fc5de26bb0d8c52097f5854",
+      "output_sha256": "33ec4ad5c08186ac453dfc7c44dbae6275c7ebdd3531bf75ae2380543adaf6c8",
+      "image_ids": [
+        "6b5b4a63-4767-484d-9659-e893b592b4dc",
+        "7ca9bf56-e898-4690-ae50-095ed99299b2",
+        "c80e7832-09b6-4df1-ab57-1544973d2912"
+      ]
+    },
+    {
+      "notion_id": "8e10221954bc82d2a2d70167c20cdfd3",
+      "service": "배너",
+      "title": "11-7.분실물_잃어버렸어요_클릭",
+      "path": "event-log/09-배너/11-7.분실물_잃어버렸어요_클릭.md",
+      "notion_url": "https://app.notion.com/p/8e10221954bc82d2a2d70167c20cdfd3",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:35.689Z",
+      "source_body_sha256": "1c7d8953d1c8095035fe8ce734be523f0fa6ec3b850090da856a5b6d866ce285",
+      "output_sha256": "7606e4f1b43d120bd947fbce1a18299e220391f019e0a28ac7ee6d228769f5dc",
+      "image_ids": [
+        "3d0347fb-8c1f-4e3c-9437-88f6f76a4905",
+        "731be4dd-5dc9-4ea1-bf9a-8da06cf94faf",
+        "962e0a61-e377-42b8-ba45-c5ac5e2fea2a"
+      ]
+    },
+    {
+      "notion_id": "dee0221954bc8374bc1101b16a54f54b",
+      "service": "배너",
+      "title": "11-8.분실물_주인을찾아요_클릭",
+      "path": "event-log/09-배너/11-8.분실물_주인을찾아요_클릭.md",
+      "notion_url": "https://app.notion.com/p/dee0221954bc8374bc1101b16a54f54b",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:42.530Z",
+      "source_body_sha256": "259722ed1486dd562fd2bb3631ad44872353d58042c6f10253b872514273333c",
+      "output_sha256": "25d9fede1b03068a67e6b1aaa59b0361de140d52882ddcb50dd8eaeb5abb0984",
+      "image_ids": [
+        "33f57d82-45db-43c5-a1ae-67cd916d4449",
+        "378a2ff9-7814-4b72-b1a4-d8d252f892ff",
+        "0418392f-f7fd-4097-888b-6443a8ecae2b"
+      ]
+    },
+    {
+      "notion_id": "0e50221954bc82c6879d015cb673d361",
+      "service": "배너",
+      "title": "11-9.분실물_분실물신고_품목선택_클릭",
+      "path": "event-log/09-배너/11-9.분실물_분실물신고_품목선택_클릭.md",
+      "notion_url": "https://app.notion.com/p/0e50221954bc82c6879d015cb673d361",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:45.249Z",
+      "source_body_sha256": "e088fdf858ee9ccf11583e158a9bfe46c9550b2eee19ab0723345137dc2e9c9d",
+      "output_sha256": "ca20b3b1b5a8f6d6b3d00d2d432bd162eba8714f3ae5634a26500271920593d5",
+      "image_ids": [
+        "1ff4848d-c4da-48fa-a240-34cef279d4dd",
+        "98576b5e-8535-4b74-af67-97b9da56f140"
+      ]
+    },
+    {
+      "notion_id": "5700221954bc83f8a4d481835aedb174",
+      "service": "배너",
+      "title": "2-1. 헤더_공지사항_클릭",
+      "path": "event-log/09-배너/2-1.-헤더_공지사항_클릭.md",
+      "notion_url": "https://app.notion.com/p/5700221954bc83f8a4d481835aedb174",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:43.709Z",
+      "source_body_sha256": "c5b819ab90a976bc9a483e07c175330d21487383ee0ec81ee47f176dbefac3b6",
+      "output_sha256": "974a66215f7d10b470ef3489d42f25a89e6c39a408bdcc74e6d88defb08cfd18",
+      "image_ids": [
+        "7474c16b-ab15-42b2-966a-af93011f044a"
+      ]
+    },
+    {
+      "notion_id": "69d0221954bc83569fe301b46c56b779",
+      "service": "배너",
+      "title": "2-2. 푸터_공지사항_클릭",
+      "path": "event-log/09-배너/2-2.-푸터_공지사항_클릭.md",
+      "notion_url": "https://app.notion.com/p/69d0221954bc83569fe301b46c56b779",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:45.413Z",
+      "source_body_sha256": "58f4afa50b75dca4561d5142e5556cc686769bfcc7a146e08f32dff3d61674c4",
+      "output_sha256": "abbb926991092bcf2e6e403076d048c8df27ba065b0948143d5d5668d78ede2d",
+      "image_ids": [
+        "b5d473f6-0918-4b3a-8a13-6ebc3c1934c2"
+      ]
+    },
+    {
+      "notion_id": "2200221954bc83c89b89815432f6119b",
+      "service": "배너",
+      "title": "2-3. 햄버거_공지사항_클릭",
+      "path": "event-log/09-배너/2-3.-햄버거_공지사항_클릭.md",
+      "notion_url": "https://app.notion.com/p/2200221954bc83c89b89815432f6119b",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:46.128Z",
+      "source_body_sha256": "c550d2a99016f2100c24e66b5a297e8b5ebb8a5345f1b9001b241ce1faaebaee",
+      "output_sha256": "dd8ba829cf461ec584b639c4f1cfd414cec4465a3e9a9f5e8a04babf0edcd547",
+      "image_ids": [
+        "d34b1870-a664-4e94-acee-8f4a03306e1f"
+      ]
+    },
+    {
+      "notion_id": "3040221954bc8328bf8601694f16c6c5",
+      "service": "배너",
+      "title": "3-1. 공지사항_가장 많이 본 게시물_클릭",
+      "path": "event-log/09-배너/3-1.-공지사항_가장-많이-본-게시물_클릭.md",
+      "notion_url": "https://app.notion.com/p/3040221954bc8328bf8601694f16c6c5",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:45.358Z",
+      "source_body_sha256": "4997e7c406cab9402d958f0c35135f67133ab0d2ac7de30510e489a674423348",
+      "output_sha256": "f8e3a4c8593faeac6fdf50b5d5ea2c20753f95d4cefa62146cb414b4c6aae519",
+      "image_ids": [
+        "dde110dd-7c08-4db8-9816-f52e95b97dd0"
+      ]
+    },
+    {
+      "notion_id": "8010221954bc82f8a40381143589918c",
+      "service": "배너",
+      "title": "3-2. 공지사항_코리아텍 바로가기_클릭",
+      "path": "event-log/09-배너/3-2.-공지사항_코리아텍-바로가기_클릭.md",
+      "notion_url": "https://app.notion.com/p/8010221954bc82f8a40381143589918c",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:46.420Z",
+      "source_body_sha256": "aa248e6c1aa0486bbbccb540ac13e800c6a48947a953a1e33167b80835a2c3f7",
+      "output_sha256": "c68458c111d1c257d8a867e87272b3959a456dbe357fa94cb9ff40aa847697ef",
+      "image_ids": [
+        "1a7a5aec-80c9-446e-bca1-0b8dca8e63a0"
+      ]
+    },
+    {
+      "notion_id": "8aa0221954bc82b2a0358186e6f0cc7c",
+      "service": "배너",
+      "title": "3-3. 공지사항_아우누리 바로가기_클릭",
+      "path": "event-log/09-배너/3-3.-공지사항_아우누리-바로가기_클릭.md",
+      "notion_url": "https://app.notion.com/p/8aa0221954bc82b2a0358186e6f0cc7c",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:43.305Z",
+      "source_body_sha256": "7a5d15585cfcfc6bb3f6edb2c47d4850e027c33b669dd3b7c11fb1307106dea5",
+      "output_sha256": "c866cbbd77712beaf0d3f5f4edeecab9f307b1cff066e7b2c664a432b92086d0",
+      "image_ids": [
+        "0ced5f2e-975f-4399-b659-5533232d7ef7"
+      ]
+    },
+    {
+      "notion_id": "eee0221954bc821992210150804b2e72",
+      "service": "배너",
+      "title": "3-4. 공지사항_새로운 서비스 요청하기_클릭",
+      "path": "event-log/09-배너/3-4.-공지사항_새로운-서비스-요청하기_클릭.md",
+      "notion_url": "https://app.notion.com/p/eee0221954bc821992210150804b2e72",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:46.518Z",
+      "source_body_sha256": "cb5c5e1762b606e5c573ae26ad5361f9ae034113bd8dce2e803992b1c1ec708e",
+      "output_sha256": "0f1b6227ac9d2a4ca27c69b7bb78103edee2a8839c4818aa7f9f7aa1727cabd6",
+      "image_ids": [
+        "3c48aa75-9aca-463e-8660-a04ca40f8633"
+      ]
+    },
+    {
+      "notion_id": "b820221954bc83beb1dc81d31ae5a1be",
+      "service": "배너",
+      "title": "3-5. 공지사항_BCSD Lab 알아보기_클릭",
+      "path": "event-log/09-배너/3-5.-공지사항_BCSD-Lab-알아보기_클릭.md",
+      "notion_url": "https://app.notion.com/p/b820221954bc83beb1dc81d31ae5a1be",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:45.306Z",
+      "source_body_sha256": "a94ff8e9dcc24bde04d9e08b9c7cd1aa9a09725ad1d863209efe1a2d7798b14b",
+      "output_sha256": "becaf77761c2790c91592dd1999313235e3b49317892261effcb96b35746d571",
+      "image_ids": [
+        "a652b331-f62e-4074-af52-078fdbdaa912"
+      ]
+    },
+    {
+      "notion_id": "fbc0221954bc83b298b401e444ee6fa5",
+      "service": "배너",
+      "title": "5-3. 공지 원본 바로가기_클릭",
+      "path": "event-log/09-배너/5-3.-공지-원본-바로가기_클릭.md",
+      "notion_url": "https://app.notion.com/p/fbc0221954bc83b298b401e444ee6fa5",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:45.683Z",
+      "source_body_sha256": "d9c79cf5e80b1060a49f167c855c0da1aca763585f8916d7529ad42917dd8460",
+      "output_sha256": "85f6648b3465087e470cc984c7c105a4f6c6066c73efdaca6f73fc6037c1c0a0",
+      "image_ids": [
+        "30fb8567-9cd9-4748-a6ea-e0ac31593a57"
+      ]
+    },
+    {
+      "notion_id": "3ea0221954bc8296a69b01e6956eff2f",
+      "service": "배너",
+      "title": "6-4. 공지글 검색_검색하기_클릭",
+      "path": "event-log/09-배너/6-4.-공지글-검색_검색하기_클릭.md",
+      "notion_url": "https://app.notion.com/p/3ea0221954bc8296a69b01e6956eff2f",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:42.329Z",
+      "source_body_sha256": "31e19c0c7a395f75da3d3557986015fc1c47a71769ac96cd48028a34d7941751",
+      "output_sha256": "1b78fff6138fe712798cfb6391676771d6bca835eaa5ed02c49342d72dd1ebdd",
+      "image_ids": [
+        "e7f0b258-dec4-433c-82c3-5800c3074920"
+      ]
+    },
+    {
+      "notion_id": "c430221954bc827fad278114a43b8df1",
+      "service": "배너",
+      "title": "7-9. 알림설정_공지사항 키워드 알림_클릭",
+      "path": "event-log/09-배너/7-9.-알림설정_공지사항-키워드-알림_클릭.md",
+      "notion_url": "https://app.notion.com/p/c430221954bc827fad278114a43b8df1",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:42.722Z",
+      "source_body_sha256": "15efad9a5472c253ce8b210eebf9a632e84f0a0661e6339c15579e56e708c71c",
+      "output_sha256": "6d017f6b06b3b3f2eb7d94220cb93a96d8035d7936a1e8083682a1de75351867",
+      "image_ids": [
+        "71df76ab-d408-4733-a7a5-785a986d11a5"
+      ]
+    },
+    {
+      "notion_id": "0490221954bc82b29d6801f91e78f870",
+      "service": "배너",
+      "title": "8-1. 더보기_클릭",
+      "path": "event-log/09-배너/8-1.-더보기_클릭.md",
+      "notion_url": "https://app.notion.com/p/0490221954bc82b29d6801f91e78f870",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:44.197Z",
+      "source_body_sha256": "93ec2a268dc894bd88a8fb0af0ac99b8da1f05bb74ef032a5cd9f0942be5594a",
+      "output_sha256": "65b899c5ca68a49c48a988f3988db8fddf4435dd927895b67ab71b043f999dab",
+      "image_ids": [
+        "a86a663e-2e48-4667-b492-cfe805f44c1b"
+      ]
+    },
+    {
+      "notion_id": "d030221954bc833fb65381e12a2e407b",
+      "service": "배너",
+      "title": "8-2. 지금 인기있는 공지 배너_클릭",
+      "path": "event-log/09-배너/8-2.-지금-인기있는-공지-배너_클릭.md",
+      "notion_url": "https://app.notion.com/p/d030221954bc833fb65381e12a2e407b",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:44.654Z",
+      "source_body_sha256": "bcb592e33efd7bf4daafb6ad72ff91378c47b20985275a3fdd259ef1b09a0932",
+      "output_sha256": "ef70b50c4fc8530915b9c87a175ef95e6ecd6a9056df861cf13d0e68c7d0db57",
+      "image_ids": [
+        "1eb50c90-e588-4fe3-b7ae-d42da04851af"
+      ]
+    },
+    {
+      "notion_id": "6dd0221954bc82a8847501645ef8ec98",
+      "service": "배너",
+      "title": "8-3. 키워드 관리 진입 배너_클릭",
+      "path": "event-log/09-배너/8-3.-키워드-관리-진입-배너_클릭.md",
+      "notion_url": "https://app.notion.com/p/6dd0221954bc82a8847501645ef8ec98",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:34.179Z",
+      "source_body_sha256": "c70040cf642dfd1fc0fc6f1d0b9da2c223d8b3f7ab801be81ef455682eb94976",
+      "output_sha256": "70ec86359b1745111d3e568e3c75cf14ecf9bf0827e85dfd32c6ba951e328ef1",
+      "image_ids": [
+        "3d935f41-a6e6-4d9d-8c4e-2afa3f569fcc"
+      ]
+    },
+    {
+      "notion_id": "a5d0221954bc83a793f801071c4eadcb",
+      "service": "배너",
+      "title": "9-1. 키워드 게시물_알림",
+      "path": "event-log/09-배너/9-1.-키워드-게시물_알림.md",
+      "notion_url": "https://app.notion.com/p/a5d0221954bc83a793f801071c4eadcb",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:47.238Z",
+      "source_body_sha256": "3d9b625fd078ebf9ed6194fcf77cccc953e69e2b3732b8035859f4bb5b174ac2",
+      "output_sha256": "0464012a5c4bfed7e9baa21093521b58e4fba600731543dcd220825d7e6ea87f",
+      "image_ids": []
+    },
+    {
+      "notion_id": "4dc0221954bc824e976d81c248630c1b",
+      "service": "배너",
+      "title": "4-1. 탭 메뉴바_클릭",
+      "path": "event-log/09-배너/4-1.-탭-메뉴바_클릭.md",
+      "notion_url": "https://app.notion.com/p/4dc0221954bc824e976d81c248630c1b",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:42.987Z",
+      "source_body_sha256": "ac2c50b8aa7766aadfb28ea0d85319938f5fcaf734a7922b94d6adfd46d89d41",
+      "output_sha256": "df20955d3309a8135ee53547ad94a6062c4878e2a73725b4b69a83696abac1f5",
+      "image_ids": [
+        "55d50816-c720-4d11-b903-9aafb1f0fd35"
+      ]
+    },
+    {
+      "notion_id": "62b0221954bc8330852b81b146b9d359",
+      "service": "배너",
+      "title": "4-2. 공지사항 페이지_스크롤(상하)",
+      "path": "event-log/09-배너/4-2.-공지사항-페이지_스크롤(상하).md",
+      "notion_url": "https://app.notion.com/p/62b0221954bc8330852b81b146b9d359",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:46.373Z",
+      "source_body_sha256": "79772de2d8e967e2a497eafcf33602eca673356de2352cba6ce8203a5e6190ea",
+      "output_sha256": "fbfbb4294449a046218b0afe22c91b095f50ad0db8ab5c066770702c657ed716",
+      "image_ids": [
+        "161ea89a-5266-4829-bbd1-3f5abaad58f0"
+      ]
+    },
+    {
+      "notion_id": "6430221954bc82e6bfba019111981d33",
+      "service": "배너",
+      "title": "5-1. 목록_클릭",
+      "path": "event-log/09-배너/5-1.-목록_클릭.md",
+      "notion_url": "https://app.notion.com/p/6430221954bc82e6bfba019111981d33",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:46.332Z",
+      "source_body_sha256": "c274305b1e76168ac32196c80c0dfd8615b1aac6d6b3cc1098b262718ea220a7",
+      "output_sha256": "4010b4971cc204edf804c5e832ee5402c9616c76c5dd15e1fc84f2c771d5b63f",
+      "image_ids": [
+        "9a3f72e4-db9e-4cf9-838e-034408191bc3"
+      ]
+    },
+    {
+      "notion_id": "3aa0221954bc834eabf30131070d5008",
+      "service": "배너",
+      "title": "5-2. 인기있는 공지_클릭",
+      "path": "event-log/09-배너/5-2.-인기있는-공지_클릭.md",
+      "notion_url": "https://app.notion.com/p/3aa0221954bc834eabf30131070d5008",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:44.976Z",
+      "source_body_sha256": "76fcc9f596caca9e322ea42d634221de4c4d4935cf1f4f0301bf3a993476da8b",
+      "output_sha256": "0f7df9810d0bf15b525a919503d119cf2168252a85c9df1d93b4150e14876ab8",
+      "image_ids": [
+        "24a5ead4-c5e2-4c1f-8f6b-9b51c9f64bc7"
+      ]
+    },
+    {
+      "notion_id": "8a10221954bc82cdbf4b8121104dd140",
+      "service": "배너",
+      "title": "6-1. 공지글 검색_클릭",
+      "path": "event-log/09-배너/6-1.-공지글-검색_클릭.md",
+      "notion_url": "https://app.notion.com/p/8a10221954bc82cdbf4b8121104dd140",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:46.235Z",
+      "source_body_sha256": "0b240f552589b45881e4e84a047ec78f3738182c46a3f785f26dd25add951ae5",
+      "output_sha256": "42deb45eee22bd0cc89e24af8e7da4c968eb97ae2f7b83a80efacd93c428ae68",
+      "image_ids": [
+        "b3e511db-2aa4-4f3f-8b86-e03ab5dbf95e"
+      ]
+    },
+    {
+      "notion_id": "3f00221954bc8358a4bf811e84430f42",
+      "service": "배너",
+      "title": "6-2. 많이 검색되는 키워드_클릭",
+      "path": "event-log/09-배너/6-2.-많이-검색되는-키워드_클릭.md",
+      "notion_url": "https://app.notion.com/p/3f00221954bc8358a4bf811e84430f42",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:34.109Z",
+      "source_body_sha256": "3febe6cf1598d8930c1eaa980d9340a982e0f42f86e547116fe758bcac57214c",
+      "output_sha256": "45619267b4241a8e7b47f796050a271f6ce6aa980c42b87fb279189e4852e596",
+      "image_ids": [
+        "89a78c1c-cce2-4ace-b2d0-55dc7f71f7cc"
+      ]
+    },
+    {
+      "notion_id": "ff10221954bc838fb5ad017135a76696",
+      "service": "배너",
+      "title": "7-1. 키워드 관리_클릭",
+      "path": "event-log/09-배너/7-1.-키워드-관리_클릭.md",
+      "notion_url": "https://app.notion.com/p/ff10221954bc838fb5ad017135a76696",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:44.033Z",
+      "source_body_sha256": "8188f8490bd107a78ffb0793489a6490a22b22f9aab9fdd46226fe51076a5211",
+      "output_sha256": "e1f7e2d168a682ffa58f912fc9bd1740887acb3634012b4a8499c63ed81287d6",
+      "image_ids": [
+        "301f535c-d7b3-49f8-afa2-525c92cb3a9c"
+      ]
+    },
+    {
+      "notion_id": "30a0221954bc83f79eb601f929637f27",
+      "service": "배너",
+      "title": "7-2. 모두 보기_클릭",
+      "path": "event-log/09-배너/7-2.-모두-보기_클릭.md",
+      "notion_url": "https://app.notion.com/p/30a0221954bc83f79eb601f929637f27",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:46.083Z",
+      "source_body_sha256": "9e02936d95421e0b6cf7b1596c09951401f07c130ed24886bed7931acb5d53d9",
+      "output_sha256": "fc3b49c321bdb94d25aa23781289a98b79172055a5b03eb1d550dd96fe51c8f0",
+      "image_ids": [
+        "6cf4ee0a-bf92-435f-8653-68390c779c44"
+      ]
+    },
+    {
+      "notion_id": "1db0221954bc831d84088137ad55713f",
+      "service": "배너",
+      "title": "7-3. 새 키워드 추가_클릭",
+      "path": "event-log/09-배너/7-3.-새-키워드-추가_클릭.md",
+      "notion_url": "https://app.notion.com/p/1db0221954bc831d84088137ad55713f",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:44.878Z",
+      "source_body_sha256": "e1f9b08ea6414a4836f7ad49911f83efe31ddb09115335ea5d52f21d4a959026",
+      "output_sha256": "a62f7359705574253bed70b5edf5d0b6545ff4468ce85caba54d75ae296fb32d",
+      "image_ids": [
+        "1472d4c9-3e6b-4ad4-b20a-6c7192073aa1"
+      ]
+    },
+    {
+      "notion_id": "1af0221954bc82509c4301c35f10bec7",
+      "service": "배너",
+      "title": "7-5. 추천 키워드_클릭",
+      "path": "event-log/09-배너/7-5.-추천-키워드_클릭.md",
+      "notion_url": "https://app.notion.com/p/1af0221954bc82509c4301c35f10bec7",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:45.607Z",
+      "source_body_sha256": "61a8cf07973a040a0a079e735b33b9e45f28a64908897671521bd409682606ed",
+      "output_sha256": "b2d17613dfa8098f2856c35fc26c307396804dc3af57d4fea14e1b7bdd961e48",
+      "image_ids": [
+        "4a1dd773-ce6f-4878-9c6a-cd737183b248"
+      ]
+    },
+    {
+      "notion_id": "5c90221954bc834eba7a0179ae74b870",
+      "service": "배너",
+      "title": "7-6. 로그인팝업_로그인하기_클릭",
+      "path": "event-log/09-배너/7-6.-로그인팝업_로그인하기_클릭.md",
+      "notion_url": "https://app.notion.com/p/5c90221954bc834eba7a0179ae74b870",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:44.471Z",
+      "source_body_sha256": "dbf81490debcfd35beef193eaa73b00299a42233714f534642cb4ea39f212657",
+      "output_sha256": "ebbdf2e0f94644ba386f3c368b4342fefaf38f47773e738f159e4e93256d8824",
+      "image_ids": [
+        "dcc5d697-59d3-48e1-8ee6-fee5b1b113d4"
+      ]
+    },
+    {
+      "notion_id": "c7a0221954bc839188b501241ff92752",
+      "service": "배너",
+      "title": "7-7. 로그인팝업_닫기_클릭",
+      "path": "event-log/09-배너/7-7.-로그인팝업_닫기_클릭.md",
+      "notion_url": "https://app.notion.com/p/c7a0221954bc839188b501241ff92752",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:43.282Z",
+      "source_body_sha256": "0f2c3d9b2aa6b9245a179a9137302290bd395d09da3569d192ca11d08348b684",
+      "output_sha256": "692fe780c1c3a0eeeb116bc756782643417e68b15e1d302b7555da1b5c2ecd6b",
+      "image_ids": [
+        "e0f92e9e-7390-460c-b92e-5de72f2f051a"
+      ]
+    },
+    {
+      "notion_id": "6f10221954bc82fea1ed81029752ebc0",
+      "service": "배너",
+      "title": "7-8. 키워드 알림받기_토글",
+      "path": "event-log/09-배너/7-8.-키워드-알림받기_토글.md",
+      "notion_url": "https://app.notion.com/p/6f10221954bc82fea1ed81029752ebc0",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:42.859Z",
+      "source_body_sha256": "d6ebfef611023170650ad1b2318d254ad7023540e87789977f340c1a828bb527",
+      "output_sha256": "93b31b4fa675cc552a756521ac12112c49a26915bd47cafcbc0b26b45e11b6cb",
+      "image_ids": [
+        "f27375e9-75a3-499e-aa80-20a168711039"
+      ]
+    },
+    {
+      "notion_id": "1790221954bc836c9d00812c60468aab",
+      "service": "배너",
+      "title": "6-3. [검색 키워드] 입력값 >> DB저장",
+      "path": "event-log/09-배너/6-3.-[검색-키워드]-입력값-DB저장.md",
+      "notion_url": "https://app.notion.com/p/1790221954bc836c9d00812c60468aab",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:33.926Z",
+      "source_body_sha256": "cdf0863637ef45c3b302dd6681bfaa524a0e1c6a1e16abf1dced913d14ce5732",
+      "output_sha256": "7f6472ddb2c40689818d2e27c5fd5dfa062f7b37b0fd191d7f5e43cd61072e4b",
+      "image_ids": []
+    },
+    {
+      "notion_id": "e360221954bc83959f29814363e7429c",
+      "service": "배너",
+      "title": "7-4. [알림받을 키워드] 입력값 >> DB저장",
+      "path": "event-log/09-배너/7-4.-[알림받을-키워드]-입력값-DB저장.md",
+      "notion_url": "https://app.notion.com/p/e360221954bc83959f29814363e7429c",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:36.532Z",
+      "source_body_sha256": "963a14e9fb29c6e21921c4a2370b4f743db6863eb5dfbf03a3a33f3a2b8f0944",
+      "output_sha256": "71a9e4f3081ca5d57f261b37f2d5ffd9e9e36fb6f3cb6f7c730d02ac0a102c48",
+      "image_ids": []
+    }
+  ],
+  "blank_pages": [
+    {
+      "notion_id": "b3c0221954bc83d698df81fd6c79a9e4",
+      "title": "새 페이지",
+      "service": "배너",
+      "url": "https://app.notion.com/p/b3c0221954bc83d698df81fd6c79a9e4"
+    },
+    {
+      "notion_id": "8a20221954bc83e5a71881fa3f5a0ab9",
+      "title": "새 페이지",
+      "service": "배너",
+      "url": "https://app.notion.com/p/8a20221954bc83e5a71881fa3f5a0ab9"
+    }
+  ]
+}
