@@ -7,7 +7,7 @@ from datetime import date
 from types import SimpleNamespace as NS
 from unittest.mock import patch
 
-from koin_weekly_audit.agent import EvidenceTools, InvestigationError, investigate, validate_output
+from koin_weekly_audit.agent import EvidenceTools, InvestigationError, investigate, validate_output, failure_diagnostics
 from koin_weekly_audit.contracts import build_catalog, compare
 from koin_weekly_audit.notify import slack_text
 from run import audit
@@ -71,6 +71,36 @@ def client(sessions):
 
 
 class AgentTest(unittest.TestCase):
+    def test_api_failure_categories_do_not_persist_exception_body(self):
+        cases = [(401, 'invalid_api_key', 'authentication'),
+                 (429, 'insufficient_quota', 'quota'),
+                 (429, 'rate_limit_exceeded', 'rate_limit'),
+                 (403, 'permission_denied', 'access'),
+                 (404, 'model_not_found', 'access'),
+                 (400, 'unsupported_parameter', 'request'),
+                 (503, 'server_error', 'server')]
+        for status, code, expected in cases:
+            error = RuntimeError('sk-proj-DO-NOT-PRINT')
+            error.status_code = status
+            error.body = {'error': {'code': code, 'message': 'sk-proj-DO-NOT-PRINT'}}
+            diagnostic = failure_diagnostics(error)
+            self.assertEqual(diagnostic['category'], expected)
+            self.assertEqual(diagnostic['http_status'], status)
+            self.assertEqual(diagnostic['api_code'], code)
+            self.assertNotIn('sk-proj', json.dumps(diagnostic))
+        error.body = {'code': 'sk-proj-DO-NOT-PRINT'}
+        self.assertIsNone(failure_diagnostics(error)['api_code'])
+
+    def test_android_debug_ai_breakdown_uses_matching_normalized_label(self):
+        catalog, report, rows = fixture()
+        rows[0].update(platform='ANDROID', event_name='DA2_debug',
+            event_label=LABEL + ' (debug)', event_category='click_debug')
+        report = compare(catalog, rows)
+        tools = EvidenceTools(catalog, report, rows)
+        evidence = tools.call('breakdown', dict(label=LABEL, platform='ANDROID', group_by='event_name'))
+        self.assertEqual(evidence['data']['groups'], [{'key': 'DA2', 'events': 4}])
+        self.assertEqual(rows[0]['event_name'], 'DA2_debug')
+
     def test_managed_turn_tools_and_grounded_output(self):
         catalog, report, rows = fixture()
         before = copy.deepcopy(report)

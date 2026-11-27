@@ -171,7 +171,7 @@ def validate_output(text, evidence):
     return result
 
 
-def investigate(catalog, report, rows, client=None, clock=time.monotonic, checkpoint=None):
+def investigate(catalog, report, rows, client=None, clock=time.monotonic, checkpoint=None, failure_observer=None):
     """One bounded managed turn per environment; no fallback model/provider."""
     if not report.get('complete'):
         return dict(status='skipped', failure_type='AuditIncomplete')
@@ -258,6 +258,11 @@ def investigate(catalog, report, rows, client=None, clock=time.monotonic, checkp
         # Exception messages can contain requests/secrets. Only stable class names are persisted.
         result.update(status='failed', failure_type=type(exc).__name__)
         result['failure_diagnostics'] = failure_diagnostics(exc)
+        if failure_observer:
+            try:
+                failure_observer(exc)
+            except Exception:
+                result['failure_observer_status'] = 'failed'
         if isinstance(exc, InvestigationError):
             result['failure_code'] = str(exc)
     finally:
