@@ -1,5 +1,5 @@
 {
-  "reason": "2026-11-27 사용자 확인에 따른 현재 원문 수정. 원본 동기화 스냅샷은 보존한다.",
+  "reason": "2026-11-27 사용자 확정: 현행 swipe 계약은 IOS 전용. 혼합 페이지의 click은 개별 범위를 보존하며 원본 동기화 스냅샷은 변경하지 않는다.",
   "pages": [
     {
       "source": {
@@ -142,12 +142,13 @@
         "title": "3-1 복덕방 상세_사진 넘기기 클릭",
         "service": "복덕방",
         "url": "https://app.notion.com/p/6310221954bc825f8599010867d0f47a",
-        "original_body": "<toggle>\n새 로깅\n\n<ul>\n<li>\n설명: 웹 복덕방 상세 화면의 방 사진 슬라이드에서 이전 / 다음 화살표를 클릭하는 경우\n</li>\n<li>\nscreen\\_view: <code>room_detail</code>\n</li>\n<li>\nevent\\_name: <code>DA1</code>\n</li>\n<li>\nevent\\_label: \n\n<ul>\n<li>\n웹 <code>real_estate__room_detail__photo_view__slide__click</code> \n</li>\n<li>\n모바일<code>real_estate__room_detail__photo_view__slide__swipe</code>\n</li>\n</ul>\n</li>\n<li>\nvalue: 이전 / 다음 (예: 다음)\n</li>\n<li>\nevent\\_category: \n\n- 웹 : <code>click</code>\n- 모바일 : <code>swipe</code>\n</li>\n</ul>\n\n### 적용 범위\n\n- 원문 platform 속성은 WEB이다. 웹 화살표 클릭은 click 계약으로 구분한다.\n- 본문에 명시된 모바일 photo\\_view slide swipe 라벨은 존재하지만, 모바일 웹과 ANDROID·IOS 앱 중 적용 대상은 현재 속성·설명만으로 확정되지 않는다. 이 swipe 계약은 플랫폼 정의 확인 대기로 두고, 명세 미등록이나 정상 수집으로 자동 판정하지 않는다.\n- 모바일 참고사진과 수집 관측만으로 ANDROID·IOS 지원을 임의로 추가하지 않는다. iOS의 click 전송과 Android·Web의 swipe 전송을 같은 동작이라고 자동 치환하지 않는다. 플랫폼별 담당자가 동작 방식과 적용 범위를 확인한 뒤 계약을 확정한다.\n\n### 참고사진 (사진 슬라이드 다음 화살표)\n\n<columns>\n<column ratio=\"50\">\n<b>웹</b>\n\n<b>참고사진 · 웹</b>\n\n<image source=\"notion-file-block://79102219-54bc-820a-b2a9-817fe25b6c9d/948251a7-ac2b-4b4d-8f3b-c54da7688718?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=boxed_3-1_detail_slide.png\">\n웹 — 빨간 네모가 이 명세의 클릭 대상이다. 같은 화면의 다른 동작은 표시하지 않았다. 사용자 제공 WEB 디자인을 편집한 참고사진이며 실기기·SDK 검증 사진은 아니다.\n</image>\n</column>\n<column ratio=\"50\">\n<b>모바일</b>\n\n<b>참고사진 · 모바일</b>\n\n<image source=\"notion-file-block://1de02219-54bc-8249-bf68-017832034836/51199bff-7250-4c4a-ada9-c72780e200d3?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=m_3-1_photo_reference.png\">\n모바일 — 빨간 네모 = 사진 표시 영역 보조 참고(화살표 클릭을 뜻하지 않음). 사용자 제공 디자인을 편집한 참고사진이며 플랫폼별 SDK 구현·실수집 검증 사진은 아니다.\n</image>\n</column>\n</columns>\n</toggle>",
         "platforms": [
+          "IOS",
           "WEB"
         ],
         "properties": {
           "platform": [
+            "IOS",
             "WEB"
           ],
           "url": "https://app.notion.com/p/6310221954bc825f8599010867d0f47a",
@@ -155,7 +156,8 @@
           "생성일": "2026-11-23T13:39:06.000Z",
           "이벤트 이름": "3-1 복덕방 상세\\_사진 넘기기 클릭"
         },
-        "last_edited_time": "2026-11-27T07:39:17.495Z"
+        "original_body": "### 플랫폼별 계약 범위\n\n2026-11-27 사용자 확정: <b>swipe는 IOS 전용</b>이다. Android·Web의 기존 swipe 수집은 지원 범위 밖 전송으로 검수하며, 과거 기록을 개명하거나 click으로 자동 치환하지 않는다. 아래 표는 이 페이지의 개별 계약 범위이며 페이지 platform 속성은 확정된 범위의 합집합이다. 문서 수정은 SDK 배포·실수집 정상 완료를 뜻하지 않는다.\n\n| event\\_label | platform |\n| --- | --- |\n| <code>real_estate__room_detail__photo_view__slide__click</code> | WEB |\n| <code>real_estate__room_detail__photo_view__slide__swipe</code> | IOS |\n\n<toggle>\n새 로깅\n\n<ul>\n<li>\n설명: 웹 복덕방 상세 화면의 방 사진 슬라이드에서 이전 / 다음 화살표를 클릭하는 경우\n</li>\n<li>\nscreen\\_view: <code>room_detail</code>\n</li>\n<li>\nevent\\_name: <code>DA1</code>\n</li>\n<li>\nevent\\_label: \n\n<ul>\n<li>\n웹 <code>real_estate__room_detail__photo_view__slide__click</code> \n</li>\n<li>\n모바일<code>real_estate__room_detail__photo_view__slide__swipe</code>\n</li>\n</ul>\n</li>\n<li>\nvalue: 이전 / 다음 (예: 다음)\n</li>\n<li>\nevent\\_category: \n\n- 웹 : <code>click</code>\n- 모바일 : <code>swipe</code>\n</li>\n</ul>\n\n### 적용 범위\n\n- 2026-11-27 사용자 확정에 따라 웹 화살표 click은 WEB, 사진 swipe는 IOS에만 적용한다. Android·Web swipe를 정상 계약에 포함하지 않는다.\n- click과 swipe의 라벨·category·발생 조건은 구분한다. 과거 전송을 자동 개명하거나 두 계약을 하나로 합치지 않는다.\n\n### 참고사진 (사진 슬라이드 다음 화살표)\n\n<columns>\n<column ratio=\"50\">\n<b>웹</b>\n\n<b>참고사진 · 웹</b>\n\n<image source=\"notion-file-block://79102219-54bc-820a-b2a9-817fe25b6c9d/948251a7-ac2b-4b4d-8f3b-c54da7688718?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=boxed_3-1_detail_slide.png\">\n웹 — 빨간 네모가 이 명세의 클릭 대상이다. 같은 화면의 다른 동작은 표시하지 않았다. 사용자 제공 WEB 디자인을 편집한 참고사진이며 실기기·SDK 검증 사진은 아니다.\n</image>\n</column>\n<column ratio=\"50\">\n<b>모바일</b>\n\n<b>참고사진 · 모바일</b>\n\n<image source=\"notion-file-block://1de02219-54bc-8249-bf68-017832034836/51199bff-7250-4c4a-ada9-c72780e200d3?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=m_3-1_photo_reference.png\">\n모바일 — 빨간 네모 = 사진 표시 영역 보조 참고(화살표 클릭을 뜻하지 않음). 사용자 제공 디자인을 편집한 참고사진이며 플랫폼별 SDK 구현·실수집 검증 사진은 아니다.\n</image>\n</column>\n</columns>\n</toggle>",
+        "last_edited_time": "2026-11-27T07:50:29.187Z"
       },
       "manifest": {
         "notion_id": "6310221954bc825f8599010867d0f47a",
@@ -164,16 +166,398 @@
         "path": "event-log/02-복덕방/3-1-복덕방-상세_사진-넘기기-(클릭)-추가된-로깅.md",
         "notion_url": "https://app.notion.com/p/6310221954bc825f8599010867d0f47a",
         "platforms": [
+          "IOS",
           "WEB"
         ],
         "status": "로깅 필요",
-        "source_last_edited_at": "2026-11-27T07:39:17.495Z",
-        "source_body_sha256": "db61d73f4e8fab23631f6aa093b507acec4588161aa52460886f13dafcf97daf",
-        "output_sha256": "8bf9e5b122ed93907c7d8e9646569fc85ecce7f3d6d755603daa3de6e97e25a6",
+        "source_last_edited_at": "2026-11-27T07:50:29.187Z",
+        "source_body_sha256": "143a71e09814d694c748659d271b13a15a7b70f268539acd95deca0e039e613d",
+        "output_sha256": "8e6ba1e799fcc2c7be1d071e5d5780336f0ecf975a1332d774942a2fd2c475b2",
         "image_ids": [
           "948251a7-ac2b-4b4d-8f3b-c54da7688718",
           "51199bff-7250-4c4a-ada9-c72780e200d3"
         ]
+      }
+    },
+    {
+      "source": {
+        "id": "4c30221954bc82b5afb4016b1b3be6a7",
+        "title": "2-23 상점 목록 뒤로가기 (Click · Swipe)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/4c30221954bc82b5afb4016b1b3be6a7",
+        "platforms": [
+          "ANDROID",
+          "IOS"
+        ],
+        "properties": {
+          "platform": [
+            "ANDROID",
+            "IOS"
+          ],
+          "url": "https://app.notion.com/p/4c30221954bc82b5afb4016b1b3be6a7",
+          "상태": "로깅 필요",
+          "생성일": "2026-11-23T13:38:19.511Z",
+          "이벤트 이름": "2-23 상점 목록 뒤로가기 (Click · Swipe)",
+          "태그": [
+            "2. 상점 카테고리"
+          ]
+        },
+        "original_body": "### 플랫폼별 계약 범위\n\n2026-11-27 사용자 확정: <b>swipe는 IOS 전용</b>이다. Android·Web의 기존 swipe 수집은 지원 범위 밖 전송으로 검수하며, 과거 기록을 개명하거나 click으로 자동 치환하지 않는다. 아래 표는 이 페이지의 개별 계약 범위이며 페이지 platform 속성은 확정된 범위의 합집합이다. 문서 수정은 SDK 배포·실수집 정상 완료를 뜻하지 않는다.\n\n| event\\_label | platform |\n| --- | --- |\n| <code>shop__shop_list__navigation__back__click</code> | ANDROID, IOS |\n| <code>shop__shop_list__navigation__back__swipe</code> | IOS |\n\n<toggle>\n과거 로깅\n\n- event\\_label: <code>shop_categories_back</code>\n- value: 기존 명세 미기재\n- event\\_category: click / swipe\n</toggle>\n\n<toggle>\n새 로깅\n\n### 뒤로가기 버튼\n\n- 설명: 상점 목록에서 뒤로가기 버튼 또는 뒤로가기 스와이프로 이전 화면으로 돌아가는 전환이 완료되었을 때 기록한다. 취소된 스와이프와 하단 홈 탭 클릭은 포함하지 않는다.\n- screen\\_view: <code>shop_list</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>shop__shop_list__navigation__back__click</code>\n- value: 메인\n- event\\_category: <code>click</code>\n\n### 뒤로가기 스와이프\n\n- 설명: 상점 목록에서 뒤로가기 버튼 또는 뒤로가기 스와이프로 이전 화면으로 돌아가는 전환이 완료되었을 때 기록한다. 취소된 스와이프와 하단 홈 탭 클릭은 포함하지 않는다.\n- screen\\_view: <code>shop_list</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>shop__shop_list__navigation__back__swipe</code>\n- value: 메인\n- event\\_category: <code>swipe</code>\n\n### 참고사진\n\n<columns>\n<column ratio=\"50\">\n<b>웹</b>\n\nPC 웹: 상점 목록에 대응하는 뒤로가기 버튼 없음.\n</column>\n<column ratio=\"50\">\n<b>모바일</b>\n\n<image source=\"notion-file-block://c7502219-54bc-8265-b4ed-0149aea3287e/2d945e53-8693-470f-b94b-502c9a911b53?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=2-23_mobile_stage_marked.png\">\nStage 모바일 웹 · 상점 목록 뒤로가기 버튼\n</image>\n</column>\n</columns>\n</toggle>",
+        "last_edited_time": "2026-11-27T07:50:23.151Z"
+      },
+      "manifest": {
+        "notion_id": "4c30221954bc82b5afb4016b1b3be6a7",
+        "service": "주변상점",
+        "title": "2-23 상점 목록 뒤로가기 (Click · Swipe)",
+        "path": "event-log/01-주변상점/2-23-상점-목록-뒤로가기-(Click-·-Swipe).md",
+        "notion_url": "https://app.notion.com/p/4c30221954bc82b5afb4016b1b3be6a7",
+        "platforms": [
+          "ANDROID",
+          "IOS"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-27T07:50:23.151Z",
+        "source_body_sha256": "8587687811c60d89c06b5b2be1b10a692395b54c77cc2193e687006ca602ee1d",
+        "output_sha256": "b319b7b36cf8e3b384377a6930f068f824679db0b6b8e1c8b24ffa85cd06b102",
+        "image_ids": [
+          "2d945e53-8693-470f-b94b-502c9a911b53"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "40c0221954bc83da9dd401ed9a8cef00",
+        "title": "3-28 상점상세 사진 넘기기 (Swipe)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/40c0221954bc83da9dd401ed9a8cef00",
+        "platforms": [
+          "IOS"
+        ],
+        "properties": {
+          "platform": [
+            "IOS"
+          ],
+          "url": "https://app.notion.com/p/40c0221954bc83da9dd401ed9a8cef00",
+          "상태": "로깅 필요",
+          "생성일": "2026-11-23T13:38:15.610Z",
+          "이벤트 이름": "3-28 상점상세 사진 넘기기 (Swipe)",
+          "태그": [
+            "3. 상점 상세 페이지"
+          ]
+        },
+        "original_body": "### 플랫폼별 계약 범위\n\n2026-11-27 사용자 확정: <b>swipe는 IOS 전용</b>이다. Android·Web의 기존 swipe 수집은 지원 범위 밖 전송으로 검수하며, 과거 기록을 개명하거나 click으로 자동 치환하지 않는다. 아래 표는 이 페이지의 개별 계약 범위이며 페이지 platform 속성은 확정된 범위의 합집합이다. 문서 수정은 SDK 배포·실수집 정상 완료를 뜻하지 않는다.\n\n| event\\_label | platform |\n| --- | --- |\n| <code>shop__shop_detail__photo_view__slide__swipe</code> | IOS |\n\n<toggle>\n과거 로깅\n\n- event\\_label: <code>shop_picture_swipe</code>\n- value: \\{상점이름\\}\n- event\\_category: swipe\n</toggle>\n\n<toggle>\n새 로깅\n\n- 설명: 상점 상세의 사진을 넘겨 현재 사진 인덱스가 다른 사진으로 변경되었을 때 기록한다. 사진 클릭으로 확대 화면만 여는 경우는 포함하지 않는다.\n- screen\\_view: <code>shop_detail</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>shop__shop_detail__photo_view__slide__swipe</code>\n- value: \\{상점이름\\}\n- event\\_category: <code>swipe</code>\n\n### 참고사진\n\n<columns>\n<column ratio=\"50\">\n<b>웹</b>\n\nPC 웹: 사진 확대 후 화살표 클릭 방식. 모바일 좌우 스와이프와 구분.\n</column>\n<column ratio=\"50\">\n<b>모바일</b>\n\n<image source=\"notion-file-block://58802219-54bc-826a-99b8-8140161c36c5/3b231400-96e5-45d2-ba27-9fb9ffacca90?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=3-28_mobile_stage_marked.png\">\nStage 모바일 웹 · 사진 3장의 좌우 넘김 영역\n</image>\n</column>\n</columns>\n</toggle>",
+        "last_edited_time": "2026-11-27T07:50:24.609Z"
+      },
+      "manifest": {
+        "notion_id": "40c0221954bc83da9dd401ed9a8cef00",
+        "service": "주변상점",
+        "title": "3-28 상점상세 사진 넘기기 (Swipe)",
+        "path": "event-log/01-주변상점/3-28-상점상세-사진-넘기기-(Swipe).md",
+        "notion_url": "https://app.notion.com/p/40c0221954bc83da9dd401ed9a8cef00",
+        "platforms": [
+          "IOS"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-27T07:50:24.609Z",
+        "source_body_sha256": "2aa3e2e1db55ab3eb4669435a88cad100acdfb6745fb895d334fe369f6caa319",
+        "output_sha256": "809838d489175bcab8d1ebd81f6ed0600539baad8c11f78ef70d89f3daa868fc",
+        "image_ids": [
+          "3b231400-96e5-45d2-ba27-9fb9ffacca90"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4220221954bc8218826a0190e9857ccb",
+        "title": "3-5-3 상점상세 뒤로 가기 (Swipe)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/4220221954bc8218826a0190e9857ccb",
+        "platforms": [
+          "IOS"
+        ],
+        "properties": {
+          "platform": [
+            "IOS"
+          ],
+          "url": "https://app.notion.com/p/4220221954bc8218826a0190e9857ccb",
+          "상태": "완료",
+          "생성일": "2026-11-23T13:38:16.622Z",
+          "이벤트 이름": "3-5-3 상점상세 뒤로 가기 (Swipe)",
+          "태그": [
+            "3. 상점 상세 페이지"
+          ]
+        },
+        "original_body": "### 플랫폼별 계약 범위\n\n2026-11-27 사용자 확정: <b>swipe는 IOS 전용</b>이다. Android·Web의 기존 swipe 수집은 지원 범위 밖 전송으로 검수하며, 과거 기록을 개명하거나 click으로 자동 치환하지 않는다. 아래 표는 이 페이지의 개별 계약 범위이며 페이지 platform 속성은 확정된 범위의 합집합이다. 문서 수정은 SDK 배포·실수집 정상 완료를 뜻하지 않는다.\n\n| event\\_label | platform |\n| --- | --- |\n| <code>shop__shop_detail__navigation__back__swipe</code> | IOS |\n\n<toggle>\n과거 로깅\n\n<span color=\"orange\">event\\_params.key</span>\n\n<ul>\n<li>\nevent\\_label : shop\\_detail\\_view\\_back\n</li>\n<li>\nvalue : \\{상점이름\\} \n</li>\n<li>\nevent\\_category : \n\n- swipe\n</li>\n</ul>\n\n<p />\n\n- current\\_page : \\{돌아간 카테고리\\}\n- duration\\_time : 상점 상세보기에서 카테고리로 돌아간 시간.\n\n<p />\n\n---\n\n<p />\n\n<p>\n카테고리 의미 \n</p>\n\n- 뒤로가기 버튼을 눌러 상점 카테고리 페이지로 돌아가는 것.\n\n<p />\n\n<p>\n시간 관련 주의 사항: \n</p>\n\n<ol>\n<li>\n상점 상세보기 페이지에서 어떠한 행위를 해도 상관이 없음. <br />즉 상점 상세보기를 들어온 시간부터 상점 상세보기를 떠난 시간까지 측정 \n</li>\n</ol>\n\n<p />\n\n---\n\n<h3>\n오류사항 \n</h3>\n\n<span color=\"yellow_bg\">햄버거로 나가는걸 측정하지 못하고 있음. </span>\n\n<p>\n웹: \n</p>\n\n<p>\n상점 목록으로 나가면 swipe 이벤트가 찍히고 있음. \n</p>\n\n<p />\n\n<p>\n안드: \n</p>\n\n<p>\nswipe → click \n</p>\n\n<p />\n\n---\n\n<p />\n\n<page url=\"https://app.notion.com/p/3ca0221954bc836fadf401d7f03dd980\">\n해결 (4)\n</page>\n</toggle>\n\n<toggle>\n새 로깅\n\n- 설명: 상점 상세 화면에서 나가는 경우\n- screen\\_view: <code>shop_detail</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>shop__shop_detail__navigation__back__swipe</code>\n- value: 스와이프\n- event\\_category: <code>swipe</code>\n\n### 참고사진 (상점 상세 뒤로가기)\n\n<columns>\n<column ratio=\"50\">\n<b>웹</b>\n\n<b>참고사진 · 웹</b>\n\n웹 - 없음\n\n<p />\n</column>\n<column ratio=\"50\">\n<b>모바일</b>\n\n<b>참고사진 · 모바일</b>\n\n모바일 — 뒤로가기 클릭 (출처: stage 실제 캡처, 빨간 네모 = 클릭 위치)\n\n<image source=\"notion-file-block://4eb02219-54bc-8282-88ea-81cf7bfc8bc4/6b532818-8efd-497f-8315-b81aab095673?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n</column>\n</columns>\n</toggle>",
+        "last_edited_time": "2026-11-27T07:50:25.997Z"
+      },
+      "manifest": {
+        "notion_id": "4220221954bc8218826a0190e9857ccb",
+        "service": "주변상점",
+        "title": "3-5-3 상점상세 뒤로 가기 (Swipe)",
+        "path": "event-log/01-주변상점/3-5-3-상점상세-뒤로-가기-(Swipe).md",
+        "notion_url": "https://app.notion.com/p/4220221954bc8218826a0190e9857ccb",
+        "platforms": [
+          "IOS"
+        ],
+        "status": "완료",
+        "source_last_edited_at": "2026-11-27T07:50:25.997Z",
+        "source_body_sha256": "19c578bb629a7e0173b99a72f87e847b906d211e0fef9d3742f30407d4ea8bb7",
+        "output_sha256": "60455ef0c05138ea9b2a997f1cb9ec574bac8ef7c21dc250529b0ab2403dc58f",
+        "image_ids": [
+          "6b532818-8efd-497f-8315-b81aab095673"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "6010221954bc83ecaa0d01f8bb852fea",
+        "title": "4-6 상점 혜택 화면 뒤로가기 (Click · Swipe)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/6010221954bc83ecaa0d01f8bb852fea",
+        "platforms": [
+          "ANDROID",
+          "IOS"
+        ],
+        "properties": {
+          "platform": [
+            "ANDROID",
+            "IOS"
+          ],
+          "url": "https://app.notion.com/p/6010221954bc83ecaa0d01f8bb852fea",
+          "상태": "로깅 필요",
+          "생성일": "2026-11-23T13:38:19.197Z",
+          "이벤트 이름": "4-6 상점 혜택 화면 뒤로가기 (Click · Swipe)",
+          "태그": [
+            "4. 혜택 페이지"
+          ]
+        },
+        "original_body": "### 플랫폼별 계약 범위\n\n2026-11-27 사용자 확정: <b>swipe는 IOS 전용</b>이다. Android·Web의 기존 swipe 수집은 지원 범위 밖 전송으로 검수하며, 과거 기록을 개명하거나 click으로 자동 치환하지 않는다. 아래 표는 이 페이지의 개별 계약 범위이며 페이지 platform 속성은 확정된 범위의 합집합이다. 문서 수정은 SDK 배포·실수집 정상 완료를 뜻하지 않는다.\n\n| event\\_label | platform |\n| --- | --- |\n| <code>shop__shop_benefit__navigation__back__click</code> | ANDROID, IOS |\n| <code>shop__shop_benefit__navigation__back__swipe</code> | IOS |\n\n<toggle>\n과거 로깅\n\n- event\\_label: <code>shop_benefit_back</code>\n- value: \\{상점이름\\}\n- event\\_category: click\n</toggle>\n\n<toggle>\n새 로깅\n\n### 뒤로가기 버튼\n\n- 설명: 특정 상점의 혜택 화면에서 뒤로가기 버튼 또는 뒤로가기 스와이프로 이전 화면으로 돌아가는 전환이 완료되었을 때 기록한다. 취소된 스와이프는 포함하지 않는다.\n- screen\\_view: <code>shop_benefit</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>shop__shop_benefit__navigation__back__click</code>\n- value: \\{상점이름\\}\n- event\\_category: <code>click</code>\n\n### 뒤로가기 스와이프\n\n- 설명: 특정 상점의 혜택 화면에서 뒤로가기 버튼 또는 뒤로가기 스와이프로 이전 화면으로 돌아가는 전환이 완료되었을 때 기록한다. 취소된 스와이프는 포함하지 않는다.\n- screen\\_view: <code>shop_benefit</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>shop__shop_benefit__navigation__back__swipe</code>\n- value: \\{상점이름\\}\n- event\\_category: <code>swipe</code>\n\n### 참고사진\n\n<columns>\n<column ratio=\"50\">\n<b>웹</b>\n\nPC 웹: 이벤트/공지 탭 방식이며 별도 혜택 화면의 뒤로가기 버튼 없음.\n</column>\n<column ratio=\"50\">\n<b>모바일</b>\n\n<image source=\"notion-file-block://eb902219-54bc-83ab-bbbf-01b1a2c4736a/917bb4dd-2097-4707-8e5f-f1e3c0163ba7?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=4-6_mobile_stage_marked.png\">\nStage 모바일 웹 · 해당 상점의 이벤트/공지 화면 뒤로가기\n</image>\n</column>\n</columns>\n</toggle>",
+        "last_edited_time": "2026-11-27T07:50:27.327Z"
+      },
+      "manifest": {
+        "notion_id": "6010221954bc83ecaa0d01f8bb852fea",
+        "service": "주변상점",
+        "title": "4-6 상점 혜택 화면 뒤로가기 (Click · Swipe)",
+        "path": "event-log/01-주변상점/4-6-상점-혜택-화면-뒤로가기-(Click-·-Swipe).md",
+        "notion_url": "https://app.notion.com/p/6010221954bc83ecaa0d01f8bb852fea",
+        "platforms": [
+          "ANDROID",
+          "IOS"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-27T07:50:27.327Z",
+        "source_body_sha256": "9fc88eb33cc1453d3838025aed75a94d3edd7e41146e1303a7de929d2deaa96c",
+        "output_sha256": "75c98f25cf2fbe1f6a7f145e7f9f421139445607eeb76c68ab69df5ad3eed1ab",
+        "image_ids": [
+          "917bb4dd-2097-4707-8e5f-f1e3c0163ba7"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "fc10221954bc83859fae0174bd9ba9bd",
+        "title": "1-5. (모바일)메인_다음모달 - swipe",
+        "service": "배너",
+        "url": "https://app.notion.com/p/fc10221954bc83859fae0174bd9ba9bd",
+        "platforms": [
+          "IOS"
+        ],
+        "properties": {
+          "platform": [
+            "IOS"
+          ],
+          "url": "https://app.notion.com/p/fc10221954bc83859fae0174bd9ba9bd",
+          "상태": "로깅 필요",
+          "이름": "1-5. (모바일)메인\\_다음모달 - swipe",
+          "태그": [
+            "1. 메인_모달"
+          ]
+        },
+        "original_body": "### 플랫폼별 계약 범위\n\n2026-11-27 사용자 확정: <b>swipe는 IOS 전용</b>이다. Android·Web의 기존 swipe 수집은 지원 범위 밖 전송으로 검수하며, 과거 기록을 개명하거나 click으로 자동 치환하지 않는다. 아래 표는 이 페이지의 개별 계약 범위이며 페이지 platform 속성은 확정된 범위의 합집합이다. 문서 수정은 SDK 배포·실수집 정상 완료를 뜻하지 않는다.\n\n| event\\_label | platform |\n| --- | --- |\n| <code>banner__main__modal__next__swipe</code> | IOS |\n\n<toggle>\n과거 로깅\n\n- 설명: 메인화면 모달의 다음 모달로 스왑\n- event\\_name : “CAMPUS”\n- event\\_label : “main\\_next\\_modal”\n- value : \\{title값\\} (넘긴 후의)\n- event\\_category : “swipe”\n- 참고사진\n\n<image source=\"notion-file-block://4f902219-54bc-836a-872c-810167678ae1/82ad29fc-3481-4cb9-a555-67cf3d847099?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n- 웹 참고사진\n\n<image source=\"notion-file-block://41f02219-54bc-820b-9156-81989236a78b/12a78967-f6e4-4293-82e8-0c324c1c0ab4?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n</toggle>\n\n<toggle>\n새 로깅\n\n- 설명: 메인 화면의 배너 모달을 스와이프하여 다음 배너로 넘김.\n- screen\\_view: main\n- event\\_name: <code>DA2</code>\n- event\\_label: <code>banner__main__modal__next__swipe</code>\n- value: \\{넘긴 후의 배너 ID\\}\n- event\\_category: <code>swipe</code>\n\n<b>참고사진 · 모바일</b>\n\n<b>모바일</b>\n\n<image source=\"notion-file-block://07102219-54bc-8292-8ea7-015691553976/737f3c5e-d383-4cb7-89d7-9c5950941f13?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n</toggle>",
+        "last_edited_time": "2026-11-27T07:50:30.696Z"
+      },
+      "manifest": {
+        "notion_id": "fc10221954bc83859fae0174bd9ba9bd",
+        "service": "배너",
+        "title": "1-5. (모바일)메인_다음모달 - swipe",
+        "path": "event-log/09-배너/1-5.-(모바일)메인_다음모달-swipe.md",
+        "notion_url": "https://app.notion.com/p/fc10221954bc83859fae0174bd9ba9bd",
+        "platforms": [
+          "IOS"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-27T07:50:30.696Z",
+        "source_body_sha256": "3aa5cbb864af02d4eae445ecc02e3f1cf7123e5e163d612c2d5a3687f52f559d",
+        "output_sha256": "15148efccb132f95187c033d24e8afc4362520a20fb8361148778da5b38b264f",
+        "image_ids": [
+          "82ad29fc-3481-4cb9-a555-67cf3d847099",
+          "12a78967-f6e4-4293-82e8-0c324c1c0ab4",
+          "737f3c5e-d383-4cb7-89d7-9c5950941f13"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "3c60221954bc8340b26181442675cd08",
+        "title": "1-2-1 알림 클릭 내부",
+        "service": "홈화면 리디자인",
+        "url": "https://app.notion.com/p/3c60221954bc8340b26181442675cd08",
+        "platforms": [
+          "ANDROID",
+          "IOS"
+        ],
+        "properties": {
+          "platform": [
+            "ANDROID",
+            "IOS"
+          ],
+          "url": "https://app.notion.com/p/3c60221954bc8340b26181442675cd08",
+          "구분": "홈화면",
+          "상태": "완료",
+          "생성일": "2026-11-23T13:38:47.502Z",
+          "이벤트 이름": "1-2-1 알림 클릭 내부"
+        },
+        "original_body": "### 플랫폼별 계약 범위\n\n2026-11-27 사용자 확정: <b>swipe는 IOS 전용</b>이다. Android·Web의 기존 swipe 수집은 지원 범위 밖 전송으로 검수하며, 과거 기록을 개명하거나 click으로 자동 치환하지 않는다. 아래 표는 이 페이지의 개별 계약 범위이며 페이지 platform 속성은 확정된 범위의 합집합이다. 문서 수정은 SDK 배포·실수집 정상 완료를 뜻하지 않는다.\n\n| event\\_label | platform |\n| --- | --- |\n| <code>main__notification_list__notification_list__delete__click</code> | ANDROID, IOS |\n| <code>main__notification_list__notification_list__delete__swipe</code> | IOS |\n\n<toggle>\n과거 로깅\n\n- event\\_label : notification\\_list\\_delete\n- value : 알림 삭제\n- event\\_category : click\n\n<p />\n\n<image source=\"notion-file-block://46602219-54bc-8220-9426-818a0c4871cf/7ebd76de-07e1-4f6b-8434-a6ed3b664b8f?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p />\n</toggle>\n\n<toggle>\n새 로깅\n\n<b>알림 삭제</b>\n\n<ul>\n<li>\n설명: 공용 알림 항목을 왼쪽으로 스와이프해 노출한 삭제 버튼을 누를 때 기록한다.\n</li>\n<li>\nscreen\\_view: <code>notification_list</code>\n</li>\n<li>\nevent\\_name: <code>DA2</code>\n</li>\n<li>\nevent\\_label: <code>main__notification_list__notification_list__delete__click</code> /  <code>main__notification_list__notification_list__delete__swipe</code> \n</li>\n<li>\nvalue: 알림 삭제\n</li>\n<li>\nevent\\_category: <code>click</code> / <code>swipe</code> \n</li>\n</ul>\n</toggle>",
+        "last_edited_time": "2026-11-27T07:50:31.412Z"
+      },
+      "manifest": {
+        "notion_id": "3c60221954bc8340b26181442675cd08",
+        "service": "홈화면 리디자인",
+        "title": "1-2-1 알림 클릭 내부",
+        "path": "event-log/10-홈화면-리디자인/1-2-1-알림-클릭-내부.md",
+        "notion_url": "https://app.notion.com/p/3c60221954bc8340b26181442675cd08",
+        "platforms": [
+          "ANDROID",
+          "IOS"
+        ],
+        "status": "완료",
+        "source_last_edited_at": "2026-11-27T07:50:31.412Z",
+        "source_body_sha256": "2bae3e2d811d2c37b68202f88fd67f7885ebf8488bc553bd75940560bd8ea0a4",
+        "output_sha256": "ce3ce82a44932514796b1d29b5c7a3013fb2bf541baa42ef327733567dc6b4a7",
+        "image_ids": [
+          "7ebd76de-07e1-4f6b-8434-a6ed3b664b8f"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "7740221954bc8367a3ca01ec993e4170",
+        "title": "1-9. 콜밴팟 알림 개별 삭제 버튼 클릭 or 스와이프",
+        "service": "콜밴팟",
+        "url": "https://app.notion.com/p/7740221954bc8367a3ca01ec993e4170",
+        "platforms": [
+          "IOS"
+        ],
+        "properties": {
+          "platform": [
+            "IOS"
+          ],
+          "url": "https://app.notion.com/p/7740221954bc8367a3ca01ec993e4170",
+          "상태": "로깅 필요",
+          "이름": "1-9. 콜밴팟 알림 개별 삭제 버튼 클릭 or 스와이프",
+          "태그": [
+            "1. 메인 -> 콜밴팟"
+          ]
+        },
+        "original_body": "### 플랫폼별 계약 범위\n\n2026-11-27 사용자 확정: <b>swipe는 IOS 전용</b>이다. Android·Web의 기존 swipe 수집은 지원 범위 밖 전송으로 검수하며, 과거 기록을 개명하거나 click으로 자동 치환하지 않는다. 아래 표는 이 페이지의 개별 계약 범위이며 페이지 platform 속성은 확정된 범위의 합집합이다. 문서 수정은 SDK 배포·실수집 정상 완료를 뜻하지 않는다.\n\n| event\\_label | platform |\n| --- | --- |\n| <code>callvan__callvan_notification__notification_list__delete__click</code> | 미확정 |\n| <code>callvan__callvan_notification__notification_list__delete__swipe</code> | IOS |\n\n<toggle>\n새 로깅 (26.11.11)\n\n- 설명: 콜밴팟 전용 알림 목록에서 사용자가 개별 알림의 삭제 버튼을 누를 때 1회 기록한다.\n- screen\\_view: <code>callvan_notification</code>\n- event\\_name: <code>DA2</code>\n- event\\_label: <code>callvan__callvan_notification__notification_list__delete__click</code> /  <code>callvan__callvan_notification__notification_list__delete__swipe</code>\n- value: 알림 삭제\n- event\\_category: <code>click</code> / <code>swipe</code>\n\n<toggle>\n검토사항\n\n- 지원 검토 중. 확인한 WEB 팀원 모집 NotificationCard에는 개별 삭제 버튼이 없다. ANDROID·IOS의 전용 알림함에 같은 동작이 있는지 확인 후 해당 플랫폼에만 적용한다. 버튼이 없는 플랫폼에 새 버튼 구현을 요구하는 명세가 아니다.\n- [WEB 화면 코드](https://github.com/BCSDLab/KOIN_WEB_RECODE/blob/9b6b7a2a29e70f59409bb1136cf2ec7bb9765ab6/src/pages/team/notifications/index.tsx) · [상단 메뉴 코드](https://github.com/BCSDLab/KOIN_WEB_RECODE/blob/9b6b7a2a29e70f59409bb1136cf2ec7bb9765ab6/src/components/Team/components/TeamNotificationHeader/index.tsx)\n- 문서·기능 코드 대조이며 배포·단일 전송·실수집 완료는 미확인이다. Silver·Gold 매핑과 데이터는 이번 작업에서 변경하지 않는다.\n- 기존 원문: <mention url=\"https://app.notion.com/p/4010221954bc82a9b0b7819eafa98396\">1-2 알림 클릭 내부</mention>\n</toggle>\n</toggle>\n\n### 참고사진 (개별 삭제 버튼 클릭)\n\n<b>웹</b>\n\n<b>참고사진 · 웹 (모바일)</b>\n\n<p />\n\n<b>모바일</b>\n\n<b>참고사진 · 모바일 앱</b>\n\n<image source=\"notion-file-block://ebb02219-54bc-83e5-b838-8146bff9b5f4/7ebd76de-07e1-4f6b-8434-a6ed3b664b8f?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />",
+        "last_edited_time": "2026-11-27T07:50:32.933Z"
+      },
+      "manifest": {
+        "notion_id": "7740221954bc8367a3ca01ec993e4170",
+        "service": "콜밴팟",
+        "title": "1-9. 콜밴팟 알림 개별 삭제 버튼 클릭 or 스와이프",
+        "path": "event-log/11-콜밴팟/1-9.-콜밴팟-알림-개별-삭제-버튼-클릭-or-스와이프.md",
+        "notion_url": "https://app.notion.com/p/7740221954bc8367a3ca01ec993e4170",
+        "platforms": [
+          "IOS"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-27T07:50:32.933Z",
+        "source_body_sha256": "a3b6a18b80b40d0f5017995150c5873146907f068f8d87d84c221d0d7405cee9",
+        "output_sha256": "b3b774f114964485e71eae35ff96e9b198ba88635878d28680b9dcc11b4a7d9b",
+        "image_ids": [
+          "7ebd76de-07e1-4f6b-8434-a6ed3b664b8f"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "6370221954bc82b8b5e781744ab23dca",
+        "title": "0-3. 알림 내부_스와이프로 개별 삭제",
+        "service": "팀원 모집",
+        "url": "https://app.notion.com/p/6370221954bc82b8b5e781744ab23dca",
+        "platforms": [
+          "IOS"
+        ],
+        "properties": {
+          "platform": [
+            "IOS"
+          ],
+          "url": "https://app.notion.com/p/6370221954bc82b8b5e781744ab23dca",
+          "구분": "알림",
+          "상태": "로깅 필요",
+          "생성일": "2026-11-23T13:38:55.716Z",
+          "이벤트 이름": "0-3. 알림 내부\\_스와이프로 개별 삭제"
+        },
+        "original_body": "### 플랫폼별 계약 범위\n\n2026-11-27 사용자 확정: <b>swipe는 IOS 전용</b>이다. Android·Web의 기존 swipe 수집은 지원 범위 밖 전송으로 검수하며, 과거 기록을 개명하거나 click으로 자동 치환하지 않는다. 아래 표는 이 페이지의 개별 계약 범위이며 페이지 platform 속성은 확정된 범위의 합집합이다. 문서 수정은 SDK 배포·실수집 정상 완료를 뜻하지 않는다.\n\n| event\\_label | platform |\n| --- | --- |\n| <code>team_recruit__team_notification__notification_list__delete__swipe</code> | IOS |\n\n<toggle>\n새 로깅 (26.11.11)\n\n- 설명: 팀원 모집 전용 알림 항목을 스와이프하는 제스처 자체가 개별 삭제 실행으로 확정되는 UI에서, 삭제 임계점을 넘어 삭제 동작이 확정될 때 1회 기록한다. 취소된 스와이프·원위치 복귀·삭제 버튼 노출만으로는 기록하지 않는다.\n- screen\\_view: <code>team_notification</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>team_recruit__team_notification__notification_list__delete__swipe</code>\n- value: 알림 삭제\n- event\\_category: <code>swipe</code>\n\n<toggle>\n검토사항\n\n- 조건부 명세·지원 검토 중. 스와이프가 삭제 버튼만 드러내는 UI라면 이 이벤트를 보내지 않고 0-2의 delete\\_\\_click만 사용한다. 직접 삭제 UI가 없는 경우 이 계약은 구현 대상에서 제외한다. WEB·ANDROID·IOS별 라벨을 따로 만들지 않는다.\n- [WEB 화면 코드](https://github.com/BCSDLab/KOIN_WEB_RECODE/blob/9b6b7a2a29e70f59409bb1136cf2ec7bb9765ab6/src/pages/team/notifications/index.tsx) · [상단 메뉴 코드](https://github.com/BCSDLab/KOIN_WEB_RECODE/blob/9b6b7a2a29e70f59409bb1136cf2ec7bb9765ab6/src/components/Team/components/TeamNotificationHeader/index.tsx)\n- 문서·기능 코드 대조이며 배포·단일 전송·실수집 완료는 미확인이다. Silver·Gold 매핑과 데이터는 이번 작업에서 변경하지 않는다.\n- 기존 원문: <mention url=\"https://app.notion.com/p/4010221954bc82a9b0b7819eafa98396\">1-2 알림 클릭 내부</mention>\n</toggle>\n</toggle>\n\n### 참고사진 (스와이프로 개별 삭제)\n\n<b>웹</b>\n\n<b>참고사진 · 웹 (모바일)</b>\n\n<p />\n\n<b>모바일</b>\n\n<b>참고사진 · 모바일 앱</b>\n\n<image source=\"notion-file-block://23a02219-54bc-8318-8be7-010dbe5e9b7f/7ebd76de-07e1-4f6b-8434-a6ed3b664b8f?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />",
+        "last_edited_time": "2026-11-27T07:50:35.778Z"
+      },
+      "manifest": {
+        "notion_id": "6370221954bc82b8b5e781744ab23dca",
+        "service": "팀원 모집",
+        "title": "0-3. 알림 내부_스와이프로 개별 삭제",
+        "path": "event-log/13-팀원-모집/0-3.-알림-내부_스와이프로-개별-삭제.md",
+        "notion_url": "https://app.notion.com/p/6370221954bc82b8b5e781744ab23dca",
+        "platforms": [
+          "IOS"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-27T07:50:35.778Z",
+        "source_body_sha256": "dae4d37f286ada759d8e2d7df66b9f5ac7386857b5f85463545441031450c6a2",
+        "output_sha256": "68bda0910b1a1acfab4db7bd58db9a0f0c8b62c18c3121c1ec058c5cdb72977f",
+        "image_ids": [
+          "7ebd76de-07e1-4f6b-8434-a6ed3b664b8f"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "9a90221954bc8280ae0c81fa98e7da77",
+        "title": "2-11. 시간표 탈출_OS스와이프",
+        "service": "시간표",
+        "url": "https://app.notion.com/p/9a90221954bc8280ae0c81fa98e7da77",
+        "platforms": [
+          "IOS"
+        ],
+        "properties": {
+          "platform": [
+            "IOS"
+          ],
+          "url": "https://app.notion.com/p/9a90221954bc8280ae0c81fa98e7da77",
+          "상태": "완료",
+          "생성일": "2026-11-23T13:38:59.791Z",
+          "이벤트 이름": "2-11. 시간표 탈출\\_OS스와이프",
+          "태그": [
+            "시간표"
+          ]
+        },
+        "original_body": "### 플랫폼별 계약 범위\n\n2026-11-27 사용자 확정: <b>swipe는 IOS 전용</b>이다. Android·Web의 기존 swipe 수집은 지원 범위 밖 전송으로 검수하며, 과거 기록을 개명하거나 click으로 자동 치환하지 않는다. 아래 표는 이 페이지의 개별 계약 범위이며 페이지 platform 속성은 확정된 범위의 합집합이다. 문서 수정은 SDK 배포·실수집 정상 완료를 뜻하지 않는다.\n\n| event\\_label | platform |\n| --- | --- |\n| <code>timetable__timetable__navigation__back__swipe</code> | IOS |\n\n<toggle>\n과거 로깅\n\n- event\\_label : “timetable\\_back”\n- value : “OS스와이프”\n- event\\_category : “swipe”\n</toggle>\n\n<toggle>\n새 로깅\n\n- 설명: 모바일 시간표 화면에서 OS 뒤로가기 제스처(화면 가장자리 스와이프)로 시간표에서 나가는 경우\n- screen\\_view: <code>timetable</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>timetable__timetable__navigation__back__swipe</code>\n- value: OS 스와이프\n- event\\_category: <code>swipe</code>\n\n### 참고사진 (기능 표시)\n\n<columns>\n<column ratio=\"50\">\n<b>웹</b>\n\n<b>참고사진 · 웹</b>\n\n해당 없음 (모바일 전용)\n</column>\n<column ratio=\"50\">\n<b>모바일</b>\n\n<b>참고사진 · 모바일</b>\n\n사진 없음 (OS 제스처라 캡처 대상 없음)\n</column>\n</columns>\n</toggle>",
+        "last_edited_time": "2026-11-27T07:50:37.658Z"
+      },
+      "manifest": {
+        "notion_id": "9a90221954bc8280ae0c81fa98e7da77",
+        "service": "시간표",
+        "title": "2-11. 시간표 탈출_OS스와이프",
+        "path": "event-log/16-시간표/2-11.-시간표-탈출_OS스와이프.md",
+        "notion_url": "https://app.notion.com/p/9a90221954bc8280ae0c81fa98e7da77",
+        "platforms": [
+          "IOS"
+        ],
+        "status": "완료",
+        "source_last_edited_at": "2026-11-27T07:50:37.658Z",
+        "source_body_sha256": "ac6e15ce80e97d18a5164b58e1f671eb8b63bf44b0c39071dacc27c212168f0b",
+        "output_sha256": "09ae1a7ab975566bf451c5a7a5ba1f1de1b91847971450b1a9acc7b92f9d0115",
+        "image_ids": []
       }
     }
   ]
