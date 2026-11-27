@@ -99,11 +99,17 @@ export function verifyCurrent(root,{imageCache}={}){
   check(same(hashes,sourceIds.map(id=>images.get(id)?.git_blob_sha)),'Image hash sequence '+m.path);
   references+=sourceIds.length;
   const index=read(path.posix.dirname(m.path)+'/README.md').toString();
-  check(index.includes(']('+encodeURIComponent(path.posix.basename(m.path))+')'),'Service index entry '+m.path);
-  for(const link of text.matchAll(/!?\[[^\n]*?\]\(([^\n]+)\)/g)){
-   const target=link[1];
+  const indexTargets=[...index.matchAll(/\]\(([^)\s]+)\)/g)].map(link=>decodeURIComponent(link[1]));
+  check(indexTargets.includes(path.posix.basename(m.path)),'Service index entry '+m.path);
+  for(const link of text.matchAll(/(!?)\[[^\n]*?\]\(([^\n]+)\)/g)){
+   const target=link[2];
    if(/^[a-z]+:|^#/i.test(target)){if(target.startsWith('https://app.notion.com/p/'))notionLinks++;continue;}
-   try{check(fs.existsSync(safe(path.posix.join(path.posix.dirname(m.path),decodeURIComponent(target.split('#')[0])))),'Broken relative link '+m.path+' -> '+target);}catch(e){errors.push(e.message);}
+   try{
+    const rel=path.posix.normalize(path.posix.join(path.posix.dirname(m.path),decodeURIComponent(target.split('#')[0])));
+    let exists=fs.existsSync(safe(rel));
+    if(!exists&&imageCache&&link[1]){const image=[...images.values()].find(i=>i.asset===rel);exists=Boolean(image&&fs.existsSync(path.join(imageCache,image.id+'.bin')));}
+    check(exists,'Broken relative link '+m.path+' -> '+target);
+   }catch(e){errors.push(e.message);}
   }
   check(!/X-Amz-(?:Signature|Credential)=|[?&]sig=/i.test(text),'Signed URL '+m.path);
  }
