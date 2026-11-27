@@ -1,4 +1,5 @@
 import hashlib
+import html
 import json
 import re
 from collections import defaultdict
@@ -13,10 +14,12 @@ PLATFORMS = ('IOS', 'ANDROID', 'WEB')
 
 
 def clean(text):
+    # Markdown literal angle brackets are prose, not HTML spanning later fields.
+    text = text.replace(r'\<', '&lt;').replace(r'\>', '&gt;')
     text = re.sub(r'<br\s*/?>', '\n', text)
     text = re.sub(r'<[^>]*>', '', text)
     text = re.sub(r'\\([_*{}\[\]().~`<>#+=|-])', r'\1', text)
-    return text.replace('**', '').replace('`', '').strip()
+    return html.unescape(text.replace('**', '').replace('`', '').strip())
 
 
 def legacy_page(page):
