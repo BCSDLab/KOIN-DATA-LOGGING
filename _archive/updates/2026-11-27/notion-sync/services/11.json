@@ -1,0 +1,835 @@
+{
+  "service": "팀원 모집",
+  "pages": [
+    {
+      "notion_id": "3af0221954bc83eba43c013ffceb3687",
+      "service": "팀원 모집",
+      "title": "0-1. 알림 내부_알림 항목 클릭",
+      "path": "event-log/13-팀원-모집/0-1.-알림-내부_알림-항목-클릭.md",
+      "notion_url": "https://app.notion.com/p/3af0221954bc83eba43c013ffceb3687",
+      "platforms": [
+        "IOS",
+        "ANDROID",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:55.563Z",
+      "source_body_sha256": "bed2baa71ef08651840edbd5353d20ad9f657a6e853e067ef6f088c6968ae2b3",
+      "output_sha256": "709cc43127338a542fa11bb7348322483c901bbbbe17009f21985aa6e0112b74",
+      "image_ids": [
+        "163e8b5b-0518-4844-a9c0-ac2de6f13a75"
+      ]
+    },
+    {
+      "notion_id": "6ff0221954bc83babb7b816257f61ff5",
+      "service": "팀원 모집",
+      "title": "0-2. 알림 내부_개별 삭제 버튼 클릭",
+      "path": "event-log/13-팀원-모집/0-2.-알림-내부_개별-삭제-버튼-클릭.md",
+      "notion_url": "https://app.notion.com/p/6ff0221954bc83babb7b816257f61ff5",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:55.639Z",
+      "source_body_sha256": "60defe771c65ec9e51b0fb28b8c2b57300f664acf3c2a2c6ec149cf026caf0ec",
+      "output_sha256": "b16eb98c56115ee6d3c92ce7d1a8860127af2c6bfee7eaabb54a521894d1837e",
+      "image_ids": [
+        "7ebd76de-07e1-4f6b-8434-a6ed3b664b8f"
+      ]
+    },
+    {
+      "notion_id": "6370221954bc82b8b5e781744ab23dca",
+      "service": "팀원 모집",
+      "title": "0-3. 알림 내부_스와이프로 개별 삭제",
+      "path": "event-log/13-팀원-모집/0-3.-알림-내부_스와이프로-개별-삭제.md",
+      "notion_url": "https://app.notion.com/p/6370221954bc82b8b5e781744ab23dca",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:55.716Z",
+      "source_body_sha256": "d0872a8f8b446d8da8e78864820c3e5f1d2bc18621e8dde613c1a4ab2956f2f9",
+      "output_sha256": "c607fbe9b8da374f2a222ea6c184afab17c74f2aab5dd13219453af9f6c55a48",
+      "image_ids": [
+        "7ebd76de-07e1-4f6b-8434-a6ed3b664b8f"
+      ]
+    },
+    {
+      "notion_id": "1e70221954bc828da42c01f52b04728c",
+      "service": "팀원 모집",
+      "title": "0-4. 알림 내부_모두 읽음으로 표시",
+      "path": "event-log/13-팀원-모집/0-4.-알림-내부_모두-읽음으로-표시.md",
+      "notion_url": "https://app.notion.com/p/1e70221954bc828da42c01f52b04728c",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:55.794Z",
+      "source_body_sha256": "ebd7c4e94ab9bd613c0e63df3b22e25a15cfd6d9ea8509173816ee8359671d8e",
+      "output_sha256": "9273ac63862ceb7517ac1bcc8afb05cd81b49e58611a0323e52693da94aa8f71",
+      "image_ids": [
+        "163e8b5b-0518-4844-a9c0-ac2de6f13a75"
+      ]
+    },
+    {
+      "notion_id": "a8a0221954bc833bac4f810a09106e7e",
+      "service": "팀원 모집",
+      "title": "0-5. 알림 내부_알림 전체 삭제",
+      "path": "event-log/13-팀원-모집/0-5.-알림-내부_알림-전체-삭제.md",
+      "notion_url": "https://app.notion.com/p/a8a0221954bc833bac4f810a09106e7e",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:55.878Z",
+      "source_body_sha256": "96d45a451151a640aab9e62c3a7744068d538511758ebcb478807241960b7ac9",
+      "output_sha256": "d6a9669795ea34fd360b8a61823fc988f9a0e281586219a0ae4e39713e0cb0fb",
+      "image_ids": [
+        "163e8b5b-0518-4844-a9c0-ac2de6f13a75"
+      ]
+    },
+    {
+      "notion_id": "b0d0221954bc827696e8814684ed16d5",
+      "service": "팀원 모집",
+      "title": "0. 알림 클릭",
+      "path": "event-log/13-팀원-모집/0.-알림-클릭.md",
+      "notion_url": "https://app.notion.com/p/b0d0221954bc827696e8814684ed16d5",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:55.487Z",
+      "source_body_sha256": "679ae382ad4a8affd8714aceb7c24bff32460178e47ca91e90c9731880a7c3bc",
+      "output_sha256": "b6d08ed80bbacc3feba61ddfcd387ee4f584c1aeccf1b11785f654e57e51805c",
+      "image_ids": [
+        "260a290d-ad5d-4581-875d-28e19295bb68",
+        "9138f3fd-7c3d-4902-b0a5-b07304316b75"
+      ]
+    },
+    {
+      "notion_id": "a2e0221954bc83a49be8011073641c03",
+      "service": "팀원 모집",
+      "title": "1. 검색 클릭",
+      "path": "event-log/13-팀원-모집/1.-검색-클릭.md",
+      "notion_url": "https://app.notion.com/p/a2e0221954bc83a49be8011073641c03",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:56.990Z",
+      "source_body_sha256": "7650459d59da590ed7cb133e2feb44ba2561d8c65da48a4d275d3514f1f7893f",
+      "output_sha256": "84aaecd32649200804f8a233f71f973fc1e0f41c9d875c7d00d13253e8ee9f26",
+      "image_ids": [
+        "f52e3aaa-4452-4ae0-beff-cda26a957300",
+        "be562c50-3f51-4f87-8f90-ffad527865a4",
+        "c03bb338-eabb-4c70-9977-3f185e88897a",
+        "701852f8-5895-458d-a191-a920e4d3cb1e"
+      ]
+    },
+    {
+      "notion_id": "d760221954bc8246810c8182d34b3747",
+      "service": "팀원 모집",
+      "title": "10. 지원자 관리",
+      "path": "event-log/13-팀원-모집/10.-지원자-관리.md",
+      "notion_url": "https://app.notion.com/p/d760221954bc8246810c8182d34b3747",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:00.019Z",
+      "source_body_sha256": "784c9e19d0a44bff1aaf854c00c6707253fbbe0ac2ec95411228a31ae3920a87",
+      "output_sha256": "461d1eb29ae88578f711047016ac362891aa03ddd5c4d377114857ade4840cc1",
+      "image_ids": [
+        "8aa13c5e-c857-49f7-a56b-d880fa931792",
+        "1f4414dd-7c7f-436f-9e35-a116def28151",
+        "91045452-770b-4cbe-9478-d2733b64c558",
+        "b7f60c6c-4548-431e-a6ef-1050e38da93e",
+        "01d82ecd-2ea1-49fe-839d-dea4816b17ce",
+        "cacfc84e-ed22-4198-a8b5-6618e48e95b3",
+        "7edfd844-adc6-467a-a794-ccc7c20a2988",
+        "e7d6d9e6-af77-4edb-9a62-e12b63108197"
+      ]
+    },
+    {
+      "notion_id": "07f0221954bc82c3b7bb011f9f5f8597",
+      "service": "팀원 모집",
+      "title": "11. 지원자 상세",
+      "path": "event-log/13-팀원-모집/11.-지원자-상세.md",
+      "notion_url": "https://app.notion.com/p/07f0221954bc82c3b7bb011f9f5f8597",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:01.655Z",
+      "source_body_sha256": "320e0ff8ae145ffd717d079e3e859807c136f79ad3c070894c2e90324fc2decc",
+      "output_sha256": "c3f34da902106bbc36d1d619a53e24a7fa0b6f67729517bb532a6f07b526ec18",
+      "image_ids": [
+        "411f17d3-a0b5-4838-b3c4-5a67fe8b277c",
+        "eb1ebfeb-c5de-4a02-a05f-d15e3aff9b70",
+        "5b7cdb17-635b-475b-82a2-0d83856ac573",
+        "02175514-bfbe-419a-af79-cfc737edf015",
+        "5b7cdb17-635b-475b-82a2-0d83856ac573",
+        "4bf107b5-87a4-45df-943d-5bf787e497cb",
+        "9c942469-3c14-4ade-9dea-014efe388d20",
+        "20d2a3f1-2b64-429a-a170-0807ffbd8367",
+        "608fa761-278a-40b9-be1b-6fb7104891e9",
+        "9e45c11d-3730-4207-bc23-01e84601f863",
+        "608fa761-278a-40b9-be1b-6fb7104891e9",
+        "f17bc9bb-a959-43af-a0ca-046f7b978492",
+        "d6255bc0-bf9b-47e3-a8d3-43e0f726ec4e"
+      ]
+    },
+    {
+      "notion_id": "9a40221954bc82fc877081ebf6777310",
+      "service": "팀원 모집",
+      "title": "12. 헤더_팀원 모집 진입 (클릭) - 추가된 로깅",
+      "path": "event-log/13-팀원-모집/12.-헤더_팀원-모집-진입-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/9a40221954bc82fc877081ebf6777310",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:02.868Z",
+      "source_body_sha256": "d7abf37d6701b026cd684b08bc734d65f6b2652853bd650c28f49c57dce8066d",
+      "output_sha256": "b0fddad307b19c0176d69547509569cdcda13204b15e585713aa557832e336ab",
+      "image_ids": [
+        "f23e4f39-72ac-423a-937c-b245ea784e22"
+      ]
+    },
+    {
+      "notion_id": "7c20221954bc82039a478153dc1ede22",
+      "service": "팀원 모집",
+      "title": "13. 푸터_팀원 모집 진입 (클릭) - 추가된 로깅",
+      "path": "event-log/13-팀원-모집/13.-푸터_팀원-모집-진입-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/7c20221954bc82039a478153dc1ede22",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:01.909Z",
+      "source_body_sha256": "348c6a96bc7847b5795472f96881c3b6b5f947f2ab17c45ce39a6c7eeec6ee30",
+      "output_sha256": "47940401923cb27fdce7fe3ab686c07aa8389d642d2c23698171f8318e4faf5a",
+      "image_ids": [
+        "92889f45-425d-43d1-a252-7bb465cea6f0"
+      ]
+    },
+    {
+      "notion_id": "0030221954bc839fbb7d813164d993de",
+      "service": "팀원 모집",
+      "title": "2-1. 필터 내부",
+      "path": "event-log/13-팀원-모집/2-1.-필터-내부.md",
+      "notion_url": "https://app.notion.com/p/0030221954bc839fbb7d813164d993de",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:58.384Z",
+      "source_body_sha256": "ddfa75a449dabfd16e53c24e25eac6b060ee052ccd91da95038014252c237051",
+      "output_sha256": "0b3c89a9bb263074b25f88488d936be9c2071430929e144224ac4f271109a1f8",
+      "image_ids": [
+        "3fe0a459-c78c-4069-9a94-33222c4aeb51",
+        "429fa5c2-0fb7-45ca-8783-d73b19f69f3f",
+        "e985d5d7-c124-469b-84da-d666926bc7b5",
+        "1202e7ac-5f1c-4c54-bd65-2b57e133a27a",
+        "c2ac40c2-6912-428c-b1ad-e41668d9dbf6",
+        "95607c46-2f33-4fbe-9444-fb862db7477c",
+        "5068e169-2903-4520-ab13-2b17532718ee",
+        "a9e46fcd-de33-4353-9ff5-dbd497ec50e2",
+        "1d6d7127-ab1e-4574-bed5-a6318d2ba15a",
+        "9afff65a-9882-4197-af70-933d7224b11c",
+        "1d6d7127-ab1e-4574-bed5-a6318d2ba15a",
+        "86bd76d8-cbf3-4aa6-adbc-c7981fb7c212",
+        "b0bbcd7a-33ba-4ec6-8414-d34339e07387",
+        "3d3397ca-2749-4b4f-8d3c-4787893c0a35",
+        "5c6f94df-691e-48eb-bcd1-24cd43a0bd93",
+        "0247d6ae-1a76-4daf-b718-4f9fb4eac713",
+        "7e19864f-a5f8-428d-9bb8-8ce1978aba06",
+        "4968f959-5982-4bdc-93dc-b57aafb481d9"
+      ]
+    },
+    {
+      "notion_id": "da00221954bc8253bf8b81fe38c3e401",
+      "service": "팀원 모집",
+      "title": "2-2. 필터 닫기 (클릭) - 추가된 로깅",
+      "path": "event-log/13-팀원-모집/2-2.-필터-닫기-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/da00221954bc8253bf8b81fe38c3e401",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:56.746Z",
+      "source_body_sha256": "8979e36806b7c25a0ed418a9a8358396941837d09fde713d09534917a25532c3",
+      "output_sha256": "343efd91638a980a485ebd9e7f2b23739093aadfb4384ec46546f05da53ce0af",
+      "image_ids": [
+        "49cf6058-be46-4c7b-ab4d-f606eb8241c9"
+      ]
+    },
+    {
+      "notion_id": "4560221954bc82e987e9014eb7180660",
+      "service": "팀원 모집",
+      "title": "2. 필터 클릭",
+      "path": "event-log/13-팀원-모집/2.-필터-클릭.md",
+      "notion_url": "https://app.notion.com/p/4560221954bc82e987e9014eb7180660",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:57.099Z",
+      "source_body_sha256": "40ccbe157522a343c8e36cf837e98fcfc3bf678cff694ef54aa166795ca2272f",
+      "output_sha256": "f223aca6d2c84c07f984197bcb6ee516e62774b18ad25676302a93293fd6e891",
+      "image_ids": [
+        "fe276387-e0cc-4a39-bfcc-95cf2ae7ae20",
+        "c208e2d4-371b-4542-928c-da4e6192e0ae",
+        "b202a6cc-acbe-4262-adda-5ff3ee7aff86"
+      ]
+    },
+    {
+      "notion_id": "2370221954bc82a1b076011989b2f7bb",
+      "service": "팀원 모집",
+      "title": "3. 게시글 클릭",
+      "path": "event-log/13-팀원-모집/3.-게시글-클릭.md",
+      "notion_url": "https://app.notion.com/p/2370221954bc82a1b076011989b2f7bb",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:58.495Z",
+      "source_body_sha256": "461362cb27da5ceb72e74172ca19e213228d0c16f7eb1922cff93c5f16f69fe1",
+      "output_sha256": "450718b2c297e7965a54a7a647291556540411ef2397c21a372a8c5a470a200c",
+      "image_ids": [
+        "37cc3aa2-21c2-4e3d-9142-f46fd406d6fa",
+        "66080e5a-3207-4dec-98c8-f9845571dbcb",
+        "1ee62031-e7ff-4e73-a9e5-18a4f72ddeda"
+      ]
+    },
+    {
+      "notion_id": "d270221954bc82f6a72081c68fa45137",
+      "service": "팀원 모집",
+      "title": "4-1. 모집글 상세 및 삭제",
+      "path": "event-log/13-팀원-모집/4-1.-모집글-상세-및-삭제.md",
+      "notion_url": "https://app.notion.com/p/d270221954bc82f6a72081c68fa45137",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:55.695Z",
+      "source_body_sha256": "ada599328636ed82ed180fc2007c67762724864cdda588590f8c09597d35dbba",
+      "output_sha256": "8485b2a57c5e1bddcbe63cca412bf28644f22152b5a9766cbcf49d781902eea7",
+      "image_ids": [
+        "ad32d881-3ba2-4ea9-aa78-7ec1c4e88578",
+        "9ff5d7a1-6678-4f4c-ba28-a9de6f6f8a77",
+        "205252ca-4cf9-4f15-96f8-d3b80ca0412a",
+        "0cd7e328-c4c1-4679-a193-831cd94709fa",
+        "5d8f1237-aaab-47c8-9bf3-b9484c5ee718",
+        "c4e60f4e-8940-40f2-a5a5-013daac60a70",
+        "1d77ff4f-f621-4361-b596-e99161d80436"
+      ]
+    },
+    {
+      "notion_id": "4b50221954bc83a18ee2816000c9a43c",
+      "service": "팀원 모집",
+      "title": "4-2. 모집글 편집",
+      "path": "event-log/13-팀원-모집/4-2.-모집글-편집.md",
+      "notion_url": "https://app.notion.com/p/4b50221954bc83a18ee2816000c9a43c",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:58.429Z",
+      "source_body_sha256": "7d68dae17bc40e74c6090a196c2196530852fd2c5626eefbb7f775be0a4b1fe8",
+      "output_sha256": "1d34c41a166be56c581b8b6e6ac3b68d3153d58d079362a628b8b06bb6e4a299",
+      "image_ids": [
+        "fcefce90-ccba-40e9-84bd-0ec69fee6183",
+        "d0cc1aa4-57b8-4a12-8048-2d157e757a80",
+        "0e9fcc2c-4810-4d7e-b539-01883db96965",
+        "637db2ae-4add-4f06-8a7d-2906ae7d7d59",
+        "b732983a-ad85-462a-ae41-d314ed7fbeb5",
+        "a3227657-0131-441b-af61-ca18746eafd2",
+        "ab5956aa-d09c-41b1-9104-2f77c0bd1755",
+        "c7cb0118-fb03-4ff9-8fe9-2f259b8171e6",
+        "05b2ddac-8427-4171-bfe9-c53051e2fa11",
+        "93573f56-8e57-4bbd-b1fe-f6d6dfcc28f8",
+        "4ffe9db2-e310-4689-b9de-7033b4e50c03",
+        "25b44bda-7c3a-4289-9284-7d7b82f13fd9",
+        "4ffe9db2-e310-4689-b9de-7033b4e50c03",
+        "2460165e-7fa9-40c3-b212-dece887abab3",
+        "6653fcae-15fd-4b78-af34-9f69893dc795",
+        "7f4bc5bc-0f48-4c05-acad-98b02b076da3",
+        "de101d4b-f55d-4620-8207-8d30bf86151a",
+        "f70b1ba2-d9e5-4fe9-98ef-f04c25d5fd4c",
+        "7e0aae69-25a2-4020-984a-4edeab784756"
+      ]
+    },
+    {
+      "notion_id": "b470221954bc834998d0019cda23cd47",
+      "service": "팀원 모집",
+      "title": "4-3. 모집글 상세_뒤로가기 (클릭) - 추가된 로깅",
+      "path": "event-log/13-팀원-모집/4-3.-모집글-상세_뒤로가기-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/b470221954bc834998d0019cda23cd47",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:02.457Z",
+      "source_body_sha256": "c78179ec3bb173197a7cb4022805470da1e440fb2bdf9d4c9700f7860b29dfba",
+      "output_sha256": "e6da5b4e0ea24898fe14443f8d3634b9717f8c5d7ab8920d1c93d6fa0d6a09e7",
+      "image_ids": [
+        "3804368c-3b8c-4bdd-938c-6b423607d32a"
+      ]
+    },
+    {
+      "notion_id": "0780221954bc82b88387011193ac8899",
+      "service": "팀원 모집",
+      "title": "4. 모집글 상세",
+      "path": "event-log/13-팀원-모집/4.-모집글-상세.md",
+      "notion_url": "https://app.notion.com/p/0780221954bc82b88387011193ac8899",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:55.484Z",
+      "source_body_sha256": "3409b8b181225c4e6c7960dd327c983709bd298055c1dcf5c636ae750ae0e130",
+      "output_sha256": "e3d4f00c7b0b448b5bdb94bc14280c0b02d63851f9aca50cf4ca58ffb5b2019c",
+      "image_ids": [
+        "ea7ca379-3424-4c8a-b581-8ead1fd375ee",
+        "1ce06f2a-18ef-41ff-96c4-12febf368f5a",
+        "cb87da20-c155-477a-b090-96f32c554b2b",
+        "b2315753-62ae-4868-8fbe-6677d000e2ef",
+        "a573a31b-e9b7-4046-b3ec-4f94cc98ec83",
+        "cab64068-1066-4b92-8549-ee92d8674fe7"
+      ]
+    },
+    {
+      "notion_id": "b7f0221954bc82f0890c01eddec5b66d",
+      "service": "팀원 모집",
+      "title": "5-1. 모집글 작성",
+      "path": "event-log/13-팀원-모집/5-1.-모집글-작성.md",
+      "notion_url": "https://app.notion.com/p/b7f0221954bc82f0890c01eddec5b66d",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:00.693Z",
+      "source_body_sha256": "e1a9f1bb56c28bb7ff2cc1529ed1cad7c6fce38e6438071f2a73aba69d74268d",
+      "output_sha256": "d134a596507d4f82b8611906d5aedf8cbe2434e6dc474abcb38a5c697ad38901",
+      "image_ids": [
+        "0e9fcc2c-4810-4d7e-b539-01883db96965",
+        "173d11c2-235e-4107-a3de-3b71be7a6f46",
+        "b732983a-ad85-462a-ae41-d314ed7fbeb5",
+        "a3f799ee-6343-4159-bf49-46e540dd09a7",
+        "ab5956aa-d09c-41b1-9104-2f77c0bd1755",
+        "13873a97-5a05-4032-9d93-960fce3ca88a",
+        "1c72bd1a-b306-4816-a02e-345fe105abb4",
+        "1f1c8c3c-aadd-4542-8ed7-fb853ff5aa1d",
+        "e90d50fd-5d1e-48df-bb13-ca50cfaa0161",
+        "8efb2a21-7c4c-4e96-8274-f5e7adb84044",
+        "e90d50fd-5d1e-48df-bb13-ca50cfaa0161",
+        "f8816c9f-3089-4adc-9a9e-a1a7a98bf827",
+        "3ab32c45-3c8c-4f8c-8706-1fd2b836ee2c",
+        "7597ca9b-111b-4cc3-a103-595d3c457092",
+        "52b808a5-fb10-46dd-8f91-0ee676277831",
+        "2f3c9a10-9617-4b9b-8ef6-cc2370257188"
+      ]
+    },
+    {
+      "notion_id": "0db0221954bc820cbff8816c06c456c4",
+      "service": "팀원 모집",
+      "title": "5. 모집하기 클릭",
+      "path": "event-log/13-팀원-모집/5.-모집하기-클릭.md",
+      "notion_url": "https://app.notion.com/p/0db0221954bc820cbff8816c06c456c4",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:58.608Z",
+      "source_body_sha256": "701594b02a8581b5f0f7d51e78f00a18406583f59eed8833f52537c841793414",
+      "output_sha256": "26d9e99d9e162a0cfe24291e01f856dd29bd50a04471afa4b4a6d980daab8885",
+      "image_ids": [
+        "f47a576c-1320-42b2-8298-83d3ccd70870",
+        "5e93b43e-fa56-4f9f-81aa-534080d0140d",
+        "d0ce7624-56b9-47e4-8bc2-d522fb595b36",
+        "20e71f55-3377-4675-8ed8-1f741b593abb",
+        "c5593858-11ac-427d-abc7-6b0b706d9353"
+      ]
+    },
+    {
+      "notion_id": "5a80221954bc825bb03481936ed08ace",
+      "service": "팀원 모집",
+      "title": "6. 지원서 작성",
+      "path": "event-log/13-팀원-모집/6.-지원서-작성.md",
+      "notion_url": "https://app.notion.com/p/5a80221954bc825bb03481936ed08ace",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:02.165Z",
+      "source_body_sha256": "2a34423b3380f1833bebc11636008c770f4aa6618d313f6772522e7673415131",
+      "output_sha256": "d360d0246c4bcefeb91ab804baac067803295f6865ecd575ccf36f0ecbde9fc9",
+      "image_ids": [
+        "da786c3e-d842-4173-957d-217993a28041",
+        "c6305ac5-0102-4314-9b2e-86db85290ba7",
+        "0a6b0985-dcc4-4253-9863-9de46b59d161",
+        "67720fd9-9820-43b5-b668-c3548bac7e98",
+        "712e1ee0-1543-4138-bef7-ad89404d75b3",
+        "ff1a0f52-4715-4e8e-8a36-78aacb9ca81a",
+        "1259eed2-6fea-4ab4-9ad5-0c417b10e9ac",
+        "b5a982e2-e538-4be2-b719-8eedc1c1699a",
+        "ac4d3c4e-5bce-48fa-8732-029bb7da4267",
+        "b34ada7f-6a11-46aa-b147-a58dc66b9962",
+        "02eead4b-a225-4153-b3dd-3ca330399838",
+        "af09ea86-9bcb-48d4-96a9-572a30808b70",
+        "86fe2c9c-0ed9-438f-b6cc-86a549545825",
+        "e70b0c23-d45b-412b-95c8-a802f4f1ec69",
+        "d0d4a64c-406a-400d-b5e4-05bde480832a",
+        "12b7ada4-9529-4975-9374-d279641a6b2f",
+        "c97efd25-3f12-4792-97b8-8a4e9a793d3d",
+        "9c8f8ab0-bc65-4269-8974-20ce2bd7cf0c",
+        "0eb006ec-c369-4db7-ab13-ab7a4fa900fe",
+        "b02d3e30-ca41-4b73-a562-1afc52a62faa",
+        "0eb006ec-c369-4db7-ab13-ab7a4fa900fe",
+        "364fad6d-a163-4b18-91a6-d3ec24a4b964",
+        "573e4b12-566c-4ca6-a8f4-049610563d72",
+        "b78aaf1d-bef6-4d36-a0bd-d13b8c544935",
+        "0d429488-0aa6-40fc-ba3e-4cee26b2e1f1",
+        "858412a2-069c-4cf1-99ea-e9510f68a449",
+        "772c5e47-68ad-4ea4-8ad1-c404c83bb704",
+        "6fede46d-d13e-4aba-bb63-2f9658ba91c3",
+        "92784ad7-5088-4542-8773-37909e93088b",
+        "da0172e8-12e2-440a-a019-fff4b3aeda0d",
+        "513819e3-a0e1-48df-8c6a-45f0410bb401"
+      ]
+    },
+    {
+      "notion_id": "7390221954bc83b284dc81c22fe8367e",
+      "service": "팀원 모집",
+      "title": "7-1-1. 프로필 수정하기 내부",
+      "path": "event-log/13-팀원-모집/7-1-1.-프로필-수정하기-내부.md",
+      "notion_url": "https://app.notion.com/p/7390221954bc83b284dc81c22fe8367e",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:06.968Z",
+      "source_body_sha256": "ae1bee669d5a76ca7e083b777fdb8a99cbdea49744218389b21507439f63ed79",
+      "output_sha256": "cb39693af2cb9a076c7378be4110fccc4f136487532ad5b283298e11db4ac17e",
+      "image_ids": [
+        "da786c3e-d842-4173-957d-217993a28041",
+        "39d80c94-f659-4198-8929-a1a35435e09b",
+        "f451a2db-e0d8-4b96-a118-70f2d0da1833",
+        "b6d9015c-354c-4c17-b29d-7f6ce4ec06bf",
+        "422a7ac9-ca3f-4881-8b71-868f60760695",
+        "71350545-31f9-4b30-bb2d-2af72aa582c1",
+        "b4353003-c69e-409e-bead-7798cfa1a952",
+        "cc639e4a-37a8-4685-8aef-cccdfbd3418f",
+        "ac4d3c4e-5bce-48fa-8732-029bb7da4267",
+        "09c5fdba-5780-4e32-be93-67f15e535afc",
+        "5c018d22-d508-4a38-a715-e8089f7868a7",
+        "9bdb8927-dd45-4805-b2a2-a76d741d75c9",
+        "d5264836-23fc-4972-8f9c-afa336723a16",
+        "8492a424-69a1-408e-8edc-5cc2f82c98b0",
+        "1bacc2e8-6f64-4b3c-b37e-697e9ec20993",
+        "bd3c6129-8acd-46d1-9084-8a5fda55c47b",
+        "d83a93e6-9afa-4271-976a-a9ead5989542",
+        "30c4ddc5-414b-4106-9c14-02a80e258f7a",
+        "1c5720c8-e56f-44da-9a84-714f11b65815",
+        "18242ed0-c400-40f9-8174-7b7e0ef910dc",
+        "65bfc114-8af0-44f1-997a-e9e2646664a5",
+        "5fb6ca13-3941-4a06-aeae-e95332f00b31",
+        "c5aa9139-63e7-4035-95a3-380449152557",
+        "dd086d0b-a948-443b-aa75-904ff59eb055",
+        "0e76a0c9-67a0-4aac-88f4-26a89254ed7f",
+        "8c0ade95-d6da-4fb5-89bf-e2a033fab91b",
+        "a8a10872-ec84-45c0-a04c-57e10be1e4de",
+        "2c06e751-ae9d-47e7-8af2-4b1b3cc8d864",
+        "72863be3-f438-4816-ad94-2fcbbcbb6ecc",
+        "5308f5ed-4ee0-459c-970b-35918b8468bd",
+        "f8f8a2f1-0708-4418-9fa2-97b7a35ab908"
+      ]
+    },
+    {
+      "notion_id": "45c0221954bc8331b74a816696e985fd",
+      "service": "팀원 모집",
+      "title": "7-1-2. 프로필 작성하기 내부",
+      "path": "event-log/13-팀원-모집/7-1-2.-프로필-작성하기-내부.md",
+      "notion_url": "https://app.notion.com/p/45c0221954bc8331b74a816696e985fd",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:09.140Z",
+      "source_body_sha256": "ae098675637ab09d0d3cf779dc5633bdc6f55506f11c89dc0a5055abf2182525",
+      "output_sha256": "b513261bb2c90939de67d7908e5848bae0392b2ab272492101eff3766a40f8fe",
+      "image_ids": [
+        "da786c3e-d842-4173-957d-217993a28041",
+        "39d80c94-f659-4198-8929-a1a35435e09b",
+        "02d0d63b-575b-437c-93a3-fb4b4e8643a7",
+        "b6d9015c-354c-4c17-b29d-7f6ce4ec06bf",
+        "29646f58-acec-42dc-b515-4a2b241d8077",
+        "71350545-31f9-4b30-bb2d-2af72aa582c1",
+        "6a54b830-2d43-4439-aaed-1294c498ab78",
+        "cc639e4a-37a8-4685-8aef-cccdfbd3418f",
+        "2055bc25-da42-4629-a5e8-d8931fb2eb1a",
+        "8492a424-69a1-408e-8edc-5cc2f82c98b0",
+        "23c6c696-16d5-420d-9c60-32b9d9f0e70b",
+        "bd3c6129-8acd-46d1-9084-8a5fda55c47b",
+        "ac4d3c4e-5bce-48fa-8732-029bb7da4267",
+        "09c5fdba-5780-4e32-be93-67f15e535afc",
+        "a567d4d3-b964-41ba-b211-2f5eed670cce",
+        "9bdb8927-dd45-4805-b2a2-a76d741d75c9",
+        "b95a3fb1-34f8-474c-a995-eeafdd5801da",
+        "0b381a6a-558c-4695-b3de-184e7a3d7ed0",
+        "5fb6ca13-3941-4a06-aeae-e95332f00b31",
+        "e70f444c-8ea6-4c8a-acf7-c469ff72c475",
+        "18242ed0-c400-40f9-8174-7b7e0ef910dc",
+        "675eaaf8-29fc-4891-9989-3f43c7004200",
+        "fc3a361e-4c3a-4870-a3d0-e53014b86927",
+        "5b32b6b4-7a0f-4bbf-b32d-4c1bb0da64c6",
+        "97585039-bd52-4e0a-a6c0-e419d5984180",
+        "28417116-d6a6-4d76-b2b7-102384989517",
+        "8411e2ec-88b5-4f9e-8b84-964f2b9ca0f5",
+        "6bc85b5e-9a4b-4554-b265-25e589f0a89b"
+      ]
+    },
+    {
+      "notion_id": "c850221954bc822986d0017608187b84",
+      "service": "팀원 모집",
+      "title": "7-1. 프로필 내부",
+      "path": "event-log/13-팀원-모집/7-1.-프로필-내부.md",
+      "notion_url": "https://app.notion.com/p/c850221954bc822986d0017608187b84",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:05.250Z",
+      "source_body_sha256": "8f7cd9b27d775e851c9245ff26c3383d029732391625bb2294017716073433df",
+      "output_sha256": "603a51c43ca7a5dec8d0f3fad4e94fdb9e9f9c5ac907e3725253d5bb96e2aacd",
+      "image_ids": [
+        "dbcead13-2790-4d71-8456-b381d6c2f233",
+        "f9cf280d-a647-4021-89bc-93eb45e200e6",
+        "3c2b782a-8420-4c8d-84c1-b0584529f673",
+        "d09bed30-9dee-4177-a5c7-12aa85ff85cd",
+        "6a53c8ff-c13d-4a40-99be-15e8a5717541",
+        "52dfa254-d218-4fe6-869f-ce0d62fe0368",
+        "3352e356-7fbb-4fa3-a2e9-dbffa03c6677",
+        "cc6d9d09-ced7-498d-bcdb-04d5d8541e97",
+        "c1ef3ac5-8f42-464d-8c21-2056f011f3e7",
+        "fd8e8b8f-0ea4-4211-a369-f75a6897d299",
+        "48024309-d46e-454b-91e6-13a4085366ce"
+      ]
+    },
+    {
+      "notion_id": "5160221954bc82398a17813a2ae80db3",
+      "service": "팀원 모집",
+      "title": "7. 프로필 클릭",
+      "path": "event-log/13-팀원-모집/7.-프로필-클릭.md",
+      "notion_url": "https://app.notion.com/p/5160221954bc82398a17813a2ae80db3",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:02.708Z",
+      "source_body_sha256": "3b473e14f2a845c574f5751446da30265fce082acc99eb30c0a8845922f9ed3b",
+      "output_sha256": "4ac3707af1feabd59ce8ba196914dd9c716f355a6cfcfae4cd6eecaee299e7b8",
+      "image_ids": [
+        "bcd6db14-68ed-40c8-8913-49999f2b815b",
+        "deab57e2-6cec-470e-9ea6-e6c5cadadcf0",
+        "af61f278-750c-4eb5-b972-5fb41e6a75fc"
+      ]
+    },
+    {
+      "notion_id": "c5a0221954bc83a79c748173bd372a47",
+      "service": "팀원 모집",
+      "title": "8-1. 필터 내부",
+      "path": "event-log/13-팀원-모집/8-1.-필터-내부.md",
+      "notion_url": "https://app.notion.com/p/c5a0221954bc83a79c748173bd372a47",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:55.692Z",
+      "source_body_sha256": "44375e74e912f86bdcd025ad167c99671fe718752c563e26576fcfafcc684969",
+      "output_sha256": "9ae80c250ee172cc5246e28f3d8367ac7c39a6979c3cebbe3ad918f76a3c1524",
+      "image_ids": [
+        "c4a2be22-447c-4a0d-9415-bbe97e2fa321",
+        "a73369f8-c76d-4ad8-87f6-4adc08f9c346",
+        "a996957a-fb49-4730-9b71-f8d1750d1e30",
+        "22c5da04-3348-42e2-9d03-f1e61a06cc18",
+        "dc5c1698-2f3a-4571-bab1-46a3af333083",
+        "1594a688-247b-4b46-9d6b-fcca85a6d196",
+        "fb2692f1-ed3e-49ff-85f8-4f0396fe6639",
+        "bf74dd2a-ac22-43b5-8e9e-af9441efe48a",
+        "59407397-03be-4afb-b032-46cc7638a68f",
+        "7db800ce-a0ec-4b33-84a3-4fcc8e06f991",
+        "cf4a88f9-8ffe-400f-9c6f-ce0938bc9009",
+        "d32dd9cf-6920-41ab-aed2-c2cb150bbeab"
+      ]
+    },
+    {
+      "notion_id": "b910221954bc83ac99e881c23f1f83de",
+      "service": "팀원 모집",
+      "title": "8-2. 채팅 클릭",
+      "path": "event-log/13-팀원-모집/8-2.-채팅-클릭.md",
+      "notion_url": "https://app.notion.com/p/b910221954bc83ac99e881c23f1f83de",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:57.449Z",
+      "source_body_sha256": "9d36d0dc41fd3cb2836fc95871ffb6c471bcdfef494ea591e0104f56e5766336",
+      "output_sha256": "adfed7e07323beadc37375232d642eb749e6e37c7f342560f64fb3f341741a4a",
+      "image_ids": [
+        "eb612e3f-0ba3-4caf-b00a-c282d782de17",
+        "b598cdb0-e064-47fa-aabd-8a52469302e4"
+      ]
+    },
+    {
+      "notion_id": "4530221954bc82ffb2ca01cdb1bcf623",
+      "service": "팀원 모집",
+      "title": "8. 필터 클릭",
+      "path": "event-log/13-팀원-모집/8.-필터-클릭.md",
+      "notion_url": "https://app.notion.com/p/4530221954bc82ffb2ca01cdb1bcf623",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:55.473Z",
+      "source_body_sha256": "7d4dac544e7ba57679487f69ca8881461877a5dcb25dc423d2194c1e270abe5e",
+      "output_sha256": "eb9a325d88410f1356afc9848b285792971333da5f50a8c8241e71cf798d21d0",
+      "image_ids": [
+        "2e4d3f1b-12b4-444e-a65c-084e508e1beb",
+        "b346e9fe-edce-4a11-8b85-0f472f2a8044",
+        "ae7414bc-d5ad-4ee9-a88a-d24e5cf5d935"
+      ]
+    },
+    {
+      "notion_id": "40c0221954bc83a08071019be3760678",
+      "service": "팀원 모집",
+      "title": "9-1. 필터 클릭 및 내부",
+      "path": "event-log/13-팀원-모집/9-1.-필터-클릭-및-내부.md",
+      "notion_url": "https://app.notion.com/p/40c0221954bc83a08071019be3760678",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:59.512Z",
+      "source_body_sha256": "f63efd6ffb4700f4ac1a2b2cc7ff5b652e82c4301e2d5833f985895d563a3eb3",
+      "output_sha256": "10769b9a98e2868ba20dc6c9af0d68e0f14337837f308a205a83f6a65d3e5157",
+      "image_ids": [
+        "2ca962c8-9776-4256-a879-942b44a6c6a8",
+        "bc1b8260-c7eb-4cbf-bb87-0436800de2b2",
+        "625f1f8f-3330-4816-999c-2c8d7abef9c0",
+        "06a3c063-e6df-4e0b-b065-75b8ec9e7b9a",
+        "00f259aa-a1b6-4067-8903-d30abab8c82b",
+        "5eb9aba3-44c0-472e-a190-98ddc3041b8f",
+        "a3470b1a-4eea-4269-a4fc-d59ec279dc80",
+        "605631d9-26ac-405b-8505-87aed9ed2ee2",
+        "737268c7-eddd-4e50-ac8f-32f91dd88777",
+        "ebb91a13-3c33-4319-adfc-748388e2cc10",
+        "55a756f2-9474-4f92-9a49-02ae5dd2d07a",
+        "df9d0f3a-6a44-4c4d-aa39-46f87fa5ff30",
+        "140258a5-b8ad-4ca9-990e-b7317c84edd5",
+        "54f765df-6520-4929-bfbf-63de990bf156",
+        "e1e17853-9387-43ab-81d4-9f65e2c57e18"
+      ]
+    },
+    {
+      "notion_id": "e940221954bc8341a1eb818608f79a6d",
+      "service": "팀원 모집",
+      "title": "9. 내가 작성한 모집글",
+      "path": "event-log/13-팀원-모집/9.-내가-작성한-모집글.md",
+      "notion_url": "https://app.notion.com/p/e940221954bc8341a1eb818608f79a6d",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:57.594Z",
+      "source_body_sha256": "d7090cc0ece78f27cba9f29ce21ce1d72a5a7ed0f6d315509dca25bc243dae17",
+      "output_sha256": "22ca73aba9d3941e8e4539ba6fdd0112cf2debc821f52085f35e36b177b602f2",
+      "image_ids": [
+        "532e3450-b28e-401f-8673-32b8575a64dd",
+        "14695498-52b8-45ed-9a0b-1320b926235d",
+        "532e3450-b28e-401f-8673-32b8575a64dd",
+        "fe7d4b3f-6006-48ab-9e29-9e51aca5eb0a",
+        "83d21da9-cd81-4f27-8fe0-39f2712f53b2",
+        "fa7fda86-d2f4-4b88-abd9-107c1de1628b",
+        "da13ce53-8ed3-4124-9b90-67a7c02b93b5",
+        "b1ef33a4-6f23-412d-9b96-77e4ab25e1f3",
+        "8da27063-d595-4d76-93cb-ca6884b27aba",
+        "b87b0ecc-4107-48e7-8929-0ca677faaf44"
+      ]
+    },
+    {
+      "notion_id": "da80221954bc8248b007014bc11d91be",
+      "service": "팀원 모집",
+      "title": "[레거시·중복 원문] 14. 카테고리_팀원 모집 진입 (클릭) - 추가된 로깅",
+      "path": "event-log/13-팀원-모집/[레거시·중복-원문]-14.-카테고리_팀원-모집-진입-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/da80221954bc8248b007014bc11d91be",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:56.634Z",
+      "source_body_sha256": "bade371dba6c49a94431ad8184570ba3c832b0ddeae7ef8ae05098382831adae",
+      "output_sha256": "0d6490cf571fe356fab42863e5f68ebb67a7f418bb6cf021bb7277408a882cc2",
+      "image_ids": [
+        "c48b455b-7cd0-43cb-ad3e-13d0d934433d"
+      ]
+    }
+  ],
+  "blank_pages": []
+}

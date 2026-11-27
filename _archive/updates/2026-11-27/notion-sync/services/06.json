@@ -1,0 +1,1529 @@
+{
+  "service": "게시판",
+  "pages": [
+    {
+      "notion_id": "6170221954bc83d1b83b81e11602d971",
+      "service": "게시판",
+      "title": "1-1.메인_공지사항_더보기_클",
+      "path": "event-log/08-게시판/1-1.메인_공지사항_더보기_클.md",
+      "notion_url": "https://app.notion.com/p/6170221954bc83d1b83b81e11602d971",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:36.000Z",
+      "source_body_sha256": "d2209c49da4589ff20bbfa25d72a9aa45c5ee15422fb9d488fae6effc85da1a6",
+      "output_sha256": "493a1f7ec4cef55d6e395bd31b54baabdc72965d2b54a50f367e9bab37fd0aaa",
+      "image_ids": [
+        "58caa40f-0214-4c4f-a809-cc617880065d",
+        "b239f8f5-bdf9-41d2-ab83-6ae9e8004fb4"
+      ]
+    },
+    {
+      "notion_id": "ac00221954bc825189bf81ab024cf2a4",
+      "service": "게시판",
+      "title": "1-2. 메인_공지사항_클릭",
+      "path": "event-log/08-게시판/1-2.-메인_공지사항_클릭.md",
+      "notion_url": "https://app.notion.com/p/ac00221954bc825189bf81ab024cf2a4",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:36.164Z",
+      "source_body_sha256": "a664f8e06cc1ba87b5dda095abc8506a37e4761ffa9f862f0b939f19bab157c8",
+      "output_sha256": "5b2e7cce2ff2036f9eb83662adc8b3f34334e927fab73748800755fd5207ddae",
+      "image_ids": [
+        "3a86d6bc-74e9-4dec-9cb3-d898711395c4",
+        "e78526a8-d1ec-479a-84ca-2f518022c62d"
+      ]
+    },
+    {
+      "notion_id": "b6f0221954bc83849a8081a8edf55550",
+      "service": "게시판",
+      "title": "1-3. 메인_공지사항_상세_클릭",
+      "path": "event-log/08-게시판/1-3.-메인_공지사항_상세_클릭.md",
+      "notion_url": "https://app.notion.com/p/b6f0221954bc83849a8081a8edf55550",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:36.378Z",
+      "source_body_sha256": "fc5182fa8d23dc98d70a21497b7fde84844970a911f40507f8e7ef018dad8de5",
+      "output_sha256": "f790ec53334d4d6ab3201d53d79c043c091b53780aae11aef5095f4c15590adf",
+      "image_ids": [
+        "dde110dd-7c08-4db8-9816-f52e95b97dd0",
+        "61910256-7a09-4e36-b946-152bb9c26044"
+      ]
+    },
+    {
+      "notion_id": "caa0221954bc8368b74a81ba4866e31d",
+      "service": "게시판",
+      "title": "10-1. 헤더_교내 시설물 정보_클릭",
+      "path": "event-log/08-게시판/10-1.-헤더_교내-시설물-정보_클릭.md",
+      "notion_url": "https://app.notion.com/p/caa0221954bc8368b74a81ba4866e31d",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:42.682Z",
+      "source_body_sha256": "392846c665b759e2873c0b59c051b8169d7f482a9c2241bdc8fa5d895a9e67f0",
+      "output_sha256": "7d8231a0e644a3ed0309f86175db0cc51a91784beb8ed41429ac248156e9ecec",
+      "image_ids": [
+        "a6b33a82-4966-49a1-8441-84c538a89f6f",
+        "c0f384a5-81e6-4347-9fa9-ae9540701d51"
+      ]
+    },
+    {
+      "notion_id": "7920221954bc82e1a050817398d4508e",
+      "service": "게시판",
+      "title": "10-2. 푸터_교내 시설물 정보_클릭",
+      "path": "event-log/08-게시판/10-2.-푸터_교내-시설물-정보_클릭.md",
+      "notion_url": "https://app.notion.com/p/7920221954bc82e1a050817398d4508e",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:39.451Z",
+      "source_body_sha256": "6d30464c63c5ce68ff5e07380e8031df81947e3505925900a6f56add87493782",
+      "output_sha256": "38e24ec316f5c54c1bba16cf437c58f06b742358531c88ca2ab3f3b23234ae73",
+      "image_ids": [
+        "4af9be75-6dcd-481a-80c3-88fc58b6b1c9",
+        "6bbdac59-f90e-4760-aec3-54c0d96b66ed"
+      ]
+    },
+    {
+      "notion_id": "7df0221954bc8373847281852fc635da",
+      "service": "게시판",
+      "title": "11-1.분실물_글쓰기_클릭",
+      "path": "event-log/08-게시판/11-1.분실물_글쓰기_클릭.md",
+      "notion_url": "https://app.notion.com/p/7df0221954bc8373847281852fc635da",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:36.093Z",
+      "source_body_sha256": "8cde1fb209d35908f1c2bac8709d07400ea925b8108e847d979b648cd097af5d",
+      "output_sha256": "6cfd1816d82d1ec4241ed38a5f98f48f702fed0734e50060f5da9c6ed650e73a",
+      "image_ids": [
+        "e31064ae-0299-453e-bfbd-1d52bea0529d",
+        "7988c05c-9db0-44f3-9b41-256cdaadc29c",
+        "3ebbdbf0-dd7f-4ab7-bbab-28bc7bcf4ca5",
+        "e7ffc0cc-0884-4045-9fdc-946201323e81",
+        "c401587e-36c3-4c39-ae79-ff304519d946",
+        "423acc06-4b02-4ea7-8fee-8d4dbc788ef2",
+        "f19a88de-5346-43fe-bf3e-e3e28e25471d"
+      ]
+    },
+    {
+      "notion_id": "62b0221954bc823ca3ad81824a53f40c",
+      "service": "게시판",
+      "title": "11-10.분실물_분실물신고_물품추가_클릭",
+      "path": "event-log/08-게시판/11-10.분실물_분실물신고_물품추가_클릭.md",
+      "notion_url": "https://app.notion.com/p/62b0221954bc823ca3ad81824a53f40c",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:39.285Z",
+      "source_body_sha256": "9b011c48f0bf35e34431e84b57d4e28ef756bca9f627a94ca1afb07d9eeecb11",
+      "output_sha256": "2a70901e5ef42b3455e7c2e1aa7137f8a52a30ad72ec4b3462309e477a5c4617",
+      "image_ids": [
+        "da8d1f85-01bb-4125-98d3-5eb2227d4b1d",
+        "bf5388ac-c578-4033-bcc3-e2d06926dea6",
+        "089230bc-d727-4c83-998e-e3520ad78307",
+        "4b0ac106-22cd-4aed-9e40-5b0139f12021",
+        "19fbd483-ce3a-4b4c-bac5-7f7100146688",
+        "51310a27-a2ff-4f65-a4fe-7ab92db5b4d4"
+      ]
+    },
+    {
+      "notion_id": "46c0221954bc8398bce3811a305e8610",
+      "service": "게시판",
+      "title": "11-11.분실물_분실물신고_작성완료_클릭",
+      "path": "event-log/08-게시판/11-11.분실물_분실물신고_작성완료_클릭.md",
+      "notion_url": "https://app.notion.com/p/46c0221954bc8398bce3811a305e8610",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:39.825Z",
+      "source_body_sha256": "f1ca5315dd2f515752a210c407208c1d8233b293c2f3599addecebbc779232f8",
+      "output_sha256": "eb43fc0522bc795d7cb4df85e9af7e38b99ba78af005915f9706cdddc916e2bf",
+      "image_ids": [
+        "bf0925be-29d7-4b1d-9218-7ebd52e3ef5f",
+        "12a7be7a-b8ff-4899-bc43-21fea94e09f3",
+        "0b2c6773-d842-48be-9549-588c231233bb",
+        "e81167df-1c7a-4122-9c9c-39533961b525",
+        "ce2f6081-98b2-4900-bc17-c8c034e14c64",
+        "70e2d70a-d81e-4e5f-91ad-4b507f2fa1ec"
+      ]
+    },
+    {
+      "notion_id": "8420221954bc83deaaa281017a9c9cfd",
+      "service": "게시판",
+      "title": "11-12.분실물_쪽지보내기_클릭 ",
+      "path": "event-log/08-게시판/11-12.분실물_쪽지보내기_클릭.md",
+      "notion_url": "https://app.notion.com/p/8420221954bc83deaaa281017a9c9cfd",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:39.360Z",
+      "source_body_sha256": "f6873c851462020ed290348796b327a6383ee04ef506ff8960801bc39c3939e6",
+      "output_sha256": "513f42ea7b828d720e51eea0cad21d6752a89ad8855432f858b04f79d982521d",
+      "image_ids": [
+        "af8d30cc-8ff2-49fe-b98a-f1edc079885e",
+        "08fc2218-3cb0-4db1-a9db-6b5c811b9f77",
+        "e85a69f2-fd47-4bc9-82aa-6fbdc94ffffc",
+        "781ae33d-b42f-4a88-afc7-987333b66a7c",
+        "ea1d235a-7263-4df4-9480-d1e3f0a27829",
+        "d37a69c7-e4bf-4976-b2ab-fbcb515fa583",
+        "857a4350-2c88-461d-8ae5-5ad88693ca49"
+      ]
+    },
+    {
+      "notion_id": "5470221954bc82368a32012c6afc11d6",
+      "service": "게시판",
+      "title": "11-13.분실물_신고하기_클릭",
+      "path": "event-log/08-게시판/11-13.분실물_신고하기_클릭.md",
+      "notion_url": "https://app.notion.com/p/5470221954bc82368a32012c6afc11d6",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:40.538Z",
+      "source_body_sha256": "5b599781e81dd1fc829e5a452d983ff7141ef355980989ed8d6d839be6161b53",
+      "output_sha256": "fc8e5288518ea14aaf49630f10feade4583268a3b011d0fd429a8d58a05c8194",
+      "image_ids": [
+        "7addf9a5-17b7-4a9b-ab71-d4565403add9",
+        "a28e24e8-9dae-4f87-86e7-67b753e99524",
+        "d4230b63-72f6-4715-8901-826b72d86957",
+        "a35d86fa-0eb1-4461-84bd-8e31bec2896b",
+        "da7c8a8a-7d06-4a4b-ab9a-1dfaf006bf2f",
+        "91e392e9-703f-4d62-bc67-7a085a1c0450",
+        "26bb3413-883d-450c-87a0-1fa323ac8098"
+      ]
+    },
+    {
+      "notion_id": "9b30221954bc834689f1819b4f8339aa",
+      "service": "게시판",
+      "title": "11-14.분실물_게시글신고하기_신고하기_클릭",
+      "path": "event-log/08-게시판/11-14.분실물_게시글신고하기_신고하기_클릭.md",
+      "notion_url": "https://app.notion.com/p/9b30221954bc834689f1819b4f8339aa",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:37.250Z",
+      "source_body_sha256": "cf6e5dedabf4cc2b373d1e0de1e3d96b9551bac1c9de73aed269f7cb722a5b23",
+      "output_sha256": "36a9ac75a0f3ae08558acca81231ea446abdb4b3de7a0d4f19e05a7ce49d5e6f",
+      "image_ids": [
+        "0853e6f1-b799-407e-92a6-08cf776c1d42",
+        "bb5a063e-58a2-4b2a-87fd-2919bf031a0f",
+        "9dc5aa81-3764-4bd1-bd29-e083943d3a3e",
+        "2667372c-7471-4152-b64d-987747aed760",
+        "18798f9f-8375-4bd4-93d6-a797c7c7de60"
+      ]
+    },
+    {
+      "notion_id": "81d0221954bc8228b14a81c69a363603",
+      "service": "게시판",
+      "title": "11-16.쪽지리스트_대화창_클릭",
+      "path": "event-log/08-게시판/11-16.쪽지리스트_대화창_클릭.md",
+      "notion_url": "https://app.notion.com/p/81d0221954bc8228b14a81c69a363603",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:36.484Z",
+      "source_body_sha256": "71da69441898308c0e184d8f6d7051ddc5c7854f009c68638aa23baa8cc71e37",
+      "output_sha256": "59a0b368c2890becf6a3eb0f5a63b47db0ab5e28510ae30d9ead8642e0b4f316",
+      "image_ids": [
+        "5a7d6a27-2550-4f3e-a74c-009b40a3f43d",
+        "008e223e-02e8-4031-a651-f64700ddb694",
+        "4fd54178-754b-4d48-8ba5-eb27ea21c7e3",
+        "fd9ec95e-26ba-4c9d-a790-28e985c67ece"
+      ]
+    },
+    {
+      "notion_id": "b5b0221954bc83c084f6813c7f8c3190",
+      "service": "게시판",
+      "title": "11-17.헤더_쪽지_클릭",
+      "path": "event-log/08-게시판/11-17.헤더_쪽지_클릭.md",
+      "notion_url": "https://app.notion.com/p/b5b0221954bc83c084f6813c7f8c3190",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:42.133Z",
+      "source_body_sha256": "1c8c37580fa2ab4517af821b686a2bc1cb83e3f5f143d025eece627325e9e2ea",
+      "output_sha256": "1054daabded51b3d6ca6d147f670381686f591e51939a3e6b29ba52368417450",
+      "image_ids": [
+        "75014c5e-5fd4-49b6-8450-57dd2ed3420b",
+        "09233c8a-e0bf-4b9b-b536-29c0a26bf51d"
+      ]
+    },
+    {
+      "notion_id": "04a0221954bc83c987980191e4eea42a",
+      "service": "게시판",
+      "title": "11-18.분실물_게시물종류_클릭 (11-23 통합)",
+      "path": "event-log/08-게시판/11-18.분실물_게시물종류_클릭-(11-23-통합).md",
+      "notion_url": "https://app.notion.com/p/04a0221954bc83c987980191e4eea42a",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:43.144Z",
+      "source_body_sha256": "c6788b104105c530ce02b7c6e34e8a7ab018b1592f7f929a0d411a7f2d9fb506",
+      "output_sha256": "bfe32e1d54adaf56225206a2952b4d26c83c2b28e90062e0ace2332202dedc6b",
+      "image_ids": [
+        "746dcf8d-6c59-47e8-b6e4-56e965d60400",
+        "ace304d2-3731-4e66-a5e2-ec2516661475",
+        "8808c4d1-0697-4c22-8328-f73b7384dae0",
+        "93c586a0-127d-41dd-888f-f22fcdd4e414"
+      ]
+    },
+    {
+      "notion_id": "34e0221954bc8330a11c01f382d52066",
+      "service": "게시판",
+      "title": "11-19.푸터_쪽지_클릭",
+      "path": "event-log/08-게시판/11-19.푸터_쪽지_클릭.md",
+      "notion_url": "https://app.notion.com/p/34e0221954bc8330a11c01f382d52066",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:36.777Z",
+      "source_body_sha256": "a7e85cd89fe23774e1e0db87ea7d283e1dedd6243d622c9a32faf08e4adeb3b9",
+      "output_sha256": "b72123d69b682e96724721ca6aba42e3738ef48750de77fc9421ce33fad129e5",
+      "image_ids": [
+        "bfecb910-bdd5-4533-ae7c-6092534e528f",
+        "261a5ef3-8244-4db7-a6d5-8ce7301e15c2"
+      ]
+    },
+    {
+      "notion_id": "3940221954bc8363a3b88195b31f60ba",
+      "service": "게시판",
+      "title": "11-2.분실물_습득물신고_품목선택_클릭",
+      "path": "event-log/08-게시판/11-2.분실물_습득물신고_품목선택_클릭.md",
+      "notion_url": "https://app.notion.com/p/3940221954bc8363a3b88195b31f60ba",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:45.974Z",
+      "source_body_sha256": "a7a2175fa6d4d96027382284e8c67430e01ec449179dc8c0ee73aead0ba60a52",
+      "output_sha256": "6c3430be6db5d7cadb75f701c6019cd30ff4bddd5fb2e6e17d65eb33b5e85e99",
+      "image_ids": [
+        "1156f41f-a885-403b-bc86-e0507f63a215",
+        "71bf8197-7374-42b8-b709-668f56cb1d8f",
+        "b7b39d33-a6df-4ffb-b5a9-5046df91e8ac",
+        "98576b5e-8535-4b74-af67-97b9da56f140",
+        "4dfa0783-ec83-452a-b583-a297cc6033fd",
+        "a754fed7-845f-424c-bc3e-c2460900923d",
+        "b6d3c798-c6ac-4af2-98b6-89aad5f608ae"
+      ]
+    },
+    {
+      "notion_id": "4a10221954bc8263935f817284d2b14b",
+      "service": "게시판",
+      "title": "11-20.분실물_메인진입_클릭",
+      "path": "event-log/08-게시판/11-20.분실물_메인진입_클릭.md",
+      "notion_url": "https://app.notion.com/p/4a10221954bc8263935f817284d2b14b",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:36.606Z",
+      "source_body_sha256": "08f81f2cb537e9c19dc4197adcfe172f74b0809f421207547fd9ac01c012d942",
+      "output_sha256": "dc27bc07ff6669d335bb12775c4c8235d32d8066dd8f022be145f7a3eec0256d",
+      "image_ids": [
+        "b82ef670-24c9-432e-902c-57c6b902028e",
+        "d1445182-eec2-4c14-8f3c-032b52b8b04c",
+        "8babceeb-fd3e-438e-bb75-1494669afe16",
+        "9c33d961-64c8-4167-bc1e-896a6d2b21c2"
+      ]
+    },
+    {
+      "notion_id": "abb0221954bc82268a380193ad4bed76",
+      "service": "게시판",
+      "title": "11-22. 분실물_필터_클릭",
+      "path": "event-log/08-게시판/11-22.-분실물_필터_클릭.md",
+      "notion_url": "https://app.notion.com/p/abb0221954bc82268a380193ad4bed76",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:37.847Z",
+      "source_body_sha256": "6d648d588df63700680311f8a925fbe904da88ef98f26594c94184e2261b7327",
+      "output_sha256": "fe135b13196f376e98a567002598d18ee56e8a451f2c7fa94f600b6096381b8a",
+      "image_ids": [
+        "f0a2640f-df0d-4aeb-aa47-50776c1ee977",
+        "1f9aafdd-5bd1-48cf-8b2c-c9bf32d86227",
+        "0ff49af0-3a3c-433f-923b-5e50574e5e29",
+        "d54d6cdf-3dcd-4066-96f5-1959879ad3d8"
+      ]
+    },
+    {
+      "notion_id": "1010221954bc838dac6f01b0100de935",
+      "service": "게시판",
+      "title": "11-23. 분실물_필터_적용_클릭",
+      "path": "event-log/08-게시판/11-23.-분실물_필터_적용_클릭.md",
+      "notion_url": "https://app.notion.com/p/1010221954bc838dac6f01b0100de935",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:35.915Z",
+      "source_body_sha256": "163fd50b8079ae7460a5621ae0c2666b0e3af75ed2f33e4b797ff4d54bb8ed06",
+      "output_sha256": "6f135a7610acb7bcc43b734dd4c6a0080d844c5315c5bbc19ba6212d05227657",
+      "image_ids": [
+        "74f83c86-4d2a-4d07-bfc6-b7ab007d7c92",
+        "bf34cf12-59e5-4241-a403-c958481ff7ae",
+        "90c255e1-0ce5-4162-abae-ccf4d764f9e7",
+        "f58947d7-1d8a-4fea-ab9b-047184c8dc5c"
+      ]
+    },
+    {
+      "notion_id": "c010221954bc8278b834814bc5809098",
+      "service": "게시판",
+      "title": "11-24. 분실물_게시글_클릭",
+      "path": "event-log/08-게시판/11-24.-분실물_게시글_클릭.md",
+      "notion_url": "https://app.notion.com/p/c010221954bc8278b834814bc5809098",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:38.924Z",
+      "source_body_sha256": "2f1c218b01aaa75e5180549bb07918066bd7cb760dff0d403a13462a9458a76c",
+      "output_sha256": "b399408a8a979529e26de647edd08674bed519f5867c97a31b2de35b748ffa74",
+      "image_ids": [
+        "20f97bcd-6b1e-407f-89c8-5f3f1ee956bb",
+        "8311ffac-227b-496b-8eeb-75f08a9a2db6",
+        "d403cf37-d5a8-4f06-b8d1-8e445c7118ea",
+        "f342f893-f113-4835-80e4-13f2f2f26ef0"
+      ]
+    },
+    {
+      "notion_id": "c820221954bc8331892281bafe17aa4f",
+      "service": "게시판",
+      "title": "11-25. 분실물_쪽지_로그인요청_클릭",
+      "path": "event-log/08-게시판/11-25.-분실물_쪽지_로그인요청_클릭.md",
+      "notion_url": "https://app.notion.com/p/c820221954bc8331892281bafe17aa4f",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:46.382Z",
+      "source_body_sha256": "71e89c77781416da47668ddc49d5e9adaf3f6b40d72cedcf2c63919cc1056ff2",
+      "output_sha256": "542d0244d4bf19cb19d698410387852f0b5eeda3472243df1adf03c32ef475a2",
+      "image_ids": [
+        "b0a1ae51-f132-44a6-b747-889fd8e181c7",
+        "a0cd9c38-ea1d-49b7-b99f-61b1715832db",
+        "9d1d7a12-8974-4971-9aaf-0c6a2e921709",
+        "ae4dd885-802f-467c-852c-47e88779d7fd"
+      ]
+    },
+    {
+      "notion_id": "64c0221954bc837b93ac817502e4bd5a",
+      "service": "게시판",
+      "title": "11-26. 분실물_글쓰기_로그인요청_클릭",
+      "path": "event-log/08-게시판/11-26.-분실물_글쓰기_로그인요청_클릭.md",
+      "notion_url": "https://app.notion.com/p/64c0221954bc837b93ac817502e4bd5a",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:46.642Z",
+      "source_body_sha256": "261518696253e2edbc329850b9cd50d82afafa72a5fb148c08f2b4596a9da8f0",
+      "output_sha256": "6bad2575c73890a4082ae94cf50245690d1e1490f97006d9c8b671d77a0785b2",
+      "image_ids": [
+        "b0a1ae51-f132-44a6-b747-889fd8e181c7",
+        "5801f809-6669-431c-8312-c9015be9b05b",
+        "48cfe2f3-4bf6-4d39-8863-b80171142f9c",
+        "76b5235f-5b97-4136-b9cb-a45e7a4d6da6"
+      ]
+    },
+    {
+      "notion_id": "d600221954bc82ae8b0d810c740dd84a",
+      "service": "게시판",
+      "title": "11-27. 분실물_상태변경_클릭",
+      "path": "event-log/08-게시판/11-27.-분실물_상태변경_클릭.md",
+      "notion_url": "https://app.notion.com/p/d600221954bc82ae8b0d810c740dd84a",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:36.572Z",
+      "source_body_sha256": "b8373fbed0c27d7763b36e1c5314cb06f5714c8163f26948d4771253de371cf2",
+      "output_sha256": "cd558ab0ee0e7cb3df7379550f47b4776a8457604239b65e197402dcab2361e8",
+      "image_ids": [
+        "1ce24ec4-05c7-4ac4-95d7-2c76715f1e6b",
+        "fca96842-91e4-4f92-ac0d-999a8e1e2431",
+        "ed736757-ea75-4e56-9676-c1d315daf706",
+        "b2e42414-afdb-45ff-864a-9f59e4df32f8"
+      ]
+    },
+    {
+      "notion_id": "0320221954bc82b8930e014b14f487f5",
+      "service": "게시판",
+      "title": "11-28. 분실물_찾음_버튼_클릭 ",
+      "path": "event-log/08-게시판/11-28.-분실물_찾음_버튼_클릭.md",
+      "notion_url": "https://app.notion.com/p/0320221954bc82b8930e014b14f487f5",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:40.019Z",
+      "source_body_sha256": "1593565ccd981d07c9d98e7513a6ae2510a0f05b45fe9a5878655bae0b8372d3",
+      "output_sha256": "f8b5d4683c2816895caf715543ee192a74572d91956040daa121c3d7848fb766",
+      "image_ids": [
+        "56002edd-5345-401e-b443-59c094fc33fb",
+        "51041103-eefa-4f45-a720-806e9aa243f6",
+        "e3c43e35-ce05-456e-bd09-133662ec2479"
+      ]
+    },
+    {
+      "notion_id": "f160221954bc826f9c06017be35f7f8e",
+      "service": "게시판",
+      "title": "11-29. 분실물_수정_버튼_클릭",
+      "path": "event-log/08-게시판/11-29.-분실물_수정_버튼_클릭.md",
+      "notion_url": "https://app.notion.com/p/f160221954bc826f9c06017be35f7f8e",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:46.875Z",
+      "source_body_sha256": "b1c72394ba03ea0f2ad2c95545f713a0a8f1e3d2e75555e2ab6f6246f5766a33",
+      "output_sha256": "3babf3cb2a385c4d2b5d7a9063d0c95f71aaf86b0ee21086bb54c5c1b8d02d2f",
+      "image_ids": [
+        "4a41d1fc-7aa1-46d0-a562-4403ac508906",
+        "fea35ac9-7def-436b-baf1-04a616ac2253",
+        "fc44507b-d7f9-45de-a08c-f67abe4c4278",
+        "7e15ac73-3b4c-4cdf-bc98-69a52de78afd"
+      ]
+    },
+    {
+      "notion_id": "86f0221954bc8373bc9f81586116a9d2",
+      "service": "게시판",
+      "title": "11-3.분실물_습득물신고_물품추가_클릭",
+      "path": "event-log/08-게시판/11-3.분실물_습득물신고_물품추가_클릭.md",
+      "notion_url": "https://app.notion.com/p/86f0221954bc8373bc9f81586116a9d2",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:36.332Z",
+      "source_body_sha256": "173a785d4d1eb3ed7afd12e69e92a940057e09c684d243b3e0a3826ba8412df6",
+      "output_sha256": "0819107293d0a5f57f076f71c08408d6ecc8b73d27cf8dd5533e3fbc5f76d54c",
+      "image_ids": [
+        "428df174-ee45-4bac-8538-b47061f83c06",
+        "ae6fb785-4132-485e-8f20-f45a2d6603c5",
+        "4946114d-c9c0-43cb-877e-74693b9d9971",
+        "4b0ac106-22cd-4aed-9e40-5b0139f12021",
+        "bcd1cb04-da68-461a-be4d-2eeedf1a9611",
+        "85eae33e-f798-4c24-a214-89a62367aacc",
+        "36fb9e4a-4104-49f4-b302-6b24ec4be4b9"
+      ]
+    },
+    {
+      "notion_id": "1ac0221954bc835cab4981383980ccb1",
+      "service": "게시판",
+      "title": "11-30. 분실물_수정완료_클릭",
+      "path": "event-log/08-게시판/11-30.-분실물_수정완료_클릭.md",
+      "notion_url": "https://app.notion.com/p/1ac0221954bc835cab4981383980ccb1",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:38.060Z",
+      "source_body_sha256": "695647c9a8e4223580b81998ac74348fbaff3fd49e00176f6195feebe939bad8",
+      "output_sha256": "96e8ecb1fd7c7dd7d2e695b704715fbf3e1510b7194e53a33bd19aadacf6f6a0",
+      "image_ids": [
+        "ce238171-c293-405d-b1c6-9daa72cb1b67",
+        "9cbd7207-f6a9-4112-90ac-a3d4b62ee1b3",
+        "f33b9330-b763-406c-8ae6-6d1c92c60d95",
+        "e96e1e4a-b2c0-4b36-8347-9bc948b71cdc",
+        "f33b9330-b763-406c-8ae6-6d1c92c60d95",
+        "e96e1e4a-b2c0-4b36-8347-9bc948b71cdc"
+      ]
+    },
+    {
+      "notion_id": "1660221954bc835a917d01ac06416efe",
+      "service": "게시판",
+      "title": "11-31. 푸터_분실물_클릭",
+      "path": "event-log/08-게시판/11-31.-푸터_분실물_클릭.md",
+      "notion_url": "https://app.notion.com/p/1660221954bc835a917d01ac06416efe",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:40.073Z",
+      "source_body_sha256": "95119c8e485ab4cb1cd43e6e7d16f60cd1f526d52034e8b0bb7b9bd309203085",
+      "output_sha256": "fdc22487ef15f8e9a39ea1682163d16c6d7cd248382bf8c2870c29475ff118a8",
+      "image_ids": [
+        "61a3d71b-c673-4083-b355-73f59a4369cb",
+        "45b33a5c-fa3e-4c72-828f-047fa461deb7"
+      ]
+    },
+    {
+      "notion_id": "1b90221954bc8329b70481d0ed1eb751",
+      "service": "게시판",
+      "title": "11-32. 헤더_분실물_클릭",
+      "path": "event-log/08-게시판/11-32.-헤더_분실물_클릭.md",
+      "notion_url": "https://app.notion.com/p/1b90221954bc8329b70481d0ed1eb751",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:36.650Z",
+      "source_body_sha256": "8721166dab4ffdc05a05934c03f536a9e7edfd7dfd547bfa7763d6ab91217d3e",
+      "output_sha256": "6c26b61da065602ffd2f4e8339788b9f7a93eb68de196adb849f5106f3d57a74",
+      "image_ids": [
+        "6b6040c8-2420-481d-9d50-abd84403c901",
+        "e91bab6a-51d7-4dcf-8302-020dc0458500"
+      ]
+    },
+    {
+      "notion_id": "2930221954bc822a8d8c81a3d0f0f29f",
+      "service": "게시판",
+      "title": "11-4.분실물_습득물신고_작성완료_클릭",
+      "path": "event-log/08-게시판/11-4.분실물_습득물신고_작성완료_클릭.md",
+      "notion_url": "https://app.notion.com/p/2930221954bc822a8d8c81a3d0f0f29f",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:39.577Z",
+      "source_body_sha256": "728f3183d6b62435b6244b0a2bfee79a45e33c37fba6b33b8aea734c2cd89ccb",
+      "output_sha256": "e277a835706869ab24cbf6bf7cd9da4cc483775035248f2dcd10f2720fdb7e98",
+      "image_ids": [
+        "1601e4b4-9e94-4d59-af9d-da31240455e3",
+        "70c4dce6-1b08-4acf-beb5-fd16369b57a0",
+        "0895cb76-e97b-40a3-bb61-f82f9724ec68",
+        "e81167df-1c7a-4122-9c9c-39533961b525",
+        "03632526-a28e-4e25-89a7-f5cb439157eb",
+        "19ed57d9-9515-4965-a35a-971bc5319b55",
+        "0c3682d3-536b-4392-96ef-c105b2d3e759"
+      ]
+    },
+    {
+      "notion_id": "2a80221954bc82cd8c8d015b8d318d53",
+      "service": "게시판",
+      "title": "11-5.분실물_습득물_삭제_클릭",
+      "path": "event-log/08-게시판/11-5.분실물_습득물_삭제_클릭.md",
+      "notion_url": "https://app.notion.com/p/2a80221954bc82cd8c8d015b8d318d53",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:47.192Z",
+      "source_body_sha256": "08669c3cab7e15c0fd1027149a6ab1f6d8cf79bfa5cb220a17deb4cbf81e44db",
+      "output_sha256": "83be255a166ba61f3527ffa096d67c06b2a02ccf63430091440cba639345fc6d",
+      "image_ids": [
+        "9d900908-a4f5-4d3d-bfe9-e52e8778dcf8",
+        "57c7b682-3945-48bb-98c9-a8834dbd3e26",
+        "5d9529db-fae8-4521-8142-d526a865c4c2",
+        "29e8f102-abb4-49cd-aaf2-d386e87de04d",
+        "f317bced-34bd-45ee-b122-2efdfab5225c",
+        "75c743d0-195f-476d-bc8a-5ca013d90ad9",
+        "83852064-a97f-41f5-856d-13a242576331"
+      ]
+    },
+    {
+      "notion_id": "7dd0221954bc83ccbc9b818bf8093ebb",
+      "service": "게시판",
+      "title": "11-6.분실물_습득물신고_삭제확인_클릭",
+      "path": "event-log/08-게시판/11-6.분실물_습득물신고_삭제확인_클릭.md",
+      "notion_url": "https://app.notion.com/p/7dd0221954bc83ccbc9b818bf8093ebb",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:39.122Z",
+      "source_body_sha256": "901092e6605229ec65febdbf856113ef471bd1a788fc45f2b05e29a119a45715",
+      "output_sha256": "9e7d0c204e024f0fd4a4941c361ad20a468d3442fb1567fdec512faa1d6c5c29",
+      "image_ids": [
+        "b84a24d2-bf2c-4301-b917-517433b8ed13",
+        "742baa67-fdb2-44cf-80bb-404735a56a96",
+        "6b5b4a63-4767-484d-9659-e893b592b4dc",
+        "7ca9bf56-e898-4690-ae50-095ed99299b2",
+        "c80e7832-09b6-4df1-ab57-1544973d2912",
+        "77af2bab-b43d-49a5-a0e4-14737777a662"
+      ]
+    },
+    {
+      "notion_id": "2a70221954bc83d6821f81570b8cf95b",
+      "service": "게시판",
+      "title": "11-7·11-8.분실물_글종류선택(잃어버렸어요·주인을찾아요)_클릭",
+      "path": "event-log/08-게시판/11-7·11-8.분실물_글종류선택(잃어버렸어요·주인을찾아요)_클릭.md",
+      "notion_url": "https://app.notion.com/p/2a70221954bc83d6821f81570b8cf95b",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:39.264Z",
+      "source_body_sha256": "52902699c3d88a8591a3d053914cadf04a8de3ebc0960ae7eb821a603beb42ea",
+      "output_sha256": "3b185cbe2189efc139544e60390c2e40017ac705451a10870285f80f51024057",
+      "image_ids": [
+        "83798007-d6b8-4c99-a692-d660d4125e5c",
+        "68bd8f2d-1701-40dd-b7a8-a8b13cb2d0b6",
+        "3d0347fb-8c1f-4e3c-9437-88f6f76a4905",
+        "731be4dd-5dc9-4ea1-bf9a-8da06cf94faf",
+        "962e0a61-e377-42b8-ba45-c5ac5e2fea2a",
+        "0f7713e2-7c63-486f-b8dd-c517057eacf0",
+        "b3656704-42d0-4898-b327-35d7009ef271",
+        "33f57d82-45db-43c5-a1ae-67cd916d4449",
+        "378a2ff9-7814-4b72-b1a4-d8d252f892ff",
+        "0418392f-f7fd-4097-888b-6443a8ecae2b",
+        "5b0def21-4bc3-4b10-b019-39574ea4f0ed",
+        "256ee5a9-3115-400c-84b6-c2755c83c4a3",
+        "fdd1e661-2935-4eae-96bb-646528fd3753",
+        "13f9c85a-a5a9-4641-a7d3-cc4f2a7814d4"
+      ]
+    },
+    {
+      "notion_id": "0af0221954bc82f881f001abeeac2daf",
+      "service": "게시판",
+      "title": "11-9.분실물_분실물신고_품목선택_클릭",
+      "path": "event-log/08-게시판/11-9.분실물_분실물신고_품목선택_클릭.md",
+      "notion_url": "https://app.notion.com/p/0af0221954bc82f881f001abeeac2daf",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:42.464Z",
+      "source_body_sha256": "d24528b407f688af39d6acaa21d6f4291f20f1cad576906d4ad3c953f060270d",
+      "output_sha256": "938a8734d72e44019f55d68a57e00f02f1707ddce68f4d4d849c3803157cf443",
+      "image_ids": [
+        "d5934067-5525-4d75-8d6e-66059acdd2cc",
+        "1177dfab-f8e8-462b-921a-6fb1be62ac75",
+        "1ff4848d-c4da-48fa-a240-34cef279d4dd",
+        "98576b5e-8535-4b74-af67-97b9da56f140",
+        "4be981a4-6e6a-4de6-8623-784b83525e93",
+        "d8e7b61b-19a7-42ad-aba1-211951cfc703"
+      ]
+    },
+    {
+      "notion_id": "d060221954bc82fd8c5301413d55ed3e",
+      "service": "게시판",
+      "title": "12-1. 키워드 설정_클릭",
+      "path": "event-log/08-게시판/12-1.-키워드-설정_클릭.md",
+      "notion_url": "https://app.notion.com/p/d060221954bc82fd8c5301413d55ed3e",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:39.525Z",
+      "source_body_sha256": "8338cfc2f8fd4b6d7c5730b4592668c31525de6c09c1ddd334da510af75ed072",
+      "output_sha256": "39222f5557a7fb983e63ba5d6df5c61fb2487e5f838e557a668b355ec8bed3e0",
+      "image_ids": [
+        "1cbbeeda-ed0b-4586-8c5e-fe57f9d194f3",
+        "7296bcab-3221-4399-a053-2e52a55b3b90"
+      ]
+    },
+    {
+      "notion_id": "ef90221954bc834299bf010bfaf7c467",
+      "service": "게시판",
+      "title": "12-2. 키워드 추가_클릭",
+      "path": "event-log/08-게시판/12-2.-키워드-추가_클릭.md",
+      "notion_url": "https://app.notion.com/p/ef90221954bc834299bf010bfaf7c467",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:37.947Z",
+      "source_body_sha256": "532e3b3995ed9fd46e01d92dab2e2632e9705bb3f5b3abc8c9ec46d03360ac41",
+      "output_sha256": "3d66fbbbd2760f503455fc0809aa03f3ef94d67d37fba5ec3f278b62675d0092",
+      "image_ids": [
+        "b4986f41-107f-4ae4-a591-bac31d9c2592",
+        "7b10aad4-2da2-446a-a635-2d101055728c"
+      ]
+    },
+    {
+      "notion_id": "5bc0221954bc838eb673819353837c09",
+      "service": "게시판",
+      "title": "12-3. 추천 키워드_클릭",
+      "path": "event-log/08-게시판/12-3.-추천-키워드_클릭.md",
+      "notion_url": "https://app.notion.com/p/5bc0221954bc838eb673819353837c09",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:39.761Z",
+      "source_body_sha256": "6660e6a7cd31b6920076ea5902b76ec5ece750e0b271008d1a3fd2f81aea8f6b",
+      "output_sha256": "44a71ba052d2a1323593851f0e9e0a482f310312d84b99731e280934395416fe",
+      "image_ids": [
+        "446b1e79-347e-4e6c-b5c8-a41fc995d3fa",
+        "8f656e88-8d19-4eba-8bd5-d1bbaf8e959d"
+      ]
+    },
+    {
+      "notion_id": "33f0221954bc82e393d881185b14d4b8",
+      "service": "게시판",
+      "title": "12-4. 키워드 알림받기_클릭",
+      "path": "event-log/08-게시판/12-4.-키워드-알림받기_클릭.md",
+      "notion_url": "https://app.notion.com/p/33f0221954bc82e393d881185b14d4b8",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:43.423Z",
+      "source_body_sha256": "b727021a8008af5df715af1f502b9021bd9aff900ef21963c842fb99dd92e4cd",
+      "output_sha256": "6f7f84cfece6944b0d835f07589f79ca2afd4f75989392ccf4bf8a550cb400df",
+      "image_ids": [
+        "586c8622-0c19-41d2-b574-3acd90f385ff",
+        "695baabe-01aa-4bdd-ac3a-c80213811070"
+      ]
+    },
+    {
+      "notion_id": "dfb0221954bc822cb66d814c2a932f8b",
+      "service": "게시판",
+      "title": "12-5. 키워드 삭제_클릭",
+      "path": "event-log/08-게시판/12-5.-키워드-삭제_클릭.md",
+      "notion_url": "https://app.notion.com/p/dfb0221954bc822cb66d814c2a932f8b",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:43.375Z",
+      "source_body_sha256": "0c11377af889a663ca37e9e1e697abf8ecb9c01d2d66522df12077d1f7d97022",
+      "output_sha256": "7b135dfcfa2f89359b97c94642c4769804ada0eff2ebd87836e300e0b795d836",
+      "image_ids": [
+        "7510eb60-c7b5-46a4-ab38-5c573ad4b4af",
+        "16efe075-3485-43ff-a90d-70e95d0ded84"
+      ]
+    },
+    {
+      "notion_id": "1f70221954bc825cb97001fb31b4b0ec",
+      "service": "게시판",
+      "title": "2-1. 헤더_공지사항_클릭",
+      "path": "event-log/08-게시판/2-1.-헤더_공지사항_클릭.md",
+      "notion_url": "https://app.notion.com/p/1f70221954bc825cb97001fb31b4b0ec",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:42.137Z",
+      "source_body_sha256": "45c684ef5734eaa1136a5072c082179c776f0712360874cf0f7b531fbe066b6c",
+      "output_sha256": "db0c9f4ef079c387ac9eaf2da7bf515ed209ed93af27976022cf50b5d6d27766",
+      "image_ids": [
+        "7474c16b-ab15-42b2-966a-af93011f044a",
+        "8aa8b331-9e8c-4cc7-a9d7-ef17cc389727"
+      ]
+    },
+    {
+      "notion_id": "e640221954bc8203a98f01ff1c3f865a",
+      "service": "게시판",
+      "title": "2-2. 푸터_공지사항_클릭",
+      "path": "event-log/08-게시판/2-2.-푸터_공지사항_클릭.md",
+      "notion_url": "https://app.notion.com/p/e640221954bc8203a98f01ff1c3f865a",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:36.744Z",
+      "source_body_sha256": "0d37938fb7a63384df3f589c402055062282bf0586e9cd1b33d09f014c54914c",
+      "output_sha256": "d39fa5943eae04fad0eaba76720e5db3c986d6306f7fcf93cdb6e00036cb62d8",
+      "image_ids": [
+        "b5d473f6-0918-4b3a-8a13-6ebc3c1934c2",
+        "caa2ced0-d4a2-4cef-b320-0d6cf58f8dbf"
+      ]
+    },
+    {
+      "notion_id": "adc0221954bc82c99b1a0195e579b8a6",
+      "service": "게시판",
+      "title": "2-3. 공지사항_클릭 (레거시)",
+      "path": "event-log/08-게시판/2-3.-공지사항_클릭-(레거시).md",
+      "notion_url": "https://app.notion.com/p/adc0221954bc82c99b1a0195e579b8a6",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:42.334Z",
+      "source_body_sha256": "322cd9c3783426082954ddb548ed1a7d0fa5b5e41d9b726c12c7913de81085a1",
+      "output_sha256": "fab1d361ca68a1191fa50c3237cfc89791230b753e212921fb10ca3c92ad42d3",
+      "image_ids": [
+        "d34b1870-a664-4e94-acee-8f4a03306e1f"
+      ]
+    },
+    {
+      "notion_id": "a360221954bc8326af0781e8a69edc77",
+      "service": "게시판",
+      "title": "3-1. 공지사항_가장 많이 본 게시물_클릭",
+      "path": "event-log/08-게시판/3-1.-공지사항_가장-많이-본-게시물_클릭.md",
+      "notion_url": "https://app.notion.com/p/a360221954bc8326af0781e8a69edc77",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:46.796Z",
+      "source_body_sha256": "b34c524dc35cfee87c40695554835859eadd2b14d6ea59961785c605e8306b95",
+      "output_sha256": "310346bd912d24c9c84b80bce5d64d69894635a00411319ac55b73864e441c79",
+      "image_ids": [
+        "dde110dd-7c08-4db8-9816-f52e95b97dd0",
+        "28bf9064-65da-4ff9-9747-8b9cb6b82aa8"
+      ]
+    },
+    {
+      "notion_id": "4620221954bc827ca78e01ec6ae51dd6",
+      "service": "게시판",
+      "title": "3-2. 공지사항_바로가기_클릭",
+      "path": "event-log/08-게시판/3-2.-공지사항_바로가기_클릭.md",
+      "notion_url": "https://app.notion.com/p/4620221954bc827ca78e01ec6ae51dd6",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:42.785Z",
+      "source_body_sha256": "635cf609f09f3faee17907d156d7621a4e3706bfd02a2b12f201aa3cccaea0a5",
+      "output_sha256": "67b0f29974d9daa90d50096a9c0f9dc1260f2e7bb1774fb6899528aaba0f1e7f",
+      "image_ids": [
+        "1a7a5aec-80c9-446e-bca1-0b8dca8e63a0",
+        "4d40a078-03a9-44bd-a5e4-8e86e4f3123f"
+      ]
+    },
+    {
+      "notion_id": "c3f0221954bc82dc812b0152f61f6ff1",
+      "service": "게시판",
+      "title": "3-3. 공지사항_아우누리 바로가기_클릭",
+      "path": "event-log/08-게시판/3-3.-공지사항_아우누리-바로가기_클릭.md",
+      "notion_url": "https://app.notion.com/p/c3f0221954bc82dc812b0152f61f6ff1",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:35.861Z",
+      "source_body_sha256": "e12747cebab27b01527fc6206ec7d295dc2a8b63100e05f8c25b9dcc27c74ffe",
+      "output_sha256": "f726350b9cb221dc26c4be2cb17efa9ce6d212d8ced65720353ac89276ff0210",
+      "image_ids": [
+        "0ced5f2e-975f-4399-b659-5533232d7ef7"
+      ]
+    },
+    {
+      "notion_id": "a410221954bc827cad1f8184f7daa26c",
+      "service": "게시판",
+      "title": "3-4. 공지사항_새로운 서비스 요청하기_클릭",
+      "path": "event-log/08-게시판/3-4.-공지사항_새로운-서비스-요청하기_클릭.md",
+      "notion_url": "https://app.notion.com/p/a410221954bc827cad1f8184f7daa26c",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:42.845Z",
+      "source_body_sha256": "4bd23038d9065ee317adaefcd808467f38ae15b3fc051d0639021a304a49787b",
+      "output_sha256": "2988a4ae8f6ea3ae68bd66a272c3263a896329ea168312e645ad7ef90ed9994b",
+      "image_ids": [
+        "3c48aa75-9aca-463e-8660-a04ca40f8633"
+      ]
+    },
+    {
+      "notion_id": "3610221954bc8242806401ac4c10546b",
+      "service": "게시판",
+      "title": "3-5. 공지사항_BCSD Lab 알아보기_클릭",
+      "path": "event-log/08-게시판/3-5.-공지사항_BCSD-Lab-알아보기_클릭.md",
+      "notion_url": "https://app.notion.com/p/3610221954bc8242806401ac4c10546b",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:40.644Z",
+      "source_body_sha256": "97e5a1538881957a58c1b63f22898baa09b77656171c5aa9aa484cb132bae289",
+      "output_sha256": "81d6f74161834f6593b1d2e02c281a57587a0106c6a06934557fca71b933e193",
+      "image_ids": [
+        "a652b331-f62e-4074-af52-078fdbdaa912"
+      ]
+    },
+    {
+      "notion_id": "8f30221954bc8267912a8138c434e100",
+      "service": "게시판",
+      "title": "4-1. 탭 메뉴바_클릭",
+      "path": "event-log/08-게시판/4-1.-탭-메뉴바_클릭.md",
+      "notion_url": "https://app.notion.com/p/8f30221954bc8267912a8138c434e100",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:35.858Z",
+      "source_body_sha256": "c96d14de02526e3832b87ad947f786a8d8d31911533e448fe5a8bc096ae0ffcb",
+      "output_sha256": "86013785f366f85c26ae5fe6a5e991a67f26722df556b494667939903854289e",
+      "image_ids": [
+        "55d50816-c720-4d11-b903-9aafb1f0fd35",
+        "25c26387-df03-443f-b60f-e3ec445f9d21"
+      ]
+    },
+    {
+      "notion_id": "28f0221954bc82099c08810da6e0fbb2",
+      "service": "게시판",
+      "title": "4-2. 공지사항 페이지_스크롤(상하)",
+      "path": "event-log/08-게시판/4-2.-공지사항-페이지_스크롤(상하).md",
+      "notion_url": "https://app.notion.com/p/28f0221954bc82099c08810da6e0fbb2",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB (모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:36.268Z",
+      "source_body_sha256": "fe25cb1e9ddde6ba4fc41693fdfcb9875d1a320aa43b049febdb45482cf57683",
+      "output_sha256": "ff1155dbe587a856a90d8fa4b2ab1c2d195aff7fb85cc8ef539ca68ba6216baa",
+      "image_ids": [
+        "161ea89a-5266-4829-bbd1-3f5abaad58f0",
+        "2766e4ff-964c-4750-86f3-692b47a15d5d",
+        "9acbb6cd-aa2c-4eea-bf3b-1326a7b2932f",
+        "b986bf48-55f7-4b45-ac62-47297fec353b",
+        "eb3cac6e-a940-4b35-afca-1eda9d0cabdd",
+        "60362170-b3c8-4a1f-b885-bdd1caa3b211",
+        "a2808f65-2bff-4b68-b7d2-b51fd366cf8b",
+        "b6f2264e-b130-45e4-aae0-2b71ade66e54"
+      ]
+    },
+    {
+      "notion_id": "b580221954bc833eba3b81e3778fea08",
+      "service": "게시판",
+      "title": "5-1. 목록_클릭",
+      "path": "event-log/08-게시판/5-1.-목록_클릭.md",
+      "notion_url": "https://app.notion.com/p/b580221954bc833eba3b81e3778fea08",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:39.634Z",
+      "source_body_sha256": "3719230d5405e17a24381f9dcdf47cfaf878ed223fb7efd4962d092497cccc59",
+      "output_sha256": "6054eb695b125a77233bf7ca1f95c3c41acd1910b0f13d2bdcb1ab334aa2433d",
+      "image_ids": [
+        "9a3f72e4-db9e-4cf9-838e-034408191bc3",
+        "276ab41d-5b71-404d-8d84-16b72f398ecb"
+      ]
+    },
+    {
+      "notion_id": "ba20221954bc83d390d2818f9f79cfd2",
+      "service": "게시판",
+      "title": "5-2. 인기있는 공지_클릭",
+      "path": "event-log/08-게시판/5-2.-인기있는-공지_클릭.md",
+      "notion_url": "https://app.notion.com/p/ba20221954bc83d390d2818f9f79cfd2",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:36.754Z",
+      "source_body_sha256": "0414b85e4311655bf049c36610f683bc9973c39908a00003fff5d82aaf9a0967",
+      "output_sha256": "eac1ebd27abc4c975cf2cc04dffb59f8f063cb63a4833e7b5d6c32854dd4577c",
+      "image_ids": [
+        "24a5ead4-c5e2-4c1f-8f6b-9b51c9f64bc7",
+        "ecec7a68-0665-400b-8916-8a3d617a1759"
+      ]
+    },
+    {
+      "notion_id": "ecb0221954bc8357ab4281e9aecde920",
+      "service": "게시판",
+      "title": "5-3. 공지 원본 바로가기_클릭",
+      "path": "event-log/08-게시판/5-3.-공지-원본-바로가기_클릭.md",
+      "notion_url": "https://app.notion.com/p/ecb0221954bc8357ab4281e9aecde920",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:38.109Z",
+      "source_body_sha256": "fb468bd4e329ff7ba4164957bdb869f41938c49ccb7952222d39d09e348a98f8",
+      "output_sha256": "f4b4c06252b0a114e017fd7829b38fce42bff7acba20e1f95440de8a313be76e",
+      "image_ids": [
+        "30fb8567-9cd9-4748-a6ea-e0ac31593a57",
+        "bf9c615c-0381-4c4b-b8e9-9ad4db82c7ff"
+      ]
+    },
+    {
+      "notion_id": "3ca0221954bc82d695ca012786d7dfde",
+      "service": "게시판",
+      "title": "6-1. 공지글 검색_클릭",
+      "path": "event-log/08-게시판/6-1.-공지글-검색_클릭.md",
+      "notion_url": "https://app.notion.com/p/3ca0221954bc82d695ca012786d7dfde",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:43.494Z",
+      "source_body_sha256": "5b4af005b7e7832fae1b78ae711523c4b04ca89affd180301b4ceffab2b48c7d",
+      "output_sha256": "11e781c1f506a42e263002a6066c8daa6bbe03e8f891b08821f9abba0cf0aaac",
+      "image_ids": [
+        "b3e511db-2aa4-4f3f-8b86-e03ab5dbf95e",
+        "411da717-6b2f-473b-94cb-6f1b060daa83"
+      ]
+    },
+    {
+      "notion_id": "4f30221954bc82cc840681f7dcbc0155",
+      "service": "게시판",
+      "title": "6-2. 많이 검색되는 키워드_클릭",
+      "path": "event-log/08-게시판/6-2.-많이-검색되는-키워드_클릭.md",
+      "notion_url": "https://app.notion.com/p/4f30221954bc82cc840681f7dcbc0155",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:36.112Z",
+      "source_body_sha256": "0b728aa8e73447cb51dad6597241e10a059195b067de1145b53fdbad1e0d8746",
+      "output_sha256": "b74b81c161162e8b2ebb13775804286a12d0c76194d884770f12aea5d07409d1",
+      "image_ids": [
+        "89a78c1c-cce2-4ace-b2d0-55dc7f71f7cc",
+        "448d4bd6-02c9-4783-8ec4-0e830f7fa9bf"
+      ]
+    },
+    {
+      "notion_id": "eb30221954bc83d4b020013668e5172e",
+      "service": "게시판",
+      "title": "6-3. [검색 키워드] 입력값 >> DB저장",
+      "path": "event-log/08-게시판/6-3.-[검색-키워드]-입력값-DB저장.md",
+      "notion_url": "https://app.notion.com/p/eb30221954bc83d4b020013668e5172e",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:43.334Z",
+      "source_body_sha256": "c47f6089b71e79f236aaf8dba6b8a89a97d692789f5d3c48860df7e46bd65a84",
+      "output_sha256": "868aa50bbdfeaf7128b256c0cd58cfa601e2e086705275e877c712c6c2628a40",
+      "image_ids": []
+    },
+    {
+      "notion_id": "90a0221954bc826086c001f65f1a9c37",
+      "service": "게시판",
+      "title": "6-3. 공지글 검색_검색하기_클릭",
+      "path": "event-log/08-게시판/6-3.-공지글-검색_검색하기_클릭.md",
+      "notion_url": "https://app.notion.com/p/90a0221954bc826086c001f65f1a9c37",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:37.848Z",
+      "source_body_sha256": "8e330dde55748d4e0f61fc21395763fcf711ae9d22a825abf8835f083f76a400",
+      "output_sha256": "3a46b8973c8156080ec811cc0dea00e839a7949a5bec7e7c504a422d6d75770f",
+      "image_ids": [
+        "e7f0b258-dec4-433c-82c3-5800c3074920",
+        "ad667d0f-413d-4596-bc65-3ff630eb7cd9"
+      ]
+    },
+    {
+      "notion_id": "e390221954bc8224b5e28106ea0aa3c4",
+      "service": "게시판",
+      "title": "6-4. 공지글 검색_공지상세_클릭 ",
+      "path": "event-log/08-게시판/6-4.-공지글-검색_공지상세_클릭.md",
+      "notion_url": "https://app.notion.com/p/e390221954bc8224b5e28106ea0aa3c4",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:36.558Z",
+      "source_body_sha256": "3f78f32a8bae4fe5e87f9c9246dc59a637ee6ba410f98af1bd20ee73fa4e783c",
+      "output_sha256": "c5d28782552267f1b869f9388326afa5c2fc39d6487b916e2f22c990e60440a9",
+      "image_ids": [
+        "c99da31f-12de-4cbe-ac61-8d57225389ed"
+      ]
+    },
+    {
+      "notion_id": "2f20221954bc83409cfc01e72f7e2619",
+      "service": "게시판",
+      "title": "7-1. 키워드 관리_클릭",
+      "path": "event-log/08-게시판/7-1.-키워드-관리_클릭.md",
+      "notion_url": "https://app.notion.com/p/2f20221954bc83409cfc01e72f7e2619",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:42.923Z",
+      "source_body_sha256": "ad7d30395faded577240ea8a497f56997f327b76219704eac3fe0a0c0ee6418e",
+      "output_sha256": "402e0c735d3f99977b8d8ca4a3fde751a1f3113a25b1cf2f0690ed8e6e2611a6",
+      "image_ids": [
+        "301f535c-d7b3-49f8-afa2-525c92cb3a9c",
+        "57566760-ceaa-4db0-9743-451505a04262"
+      ]
+    },
+    {
+      "notion_id": "6a20221954bc824bb72c8128dde1af77",
+      "service": "게시판",
+      "title": "7-2. 모두 보기_클릭",
+      "path": "event-log/08-게시판/7-2.-모두-보기_클릭.md",
+      "notion_url": "https://app.notion.com/p/6a20221954bc824bb72c8128dde1af77",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:39.660Z",
+      "source_body_sha256": "a616ad1f547899e805fe5073b1a30458cdecacee2f010039713dfa5bf4047d93",
+      "output_sha256": "acdbdc6c680b42015900fb2948b293b66e6f1f570b501d24001266077843402d",
+      "image_ids": [
+        "6cf4ee0a-bf92-435f-8653-68390c779c44",
+        "8d13dd80-58d8-4ff8-af75-9e8745e5c13b"
+      ]
+    },
+    {
+      "notion_id": "dcf0221954bc823f9f7e81801cc043ec",
+      "service": "게시판",
+      "title": "7-3. 새 키워드 추가_클릭",
+      "path": "event-log/08-게시판/7-3.-새-키워드-추가_클릭.md",
+      "notion_url": "https://app.notion.com/p/dcf0221954bc823f9f7e81801cc043ec",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:37.155Z",
+      "source_body_sha256": "74dd4dffba38b74839fe654d9d54283c63368f78f6073111149451c2508276c9",
+      "output_sha256": "b93ed40503ed3e2d819a17e0dfbe5b5033cbd1c491fa3d693efcb0b91418a4d3",
+      "image_ids": [
+        "1472d4c9-3e6b-4ad4-b20a-6c7192073aa1"
+      ]
+    },
+    {
+      "notion_id": "c110221954bc836894ae81737da928d7",
+      "service": "게시판",
+      "title": "7-3. 키워드_추가_클릭",
+      "path": "event-log/08-게시판/7-3.-키워드_추가_클릭.md",
+      "notion_url": "https://app.notion.com/p/c110221954bc836894ae81737da928d7",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:42.556Z",
+      "source_body_sha256": "dac8c6a1c4a4a7346a022daeeba44c64bf19338d29af07f7a87195c8a4dab288",
+      "output_sha256": "60aaeec2d54a425ebcb633d29dfac8b6f56bf4e22185da2b5c17577313fca9c2",
+      "image_ids": [
+        "d6df1158-2ac8-4df2-9ca6-41538075f35c"
+      ]
+    },
+    {
+      "notion_id": "d410221954bc8342ba9c81d99f7d0e49",
+      "service": "게시판",
+      "title": "7-4. [알림받을 키워드] 입력값 >> DB저장 (1)",
+      "path": "event-log/08-게시판/7-4.-[알림받을-키워드]-입력값-DB저장-(1).md",
+      "notion_url": "https://app.notion.com/p/d410221954bc8342ba9c81d99f7d0e49",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:39.800Z",
+      "source_body_sha256": "07c712caed9bda5360011eddab4d0c5fd252d23d3e574bb9e9a52c7f0ee9a370",
+      "output_sha256": "7aac8086f999f632b68425ff505132c7e56e5b26fcfa67a06ca42ac622ceb48f",
+      "image_ids": []
+    },
+    {
+      "notion_id": "8d00221954bc8318a450017f34a05863",
+      "service": "게시판",
+      "title": "7-5. 추천 키워드_클릭",
+      "path": "event-log/08-게시판/7-5.-추천-키워드_클릭.md",
+      "notion_url": "https://app.notion.com/p/8d00221954bc8318a450017f34a05863",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:36.353Z",
+      "source_body_sha256": "5566fdbecfd29827194d1dfbea622a199ce9471bcc0cffcb1a98300b95537b8c",
+      "output_sha256": "aa820a45b8b2c3ae49cf6bc3f2c24666b37a1e1240e675a29bc06e59d5e66c6e",
+      "image_ids": [
+        "4a1dd773-ce6f-4878-9c6a-cd737183b248",
+        "66a12552-1e22-4795-b36e-d8052027cf49"
+      ]
+    },
+    {
+      "notion_id": "ad60221954bc8310be78017b0e8f41d0",
+      "service": "게시판",
+      "title": "7-6. 로그인팝업_로그인하기_클릭",
+      "path": "event-log/08-게시판/7-6.-로그인팝업_로그인하기_클릭.md",
+      "notion_url": "https://app.notion.com/p/ad60221954bc8310be78017b0e8f41d0",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:42.635Z",
+      "source_body_sha256": "5702629c7ecc08586f22aeadf5a2afc8dd4e1be0eeb298eff9950ae6d1c2dca1",
+      "output_sha256": "131bda659ec3af6f3841b2f737527876f29f5d7b82817a068c895050ace56c42",
+      "image_ids": [
+        "dcc5d697-59d3-48e1-8ee6-fee5b1b113d4"
+      ]
+    },
+    {
+      "notion_id": "6620221954bc82f98fba01269cd4ef08",
+      "service": "게시판",
+      "title": "7-7. 로그인팝업_닫기_클릭",
+      "path": "event-log/08-게시판/7-7.-로그인팝업_닫기_클릭.md",
+      "notion_url": "https://app.notion.com/p/6620221954bc82f98fba01269cd4ef08",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:36.190Z",
+      "source_body_sha256": "e228e5255f85c4dad146a9aa0f9d587106fb446e3355cd75a1a3239707b4e263",
+      "output_sha256": "665b24a3e6611b4a470a2402036c3bfd0d60cdb048e57a0ec88af0e1ba948e4d",
+      "image_ids": [
+        "e0f92e9e-7390-460c-b92e-5de72f2f051a"
+      ]
+    },
+    {
+      "notion_id": "2830221954bc82d880f3812f7d281a34",
+      "service": "게시판",
+      "title": "7-8. 키워드 알림받기_토글",
+      "path": "event-log/08-게시판/7-8.-키워드-알림받기_토글.md",
+      "notion_url": "https://app.notion.com/p/2830221954bc82d880f3812f7d281a34",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:36.031Z",
+      "source_body_sha256": "03c11006b6eecfa0b5f3784cc5b1ba74052ec2c5a334353573a787614bfdd502",
+      "output_sha256": "4c8f6d9bb98ecbf45fed847d26e0c53591a92cb79cd0c3e21206ed3b89af9823",
+      "image_ids": [
+        "f27375e9-75a3-499e-aa80-20a168711039",
+        "06466575-c91a-4b22-b497-7bed2e09fc8d"
+      ]
+    },
+    {
+      "notion_id": "6090221954bc8350ae8101d27555cf97",
+      "service": "게시판",
+      "title": "7-9. 알림설정_공지사항 키워드 알림_클릭",
+      "path": "event-log/08-게시판/7-9.-알림설정_공지사항-키워드-알림_클릭.md",
+      "notion_url": "https://app.notion.com/p/6090221954bc8350ae8101d27555cf97",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:40.711Z",
+      "source_body_sha256": "b120f6b3fff29baf02e862670d14b6bca4361777ace536cb13793eb9fc1d293d",
+      "output_sha256": "9cd1f45a0ce29f596ed5d305ea2f1bb0482b511af8e9e1a56488cb0c66da0fc4",
+      "image_ids": [
+        "71df76ab-d408-4733-a7a5-785a986d11a5"
+      ]
+    },
+    {
+      "notion_id": "39e0221954bc825a870101b32fcf2fe7",
+      "service": "게시판",
+      "title": "8-1. 더보기_클릭",
+      "path": "event-log/08-게시판/8-1.-더보기_클릭.md",
+      "notion_url": "https://app.notion.com/p/39e0221954bc825a870101b32fcf2fe7",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:42.424Z",
+      "source_body_sha256": "8e3d974970e614c332a336c68eaa321751faa81e272c5da8f5ebacec0ed189a7",
+      "output_sha256": "6471fc6ceaaabde3a9c2a1ff0be650bc95841a0f72b402b1195974dd74258109",
+      "image_ids": [
+        "a86a663e-2e48-4667-b492-cfe805f44c1b"
+      ]
+    },
+    {
+      "notion_id": "cd30221954bc83b8b22b81648fd98eaf",
+      "service": "게시판",
+      "title": "8-2. 지금 인기있는 공지 배너_클릭",
+      "path": "event-log/08-게시판/8-2.-지금-인기있는-공지-배너_클릭.md",
+      "notion_url": "https://app.notion.com/p/cd30221954bc83b8b22b81648fd98eaf",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:46.197Z",
+      "source_body_sha256": "1d759e3690190c2b7a4bd7c2e668a24464da9148067e885dbe7de68d3da1a1cb",
+      "output_sha256": "bc1d2c9b27a79768b0e65cf44a147aa4b6ea660fc3395868cb29b6ef61737e60",
+      "image_ids": [
+        "1eb50c90-e588-4fe3-b7ae-d42da04851af"
+      ]
+    },
+    {
+      "notion_id": "cfd0221954bc82d7913c01d7e9442395",
+      "service": "게시판",
+      "title": "8-3. 키워드 관리 진입 배너_클릭",
+      "path": "event-log/08-게시판/8-3.-키워드-관리-진입-배너_클릭.md",
+      "notion_url": "https://app.notion.com/p/cfd0221954bc82d7913c01d7e9442395",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:47.225Z",
+      "source_body_sha256": "24fde843afea5a5b47551ca29baba60d4c3ba37d6c2e0839462165da1410fd0f",
+      "output_sha256": "f8614d04728959e7ef558ef093172c22269064d6b25b711b861e46df055bf051",
+      "image_ids": [
+        "3d935f41-a6e6-4d9d-8c4e-2afa3f569fcc"
+      ]
+    },
+    {
+      "notion_id": "ac40221954bc83939c6081bb6a96285c",
+      "service": "게시판",
+      "title": "9-1. 키워드 게시물_알림",
+      "path": "event-log/08-게시판/9-1.-키워드-게시물_알림.md",
+      "notion_url": "https://app.notion.com/p/ac40221954bc83939c6081bb6a96285c",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:43.136Z",
+      "source_body_sha256": "453e2770b158167a51e6e05a4b7ba62a04bbb3aac2df664ac105ffd4503ef81b",
+      "output_sha256": "3a4deef65b06f6d1df62aa5851523d291a4bac7b1645a60348ee63ed2f4a50e1",
+      "image_ids": []
+    },
+    {
+      "notion_id": "fc20221954bc83e4b00b81ddea5deb74",
+      "service": "게시판",
+      "title": "[레거시] 10-3. 카테고리_교내 시설물 정보_클릭",
+      "path": "event-log/08-게시판/[레거시]-10-3.-카테고리_교내-시설물-정보_클릭.md",
+      "notion_url": "https://app.notion.com/p/fc20221954bc83e4b00b81ddea5deb74",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:39.357Z",
+      "source_body_sha256": "20717d04397c3859bb458548c5bc940601638a24c9318d55cbb5954fba608e82",
+      "output_sha256": "20abd8fadc719aa2887ea48740be86aeb63c9c7513fc48df7e7365850c144bec",
+      "image_ids": [
+        "2018cae6-a0b8-456a-84b3-aa414812b4b0",
+        "bb245889-0add-4ac9-8c62-a04ec64c81a7"
+      ]
+    },
+    {
+      "notion_id": "25b0221954bc82128e37012207cdd581",
+      "service": "게시판",
+      "title": "[레거시] 11-15.카테고리_채팅(쪽지)_클릭",
+      "path": "event-log/08-게시판/[레거시]-11-15.카테고리_채팅(쪽지)_클릭.md",
+      "notion_url": "https://app.notion.com/p/25b0221954bc82128e37012207cdd581",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:42.150Z",
+      "source_body_sha256": "f3851f2ca39d33229bc87a4109bffa0b2f77c7ac8f6eec99c0a9d06926d3411a",
+      "output_sha256": "15567207523091313bfa7d9976cf98a213e8823ccaefd77be3665465301a4a27",
+      "image_ids": [
+        "15c675ba-df70-44a8-ab66-9e2d44f9e98f",
+        "90237801-18d9-490e-8045-c748f034178d"
+      ]
+    },
+    {
+      "notion_id": "8520221954bc824885bc81f310b96d29",
+      "service": "게시판",
+      "title": "[레거시·중복 원문] 11-21. 카테고리_분실물_클릭",
+      "path": "event-log/08-게시판/[레거시·중복-원문]-11-21.-카테고리_분실물_클릭.md",
+      "notion_url": "https://app.notion.com/p/8520221954bc824885bc81f310b96d29",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:40.207Z",
+      "source_body_sha256": "93c1071c31a1e1a4c2bc72428f467ab198ae6448b1e26f2efc2203bac17a333b",
+      "output_sha256": "99d9c9515c7e260f359bb893e1bc8528384d02c93949237d669ba0062530347b",
+      "image_ids": [
+        "698118fe-f377-405b-88a6-eddff143c5c1",
+        "a5cb1f43-383b-4e65-9f9e-c48e9cc91017"
+      ]
+    },
+    {
+      "notion_id": "1220221954bc821cbf5a818cf7f633ea",
+      "service": "게시판",
+      "title": "3-3. 공지사항_상세_클릭 (웹·앱)",
+      "path": "event-log/08-게시판/3-3·4-3.-공지사항_상세_클릭-(웹·앱).md",
+      "notion_url": "https://app.notion.com/p/1220221954bc821cbf5a818cf7f633ea",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:43.041Z",
+      "source_body_sha256": "6e5e5e690e8afe2c2e389715f49294957fe043d85e329d003ca2eb841e748de6",
+      "output_sha256": "e15035dea23a86556f278997c65fafeda947b69da2eb6f7a8f213f71c83fa20b",
+      "image_ids": [
+        "e2af091c-c45c-49c3-a732-2fd1513a8851",
+        "ce222929-d58f-44d8-938c-18ed69170606"
+      ]
+    }
+  ],
+  "blank_pages": [
+    {
+      "notion_id": "7140221954bc827a9dc701276dfb287f",
+      "title": "새 페이지",
+      "service": "게시판",
+      "url": "https://app.notion.com/p/7140221954bc827a9dc701276dfb287f"
+    },
+    {
+      "notion_id": "3d90221954bc82a6b9738153cf08aef1",
+      "title": "새 페이지",
+      "service": "게시판",
+      "url": "https://app.notion.com/p/3d90221954bc82a6b9738153cf08aef1"
+    }
+  ]
+}

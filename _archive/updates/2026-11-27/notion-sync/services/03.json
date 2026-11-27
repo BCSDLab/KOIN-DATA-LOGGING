@@ -1,0 +1,330 @@
+{
+  "service": "사장님",
+  "pages": [
+    {
+      "notion_id": "47d0221954bc82c6bd7301dd2fe6c3ac",
+      "service": "사장님",
+      "title": "1-1 이벤트 추가 ",
+      "path": "event-log/03-사장님/1-1-이벤트-추가.md",
+      "notion_url": "https://app.notion.com/p/47d0221954bc82c6bd7301dd2fe6c3ac",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:21.774Z",
+      "source_body_sha256": "0bd76fe56ec19b8f6c388e3878483179aee2593829e740ad5074c502bdc89e17",
+      "output_sha256": "91a15e008de9b52e774299e150da6607febc445e39eeeeb35bbd8eaca417587d",
+      "image_ids": [
+        "2c366f03-4643-4cea-b7cc-e5f90dbd893f"
+      ]
+    },
+    {
+      "notion_id": "1150221954bc8350bdbe01aff0971372",
+      "service": "사장님",
+      "title": "1-2 이벤트 추가 - 등록하기",
+      "path": "event-log/03-사장님/1-2-이벤트-추가-등록하기.md",
+      "notion_url": "https://app.notion.com/p/1150221954bc8350bdbe01aff0971372",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:21.907Z",
+      "source_body_sha256": "3e4fde1587b0f3166e246836541c0996108e95eca61db89aaf0b302f47b6dfd0",
+      "output_sha256": "e36b61c272fdcc59ac62ad03c98df72176e64a7bad3210586f06676f0cf1d35b",
+      "image_ids": [
+        "97cf2edd-29b3-4fb0-b034-ac3108e13542"
+      ]
+    },
+    {
+      "notion_id": "c1c0221954bc82adb2d1811102f1103f",
+      "service": "사장님",
+      "title": "1-3 이벤트 추가 - 취소하기 ",
+      "path": "event-log/03-사장님/1-3-이벤트-추가-취소하기.md",
+      "notion_url": "https://app.notion.com/p/c1c0221954bc82adb2d1811102f1103f",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:22.058Z",
+      "source_body_sha256": "2c0098a1c471859c299721e991c5165bdcde06308830f0080c2ed6851b6f5231",
+      "output_sha256": "0ef096d5b535fdf6a82409423353de1c08b124c2fc0133a4c27a8ec061022015",
+      "image_ids": [
+        "ebc12b60-d34b-4bef-ba04-6c9678f889d3"
+      ]
+    },
+    {
+      "notion_id": "f500221954bc82789c7f8160030c4a01",
+      "service": "사장님",
+      "title": "1-4 이벤트 삭제 (클릭) - 추가된 로깅",
+      "path": "event-log/03-사장님/1-4-이벤트-삭제-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/f500221954bc82789c7f8160030c4a01",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:22.200Z",
+      "source_body_sha256": "2d0eaa835cb692fa8e32ff3509188c32897d590111c5982a35912ed13fac50e6",
+      "output_sha256": "b4f6955c83947dda8764f55b641950e9891d77ab0e30ce12b888a3e50e85d668",
+      "image_ids": [
+        "b87f6073-31bf-43d3-839b-52874e9a66cb"
+      ]
+    },
+    {
+      "notion_id": "9940221954bc832d919d81f492414e54",
+      "service": "사장님",
+      "title": "1-5 이벤트 수정 - 수정하기 (클릭) - 추가된 로깅",
+      "path": "event-log/03-사장님/1-5-이벤트-수정-수정하기-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/9940221954bc832d919d81f492414e54",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:22.400Z",
+      "source_body_sha256": "83884625bef541b8cbd40aa37fd06845ddcf6a9b18a8836f79982710ee5fdcdd",
+      "output_sha256": "1d2007dd0c5efbe48b77810a87a7a917a334ce6ca3d8eb4f200bc2f12e14cec5",
+      "image_ids": [
+        "759be585-c046-47a4-aa20-fb64d883753a"
+      ]
+    },
+    {
+      "notion_id": "2300221954bc83259e9a81fb9d058d55",
+      "service": "사장님",
+      "title": "2-1 가게 정보 수정",
+      "path": "event-log/03-사장님/2-1-가게-정보-수정.md",
+      "notion_url": "https://app.notion.com/p/2300221954bc83259e9a81fb9d058d55",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:25.339Z",
+      "source_body_sha256": "3d2499f7bf42b77664fb3abeb48beffbcabbf28feac5373121a11ed55a69fe6c",
+      "output_sha256": "dd688c574af0fe0f0e117616ad1270fdaf437bb248fa404ef57c35d823337ffd",
+      "image_ids": [
+        "27eaf53c-af6f-4829-9ec1-f375ad0795de"
+      ]
+    },
+    {
+      "notion_id": "6710221954bc839d8dd40187f5cfd3a1",
+      "service": "사장님",
+      "title": "2-2 가게 정보 수정 - 확인",
+      "path": "event-log/03-사장님/2-2-가게-정보-수정-확인.md",
+      "notion_url": "https://app.notion.com/p/6710221954bc839d8dd40187f5cfd3a1",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:21.473Z",
+      "source_body_sha256": "316ad7c10b4297eb973a9be073334e8336814b6fa4c0bf718e63ed8ea6cdf967",
+      "output_sha256": "3ece749c8ab60effeea64657ced59c74fd506900ce6b8976026abd623f31dce0",
+      "image_ids": [
+        "9ce7fdf5-e77d-40dc-984f-74b40ee32d82"
+      ]
+    },
+    {
+      "notion_id": "a730221954bc8318b23701a25503cc78",
+      "service": "사장님",
+      "title": "2-3 가게 정보 수정 - 시간 수정 ",
+      "path": "event-log/03-사장님/2-3-가게-정보-수정-시간-수정.md",
+      "notion_url": "https://app.notion.com/p/a730221954bc8318b23701a25503cc78",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:22.016Z",
+      "source_body_sha256": "91b46b9e4d9a944599ce66333f9083db0ccb751243e43e85bf6aa52f63502137",
+      "output_sha256": "b43cfdadf4913eec873990dd1cd1b15cb671b010aac0fa9241b266063aa21b51",
+      "image_ids": [
+        "10faa517-fd21-4516-a62b-f5632441deb8"
+      ]
+    },
+    {
+      "notion_id": "ef60221954bc828c8883018ee3211682",
+      "service": "사장님",
+      "title": "2-4 가게 정보 수정 - 이미지 추가 ",
+      "path": "event-log/03-사장님/2-4-가게-정보-수정-이미지-추가.md",
+      "notion_url": "https://app.notion.com/p/ef60221954bc828c8883018ee3211682",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:21.520Z",
+      "source_body_sha256": "2eec0aea7d2df8fb392847ef23e2d70fae1958694ae91e3e61415d985019d3ff",
+      "output_sha256": "5d731cb8163291c66ca4ec5624510c094a2f57d148f5eec248d03338b2f8149d",
+      "image_ids": [
+        "989cbee2-bf0a-4825-9de5-aa045a815c12"
+      ]
+    },
+    {
+      "notion_id": "4aa0221954bc82908e720102cbdd0da8",
+      "service": "사장님",
+      "title": "2-5 가게 정보 수정 - 취소 ",
+      "path": "event-log/03-사장님/2-5-가게-정보-수정-취소.md",
+      "notion_url": "https://app.notion.com/p/4aa0221954bc82908e720102cbdd0da8",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:24.818Z",
+      "source_body_sha256": "a2535f40afa62d3c2421115850bcbfaafa2aac98ee9edb1a643845b7fee7424c",
+      "output_sha256": "744f60213965f72decb6e9fab6aede85bfc0b48d161e6b7a80d020e4c5c98297",
+      "image_ids": [
+        "5581e81f-d6b4-4e01-822d-b3b3fbbe699d"
+      ]
+    },
+    {
+      "notion_id": "d440221954bc82b29db9815408c752d9",
+      "service": "사장님",
+      "title": "2-6 가게 정보 수정 - 닫기 ",
+      "path": "event-log/03-사장님/2-6-가게-정보-수정-닫기.md",
+      "notion_url": "https://app.notion.com/p/d440221954bc82b29db9815408c752d9",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:24.526Z",
+      "source_body_sha256": "c088c60ec74e4bcc873e248bdd98fe6eb4c5ad3fdd4d3e2b52f3bee0115e0a4f",
+      "output_sha256": "4be31f0c6eccac622ad8edc2a6e99232f4079d8eafd726a703b45868c418f69a",
+      "image_ids": [
+        "8f2c101b-1b7f-461c-92e2-dafb37f1d28a"
+      ]
+    },
+    {
+      "notion_id": "a4f0221954bc835093e3818d98beafd7",
+      "service": "사장님",
+      "title": "3-1 메뉴추가 ",
+      "path": "event-log/03-사장님/3-1-메뉴추가.md",
+      "notion_url": "https://app.notion.com/p/a4f0221954bc835093e3818d98beafd7",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:25.790Z",
+      "source_body_sha256": "38133dd4c0231b94be79a7e10e5e4fc5fbac3a85ded76ca22850e64c6a309aa6",
+      "output_sha256": "84323b907f0c541fb7d5e311e17a1605a61a80840c1c05bc8c389826e666a5f6",
+      "image_ids": [
+        "57118f0d-7d59-4f19-94ef-ab7a8e488fee"
+      ]
+    },
+    {
+      "notion_id": "4830221954bc83a891930190b2b9ba7f",
+      "service": "사장님",
+      "title": "3-2 메뉴추가 - 확인",
+      "path": "event-log/03-사장님/3-2-메뉴추가-확인.md",
+      "notion_url": "https://app.notion.com/p/4830221954bc83a891930190b2b9ba7f",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:21.742Z",
+      "source_body_sha256": "f5950ba732e546aa34a296c42dad13aa6366f0f9eb2a012a82c2173f2925ced5",
+      "output_sha256": "04a2b171d03bf8e6e9c05c740c782c97e31b8e45b0be34584b5d8e4cb8b7f7ed",
+      "image_ids": [
+        "ff379895-fe09-4914-9af5-6a1472989ae7"
+      ]
+    },
+    {
+      "notion_id": "cd60221954bc837aba168113f694aa97",
+      "service": "사장님",
+      "title": "3-3 메뉴추가 - 취소",
+      "path": "event-log/03-사장님/3-3-메뉴추가-취소.md",
+      "notion_url": "https://app.notion.com/p/cd60221954bc837aba168113f694aa97",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "진행 중",
+      "source_last_edited_at": "2026-11-23T13:38:22.157Z",
+      "source_body_sha256": "839da27259bb285074e4bf6b5daedf53e58d489e1f17743c395bc808183df93d",
+      "output_sha256": "5ee4f546afab3ab7bd0669aeac5f278ade2828b86af7ceed9d997a34dd372aa6",
+      "image_ids": [
+        "bf580d7c-58f0-46ed-bb86-61699ecb9068"
+      ]
+    },
+    {
+      "notion_id": "d530221954bc82409bd581ecf2ad368a",
+      "service": "사장님",
+      "title": "3-4 메뉴추가 - 메뉴사진",
+      "path": "event-log/03-사장님/3-4-메뉴추가-메뉴사진.md",
+      "notion_url": "https://app.notion.com/p/d530221954bc82409bd581ecf2ad368a",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:22.321Z",
+      "source_body_sha256": "6593e10a349cdb877ec4bb8c39adffc5503fe726e3169ffd5137dee03f0b37d4",
+      "output_sha256": "15e622898137533cd1e5e2aa9057048b813f221fd4233e2011e69fdd925edb7b",
+      "image_ids": [
+        "d49d5274-da33-44c7-b0da-7020ffc0f606"
+      ]
+    },
+    {
+      "notion_id": "2370221954bc83e794b381da6beb2726",
+      "service": "사장님",
+      "title": "4-1 로그인 (클릭) - 추가된 로깅",
+      "path": "event-log/03-사장님/4-1-로그인-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/2370221954bc83e794b381da6beb2726",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:24.970Z",
+      "source_body_sha256": "2dafccddd4779c21325215b889f43aed440b106f2f51566d006eee917016adaa",
+      "output_sha256": "56a8ddfde083e4fb9976e7cdb413e92b2db872030f452b7e8daf2e344a22f358",
+      "image_ids": [
+        "3c3cc1b7-3e88-447c-a473-887a7067331f"
+      ]
+    },
+    {
+      "notion_id": "4af0221954bc8298bf1001876aba260d",
+      "service": "사장님",
+      "title": "4-2 로그인 - 비밀번호 찾기 (클릭) - 추가된 로깅",
+      "path": "event-log/03-사장님/4-2-로그인-비밀번호-찾기-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/4af0221954bc8298bf1001876aba260d",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:25.132Z",
+      "source_body_sha256": "0d6669b76c19a8933e9697ecea28dcb73da6e4b26fde22584026f7bd4c06c278",
+      "output_sha256": "7de79d746a0f1bf32432acc7df83d9a43e2e64d5b40192a48a045ef8d9ae8f2a",
+      "image_ids": [
+        "4bb6025e-81ff-4f79-8fc7-2be8dca241b9"
+      ]
+    },
+    {
+      "notion_id": "e540221954bc825bbd1c816abb07a7b2",
+      "service": "사장님",
+      "title": "4-3 로그인 - 회원가입 (클릭) - 추가된 로깅",
+      "path": "event-log/03-사장님/4-3-로그인-회원가입-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/e540221954bc825bbd1c816abb07a7b2",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:21.880Z",
+      "source_body_sha256": "538b2f3e182c00296be42445fca7526094f3b152d6fd1885fbfe7a2d7d438767",
+      "output_sha256": "3646fd0afac14bac6dc94cbf0fa4e536f8a706d91a03ebbabc6f7481022a54f6",
+      "image_ids": [
+        "179920a2-718f-4c34-9a20-fa0e83100908"
+      ]
+    },
+    {
+      "notion_id": "be70221954bc8370883a0109d36ae244",
+      "service": "사장님",
+      "title": "4-4 회원가입 - 다음 (클릭) - 추가된 로깅",
+      "path": "event-log/03-사장님/4-4-회원가입-다음-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/be70221954bc8370883a0109d36ae244",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:26.013Z",
+      "source_body_sha256": "34a1315950b99f84baa65ef4f8dd4bf2f737296d5e7046143273cb176bf6134f",
+      "output_sha256": "d6019ac2a618bfa5c39fbb2255a77ae093e609c03351e0dddd410deacdb05047",
+      "image_ids": [
+        "40cb5a26-3e61-45a4-8df4-860c2b5bd28c",
+        "78903a84-4991-4043-bce0-5f42199d6f32"
+      ]
+    }
+  ],
+  "blank_pages": []
+}

@@ -1,0 +1,1674 @@
+{
+  "service": "미래의 주변상점 - 레거시",
+  "pages": [
+    {
+      "notion_id": "7430221954bc8355af8801c7b7a85722",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "1-1 메인 → 상점 카테고리 (클릭) ",
+      "path": "event-log/05-미래의-주변상점-레거시/1-1-메인-→-상점-카테고리-(클릭).md",
+      "notion_url": "https://app.notion.com/p/7430221954bc8355af8801c7b7a85722",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.574Z",
+      "source_body_sha256": "30f4035e6a24b3fc3486c4f27a6f8a2aa83087e6efc3e1c3ccb5fd63d5ffcaf6",
+      "output_sha256": "556baf50932020a35d9af41f0cf6ba3bc4fe4cfdfe13dea8be9136dee951efb8",
+      "image_ids": []
+    },
+    {
+      "notion_id": "fe60221954bc8320b69981c821e4d5d3",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "1-2 햄버거 → 상점 카테고리 (클릭)",
+      "path": "event-log/05-미래의-주변상점-레거시/1-2-햄버거-→-상점-카테고리-(클릭).md",
+      "notion_url": "https://app.notion.com/p/fe60221954bc8320b69981c821e4d5d3",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.635Z",
+      "source_body_sha256": "0114e94d3956744574a15676f65e628062e0de9d5e292813aefdb62ad4d4955d",
+      "output_sha256": "ada4f15411c3106c229262076c0741696568052d51fe4b98970a3dad5d69a5c8",
+      "image_ids": []
+    },
+    {
+      "notion_id": "1270221954bc823196fa012d030bbff1",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "1-3 헤더 → 주변상점 (클릭)",
+      "path": "event-log/05-미래의-주변상점-레거시/1-3-헤더-→-주변상점-(클릭).md",
+      "notion_url": "https://app.notion.com/p/1270221954bc823196fa012d030bbff1",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.699Z",
+      "source_body_sha256": "6dde023c6fb84343d033346895cfbd5d058ddfea5167cabbba10b8a99c0c06bf",
+      "output_sha256": "a19c19094d9c1370eddef5a783dca53aef19a902e5331a8e343bc6992e750014",
+      "image_ids": []
+    },
+    {
+      "notion_id": "4570221954bc83319eb601a66290fdaa",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "1-4 푸터 → 주변상점 (클릭) ",
+      "path": "event-log/05-미래의-주변상점-레거시/1-4-푸터-→-주변상점-(클릭).md",
+      "notion_url": "https://app.notion.com/p/4570221954bc83319eb601a66290fdaa",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.758Z",
+      "source_body_sha256": "546b05572344f38a5c3a61575044a479cf33318b632abfb17eb904d9588ba640",
+      "output_sha256": "cb870956d166c457838bc9506fddf6f2e89385311100e90f628ca7fbc4252792",
+      "image_ids": []
+    },
+    {
+      "notion_id": "3860221954bc82a690c981afe39600b2",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "2-1 상점 카테고리 → 상점 카테고리 (클릭) ",
+      "path": "event-log/05-미래의-주변상점-레거시/2-1-상점-카테고리-→-상점-카테고리-(클릭).md",
+      "notion_url": "https://app.notion.com/p/3860221954bc82a690c981afe39600b2",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:15.927Z",
+      "source_body_sha256": "e01f3563787b5e3142cfe5a2778e2c71dafef9eede1115da0133120d16791641",
+      "output_sha256": "b09ef6c395c6a6dede07b3c249c4a42443203bc6a8a598480a0656de5146f67f",
+      "image_ids": []
+    },
+    {
+      "notion_id": "c8e0221954bc8225b72e0171c8c9fc95",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "2-14 상점 카테고리 최소주문금액 설정",
+      "path": "event-log/05-미래의-주변상점-레거시/2-14-상점-카테고리-최소주문금액-설정.md",
+      "notion_url": "https://app.notion.com/p/c8e0221954bc8225b72e0171c8c9fc95",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.744Z",
+      "source_body_sha256": "f5c635c83c9e2ce512c65c592cdea9f06de242835a909ecdf7d27b788e8da3e8",
+      "output_sha256": "9d03befba0ece3c1bf7a8eb7c746238c4b407036fe555704ca46199503b72ffc",
+      "image_ids": [
+        "17d4984f-f51c-4889-a4a2-f6cc2afeff71"
+      ]
+    },
+    {
+      "notion_id": "bba0221954bc82419e87811df7e73f68",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "2-15 상점 카테고리 → 홈",
+      "path": "event-log/05-미래의-주변상점-레거시/2-15-상점-카테고리-→-홈.md",
+      "notion_url": "https://app.notion.com/p/bba0221954bc82419e87811df7e73f68",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.800Z",
+      "source_body_sha256": "33788db7c623d24f2105584df545cf35509817fd1b725d43dd758f06190183a4",
+      "output_sha256": "4609174339a2397b0b238479f59432f83ec4ba2da75a968090edf085c093463b",
+      "image_ids": [
+        "160328d8-d308-4140-8b7b-dc8dcca3a58c"
+      ]
+    },
+    {
+      "notion_id": "60e0221954bc83f6938481532c7e8372",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "2-16 상점 카테고리 → 주변상점",
+      "path": "event-log/05-미래의-주변상점-레거시/2-16-상점-카테고리-→-주변상점.md",
+      "notion_url": "https://app.notion.com/p/60e0221954bc83f6938481532c7e8372",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:15.867Z",
+      "source_body_sha256": "83b237b7c858b54dae40dac42f8ce47d6b8b53812ab8af6530873721b7ad24ea",
+      "output_sha256": "16ea69ee8257ee1e82a38c701e2b839348b7aaf1e7864c55e987e7a1a25d545f",
+      "image_ids": [
+        "d2027995-103c-43f3-addb-921672838091"
+      ]
+    },
+    {
+      "notion_id": "0d30221954bc833e9c608116495e140b",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "2-17 상점 카테고리 → 주문내역",
+      "path": "event-log/05-미래의-주변상점-레거시/2-17-상점-카테고리-→-주문내역.md",
+      "notion_url": "https://app.notion.com/p/0d30221954bc833e9c608116495e140b",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:15.933Z",
+      "source_body_sha256": "6606688a78f2d1fc88c6ef6ac5e655b0a8ca5169a9d985d37d1dc3b82d21c196",
+      "output_sha256": "074f6c9d3fce7eeba397559db5e2b0ece395ce10cbed55366a522b4432b75d36",
+      "image_ids": [
+        "60b37c40-9501-416a-af44-4ae47a962b79"
+      ]
+    },
+    {
+      "notion_id": "c1e0221954bc83d8ace401d2436a8b79",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "2-18 상점 카테고리 이탈",
+      "path": "event-log/05-미래의-주변상점-레거시/2-18-상점-카테고리-이탈.md",
+      "notion_url": "https://app.notion.com/p/c1e0221954bc83d8ace401d2436a8b79",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.027Z",
+      "source_body_sha256": "fe0932af61c9e43754014bf309eb3b8a4d897a1b42f0b8f1f63098100449fd9e",
+      "output_sha256": "b73fbc9cba7a6b4798c6cd6af238416ef8aba5d7422d1c6773f64e5166c0b1e6",
+      "image_ids": [
+        "c9acc000-775c-432d-b3d4-c5947b25ddbc"
+      ]
+    },
+    {
+      "notion_id": "a480221954bc8311b1c4014e6867acd2",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "2-19 상점 카테고리 → 플로팅 바",
+      "path": "event-log/05-미래의-주변상점-레거시/2-19-상점-카테고리-→-플로팅-바.md",
+      "notion_url": "https://app.notion.com/p/a480221954bc8311b1c4014e6867acd2",
+      "platforms": [],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.222Z",
+      "source_body_sha256": "52f7e7cc8de43630d3c70349230e59ce7c9c0d50f122e42c58286a25a93c1f0f",
+      "output_sha256": "29bdad5a04e8da7191ecc2c27b2bcb09101644c829ca1548acf45ca772c30784",
+      "image_ids": [
+        "9f489295-3233-4dbd-841e-26c59265f933"
+      ]
+    },
+    {
+      "notion_id": "0390221954bc827e8e87818ced3bf498",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "2-2 상점 카테고리 (스크롤)",
+      "path": "event-log/05-미래의-주변상점-레거시/2-2-상점-카테고리-(스크롤).md",
+      "notion_url": "https://app.notion.com/p/0390221954bc827e8e87818ced3bf498",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.044Z",
+      "source_body_sha256": "7d33ec35c5d58c6bb80f4b652948c70c8218643c589819d555948a9359e2236e",
+      "output_sha256": "4d8bb58f398c40fa181c8ab5789f39d12cf90d3ccad4d75c966df9ac1b503369",
+      "image_ids": []
+    },
+    {
+      "notion_id": "55a0221954bc82c8b8be012d94505674",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "2-3 상점카테고리 이벤트 (클릭) ",
+      "path": "event-log/05-미래의-주변상점-레거시/2-3-상점카테고리-이벤트-(클릭).md",
+      "notion_url": "https://app.notion.com/p/55a0221954bc82c8b8be012d94505674",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.363Z",
+      "source_body_sha256": "15413e30363bc00a78a6961e5d0d24c8a34b4d5d4bffaebf6b59cb0ed67fd354",
+      "output_sha256": "ee99b183091802c426a6ef23a2e6d1620266dd68f155736189a1d09f828d5432",
+      "image_ids": [
+        "0661efdc-ba14-42e3-9a53-7fafa441a1c9"
+      ]
+    },
+    {
+      "notion_id": "4a60221954bc8219894681eef86cef5e",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "2-4 상점카테고리 검색 (클릭) ",
+      "path": "event-log/05-미래의-주변상점-레거시/2-4-상점카테고리-검색-(클릭).md",
+      "notion_url": "https://app.notion.com/p/4a60221954bc8219894681eef86cef5e",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.427Z",
+      "source_body_sha256": "7f96f2eaae162e67cab36a4384d37faed842ade5907d77abaa7615db2a75f03e",
+      "output_sha256": "7f7857691b09e7401e808e6311d8b66b9c1ed89376de30f06035c4808c1d1e02",
+      "image_ids": []
+    },
+    {
+      "notion_id": "4410221954bc83b0ae1801cc24e9128e",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "2-5 상점 카테고리 → 카트",
+      "path": "event-log/05-미래의-주변상점-레거시/2-5-상점-카테고리-→-카트.md",
+      "notion_url": "https://app.notion.com/p/4410221954bc83b0ae1801cc24e9128e",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.485Z",
+      "source_body_sha256": "d03966b5588f05dfd745c71f95a77e5d0a526ee6009de263dd871419541c513c",
+      "output_sha256": "e303f709a2e05bbacfeaf95768591a7f65d602b635a5343a78c9d54e92d45374",
+      "image_ids": []
+    },
+    {
+      "notion_id": "38c0221954bc83c8983d01e94bcc5348",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "2-6~8 상점 카테고리 정렬 ",
+      "path": "event-log/05-미래의-주변상점-레거시/2-6~8-상점-카테고리-정렬.md",
+      "notion_url": "https://app.notion.com/p/38c0221954bc83c8983d01e94bcc5348",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.585Z",
+      "source_body_sha256": "85f6a68b0bc91cd164548455e98527b9f02bedaa80463346c0dbeebdc5903192",
+      "output_sha256": "6105ccf563be9947b4bfb19bf7555a70fc3a9c0df028f3a19f72dc17b18b13f1",
+      "image_ids": [
+        "9dcf5252-a6a1-450e-b903-121bdfbcc762",
+        "bb51140f-91be-403d-a532-6841aeae0e0f",
+        "db2a5336-9706-4a86-b105-88ddacaf48f4"
+      ]
+    },
+    {
+      "notion_id": "c540221954bc837f8f0681ae8c90ffe3",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "2-9 ~ 13 상점 카테고리 필터",
+      "path": "event-log/05-미래의-주변상점-레거시/2-9-~-13-상점-카테고리-필터.md",
+      "notion_url": "https://app.notion.com/p/c540221954bc837f8f0681ae8c90ffe3",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.681Z",
+      "source_body_sha256": "b3954e15068e0209d12a499b7d83f7c55410726917ca6edfec7b441778b2046d",
+      "output_sha256": "ac4733a7dc4fa20164505696701d6f59b4fe378c5175693e8f566909e306d252",
+      "image_ids": [
+        "9dcf5252-a6a1-450e-b903-121bdfbcc762",
+        "9d96acc6-2d56-476c-9e60-a00eadb8df84"
+      ]
+    },
+    {
+      "notion_id": "f780221954bc835c95bf0173fe7c659b",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-1 메뉴추가 ",
+      "path": "event-log/05-미래의-주변상점-레거시/3-1-메뉴추가.md",
+      "notion_url": "https://app.notion.com/p/f780221954bc835c95bf0173fe7c659b",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.282Z",
+      "source_body_sha256": "4552d87243f7b5917bf70edd05d7f9cbed87997b6e7e0f3a33d130dfe9418471",
+      "output_sha256": "459ca0b6cbfab59820139b169f9bc5bede0edc06e31759546f493123d9d30ddf",
+      "image_ids": []
+    },
+    {
+      "notion_id": "4280221954bc833a8e9c014068363aa4",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-1 상점 카테고리 → 상점상세 (클릭) ",
+      "path": "event-log/05-미래의-주변상점-레거시/3-1-상점-카테고리-→-상점상세-(클릭).md",
+      "notion_url": "https://app.notion.com/p/4280221954bc833a8e9c014068363aa4",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.404Z",
+      "source_body_sha256": "920ff3e528d9a00dce5e874e5b9cf8dfc7a5b9766374a65a38836ea33b89c24b",
+      "output_sha256": "4629a0147e7d08d1b3f17585e2f4c48ab8034c8ddac30dff446aa8fb22e50dc0",
+      "image_ids": []
+    },
+    {
+      "notion_id": "d690221954bc827ea31101beccf7dbf2",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-10 메뉴 선택 후 카트 클릭",
+      "path": "event-log/05-미래의-주변상점-레거시/3-10-메뉴-선택-후-카트-클릭.md",
+      "notion_url": "https://app.notion.com/p/d690221954bc827ea31101beccf7dbf2",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.084Z",
+      "source_body_sha256": "f64a509118d06e0ec045dd78d3f4b45f2432e2888dfad1633459e568adf68ee3",
+      "output_sha256": "7adc48d8cc66b8ac8b1480d321d9f7378c999d5cec2ca8e76d5b15c502e83e79",
+      "image_ids": [
+        "c453af62-e732-40f5-b807-638cf1d931de"
+      ]
+    },
+    {
+      "notion_id": "3290221954bc83c3b03c016d7df65751",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-11 메뉴 선택 후 카트 추가 클릭",
+      "path": "event-log/05-미래의-주변상점-레거시/3-11-메뉴-선택-후-카트-추가-클릭.md",
+      "notion_url": "https://app.notion.com/p/3290221954bc83c3b03c016d7df65751",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.285Z",
+      "source_body_sha256": "9dff01649b4c9bde2e61a7630f17d116eb249f27265f7eee120ab8a6fc9d649c",
+      "output_sha256": "640bd9392890855bd28f44167783551d195802adc3e194bc69b7aed4f489cd65",
+      "image_ids": [
+        "cb9e64d2-4f97-495b-b73f-f59c9ff9bc14"
+      ]
+    },
+    {
+      "notion_id": "f050221954bc832f81ad810328120777",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-12 영업시간으로 인한 카트 추가 실패",
+      "path": "event-log/05-미래의-주변상점-레거시/3-12-영업시간으로-인한-카트-추가-실패.md",
+      "notion_url": "https://app.notion.com/p/f050221954bc832f81ad810328120777",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.930Z",
+      "source_body_sha256": "cc82417651df38ceb3466049c12f5105555c73db12291bb12583b140136bd7a0",
+      "output_sha256": "9a4a03074804368171a7b601d0df895b8ae2f956f88061142864bce6c4e8ffdc",
+      "image_ids": [
+        "c86d494d-2c0c-4c89-bcd1-8c4ea872f3f9"
+      ]
+    },
+    {
+      "notion_id": "f1a0221954bc82e086eb01941167f525",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-13 다른 가게 메뉴로 인한 카트 추가 실패",
+      "path": "event-log/05-미래의-주변상점-레거시/3-13-다른-가게-메뉴로-인한-카트-추가-실패.md",
+      "notion_url": "https://app.notion.com/p/f1a0221954bc82e086eb01941167f525",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.011Z",
+      "source_body_sha256": "fd9ed5f5d3353362552694aa56eba0711c33e896d1470702039a2ec86c3fd1a9",
+      "output_sha256": "ed46323407ad8876aec5340b761bc58970c53a73a77f1a3cc1824cfbd12dd4f6",
+      "image_ids": [
+        "5cba1342-bf43-4242-afe4-e065c07971e1"
+      ]
+    },
+    {
+      "notion_id": "a210221954bc837c911f81fc08b40e67",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-2 메뉴추가 - 확인",
+      "path": "event-log/05-미래의-주변상점-레거시/3-2-메뉴추가-확인.md",
+      "notion_url": "https://app.notion.com/p/a210221954bc837c911f81fc08b40e67",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.451Z",
+      "source_body_sha256": "dcba400e4d050de65196a6637a58994591a7835722ac88b0f6f561b7c33abc22",
+      "output_sha256": "d1241ee467d824014409e8d28f2d2e27c572a13dedc47907ed2fde6f9aad2cd5",
+      "image_ids": []
+    },
+    {
+      "notion_id": "db10221954bc827e876e0101f434ee33",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-2 상점상세 사진 슬라이드",
+      "path": "event-log/05-미래의-주변상점-레거시/3-2-상점상세-사진-슬라이드.md",
+      "notion_url": "https://app.notion.com/p/db10221954bc827e876e0101f434ee33",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.516Z",
+      "source_body_sha256": "44c2491271720063f9f408f9be6fd9dce2a42768237efaaaaa1b532420e5b69d",
+      "output_sha256": "487aaefdf8f4b94e9f014caf3a54f41a47fc3a2d099b816a774f04798feb02ea",
+      "image_ids": [
+        "abc07a14-ee76-4b81-a937-798f9ccc43eb"
+      ]
+    },
+    {
+      "notion_id": "c630221954bc83ebabc80192455be066",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-3 메뉴추가 - 취소",
+      "path": "event-log/05-미래의-주변상점-레거시/3-3-메뉴추가-취소.md",
+      "notion_url": "https://app.notion.com/p/c630221954bc83ebabc80192455be066",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "진행 중",
+      "source_last_edited_at": "2026-11-23T13:39:14.607Z",
+      "source_body_sha256": "9d3df8a2a0fd05ba806450761693c67160df8f86358210df8696dbd41667057e",
+      "output_sha256": "ec84c20b078dc392364f8bf33c5be7669e27b99a503a1445fc9b1488abd3e569",
+      "image_ids": []
+    },
+    {
+      "notion_id": "a3c0221954bc8223b9708121c5bb1e63",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-3-1, 3-3-2 상점상세 메뉴 (클릭,스크롤) ",
+      "path": "event-log/05-미래의-주변상점-레거시/3-3-1,-3-3-2-상점상세-메뉴-(클릭,스크롤).md",
+      "notion_url": "https://app.notion.com/p/a3c0221954bc8223b9708121c5bb1e63",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.717Z",
+      "source_body_sha256": "7b1d940015517a645a7f6729ef74c9421701d23be25ac8f75d8be3a79cf849b0",
+      "output_sha256": "31856f88d222c1385f7a95befc542d23c8b01fdbf6ef953eece37c904adf0cd4",
+      "image_ids": []
+    },
+    {
+      "notion_id": "3760221954bc83a6aade0134fb3d758b",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-4 메뉴추가 - 메뉴사진",
+      "path": "event-log/05-미래의-주변상점-레거시/3-4-메뉴추가-메뉴사진.md",
+      "notion_url": "https://app.notion.com/p/3760221954bc83a6aade0134fb3d758b",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.772Z",
+      "source_body_sha256": "7d05fae092602e5da9e15749a5a61f0e37a41fcd298406c670d85af5155444c2",
+      "output_sha256": "ce9f957413ebcc0446cfbf3614a34681f7d3160af00b539e314ccaf8fbe0784f",
+      "image_ids": []
+    },
+    {
+      "notion_id": "fdf0221954bc82349b82010d993caf12",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-4-1, 3-4-2 상점상세 뒤로 가기 ",
+      "path": "event-log/05-미래의-주변상점-레거시/3-4-1,-3-4-2-상점상세-뒤로-가기.md",
+      "notion_url": "https://app.notion.com/p/fdf0221954bc82349b82010d993caf12",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.859Z",
+      "source_body_sha256": "c9c65b696f39fb1ba958eadc7222f340d7588b7dee6c82bf68eec068ed05abc6",
+      "output_sha256": "e3128d66eba290582f257a805b65962731a6e12e8f8bb46eafaebdbbd56650e6",
+      "image_ids": []
+    },
+    {
+      "notion_id": "6f20221954bc8359b9fb01e2c4a4c384",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-5 상점상세 상점정보",
+      "path": "event-log/05-미래의-주변상점-레거시/3-5-상점상세-상점정보.md",
+      "notion_url": "https://app.notion.com/p/6f20221954bc8359b9fb01e2c4a4c384",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.987Z",
+      "source_body_sha256": "467065e2b0ef8dcb2c19a959157a1f0b66b597263b6e0539d9286a1fa47416e5",
+      "output_sha256": "76758aaaacaf4f27472e77a596e67373024914612fc74bc1d9d29fde51bd238b",
+      "image_ids": [
+        "74d7854b-0ed0-4b24-bbf6-b576114c8dd6"
+      ]
+    },
+    {
+      "notion_id": "fa20221954bc826084dd81c800e20643",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-6 상점상세 카트 클릭(상단)",
+      "path": "event-log/05-미래의-주변상점-레거시/3-6-상점상세-카트-클릭(상단).md",
+      "notion_url": "https://app.notion.com/p/fa20221954bc826084dd81c800e20643",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.749Z",
+      "source_body_sha256": "6fd0935d72036627225b899c13947fa8d8a8f047d72ef67c7660b6df99827613",
+      "output_sha256": "0eed212110307555719c6deb05e6cbd20b921a84aa842db842f17764cbb6afe6",
+      "image_ids": [
+        "6e921582-6775-4b32-b7a0-07d9048b7e1b"
+      ]
+    },
+    {
+      "notion_id": "9310221954bc82fd96d1017ac37f7076",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-7 상점상세 카트 클릭(하단)",
+      "path": "event-log/05-미래의-주변상점-레거시/3-7-상점상세-카트-클릭(하단).md",
+      "notion_url": "https://app.notion.com/p/9310221954bc82fd96d1017ac37f7076",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.840Z",
+      "source_body_sha256": "7fcd01bfe650c1bc07e2cdf0883d51f6bec56a9ddd5c41c2cbce828e529cc633",
+      "output_sha256": "66afbb2db3185cb062024a3818b53b83cf88e06b22ba7729560e75024dbad5fa",
+      "image_ids": [
+        "5c8ea425-e150-4c3e-8044-19cb9363d02e"
+      ]
+    },
+    {
+      "notion_id": "27b0221954bc8295b4c301e3fbd4b803",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-8 상점상세 가게정보 카트 클릭",
+      "path": "event-log/05-미래의-주변상점-레거시/3-8-상점상세-가게정보-카트-클릭.md",
+      "notion_url": "https://app.notion.com/p/27b0221954bc8295b4c301e3fbd4b803",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.921Z",
+      "source_body_sha256": "f61cffc56628893b3dc6c70314151355734e1b484af6b93d4c6da01dd44d9227",
+      "output_sha256": "8ec60ce9fc327adf1f40624b1ecd990b1a380c8e314c995ec1d29d3c828565d6",
+      "image_ids": [
+        "5fbf2da6-a6fe-48bc-820c-5ce6aae97152"
+      ]
+    },
+    {
+      "notion_id": "5b30221954bc826096d28198237425ea",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "3-9-1, 3-9-2 메뉴 선택 후 뒤로 가기",
+      "path": "event-log/05-미래의-주변상점-레거시/3-9-1,-3-9-2-메뉴-선택-후-뒤로-가기.md",
+      "notion_url": "https://app.notion.com/p/5b30221954bc826096d28198237425ea",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.002Z",
+      "source_body_sha256": "5edf03c81ab4b1f95b85ca27a635c9bb23de737a4ed795ae060cfe0cef8ccd9b",
+      "output_sha256": "0d32dccc0e5ec328699b718ff5a4b91fe383297865aebb046b0e23d1ae260566",
+      "image_ids": [
+        "c453af62-e732-40f5-b807-638cf1d931de"
+      ]
+    },
+    {
+      "notion_id": "1570221954bc82f6b35881982f11f1b1",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "4-1 전화 주문 혜택 클릭 (메인 페이지)",
+      "path": "event-log/05-미래의-주변상점-레거시/4-1-전화-주문-혜택-클릭-(메인-페이지).md",
+      "notion_url": "https://app.notion.com/p/1570221954bc82f6b35881982f11f1b1",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:17.074Z",
+      "source_body_sha256": "badb32f377742d07b674d2b0a297d7cea48667e88dafbf7c329c71f2e5d0d53c",
+      "output_sha256": "34394e83fd803d950c830e824c8d0be8484e8caa095526e13c56b89a4268d608",
+      "image_ids": [
+        "e8a27d5e-a721-4f19-ba9f-82255a52e054"
+      ]
+    },
+    {
+      "notion_id": "fce0221954bc832bbcb9012c9a587eba",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "4-2 전화 주문 혜택 페이지 버튼 → 버튼 ",
+      "path": "event-log/05-미래의-주변상점-레거시/4-2-전화-주문-혜택-페이지-버튼-→-버튼.md",
+      "notion_url": "https://app.notion.com/p/fce0221954bc832bbcb9012c9a587eba",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:16.407Z",
+      "source_body_sha256": "a4f4a5986f32f4acbd0430b4be983644c5f1370c8600893b1c646d23460ba450",
+      "output_sha256": "2d0264fde7f459dd994c478b637692a6f4a8cae9f7a09c8a151b69437afce2ad",
+      "image_ids": [
+        "a912b803-fb91-42bd-a8f5-5ce2312560f9"
+      ]
+    },
+    {
+      "notion_id": "fe30221954bc821eb67001b9ed75e429",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "4-3 카테고리에서 혜택페이지(클릭) ",
+      "path": "event-log/05-미래의-주변상점-레거시/4-3-카테고리에서-혜택페이지(클릭).md",
+      "notion_url": "https://app.notion.com/p/fe30221954bc821eb67001b9ed75e429",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:16.481Z",
+      "source_body_sha256": "03420b8af02024776083753b6ffdf43e91dad4af2e14ea26c5b0053037850121",
+      "output_sha256": "e21ae61cb8c43373024dc4358484b24462660171499329f8c8a00d533968b2f7",
+      "image_ids": [
+        "cac470c3-4aae-4736-858d-57a2a7f9e08b"
+      ]
+    },
+    {
+      "notion_id": "2f20221954bc827d8d7e81d0ac3602e1",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "4-4 전화 주문 혜택 상점상세 페이지(클릭)",
+      "path": "event-log/05-미래의-주변상점-레거시/4-4-전화-주문-혜택-상점상세-페이지(클릭).md",
+      "notion_url": "https://app.notion.com/p/2f20221954bc827d8d7e81d0ac3602e1",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:16.556Z",
+      "source_body_sha256": "7426951032e796bc818e21a550a4322c7c563c9609870d9e06022ffdb59a8a14",
+      "output_sha256": "b955438b8c7b9186e2fcd06d1a419680950c87b5bce071b347e87b9c875777fb",
+      "image_ids": []
+    },
+    {
+      "notion_id": "62e0221954bc82ea908f01d75e6836e6",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "4-5 전화 주문 혜택 상점상세 전화 (클릭) ",
+      "path": "event-log/05-미래의-주변상점-레거시/4-5-전화-주문-혜택-상점상세-전화-(클릭).md",
+      "notion_url": "https://app.notion.com/p/62e0221954bc82ea908f01d75e6836e6",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:16.628Z",
+      "source_body_sha256": "6353417c9d10bbefcdbf6a52fd08e3b584fb09d5f28830f161284f172fc17b86",
+      "output_sha256": "4bff5f4accea0ba3dda72a4e8d19689e9976f8bd7111b6e6e89b9deacb2c958d",
+      "image_ids": []
+    },
+    {
+      "notion_id": "bc30221954bc82168e5b01cd5b2f5fb1",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "5-1 상점상세 리뷰 (클릭) ",
+      "path": "event-log/05-미래의-주변상점-레거시/5-1-상점상세-리뷰-(클릭).md",
+      "notion_url": "https://app.notion.com/p/bc30221954bc82168e5b01cd5b2f5fb1",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.707Z",
+      "source_body_sha256": "3f2427d4ccc0f8d809eb19d663e772854223ec2bea1e7004e980e259d89e61ad",
+      "output_sha256": "d131fdf5c7dd490a53773782e113dc4f941b21fec1465f30458384cc7c4ee25d",
+      "image_ids": [
+        "aea2be2a-30bf-4d02-9595-0de3cf9c219a"
+      ]
+    },
+    {
+      "notion_id": "0c20221954bc83459b3301984cd87745",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "5-2 상점상세 리뷰 (스크롤) ",
+      "path": "event-log/05-미래의-주변상점-레거시/5-2-상점상세-리뷰-(스크롤).md",
+      "notion_url": "https://app.notion.com/p/0c20221954bc83459b3301984cd87745",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.782Z",
+      "source_body_sha256": "b77243681a05fa7db70e89b0f53b7b164fe91195e513f6435510b60c586cf281",
+      "output_sha256": "c53c6cef2b8085d3ef0214fe858ea6ce4b60826d886891a19fcafa264c5abdad",
+      "image_ids": []
+    },
+    {
+      "notion_id": "0730221954bc834b8e82818e0e27cd86",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "5-3 상점상세 리뷰 작성 들어간 후 작성하기 (클릭)  ",
+      "path": "event-log/05-미래의-주변상점-레거시/5-3-상점상세-리뷰-작성-들어간-후-작성하기-(클릭).md",
+      "notion_url": "https://app.notion.com/p/0730221954bc834b8e82818e0e27cd86",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.852Z",
+      "source_body_sha256": "3e8e25bcb50ec44d01b142a3e5de29de4533b9d5151d12294bb93ec07de784ab",
+      "output_sha256": "113a47693cacd0bcebbfc39cf3e49d6d8e4ce27623e9d6345f063a276133928a",
+      "image_ids": [
+        "477b98a4-270d-422d-a810-cd0a08cf4d3d"
+      ]
+    },
+    {
+      "notion_id": "3b70221954bc82ae83d281c8996af1a6",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "5-4 상점상세 리뷰 신고 (클릭) ",
+      "path": "event-log/05-미래의-주변상점-레거시/5-4-상점상세-리뷰-신고-(클릭).md",
+      "notion_url": "https://app.notion.com/p/3b70221954bc82ae83d281c8996af1a6",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.412Z",
+      "source_body_sha256": "ae3a1805195d251ac78ef5d3d55ac2085988f75e64d8b840091c7f855c514cc0",
+      "output_sha256": "0b3ae5215a8f85fbd00cda030d6e9a3bd7424baf6407abd367120b9de5f3a1e5",
+      "image_ids": [
+        "ba8b4a51-a83e-44d9-b816-fbdaad47a17e"
+      ]
+    },
+    {
+      "notion_id": "3140221954bc8275995c01402a49717b",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "5-5 상점상세 리뷰 탭 탈출 ",
+      "path": "event-log/05-미래의-주변상점-레거시/5-5-상점상세-리뷰-탭-탈출.md",
+      "notion_url": "https://app.notion.com/p/3140221954bc8275995c01402a49717b",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.511Z",
+      "source_body_sha256": "bb45535b9b2f4eb122b3a3413759700af09504e5f4df67a542562bd01ed0e33b",
+      "output_sha256": "d55f6eef5479e5916742fc48cef70dc22523cf3a2ea26f035cdcbb97dd5f3c2c",
+      "image_ids": []
+    },
+    {
+      "notion_id": "bc70221954bc8236b60201eaf28091a2",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "5-6 상점상세 리뷰 삭제하기  (클릭) ",
+      "path": "event-log/05-미래의-주변상점-레거시/5-6-상점상세-리뷰-삭제하기-(클릭).md",
+      "notion_url": "https://app.notion.com/p/bc70221954bc8236b60201eaf28091a2",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.584Z",
+      "source_body_sha256": "d14803daf767b06e1e666de42537091fa7b520701c6252fc0fe651e84bbee6ad",
+      "output_sha256": "0c4a7608470cfb499ff72a785701bbe12e07d05b9338fdaddfecca1b6bd856ec",
+      "image_ids": []
+    },
+    {
+      "notion_id": "efd0221954bc833094d6010a964dd6ed",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "5-7 상점상세 리뷰 최종삭제하기  (클릭) ",
+      "path": "event-log/05-미래의-주변상점-레거시/5-7-상점상세-리뷰-최종삭제하기-(클릭).md",
+      "notion_url": "https://app.notion.com/p/efd0221954bc833094d6010a964dd6ed",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.678Z",
+      "source_body_sha256": "2ed0e7d128a1e4d3264bedfa5af15d329abb645c8b81adf7bf11661d6789b80a",
+      "output_sha256": "28a4e75a9edcc2a72318cd10c231076c2b30513431439a1c719958f32b02d4a2",
+      "image_ids": []
+    },
+    {
+      "notion_id": "8520221954bc83c1913c81a365c49a79",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "5-8 상점상세 리뷰 정렬",
+      "path": "event-log/05-미래의-주변상점-레거시/5-8-상점상세-리뷰-정렬.md",
+      "notion_url": "https://app.notion.com/p/8520221954bc83c1913c81a365c49a79",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.794Z",
+      "source_body_sha256": "32546e8d80db3c11f6a93d7ec18eb83c12055e3d90edc84766d31e62d0286530",
+      "output_sha256": "3c1386e8e48b300559fd27bb106df7f047458c7a72c2314cb262205c1b6e2afa",
+      "image_ids": [
+        "bc057465-41ed-4c7a-915e-6e6cc9b3bbaa",
+        "4423a5d9-19e5-4229-9c85-9d5cc4970b3b"
+      ]
+    },
+    {
+      "notion_id": "8320221954bc826cbbed01e1e9d05795",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "6-1 장바구니 진입 후 뒤로가기",
+      "path": "event-log/05-미래의-주변상점-레거시/6-1-장바구니-진입-후-뒤로가기.md",
+      "notion_url": "https://app.notion.com/p/8320221954bc826cbbed01e1e9d05795",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.875Z",
+      "source_body_sha256": "916106654ab271860e96f6f72a30ebfdd783105031aa5be4534340de8a35b116",
+      "output_sha256": "2866618aee4ecad1b8ca5ed71c77dadb2a84630705840aea637014f50d96a705",
+      "image_ids": [
+        "41dbcb6e-b0c9-488c-8e13-f2eece30a11f"
+      ]
+    },
+    {
+      "notion_id": "e470221954bc82699985011a6f4bec02",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "6-10 장바구니 더 담으러가기 ",
+      "path": "event-log/05-미래의-주변상점-레거시/6-10-장바구니-더-담으러가기.md",
+      "notion_url": "https://app.notion.com/p/e470221954bc82699985011a6f4bec02",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.965Z",
+      "source_body_sha256": "6f5e31e810a400e6bdac76ae1154aa51d47d5fe22c4036d8f6920d8f9d35b520",
+      "output_sha256": "52bdbda004777e3e82046c663319154770fc63f67b7d0fce5bb6a25d4c009d62",
+      "image_ids": [
+        "d935b668-c605-4ae0-bace-b4f26f240068"
+      ]
+    },
+    {
+      "notion_id": "acc0221954bc838aab87814945917c5b",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "6-11 장바구니 주문하기 ",
+      "path": "event-log/05-미래의-주변상점-레거시/6-11-장바구니-주문하기.md",
+      "notion_url": "https://app.notion.com/p/acc0221954bc838aab87814945917c5b",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.033Z",
+      "source_body_sha256": "fa56401eceabf9ce4b9c401c3218bdf9ce5be1ca2e1e76744c9c3d287a9b38fc",
+      "output_sha256": "cd3bf3ed9007522f2906b67bf806a6e66b86aa6d2045d8b230f243039d6e356d",
+      "image_ids": [
+        "d935b668-c605-4ae0-bace-b4f26f240068"
+      ]
+    },
+    {
+      "notion_id": "f170221954bc833a9b6a01ac037b0b81",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "6-12 장바구니 주문하기 실패",
+      "path": "event-log/05-미래의-주변상점-레거시/6-12-장바구니-주문하기-실패.md",
+      "notion_url": "https://app.notion.com/p/f170221954bc833a9b6a01ac037b0b81",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.096Z",
+      "source_body_sha256": "67edc38caa32b910ff309b314ef05e263ab32cb7cfda9f4a87b24a2aced7c3f5",
+      "output_sha256": "ca9a8136c2fb2ea23903cc981f9da6701b20618f3869100adc8a30c1dcfd685a",
+      "image_ids": [
+        "ac5389de-7d6c-42fd-a44b-b00c89a7b071"
+      ]
+    },
+    {
+      "notion_id": "1700221954bc820a82eb0139f8523390",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "6-13 장바구니 비로그인 모달",
+      "path": "event-log/05-미래의-주변상점-레거시/6-13-장바구니-비로그인-모달.md",
+      "notion_url": "https://app.notion.com/p/1700221954bc820a82eb0139f8523390",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.155Z",
+      "source_body_sha256": "66cd81b941f2e03b049219c50589c6d43bfbaa31bfd2d79dffab49c3bec36812",
+      "output_sha256": "14a93c9350824ebb848e391eaedc24ff7519c07b7f682abdf990689ffa0f3af3",
+      "image_ids": [
+        "49931c81-27ac-4ec4-9cc8-e0dd24222b24"
+      ]
+    },
+    {
+      "notion_id": "c920221954bc831889d801f74a74cc4d",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "6-2 장바구니 삭제 ",
+      "path": "event-log/05-미래의-주변상점-레거시/6-2-장바구니-삭제.md",
+      "notion_url": "https://app.notion.com/p/c920221954bc831889d801f74a74cc4d",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:16.948Z",
+      "source_body_sha256": "5ff1d1b00743acdd716a6677593827b82e5fcc111af08396abe38561625c62ba",
+      "output_sha256": "1846d023121093e875bc7a896d547a7c08898dcc6c4f3a8bfd4306533c10b257",
+      "image_ids": [
+        "3748ee95-1320-4996-a4c1-90c62d54e7bb"
+      ]
+    },
+    {
+      "notion_id": "6ba0221954bc83feac0301797d116182",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "6-3 빈 장바구니 메뉴 추가",
+      "path": "event-log/05-미래의-주변상점-레거시/6-3-빈-장바구니-메뉴-추가.md",
+      "notion_url": "https://app.notion.com/p/6ba0221954bc83feac0301797d116182",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.019Z",
+      "source_body_sha256": "7c33c24c92a76e466dcf3fb37614d117f00b35e23c5ed05a2c91894d1c318926",
+      "output_sha256": "007cc65ca2d2a5ae3ca13b6773801bca8abc2587b12bf549dbc1ca59439c66b8",
+      "image_ids": [
+        "3748ee95-1320-4996-a4c1-90c62d54e7bb"
+      ]
+    },
+    {
+      "notion_id": "1480221954bc820cb47701a5664d66fd",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "6-4 장바구니 배달 여부 선택",
+      "path": "event-log/05-미래의-주변상점-레거시/6-4-장바구니-배달-여부-선택.md",
+      "notion_url": "https://app.notion.com/p/1480221954bc820cb47701a5664d66fd",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.100Z",
+      "source_body_sha256": "351f0231973c3389c81981b6f0f7c5e1f00de5de3b788d2ad294db39fb1c3ae8",
+      "output_sha256": "4d176bd38393c13e8ae6c06c12e20c51cd5229b81b5beb5d8ce4dabf4ec7df7e",
+      "image_ids": [
+        "bcb6c8bf-e7ea-4b64-b4a9-b51ef871fd4b"
+      ]
+    },
+    {
+      "notion_id": "0500221954bc822ab738810780c45449",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "6-5 장바구니 포장 여부 선택",
+      "path": "event-log/05-미래의-주변상점-레거시/6-5-장바구니-포장-여부-선택.md",
+      "notion_url": "https://app.notion.com/p/0500221954bc822ab738810780c45449",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.295Z",
+      "source_body_sha256": "3df608897a8cb370c4d76c3f67e6b6303f95c024e71c7ef7bafb92d317c63adc",
+      "output_sha256": "09ff8f2dae94b77e8debf322228dcb124d5f396e408ca584d555b7f676489f38",
+      "image_ids": [
+        "bcb6c8bf-e7ea-4b64-b4a9-b51ef871fd4b"
+      ]
+    },
+    {
+      "notion_id": "4150221954bc82cb8dab81afd4397c01",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "6-6 장바구니 상점 클릭",
+      "path": "event-log/05-미래의-주변상점-레거시/6-6-장바구니-상점-클릭.md",
+      "notion_url": "https://app.notion.com/p/4150221954bc82cb8dab81afd4397c01",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.617Z",
+      "source_body_sha256": "7c207d97764ba9ed4a509cfaf4b49e8fe83b8231b80118c9206ad67b7b551f39",
+      "output_sha256": "615e0856e79e0b65cab34e6290a449591815dc4858976cc9d0361a2f2e8d11a2",
+      "image_ids": [
+        "bcb6c8bf-e7ea-4b64-b4a9-b51ef871fd4b"
+      ]
+    },
+    {
+      "notion_id": "e690221954bc8293a54b81b5dab2fb69",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "6-7 장바구니 옵션 변경",
+      "path": "event-log/05-미래의-주변상점-레거시/6-7-장바구니-옵션-변경.md",
+      "notion_url": "https://app.notion.com/p/e690221954bc8293a54b81b5dab2fb69",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.704Z",
+      "source_body_sha256": "27f5e1faef957fb0043167aeaea21ee7a867e57cc71682e750d6a918efeb1ae4",
+      "output_sha256": "710315e736d3d9c6050928f5a5ac2179e82097987b472a77195f132a8fa3e265",
+      "image_ids": [
+        "bcb6c8bf-e7ea-4b64-b4a9-b51ef871fd4b"
+      ]
+    },
+    {
+      "notion_id": "a3a0221954bc83f7a16181340b1fea42",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "6-8 장바구니 메뉴 수량 추가 ",
+      "path": "event-log/05-미래의-주변상점-레거시/6-8-장바구니-메뉴-수량-추가.md",
+      "notion_url": "https://app.notion.com/p/a3a0221954bc83f7a16181340b1fea42",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.782Z",
+      "source_body_sha256": "56bef2f112792fdce204386a8b11ac916cf4cf26db43267edd948029c8744d5e",
+      "output_sha256": "35e6764528ef6920f1ee4ddfafb93e96fc55113cca6a86f8e3c5a53eebb5ae1a",
+      "image_ids": [
+        "bcb6c8bf-e7ea-4b64-b4a9-b51ef871fd4b"
+      ]
+    },
+    {
+      "notion_id": "0d80221954bc82c0a73a8184b61fbe3d",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "6-9 장바구니 메뉴 수량 감소",
+      "path": "event-log/05-미래의-주변상점-레거시/6-9-장바구니-메뉴-수량-감소.md",
+      "notion_url": "https://app.notion.com/p/0d80221954bc82c0a73a8184b61fbe3d",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.871Z",
+      "source_body_sha256": "549d1d5e50d3d963ffd9821293c818626dbbf47d27731bfc75ab41edb485e0ef",
+      "output_sha256": "ea4116965c10a74308afd11fc4a5724ff8cd236d41f0bf2152311bd01e254a77",
+      "image_ids": [
+        "bcb6c8bf-e7ea-4b64-b4a9-b51ef871fd4b"
+      ]
+    },
+    {
+      "notion_id": "1880221954bc8203b5b901d89fcb7e8d",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-1 결제 페이지 이탈",
+      "path": "event-log/05-미래의-주변상점-레거시/7-1-결제-페이지-이탈.md",
+      "notion_url": "https://app.notion.com/p/1880221954bc8203b5b901d89fcb7e8d",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.483Z",
+      "source_body_sha256": "868ef011e291197eff22ac4eb7af43a7fa95232baafa8bde4bde29787438278f",
+      "output_sha256": "09429c54dc07ababd1233fe146db1899d7c955461d7b17fafe632f6f1424c93a",
+      "image_ids": []
+    },
+    {
+      "notion_id": "80d0221954bc83b6b336813201e634e1",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-10 결제 → 교외 주문 페이지 주소 선택 (6월 29일 수정)",
+      "path": "event-log/05-미래의-주변상점-레거시/7-10-결제-→-교외-주문-페이지-주소-선택-(6월-29일-수정).md",
+      "notion_url": "https://app.notion.com/p/80d0221954bc83b6b336813201e634e1",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.185Z",
+      "source_body_sha256": "573ca8ab8b563f0ed079385774eeedd4a599d8d9192b4bf14232fcb9f7867ca8",
+      "output_sha256": "02d97b79bd9c00f4155d672933cd151d46c7807ed6e43d3dcaaf29d2bbc73221",
+      "image_ids": [
+        "61e28371-deb6-46f2-b45b-c0a1157a6cb9"
+      ]
+    },
+    {
+      "notion_id": "8c40221954bc837c84fb0145a56c9689",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-11 결제 → 교외 주문 페이지 주소 재설정",
+      "path": "event-log/05-미래의-주변상점-레거시/7-11-결제-→-교외-주문-페이지-주소-재설정.md",
+      "notion_url": "https://app.notion.com/p/8c40221954bc837c84fb0145a56c9689",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.438Z",
+      "source_body_sha256": "68fb00dfbb9522cc8e760f13ebdabc2eb5e25e8e2d819fd79514c5690fd293d8",
+      "output_sha256": "e8b72a952eeb7714deaa6c6fac4b8ec9c1edbe99f38c68eeaab74a57f93f4462",
+      "image_ids": [
+        "fb40d456-000a-4bbf-996c-b9f012a030e3"
+      ]
+    },
+    {
+      "notion_id": "b9c0221954bc83beac62817ebe2b6255",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-12 결제 → 교외 주문 페이지 배달 불가능 지역",
+      "path": "event-log/05-미래의-주변상점-레거시/7-12-결제-→-교외-주문-페이지-배달-불가능-지역.md",
+      "notion_url": "https://app.notion.com/p/b9c0221954bc83beac62817ebe2b6255",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.498Z",
+      "source_body_sha256": "ad16dc0d1be81469ea7b9db1c24121e8d5c03185507479df1f1c3ac82169bb05",
+      "output_sha256": "4b2ffdfcdb1ac54ed7fb2d65a3f73f8a3f93096af2e668e9125d6b7b2dfa5d78",
+      "image_ids": [
+        "d6bd19d7-2fa5-4bd1-9311-2f11f8af51ab"
+      ]
+    },
+    {
+      "notion_id": "b0e0221954bc832a8247810a1ff675d4",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-13 결제 → 교내 및 교외 주문 페이지 기사님 요청사항",
+      "path": "event-log/05-미래의-주변상점-레거시/7-13-결제-→-교내-및-교외-주문-페이지-기사님-요청사항.md",
+      "notion_url": "https://app.notion.com/p/b0e0221954bc832a8247810a1ff675d4",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.572Z",
+      "source_body_sha256": "fecbced7b73623ecb8af77747c19ada6c187048b32c5337fc740d6b809203142",
+      "output_sha256": "6346086dc1e5bd8f9cf1a2b4efaaffce42caf2e9f12d432be598690957cf9dc9",
+      "image_ids": [
+        "344bc104-6591-4e38-b814-f31928d3573e"
+      ]
+    },
+    {
+      "notion_id": "c660221954bc8256b641019633f7cf75",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-14 결제 → 교내 및 교외 주문 페이지 주소 선택",
+      "path": "event-log/05-미래의-주변상점-레거시/7-14-결제-→-교내-및-교외-주문-페이지-주소-선택.md",
+      "notion_url": "https://app.notion.com/p/c660221954bc8256b641019633f7cf75",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.635Z",
+      "source_body_sha256": "e01929e26f3bbe6ece885aaace47dc27677d3ff2d447539f4a28d1d46ad7d356",
+      "output_sha256": "e1e9715e4cf012f3f2e9239992412b2197e74e59b21f977d8439ec2e641e3ea7",
+      "image_ids": [
+        "b88b06d5-b996-4a11-8fac-200482df2731"
+      ]
+    },
+    {
+      "notion_id": "9050221954bc836c95d48194cab36b2d",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-15 결제 페이지 가게 요청사항 클릭",
+      "path": "event-log/05-미래의-주변상점-레거시/7-15-결제-페이지-가게-요청사항-클릭.md",
+      "notion_url": "https://app.notion.com/p/9050221954bc836c95d48194cab36b2d",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.717Z",
+      "source_body_sha256": "79b5a8ec7316fb25b44b378d58fe2ad6eb42855ba3ad76f12537d0d224f959ba",
+      "output_sha256": "945cadb3f155c37626e530221c6691b8ced91b4c24c767687aa2f6f4aa87bbcd",
+      "image_ids": [
+        "97913084-f3a9-40ac-9662-f2dbab64abb9"
+      ]
+    },
+    {
+      "notion_id": "87c0221954bc82338b520109a5e16358",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-16 결제 페이지 가게 요청사항 설정",
+      "path": "event-log/05-미래의-주변상점-레거시/7-16-결제-페이지-가게-요청사항-설정.md",
+      "notion_url": "https://app.notion.com/p/87c0221954bc82338b520109a5e16358",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.799Z",
+      "source_body_sha256": "eaea3b8f8f954e203f385d0bbc4827be8f538be4aaf2e52086df37127934ead8",
+      "output_sha256": "90f301e3ccc4d2cdc39b8ab3e89617e151c7002c6919775325065af8385c3fca",
+      "image_ids": [
+        "97913084-f3a9-40ac-9662-f2dbab64abb9",
+        "cda48419-f2a8-4481-9b47-66683bc70a1e"
+      ]
+    },
+    {
+      "notion_id": "3ad0221954bc82609471813d5f44d55b",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-17 결제 페이지 결제 실패 (교외만 배달 가능, 6월 29일 수정)",
+      "path": "event-log/05-미래의-주변상점-레거시/7-17-결제-페이지-결제-실패-(교외만-배달-가능,-6월-29일-수정).md",
+      "notion_url": "https://app.notion.com/p/3ad0221954bc82609471813d5f44d55b",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.853Z",
+      "source_body_sha256": "56db093607328feadf8d8a77710bec82914a38f668d40c26b3ce5105ce0e6cff",
+      "output_sha256": "a4e3d64c5a903f4e86d4bba01775c76d3564bcfadb3ef29d109753a44e93afbd",
+      "image_ids": [
+        "6f468475-92d1-4863-a19a-a15a31cce813"
+      ]
+    },
+    {
+      "notion_id": "4640221954bc8343b6d5810eb80052f2",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-18 결제 페이지 결제 실패 (교내만 배달 가능, 6월 29일 수정)",
+      "path": "event-log/05-미래의-주변상점-레거시/7-18-결제-페이지-결제-실패-(교내만-배달-가능,-6월-29일-수정).md",
+      "notion_url": "https://app.notion.com/p/4640221954bc8343b6d5810eb80052f2",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.915Z",
+      "source_body_sha256": "e655464d9d01acb02b0b0e6eca12edfe5424666320b6e3a8b10ba6c94486c9bc",
+      "output_sha256": "5cb1460c9caff075d22777e3ad3625ffe32ffa7cea240525627873b200a2bd03",
+      "image_ids": [
+        "de2985e0-352d-4254-8562-aaf838dcd1d5"
+      ]
+    },
+    {
+      "notion_id": "18f0221954bc83ea94078136b3ff080d",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-2 결제 페이지 배달 위치 클릭",
+      "path": "event-log/05-미래의-주변상점-레거시/7-2-결제-페이지-배달-위치-클릭.md",
+      "notion_url": "https://app.notion.com/p/18f0221954bc83ea94078136b3ff080d",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.551Z",
+      "source_body_sha256": "597c5e29d3e72b2b621f88b4b466418375e61a1fc9dbbf96f2a36f3afbad028d",
+      "output_sha256": "eccc493eecf9c7d980a0ac7eb672b657a20006ed27de3ab4f39609da54ad29e5",
+      "image_ids": [
+        "8579645c-3401-400e-8dd5-1891e08e61d7"
+      ]
+    },
+    {
+      "notion_id": "e400221954bc8377968a010d01ee8e6d",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-3 결제 → 교내 주문 페이지 이탈",
+      "path": "event-log/05-미래의-주변상점-레거시/7-3-결제-→-교내-주문-페이지-이탈.md",
+      "notion_url": "https://app.notion.com/p/e400221954bc8377968a010d01ee8e6d",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.628Z",
+      "source_body_sha256": "decc4dc41767f1856d11d287392406876ee22aa9a688010fc2f9ebe56b4ef362",
+      "output_sha256": "1b7fabac10d390a2a938df297a79cd3170dd9e4bf8c253781065d026abe37d36",
+      "image_ids": [
+        "7f416517-5ba1-4682-b19d-ac29ab53ad49"
+      ]
+    },
+    {
+      "notion_id": "8a90221954bc82aba7cd81d21f35eaf5",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-4 결제 → 교내 주문 페이지 교내 주소 맵 설정",
+      "path": "event-log/05-미래의-주변상점-레거시/7-4-결제-→-교내-주문-페이지-교내-주소-맵-설정.md",
+      "notion_url": "https://app.notion.com/p/8a90221954bc82aba7cd81d21f35eaf5",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.714Z",
+      "source_body_sha256": "c7dcef51dabff80472cfb119df53253def184f4480472980affefae66aa553ad",
+      "output_sha256": "5994b5bc822ca40c8cb19e872a9f28a1e9ccabc8bdc5d851fdf784862f5e78ea",
+      "image_ids": [
+        "6d73ef60-bacc-48c7-8b40-396d7f06505a"
+      ]
+    },
+    {
+      "notion_id": "b340221954bc837e91cb010aed991236",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-5 결제 → 교내 주문 페이지 기숙사 위치 설정",
+      "path": "event-log/05-미래의-주변상점-레거시/7-5-결제-→-교내-주문-페이지-기숙사-위치-설정.md",
+      "notion_url": "https://app.notion.com/p/b340221954bc837e91cb010aed991236",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.812Z",
+      "source_body_sha256": "40afae9bb5e6d459ff5bc83e79af7348643fa7235c9bae8abf5692a799a27af8",
+      "output_sha256": "fb022cb8d6b7945c90e8abcf774eac67cfaa76d3f80bdf5877a17623ba889bbb",
+      "image_ids": [
+        "9d33d43b-3ff8-4707-b723-9e3b7b52c646",
+        "419189b9-9188-48e4-a5a1-701e28bf10ec"
+      ]
+    },
+    {
+      "notion_id": "dee0221954bc822296b981612ab09e37",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-6 결제 → 교내 주문 페이지 공학관 위치 설정",
+      "path": "event-log/05-미래의-주변상점-레거시/7-6-결제-→-교내-주문-페이지-공학관-위치-설정.md",
+      "notion_url": "https://app.notion.com/p/dee0221954bc822296b981612ab09e37",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.917Z",
+      "source_body_sha256": "ce825af8d2eb0db4c6c01c5eee41228cce4d4675a33771bc57483de006958283",
+      "output_sha256": "94836686ea967e9efd954595b0468c1c89985b9044072cb3fa44af98031a67c9",
+      "image_ids": [
+        "9d33d43b-3ff8-4707-b723-9e3b7b52c646"
+      ]
+    },
+    {
+      "notion_id": "1ab0221954bc82d3846481236db15aab",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-7 결제 → 교내 주문 페이지 기타 지역 위치 설정",
+      "path": "event-log/05-미래의-주변상점-레거시/7-7-결제-→-교내-주문-페이지-기타-지역-위치-설정.md",
+      "notion_url": "https://app.notion.com/p/1ab0221954bc82d3846481236db15aab",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:17.982Z",
+      "source_body_sha256": "63cb452ff0acc3116f8e774f5e05573d25e1f434e6fc1db82b323396f151c074",
+      "output_sha256": "2fc4bfd65bbfcb4b7b1330c2c10981624fabfde4538f6ed23eede93c68b0134d",
+      "image_ids": [
+        "9d33d43b-3ff8-4707-b723-9e3b7b52c646"
+      ]
+    },
+    {
+      "notion_id": "f670221954bc834c9b7f8186dd78339a",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-8 결제 → 교외 주문 페이지 이탈 ",
+      "path": "event-log/05-미래의-주변상점-레거시/7-8-결제-→-교외-주문-페이지-이탈.md",
+      "notion_url": "https://app.notion.com/p/f670221954bc834c9b7f8186dd78339a",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.054Z",
+      "source_body_sha256": "3b63df1d23c5fdb2c3fe498c4626f5bd8d945d818fdb84a4eecefe9c287ae41d",
+      "output_sha256": "4aef44abf1f5a9597b097dd2007c8bcb7165322f2ff6ba7e28b3f46b2f06ab7e",
+      "image_ids": [
+        "5aba979d-df87-4918-922c-fb1fb38d67cc"
+      ]
+    },
+    {
+      "notion_id": "63e0221954bc83b588b381dc4ad02bfa",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "7-9 결제 → 교외 주문 페이지 주소 검색 클릭(6월 29일 수정)",
+      "path": "event-log/05-미래의-주변상점-레거시/7-9-결제-→-교외-주문-페이지-주소-검색-클릭(6월-29일-수정).md",
+      "notion_url": "https://app.notion.com/p/63e0221954bc83b588b381dc4ad02bfa",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.118Z",
+      "source_body_sha256": "b667cc50ddd810973e277f3f18c1b89f07453101b8c540ef18b3a9e6ef61b1fc",
+      "output_sha256": "72ee98e66b3c5901c351ab67797078383a9b074432412881264b27871d957aa8",
+      "image_ids": [
+        "5aba979d-df87-4918-922c-fb1fb38d67cc"
+      ]
+    },
+    {
+      "notion_id": "e600221954bc82eca50f81c14429b9a7",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "8-1 주문 완료 페이지 이탈",
+      "path": "event-log/05-미래의-주변상점-레거시/8-1-주문-완료-페이지-이탈.md",
+      "notion_url": "https://app.notion.com/p/e600221954bc82eca50f81c14429b9a7",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.435Z",
+      "source_body_sha256": "a42fd3688762918248726fc280e9ba591c6b39bd27a45888e0fc6c2198fd9a05",
+      "output_sha256": "59e20b6a02763adc9db9c6e523a24ff9de02034425bc6fb1ff2cf93d2947943b",
+      "image_ids": [
+        "baacb062-c048-4f3d-85f1-ae4d4f94654f"
+      ]
+    },
+    {
+      "notion_id": "4420221954bc8238954a019def3168ea",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "8-2 주문 완료 페이지 주문 취소하기(6월 29일 수정)",
+      "path": "event-log/05-미래의-주변상점-레거시/8-2-주문-완료-페이지-주문-취소하기(6월-29일-수정).md",
+      "notion_url": "https://app.notion.com/p/4420221954bc8238954a019def3168ea",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.509Z",
+      "source_body_sha256": "04e1f112e7e6431db95b233023c8965e64e6fa84ffc52fbe2303f7509e806cfd",
+      "output_sha256": "b725f676d14525cbb1e5818cdb4103b4f8d0e4859951e6eb8a90e2bdc33c8be7",
+      "image_ids": [
+        "4c80ede6-1243-4cfe-8036-facaae704778",
+        "7095807c-9e93-44e5-99cd-504a90b5d5ca",
+        "8aef40ff-61ef-401c-9b93-fe6db47c58db"
+      ]
+    },
+    {
+      "notion_id": "0250221954bc832b89a781263611ba29",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "8-3 주문 완료 페이지 배달 완료",
+      "path": "event-log/05-미래의-주변상점-레거시/8-3-주문-완료-페이지-배달-완료.md",
+      "notion_url": "https://app.notion.com/p/0250221954bc832b89a781263611ba29",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.574Z",
+      "source_body_sha256": "79b519701ef140a8a0ab7abd979d63111caa609041d33b378e0ab6c8fac9d53a",
+      "output_sha256": "38abb4dcc80f25e95333af79fb822a1e9ed64703be09a60c30745863df8b32a8",
+      "image_ids": [
+        "d39832f8-5ed5-4745-8bed-af2fc313cb7a"
+      ]
+    },
+    {
+      "notion_id": "8ac0221954bc822d9654012f7b14a5b1",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "8-4 주문 완료 페이지 배달 미도착 이탈",
+      "path": "event-log/05-미래의-주변상점-레거시/8-4-주문-완료-페이지-배달-미도착-이탈.md",
+      "notion_url": "https://app.notion.com/p/8ac0221954bc822d9654012f7b14a5b1",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.670Z",
+      "source_body_sha256": "af98e9b42d5cbc63e63c900721d2f89b0e404c3216670849cd11d2309d58262d",
+      "output_sha256": "1c7791e1543b3085d14604664b471f6e73a4b673d056c22e69bfe5c71011c68d",
+      "image_ids": [
+        "d39832f8-5ed5-4745-8bed-af2fc313cb7a",
+        "69ee3d1d-70b0-4ac1-af6b-1602e4f0637a"
+      ]
+    },
+    {
+      "notion_id": "5c40221954bc83b9bbbf0104eb954075",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "8-5 주문 완료 페이지 배달 미도착 전화",
+      "path": "event-log/05-미래의-주변상점-레거시/8-5-주문-완료-페이지-배달-미도착-전화.md",
+      "notion_url": "https://app.notion.com/p/5c40221954bc83b9bbbf0104eb954075",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.747Z",
+      "source_body_sha256": "af972ba6dd35b84bb621865ad8cdfc76b3b247f19e5823c2297dfa5ce4ee4d1d",
+      "output_sha256": "a023d54e6b8b4f0c65620d7330b473da155f517c2583d6f1835129c8dbdfaefc",
+      "image_ids": [
+        "d39832f8-5ed5-4745-8bed-af2fc313cb7a",
+        "69ee3d1d-70b0-4ac1-af6b-1602e4f0637a"
+      ]
+    },
+    {
+      "notion_id": "3770221954bc8219a49a81d33fbca058",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "9-1 주문내역 상단 탭",
+      "path": "event-log/05-미래의-주변상점-레거시/9-1-주문내역-상단-탭.md",
+      "notion_url": "https://app.notion.com/p/3770221954bc8219a49a81d33fbca058",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.819Z",
+      "source_body_sha256": "ac52d7f36e4815b3962f46d0b47dcffeebbbb7b6cd3a51a577578d6ccb5a62e8",
+      "output_sha256": "30ae4634670cfa474b881a4f9bca6bdfb4d23870a55ffe22a86b5662ac6a18b4",
+      "image_ids": [
+        "53009e69-4fc9-46b6-919b-d0560ea7c78a"
+      ]
+    },
+    {
+      "notion_id": "9ed0221954bc820cb15281b00c8b57eb",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "9-10 주문내역 이탈",
+      "path": "event-log/05-미래의-주변상점-레거시/9-10-주문내역-이탈.md",
+      "notion_url": "https://app.notion.com/p/9ed0221954bc820cb15281b00c8b57eb",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:20.315Z",
+      "source_body_sha256": "88bd9656088c1a3000ee2ace7053ace63f25bdcbe84865023417cdfa8955e725",
+      "output_sha256": "d5eaa730503055c2dbfa98a01961fd6b732c55b1cbf6768a56de8d46298cd92d",
+      "image_ids": []
+    },
+    {
+      "notion_id": "3190221954bc832ba4a1017e066e774d",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "9-2 주문내역 검색",
+      "path": "event-log/05-미래의-주변상점-레거시/9-2-주문내역-검색.md",
+      "notion_url": "https://app.notion.com/p/3190221954bc832ba4a1017e066e774d",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.881Z",
+      "source_body_sha256": "4e0ec136bda6ff9dc3d1a1d59adb3e9e15a10acdc7b0216881d4b3367b3595ce",
+      "output_sha256": "bd3f4a29ac9c7ae98be9290741d7db8708f6da54192ab5559f28ecf5d25634cc",
+      "image_ids": []
+    },
+    {
+      "notion_id": "f400221954bc831aa44e8128afeea811",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "9-3 주문내역 검색창 리뷰쓰기",
+      "path": "event-log/05-미래의-주변상점-레거시/9-3-주문내역-검색창-리뷰쓰기.md",
+      "notion_url": "https://app.notion.com/p/f400221954bc831aa44e8128afeea811",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:18.945Z",
+      "source_body_sha256": "9327c5000fc07705ff6eef6ddbb867efce0a62c9da5accb093e0e1c7320fd48e",
+      "output_sha256": "5ff043a319bd6f1261cad7ca077b82684d84e11dedb17eff47f8694861783d78",
+      "image_ids": [
+        "2fc76aea-3913-4910-b017-863e0cd903f1"
+      ]
+    },
+    {
+      "notion_id": "72e0221954bc8363862181c9cdc03089",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "9-4 주문내역 검색창 같은 메뉴 담기",
+      "path": "event-log/05-미래의-주변상점-레거시/9-4-주문내역-검색창-같은-메뉴-담기.md",
+      "notion_url": "https://app.notion.com/p/72e0221954bc8363862181c9cdc03089",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:20.099Z",
+      "source_body_sha256": "607e11c488fd9946a6828fd0b9cfe4de34cf58c795973de52205662a98102693",
+      "output_sha256": "bb500d9c72befb8ab013d593aaacc7a8100070f1e6a0a1beb1710f6fd50851e6",
+      "image_ids": [
+        "560a523f-0985-413d-9950-b57e3c2aab77"
+      ]
+    },
+    {
+      "notion_id": "50e0221954bc821eab8b01abc0221588",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "9-5 주문내역 필터 적용하기",
+      "path": "event-log/05-미래의-주변상점-레거시/9-5-주문내역-필터-적용하기.md",
+      "notion_url": "https://app.notion.com/p/50e0221954bc821eab8b01abc0221588",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:20.225Z",
+      "source_body_sha256": "e4c849b622e0b0f60ea09d0a521ce642e24cfce41aa6674446d3f71c400949f8",
+      "output_sha256": "9bd2ef7212c407f985d6cce75f090ae2e352c6b59ecf74a3ef234f4ecd807304",
+      "image_ids": [
+        "c403bc56-7dcc-4fbe-a006-505c1b00cea2"
+      ]
+    },
+    {
+      "notion_id": "5340221954bc823fbc280194bf4206db",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "9-6 주문내역 리뷰쓰기",
+      "path": "event-log/05-미래의-주변상점-레거시/9-6-주문내역-리뷰쓰기.md",
+      "notion_url": "https://app.notion.com/p/5340221954bc823fbc280194bf4206db",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:19.753Z",
+      "source_body_sha256": "27b9851e245e7419c8f9b278f5211216fe218256102e24cdc44edca099d60da9",
+      "output_sha256": "7b97110c8b5215b3d5db08faf2566f8383a8dc429e53e353203596a112b0f20b",
+      "image_ids": [
+        "a64ea47a-5e45-4425-a61a-850a234d240c"
+      ]
+    },
+    {
+      "notion_id": "90d0221954bc8277a0f3816cab2ede4e",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "9-7 주문내역 같은 메뉴 담기",
+      "path": "event-log/05-미래의-주변상점-레거시/9-7-주문내역-같은-메뉴-담기.md",
+      "notion_url": "https://app.notion.com/p/90d0221954bc8277a0f3816cab2ede4e",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:19.901Z",
+      "source_body_sha256": "328199c0e1ff2022ac2d23f97d0c2cd554af2401b70213e969a5aedc1a4d7a67",
+      "output_sha256": "6c719c621ce7518eb1baec1c16c7ba098784c7d9a01533668c0b7931a3f14a8a",
+      "image_ids": [
+        "0be36757-2400-4450-bdea-bac50be0d2b7"
+      ]
+    },
+    {
+      "notion_id": "0890221954bc83af95af01a733bfd2f4",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "9-8 주문내역 준비 중 주문 상세보기 ",
+      "path": "event-log/05-미래의-주변상점-레거시/9-8-주문내역-준비-중-주문-상세보기.md",
+      "notion_url": "https://app.notion.com/p/0890221954bc83af95af01a733bfd2f4",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:20.045Z",
+      "source_body_sha256": "d43d4883d458241076d0bf85e2e8db965570e6e86461163976cd2cfd91edffa0",
+      "output_sha256": "b62cccf0f75dab1370e5567d0516d0e7e6973f04d52b0a4eea62f1334dfad1f7",
+      "image_ids": [
+        "42c6eae7-afc4-45ab-89c6-80a9304d8ee4"
+      ]
+    },
+    {
+      "notion_id": "de10221954bc82a694eb0193a4bf7c07",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "9-9 주문내역 장바구니 진입",
+      "path": "event-log/05-미래의-주변상점-레거시/9-9-주문내역-장바구니-진입.md",
+      "notion_url": "https://app.notion.com/p/de10221954bc82a694eb0193a4bf7c07",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:20.146Z",
+      "source_body_sha256": "7b2523db5b5fda41b3fa21ac7f22725ba470933a29e62a44e9c1d7510a25cd9c",
+      "output_sha256": "4eaa6b3d27f4620d2e7c3d4d144ba69f51f7f95ddbd2e670280bf4acc0d2498a",
+      "image_ids": [
+        "0df6b6ec-3e17-4ed3-a4a4-7f75e70fa078"
+      ]
+    },
+    {
+      "notion_id": "4030221954bc8390a35281f0c4b348b1",
+      "service": "미래의 주변상점 - 레거시",
+      "title": "해결 (1)",
+      "path": "event-log/05-미래의-주변상점-레거시/해결-(1)-fb602219.md",
+      "notion_url": "https://app.notion.com/p/4030221954bc8390a35281f0c4b348b1",
+      "platforms": [],
+      "status": null,
+      "source_last_edited_at": "2026-11-23T13:39:17.547Z",
+      "source_body_sha256": "46f6cdd4ca16b21becf8200060a73315d522c738084ad2d3f7b2e8e7c2d6c5cc",
+      "output_sha256": "383d21c064cd2ed6c31609e5bc1b41837bdc21b0cda2bd2d3664ff6844f28f10",
+      "image_ids": [
+        "7ab8e130-5a21-4e20-a52d-742225bb8610",
+        "228dc1c2-9830-46df-b0f6-b79ecace91df"
+      ]
+    }
+  ],
+  "blank_pages": [
+    {
+      "notion_id": "1d40221954bc83e3bf25817045b9a75e",
+      "title": "7-30 ~ 결제 수단 (확정 시 명세)",
+      "service": "미래의 주변상점 - 레거시",
+      "url": "https://app.notion.com/p/1d40221954bc83e3bf25817045b9a75e"
+    },
+    {
+      "notion_id": "9150221954bc82c1926201a3dde71a4d",
+      "title": "7-31 ~  결제 페이지 동의 클릭  (동의 페이지 확정시 명세)",
+      "service": "미래의 주변상점 - 레거시",
+      "url": "https://app.notion.com/p/9150221954bc82c1926201a3dde71a4d"
+    },
+    {
+      "notion_id": "37c0221954bc82e7a49601a906330dc8",
+      "title": "새 페이지",
+      "service": "미래의 주변상점 - 레거시",
+      "url": "https://app.notion.com/p/37c0221954bc82e7a49601a906330dc8"
+    },
+    {
+      "notion_id": "fd40221954bc82efa9c481378146ad70",
+      "title": "새 페이지",
+      "service": "미래의 주변상점 - 레거시",
+      "url": "https://app.notion.com/p/fd40221954bc82efa9c481378146ad70"
+    },
+    {
+      "notion_id": "8440221954bc821fbbce814412789ef7",
+      "title": "새 페이지",
+      "service": "미래의 주변상점 - 레거시",
+      "url": "https://app.notion.com/p/8440221954bc821fbbce814412789ef7"
+    },
+    {
+      "notion_id": "a6f0221954bc82a5bb18818418529729",
+      "title": "새 페이지",
+      "service": "미래의 주변상점 - 레거시",
+      "url": "https://app.notion.com/p/a6f0221954bc82a5bb18818418529729"
+    },
+    {
+      "notion_id": "04f0221954bc83beabde81be25f52793",
+      "title": "새 페이지",
+      "service": "미래의 주변상점 - 레거시",
+      "url": "https://app.notion.com/p/04f0221954bc83beabde81be25f52793"
+    }
+  ]
+}

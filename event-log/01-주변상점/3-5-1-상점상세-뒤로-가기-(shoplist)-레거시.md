@@ -1,46 +1,36 @@
-# [레거시] 3-5-1 상점상세 뒤로 가기 (shoplist) - 레거시
+# 3-5-1 상점상세 뒤로 가기 (shoplist) - 레거시
 
-> **레거시 문서** · 과거 구현과 로깅을 확인하기 위한 보존 자료입니다.
+[← 주변상점 목록](README.md)
 
-[← 주변상점 로깅 목록](README.md)
+플랫폼: WEB, WEB (모바일), ANDROID, IOS  
+원문 상태: 완료  
+[Notion 기준 명세](https://app.notion.com/p/6f00221954bc83b480bc81c89b26bfb3)  
+원본 ID: `6f00221954bc83b480bc81c89b26bfb3`
 
-플랫폼: WEB · WEB (모바일) · ANDROID · IOS  
-원문 상태: 완료
-
-과거 로깅·새 로깅과 각 참고사진은 원문의 구간별 연결을 유지합니다.
-
-원문 미기재 항목: `event_name`, `screen_view`, `event_category`. 값을 추정하지 않았습니다.
-
-<!-- logging-section:past:start -->
+<!-- notion-body:start -->
 ## 과거 로깅
 
 event\_params.key
 
 - event\_label : shop\_detail\_view\_back
+- value : \{상점이름\}
+- event\_category :
 
-- value : \{상점이름\} 
-
-- event\_category : 
-
-- ShopList
-
+  - ShopList
 - current\_page : \{돌아간 카테고리\}
-
 - duration\_time : 상점 상세보기에서 카테고리로 돌아간 시간.
 
 ---
 
+ 
+
 카테고리 의미 
 
-- ‘상점목록’ 클릭으로 상점카테고리 페이지로 돌아가는 것. 
+- ‘상점목록’ 클릭으로 상점카테고리 페이지로 돌아가는 것.
 
 시간 관련 주의 사항: 
 
-<ol>
-
-- 상점 상세보기 페이지에서 어떠한 행위를 해도 상관이 없음. <br />즉 상점 상세보기를 들어온 시간부터 상점 상세보기를 떠난 시간까지 측정 
-
-</ol>
+- 상점 상세보기 페이지에서 어떠한 행위를 해도 상관이 없음. <br />즉 상점 상세보기를 들어온 시간부터 상점 상세보기를 떠난 시간까지 측정
 
 ---
 
@@ -58,16 +48,28 @@ swipe → click
 
 ---
 
-[해결 (1)](../../_archive/original/notion/pages/1610221954bc827fbbad81569041f13e.md)
-
-<!-- logging-section:past:end -->
-
----
+[해결 (1)](https://app.notion.com/p/ef30221954bc828e9dcd810b198746b6)
+<!-- notion-body:end -->
 
 <details>
-<summary>원문 정보</summary>
+<summary>Notion 원문 속성 전체</summary>
 
-원본 ID: `da60221954bc8307916e017ed74a757b`  
-[보존 원문](../../_archive/original/notion/pages/da60221954bc8307916e017ed74a757b.md)
+```json
+{
+  "platform": [
+    "WEB",
+    "WEB (모바일)",
+    "ANDROID",
+    "IOS"
+  ],
+  "url": "https://app.notion.com/p/6f00221954bc83b480bc81c89b26bfb3",
+  "상태": "완료",
+  "생성일": "2026-11-23T13:38:18.207Z",
+  "이벤트 이름": "3-5-1 상점상세 뒤로 가기 (shoplist) - 레거시",
+  "태그": [
+    "3. 상점 상세 페이지"
+  ]
+}
+```
 
 </details>

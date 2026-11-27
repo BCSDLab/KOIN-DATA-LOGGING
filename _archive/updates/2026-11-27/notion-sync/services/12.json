@@ -1,0 +1,474 @@
+{
+  "service": "로그인/회원가입/정보수정 V2",
+  "pages": [
+    {
+      "notion_id": "d980221954bc8385b3e20171cb2b9bb0",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": " 3-3 정보수정완료(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/3-3-정보수정완료(클릭).md",
+      "notion_url": "https://app.notion.com/p/d980221954bc8385b3e20171cb2b9bb0",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:58.453Z",
+      "source_body_sha256": "c1d2f3580570389691db6f10c1027569b02ea8d2c078bab62472bc4bde6c4a4d",
+      "output_sha256": "b1e97bed7497ba710365422be6440104a7e589af37b0a3ad68a65312fe42e0e6",
+      "image_ids": [
+        "476895fc-1acd-47ad-8221-c62f10d5eb6a",
+        "311ec8f0-3711-43ec-b081-87eadae2a23c",
+        "b1b7c9bd-c4fb-4a8f-b43a-e9bf40230eb0",
+        "6dd6db51-5601-4499-a4e3-9b53624bc5ba"
+      ]
+    },
+    {
+      "notion_id": "3b20221954bc8260a12f81cfd390cfc0",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": " 3-4 비밀번호수정완료(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/3-4-비밀번호수정완료(클릭).md",
+      "notion_url": "https://app.notion.com/p/3b20221954bc8260a12f81cfd390cfc0",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:58.616Z",
+      "source_body_sha256": "6abf3a096ab307e836d67ead6fb376b4438aee91f7c7691ce2b246a7bbb12f9d",
+      "output_sha256": "8bf14bcf7f69efecde5d2df9fa86a7a188cf60092c707522bf8d870f8a0fe0a3",
+      "image_ids": [
+        "476895fc-1acd-47ad-8221-c62f10d5eb6a",
+        "311ec8f0-3711-43ec-b081-87eadae2a23c",
+        "4e34c3f1-5015-46f5-b13b-e6464d3d1a20"
+      ]
+    },
+    {
+      "notion_id": "7240221954bc8230bb0201a5392a6dd8",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": " 3-4 비밀번호수정완료(클릭) ",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/3-4-비밀번호수정완료(클릭)-6ec02219.md",
+      "notion_url": "https://app.notion.com/p/7240221954bc8230bb0201a5392a6dd8",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:58.723Z",
+      "source_body_sha256": "e21a4b404e56a20e28341e4cf7b77a7e28d8a787ef2b94f8e25b9c355ffb9c97",
+      "output_sha256": "7952a0a8cbccd581aedc69b711b69d192e1ea2936e1446aab72072de6b92279b",
+      "image_ids": [
+        "476895fc-1acd-47ad-8221-c62f10d5eb6a",
+        "311ec8f0-3711-43ec-b081-87eadae2a23c",
+        "3aa027ce-154e-437f-b52a-9c7c99a3d829"
+      ]
+    },
+    {
+      "notion_id": "9ea0221954bc833b95ea01aebe168ff5",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "1-1 헤더_회원가입진입(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/1-1-헤더_회원가입진입(클릭).md",
+      "notion_url": "https://app.notion.com/p/9ea0221954bc833b95ea01aebe168ff5",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:32.610Z",
+      "source_body_sha256": "99eeef541f2593e2b9d4ce06d05ad8794ee0d1750a1eebefa259940eb59872ad",
+      "output_sha256": "4e76b50c5c4dc102fe9c8c12519d25c523407ef200bf16a5edadb840d85e6f58",
+      "image_ids": [
+        "e501b22e-1581-4bc1-853b-dea644c3bd28",
+        "957e2d9a-2cec-4832-9b42-a093b1c15838"
+      ]
+    },
+    {
+      "notion_id": "18c0221954bc82d385790183784f9003",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "1-2 회원가입진입(클릭) - 레거시",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/1-2-회원가입진입(클릭)-레거시.md",
+      "notion_url": "https://app.notion.com/p/18c0221954bc82d385790183784f9003",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:32.677Z",
+      "source_body_sha256": "c548ceed7e964197dbc06b388a0ed7fa68023d45abc2feda289f428c28e167b5",
+      "output_sha256": "c98c4adb46be1b670d0c1f0e8572a11e749cf0d43c1d7a53f3f87d0fd3938e92",
+      "image_ids": [
+        "a0cfa713-2a81-4193-9453-3abb98cf639e"
+      ]
+    },
+    {
+      "notion_id": "bff0221954bc8377bd7981ac7ca001fb",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "1-3 로그인 화면_회원가입진입(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/1-3-로그인-화면_회원가입진입(클릭).md",
+      "notion_url": "https://app.notion.com/p/bff0221954bc8377bd7981ac7ca001fb",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:32.746Z",
+      "source_body_sha256": "a7ab281ee0a0012e45e0592a02853c6a260ec277abe9b632546b7b671f3c42b1",
+      "output_sha256": "e5c205ddf4dbb85167e4fbd29cdf3725472c81803840cb37c403511f038e9f30",
+      "image_ids": [
+        "a9bc958d-141f-4b0c-89f6-ad950d7d9421",
+        "f71460e5-6c99-40a7-b6ec-41452426e9b1",
+        "61c2ed6d-4c4d-4124-b469-3c12f31577d8",
+        "6aa64aff-fdf4-4e80-ae9c-ae3574b5ee7c"
+      ]
+    },
+    {
+      "notion_id": "ab10221954bc83a8a54681a1048ec806",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "1-4 약관동의(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/1-4-약관동의(클릭).md",
+      "notion_url": "https://app.notion.com/p/ab10221954bc83a8a54681a1048ec806",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:31.722Z",
+      "source_body_sha256": "8c8eab997186f784aa76d33a7d073fda844ccc5e2ff0265684a2eb8aa38781b6",
+      "output_sha256": "50a4bfeecfa31bc5a2bbf452f3fd573ac919c4fe996635ec4b12d85edf830a56",
+      "image_ids": [
+        "e300fb39-5758-4ff7-9c91-b4369849ec64",
+        "a6cea1f5-c7c0-400a-a388-1767c24606e3",
+        "3179cce5-fdcf-4ad9-8a51-93fe5c027e77",
+        "9d982774-9c0d-4d69-bd99-3e552143c27b"
+      ]
+    },
+    {
+      "notion_id": "dd30221954bc824b9acf01801cb3a8ed",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "1-5 본인인증_인증번호_발송(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/1-5-본인인증_인증번호_발송(클릭).md",
+      "notion_url": "https://app.notion.com/p/dd30221954bc824b9acf01801cb3a8ed",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:31.792Z",
+      "source_body_sha256": "777747180de646c4608b7502952c8b36d631468135ba0349cbb3935d8d70bb41",
+      "output_sha256": "cdd85c4b6e7ed8e599e6ce3495685987aaaf3872b2adc709cd3001b6e37dedb0",
+      "image_ids": [
+        "511cb944-8575-4266-8552-56052cca8c7c",
+        "e95f57dc-2767-4613-9575-c4631df31ff2",
+        "bfd5e938-02f9-41ec-84fa-3458bd0eaf28",
+        "45c8ce02-0c44-4e5f-9b94-383b32a8f09e"
+      ]
+    },
+    {
+      "notion_id": "4ed0221954bc83d0aaf20139e6be5bfb",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "1-6 본인인증_인증완료",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/1-6-본인인증_인증완료.md",
+      "notion_url": "https://app.notion.com/p/4ed0221954bc83d0aaf20139e6be5bfb",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:31.871Z",
+      "source_body_sha256": "7707da8969a0c71e1c648a95c5b8b7d59d90d85d87eabde2da9b92df3301869b",
+      "output_sha256": "b01f906e8eae0ed792bd15a9ff8930f925ed168769a201e79d6fb89d8b5cb398",
+      "image_ids": [
+        "c5bf19d6-91c6-45d9-8ca0-2dd56e662252",
+        "d9d0f564-57e6-46ba-8adf-849eafa77704",
+        "1532fad5-2e8f-4538-aac1-b6f30543e7b3",
+        "1c28e427-0fe0-4005-8378-4ff4e1c12077"
+      ]
+    },
+    {
+      "notion_id": "04d0221954bc8209947b811c1331c49e",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "1-7 정보입력_학생_외부인_구분(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/1-7-정보입력_학생_외부인_구분(클릭).md",
+      "notion_url": "https://app.notion.com/p/04d0221954bc8209947b811c1331c49e",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:31.968Z",
+      "source_body_sha256": "09272644755ee7efccf818246d2a9fd87e058c4daed63e06ac9aea91e4b90a72",
+      "output_sha256": "eba3c958986c9ed38f7c14535cc01ced4e3d78347fc6485f7ed9dd5f7af05f42",
+      "image_ids": [
+        "f41c1836-ab79-45f7-92c6-6cc20989da9a",
+        "e48a9059-6963-4c5e-8124-8b9082819706",
+        "447fd952-a05c-4604-8d14-0daac61f704e"
+      ]
+    },
+    {
+      "notion_id": "44f0221954bc83179e8d81550cbcdc6d",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "1-7 정보입력_학생_외부인_구분(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/1-7-정보입력_학생_외부인_구분(클릭)-b6002219.md",
+      "notion_url": "https://app.notion.com/p/44f0221954bc83179e8d81550cbcdc6d",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:32.037Z",
+      "source_body_sha256": "0ca95f4d00d8f14743f275c2df1a9cb0368d8aa7a492962d7c19d9f028f55f8d",
+      "output_sha256": "fe4fbe501766da433f75150058d83593008b022632fb41311c6e99d137fa35d9",
+      "image_ids": [
+        "f41c1836-ab79-45f7-92c6-6cc20989da9a",
+        "e48a9059-6963-4c5e-8124-8b9082819706",
+        "6b037e86-b22f-44f0-b9a7-e9166363f197"
+      ]
+    },
+    {
+      "notion_id": "7510221954bc82518b590194e71484c3",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "1-8 학생_외부인_닉네임_중복확인",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/1-8-학생_외부인_닉네임_중복확인.md",
+      "notion_url": "https://app.notion.com/p/7510221954bc82518b590194e71484c3",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:33.622Z",
+      "source_body_sha256": "2b282f89e79ae7a3dfb145ff23cd09f97d272f62e89cfd3611bc1004194b8dce",
+      "output_sha256": "bdf4952312990c63529bb751ee156841e597c6c765f871bc76de904bb94eefb7",
+      "image_ids": [
+        "44995bc7-9bb9-4c93-a9bb-8c8c5250a560",
+        "0861804e-8f38-4d5c-b389-33da96f06715",
+        "24d17e48-8586-480c-adad-112103cdd4e1",
+        "7b6063a6-bca6-4752-b2ec-534c3c72a65a"
+      ]
+    },
+    {
+      "notion_id": "6ee0221954bc82f4b3ba01eacb4ec7b4",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "1-8 학생_외부인_아이디_중복확인",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/1-8-학생_외부인_아이디_중복확인.md",
+      "notion_url": "https://app.notion.com/p/6ee0221954bc82f4b3ba01eacb4ec7b4",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:33.513Z",
+      "source_body_sha256": "f09fb21ef698086dd6ccfeff7adbbbc0a73a070a513256bbc9c47a8d33e536fa",
+      "output_sha256": "a1c098c50230b2add476d79f04f8e89be1507d7809e3af52b947c2a38a4b8083",
+      "image_ids": [
+        "dc1f0b41-335b-49e1-a855-af234409a123",
+        "b1fbad42-be35-4b2f-abc3-30388c552dee",
+        "c06250bc-2b1c-4e67-a361-6b41effa1265",
+        "672e4470-e10a-44dc-878f-a82d46c9c81d"
+      ]
+    },
+    {
+      "notion_id": "4d00221954bc833d8007011f8d4764c1",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "1-9 학생_외부인_회원가입완료(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/1-9-학생_외부인_회원가입완료(클릭).md",
+      "notion_url": "https://app.notion.com/p/4d00221954bc833d8007011f8d4764c1",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:33.752Z",
+      "source_body_sha256": "d05a1a78822a3d3d3610d60941d0b3790adc4fc0987641f9982e98af1403d7da",
+      "output_sha256": "4393d8f04fe2ab2e52ad6e3393420dee77b2c44b1cf6a242de751f95f2537a54",
+      "image_ids": [
+        "37764aa2-2b28-4620-9dc6-2135ed6ba641",
+        "29220932-3e3f-4c89-a388-430443ed7beb",
+        "2affe11d-0deb-48b0-8a83-09e689cf2b88",
+        "2c6dcee8-b73c-42ec-890c-7c83fba61abe"
+      ]
+    },
+    {
+      "notion_id": "a9d0221954bc82e7b2d301c91012adaa",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "2-1 헤더_로그인 진입(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/2-1-헤더_로그인-진입(클릭).md",
+      "notion_url": "https://app.notion.com/p/a9d0221954bc82e7b2d301c91012adaa",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:33.929Z",
+      "source_body_sha256": "13fd1302c7e3ca90d420e1e72531e62f12c91d5313947d9b3cc9729ced015aed",
+      "output_sha256": "2257b6aa38d11b2185018870cf34bd7bbe7a3c39ca527643e4392e8b8f7c4a5f",
+      "image_ids": [
+        "72e654f5-090b-4421-a52a-9c9854e4e6f2",
+        "b083a11c-666e-4c45-b63c-43844a351ff3",
+        "c27bf80e-75b1-415f-83af-8d18d73b6a7e"
+      ]
+    },
+    {
+      "notion_id": "1ab0221954bc8247aee801c8f994a0e1",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "2-3 로그인 시도(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/2-3-로그인-시도(클릭).md",
+      "notion_url": "https://app.notion.com/p/1ab0221954bc8247aee801c8f994a0e1",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:56.922Z",
+      "source_body_sha256": "255fad305406b21d9dde088bf2c751a3e3c5a5bdcfd2cf47f3fbf11ff0b84a79",
+      "output_sha256": "52055c4eeb43145d4c32f3e1c4af8b4c033c64d0f9362e85dc43d4725a64d283",
+      "image_ids": [
+        "c75925ff-55b2-4a9e-b758-1dca7807e13d",
+        "6eb16a71-d11c-464c-b9a4-89294036be44",
+        "fddf87a1-865b-4905-bab5-e34b5e577922",
+        "72fef26f-73ec-4a8e-a304-b88ed451f5c0"
+      ]
+    },
+    {
+      "notion_id": "7c50221954bc82618c2f810129528acd",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "2-4 아이디찾기(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/2-4-아이디찾기(클릭).md",
+      "notion_url": "https://app.notion.com/p/7c50221954bc82618c2f810129528acd",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:57.019Z",
+      "source_body_sha256": "0239200885c24605d8eb65360ed6056d6ba6abea418e5eef5ec7afe651113d75",
+      "output_sha256": "6d676a6dc1c4ed059a371f8f2cc2f643917e6c7a4e118c1c1e8b75d67dfe40ee",
+      "image_ids": [
+        "64324f31-3efc-4e98-a23e-5a3e19af0eb7",
+        "6cb162d4-5d69-42de-be44-a09add3e6001",
+        "ff99c987-9b58-4f21-adce-4e5d0d6a2458",
+        "c759706b-2967-4787-b98e-b031431f4d5a"
+      ]
+    },
+    {
+      "notion_id": "73b0221954bc833eb03d813ea01026c9",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "2-5 비밀번호찾기(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/2-5-비밀번호찾기(클릭).md",
+      "notion_url": "https://app.notion.com/p/73b0221954bc833eb03d813ea01026c9",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:57.104Z",
+      "source_body_sha256": "44ca9de5e4f51652f68ced65f3120277952b461e72ff5ec5806608a30b528c22",
+      "output_sha256": "c90bab73f2e3dd5a454bfa255e0e5af02b9d630f7c143cbeb893808e4a190392",
+      "image_ids": [
+        "8483d9b3-581c-4441-9d04-a87984e50d0c",
+        "d81572b1-48bf-49ef-9d9f-2b1e0b1b9c76",
+        "31ec54cb-8220-4dd9-883d-8681c5916c2f",
+        "359ed800-2612-43b5-875c-2ab9ee2638b0"
+      ]
+    },
+    {
+      "notion_id": "c4b0221954bc8395ad4f013a2bab63a3",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "3-1  헤더_정보수정하기(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/3-1-헤더_정보수정하기(클릭).md",
+      "notion_url": "https://app.notion.com/p/c4b0221954bc8395ad4f013a2bab63a3",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:57.179Z",
+      "source_body_sha256": "91a6151b55fb553800d0d454916807589c529fc8a1d3abadda286101007c1d5c",
+      "output_sha256": "6d0715f3bf876586bf51379b0f9e511a5e0ebc9510d990b9ff14ae5b76d8ac47",
+      "image_ids": [
+        "2ae81a76-2659-4cb0-a414-62e6fcebd60b",
+        "d3050aca-cfca-49ef-b89c-70d50422cb1e"
+      ]
+    },
+    {
+      "notion_id": "69a0221954bc8373b7638117ffb87eec",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "3-2 정보수정하기(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/3-2-정보수정하기(클릭).md",
+      "notion_url": "https://app.notion.com/p/69a0221954bc8373b7638117ffb87eec",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:58.347Z",
+      "source_body_sha256": "907623bcc39d34e3692737963d75cd60af484b2ea540104dffb788c023648da2",
+      "output_sha256": "79bf01f5385bed5e71eaf0fde9020e179abf0ecb1e3dcb1cded8ea50c57a14d1",
+      "image_ids": [
+        "41d874d0-f2d6-4e9b-931b-203af263f1b6",
+        "4d9f58f7-1c5a-4f7f-9929-fcab77cfe6d6"
+      ]
+    },
+    {
+      "notion_id": "ba70221954bc828a83e001ea56e7c3ef",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "4-1 로그아웃(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/4-1-로그아웃(클릭).md",
+      "notion_url": "https://app.notion.com/p/ba70221954bc828a83e001ea56e7c3ef",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:57.668Z",
+      "source_body_sha256": "361de475ae2e61ea9ed39e8f8d54d40aa2d650c55354ec9ae5f80e9c44abad78",
+      "output_sha256": "24b750a47cd29686e3310c6a24f81dfd5d1194ab57a32c9bdcdcb66f0537f8b6",
+      "image_ids": [
+        "49ba05ff-bf2f-40fe-9c73-6d0af4466a77",
+        "a98c8dd6-4e01-4851-a4fc-666c484901d2",
+        "3aab24a8-abbe-471a-80d1-eb02ef5e9186"
+      ]
+    },
+    {
+      "notion_id": "d440221954bc83bb909281a0cb60314d",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "[레거시] 2-2 로그인 진입(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/[레거시]-2-2-로그인-진입(클릭).md",
+      "notion_url": "https://app.notion.com/p/d440221954bc83bb909281a0cb60314d",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:34.134Z",
+      "source_body_sha256": "277be5c3b16b92858729db199deee0f0f3c8b2e05ff7e25c1dcfe218b92c997d",
+      "output_sha256": "03c161d07d186976b2c69ce1cf532e4cc034ad3776109ceb9e6c2c654cb45c93",
+      "image_ids": [
+        "8e128857-4fb2-456e-9953-2d85392d2f1d"
+      ]
+    },
+    {
+      "notion_id": "fed0221954bc8359a63e819acefd1598",
+      "service": "로그인/회원가입/정보수정 V2",
+      "title": "[레거시] 4-2 로그아웃(클릭)",
+      "path": "event-log/15-로그인-회원가입-정보수정-V2/[레거시]-4-2-로그아웃(클릭).md",
+      "notion_url": "https://app.notion.com/p/fed0221954bc8359a63e819acefd1598",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:57.751Z",
+      "source_body_sha256": "ba78b03a24585cd071147e11b421d0a04182a988d96d716f0edc7ab78eaf94f0",
+      "output_sha256": "e307cb37225d242a5f665f23a0bf531508cbe9a33f23abba97b770b4fdc980cb",
+      "image_ids": [
+        "85a36762-99a9-453c-ad8c-9f1a8f418e83"
+      ]
+    }
+  ],
+  "blank_pages": []
+}

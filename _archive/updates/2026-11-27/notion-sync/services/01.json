@@ -1,0 +1,1123 @@
+{
+  "service": "주변상점",
+  "pages": [
+    {
+      "notion_id": "75b0221954bc82b5be7c01a52d64be29",
+      "service": "주변상점",
+      "title": "1-1 메인 → 상점 카테고리 (클릭) - 레거시",
+      "path": "event-log/01-주변상점/1-1-메인-→-상점-카테고리-(클릭)-레거시.md",
+      "notion_url": "https://app.notion.com/p/75b0221954bc82b5be7c01a52d64be29",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:15.700Z",
+      "source_body_sha256": "f9caf1bd704c25fd8eec15fadbb82b508fde1ceee9f171f22f30c50cb1e056bc",
+      "output_sha256": "470906803c59d0cdee26bd6ee29b1766d52ddd1ba819c5d1a7fb2e0d0bbd1766",
+      "image_ids": []
+    },
+    {
+      "notion_id": "b150221954bc8281b86e81d96cf14724",
+      "service": "주변상점",
+      "title": "1-2 햄버거 → 상점 카테고리 (클릭) - 레거시",
+      "path": "event-log/01-주변상점/1-2-햄버거-→-상점-카테고리-(클릭)-레거시.md",
+      "notion_url": "https://app.notion.com/p/b150221954bc8281b86e81d96cf14724",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.060Z",
+      "source_body_sha256": "eaf057c9b33dfb9a3e7e86625474bf304e752a11244b7fdaf0ce04bc0a060996",
+      "output_sha256": "a2b1dfbd336262b7da6a45948838df76ea0ea75467bca470ddd1a980cc0fd666",
+      "image_ids": []
+    },
+    {
+      "notion_id": "3ca0221954bc837e896d8119e6803aae",
+      "service": "주변상점",
+      "title": "1-3 헤더 → 주변상점 (클릭)",
+      "path": "event-log/01-주변상점/1-3-헤더-→-주변상점-(클릭).md",
+      "notion_url": "https://app.notion.com/p/3ca0221954bc837e896d8119e6803aae",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.269Z",
+      "source_body_sha256": "dd6eadd10626bf1aa3c272c2d4220dcef895f2e2a82b03bfe5027dd0d175cb79",
+      "output_sha256": "4f827e54a3cd46c6f76eb12df1512e9af308eedb029633f838661bdcabe06d89",
+      "image_ids": [
+        "a6245b9d-968a-421f-a23d-c5c017c7b57c"
+      ]
+    },
+    {
+      "notion_id": "05b0221954bc82348ced01310d76b48b",
+      "service": "주변상점",
+      "title": "1-4 푸터 → 주변상점 (클릭) ",
+      "path": "event-log/01-주변상점/1-4-푸터-→-주변상점-(클릭).md",
+      "notion_url": "https://app.notion.com/p/05b0221954bc82348ced01310d76b48b",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.443Z",
+      "source_body_sha256": "5e8e023a29b673672aef83c688d936898d390c744fe58d33c236aed1a1103ff5",
+      "output_sha256": "038757ac76408f789bf64487bb3dae6503306ce99ec9609c348c5592d744873d",
+      "image_ids": [
+        "759c4da0-0b93-4b87-962a-17ea9b8959ef"
+      ]
+    },
+    {
+      "notion_id": "38d0221954bc82ba94db81315f8eb685",
+      "service": "주변상점",
+      "title": "2-1 상점 카테고리 → 상점 카테고리 (클릭) ",
+      "path": "event-log/01-주변상점/2-1-상점-카테고리-→-상점-카테고리-(클릭).md",
+      "notion_url": "https://app.notion.com/p/38d0221954bc82ba94db81315f8eb685",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:22.698Z",
+      "source_body_sha256": "d9a48b658a780b5f8e574a4c58ea5f8ddef1774d5daa3467700008005ee94942",
+      "output_sha256": "19f64efbe8d416ef693becc7ca70a67e64dc830a0c1287eb5794eb16515ab5c6",
+      "image_ids": [
+        "817fb962-4f3d-4f8a-9970-3157267c853d",
+        "efbb6778-70ea-43c7-beaa-4785955989eb"
+      ]
+    },
+    {
+      "notion_id": "3d80221954bc83969b418168f7e24ed3",
+      "service": "주변상점",
+      "title": "2-10~12 상점 카테고리 정렬 ",
+      "path": "event-log/01-주변상점/2-10~12-상점-카테고리-정렬.md",
+      "notion_url": "https://app.notion.com/p/3d80221954bc83969b418168f7e24ed3",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB (모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:20.296Z",
+      "source_body_sha256": "0817c1f55812bb95d390bbcd3359de3d666568967de15d9849c9479b3af2f2e4",
+      "output_sha256": "c820f261beffae734561ab8102ce2029d9191cbe95874c7d0caf607827f29767",
+      "image_ids": [
+        "9dcf5252-a6a1-450e-b903-121bdfbcc762",
+        "bb51140f-91be-403d-a532-6841aeae0e0f",
+        "db2a5336-9706-4a86-b105-88ddacaf48f4",
+        "70e42e89-05c9-4242-bd2e-474c320c1a0f"
+      ]
+    },
+    {
+      "notion_id": "df10221954bc83909ebb01c8f1712440",
+      "service": "주변상점",
+      "title": "2-13 ~ 17 상점 카테고리 필터",
+      "path": "event-log/01-주변상점/2-13-~-17-상점-카테고리-필터.md",
+      "notion_url": "https://app.notion.com/p/df10221954bc83909ebb01c8f1712440",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB (모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:18.650Z",
+      "source_body_sha256": "f09618be50b016423ba78534858f3f5d5bffaa17c640ba63c65ada15bda95713",
+      "output_sha256": "b6f4ea62229a99b02b51d3e0dcd0edff196b7a5fb94a287aaee53355bcd42a74",
+      "image_ids": [
+        "9dcf5252-a6a1-450e-b903-121bdfbcc762",
+        "9d96acc6-2d56-476c-9e60-a00eadb8df84",
+        "e1d2820a-fc08-40d5-bb0c-34ea0769a7de"
+      ]
+    },
+    {
+      "notion_id": "0dd0221954bc83afa8aa81609dfd6b0c",
+      "service": "주변상점",
+      "title": "2-18 상점 카테고리 최소주문금액 설정 - 레거시",
+      "path": "event-log/01-주변상점/2-18-상점-카테고리-최소주문금액-설정-레거시.md",
+      "notion_url": "https://app.notion.com/p/0dd0221954bc83afa8aa81609dfd6b0c",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:16.242Z",
+      "source_body_sha256": "79ddb7f538a6e0fcafeeb7b67d60f7fdba5f079e8427732f881870cfd19a0eaa",
+      "output_sha256": "09911e13dd917c6fa5bcd617aea612bf0fdf9cf85b70b9b39dfb231c3faedbec",
+      "image_ids": [
+        "17d4984f-f51c-4889-a4a2-f6cc2afeff71"
+      ]
+    },
+    {
+      "notion_id": "0710221954bc831a990281f536e011ce",
+      "service": "주변상점",
+      "title": "2-19 상점 카테고리 → 홈 - 레거시",
+      "path": "event-log/01-주변상점/2-19-상점-카테고리-→-홈-레거시.md",
+      "notion_url": "https://app.notion.com/p/0710221954bc831a990281f536e011ce",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:16.652Z",
+      "source_body_sha256": "3363511f0fc1a474fc4da89c91324323f4c646469c838cbdb4f1a71e6d901770",
+      "output_sha256": "df729839e323d7dc554e3b2ff9d3fc00922b525be158a0d345678e3fee9edff4",
+      "image_ids": [
+        "160328d8-d308-4140-8b7b-dc8dcca3a58c"
+      ]
+    },
+    {
+      "notion_id": "9280221954bc82e18ceb81dfdcfc292a",
+      "service": "주변상점",
+      "title": "2-2 상점 카테고리 (스크롤)",
+      "path": "event-log/01-주변상점/2-2-상점-카테고리-(스크롤).md",
+      "notion_url": "https://app.notion.com/p/9280221954bc82e18ceb81dfdcfc292a",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:18.321Z",
+      "source_body_sha256": "9720ae833e2809ba7d9357fef9af7be76645f05e5142dca9f7a2f17d99947fcb",
+      "output_sha256": "650a21d7bea0fd4cc8cc880232577516c16cafa5b8baf25b2e3f833427ae859c",
+      "image_ids": [
+        "f25bd418-9ef9-4249-a280-a2ead5de28fa",
+        "d0fb48c2-783e-4080-ab1e-b09514c2a48b",
+        "3ecbbd79-72db-4c52-9075-494025346d87"
+      ]
+    },
+    {
+      "notion_id": "49a0221954bc8377a1f081e00e13e100",
+      "service": "주변상점",
+      "title": "2-20 상점 카테고리 → 주변상점 - 레거시",
+      "path": "event-log/01-주변상점/2-20-상점-카테고리-→-주변상점-레거시.md",
+      "notion_url": "https://app.notion.com/p/49a0221954bc8377a1f081e00e13e100",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:20.936Z",
+      "source_body_sha256": "582d019fc27e0dbe469e58bf9892bbe25da945365900171d1b31148b89d84dbf",
+      "output_sha256": "7c37f4b238c5c2f0a6dfefc7aa572e9d813dfc593faa995ac2aeb5297e0ff029",
+      "image_ids": [
+        "d2027995-103c-43f3-addb-921672838091"
+      ]
+    },
+    {
+      "notion_id": "f2d0221954bc82008f760149f3a96d8f",
+      "service": "주변상점",
+      "title": "2-21 상점 카테고리 → 주문내역 - 레거시",
+      "path": "event-log/01-주변상점/2-21-상점-카테고리-→-주문내역-레거시.md",
+      "notion_url": "https://app.notion.com/p/f2d0221954bc82008f760149f3a96d8f",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:15.583Z",
+      "source_body_sha256": "5f1928bbcdd4c09ebde4f6679bb5d32278e5c19020428bec08bb5bf476757fb2",
+      "output_sha256": "d379321d67b8476251624cd77e0a701a90a1a664903cdc073d9b0fb33756201f",
+      "image_ids": [
+        "60b37c40-9501-416a-af44-4ae47a962b79"
+      ]
+    },
+    {
+      "notion_id": "b470221954bc83058265810d42d962c2",
+      "service": "주변상점",
+      "title": "2-22 검색 결과 → 상점 상세 (클릭)",
+      "path": "event-log/01-주변상점/2-22-검색-결과-→-상점-상세-(클릭).md",
+      "notion_url": "https://app.notion.com/p/b470221954bc83058265810d42d962c2",
+      "platforms": [
+        "IOS",
+        "ANDROID"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:16.051Z",
+      "source_body_sha256": "3740d125a17a0d2f366816f92749beb102039171fcb569e6bce196bcde276704",
+      "output_sha256": "d4d2bbe6a85a0c2374bf2123431649abc54ed0a5297f8f614924039caf58c607",
+      "image_ids": [
+        "d72b7299-f147-42be-9dfd-c35dd58e74b5",
+        "32340bb5-5d68-4350-9183-8e74c0db800e"
+      ]
+    },
+    {
+      "notion_id": "4c30221954bc82b5afb4016b1b3be6a7",
+      "service": "주변상점",
+      "title": "2-23 상점 목록 뒤로가기 (Click · Swipe)",
+      "path": "event-log/01-주변상점/2-23-상점-목록-뒤로가기-(Click-·-Swipe).md",
+      "notion_url": "https://app.notion.com/p/4c30221954bc82b5afb4016b1b3be6a7",
+      "platforms": [
+        "IOS",
+        "ANDROID"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:19.511Z",
+      "source_body_sha256": "f5b5339b00ec12487f88d53d6debb304de26ec29e3a89cfd451801735edad62d",
+      "output_sha256": "e1ebd46ee15e0bd957d879c74808bc36b80d648a4dd6d37225573208aa62ff85",
+      "image_ids": [
+        "2d945e53-8693-470f-b94b-502c9a911b53"
+      ]
+    },
+    {
+      "notion_id": "d090221954bc820591078118a46a040c",
+      "service": "주변상점",
+      "title": "2-3 상점카테고리 이벤트 (클릭) ",
+      "path": "event-log/01-주변상점/2-3-상점카테고리-이벤트-(클릭).md",
+      "notion_url": "https://app.notion.com/p/d090221954bc820591078118a46a040c",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:20.581Z",
+      "source_body_sha256": "51da5407f0ae841330104cb188745b104f50dcae404d895e62ee4ae0bcbbd70d",
+      "output_sha256": "cc9bcfa5fabd6445456d204be0de87ff1561a82afa62ad498e41039c4be7619c",
+      "image_ids": [
+        "9fd4f20b-4b2e-4e0a-8483-86c8983732d3",
+        "c91ea42b-7dd5-47af-81d0-a783518ab5b7"
+      ]
+    },
+    {
+      "notion_id": "2d90221954bc82c1bd0d0158452708c6",
+      "service": "주변상점",
+      "title": "2-4 상점카테고리 검색 (클릭) ",
+      "path": "event-log/01-주변상점/2-4-상점카테고리-검색-(클릭).md",
+      "notion_url": "https://app.notion.com/p/2d90221954bc82c1bd0d0158452708c6",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:15.805Z",
+      "source_body_sha256": "bd466832493779c3bd2bc3f3073244d930991ff15425f071fd16cc043a6b0187",
+      "output_sha256": "4d2638c76352fc31d7fbff71e0e70718b5f671cd9ede013d894d40f4c70ee651",
+      "image_ids": [
+        "a11249e8-dd00-4453-988e-5f9eebd10e98",
+        "34e3c33c-32e4-48c7-a7bb-7c34d12ded93"
+      ]
+    },
+    {
+      "notion_id": "1de0221954bc82a283ab0113f045affa",
+      "service": "주변상점",
+      "title": "2-5~8 상점 카테고리 토글 ",
+      "path": "event-log/01-주변상점/2-5~8-상점-카테고리-토글.md",
+      "notion_url": "https://app.notion.com/p/1de0221954bc82a283ab0113f045affa",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:19.439Z",
+      "source_body_sha256": "5aaf1e51762fd5a3254524f42776226f8e8d41314c08ea1c066c02a1898b8f56",
+      "output_sha256": "255865bdda9d7cf5bb6a7983b82b88a5866afa5695f0a0be6c5a959bb9937d68",
+      "image_ids": [
+        "18e6126d-576b-41fb-a85c-ef2f8a593d7f"
+      ]
+    },
+    {
+      "notion_id": "8fe0221954bc824f9db281e2ef601498",
+      "service": "주변상점",
+      "title": "2-9 상점 카테고리 → 카트 - 레거시",
+      "path": "event-log/01-주변상점/2-9-상점-카테고리-→-카트-레거시.md",
+      "notion_url": "https://app.notion.com/p/8fe0221954bc824f9db281e2ef601498",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:16.705Z",
+      "source_body_sha256": "4a68f728702ce31a7a849d6413176fb428d061be8e4f700a3bc759f838b12a2d",
+      "output_sha256": "30db25facc9fe1bc2bce8ef501420bf311a6c49b537cde162684663c42005755",
+      "image_ids": []
+    },
+    {
+      "notion_id": "2ef0221954bc83dfaa88015d06ae46ad",
+      "service": "주변상점",
+      "title": "3-1 메뉴추가 ",
+      "path": "event-log/01-주변상점/3-1-메뉴추가.md",
+      "notion_url": "https://app.notion.com/p/2ef0221954bc83dfaa88015d06ae46ad",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:22.801Z",
+      "source_body_sha256": "caa5ce189d706c2e38221a3d1865ea07b3c98808d822cd95781c615f5e4bf4b4",
+      "output_sha256": "d94454752138bb427bf8bcb6b14d3d933ce350a592d1dd917e434c929f13b695",
+      "image_ids": []
+    },
+    {
+      "notion_id": "75e0221954bc825f89bc01b07bb7c890",
+      "service": "주변상점",
+      "title": "3-1 상점 카테고리 → 상점상세 (클릭) ",
+      "path": "event-log/01-주변상점/3-1-상점-카테고리-→-상점상세-(클릭).md",
+      "notion_url": "https://app.notion.com/p/75e0221954bc825f89bc01b07bb7c890",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:20.457Z",
+      "source_body_sha256": "15bc961217521c1fd07d24daa6c3696311e08c4fc6e78e61556aceff47e926b8",
+      "output_sha256": "70a5b9fb027a00d54ae5332bacce88e27d4bdedfdebc08f1e85880935b0e0e12",
+      "image_ids": [
+        "f0866dd6-bf33-4d11-98f3-3d8bcf3fe633",
+        "315cf1e9-5436-42d6-9c4e-a7b8f27d8821"
+      ]
+    },
+    {
+      "notion_id": "0640221954bc83298c8a81187484e873",
+      "service": "주변상점",
+      "title": "3-10 상점상세 리뷰 (클릭) ",
+      "path": "event-log/01-주변상점/3-10-상점상세-리뷰-(클릭).md",
+      "notion_url": "https://app.notion.com/p/0640221954bc83298c8a81187484e873",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:20.852Z",
+      "source_body_sha256": "e44c3f01904dc80d4fb11ea4f8efb9dd56caadbbac78784caa490bc02bbfa927",
+      "output_sha256": "cfbba375af006ff6844befae14172a3fd2551677f2525706f74e5e21996eb519",
+      "image_ids": [
+        "bfbddcef-ec12-4fa8-910b-960150ecbf0e",
+        "ee030906-58f3-4629-ac89-2f990719597d",
+        "f28f0b68-258d-44e2-9a26-d9d0a44e4158"
+      ]
+    },
+    {
+      "notion_id": "5c00221954bc83d3bf6c8137137cc634",
+      "service": "주변상점",
+      "title": "3-11 상점상세 리뷰 (스크롤) ",
+      "path": "event-log/01-주변상점/3-11-상점상세-리뷰-(스크롤).md",
+      "notion_url": "https://app.notion.com/p/5c00221954bc83d3bf6c8137137cc634",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.442Z",
+      "source_body_sha256": "245140949b90c40ed1cec02e2d2f886771a3b28db3aa7c05b6d3c5cdbc72a732",
+      "output_sha256": "5ed86979d82f2c32cf0014b87dfc21c892393bf69d69fb9e3b47f9fcde578d60",
+      "image_ids": [
+        "052d6800-9f14-4da8-9ed4-debf1471c3c2",
+        "f85826bc-00d7-480b-a6c1-4b66f359984d",
+        "f40a329b-2a92-428b-8543-b4620480637a"
+      ]
+    },
+    {
+      "notion_id": "9c50221954bc832a823781c5c68e8369",
+      "service": "주변상점",
+      "title": "3-12 상점상세 리뷰작성 들어가기 (클릭) ",
+      "path": "event-log/01-주변상점/3-12-상점상세-리뷰작성-들어가기-(클릭).md",
+      "notion_url": "https://app.notion.com/p/9c50221954bc832a823781c5c68e8369",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:18.576Z",
+      "source_body_sha256": "9de5d6e243abfbbb089671d721310c358b191a833cbc38cec488f9ef028c8af6",
+      "output_sha256": "b87b3a8aa0352b860e6291bd5cdf568b841bb68fcb3f7daa822cf8f2c482efc1",
+      "image_ids": [
+        "a4e20a8e-d963-4654-a59c-f245a8de3348",
+        "fbb0957c-8f9f-4309-97b4-750a7fd6ca50",
+        "725c77af-c76e-4d03-8cf4-c3d93e5bd0a6"
+      ]
+    },
+    {
+      "notion_id": "2ac0221954bc8273a38d01642544420b",
+      "service": "주변상점",
+      "title": "3-13 상점상세 리뷰작성 들어간후(클릭)  ",
+      "path": "event-log/01-주변상점/3-13-상점상세-리뷰작성-들어간후(클릭).md",
+      "notion_url": "https://app.notion.com/p/2ac0221954bc8273a38d01642544420b",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.589Z",
+      "source_body_sha256": "00a2ddacac0ce7884b26ea73cb02c7554b4df9610f36350f6c33c8a76f4e90e4",
+      "output_sha256": "2988d7952d22baf8c374a081daf6c3be05cd95ad44316986aea7c45997d53613",
+      "image_ids": [
+        "98a890ca-ee91-47ac-ab64-cedd32c757ec",
+        "3a3c8f32-6c59-4884-a933-60d426a66817",
+        "977a8e5d-4665-4862-9f24-4b8ee1a3e028"
+      ]
+    },
+    {
+      "notion_id": "8d70221954bc82c18724815e4aa31fcc",
+      "service": "주변상점",
+      "title": "3-14 상점상세 리뷰 신고 (클릭) ",
+      "path": "event-log/01-주변상점/3-14-상점상세-리뷰-신고-(클릭).md",
+      "notion_url": "https://app.notion.com/p/8d70221954bc82c18724815e4aa31fcc",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.686Z",
+      "source_body_sha256": "b27cc870e7356cf9f813cfc196d3b58fc21695a66ccf6f7b49e534c283a44150",
+      "output_sha256": "1db63449919a1eb886f77ac56dcac4443422d013337fb6387a0c4d98cfdd8896",
+      "image_ids": [
+        "a4e20a8e-d963-4654-a59c-f245a8de3348",
+        "0afcb6c6-ef69-432d-97d2-0dc6056ac62b",
+        "fca86563-b3a8-4419-abbf-3d41c58b54ab"
+      ]
+    },
+    {
+      "notion_id": "c4a0221954bc83ab85570131bc0624ba",
+      "service": "주변상점",
+      "title": "3-15 상점상세 리뷰 신고 완료 (클릭) ",
+      "path": "event-log/01-주변상점/3-15-상점상세-리뷰-신고-완료-(클릭).md",
+      "notion_url": "https://app.notion.com/p/c4a0221954bc83ab85570131bc0624ba",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.324Z",
+      "source_body_sha256": "232e730291d98d62a3e73af22146d88eac7a00ddc8280072a497fa2e5b6276ee",
+      "output_sha256": "ec6a242d06de0d8b1c4c34ebb1a652898d9c95ac138fea5fb5d6b5a3c1afb6ee",
+      "image_ids": [
+        "778f62d9-1d4d-49bd-b9c3-e8234db6e50d",
+        "e21cd0de-119d-4371-8cf8-dc01949aa649"
+      ]
+    },
+    {
+      "notion_id": "1450221954bc8372b5ee816ce4dc92e4",
+      "service": "주변상점",
+      "title": "3-16~18 상점상세 리뷰 탭 탈출 (클릭) ",
+      "path": "event-log/01-주변상점/3-16~18-상점상세-리뷰-탭-탈출-(클릭).md",
+      "notion_url": "https://app.notion.com/p/1450221954bc8372b5ee816ce4dc92e4",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:18.456Z",
+      "source_body_sha256": "9cd4d3b2db75c396c8a2ab33fb4951047366f556ddc5ac9b12f83ba60a1d3b42",
+      "output_sha256": "211932e401a19983ecf129b0024229368045bdf58b56abe8b6ffd5d326b39f59",
+      "image_ids": [
+        "a4e20a8e-d963-4654-a59c-f245a8de3348",
+        "9842ca99-219b-4bea-92ae-65fc0cb81a1d",
+        "3b2a105d-d0a5-4c4e-a0c8-b8fc590fa3ff"
+      ]
+    },
+    {
+      "notion_id": "b3f0221954bc825c8439012f52d07ff5",
+      "service": "주변상점",
+      "title": "3-19 상점상세 리뷰 삭제하기  (클릭) ",
+      "path": "event-log/01-주변상점/3-19-상점상세-리뷰-삭제하기-(클릭).md",
+      "notion_url": "https://app.notion.com/p/b3f0221954bc825c8439012f52d07ff5",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:19.061Z",
+      "source_body_sha256": "e3ce03d4c2c9c752bca9c2fea69890eb6efb7d15fc853f0bd6f57742a876c03f",
+      "output_sha256": "15ef8a789012cdc44a0b4ea2c53115b28344295a49d2b7116ce3378182eff497",
+      "image_ids": [
+        "5aad5e02-b283-40a2-b694-8e3d867eef74",
+        "6bf45104-cd15-4ad1-9c6c-8472230289d3"
+      ]
+    },
+    {
+      "notion_id": "3170221954bc83b2b70c81e13f6c281c",
+      "service": "주변상점",
+      "title": "3-2 메뉴추가 - 확인",
+      "path": "event-log/01-주변상점/3-2-메뉴추가-확인.md",
+      "notion_url": "https://app.notion.com/p/3170221954bc83b2b70c81e13f6c281c",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:20.323Z",
+      "source_body_sha256": "6fcfee98fe2d283ccaf742085e28d7d54ac9255cc78ae49542b90e224bb95111",
+      "output_sha256": "7da0f3368af64e60377625fdb9208f9cc2fd2b05fd36cda615403ec3527fd5e3",
+      "image_ids": []
+    },
+    {
+      "notion_id": "fc80221954bc83c3b7ef819c98fc6913",
+      "service": "주변상점",
+      "title": "3-2 상점상세 전화 (클릭) ",
+      "path": "event-log/01-주변상점/3-2-상점상세-전화-(클릭).md",
+      "notion_url": "https://app.notion.com/p/fc80221954bc83c3b7ef819c98fc6913",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:18.570Z",
+      "source_body_sha256": "d2a7646d579bae202ec0030b9d583fef28f1547578a636a8e8f1c198a66c420d",
+      "output_sha256": "2223b8ec09f69896be595d5a5ccaf2df89450cd41fd428139168221476b3a0fb",
+      "image_ids": [
+        "1b07dcf1-2501-4a3e-a517-b1a54ded2ac7",
+        "9072f71c-30d6-486d-83b6-97b1265aa0b6"
+      ]
+    },
+    {
+      "notion_id": "8190221954bc83d1b3b581b343ecd740",
+      "service": "주변상점",
+      "title": "3-20 상점상세 리뷰 최종삭제하기  (클릭) ",
+      "path": "event-log/01-주변상점/3-20-상점상세-리뷰-최종삭제하기-(클릭).md",
+      "notion_url": "https://app.notion.com/p/8190221954bc83d1b3b581b343ecd740",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.053Z",
+      "source_body_sha256": "260b5b098ef4203b62a530258af415b17553b33c7d1fcc5574fd556a53c1ea44",
+      "output_sha256": "97ca990a018d3b73e3508d081ab690970736d2480d07db7d7acb7d70fb11f89a",
+      "image_ids": [
+        "8b959e3b-f15d-4fb3-b1da-dd0c43594a61",
+        "fde6f825-62fb-4448-a903-772be256eb0c",
+        "b6b48871-b018-4baf-9ee8-92441ffe54c9",
+        "e11291b2-5400-45b8-a8f1-576c7a3f1a85"
+      ]
+    },
+    {
+      "notion_id": "af80221954bc82cd81e68189f364c181",
+      "service": "주변상점",
+      "title": "3-21 상점상세 리뷰 삭제하기_취소  (클릭) ",
+      "path": "event-log/01-주변상점/3-21-상점상세-리뷰-삭제하기_취소-(클릭).md",
+      "notion_url": "https://app.notion.com/p/af80221954bc82cd81e68189f364c181",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:19.633Z",
+      "source_body_sha256": "4f6b1ea40ccb5c335403e88e434a8e734eebd335a7ea3a1141189a899052ac1c",
+      "output_sha256": "f33662ca1a191e80d229aed4382089b7fa0d8edba288798adc1414b989d382dd",
+      "image_ids": [
+        "1e78f8c8-820b-4445-bf76-dc5ca2f7f96e",
+        "1524e0ce-c8a1-4b60-81c6-5a614ee0ae47",
+        "d3c34e36-ad3b-4325-a282-d8ed70dd6d9c"
+      ]
+    },
+    {
+      "notion_id": "5c20221954bc82a581ee818ea28ef794",
+      "service": "주변상점",
+      "title": "3-22 상점상세 리뷰작성 들어가기_로그인누름 (비로그인)  ",
+      "path": "event-log/01-주변상점/3-22-상점상세-리뷰작성-들어가기_로그인누름-(비로그인).md",
+      "notion_url": "https://app.notion.com/p/5c20221954bc82a581ee818ea28ef794",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:18.755Z",
+      "source_body_sha256": "dc1272f467ebb6d3be1f42e4bb3a11736b8560bc92ffeb4d826442e8c2b5e536",
+      "output_sha256": "f975d7fca6d6ed4f1da57b2233b7d548b9591704cfa2377d11b0a1aaa9fb1a45",
+      "image_ids": [
+        "8de5be82-9113-4a22-b9e7-7ed674654d70",
+        "65671349-2f51-4465-89f0-d433eabf6767",
+        "9810af37-b648-442e-ab68-1fcfaeb909e3"
+      ]
+    },
+    {
+      "notion_id": "aa10221954bc83a48c8901b9675a3348",
+      "service": "주변상점",
+      "title": "3-23 상점상세 리뷰작성 _로그인_취소  (클릭) ",
+      "path": "event-log/01-주변상점/3-23-상점상세-리뷰작성-_로그인_취소-(클릭).md",
+      "notion_url": "https://app.notion.com/p/aa10221954bc83a48c8901b9675a3348",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:18.429Z",
+      "source_body_sha256": "2dde444d2ea011d60b16da290fc57fdef7df5711090af51c48cff9c7ca8bc0ae",
+      "output_sha256": "044b117a2e1f2814f356bd8e279055fdccdf07fb823ef303512f6f5becbaf3ca",
+      "image_ids": [
+        "8de5be82-9113-4a22-b9e7-7ed674654d70",
+        "2b55a667-3204-4600-b711-44addd2ddf9a",
+        "a8193068-7611-4561-8cca-28543c14b82f"
+      ]
+    },
+    {
+      "notion_id": "da70221954bc82ef9e0c01d28b27e00c",
+      "service": "주변상점",
+      "title": "3-24 상점상세 리뷰신고 _로그인  (비로그인) ",
+      "path": "event-log/01-주변상점/3-24-상점상세-리뷰신고-_로그인-(비로그인).md",
+      "notion_url": "https://app.notion.com/p/da70221954bc82ef9e0c01d28b27e00c",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.236Z",
+      "source_body_sha256": "5206eeed9ed9e11cef25e56c8cc4aa64b562f2304e01f780d9f54698cc520d71",
+      "output_sha256": "2d557f02a4ee8bb5f1cbd72ba6221f24b41ca5808e9e0e4077c3070066f88c58",
+      "image_ids": [
+        "5a6529e1-ec75-484b-9e52-760c6522b9e9",
+        "181f6a44-34ba-4e50-afb8-497cadbc4414",
+        "3674f721-9322-4107-8669-6035a86cbc72"
+      ]
+    },
+    {
+      "notion_id": "42b0221954bc8333b12701e2e6f64760",
+      "service": "주변상점",
+      "title": "3-25 상점상세 리뷰신고 _취소누름  (비로그인) ",
+      "path": "event-log/01-주변상점/3-25-상점상세-리뷰신고-_취소누름-(비로그인).md",
+      "notion_url": "https://app.notion.com/p/42b0221954bc8333b12701e2e6f64760",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:20.713Z",
+      "source_body_sha256": "10aada0d60484282888cb48b8eaf04f301d979ab3e55df836c079a6b35703b58",
+      "output_sha256": "83323c47ffb69274f751599648a37dfbf1a29fb8222d0f64f9f313629104f189",
+      "image_ids": [
+        "5a6529e1-ec75-484b-9e52-760c6522b9e9",
+        "fcd03ec6-5bb4-468c-85bd-ca3a998174bd",
+        "b07adfd1-d05d-40e9-ad8d-0ae99a7d9af0"
+      ]
+    },
+    {
+      "notion_id": "f240221954bc8321a89581a00f515059",
+      "service": "주변상점",
+      "title": "3-26 상점상세 가게정보 진입 (클릭)",
+      "path": "event-log/01-주변상점/3-26-상점상세-가게정보-진입-(클릭).md",
+      "notion_url": "https://app.notion.com/p/f240221954bc8321a89581a00f515059",
+      "platforms": [
+        "IOS",
+        "ANDROID"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:15.809Z",
+      "source_body_sha256": "1eecee766f5dbb7b7c6b143350f97d688e314d71ac59bab89d7ab582da0ca4ce",
+      "output_sha256": "b846958748c9a96311d1f2e15ff02a8c8db601106985dfd9a2b5a19ed426885b",
+      "image_ids": [
+        "3ca86a9c-9733-441a-ab0f-60f73aa68a28"
+      ]
+    },
+    {
+      "notion_id": "a9a0221954bc8332aaca812a20fdc6b8",
+      "service": "주변상점",
+      "title": "3-27 상점상세 리뷰 정렬 (클릭)",
+      "path": "event-log/01-주변상점/3-27-상점상세-리뷰-정렬-(클릭).md",
+      "notion_url": "https://app.notion.com/p/a9a0221954bc8332aaca812a20fdc6b8",
+      "platforms": [
+        "IOS",
+        "ANDROID"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:19.352Z",
+      "source_body_sha256": "5fa70aeb9378b732c0865338e34a545a5ef462a9a1a7936c6c0e4af5d93f7e03",
+      "output_sha256": "3aa73bca6851bf8d1cc64dc030a9d9cc3fd3721531b0dbf6a710f0103da48009",
+      "image_ids": [
+        "b111f0b8-5893-4707-98f3-c59e0094ebe6",
+        "1dc09525-4c93-4119-8f6a-9b334c5aeea6"
+      ]
+    },
+    {
+      "notion_id": "40c0221954bc83da9dd401ed9a8cef00",
+      "service": "주변상점",
+      "title": "3-28 상점상세 사진 넘기기 (Swipe)",
+      "path": "event-log/01-주변상점/3-28-상점상세-사진-넘기기-(Swipe).md",
+      "notion_url": "https://app.notion.com/p/40c0221954bc83da9dd401ed9a8cef00",
+      "platforms": [
+        "IOS",
+        "ANDROID"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:15.610Z",
+      "source_body_sha256": "a6d5ac7a87b26b01ceabd0d0c44a698b7a68468d0d7763e8868b21a9c83645f5",
+      "output_sha256": "ba0ac7f24c221d53493583190e44930ed6bebd50ced5910839527d6137dd5335",
+      "image_ids": [
+        "3b231400-96e5-45d2-ba27-9fb9ffacca90"
+      ]
+    },
+    {
+      "notion_id": "9f60221954bc83708bad81b3a2a0fc0c",
+      "service": "주변상점",
+      "title": "3-3 메뉴추가 - 취소",
+      "path": "event-log/01-주변상점/3-3-메뉴추가-취소.md",
+      "notion_url": "https://app.notion.com/p/9f60221954bc83708bad81b3a2a0fc0c",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "진행 중",
+      "source_last_edited_at": "2026-11-23T13:38:18.504Z",
+      "source_body_sha256": "7d18e1b11ada9c3c08ba8290605daa0efcd69746b424ba56cf01a8aaa10923e9",
+      "output_sha256": "37094c1fc6f1115819c4032ce30d38874705637926bb9a1fd5f898bde6b0ee86",
+      "image_ids": []
+    },
+    {
+      "notion_id": "0160221954bc83c6a97901f7cfe8a750",
+      "service": "주변상점",
+      "title": "3-3 상점상세 사진 (클릭) ",
+      "path": "event-log/01-주변상점/3-3-상점상세-사진-(클릭).md",
+      "notion_url": "https://app.notion.com/p/0160221954bc83c6a97901f7cfe8a750",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.317Z",
+      "source_body_sha256": "5127e5b8bf71ebe80c6158b59ed89a7865e35b7b5cd6660c276582e4dc9a330f",
+      "output_sha256": "e732c17494264fe5a03e80769428c526073d16ccd1d0f2d9681a2e5fb7a8ba32",
+      "image_ids": [
+        "c76b0632-e460-4878-895d-c0d74a53dcde",
+        "28f5bde5-4bb4-448e-a54d-b81286630576"
+      ]
+    },
+    {
+      "notion_id": "3be0221954bc82c3b4d50121b89db3e9",
+      "service": "주변상점",
+      "title": "3-4 메뉴추가 - 메뉴사진",
+      "path": "event-log/01-주변상점/3-4-메뉴추가-메뉴사진.md",
+      "notion_url": "https://app.notion.com/p/3be0221954bc82c3b4d50121b89db3e9",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:22.930Z",
+      "source_body_sha256": "f70058b9b0200124cad42574f7c8dd31c47402173747ea521d7fa0d3beb54f27",
+      "output_sha256": "f4df641481a91e0c8b4192c24ce63ff3d13162c0bba77f7ba77e192cf882bc4b",
+      "image_ids": []
+    },
+    {
+      "notion_id": "f410221954bc8337a87c015d4bcdf9de",
+      "service": "주변상점",
+      "title": "3-4, 4.5 상점상세 메뉴 (클릭,스크롤) ",
+      "path": "event-log/01-주변상점/3-4,-4.5-상점상세-메뉴-(클릭,스크롤).md",
+      "notion_url": "https://app.notion.com/p/f410221954bc8337a87c015d4bcdf9de",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.356Z",
+      "source_body_sha256": "b17551409f4652d96d52ab2ea6aa7d8762a37ca8460472051b210291097a450b",
+      "output_sha256": "5b6a4baea0f5421ce4adbbe745b657665c6b535202be00b136ef5ede0414f913",
+      "image_ids": [
+        "bf811c37-06a0-4ea6-b0e2-72020055422e",
+        "d31784f0-1dd2-4c42-acb0-c7e7e80db928",
+        "ba8b38e9-d30b-4cc9-a52b-ecd48988a2b6",
+        "0874dba8-e4d6-4bae-a48c-f869e41bab25"
+      ]
+    },
+    {
+      "notion_id": "6f00221954bc83b480bc81c89b26bfb3",
+      "service": "주변상점",
+      "title": "3-5-1 상점상세 뒤로 가기 (shoplist) - 레거시",
+      "path": "event-log/01-주변상점/3-5-1-상점상세-뒤로-가기-(shoplist)-레거시.md",
+      "notion_url": "https://app.notion.com/p/6f00221954bc83b480bc81c89b26bfb3",
+      "platforms": [
+        "WEB",
+        "WEB (모바일)",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:18.207Z",
+      "source_body_sha256": "eab492c17118434e22e4f55431dcaad78cbd5dc809b798c7bbf2d1c221bb4c4d",
+      "output_sha256": "1ff6277cf2cd01728f94e3d8f9afa0d180ad6fedff7d2c1f66d9320f0315dec7",
+      "image_ids": []
+    },
+    {
+      "notion_id": "dbb0221954bc8329b877817365757ca7",
+      "service": "주변상점",
+      "title": "3-5-2 상점상세 뒤로 가기 (Click)",
+      "path": "event-log/01-주변상점/3-5-2-상점상세-뒤로-가기-(Click).md",
+      "notion_url": "https://app.notion.com/p/dbb0221954bc8329b877817365757ca7",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:19.249Z",
+      "source_body_sha256": "1fad1454c4ff2a703f9806b7a867ad021de0475f643023db98b002a6d59b69fb",
+      "output_sha256": "5c86cc4b7497d32528c6fb5212e45ba771a5b1c1857ae86f2b07562582d4f161",
+      "image_ids": [
+        "e7648d5e-7bce-47c8-80e4-34d1b7269d9a",
+        "38e99e50-c7fb-40f5-9cda-dc49028c4257"
+      ]
+    },
+    {
+      "notion_id": "4220221954bc8218826a0190e9857ccb",
+      "service": "주변상점",
+      "title": "3-5-3 상점상세 뒤로 가기 (Swipe)",
+      "path": "event-log/01-주변상점/3-5-3-상점상세-뒤로-가기-(Swipe).md",
+      "notion_url": "https://app.notion.com/p/4220221954bc8218826a0190e9857ccb",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.622Z",
+      "source_body_sha256": "50c3635a7b7e2e28bbb821a7d3696e696b7c951c5d46054e857dd2e48962cf95",
+      "output_sha256": "dc33bb5a4e696fc8bee091835dcdf0017ce74003dad72d083080934146b62f57",
+      "image_ids": [
+        "6b532818-8efd-497f-8315-b81aab095673"
+      ]
+    },
+    {
+      "notion_id": "9d30221954bc83d1b16f0105e92d5c52",
+      "service": "주변상점",
+      "title": "3-5-4 상점상세 뒤로 가기 (Logo) - 레거시",
+      "path": "event-log/01-주변상점/3-5-4-상점상세-뒤로-가기-(Logo)-레거시.md",
+      "notion_url": "https://app.notion.com/p/9d30221954bc83d1b16f0105e92d5c52",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.345Z",
+      "source_body_sha256": "329cf5c974302f79f0f403f486c0b68a267e101563b332e324872d011dba593a",
+      "output_sha256": "20f55291209b49aeda51d60d09bae60356ff3956aa9e7fbbd803158fff74047f",
+      "image_ids": []
+    },
+    {
+      "notion_id": "a9f0221954bc8396bc1c01e71f2a5933",
+      "service": "주변상점",
+      "title": "3-8 상점상세 이벤트 (클릭) ",
+      "path": "event-log/01-주변상점/3-8-상점상세-이벤트-(클릭).md",
+      "notion_url": "https://app.notion.com/p/a9f0221954bc8396bc1c01e71f2a5933",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:21.070Z",
+      "source_body_sha256": "1231e0818b6f62f5bb2b09a79e94d7c49873ab7da92b27d773e61a58c40dceb7",
+      "output_sha256": "0fca8c0d7448a9af9e2a71a372cde55e4ca6260f37c5633c9462e2e952d95f11",
+      "image_ids": [
+        "5b5d1652-e6b8-456d-ba45-cdfd22212026",
+        "da3493c4-a450-4a80-abcc-69a7496e362d"
+      ]
+    },
+    {
+      "notion_id": "bfe0221954bc830aaeb381a247f8733b",
+      "service": "주변상점",
+      "title": "3-9 상점상세 이벤트 (스크롤) ",
+      "path": "event-log/01-주변상점/3-9-상점상세-이벤트-(스크롤).md",
+      "notion_url": "https://app.notion.com/p/bfe0221954bc830aaeb381a247f8733b",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.918Z",
+      "source_body_sha256": "2425bbc6a5cf896b0587eefa82df97174e83544dc6dcbd092a0a94c8106bb195",
+      "output_sha256": "0519900e8b18eb93051322f87237c8930f438c4055d908e6dd537f9581d58f64",
+      "image_ids": [
+        "c5e50ccd-25d2-4800-9086-3d6de7eea861",
+        "674c527b-6be8-4c9f-8537-42310cfd8e2a",
+        "46b85762-9fe1-4963-80c3-cd50599fe176"
+      ]
+    },
+    {
+      "notion_id": "dd80221954bc827b9923818d6909bcc0",
+      "service": "주변상점",
+      "title": "4-1 전화 주문 혜택 클릭 (메인 페이지) - 레거시",
+      "path": "event-log/01-주변상점/4-1-전화-주문-혜택-클릭-(메인-페이지)-레거시.md",
+      "notion_url": "https://app.notion.com/p/dd80221954bc827b9923818d6909bcc0",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.493Z",
+      "source_body_sha256": "506fa944e8c802f1b731805df0b8f577f4aa4e48f4b1196983ff90b875d8ec4e",
+      "output_sha256": "1e6aaab6be179a67459c5af2bd082e067ebff528e63493ba865736968000ecaa",
+      "image_ids": [
+        "e8a27d5e-a721-4f19-ba9f-82255a52e054"
+      ]
+    },
+    {
+      "notion_id": "cb00221954bc834d820781197df71f8d",
+      "service": "주변상점",
+      "title": "4-2 전화 주문 혜택 페이지 버튼 → 버튼 ",
+      "path": "event-log/01-주변상점/4-2-전화-주문-혜택-페이지-버튼-→-버튼.md",
+      "notion_url": "https://app.notion.com/p/cb00221954bc834d820781197df71f8d",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.627Z",
+      "source_body_sha256": "587e15416dfcd2d0cf2076a3f6f6dd312b5be9df7887673f590edeac4380c437",
+      "output_sha256": "33c60a82f4d64f4805420914fcecc5a88839c161c314b5e519912033911becaa",
+      "image_ids": [
+        "a912b803-fb91-42bd-a8f5-5ce2312560f9",
+        "221cea1e-465c-4b91-ae4f-26fd5720ec9a"
+      ]
+    },
+    {
+      "notion_id": "0580221954bc8355be9501daf2fb44e5",
+      "service": "주변상점",
+      "title": "4-3 카테고리에서 혜택페이지(클릭) ",
+      "path": "event-log/01-주변상점/4-3-카테고리에서-혜택페이지(클릭).md",
+      "notion_url": "https://app.notion.com/p/0580221954bc8355be9501daf2fb44e5",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.411Z",
+      "source_body_sha256": "80705ec7ce6affdc5e34859bfd2dc5b7e59bc99798df7956346d56bd170ec2ff",
+      "output_sha256": "4441fc3e66b987d6518b37605a5714f6da21645d8ce87f01f3c42b631c011143",
+      "image_ids": [
+        "cac470c3-4aae-4736-858d-57a2a7f9e08b",
+        "9062268f-8ba9-4013-928b-066d9b767d81"
+      ]
+    },
+    {
+      "notion_id": "e350221954bc82a8be72811adc94f962",
+      "service": "주변상점",
+      "title": "4-4 전화 주문 혜택 상점상세 페이지(클릭)",
+      "path": "event-log/01-주변상점/4-4-전화-주문-혜택-상점상세-페이지(클릭).md",
+      "notion_url": "https://app.notion.com/p/e350221954bc82a8be72811adc94f962",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.535Z",
+      "source_body_sha256": "7941fd2b66e9c64b1a7285a083d31b8b381e843c25262c664c212a7eed6991d7",
+      "output_sha256": "704a4bd74c816609792914a17be7752164468063368683ce1366c7cf0547d7f4",
+      "image_ids": [
+        "217b1535-c091-4dbd-8cc2-5ecea24ea932"
+      ]
+    },
+    {
+      "notion_id": "d270221954bc821d95768159502d9ad2",
+      "service": "주변상점",
+      "title": "4-5 전화 주문 혜택 상점상세 전화 (클릭) ",
+      "path": "event-log/01-주변상점/4-5-전화-주문-혜택-상점상세-전화-(클릭).md",
+      "notion_url": "https://app.notion.com/p/d270221954bc821d95768159502d9ad2",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:19.954Z",
+      "source_body_sha256": "2885e8c5738492cff42729fad9e610198575aaa851e5fa078bec9ab54a8cafed",
+      "output_sha256": "698c8809790a87f24df26c3031d38f92552f0cc9737acb9663225a5fdab7c48d",
+      "image_ids": [
+        "1a866dc9-604d-46c8-a357-46f57728112a"
+      ]
+    },
+    {
+      "notion_id": "6010221954bc83ecaa0d01f8bb852fea",
+      "service": "주변상점",
+      "title": "4-6 상점 혜택 화면 뒤로가기 (Click · Swipe)",
+      "path": "event-log/01-주변상점/4-6-상점-혜택-화면-뒤로가기-(Click-·-Swipe).md",
+      "notion_url": "https://app.notion.com/p/6010221954bc83ecaa0d01f8bb852fea",
+      "platforms": [
+        "IOS",
+        "ANDROID"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:19.197Z",
+      "source_body_sha256": "f2be83862fb37fef359f95bed52cbe411d35fcb39fb4df2cdc9b41d4397fe0fb",
+      "output_sha256": "3a82f6c35ce5fa4055f0771d5f25bdf0e2ebaeb4f8245fb4f4c7aac2348fa141",
+      "image_ids": [
+        "917bb4dd-2097-4707-8e5f-f1e3c0163ba7"
+      ]
+    },
+    {
+      "notion_id": "ee70221954bc82c69fdc01063313bb55",
+      "service": "주변상점",
+      "title": "4-7 상점 혜택 문구 펼치기 (클릭)",
+      "path": "event-log/01-주변상점/4-7-상점-혜택-문구-펼치기-(클릭).md",
+      "notion_url": "https://app.notion.com/p/ee70221954bc82c69fdc01063313bb55",
+      "platforms": [
+        "IOS",
+        "ANDROID"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:18.985Z",
+      "source_body_sha256": "0ae2e7bdc536fa790666e7dcd9f69aaaaa487f91068afeaff2d2611c04ee8b54",
+      "output_sha256": "06f1411546291c48a8a3f0d1365b1152755f8661369520c89edb64ff3a006d7f",
+      "image_ids": [
+        "decdf7e7-6e86-47cc-b1a3-310a2f7a9fa1"
+      ]
+    },
+    {
+      "notion_id": "c530221954bc8357bd5301267f04988c",
+      "service": "주변상점",
+      "title": "1-1-1 메인 → 주변상점 (클릭) - (레거시)",
+      "path": "event-log/01-주변상점/1-1-1-메인-→-주변상점-(클릭)---(레거시).md",
+      "notion_url": "https://app.notion.com/p/c530221954bc8357bd5301267f04988c",
+      "platforms": [
+        "WEB",
+        "WEB (모바일)",
+        "IOS",
+        "ANDROID"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:15.827Z",
+      "source_body_sha256": "868476bfab1c6b483f461a3d291b27a99405217490778ef0f8f148ab9e878f7b",
+      "output_sha256": "a727fc1d7a783192c94d7ffb3e5b00eecbceab2d4b85a6e1f2239bee8fbc9df0",
+      "image_ids": []
+    },
+    {
+      "notion_id": "0240221954bc8334b19b81f35b1409da",
+      "service": "주변상점",
+      "title": "1-5 카테고리 → 주변상점 (클릭) - 레거시",
+      "path": "event-log/01-주변상점/1-5-카테고리-→-주변상점-(클릭)---레거시.md",
+      "notion_url": "https://app.notion.com/p/0240221954bc8334b19b81f35b1409da",
+      "platforms": [
+        "IOS",
+        "ANDROID",
+        "WEB (모바일)"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:16.695Z",
+      "source_body_sha256": "95efb0f38025174336a5e99d8fd077b8c03a70442653f9bd4493332ffc4adabc",
+      "output_sha256": "ce2d3bf32c4707abc5b7b70415a901606520f78ff1edcb02ab16445583fe79bd",
+      "image_ids": []
+    }
+  ],
+  "blank_pages": [
+    {
+      "notion_id": "78b0221954bc837584bb81100f425d46",
+      "title": "새 페이지",
+      "service": "주변상점",
+      "url": "https://app.notion.com/p/78b0221954bc837584bb81100f425d46"
+    },
+    {
+      "notion_id": "5b70221954bc822a982081e2833db28d",
+      "title": "새 페이지",
+      "service": "주변상점",
+      "url": "https://app.notion.com/p/5b70221954bc822a982081e2833db28d"
+    }
+  ]
+}
