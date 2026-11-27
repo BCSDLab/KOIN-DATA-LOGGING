@@ -39,7 +39,7 @@ class VersionScopeTest(unittest.TestCase):
             policy=Path(folder)/'policy.json';policy.write_text('{}')
             with self.assertRaises(VersionScopeError): targets_for('stage',policy)
 
-    def test_runner_filters_rules_agent_and_previous_period(self):
+    def test_runner_filters_rules_investigation_and_previous_period(self):
         seen=[]
         def investigator(catalog, report, rows):
             seen.append((report['environment'],rows))

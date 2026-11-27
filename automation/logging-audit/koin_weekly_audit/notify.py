@@ -1,10 +1,12 @@
 import json
+import hashlib
 import html
 import os
 import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+from datetime import datetime, timezone
 from .environment_evidence import compare_environments
 from .handoff import developer_handoff
 
@@ -54,9 +56,23 @@ def notification_sections(report):
     return lines
 
 
+def audit_context(report):
+    source = {'notion': 'Notion', 'github': 'GitHub main'}.get(report.get('source_kind'), '미확인')
+    lines = ['명세 기준: ' + source]
+    if source == 'GitHub main':
+        lines[-1] += ' · Notion 직접 대조 미실행'
+    status = report.get('investigation', {}).get('status')
+    lines.append('상세 분석: 규칙 기반 · ' + ('완료' if status == 'completed' else '미완료'))
+    lines.append('AI API: 사용 안 함')
+    debug = report.get('normalization', {}).get('android_debug_events', 0)
+    if debug:
+        lines.append('Android 디버그 ' + str(debug) + '건: 접미사 제외 후 명세 대조')
+    return lines
+
+
 def slack_text(environment, start, end, report):
     title = '[Stage]' if environment == 'stage' else '[Prod]'
-    lines = [f'{title} 주간 로깅 검수 · {start[5:]}~{end[5:]}'] + notification_sections(report)
+    lines = [f'{title} 주간 로깅 검수 · {start[5:]}~{end[5:]}'] + notification_sections(report) + audit_context(report)
     if report.get('detail_url'):
         lines.append('상세보기: ' + report['detail_url'])
     return '\n'.join(lines)
@@ -66,8 +82,9 @@ def slack_payload(environment, start, end, report):
     blocks = [dict(type='header', text=dict(type='plain_text', text=('[Stage]' if environment == 'stage' else '[Prod]') + ' 주간 로깅 검수')),
               dict(type='context', elements=[dict(type='mrkdwn', text=f'{start} ~ {end} · KST')])]
     for section in notification_sections(report):
-        # Each platform is independent; never show AI failure as an event error.
+        # Analysis status does not change the independent platform findings.
         blocks.append(dict(type='section', text=dict(type='mrkdwn', text=section[:2900])))
+    blocks.append(dict(type='context', elements=[dict(type='mrkdwn', text='\n'.join(audit_context(report)))]))
     if report.get('detail_url'):
         blocks.append(dict(type='section', text=dict(type='mrkdwn', text='<' + report['detail_url'] + '|상세보기>')))
     return dict(text=slack_text(environment, start, end, report), blocks=blocks, unfurl_links=False, unfurl_media=False)
@@ -81,17 +98,52 @@ def detail_markdown(reports):
         title = 'Stage' if env == 'stage' else 'Prod'
         links = ['[' + name + ' (' + str(len(platform_findings(report, platform))) + '개 항목)](#user-content-audit-' + env + '-' + platform.lower() + ')' for platform, name in PLATFORM_NAMES]
         lines += ['**' + title + '**: ' + ' · '.join(links) + ' · [실제 value 수집 현황](#user-content-values-' + env + ')', '']
+    lines += ['## 플랫폼별 요약', '', '| 환경 · 플랫폼 | 판정 대상 수집 | 확인 label | 상태 |', '| --- | ---: | ---: | --- |']
     for env, report in reports.items():
+        for platform, name in PLATFORM_NAMES:
+            events = report.get('platform_summary', {}).get(platform, {}).get('events', 0)
+            labels = len({f['label'] for f in platform_findings(report, platform)})
+            status = '조회 불완전 · 판정 불가' if not report.get('complete') else '수집 없음 · 판정 없음' if not events else '확인 필요' if labels else '관측 범위 이상 없음'
+            link = '[확인하기](#user-content-audit-' + env + '-' + platform.lower() + ')'
+            lines += ['| ' + ('Stage' if env == 'stage' else 'Prod') + ' · ' + name + ' | ' + str(events) + ' | ' + str(labels) + ' | ' + status + ' · ' + link + ' |']
+    lines += ['', developer_handoff(reports, REASONS), '', '## 전체 분석 근거', '']
+    for env, report in reports.items():
+        lines += ['<details>', '<summary>' + ('Stage' if env == 'stage' else 'Prod') + ' · 전체 분석 근거 펼치기</summary>', '']
         lines += ['## ' + env, '', '기간: ' + report['start'] + ' ~ ' + report['end'],
                   '명세 커밋: `' + (report.get('source_revision') or '미확인') + '`',
                   'BigQuery 조회 job: `' + str(report.get('query_job_id') or '미확인') + '`', '']
+        lines += audit_context(report) + ['']
+        investigation = report.get('investigation', {})
+        if investigation.get('status') == 'completed':
+            lines += ['### 규칙 기반 상세 분석', '',
+                      '날짜·버전·명세를 추가 집계한 결과입니다. 확인 항목은 고정된 안내이며 원인 확정이나 AI 추론이 아닙니다.', '']
+            for item in investigation.get('investigations', []):
+                lines += ['#### ' + safe(item['id']) + ' · ' + safe(item['platform']) + ' · ' + safe(item['label']), '',
+                          '- 이 label 관측: ' + str(item['observed_events']) + '건 (오류 건수와 다름)',
+                          '- 사유별 발생: ' + ', '.join(safe(REASONS.get(r['reason'], r['reason'])) + ' ' + str(r['events']) + '건' for r in item['reasons']),
+                          '- 조회 범위 내 관측일: ' + safe(item['first_observed_date']) + ' ~ ' + safe(item['last_observed_date']), '']
+                lines += ['| 집계 기준 | 실제 값과 건수 |', '| --- | --- |']
+                for field, grouped in item['breakdowns'].items():
+                    values = '; '.join(safe(g['key']) + ' (' + str(g['events']) + '건)' for g in grouped['groups'])
+                    if grouped['omitted_groups']:
+                        values += '; 나머지 ' + str(grouped['omitted_groups']) + '개 값 · ' + str(grouped['omitted_events']) + '건'
+                    lines.append('| ' + safe(field) + ' | ' + values.replace('|', '&#124;') + ' |')
+                lines += ['']
+                for contract in item['contracts']:
+                    lines.append('- 명세: ' + '; '.join(safe(field) + '=' + safe(', '.join(contract.get(field, []))) for field in ('names', 'screens', 'categories', 'platforms')))
+                for check in item['checks']:
+                    lines.append('- 확인할 사항: ' + safe(check))
+                lines += ['']
+            for limitation in investigation.get('limitations', []):
+                lines.append('- 분석 한계: ' + html.escape(str(limitation)).replace('\n', ' '))
+            lines += ['근거·명세 출처·query job ID는 해당 환경의 investigation.json 및 report.json에 보존됩니다.', '']
         if not report.get('complete'):
             lines += notification_sections(report) + ['']
         for platform, name in PLATFORM_NAMES:
             findings = platform_findings(report, platform)
             target = report.get('version_scope', {}).get('targets', {}).get(platform)
             name = name + (' ' + target if target else '')
-            lines += ['<a name="audit-' + env + '-' + platform.lower() + '"></a>', '', '### ' + ('Stage' if env == 'stage' else 'Prod') + ' · ' + name, '']
+            lines += ['<a name="evidence-' + env + '-' + platform.lower() + '"></a>', '', '### ' + ('Stage' if env == 'stage' else 'Prod') + ' · ' + name, '']
             if not findings:
                 stats = report.get('platform_summary', {}).get(platform)
                 lines += [('이상 없음' if report.get('complete') and stats and stats['events'] else '판정 대상 없음 또는 조회 불완전'), '']
@@ -122,7 +174,7 @@ def detail_markdown(reports):
             lines += ['관측 없음 또는 조회 불완전']
         lines += ['']
         scope = report.get('version_scope', {})
-        lines += ['### 구버전·기타 버전 참고 (이상 판정 제외)', '', '모바일 검수 기준은 담당자가 확인한 버전입니다. Web은 전체 수집을 검사합니다. 구버전 및 기준 외 버전은 아래 집계로만 보존하며 AI 조사와 이상 알림에서 제외합니다.', '', '| 플랫폼 | 버전 | 구분 | 수집 건수 | label 수 |', '| --- | --- | --- | ---: | ---: |']
+        lines += ['### 구버전·기타 버전 참고 (이상 판정 제외)', '', '모바일 검수 기준은 담당자가 확인한 버전입니다. Web은 전체 수집을 검사합니다. 구버전 및 기준 외 버전은 아래 집계로만 보존하며 상세 분석과 이상 알림에서 제외합니다.', '', '| 플랫폼 | 버전 | 구분 | 수집 건수 | label 수 |', '| --- | --- | --- | ---: | ---: |']
         for row in scope.get('reference', []):
             kind = {'older':'구버전', 'newer_or_other':'기준보다 높은 버전·기타 빌드', 'unknown':'버전 미확인'}[row['classification']]
             lines.append('| ' + ' | '.join([safe(row['platform']), safe(row['app_version']), kind, str(row['events']), str(row['labels'])]) + ' |')
@@ -131,7 +183,8 @@ def detail_markdown(reports):
         lines += ['']
         previous = report.get('previous_period_recheck', {})
         lines += ['이전 기간 재검사: ' + ('완료' if previous.get('complete') else '불완전') + ' · 누락 ' + ', '.join(previous.get('missing_daily_tables', [])),
-                  'AI 추가 조사: ' + report.get('agent', {}).get('status', '미확인') + ' · ' + report.get('agent', {}).get('failure_type', ''), '']
+                  '규칙 기반 상세 분석: ' + report.get('investigation', {}).get('status', '미확인'), '']
+        lines += ['</details>', '']
     comparison = compare_environments(reports)
     lines += ['<a name="audit-environments"></a>', '', '## Stage · Prod 실제 수집 비교', '']
     if not comparison['complete']:
@@ -146,7 +199,6 @@ def detail_markdown(reports):
             lines += ['| ' + ' | '.join(html.escape(str(c)).replace('\n',' ').replace('|','&#124;') for c in cells) + ' |']
         if not comparison['differences']:
             lines += ['| — | — | — | ' + ('관측한 비교 대상 필드에서 값 차이 없음' if comparison['common_labels'] else '양쪽 공통 관측 없어 비교 대상 없음') + ' | — | — |']
-    lines += ['', developer_handoff(reports, REASONS)]
     return '\n'.join(lines)
 
 
@@ -155,23 +207,26 @@ def send_once(webhook, text, receipt):
     if parsed.scheme != 'https' or parsed.hostname != 'hooks.slack.com' or not parsed.path.startswith('/services/') or parsed.query:
         raise ValueError('Invalid Slack webhook destination')
     receipt = Path(receipt)
+    payload = json.dumps(text if isinstance(text, dict) else {'text': text}, ensure_ascii=False, sort_keys=True).encode('utf8')
+    payload_sha256 = hashlib.sha256(payload).hexdigest()
     receipt.parent.mkdir(parents=True, exist_ok=True)
     try:
         fd = os.open(receipt, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
     except FileExistsError:
-        return json.loads(receipt.read_text(encoding='utf8'))
+        result = json.loads(receipt.read_text(encoding='utf8'))
+        return dict(result, reused=True, payload_matches=result.get('payload_sha256') == payload_sha256)
     with os.fdopen(fd, 'w', encoding='utf8') as f:
         json.dump({'status': 'delivery_unknown', 'reason': 'attempt_reserved'}, f)
-    req = urllib.request.Request(webhook, data=json.dumps(text if isinstance(text, dict) else {'text': text}, ensure_ascii=False).encode('utf8'),
+    req = urllib.request.Request(webhook, data=payload,
                                  headers={'Content-Type': 'application/json; charset=utf-8'}, method='POST')
-    result = {'status': 'delivery_unknown'}
+    result = {'status': 'delivery_unknown', 'payload_sha256': payload_sha256}
     try:
         with urllib.request.urlopen(req, timeout=15) as response:
             body = response.read(128).decode()
             if response.status == 200 and body.strip() == 'ok':
-                result = {'status': 'sent'}
+                result.update(status='sent', sent_at=datetime.now(timezone.utc).isoformat())
     except urllib.error.HTTPError as exc:
-        result = {'status': 'rejected' if exc.code < 500 else 'delivery_unknown', 'http_status': exc.code}
+        result.update(status='rejected' if exc.code < 500 else 'delivery_unknown', http_status=exc.code)
     except OSError:
         pass
     # Never persist the webhook, raw exception text, IDs or event values.
@@ -179,3 +234,4 @@ def send_once(webhook, text, receipt):
     tmp.write_text(json.dumps(result), encoding='utf8')
     tmp.replace(receipt)
     return result
+

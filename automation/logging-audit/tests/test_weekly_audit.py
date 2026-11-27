@@ -28,6 +28,21 @@ OBS = dict(event_date='20261122', event_name='DA1', platform='IOS', app_version=
 
 
 class ContractsTest(unittest.TestCase):
+    def test_literal_back_arrow_does_not_consume_following_contract(self):
+        text = '- 새 로깅\n- 설명: 뒤로가기(\\<) 버튼을 클릭\n' + '\n'.join(SPEC.splitlines()[2:]) + '\n<!-- logging-section:new:end -->'
+        catalog = build_catalog([page(text)])
+        self.assertIn(OBS['event_label'], catalog['by_label'])
+        self.assertEqual(compare(catalog, [OBS])['findings'], [])
+
+    def test_escaped_dynamic_angle_value_remains_required(self):
+        text = SPEC.replace('value: 뒤로가기', r'value: \<실제 대상명\>')
+        catalog = build_catalog([page(text)])
+        contract = catalog['by_label'][OBS['event_label']][0]
+        self.assertTrue(contract['value_required'])
+        self.assertIsNone(contract['fixed_value'])
+        self.assertEqual(compare(catalog, [dict(OBS, value='대상')])['findings'], [])
+        self.assertIn('value_missing', [f['reason'] for f in compare(catalog, [dict(OBS, value=None)])['findings']])
+
     def test_details_separate_expected_actual_by_platform_without_raw_values(self):
         cat = build_catalog([page(SPEC, ['IOS', 'ANDROID'])])
         result = compare(cat, [dict(OBS, screen_view='wrong_ios', value='private@example.com'),

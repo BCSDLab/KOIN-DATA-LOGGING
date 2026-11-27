@@ -18,7 +18,7 @@ def finding(label, reason='screen_view_mismatch', platform='IOS'):
 
 class SlackPayloadTest(unittest.TestCase):
     def test_normal_platforms_only_report_no_anomaly(self):
-        r=report();r['agent']=dict(status='failed',failure_type='APIError')
+        r=report();r['investigation']=dict(mode='rules',status='completed')
         message=slack_text('stage',r['start'],r['end'],r)
         for p in ('iOS','Android','Web'): self.assertIn(p+': 이상 없음',message)
         self.assertNotIn('APIError',message)

@@ -1,5 +1,7 @@
 # 주간 검수 연결 상태 · 2026-11-24
 
+2026-11-27 변경안: 외부 AI 호출·SDK·키 전달을 제거하고 규칙 기반 상세 분석으로 대체한다. 아래 OpenAI Secret 및 최초 AI 시험 언급은 당시 구성 기록이며 현행 실행의 요구사항이 아니다. 기존 Secret은 읽거나 삭제하지 않는다.
+
 GCP 인증은 서비스 계정 키 없이 GitHub OIDC/Workload Identity Federation을 사용한다.
 
 - 서비스 계정: `koin-logging-audit@kap-chat.iam.gserviceaccount.com`

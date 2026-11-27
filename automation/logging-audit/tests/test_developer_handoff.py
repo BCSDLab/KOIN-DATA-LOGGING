@@ -47,3 +47,24 @@ class DeveloperHandoffTest(unittest.TestCase):
         self.assertEqual(collection[0]['actual']['"null"'],3)
         self.assertEqual(collection[0]['actual']['"" (빈 문자열)'],3)
         self.assertNotIn('private@example.com',json.dumps(collection))
+
+class ReadableDetailTest(unittest.TestCase):
+    def test_one_card_per_label_and_field_counts_are_not_added(self):
+        report = compare(build_catalog([page(SPEC)]), [dict(OBS, event_name='CAMPUS', screen_view='wrong', event_category='swipe', value='스와이프')])
+        report.update(complete=True, start='2026-11-16', end='2026-11-22', platform_summary={'IOS': {'events': 3}})
+        output = detail_markdown({'stage': report})
+        self.assertEqual(output.count('#### ' + OBS['event_label'] + '\n'), 1)
+        for field in ('event_name', 'screen_view', 'event_category', 'value'):
+            self.assertIn('| **' + field + '**', output)
+        self.assertIn('필드별 건수는 중복될 수 있습니다', output)
+        self.assertLess(output.index('## 플랫폼별 요약'), output.index('# 개발자 전달용 상세'))
+        self.assertLess(output.index('# 개발자 전달용 상세'), output.index('## 전체 분석 근거'))
+        self.assertEqual(output.count('<a name="audit-stage-ios"></a>'), 1)
+        self.assertEqual(output.count('<details>'), output.count('</details>'))
+        self.assertIn('명세 바로가기', output)
+
+    def test_zero_and_incomplete_are_visible_in_overview(self):
+        report = dict(complete=False, start='2026-11-16', end='2026-11-22', findings=[])
+        self.assertIn('조회 불완전 · 판정 불가', detail_markdown({'stage': report}))
+        report['complete'] = True
+        self.assertIn('수집 없음 · 판정 없음', detail_markdown({'stage': report}))
