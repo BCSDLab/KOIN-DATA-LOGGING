@@ -24,11 +24,15 @@ def failure_diagnostics(exc):
     body = body.get('error', body)
     body = body if isinstance(body, dict) else {}
     code = getattr(exc, 'code', None) or body.get('code')
-    known = {'invalid_api_key', 'insufficient_quota', 'rate_limit_exceeded',
+    quota_codes = {'insufficient_quota', 'billing_hard_limit_reached', 'usage_limit_reached',
+                   'billing_limit_reached', 'organization_quota_exceeded'}
+    known = {'invalid_api_key', 'rate_limit_exceeded',
              'model_not_found', 'permission_denied', 'invalid_request_error',
-             'unsupported_parameter', 'invalid_value', 'server_error'}
+             'unsupported_parameter', 'invalid_value', 'server_error'} | quota_codes
     code = code if isinstance(code, str) and code in known else None
-    if code == 'insufficient_quota':
+    message = getattr(exc, 'message', None) or body.get('message') or str(exc)
+    quota_hint = isinstance(message, str) and 'usage or billing limit' in message.lower()
+    if code in quota_codes or quota_hint:
         category = 'quota'
     elif status == 401 or code == 'invalid_api_key':
         category = 'authentication'
@@ -44,7 +48,10 @@ def failure_diagnostics(exc):
         category = 'request'
     else:
         category = 'unclassified'
-    return dict(category=category, http_status=status, api_code=code)
+    result = dict(category=category, http_status=status, api_code=code)
+    if quota_hint:
+        result['reason'] = 'usage_or_billing_limit'
+    return result
 
 
 def obj(value):

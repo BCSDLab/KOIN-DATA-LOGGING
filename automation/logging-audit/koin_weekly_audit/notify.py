@@ -63,6 +63,8 @@ def audit_context(report):
         lines[-1] += ' · Notion 직접 대조 미실행'
     status = report.get('agent', {}).get('status')
     lines.append('AI 추가 조사: ' + ('완료' if status == 'completed' else '미완료 · 규칙 검수 결과와 별도'))
+    if status != 'completed' and report.get('agent', {}).get('failure_diagnostics', {}).get('category') == 'quota':
+        lines.append('AI API: 사용량·결제 한도 확인 필요')
     debug = report.get('normalization', {}).get('android_debug_events', 0)
     if debug:
         lines.append('Android 디버그 ' + str(debug) + '건: 접미사 제외 후 명세 대조')

@@ -34,7 +34,7 @@ def main():
         text = re.sub(r'[A-Za-z0-9_-]{32,}', '[identifier]', text)
         result['synthetic_error_message'] = text[:1500]
         body = getattr(exc, 'body', None)
-        result['error_body_keys'] = sorted(str(key)[:40] for key in body) if isinstance(body, dict) else []
+        result['error_body_keys'] = sorted(key for key in body if key in ('code', 'message', 'type', 'param', 'error')) if isinstance(body, dict) else []
     with OpenAI(max_retries=0, timeout=30) as client:
         try:
             model = client.models.retrieve(result['model'])

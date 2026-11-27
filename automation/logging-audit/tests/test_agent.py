@@ -91,6 +91,15 @@ class AgentTest(unittest.TestCase):
         error.body = {'code': 'sk-proj-DO-NOT-PRINT'}
         self.assertIsNone(failure_diagnostics(error)['api_code'])
 
+    def test_streaming_billing_limit_without_http_status_is_quota(self):
+        # Reproduced live: model/session access succeed, then an SSE APIError.
+        error = RuntimeError('Your organization has reached a usage or billing limit. sk-proj-DO-NOT-PRINT')
+        error.body = {'code': None, 'message': str(error), 'param': None, 'type': 'error'}
+        diagnostic = failure_diagnostics(error)
+        self.assertEqual(diagnostic, dict(category='quota', http_status=None,
+                                         api_code=None, reason='usage_or_billing_limit'))
+        self.assertNotIn('sk-proj', json.dumps(diagnostic))
+
     def test_android_debug_ai_breakdown_uses_matching_normalized_label(self):
         catalog, report, rows = fixture()
         rows[0].update(platform='ANDROID', event_name='DA2_debug',

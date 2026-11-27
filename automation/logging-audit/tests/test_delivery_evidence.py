@@ -56,6 +56,13 @@ class DeliveryEvidenceTest(unittest.TestCase):
         self.assertNotIn('APIError', message)
         self.assertIn('AI 추가 조사: 미완료', json.dumps(slack_payload('stage', result['start'], result['end'], result), ensure_ascii=False))
 
+    def test_quota_is_ai_status_not_platform_logging_anomaly(self):
+        result = report()
+        result['agent'] = dict(status='failed', failure_diagnostics=dict(category='quota'))
+        message = slack_text('stage', result['start'], result['end'], result)
+        self.assertIn('사용량·결제 한도 확인 필요', message)
+        self.assertIn('Android: 이상 없음', message)
+
 
 if __name__ == '__main__':
     unittest.main()
