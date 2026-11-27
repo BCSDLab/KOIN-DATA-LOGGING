@@ -172,7 +172,10 @@ class AgentTest(unittest.TestCase):
         self.assertIn('이상·확인 필요', message)
         self.assertIn('1개 label', message)
         report['agent'] = investigate(catalog, report, rows, client(FakeSessions()))
-        self.assertEqual(message, slack_text('stage', report['start'], report['end'], report))
+        completed = slack_text('stage', report['start'], report['end'], report)
+        self.assertEqual(message.split('AI 추가 조사:')[0], completed.split('AI 추가 조사:')[0])
+        self.assertIn('AI 추가 조사: 미완료', message)
+        self.assertIn('AI 추가 조사: 완료', completed)
 
     def test_runner_agent_failure_isolated_and_reported(self):
         def query(*args, **kw):

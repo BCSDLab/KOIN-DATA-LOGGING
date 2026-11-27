@@ -4,6 +4,7 @@ import re
 from collections import defaultdict
 from .value_evidence import display_value, expected_value
 from .source_value import source_values, contract_value_sources
+from .normalization import normalize_observation
 
 FIELDS = ('설명', 'screen_view', 'event_name', 'event_label', 'value', 'event_category')
 LEGACY_EVENT_NAMES = frozenset(('CAMPUS', 'BUSINESS', 'USER'))
@@ -217,6 +218,7 @@ def compare(catalog, observations):
                       event_names=defaultdict(int)) for p in PLATFORMS}
     total = 0
     for obs in observations:
+        obs = normalize_observation(obs)
         event_name = obs['event_name']
         if event_name not in ('DA1', 'DA2') and event_name.upper() not in LEGACY_EVENT_NAMES and not obs.get('event_label') and not obs.get('event_label_parameter_present'):
             continue
@@ -329,3 +331,4 @@ def compare(catalog, observations):
                 unobserved_platform_contracts=[dict(label=l, platform=p) for l, p in sorted(expected_pairs - observed_pairs)],
                 snapshot_sha256=catalog['snapshot_sha256'],
                 interpretation='Latest-spec mismatches are candidates; deployment/version cutovers are not inferred. Dynamic values are checked for presence only.')
+

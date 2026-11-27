@@ -8,10 +8,43 @@ import os
 import re
 import time
 from collections import Counter
+from .normalization import normalize_observation
 
 
 class InvestigationError(RuntimeError):
     pass
+
+
+def failure_diagnostics(exc):
+    """Persist allowlisted API metadata, never exception messages or bodies."""
+    status = getattr(exc, 'status_code', None)
+    status = status if type(status) is int and 100 <= status <= 599 else None
+    body = getattr(exc, 'body', None)
+    body = body if isinstance(body, dict) else {}
+    body = body.get('error', body)
+    body = body if isinstance(body, dict) else {}
+    code = getattr(exc, 'code', None) or body.get('code')
+    known = {'invalid_api_key', 'insufficient_quota', 'rate_limit_exceeded',
+             'model_not_found', 'permission_denied', 'invalid_request_error',
+             'unsupported_parameter', 'invalid_value', 'server_error'}
+    code = code if isinstance(code, str) and code in known else None
+    if code == 'insufficient_quota':
+        category = 'quota'
+    elif status == 401 or code == 'invalid_api_key':
+        category = 'authentication'
+    elif status == 429 or code == 'rate_limit_exceeded':
+        category = 'rate_limit'
+    elif status == 403 or code in ('model_not_found', 'permission_denied'):
+        category = 'access'
+    elif status is not None and status >= 500:
+        category = 'server'
+    elif type(exc).__name__ in ('APIConnectionError', 'APITimeoutError'):
+        category = 'transport'
+    elif status is not None and 400 <= status < 500:
+        category = 'request'
+    else:
+        category = 'unclassified'
+    return dict(category=category, http_status=status, api_code=code)
 
 
 def obj(value):
@@ -59,7 +92,8 @@ limitations에 표본 조사 범위, 동적 value/미관측/배포시점 확인 
 
 class EvidenceTools:
     def __init__(self, catalog, report, rows, limit=12):
-        self.catalog, self.report, self.rows = catalog, report, rows
+        self.catalog, self.report = catalog, report
+        self.rows = [normalize_observation(row) for row in rows]
         self.evidence, self.calls, self.limit = [], 0, limit
         self.allowed = set(catalog['by_label']) | set(catalog['legacy_by_label'])
         self.allowed.update(x['label'] for x in report.get('findings', []))
@@ -223,6 +257,7 @@ def investigate(catalog, report, rows, client=None, clock=time.monotonic, checkp
     except Exception as exc:
         # Exception messages can contain requests/secrets. Only stable class names are persisted.
         result.update(status='failed', failure_type=type(exc).__name__)
+        result['failure_diagnostics'] = failure_diagnostics(exc)
         if isinstance(exc, InvestigationError):
             result['failure_code'] = str(exc)
     finally:
@@ -249,3 +284,4 @@ def investigate(catalog, report, rows, client=None, clock=time.monotonic, checkp
         if checkpoint:
             checkpoint(result)
     return result
+

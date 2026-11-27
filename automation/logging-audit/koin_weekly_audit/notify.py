@@ -1,10 +1,12 @@
 import json
+import hashlib
 import html
 import os
 import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+from datetime import datetime, timezone
 from .environment_evidence import compare_environments
 from .handoff import developer_handoff
 
@@ -54,9 +56,22 @@ def notification_sections(report):
     return lines
 
 
+def audit_context(report):
+    source = {'notion': 'Notion', 'github': 'GitHub main'}.get(report.get('source_kind'), '미확인')
+    lines = ['명세 기준: ' + source]
+    if source == 'GitHub main':
+        lines[-1] += ' · Notion 직접 대조 미실행'
+    status = report.get('agent', {}).get('status')
+    lines.append('AI 추가 조사: ' + ('완료' if status == 'completed' else '미완료 · 규칙 검수 결과와 별도'))
+    debug = report.get('normalization', {}).get('android_debug_events', 0)
+    if debug:
+        lines.append('Android 디버그 ' + str(debug) + '건: 접미사 제외 후 명세 대조')
+    return lines
+
+
 def slack_text(environment, start, end, report):
     title = '[Stage]' if environment == 'stage' else '[Prod]'
-    lines = [f'{title} 주간 로깅 검수 · {start[5:]}~{end[5:]}'] + notification_sections(report)
+    lines = [f'{title} 주간 로깅 검수 · {start[5:]}~{end[5:]}'] + notification_sections(report) + audit_context(report)
     if report.get('detail_url'):
         lines.append('상세보기: ' + report['detail_url'])
     return '\n'.join(lines)
@@ -68,6 +83,7 @@ def slack_payload(environment, start, end, report):
     for section in notification_sections(report):
         # Each platform is independent; never show AI failure as an event error.
         blocks.append(dict(type='section', text=dict(type='mrkdwn', text=section[:2900])))
+    blocks.append(dict(type='context', elements=[dict(type='mrkdwn', text='\n'.join(audit_context(report)))]))
     if report.get('detail_url'):
         blocks.append(dict(type='section', text=dict(type='mrkdwn', text='<' + report['detail_url'] + '|상세보기>')))
     return dict(text=slack_text(environment, start, end, report), blocks=blocks, unfurl_links=False, unfurl_media=False)
@@ -85,6 +101,22 @@ def detail_markdown(reports):
         lines += ['## ' + env, '', '기간: ' + report['start'] + ' ~ ' + report['end'],
                   '명세 커밋: `' + (report.get('source_revision') or '미확인') + '`',
                   'BigQuery 조회 job: `' + str(report.get('query_job_id') or '미확인') + '`', '']
+        lines += audit_context(report) + ['']
+        agent = report.get('agent', {})
+        if agent.get('failure_diagnostics'):
+            diagnostic = agent['failure_diagnostics']
+            lines += ['AI 진단: ' + safe(diagnostic.get('category')) +
+                      ' · HTTP ' + safe(diagnostic.get('http_status')) +
+                      ' · API code ' + safe(diagnostic.get('api_code')), '']
+        if agent.get('status') == 'completed':
+            lines += ['### AI 추가 조사 (원인 가설)', '']
+            for note in agent.get('analysis', {}).get('investigations', []):
+                for key, title in (('observation', '관측'), ('hypothesis', '원인 가설'), ('next_action', '확인할 사항')):
+                    lines.append('- ' + title + ': ' + html.escape(str(note.get(key, ''))).replace('\n', ' '))
+                lines.append('- 근거: ' + ', '.join(safe(ref) for ref in note.get('evidence_ids', [])))
+            for limitation in agent.get('analysis', {}).get('limitations', []):
+                lines.append('- 조사 한계: ' + html.escape(str(limitation)).replace('\n', ' '))
+            lines += ['근거별 집계는 해당 환경의 agent.json 및 report.json에 보존됩니다.', '']
         if not report.get('complete'):
             lines += notification_sections(report) + ['']
         for platform, name in PLATFORM_NAMES:
@@ -155,23 +187,26 @@ def send_once(webhook, text, receipt):
     if parsed.scheme != 'https' or parsed.hostname != 'hooks.slack.com' or not parsed.path.startswith('/services/') or parsed.query:
         raise ValueError('Invalid Slack webhook destination')
     receipt = Path(receipt)
+    payload = json.dumps(text if isinstance(text, dict) else {'text': text}, ensure_ascii=False, sort_keys=True).encode('utf8')
+    payload_sha256 = hashlib.sha256(payload).hexdigest()
     receipt.parent.mkdir(parents=True, exist_ok=True)
     try:
         fd = os.open(receipt, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
     except FileExistsError:
-        return json.loads(receipt.read_text(encoding='utf8'))
+        result = json.loads(receipt.read_text(encoding='utf8'))
+        return dict(result, reused=True, payload_matches=result.get('payload_sha256') == payload_sha256)
     with os.fdopen(fd, 'w', encoding='utf8') as f:
         json.dump({'status': 'delivery_unknown', 'reason': 'attempt_reserved'}, f)
-    req = urllib.request.Request(webhook, data=json.dumps(text if isinstance(text, dict) else {'text': text}, ensure_ascii=False).encode('utf8'),
+    req = urllib.request.Request(webhook, data=payload,
                                  headers={'Content-Type': 'application/json; charset=utf-8'}, method='POST')
-    result = {'status': 'delivery_unknown'}
+    result = {'status': 'delivery_unknown', 'payload_sha256': payload_sha256}
     try:
         with urllib.request.urlopen(req, timeout=15) as response:
             body = response.read(128).decode()
             if response.status == 200 and body.strip() == 'ok':
-                result = {'status': 'sent'}
+                result.update(status='sent', sent_at=datetime.now(timezone.utc).isoformat())
     except urllib.error.HTTPError as exc:
-        result = {'status': 'rejected' if exc.code < 500 else 'delivery_unknown', 'http_status': exc.code}
+        result.update(status='rejected' if exc.code < 500 else 'delivery_unknown', http_status=exc.code)
     except OSError:
         pass
     # Never persist the webhook, raw exception text, IDs or event values.
@@ -179,3 +214,4 @@ def send_once(webhook, text, receipt):
     tmp.write_text(json.dumps(result), encoding='utf8')
     tmp.replace(receipt)
     return result
+

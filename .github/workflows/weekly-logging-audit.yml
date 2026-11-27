@@ -13,6 +13,10 @@ on:
         description: 'Stage 채널에 Stage/Prod 결과 전송'
         type: boolean
         default: true
+      api_smoke_only:
+        description: '합성 계약으로 AI API만 시험 (BigQuery·Slack 실행 안 함)'
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -38,6 +42,7 @@ jobs:
           cache: pip
           cache-dependency-path: automation/logging-audit/requirements.txt
       - name: 검수 주 결정
+        if: ${{ !inputs.api_smoke_only }}
         id: week
         env:
           REQUESTED_WEEK: ${{ inputs.week_start }}
@@ -47,6 +52,7 @@ jobs:
           week="$(python run.py --print-week-start "${args[@]}")"
           echo "start=$week" >> "$GITHUB_OUTPUT"
       - name: 전송 상태 복원
+        if: ${{ !inputs.api_smoke_only }}
         id: receipt
         uses: actions/cache/restore@v4
         with:
@@ -57,7 +63,7 @@ jobs:
       - name: 검사 의존성 설치
         run: python -m pip install -r requirements.txt
       - name: Google Cloud 인증 (Workload Identity)
-        if: vars.GCP_AUDIT_WIF_PROVIDER != '' && vars.GCP_AUDIT_SERVICE_ACCOUNT != ''
+        if: ${{ !inputs.api_smoke_only && vars.GCP_AUDIT_WIF_PROVIDER != '' && vars.GCP_AUDIT_SERVICE_ACCOUNT != '' }}
         id: wif
         continue-on-error: true
         uses: google-github-actions/auth@v3
@@ -65,14 +71,14 @@ jobs:
           workload_identity_provider: ${{ vars.GCP_AUDIT_WIF_PROVIDER }}
           service_account: ${{ vars.GCP_AUDIT_SERVICE_ACCOUNT }}
       - name: Google Cloud 인증 (기존 전용 계정 키)
-        if: vars.GCP_AUDIT_WIF_PROVIDER == ''
+        if: ${{ !inputs.api_smoke_only && vars.GCP_AUDIT_WIF_PROVIDER == '' }}
         id: key
         continue-on-error: true
         uses: google-github-actions/auth@v3
         with:
           credentials_json: ${{ secrets.GCP_AUDIT_CREDENTIALS_JSON }}
       - name: GitHub main 명세·Stage/Prod DA1·DA2 및 기존 event_name 검사
-        if: always() && steps.week.outcome == 'success'
+        if: ${{ always() && !inputs.api_smoke_only && steps.week.outcome == 'success' }}
         env:
           SLACK_LOGGING_AUDIT_STAGE_WEBHOOK: ${{ secrets.SLACK_LOGGING_AUDIT_STAGE_WEBHOOK }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -84,8 +90,14 @@ jobs:
           args=()
           if [[ "$SEND_SLACK" == "true" ]]; then args+=(--send); fi
           python run.py --week-start "$AUDIT_WEEK" "${args[@]}"
+      - name: AI API 합성 계약 시험 (Slack·BigQuery 없음)
+        if: ${{ inputs.api_smoke_only }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_AGENT_MODEL: ${{ vars.OPENAI_AGENT_MODEL || 'gpt-6-astra' }}
+        run: python api_smoke.py
       - name: 전송 상태 보존
-        if: always() && steps.week.outcome == 'success' && steps.receipt.outputs.cache-hit != 'true' && hashFiles('automation/logging-audit/.audit-state/**') != ''
+        if: ${{ always() && !inputs.api_smoke_only && steps.week.outcome == 'success' && steps.receipt.outputs.cache-hit != 'true' && hashFiles('automation/logging-audit/.audit-state/**') != '' }}
         uses: actions/cache/save@v4
         with:
           path: automation/logging-audit/.audit-state

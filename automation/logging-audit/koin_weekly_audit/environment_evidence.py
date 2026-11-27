@@ -3,11 +3,13 @@ import re
 from collections import defaultdict
 from .value_evidence import display_value, expected_value
 from .source_value import contract_value_sources
+from .normalization import normalize_observation
 
 
 def value_collections(catalog, rows):
     groups = defaultdict(lambda: dict(values=defaultdict(int), versions=set(), events=0))
     for row in rows:
+        row = normalize_observation(row)
         label, platform = row.get('event_label') or '(missing)', row['platform']
         group = groups[(platform,label)]
         group['values'][display_value(row.get('value'),row.get('value_parameter_present'))] += int(row['event_count'])
@@ -28,6 +30,7 @@ def value_collections(catalog, rows):
 def observations(catalog, rows):
     groups = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
     for row in rows:
+        row = normalize_observation(row)
         label, platform = row.get('event_label') or '(missing)', row['platform']
         fields = groups[(platform, label)]
         for field in ('event_name', 'screen_view', 'event_category'):
@@ -73,3 +76,4 @@ def compare_environments(reports):
     return dict(complete=True, common_labels=len(common), same_observed_labels=matched,
                 stage_only=len(set(indexes[0])-set(indexes[1])), production_only=len(set(indexes[1])-set(indexes[0])),
                 differences=differences, masked_fields=masked)
+

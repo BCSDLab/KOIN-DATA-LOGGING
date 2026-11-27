@@ -17,6 +17,7 @@ from koin_weekly_audit.handoff import developer_handoff
 from koin_weekly_audit.source_value import audit_markdown
 from koin_weekly_audit.version_scope import targets_for, select_scope
 from koin_weekly_audit.environment_evidence import observations, compare_environments, value_collections
+from koin_weekly_audit.normalization import normalize_observation, normalization_summary
 
 ROOT = 'f820221954bc82cfbe7e813b975c5be1'
 SOURCES = {'stage': ('koin-stage-438512', 'analytics_427218788'),
@@ -76,12 +77,14 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                 targets = targets_for(environment)
                 fetched = query(project, dataset, (start - timedelta(days=3)).isoformat(), end.isoformat(),
                                 max_bytes=int(os.getenv('AUDIT_MAX_BYTES', str(5 * 1024**3))))
+                fetched = dict(fetched, rows=[normalize_observation(row) for row in fetched['rows']])
                 primary = [r for r in fetched['rows'] if start.strftime('%Y%m%d') <= r['event_date'] <= end.strftime('%Y%m%d')]
                 late = [r for r in fetched['rows'] if r['event_date'] < start.strftime('%Y%m%d')]
                 primary, version_scope = select_scope(primary, targets)
                 late, previous_scope = select_scope(late, targets)
                 report = compare(catalog, primary)
                 report['version_scope'] = version_scope
+                report['normalization'] = normalization_summary(primary)
                 report['observed_evidence'] = observations(catalog, primary)
                 report['value_collection'] = value_collections(catalog, primary)
                 report['previous_period_recheck'] = compare(catalog, late)
@@ -100,7 +103,8 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                 report = dict(complete=False, failure_type=type(exc).__name__, snapshot_sha256=catalog['snapshot_sha256'])
         report.update(environment=environment, start=start.isoformat(), end=end.isoformat())
         if source:
-            report.update(source_kind=source.get('source_kind'), source_revision=source.get('source_revision'))
+            report.update(source_kind=source.get('source_kind') or ('notion' if isinstance(collector, NotionSource) else 'unknown'),
+                          source_revision=source.get('source_revision'))
         try:
             if investigator is investigate:
                 checkpoint = lambda result: (output / f'{environment}-agent.json').write_text(
@@ -126,6 +130,11 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                     scope_key = hashlib.sha256(json.dumps(report.get('version_scope', {}).get('targets', {}), sort_keys=True).encode()).hexdigest()[:10]
                     receipt = sender(webhook, payload, state / f'{environment}-{phase}-{destination}-{scope_key}-platform-audit-v10-delivery.json')
                     report['delivery_status'] = receipt['status']
+                    report['delivery_reused'] = receipt.get('reused', False)
+                    report['delivery_payload_matches'] = receipt.get('payload_matches')
+                    report['delivery_current_confirmed'] = (receipt['status'] == 'sent' and
+                        (not receipt.get('reused') or receipt.get('payload_matches') is True))
+                    report['delivery_sent_at'] = receipt.get('sent_at')
                 except Exception as exc:
                     report['delivery_status'] = 'failed'
                     report['delivery_error_type'] = type(exc).__name__
@@ -154,10 +163,11 @@ def main(argv=None):
         print(start.isoformat())
         return 0
     reports = audit(start, args.output, args.state, send=args.send)
-    summary = {k: {**{field: r.get(field) for field in ('complete', 'events', 'observed_labels', 'failure_type', 'delivery_status', 'source_diagnostics', 'version_scope')},
+    summary = {k: {**{field: r.get(field) for field in ('complete', 'events', 'observed_labels', 'failure_type', 'delivery_status', 'delivery_reused', 'delivery_payload_matches', 'delivery_current_confirmed', 'delivery_sent_at', 'source_diagnostics', 'version_scope')},
                    'agent_status': r.get('agent', {}).get('status'),
                    'agent_failure_type': r.get('agent', {}).get('failure_type'),
                    'agent_failure_code': r.get('agent', {}).get('failure_code'),
+                   'agent_failure_diagnostics': r.get('agent', {}).get('failure_diagnostics'),
                    'missing_daily_tables': r.get('missing_daily_tables'),
                    'coverage': r.get('coverage')} for k, r in reports.items()}
     print(json.dumps(summary, ensure_ascii=False))
@@ -165,11 +175,14 @@ def main(argv=None):
         Path(os.environ['GITHUB_STEP_SUMMARY']).write_text(
             detail_markdown(reports), encoding='utf8')
     for environment, report in reports.items():
+        if report.get('delivery_reused'):
+            print(f'::warning title=Slack 전송 기록 재사용::{environment}: 새 전송이 아닙니다. 현재 알림 내용과 기존 영수증의 일치 여부를 확인하세요.')
         if report.get('agent', {}).get('status') != 'completed':
             print(f'::warning title=AI 추가 조사 미완료::{environment}: 규칙 검수 결과와 별도로 AI 추가 조사를 완료하지 못했습니다. 상세 보고서를 확인하세요.')
     # Findings are audit results, not execution failures. Optional AI is separate.
     return 0 if reports and all(r.get('complete') and
-                   (not args.send or r.get('delivery_status') == 'sent') for r in reports.values()) else 1
+                   (not args.send or (r.get('delivery_status') == 'sent' and
+                    r.get('delivery_current_confirmed') is not False)) for r in reports.values()) else 1
 
 
 if __name__ == '__main__':
@@ -178,3 +191,4 @@ if __name__ == '__main__':
     except Exception as exc:
         print('Audit setup failed: ' + type(exc).__name__, file=sys.stderr)
         sys.exit(2)
+
