@@ -1,6 +1,6 @@
 {
-  "basis": "2026-11-27 사용자 확정 value·플랫폼 계약",
-  "pages": 16,
+  "basis": "2026-11-27 사용자 확정 value·플랫폼 계약; 2026-11-28 PC 홈 시간표 한국어 value·WEB 전용 계약",
+  "pages": 18,
   "contracts": [
     {
       "notion_id": "7770221954bc826a864201306b07869e",
@@ -153,6 +153,22 @@
       "notion_id": "0400221954bc820681380123672fea01",
       "label": "course_practice__course_practice__search__click",
       "value": "강좌 조회",
+      "platforms": [
+        "WEB"
+      ]
+    },
+    {
+      "notion_id": "4250221954bc810f9793d1c2659c9dfa",
+      "label": "timetable__main__timetable_entry__title_entry__click",
+      "value": "시간표",
+      "platforms": [
+        "WEB"
+      ]
+    },
+    {
+      "notion_id": "4250221954bc818ba87dff2bbcf8d6a2",
+      "label": "timetable__main__timetable_entry__widget_entry__click",
+      "value": "시간표 위젯",
       "platforms": [
         "WEB"
       ]

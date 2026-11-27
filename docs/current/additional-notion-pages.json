@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "reason": "필터 없는 데이터소스 전수조회와 하위 페이지 재귀조회에서 발견한 레거시 안내 2개·이슈 기록 21개",
+  "reason": "필터 없는 데이터소스 전수조회와 하위 페이지 재귀조회에서 발견한 레거시 안내 2개·이슈 기록 21개; 2026-11-28 사용자 요청 PC 홈 시간표 제목·위젯 명세 2개 추가",
   "pages": [
     {
       "source": {
@@ -686,6 +686,86 @@
         "output_sha256": "bcde32f9d9256667be14502e159cdf734f3b3881325efd95d878c1e9826a65c2",
         "image_ids": []
       }
+    },
+    {
+      "source": {
+        "id": "4250221954bc810f9793d1c2659c9dfa",
+        "title": "1-14 PC 홈 시간표 제목 클릭",
+        "service": "홈화면 리디자인",
+        "url": "https://app.notion.com/p/4250221954bc810f9793d1c2659c9dfa",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4250221954bc810f9793d1c2659c9dfa",
+          "구분": "홈화면",
+          "상태": "로깅 필요",
+          "생성일": "2026-11-27T15:18:40.431Z",
+          "이벤트 이름": "1-14 PC 홈 시간표 제목 클릭"
+        },
+        "original_body": "<toggle>\n이전 로깅\n\n- event\\_name: <code>USER</code>\n- event\\_label: <code>main_timetable</code>\n- value: <code>text</code>\n- event\\_category: <code>click</code>\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: PC 홈 오른쪽 시간표 위젯 상단의 ‘시간표’ 제목 링크를 직접 클릭해 시간표 페이지로 이동을 시도할 때 1회 기록한다.\n- 적용 플랫폼: WEB (PC 전용). Android·iOS·모바일 WEB에는 이 계약을 적용하지 않는다.\n- screen\\_view: <code>main</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>timetable__main__timetable_entry__title_entry__click</code>\n- value: <code>시간표</code>\n- event\\_category: <code>click</code>\n\n<image source=\"notion-file-block://42502219-54bc-8181-bfb8-f13db1aceaa6/db33d689-65a5-4109-8f9e-2a9920168cd1?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=home_timetable_title_marked.png\">\nStage 실제 화면 · 빨간 네모가 이 계약의 클릭 대상\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-27T15:20:01.251Z"
+      },
+      "manifest": {
+        "notion_id": "4250221954bc810f9793d1c2659c9dfa",
+        "title": "1-14 PC 홈 시간표 제목 클릭",
+        "service": "홈화면 리디자인",
+        "path": "event-log/10-홈화면-리디자인/1-14-PC-홈-시간표-제목-클릭.md",
+        "notion_url": "https://app.notion.com/p/4250221954bc810f9793d1c2659c9dfa",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-27T15:20:01.251Z",
+        "source_body_sha256": "979d0c6c84b451d8a0d7dd49c821167af3e571baa332cc3ba6db1b77f5a5cecf",
+        "output_sha256": "4c4c6c6eacacf5e5b85ff6e48c9867b50a56b74682342a875d6bfd63156e3898",
+        "image_ids": [
+          "db33d689-65a5-4109-8f9e-2a9920168cd1"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4250221954bc818ba87dff2bbcf8d6a2",
+        "title": "1-15 PC 홈 시간표 위젯 본문 클릭",
+        "service": "홈화면 리디자인",
+        "url": "https://app.notion.com/p/4250221954bc818ba87dff2bbcf8d6a2",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4250221954bc818ba87dff2bbcf8d6a2",
+          "구분": "홈화면",
+          "상태": "로깅 필요",
+          "생성일": "2026-11-27T15:18:40.431Z",
+          "이벤트 이름": "1-15 PC 홈 시간표 위젯 본문 클릭"
+        },
+        "original_body": "<toggle>\n이전 로깅\n\n- event\\_name: <code>USER</code>\n- event\\_label: <code>main_timetable</code>\n- value: <code>table</code>\n- event\\_category: <code>click</code>\n- 호출 위치: IndexTimetable/index.tsx 75–79행. 기존 수집분은 소급 변경하지 않는다.\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: PC 홈 오른쪽 시간표 위젯의 격자·과목 본문 링크를 직접 클릭해 시간표 페이지로 이동을 시도할 때 1회 기록한다.\n- screen\\_view: <code>main</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>timetable__main__timetable_entry__widget_entry__click</code>\n- value: <code>시간표 위젯</code>\n- event\\_category: <code>click</code>\n\n<p />\n\n- 사진 · WEB (PC)\n\n<image source=\"notion-file-block://42502219-54bc-81fe-a5d8-effa86300953/1c677de1-e590-4413-83b4-928edbbadf2d?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=home_timetable_widget_marked.png\">\nStage 실제 화면 · 빨간 네모가 이 계약의 클릭 대상\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-27T15:24:23.443Z"
+      },
+      "manifest": {
+        "notion_id": "4250221954bc818ba87dff2bbcf8d6a2",
+        "title": "1-15 PC 홈 시간표 위젯 본문 클릭",
+        "service": "홈화면 리디자인",
+        "path": "event-log/10-홈화면-리디자인/1-15-PC-홈-시간표-위젯-본문-클릭.md",
+        "notion_url": "https://app.notion.com/p/4250221954bc818ba87dff2bbcf8d6a2",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-27T15:24:23.443Z",
+        "source_body_sha256": "dc21f34038c138997ac1a6652dbfc415d4d32744d22c113dfb7cd8deba1b3d08",
+        "output_sha256": "7a64c0ca4b5d96254172a1f1660a4e45cf190594610a02981089ac8de073dbea",
+        "image_ids": [
+          "1c677de1-e590-4413-83b4-928edbbadf2d"
+        ]
+      }
     }
   ],
   "images": [
@@ -765,6 +845,20 @@
       "bytes": 20007,
       "sha256": "ca8a2c36c1152a423bafea56529b0fd2050781966987e953d887eb7e15b84e5d",
       "git_blob_sha": "2e1c6dff58584289af3cc22754bc880fb6c450dd"
+    },
+    {
+      "id": "db33d689-65a5-4109-8f9e-2a9920168cd1",
+      "asset": "docs/current/images/2026-11-28/home_timetable_title_marked.png",
+      "bytes": 176338,
+      "sha256": "ad5aab117725a8e39ec2b266d027a5b52324c079a29c06272e19c0a12b96a639",
+      "git_blob_sha": "919b86e0140a55f020961d02eac1e64ad8e681b0"
+    },
+    {
+      "id": "1c677de1-e590-4413-83b4-928edbbadf2d",
+      "asset": "docs/current/images/2026-11-28/home_timetable_widget_marked.png",
+      "bytes": 176450,
+      "sha256": "7861849229ab54e74f39183bb76e08caca88d85e579fd92804d0d540dab6440a",
+      "git_blob_sha": "bee57231e446cc794f4b6a9ee5e7eed9fb932ddb"
     }
   ]
 }
