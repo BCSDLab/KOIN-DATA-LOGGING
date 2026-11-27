@@ -1,0 +1,1076 @@
+{
+  "service": "동아리 - 레거시",
+  "pages": [
+    {
+      "notion_id": "a460221954bc825b843001dfcb0cce96",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 0.코인_메인화면_동아리진입",
+      "path": "event-log/20-동아리-레거시/[레거시]-0.코인_메인화면_동아리진입.md",
+      "notion_url": "https://app.notion.com/p/a460221954bc825b843001dfcb0cce96",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.320Z",
+      "source_body_sha256": "d6fcb194294057fc41695d2d44aa31e90a3fa0056ca6235515de83f0f91eab44",
+      "output_sha256": "cd47a874c8635f16eedd38d51fe8fd899061d54885edda54f8cdde93f9455432",
+      "image_ids": [
+        "4e9eef7f-6332-45e2-b341-18354fc2c2df",
+        "7bb53bb7-170a-4182-a1ab-ce22bdc7bd5f"
+      ]
+    },
+    {
+      "notion_id": "19f0221954bc823a98b8816d3852d86f",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 1-1. 동아리_동아리 진입",
+      "path": "event-log/20-동아리-레거시/[레거시]-1-1.-동아리_동아리-진입.md",
+      "notion_url": "https://app.notion.com/p/19f0221954bc823a98b8816d3852d86f",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:22.154Z",
+      "source_body_sha256": "72ef526afae86fee2e9be2aec73978e5431add89c982895a72c14f8065613600",
+      "output_sha256": "8bee0ef560a6ec102c0b3bd21a4aab80b5e7885978e87224ecb1dfa372bc37e6",
+      "image_ids": [
+        "fd34f25f-28f7-4e97-9b41-c0f0a2d77da0",
+        "94520377-fe01-4f0a-90f5-d5680bf908f2",
+        "56c3282f-83fc-49cf-8e1f-991fa57d4438"
+      ]
+    },
+    {
+      "notion_id": "70a0221954bc8391832c0182d9fa4a58",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 1-2.동아리_인기동아리 바로가기",
+      "path": "event-log/20-동아리-레거시/[레거시]-1-2.동아리_인기동아리-바로가기.md",
+      "notion_url": "https://app.notion.com/p/70a0221954bc8391832c0182d9fa4a58",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.688Z",
+      "source_body_sha256": "7374bc3739ae9ca693c641f3649233a85723e65fe8db8344ae0d0fc594a77080",
+      "output_sha256": "41a1d320d5f3773452a91c015fe67f5baa1870da53907b8d78d575bf5d9ff1cb",
+      "image_ids": [
+        "b4d22d09-00e2-4b03-a464-3c28a81c4329",
+        "fda9949d-fd14-4122-95ce-8bbfa62244fa"
+      ]
+    },
+    {
+      "notion_id": "2fa0221954bc8376808c01a62ed06429",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 1-3.동아리_동아리추가 바로가기",
+      "path": "event-log/20-동아리-레거시/[레거시]-1-3.동아리_동아리추가-바로가기.md",
+      "notion_url": "https://app.notion.com/p/2fa0221954bc8376808c01a62ed06429",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:06.566Z",
+      "source_body_sha256": "e92e6426296121c734b8287d0efd004a1b0e4e1cd4907009efdb7f3c205d238c",
+      "output_sha256": "1af3cecb27e8da33e9aa392fe52178785b399308fc8d4470721b28093471c47f",
+      "image_ids": [
+        "70f22d84-f1c9-4082-b3d5-8783643f5a8e"
+      ]
+    },
+    {
+      "notion_id": "bae0221954bc82f38372016fdebf364d",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 1-4.동아리_헤더",
+      "path": "event-log/20-동아리-레거시/[레거시]-1-4.동아리_헤더.md",
+      "notion_url": "https://app.notion.com/p/bae0221954bc82f38372016fdebf364d",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.508Z",
+      "source_body_sha256": "aee31991cd61b099cba18f1128357fcfad1bc9d40b62e364262b672e5a6e64da",
+      "output_sha256": "23505b10060f578aebd69e9ab64ed972fa9d85d4b3e986b28eb76ae166121125",
+      "image_ids": [
+        "ca081550-9bfd-46ef-a471-cccfa5a804ca",
+        "a55c42de-b097-45ff-9019-39e9d3b9c6a6"
+      ]
+    },
+    {
+      "notion_id": "8440221954bc83ee999e81d1f9fa8e32",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 1-5.동아리_푸터",
+      "path": "event-log/20-동아리-레거시/[레거시]-1-5.동아리_푸터.md",
+      "notion_url": "https://app.notion.com/p/8440221954bc83ee999e81d1f9fa8e32",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:13.126Z",
+      "source_body_sha256": "3a95e1013c79c5ee038351e3c136f80d0e0d51296bb64070a02e1f2b75396b72",
+      "output_sha256": "2bd75228297b276435575b0978063b8572ac3be5a11e61389337671003ae7b99",
+      "image_ids": [
+        "dda7917d-2151-49c2-b723-be353a851af8"
+      ]
+    },
+    {
+      "notion_id": "c910221954bc8320967a816cc3f8a8e2",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 1-6.동아리_햄버거",
+      "path": "event-log/20-동아리-레거시/[레거시]-1-6.동아리_햄버거.md",
+      "notion_url": "https://app.notion.com/p/c910221954bc8320967a816cc3f8a8e2",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.518Z",
+      "source_body_sha256": "a6ea58c290572a4338c0cd2d40b955aacd684acc010d1180f4149539c42dcca0",
+      "output_sha256": "8456b5689c16c697055dda810c84221ff91901cb1984b249d754b88fad204ec1",
+      "image_ids": [
+        "6977cab8-423b-4f12-923c-f4358a750cf8",
+        "6c41f5c9-21f9-4055-ab0d-b3ad15f6c65b"
+      ]
+    },
+    {
+      "notion_id": "9330221954bc8398bd53813438067b42",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 2-1. 동아리_동아리 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-2-1.-동아리_동아리-클릭.md",
+      "notion_url": "https://app.notion.com/p/9330221954bc8398bd53813438067b42",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.876Z",
+      "source_body_sha256": "bfd7159f462b77f44cf4723f7ec810bc973d591cf82cc06921b2aefba04599cf",
+      "output_sha256": "cd9f2f47a6dae4ef388e58f4be24567a2e074c9e08105e6ed9d9e71a2247cd5f",
+      "image_ids": [
+        "001272d3-b03d-4169-b074-87880bf22a72",
+        "43088852-ab6a-4f3d-b879-a62a82dabfdd"
+      ]
+    },
+    {
+      "notion_id": "b0d0221954bc838189d681eb6e5c9274",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 2-2.동아리_동아리 생성하기 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-2-2.동아리_동아리-생성하기-클릭.md",
+      "notion_url": "https://app.notion.com/p/b0d0221954bc838189d681eb6e5c9274",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.799Z",
+      "source_body_sha256": "da533008e63b2d24603771ddbd23ddadfc404ec408d06191acfe4977d6d8d099",
+      "output_sha256": "faa7866aac6153e066c337e418fc5a09ea037025072b93f7ffc74e22d2c61425",
+      "image_ids": [
+        "cb8fdb0f-347b-4a3c-a7f4-90e116731e0b",
+        "6509897e-bd07-4cc4-a67f-1da9cc16fdb4"
+      ]
+    },
+    {
+      "notion_id": "ab50221954bc8361abae01aa01e306b5",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 2-3.동아리_동아리 카테고리 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-2-3.동아리_동아리-카테고리-클릭.md",
+      "notion_url": "https://app.notion.com/p/ab50221954bc8361abae01aa01e306b5",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:07.000Z",
+      "source_body_sha256": "4b98e1e6d9bb8609ecc784010045621c4b3c32ef18339105f989b836d88f9fe4",
+      "output_sha256": "4b928c236933a8981e10888e7621383300370d7bbb1d563798a34ec9c1231a41",
+      "image_ids": [
+        "c87dd163-5f14-47d6-83d9-20e35ef93ef2",
+        "e39fdbf8-2e53-4094-ae57-6ee81cd9c029"
+      ]
+    },
+    {
+      "notion_id": "67e0221954bc8325850e814fce2aa79b",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 2-4.동아리_동아리 메인화면 좋아요 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-2-4.동아리_동아리-메인화면-좋아요-클릭.md",
+      "notion_url": "https://app.notion.com/p/67e0221954bc8325850e814fce2aa79b",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.623Z",
+      "source_body_sha256": "d04a57262d076cf23f0f5e9dac51cd4adb2950399961d6c197a4e9a88e902e9a",
+      "output_sha256": "644d0622c89e56f7743fdc27b7d831c01b63b566f6ea5a037f805a73c71d3d31",
+      "image_ids": [
+        "f5260bc0-9981-4451-a2ef-44b7a3e0d6d4",
+        "96183ec1-3ae2-498a-a0a1-94ece2a85c1e"
+      ]
+    },
+    {
+      "notion_id": "fcb0221954bc832f811d01195c2c92d2",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 2-5.동아리_동아리 메인화면 좋아요 해제",
+      "path": "event-log/20-동아리-레거시/[레거시]-2-5.동아리_동아리-메인화면-좋아요-해제.md",
+      "notion_url": "https://app.notion.com/p/fcb0221954bc832f811d01195c2c92d2",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:22.183Z",
+      "source_body_sha256": "d0c9f4d4344761098ea66dbb92978c31dc7191e300ccc90fdea0bea36d1b4ca0",
+      "output_sha256": "37ffbfdd23a84575e8ec3dfa05783df162dcef067638d7e62e8964e10a7bce2c",
+      "image_ids": [
+        "a0cfa020-1fd9-48c9-b3b0-5281dfa9d6a3",
+        "df97c371-3b47-4db0-8d89-8dcbfe9e32cb"
+      ]
+    },
+    {
+      "notion_id": "1030221954bc83d0995601cca207320e",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 2.6 동아리_모집 중인 동아리 토글 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-2.6-동아리_모집-중인-동아리-토글-클릭.md",
+      "notion_url": "https://app.notion.com/p/1030221954bc83d0995601cca207320e",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.404Z",
+      "source_body_sha256": "5b5c7fed34959642185f8f3a453b563fc20d3b551f95145194d0c520300c8e0b",
+      "output_sha256": "424f234c0ff4eae17f63b98edb96e1e4d42bd516a565e5eab576606a4f46ed22",
+      "image_ids": [
+        "89ba2e45-34bb-4311-b82b-408ebe46bae3",
+        "915386dc-fbd6-4150-94ea-99a6d88e4738"
+      ]
+    },
+    {
+      "notion_id": "ebd0221954bc828da16b018d36ed13e5",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 2.7 동아리_동아리 검색",
+      "path": "event-log/20-동아리-레거시/[레거시]-2.7-동아리_동아리-검색.md",
+      "notion_url": "https://app.notion.com/p/ebd0221954bc828da16b018d36ed13e5",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:20.658Z",
+      "source_body_sha256": "f9e516963c5426b2fdda636d36f37dfa6a0c3467cc1c8f757d7a247736bdae8f",
+      "output_sha256": "02093dee3388b674cff4dd2bde922dc69d563eadad2b92b7117f4515b89f67ac",
+      "image_ids": [
+        "eaf8c9b2-c17b-4b91-85cd-85a416a5edfa",
+        "727d6bd0-969d-464e-a2ec-9175e633ad1c"
+      ]
+    },
+    {
+      "notion_id": "ecb0221954bc83f59f0a0165a3dc63f5",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 3-1. 동아리_동아리 생성취소",
+      "path": "event-log/20-동아리-레거시/[레거시]-3-1.-동아리_동아리-생성취소.md",
+      "notion_url": "https://app.notion.com/p/ecb0221954bc83f59f0a0165a3dc63f5",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.466Z",
+      "source_body_sha256": "67e5a79351f6c2e47034f42209c5446001aa1dcee8ba8a8dc08d5f16483520a0",
+      "output_sha256": "a0cbc6d68e2d5fc5917b8315f8f24698af874996a94fde6e1fadabcdec384052",
+      "image_ids": [
+        "6d23e9d1-9482-4f25-854a-921882a60337",
+        "55c98874-793c-4968-bf83-34f2809ac2bc"
+      ]
+    },
+    {
+      "notion_id": "fe70221954bc82d29d320194b017643f",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 3-2. 동아리_동아리 생성요청",
+      "path": "event-log/20-동아리-레거시/[레거시]-3-2.-동아리_동아리-생성요청.md",
+      "notion_url": "https://app.notion.com/p/fe70221954bc82d29d320194b017643f",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:21.271Z",
+      "source_body_sha256": "01cbb3317c0f9800a197932912758b98ed6e5883739e23deca65da8c604a5d03",
+      "output_sha256": "dd45774d811c319276d8f52faa244a37212c43ca2e5913f9b9a91c9666a32aaf",
+      "image_ids": [
+        "a68758fd-6040-4802-af17-77e7f674b4dc",
+        "cdf70674-2de0-4814-b11a-466ded517424"
+      ]
+    },
+    {
+      "notion_id": "d100221954bc83818ef80136de68800e",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 3-3. 동아리_동아리 생성요청_확인",
+      "path": "event-log/20-동아리-레거시/[레거시]-3-3.-동아리_동아리-생성요청_확인.md",
+      "notion_url": "https://app.notion.com/p/d100221954bc83818ef80136de68800e",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.591Z",
+      "source_body_sha256": "9253a5373aac44d67ed258055b80480e477dde82fb2c3e34ca1c0dfa5829019b",
+      "output_sha256": "e49d4153b3093bf32c8a5bcc1741cb360ee2d2508212a273930dd873005cda5d",
+      "image_ids": [
+        "ffaef3a4-4793-44e2-851b-6cd525c020e1",
+        "59065538-fc60-41e0-a513-1f8e9caf3b7e"
+      ]
+    },
+    {
+      "notion_id": "db80221954bc82ec840b811ab1572088",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 3-4. 동아리_동아리 권한요청",
+      "path": "event-log/20-동아리-레거시/[레거시]-3-4.-동아리_동아리-권한요청.md",
+      "notion_url": "https://app.notion.com/p/db80221954bc82ec840b811ab1572088",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.215Z",
+      "source_body_sha256": "f32ed715e0368706848534c61398b843c89a20e60fb5f6c22734efce73869954",
+      "output_sha256": "a9e3d7f00518568a255ea2bda0100df0cb52316d92549bd1948a80c34346bbc6",
+      "image_ids": [
+        "f8d21d3d-63a3-4b3c-be3e-69ff09b10fb9",
+        "4e1d0611-5e67-42ed-90c7-81e615ff77fa"
+      ]
+    },
+    {
+      "notion_id": "5e80221954bc8304b6b9814e8683f204",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5-1.동아리_수정하기 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-5-1.동아리_수정하기-클릭.md",
+      "notion_url": "https://app.notion.com/p/5e80221954bc8304b6b9814e8683f204",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:20.722Z",
+      "source_body_sha256": "04e733323f96bb15d391a7c7b63792c16c7099f380dff6df44965853f6d9d559",
+      "output_sha256": "fb8f1496cf115c0416dc924842fe8d67b111eff87b121c4846e789422526c88b",
+      "image_ids": [
+        "3021ae1f-898d-4eaf-8e1e-539add68dbd2",
+        "1942de6e-cb6d-4e6a-b688-1b482b3d476e"
+      ]
+    },
+    {
+      "notion_id": "1640221954bc83d997b68147d9338478",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5-10.동아리_상세소개 수정하기_저장하기 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-5-10.동아리_상세소개-수정하기_저장하기-클릭.md",
+      "notion_url": "https://app.notion.com/p/1640221954bc83d997b68147d9338478",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:13.104Z",
+      "source_body_sha256": "52cac53e016a8d8d7f839fb29ed3c8c2188c903f80f4efbb423a6076d126b5f6",
+      "output_sha256": "cb6249406c22b556294b5f8c8efefff33ab9ecdc2b6e2c810fa2ff4867149a71",
+      "image_ids": [
+        "adc1231c-f26b-4bb8-9377-6f5ad0518c70"
+      ]
+    },
+    {
+      "notion_id": "c100221954bc82579dac01665c4de516",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5-11.동아리_상세소개 수정하기_취소하기 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-5-11.동아리_상세소개-수정하기_취소하기-클릭.md",
+      "notion_url": "https://app.notion.com/p/c100221954bc82579dac01665c4de516",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:21.910Z",
+      "source_body_sha256": "6425a6cbb974bb5592b4badd7aa04548370763e5b8313c22f2e663ee07d7eab8",
+      "output_sha256": "cdea8df626c9ac933e3ed8559738e34099e30dd03ac53f07e108a9539620a18a",
+      "image_ids": [
+        "eb8d08cf-a6b2-4161-96b8-d8d84243b60c"
+      ]
+    },
+    {
+      "notion_id": "2820221954bc82f9ac748148effdac09",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5-12.동아리_상세소개 좋아요 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-5-12.동아리_상세소개-좋아요-클릭.md",
+      "notion_url": "https://app.notion.com/p/2820221954bc82f9ac748148effdac09",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:06.665Z",
+      "source_body_sha256": "9f3b87e22af030d968f23508689be47a2e86534c7168812dd4f5e28f658771bd",
+      "output_sha256": "0271b164abbe5d9cbf86a47600ea7dc5fa2773b005eb615eb2af5263ed49d023",
+      "image_ids": [
+        "4a8e36f8-01fd-45d4-8b42-5f2175393082",
+        "d18410d4-cb42-4854-8e1b-1cfba7052153"
+      ]
+    },
+    {
+      "notion_id": "6730221954bc83d9928001a5879cf882",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5-13.동아리_상세소개 좋아요 해제",
+      "path": "event-log/20-동아리-레거시/[레거시]-5-13.동아리_상세소개-좋아요-해제.md",
+      "notion_url": "https://app.notion.com/p/6730221954bc83d9928001a5879cf882",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:20.791Z",
+      "source_body_sha256": "756b5cc47ce2cd55e53248fed5333f69ab9a5bbd1a8a14093aaa715a413b7851",
+      "output_sha256": "1bd4664d6e865cb3e86d7e8a5c6c91e74da8f0c8b0552d58744387399684bfa3",
+      "image_ids": [
+        "e435ffd1-4719-489d-b769-c617928b7afd",
+        "37419178-bf8d-43ed-8481-6fae4a9a0ba3"
+      ]
+    },
+    {
+      "notion_id": "f2f0221954bc83c79744017f7ee5aaf3",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5-2.동아리_정보수정 저장",
+      "path": "event-log/20-동아리-레거시/[레거시]-5-2.동아리_정보수정-저장.md",
+      "notion_url": "https://app.notion.com/p/f2f0221954bc83c79744017f7ee5aaf3",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:22.258Z",
+      "source_body_sha256": "d3cc4b7ca174c0e3536a2cef481673a55e7755dfb7a18dfaea935cc41aeea6dd",
+      "output_sha256": "d8316cf362f19f2f0ec62d44edd27ca1ba6183216265482b0907528eae96c016",
+      "image_ids": [
+        "11c718b8-2c88-4f78-86ef-c999b37b12a9",
+        "2c577197-f64c-4310-a026-f25f223b0b5e"
+      ]
+    },
+    {
+      "notion_id": "a190221954bc8229ac7901abd0a6540e",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5-3.동아리_정보수정 취소",
+      "path": "event-log/20-동아리-레거시/[레거시]-5-3.동아리_정보수정-취소.md",
+      "notion_url": "https://app.notion.com/p/a190221954bc8229ac7901abd0a6540e",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:13.755Z",
+      "source_body_sha256": "8b533000ee8a4fbcde253ba45e5cfcbc243b8592b17eb5b11348254944b1008b",
+      "output_sha256": "65324ae6997d2a5996493387ff3f5273a9e94e6c018faaaecc44e4751976ccbf",
+      "image_ids": [
+        "a7b41f91-3038-4401-8a7e-b98239ceb287",
+        "b7e9c52a-c7c0-419a-a63e-5ddaee09bf77"
+      ]
+    },
+    {
+      "notion_id": "e490221954bc82b4b38b81572a6f959c",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5-4.동아리_권한위임 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-5-4.동아리_권한위임-클릭.md",
+      "notion_url": "https://app.notion.com/p/e490221954bc82b4b38b81572a6f959c",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:22.287Z",
+      "source_body_sha256": "c1a3dab8ac80419e3526f51b16c91c0d09b6149994f3eb813307621869e6a601",
+      "output_sha256": "bf0c52add78bef387aa854eee8a57977a8ed068b0d8776f1ddd3bb959426952b",
+      "image_ids": [
+        "c60dc5df-6077-44fd-92b8-ec562fc19dd8",
+        "4ad69efe-dd5f-4a26-bde4-301378c66c2b"
+      ]
+    },
+    {
+      "notion_id": "9140221954bc8253a500818ccf2a95af",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5-5.동아리_권한위임 확인",
+      "path": "event-log/20-동아리-레거시/[레거시]-5-5.동아리_권한위임-확인.md",
+      "notion_url": "https://app.notion.com/p/9140221954bc8253a500818ccf2a95af",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:06.344Z",
+      "source_body_sha256": "935dcd4bb5da5a521a5fa98f858f6c62845600c1a10d7b8d3a22df88142e179b",
+      "output_sha256": "49f4cd95cdfa4050d32a81f2ce27ba09dfca8f99e55ca3d721fb67bd2878a160",
+      "image_ids": [
+        "0ca30237-329f-4995-a66a-37e0c7d513b2",
+        "87129c07-b539-457d-af76-ccbc244abd53"
+      ]
+    },
+    {
+      "notion_id": "9db0221954bc832fad1581f3640e91b6",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5-6.동아리_탭 클릭(추가사항)",
+      "path": "event-log/20-동아리-레거시/[레거시]-5-6.동아리_탭-클릭(추가사항).md",
+      "notion_url": "https://app.notion.com/p/9db0221954bc832fad1581f3640e91b6",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.654Z",
+      "source_body_sha256": "01e873d3b4198da88332c49d40e6da2f09f1981bc6ebc47d9fe8d6767779b188",
+      "output_sha256": "a4cb6d6031938ed798bbf4910db73410e1d035a6730d3b2719bf403f211c7bb0",
+      "image_ids": [
+        "1455bb2e-6eb9-4a13-afdf-b4fb03d0190e",
+        "e6f50a45-c739-4c73-b0f1-cbfaa4cff2dc"
+      ]
+    },
+    {
+      "notion_id": "3540221954bc82a0a2a481bbf7372f2f",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5-7.동아리_상세소개 수정하기 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-5-7.동아리_상세소개-수정하기-클릭.md",
+      "notion_url": "https://app.notion.com/p/3540221954bc82a0a2a481bbf7372f2f",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:21.055Z",
+      "source_body_sha256": "928fc59e9d8e861b6a0f96402cda76da2f058f62f364870b8255bfb4628ab40e",
+      "output_sha256": "e608bd41da68f8fe5a4e6c707f1db1c36e7cace1b7f286ab36e240d2e37385a6",
+      "image_ids": [
+        "c41c559a-a571-4704-b544-ed8ac6d43a1c",
+        "620b10fc-88dc-4517-9b76-a502056a76a1"
+      ]
+    },
+    {
+      "notion_id": "4780221954bc83f1bf5801d43ba98d07",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5-8.동아리_상세소개 수정하기_저장 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-5-8.동아리_상세소개-수정하기_저장-클릭.md",
+      "notion_url": "https://app.notion.com/p/4780221954bc83f1bf5801d43ba98d07",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:22.420Z",
+      "source_body_sha256": "ed658821b0b039d80846cc4945db2be47f6872fbeb1b9d7b731ae55686e13e95",
+      "output_sha256": "f1138073750c1460578b2c8e99c27f8a400b854b68387af235dabb5e396d974d",
+      "image_ids": [
+        "a3b67424-c8a3-4f9b-9d16-5f2f2512511a",
+        "98dbd414-904f-4fce-948c-9549cb8f3a5b"
+      ]
+    },
+    {
+      "notion_id": "5c70221954bc82d79a15819cd3e7e88e",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5-9.동아리_상세소개 수정하기_취소 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-5-9.동아리_상세소개-수정하기_취소-클릭.md",
+      "notion_url": "https://app.notion.com/p/5c70221954bc82d79a15819cd3e7e88e",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:20.985Z",
+      "source_body_sha256": "5f412eda4c58f04c423ea3bad4e92baf8c3375ce3220c09c16569580fada58c0",
+      "output_sha256": "bfa209512bf4e1a9ed303ca6c186b84a0ec6e45e251834795ac96909f1812104",
+      "image_ids": [
+        "571957d3-e49d-4694-a227-d11825d84127",
+        "539084d5-a066-43a1-8e10-2391931c777c"
+      ]
+    },
+    {
+      "notion_id": "9a80221954bc83af880b812c50d0537e",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5.14동아리_모집알림 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-5.14동아리_모집알림-클릭.md",
+      "notion_url": "https://app.notion.com/p/9a80221954bc83af880b812c50d0537e",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:06.749Z",
+      "source_body_sha256": "6fea40ff40e315ffa8309d9811c122c9ffba3ec720de0ea726208de70a4a57a6",
+      "output_sha256": "5ae4750e01d1b7b184e4050bfb085b0c333b6ecdcb8f258d78e2f98d9afc701a",
+      "image_ids": [
+        "c8a2f015-f705-4a13-bc3a-6bda94dbf41e"
+      ]
+    },
+    {
+      "notion_id": "2930221954bc83549c2a01209f3c1773",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5.15동아리_모집알림 받기",
+      "path": "event-log/20-동아리-레거시/[레거시]-5.15동아리_모집알림-받기.md",
+      "notion_url": "https://app.notion.com/p/2930221954bc83549c2a01209f3c1773",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:22.553Z",
+      "source_body_sha256": "86b8160e2a391b134fd5da2bd68880ed6299eb5a8c7435978108127a739b71bd",
+      "output_sha256": "a8632ff254f365ae714011bb687ef7fed9c7ee13fee7ea676cc0c46833ce6b61",
+      "image_ids": [
+        "55ef6cb9-4bff-4b4e-a9d5-23aa3a58152e"
+      ]
+    },
+    {
+      "notion_id": "1de0221954bc8357b3b2014e5e7b4e0c",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 5.16동아리_모집알림 취소",
+      "path": "event-log/20-동아리-레거시/[레거시]-5.16동아리_모집알림-취소.md",
+      "notion_url": "https://app.notion.com/p/1de0221954bc8357b3b2014e5e7b4e0c",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:20.854Z",
+      "source_body_sha256": "ec1e77669a3e22f0fa54eb773f525128acce85ff9325f47cad6989d1aed395f4",
+      "output_sha256": "3ce75d47bf18468838561382f820938003f1e7ef4662b465bbeac15d844a0fcf",
+      "image_ids": [
+        "5b303005-129e-4f63-9e07-9460a7a9cf80"
+      ]
+    },
+    {
+      "notion_id": "d5e0221954bc8338946d817d4932b1b9",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 6.10동아리_행사삭제확정 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-6.10동아리_행사삭제확정-클릭.md",
+      "notion_url": "https://app.notion.com/p/d5e0221954bc8338946d817d4932b1b9",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:21.792Z",
+      "source_body_sha256": "e392ce3bb0e0c31f4f660e9a96bf7a70f1eed52c35ca7670c2786752dc63e45f",
+      "output_sha256": "008b6e79adac8806920ab41f803e09c43eab592b6322c357ce7fcabac2a85ce3",
+      "image_ids": [
+        "9689b6e2-c487-4bb1-ae6e-b00d41d02992"
+      ]
+    },
+    {
+      "notion_id": "d430221954bc83ec9b4581af06e8ad06",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 6.1동아리_행사 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-6.1동아리_행사-클릭.md",
+      "notion_url": "https://app.notion.com/p/d430221954bc83ec9b4581af06e8ad06",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:06.481Z",
+      "source_body_sha256": "3d4d81aaf4f2028d44a27e8b604fc831d16533ffaf6eb03de51f119e739ee7b1",
+      "output_sha256": "1e6908ee7dfff7bf3ca7c1202a0c5351611f786adcd8a9144c91e9a97cd1d7df",
+      "image_ids": [
+        "d09f1273-fcf1-4528-9e8c-8b2c7ec125cb",
+        "3a1bb5a6-7b60-462c-82fd-064d283d721b"
+      ]
+    },
+    {
+      "notion_id": "39a0221954bc837eb48a812a0b716c4e",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 6.2동아리_행사필터 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-6.2동아리_행사필터-클릭.md",
+      "notion_url": "https://app.notion.com/p/39a0221954bc837eb48a812a0b716c4e",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:07.144Z",
+      "source_body_sha256": "462d773f6899e36694d8d0cf28cd2843d8e311e3f6103ec629497895399aa0c7",
+      "output_sha256": "ab564bf7d0fbb10e753b22edb73cdb7ed1363a7dc85cdc98684e6159f128d10c",
+      "image_ids": [
+        "41c98ff1-f7f0-45aa-9b16-a6becfad9e52",
+        "42426300-3948-4430-bf9f-5c7ae9a417db"
+      ]
+    },
+    {
+      "notion_id": "a970221954bc8217a68d81996d99d7f0",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 6.3동아리_행사생성 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-6.3동아리_행사생성-클릭.md",
+      "notion_url": "https://app.notion.com/p/a970221954bc8217a68d81996d99d7f0",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:22.465Z",
+      "source_body_sha256": "02b3f9ecc75e902f2000e460760f9385f119cc31b3d9962de986606550716c98",
+      "output_sha256": "5e34eca679b0de662c5a7489d6ee457d27df9bbc5931b75f90e1f00c74b4f10d",
+      "image_ids": [
+        "b7c496cf-cfb9-46ba-bba4-d14d984a8403",
+        "b254e4c5-66a6-4b64-93a8-9cd8e4814ee3"
+      ]
+    },
+    {
+      "notion_id": "8cb0221954bc8237bf1b018ddb4d42d1",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 6.4동아리_행사생성확정 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-6.4동아리_행사생성확정-클릭.md",
+      "notion_url": "https://app.notion.com/p/8cb0221954bc8237bf1b018ddb4d42d1",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.382Z",
+      "source_body_sha256": "95ed33d9e08014ae38b059fa8e63b5500f60d71ed16688ac56d8130ae5a3e10e",
+      "output_sha256": "940d8ff50da5efa2ec67fb6daeb6a822f6b89d89e15305a701e035f2841d9a1c",
+      "image_ids": [
+        "06eff9a0-023d-4b7e-95f0-f9dd49be55ce",
+        "9ef87674-522c-4364-ac2e-e1629226b32f"
+      ]
+    },
+    {
+      "notion_id": "ef90221954bc821394be81ac284764d6",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 6.5동아리_행사생성취소 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-6.5동아리_행사생성취소-클릭.md",
+      "notion_url": "https://app.notion.com/p/ef90221954bc821394be81ac284764d6",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.271Z",
+      "source_body_sha256": "37d419a36399e4d50569410fd71f5987e214b4ddfc797d9b04dcd30cbb7a86b8",
+      "output_sha256": "df49a80f053c0025d8567f2f824c5c4195a967d506b08f9ba302b9790a541f4e",
+      "image_ids": [
+        "a2c6f7ce-d093-4166-a984-33102de37230",
+        "ecc6ff58-481e-4a14-a8af-ee6e8af5f92a"
+      ]
+    },
+    {
+      "notion_id": "3f80221954bc832c9e3481b44e1084d8",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 6.6동아리_행사수정 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-6.6동아리_행사수정-클릭.md",
+      "notion_url": "https://app.notion.com/p/3f80221954bc832c9e3481b44e1084d8",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:06.214Z",
+      "source_body_sha256": "1a784733524f7bf547575ecb74932c219c1e31b443376cc711ca1aeecd103f88",
+      "output_sha256": "e5f64e653ce0df6d5ecde5c127dc430af4f31d208043ac285be44a05716e18bb",
+      "image_ids": [
+        "c2c1d534-9279-4a69-b52c-1ec2f1b1dba5",
+        "f1439a8d-3d38-4541-83ca-a66375fad2b3"
+      ]
+    },
+    {
+      "notion_id": "cfd0221954bc83f7a6a9813c9897e6ed",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 6.7동아리_행사수정확정 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-6.7동아리_행사수정확정-클릭.md",
+      "notion_url": "https://app.notion.com/p/cfd0221954bc83f7a6a9813c9897e6ed",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:13.019Z",
+      "source_body_sha256": "3ebc6f4920bd656d7ef5464f74769a95ca4b02dd48a2a28ef4e189c23dabbb8d",
+      "output_sha256": "3759b2fbc3b1ec5b03fff9b70cddb062fef573c105d5db8034c6ad2d5bc69da8",
+      "image_ids": [
+        "0b667f98-d20a-43ac-bb39-b97b53b2ce99",
+        "4a4a9e1e-7f0d-4e13-9d73-b252ef0ceca0"
+      ]
+    },
+    {
+      "notion_id": "1ef0221954bc824fb156816c79ddd4b4",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 6.8동아리_행사수정취소 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-6.8동아리_행사수정취소-클릭.md",
+      "notion_url": "https://app.notion.com/p/1ef0221954bc824fb156816c79ddd4b4",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.777Z",
+      "source_body_sha256": "9381a3261fad8d197d6c03ffed4b1e19b9b396cd21defcc816fb52224cacf6a5",
+      "output_sha256": "fbe52244d35bdfa3c4815c069bc010e2b71a2f495a441b9252d8794148ec7e29",
+      "image_ids": [
+        "00f75984-845a-46c1-aeef-cf19d975c0c1",
+        "77c57c61-5670-4a68-9a3e-cebf19f7999b"
+      ]
+    },
+    {
+      "notion_id": "f800221954bc82959bda01d4279eb422",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 6.9동아리_행사삭제 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-6.9동아리_행사삭제-클릭.md",
+      "notion_url": "https://app.notion.com/p/f800221954bc82959bda01d4279eb422",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.897Z",
+      "source_body_sha256": "3ca4fb56d23667a44c7dd950b005b83646991833e9c90fa383cddd78fdb085df",
+      "output_sha256": "7a8f0f58baf6c20083dc4654b1a4424e8996cba6aa269b93fe52216ddae4f747",
+      "image_ids": [
+        "c698071f-1f2c-4729-a30b-45796d0f0309",
+        "a1b96d51-1807-40fe-8b77-aaaf09e322ea"
+      ]
+    },
+    {
+      "notion_id": "e1e0221954bc827d9ecf01fbf22bf12a",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 7.1동아리_모집생성 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-7.1동아리_모집생성-클릭.md",
+      "notion_url": "https://app.notion.com/p/e1e0221954bc827d9ecf01fbf22bf12a",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:13.423Z",
+      "source_body_sha256": "b336f958632be5ac7f57181e83dd0fd11eea26a284d2d94750096c98a1c43d00",
+      "output_sha256": "a293072450b15f71932b73c877af698bb268dd0ef0bec90d05c4729f66136be8",
+      "image_ids": [
+        "2f03530f-17c2-456f-96ff-44525d449ba8",
+        "fe52d6a2-eeb0-4877-9d2e-715e37b0c9c8"
+      ]
+    },
+    {
+      "notion_id": "ca80221954bc83b098f20183ff60ddca",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 7.2동아리_모집생성확정 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-7.2동아리_모집생성확정-클릭.md",
+      "notion_url": "https://app.notion.com/p/ca80221954bc83b098f20183ff60ddca",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:22.081Z",
+      "source_body_sha256": "c7ff073812cb10e4f6c21cc89a1a3a722ba02a946ec1a0ec0023a637f916840a",
+      "output_sha256": "fc107cb1da5b3dcfb83a37466b996e9e0db210fae6491cb9e4c43d1cc0ab9df7",
+      "image_ids": [
+        "b9ed310f-2a7e-41f4-ac4e-d9bda20ba822",
+        "db5cb183-6921-40e8-be54-ba102065ea02"
+      ]
+    },
+    {
+      "notion_id": "f5b0221954bc82219d2701bb55af8582",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 7.3동아리_모집생성취소 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-7.3동아리_모집생성취소-클릭.md",
+      "notion_url": "https://app.notion.com/p/f5b0221954bc82219d2701bb55af8582",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.392Z",
+      "source_body_sha256": "6a7da6914f471dbde89abb826dd4da94a73ce8eee87cae6c0cc5349e1ed8c28d",
+      "output_sha256": "005bc1200d4a5793c18d4646609f4aaa8f74286fff3473b505c4654f37ade8d3",
+      "image_ids": [
+        "0044870c-02be-4c1a-a7ca-f60675b3d8de",
+        "86057ac8-619a-4119-bdeb-3533477bc028"
+      ]
+    },
+    {
+      "notion_id": "d940221954bc8208b53b018692aadd78",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 7.4동아리_모집수정 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-7.4동아리_모집수정-클릭.md",
+      "notion_url": "https://app.notion.com/p/d940221954bc8208b53b018692aadd78",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:13.009Z",
+      "source_body_sha256": "e0f03af1c8af71b0707332afb9beed6e6e724638bfd93dd0e1e0534c2a685721",
+      "output_sha256": "fb89b4722058ca1d8e424b76e2b9476cb81be82dc9349f4efd0822aced935086",
+      "image_ids": [
+        "914c2ceb-f8af-44de-b4c3-63a7953b8258",
+        "29937346-4d65-4477-b9cd-0139c4282794"
+      ]
+    },
+    {
+      "notion_id": "98c0221954bc83c5bf9b81420b9d3b7a",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 7.5동아리_모집수정확정 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-7.5동아리_모집수정확정-클릭.md",
+      "notion_url": "https://app.notion.com/p/98c0221954bc83c5bf9b81420b9d3b7a",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:13.013Z",
+      "source_body_sha256": "71986bedc82ad157d364b39ce33146266a44255d62b93195a400c6f3fbb97383",
+      "output_sha256": "1a49726e9dab999694f307af79094f1492e6501a2647f465efae389a8aed44da",
+      "image_ids": [
+        "c0efd045-6d89-4afc-bdd0-fbfed55e90fd",
+        "2a3e9ac4-e177-470a-8636-a242b3258898"
+      ]
+    },
+    {
+      "notion_id": "5110221954bc82b9af0c0104096f1769",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 7.7동아리_모집삭제 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-7.7동아리_모집삭제-클릭.md",
+      "notion_url": "https://app.notion.com/p/5110221954bc82b9af0c0104096f1769",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:21.195Z",
+      "source_body_sha256": "d625584229ab188cd85d46d4a56b1fc634f0b0c1b48c3f68fecf307ada35fe2a",
+      "output_sha256": "4b97263356907a5e38ef65388141bd2b11627fa11422b6acad6a5b261ab03e59",
+      "image_ids": [
+        "6a6c958e-4cba-4e0e-8ad1-9356a432b93e",
+        "9cd55025-ab15-4054-ab18-4b14b4b59066"
+      ]
+    },
+    {
+      "notion_id": "4760221954bc836794eb0157928db74a",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 7.8동아리_모집삭제확정 클릭",
+      "path": "event-log/20-동아리-레거시/[레거시]-7.8동아리_모집삭제확정-클릭.md",
+      "notion_url": "https://app.notion.com/p/4760221954bc836794eb0157928db74a",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:15.788Z",
+      "source_body_sha256": "c0defa0c47bc440bb0e4abe51fd39b3e1badb2488ad53e524ac23d985b010cc8",
+      "output_sha256": "1bf92036ea2244c9b1b27a9523c8aca3b519d62593298cf38689f2c95049889f",
+      "image_ids": [
+        "057c1f13-2b80-445e-a0b2-4bd9fe57ffb3",
+        "49c1605c-795b-41ea-9bea-6f8b71889b1a"
+      ]
+    },
+    {
+      "notion_id": "71f0221954bc8220b9a101b5d8dd5600",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] <p>\n7.6동아리_모집수정취소 클릭\n</p>",
+      "path": "event-log/20-동아리-레거시/[레거시]-7.6동아리_모집수정취소-클릭.md",
+      "notion_url": "https://app.notion.com/p/71f0221954bc8220b9a101b5d8dd5600",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:21.687Z",
+      "source_body_sha256": "7f98039ee29afc5c395bb27de4103c13ba633a65a2d5d89420e5c7e61a523968",
+      "output_sha256": "677f3d97af6b51db51c238285ff7b5d8774cd6168b101ce61953b8f040640fc7",
+      "image_ids": [
+        "f6b762f5-6ff1-48d5-97ec-df46dae53934",
+        "cfc30770-3355-4e00-90a4-a1132bb3c7a0"
+      ]
+    },
+    {
+      "notion_id": "7380221954bc820fabbb01a135d45979",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 4-1. 동아리_Q&A추가",
+      "path": "event-log/20-동아리-레거시/[레거시]-4-1.-동아리_Q&A추가.md",
+      "notion_url": "https://app.notion.com/p/7380221954bc820fabbb01a135d45979",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:21.125Z",
+      "source_body_sha256": "68bd0e8bbc2f3222e259b1c45cb087c7fb0917b01de45c2a9a5fb819e466ac92",
+      "output_sha256": "44d541ee6636d62dbc744ce777ccf5e51cd81af6c6ddf1ffe932816eb048a013",
+      "image_ids": [
+        "b931adbc-e125-443c-9372-554ba46ee2d1"
+      ]
+    },
+    {
+      "notion_id": "5170221954bc82778c0d8155d70293d2",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 4-2. 동아리_Q&A추가_확인",
+      "path": "event-log/20-동아리-레거시/[레거시]-4-2.-동아리_Q&A추가_확인.md",
+      "notion_url": "https://app.notion.com/p/5170221954bc82778c0d8155d70293d2",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:39:22.394Z",
+      "source_body_sha256": "91623a262e4587f32544a39cdaf7dce668dd0383f3f9afac229be3f7aabc6b6d",
+      "output_sha256": "385c4d3b5c4245bc34e9b703971c9c52e6b86a07595336d24f958318a4db8214",
+      "image_ids": [
+        "5d76f959-ee8b-4f0c-86bd-f2180feeeea8",
+        "7477fc95-dc36-4348-9838-74a14e63d963"
+      ]
+    },
+    {
+      "notion_id": "b230221954bc826bb0b0813764b31be7",
+      "service": "동아리 - 레거시",
+      "title": "[레거시] 4-3. 동아리_댓글 삭제",
+      "path": "event-log/20-동아리-레거시/[레거시]-4-3.-동아리_댓글-삭제.md",
+      "notion_url": "https://app.notion.com/p/b230221954bc826bb0b0813764b31be7",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "레거시",
+      "source_last_edited_at": "2026-11-23T13:38:12.298Z",
+      "source_body_sha256": "b55cbe880d24d58aa00e9d820f8712546adf1121be8ae91497b41bf21ee4b842",
+      "output_sha256": "7b9014fc727783ed7887490948ca3fb66dc50027f00baaaebc2258b8ff3e2ed1",
+      "image_ids": [
+        "f2b5ef07-18fb-4eb9-acc0-795d88b52676",
+        "f97509e4-dbcb-4d93-90e9-0d13f481aec0",
+        "7db6236b-bfa1-467b-abba-4c5d8a7a3487"
+      ]
+    }
+  ],
+  "blank_pages": []
+}

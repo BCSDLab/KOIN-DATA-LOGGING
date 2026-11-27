@@ -1,0 +1,580 @@
+{
+  "service": "식단",
+  "pages": [
+    {
+      "notion_id": "ae90221954bc8243bf49018115c1b22a",
+      "service": "식단",
+      "title": "0-1. 식단_ABtest_상점가기_클릭 - 레거시",
+      "path": "event-log/06-식단/0-1.-식단_ABtest_상점가기_클릭-레거시.md",
+      "notion_url": "https://app.notion.com/p/ae90221954bc8243bf49018115c1b22a",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:24.917Z",
+      "source_body_sha256": "1524c535382e58ce6b7b831c2e3c53a20846d81a71944f6a0dbd0b554d3a08e0",
+      "output_sha256": "cdbbc1a795629530e28dd3e1de4c3d91798d5411eb73fbd4e3e48118ca32ea98",
+      "image_ids": [
+        "c194aa21-36c6-4013-be8d-f0f017844209"
+      ]
+    },
+    {
+      "notion_id": "c140221954bc8286a52881ec296b497b",
+      "service": "식단",
+      "title": "0-2. 식단_ABtest_진입 - 레거시",
+      "path": "event-log/06-식단/0-2.-식단_ABtest_진입-레거시.md",
+      "notion_url": "https://app.notion.com/p/c140221954bc8286a52881ec296b497b",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:24.761Z",
+      "source_body_sha256": "03fc7275b76ee88578210eff172715ec016d54177bf7299def7bea1f404107b5",
+      "output_sha256": "f0ec9be2cc3333d564fe875ac65e156742a249a06825edbc755ec34d534f1483",
+      "image_ids": [
+        "d0afde23-db48-4bd8-aa0e-e8f788352de5",
+        "b0e1d9d4-0e04-4532-8b54-4bbc3325bdef"
+      ]
+    },
+    {
+      "notion_id": "69b0221954bc82b8af6a813c4d006856",
+      "service": "식단",
+      "title": "0-3. 식단_ABtest_상점가기_닫기 - 레거시",
+      "path": "event-log/06-식단/0-3.-식단_ABtest_상점가기_닫기-레거시.md",
+      "notion_url": "https://app.notion.com/p/69b0221954bc82b8af6a813c4d006856",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:26.383Z",
+      "source_body_sha256": "40013f68c94f7b7736c05e06500155abbecbfde90311e7bd288ca52a838b6bbc",
+      "output_sha256": "618a527e2655f9b30b36186d88d7a9dee1dd42ff4047594b4466886851fb8d76",
+      "image_ids": [
+        "4f29a3f4-7109-4e4f-9464-3273f5e15772"
+      ]
+    },
+    {
+      "notion_id": "4c50221954bc8259af100113f83dba3b",
+      "service": "식단",
+      "title": "1-1.메인_식단_더보기버튼_클릭 (홈화면 리디자인 로깅으로 찍히고 있음) → 따라서  1-1부터 1-7까지 전부 다 수정할 필요 없음 (레거시)",
+      "path": "event-log/06-식단/1-1.메인_식단_더보기버튼_클릭-(홈화면-리디자인-로깅으로-찍히고-있음)-→-따라서-1-1부터-1-7까지-전부-다-수정할-필요-없음-(레거시).md",
+      "notion_url": "https://app.notion.com/p/4c50221954bc8259af100113f83dba3b",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:21.969Z",
+      "source_body_sha256": "1b976b917b88e7cea1454491823be0e06fc690b7d6fe5b88ede69e26013c7003",
+      "output_sha256": "c187d2f515f995280bca13aba065b16d38f88be32ff23c5e0a3c1b9aa5d91a6e",
+      "image_ids": [
+        "10fa510e-7c5d-41ae-bfd3-8e777060b3fd",
+        "fc9c9118-46d0-4c91-87ad-a229dcfca8b6",
+        "8a6b9c83-53d1-43ad-960b-9594f960001d"
+      ]
+    },
+    {
+      "notion_id": "b9f0221954bc825e98dc018bf2e3e6e5",
+      "service": "식단",
+      "title": "1-2.메인_식단_클릭 (레거시)",
+      "path": "event-log/06-식단/1-2.메인_식단_클릭-(레거시).md",
+      "notion_url": "https://app.notion.com/p/b9f0221954bc825e98dc018bf2e3e6e5",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB (모바일)"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:22.086Z",
+      "source_body_sha256": "d19f5388aca5ea8dc1f611d9b22ca0ccddf455357095884bdb06cbc457d106c3",
+      "output_sha256": "a51d053b8766794c77453c16365d6a03b8cdcafdcb59aee77202e5a3d57a4d67",
+      "image_ids": [
+        "a7b1a5c9-b263-4100-a16a-cba3d47b8b7f",
+        "621cf187-5d79-497e-a145-24fe7aa22c43",
+        "d5da2eac-41b4-4512-9547-ed847dfdffb4"
+      ]
+    },
+    {
+      "notion_id": "3480221954bc83b6b1fc8153afb62f05",
+      "service": "식단",
+      "title": "1-3.메인_식단_A코너_클릭 (레거시)",
+      "path": "event-log/06-식단/1-3.메인_식단_A코너_클릭-(레거시).md",
+      "notion_url": "https://app.notion.com/p/3480221954bc83b6b1fc8153afb62f05",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:22.196Z",
+      "source_body_sha256": "02574a6162d50b71a00d02a0a802d90ddb56a3609ec46e44e8171379463b5e88",
+      "output_sha256": "3101a5d12b299beec279c7a9f0d462b9498b045d0d46396c5215857ba2046925",
+      "image_ids": [
+        "ed02ad94-7167-4de3-aa0e-c851d4199b94",
+        "17cfdd97-41c8-4759-9dca-356c4dc07d79",
+        "0efbeb10-303a-471c-9053-2493d1084cc9"
+      ]
+    },
+    {
+      "notion_id": "63c0221954bc8244a74481cf49b740ef",
+      "service": "식단",
+      "title": "1-4.메인_식단_B코너_클릭",
+      "path": "event-log/06-식단/1-4.메인_식단_B코너_클릭.md",
+      "notion_url": "https://app.notion.com/p/63c0221954bc8244a74481cf49b740ef",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:22.374Z",
+      "source_body_sha256": "40333958444d542a3408aaea2152e4ae928475dc9692fcb802d2fd51aadf3396",
+      "output_sha256": "de39f555bc72ca06253831641eab43b82aa95092b3ea8e891171aae5476aaf11",
+      "image_ids": [
+        "9163836e-81d9-4bc3-8521-d1eb07653108",
+        "d7a2e3a7-a668-4536-ab9a-2715e5ae0b1b"
+      ]
+    },
+    {
+      "notion_id": "ef50221954bc8279a0930195d183fd59",
+      "service": "식단",
+      "title": "1-5.메인_식단_C코너_클릭",
+      "path": "event-log/06-식단/1-5.메인_식단_C코너_클릭.md",
+      "notion_url": "https://app.notion.com/p/ef50221954bc8279a0930195d183fd59",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:24.712Z",
+      "source_body_sha256": "1d6a3cf15cc4a14b50feaba4a08e331a20e3f0782b8dbaac7d295090626cbf99",
+      "output_sha256": "20ccc1fb2125d884928fdcc66f4bc65cbc5e24454a4b40a004816331de1b3acb",
+      "image_ids": [
+        "c7ff6cc6-7bac-4ead-a943-8a7ae200ee4e",
+        "6bd8ae22-c965-4e38-8176-11052c0175a5"
+      ]
+    },
+    {
+      "notion_id": "6cb0221954bc826cb25d814b5def4f6e",
+      "service": "식단",
+      "title": "1-6.메인_식단_능수관_클릭",
+      "path": "event-log/06-식단/1-6.메인_식단_능수관_클릭.md",
+      "notion_url": "https://app.notion.com/p/6cb0221954bc826cb25d814b5def4f6e",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:24.870Z",
+      "source_body_sha256": "f19dbd9a79465e6f2b281701b40025eb7bb610ea5152e17723655a88cc9f67fe",
+      "output_sha256": "9fce730e0538fff90011cac7a471529ce59b1736c6ce4c98e9395d032b4fda89",
+      "image_ids": [
+        "c53ba230-95b3-4a75-8804-235ff74b61e2",
+        "b206960b-ac28-4719-89a8-f44da93c8c2c"
+      ]
+    },
+    {
+      "notion_id": "e180221954bc83f7928f0130c04c1dbb",
+      "service": "식단",
+      "title": "1-7.메인_식단_2캠퍼스_클릭",
+      "path": "event-log/06-식단/1-7.메인_식단_2캠퍼스_클릭.md",
+      "notion_url": "https://app.notion.com/p/e180221954bc83f7928f0130c04c1dbb",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:23.539Z",
+      "source_body_sha256": "a6c9f822f61587b0f8ac25b6f645c6809802cedc0dbbac25666820930533cdf1",
+      "output_sha256": "0187a805c0e4f128d1f1078ed4ffd78aeb13f02ab6f992bf6d9ffff96a4a0f8c",
+      "image_ids": [
+        "919d931f-715f-44bd-84f7-97d7b785d356"
+      ]
+    },
+    {
+      "notion_id": "f130221954bc82869d1801c00916d5d2",
+      "service": "식단",
+      "title": "1. 품절 제보 버튼_식단 진입",
+      "path": "event-log/06-식단/1.-품절-제보-버튼_식단-진입.md",
+      "notion_url": "https://app.notion.com/p/f130221954bc82869d1801c00916d5d2",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:26.746Z",
+      "source_body_sha256": "2e5174a2a8cd22676d4dd8c3889a52c5e99cfc859b4ee2781daee1803d18b25a",
+      "output_sha256": "7c927251d5f5cc9c7cfc4284bade098437a5ffcc1fa2f0ef1b0ade891540d1fb",
+      "image_ids": [
+        "c59dab3e-54a5-4b4e-9e90-f4edfd02e0ee",
+        "f344a73c-a6f0-4cba-9bfa-56c1675ecd1e"
+      ]
+    },
+    {
+      "notion_id": "f910221954bc8272a94c01214f79c69d",
+      "service": "식단",
+      "title": "2-1. 헤더_식단_클릭",
+      "path": "event-log/06-식단/2-1.-헤더_식단_클릭.md",
+      "notion_url": "https://app.notion.com/p/f910221954bc8272a94c01214f79c69d",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:25.713Z",
+      "source_body_sha256": "58b730d332e3e8b688055286d5277342e6cd77a85e3b0edc42a38e3b41cc81a9",
+      "output_sha256": "6bf8d0944058431638fbab47313ebf0c3e98e6b74644f90b6ed4f38c38dbd0f4",
+      "image_ids": [
+        "3ae9e1c1-1bda-4295-a126-0a36b276cb24",
+        "b591b372-16a2-41c6-a219-bac7e5f454fa"
+      ]
+    },
+    {
+      "notion_id": "94a0221954bc8259b72881253ad084f0",
+      "service": "식단",
+      "title": "2-2. 푸터_식단_클릭",
+      "path": "event-log/06-식단/2-2.-푸터_식단_클릭.md",
+      "notion_url": "https://app.notion.com/p/94a0221954bc8259b72881253ad084f0",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:25.510Z",
+      "source_body_sha256": "0b63d3456f0cbbd5cad7bd4469c23793d3ddd766fcd5bf463cf1e99af8165925",
+      "output_sha256": "3364ebbf0d5d0bbf97d9923644925c46e225075bc9759ca33858469fb7c65ff4",
+      "image_ids": [
+        "0395182b-f373-44a7-b78e-7d47b40053b9",
+        "d91fca43-d68b-4de6-b51e-e434c8ca40ef"
+      ]
+    },
+    {
+      "notion_id": "ebc0221954bc834e9ab381b45b95ffca",
+      "service": "식단",
+      "title": "2-3. 햄버거_식단_클릭 (레거시)",
+      "path": "event-log/06-식단/2-3.-햄버거_식단_클릭-(레거시).md",
+      "notion_url": "https://app.notion.com/p/ebc0221954bc834e9ab381b45b95ffca",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:25.081Z",
+      "source_body_sha256": "9e7fb42d22f9dd8ba18379a790e9a0908fffefd4769efd2364371dde2111af7d",
+      "output_sha256": "d63465ba7924de640434654d01b38807de2d018d00b4bf374c37b99abdc9c0d9",
+      "image_ids": [
+        "579a9e63-8460-4d7d-aeb8-13ba2768404d"
+      ]
+    },
+    {
+      "notion_id": "3240221954bc839db9b98179866c3090",
+      "service": "식단",
+      "title": "2. 품절 제보 버튼_버튼 클릭",
+      "path": "event-log/06-식단/2.-품절-제보-버튼_버튼-클릭.md",
+      "notion_url": "https://app.notion.com/p/3240221954bc839db9b98179866c3090",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:25.996Z",
+      "source_body_sha256": "8a5a93ab007b28e0459848974d8cac3b6c384a3890e8d6eed8bf3d96839d13f0",
+      "output_sha256": "8b20178245e18e50554adf6092e9158776c75b8875ee551773a20ca02d8aa687",
+      "image_ids": [
+        "6281be65-253d-4f33-9865-f8128b5b5ed5",
+        "b04a3fbb-44c3-4273-9a34-5f20a262d33e"
+      ]
+    },
+    {
+      "notion_id": "0e60221954bc82dbbcbf019100dba7ae",
+      "service": "식단",
+      "title": "3-1. 식단_식사시간 선택 (클릭) - 3-2·3-3 통합",
+      "path": "event-log/06-식단/3-1.-식단_식사시간-선택-(클릭)-3-2·3-3-통합.md",
+      "notion_url": "https://app.notion.com/p/0e60221954bc82dbbcbf019100dba7ae",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:25.631Z",
+      "source_body_sha256": "3bf09526ee4c806d3adf2a98a0b7cbbcea7a820b60e9722bc6db1ed80f44b3f6",
+      "output_sha256": "acbdac721a904921f1585db90b1233abb02f2a61e9a10ec37d2a87a263e60b30",
+      "image_ids": [
+        "2d293416-c0a7-4573-8ef6-19d14cb6e918",
+        "9a026b7a-5a33-492e-99ef-7ba9dafb45c7",
+        "62d5cc07-b70f-4ae4-83b1-9fcf907a0382",
+        "226a00e1-0653-47a5-a33e-b2e67bf52c52"
+      ]
+    },
+    {
+      "notion_id": "f2c0221954bc820cacb3813099e4b350",
+      "service": "식단",
+      "title": "3-4. 식단_아침_스크롤",
+      "path": "event-log/06-식단/3-4.-식단_아침_스크롤.md",
+      "notion_url": "https://app.notion.com/p/f2c0221954bc820cacb3813099e4b350",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:25.169Z",
+      "source_body_sha256": "230250266bd82d87a98cd2c7911574244f2a0e5a43b71bae8950341833f5bb12",
+      "output_sha256": "22670c234a836ac2dd2cd5c96bf9e019d77244a8b8b23ee45265cc5ed12dcb7d",
+      "image_ids": [
+        "2d293416-c0a7-4573-8ef6-19d14cb6e918",
+        "31bc01c3-7434-4555-b701-66d875493d2d",
+        "4322a33d-08d3-4ac0-bfba-97cda83f3b1e",
+        "aa84bc74-b122-499c-bf69-194b32b7fb8b",
+        "01a2724a-7a9d-46b7-aa99-c01cb1129f3b"
+      ]
+    },
+    {
+      "notion_id": "c1d0221954bc8293b36901b14f44ee6f",
+      "service": "식단",
+      "title": "3-5. 식단_점심_스크롤",
+      "path": "event-log/06-식단/3-5.-식단_점심_스크롤.md",
+      "notion_url": "https://app.notion.com/p/c1d0221954bc8293b36901b14f44ee6f",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:25.426Z",
+      "source_body_sha256": "ab88f80290e898b5e26f020303b41ac81954cd3527c87f4983aaf3bf7de66dc7",
+      "output_sha256": "8a200d3de63e18bc7d1100298f7582fdd9ebce19b8d56971e18e9e359df058de",
+      "image_ids": [
+        "2fb90928-8e6b-4bbf-89a9-cd47bf8f44c9"
+      ]
+    },
+    {
+      "notion_id": "77a0221954bc8312b91b01688de5a3b1",
+      "service": "식단",
+      "title": "3-6. 식단_저녁_스크롤",
+      "path": "event-log/06-식단/3-6.-식단_저녁_스크롤.md",
+      "notion_url": "https://app.notion.com/p/77a0221954bc8312b91b01688de5a3b1",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:26.119Z",
+      "source_body_sha256": "fa4186ac243cdd2319631efbeb1d089b6f640163dd8696d0989ebe4c53b15c3b",
+      "output_sha256": "48793ede25019fd6223208226708bcdb3ba786b50682ae5898984fe30306563f",
+      "image_ids": [
+        "80b40f21-5f5b-4aff-b4c3-c3406b4b53d7"
+      ]
+    },
+    {
+      "notion_id": "19c0221954bc82058c6101cc0036317f",
+      "service": "식단",
+      "title": "3-7. 식단_학생식당정보_클릭",
+      "path": "event-log/06-식단/3-7.-식단_학생식당정보_클릭.md",
+      "notion_url": "https://app.notion.com/p/19c0221954bc82058c6101cc0036317f",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:23.661Z",
+      "source_body_sha256": "4f5adcc217f6fe21021f4e38b991381d5a10cd647c69ee330072a968fca7988c",
+      "output_sha256": "a57d2d4fc1d42ec16e40af44169f7a46ff9b7a6f253d2d7c9c9834740e945b7b",
+      "image_ids": [
+        "12973e9d-e6d5-499c-95f4-27eba75b654a",
+        "20830376-d52d-4d8e-a353-769cb1988f6a",
+        "b931712b-66a5-408a-9cc2-2c442cb07a55"
+      ]
+    },
+    {
+      "notion_id": "3130221954bc825b920801c76d5be32c",
+      "service": "식단",
+      "title": "3-8. (Android / iOS) 식단_카카오톡_공유하기_클릭",
+      "path": "event-log/06-식단/3-8.-(Android-iOS)-식단_카카오톡_공유하기_클릭.md",
+      "notion_url": "https://app.notion.com/p/3130221954bc825b920801c76d5be32c",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:26.852Z",
+      "source_body_sha256": "022e2df18e427ddaec3cd25ec4e3798a434e918567703455fc892949a7e3b122",
+      "output_sha256": "4964fb2cc60645a6263f19d8d06688dacd7c5aa2e53dc90da23817806c465a7a",
+      "image_ids": [
+        "67f1d9ab-213d-45ec-aee8-299d2d9a581d",
+        "0fe416e0-40d0-45b8-8c3c-c992998c7c22"
+      ]
+    },
+    {
+      "notion_id": "6e30221954bc837d825f81a86aa89051",
+      "service": "식단",
+      "title": "3-9. (Android / iOS) 식단_카카오톡_코인이동_클릭 (카카오톡)",
+      "path": "event-log/06-식단/3-9.-(Android-iOS)-식단_카카오톡_코인이동_클릭-(카카오톡).md",
+      "notion_url": "https://app.notion.com/p/6e30221954bc837d825f81a86aa89051",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:25.316Z",
+      "source_body_sha256": "02d962eb42e7f55600b7662a18f43e6e89b8aac1399135fb44be221b7ff0b96c",
+      "output_sha256": "aec707b61530bbcc91c2df43cea49bb54147cab721830501b79c425e5f28cbfb",
+      "image_ids": [
+        "8c4c9e79-36ed-4870-9ad4-7d1f79454d75",
+        "80188d7d-2d1a-42bb-9d16-51412c5b0dc2"
+      ]
+    },
+    {
+      "notion_id": "0350221954bc824b956b81bc446c46a5",
+      "service": "식단",
+      "title": "3. 품절 제보 버튼_버튼 내부",
+      "path": "event-log/06-식단/3.-품절-제보-버튼_버튼-내부.md",
+      "notion_url": "https://app.notion.com/p/0350221954bc824b956b81bc446c46a5",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:23.794Z",
+      "source_body_sha256": "5fa6cba37d5691dfd0bf1bfa404999b343ecd744e67349d0205a32d34a7698eb",
+      "output_sha256": "33e412ae9eed16bccec8eab1ac8396f317b12c2d84d533e877e81d72ea6be1b3",
+      "image_ids": [
+        "5e847edd-7c15-4508-aa60-a414c021c78a",
+        "ebdb3b25-cb30-4082-85dc-632c47298eac",
+        "0d805d64-6bcb-47c6-bd74-80e072c768dc",
+        "7f529331-9284-41c0-817d-18cac9956efb",
+        "e8193d6c-33b1-4f4a-92d8-8767baaab039",
+        "8ea3cd93-835a-4084-ab20-3b3e9841d72b",
+        "7f529331-9284-41c0-817d-18cac9956efb"
+      ]
+    },
+    {
+      "notion_id": "2fc0221954bc828b8bdf011220868e23",
+      "service": "식단",
+      "title": "4-1. 식단_코너 사진_클릭",
+      "path": "event-log/06-식단/4-1.-식단_코너-사진_클릭.md",
+      "notion_url": "https://app.notion.com/p/2fc0221954bc828b8bdf011220868e23",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:24.690Z",
+      "source_body_sha256": "97c3b34c65800c4dac5b9ebdbfa4a20a6c6d56e641e5eec331e24e9904e028a5",
+      "output_sha256": "79efb673668613361c22e87f0eaf635095c33978ffc72598fa0f6dc821004210",
+      "image_ids": [
+        "390859b0-0dda-4d5e-a448-9c37c2ae89ad",
+        "1e654bb8-0d0c-486e-9e7a-37bc30de5ca7",
+        "b950b412-8180-4f56-b190-93c3b6e87e55",
+        "845eb32b-289e-4af4-8162-e4c7d770a194"
+      ]
+    },
+    {
+      "notion_id": "0b20221954bc83889fbd018d543903a3",
+      "service": "식단",
+      "title": "5-1. (Android / iOS) 알림설정_클릭",
+      "path": "event-log/06-식단/5-1.-(Android-iOS)-알림설정_클릭.md",
+      "notion_url": "https://app.notion.com/p/0b20221954bc83889fbd018d543903a3",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:25.871Z",
+      "source_body_sha256": "eeb2835ec8e69abf32cb1c3f3e30be307f90aa16d3aaca35e956de897640e8fd",
+      "output_sha256": "c658eb9784b638197a7bedb9b406462e83d15f4629a357e9305552bd042f7dd8",
+      "image_ids": [
+        "75e9ae20-ea14-4648-a4ed-8a09f36ec260",
+        "13c64495-866a-436f-9081-cd3dad32bbc0"
+      ]
+    },
+    {
+      "notion_id": "0300221954bc8285980681c970789491",
+      "service": "식단",
+      "title": "5-2. (Android / iOS) 알림설정_품절_토글",
+      "path": "event-log/06-식단/5-2.-(Android-iOS)-알림설정_품절_토글.md",
+      "notion_url": "https://app.notion.com/p/0300221954bc8285980681c970789491",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:24.852Z",
+      "source_body_sha256": "6038e1f39be320fef1848a153126044cd00ac96e5de110dce4ab4dc34460f993",
+      "output_sha256": "841d5ac90f79ee55a0ad42bdd7f288d16298202d923d445ef40a420b23c0031a",
+      "image_ids": [
+        "27fd569e-f8d5-4ec4-9340-483d95bcd7de"
+      ]
+    },
+    {
+      "notion_id": "4340221954bc83c4af1e010db006e1c1",
+      "service": "식단",
+      "title": "5-3. (Android / iOS) 알림설정_품절_식사시간_토글",
+      "path": "event-log/06-식단/5-3.-(Android-iOS)-알림설정_품절_식사시간_토글.md",
+      "notion_url": "https://app.notion.com/p/4340221954bc83c4af1e010db006e1c1",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:25.012Z",
+      "source_body_sha256": "8b04478604ca3698b126d125a1c291c04e08f7d826bf6b9f1c6d8d5daa64616e",
+      "output_sha256": "33fa70ecde9b7505712ca0febd1fcb20ba0a7225194922be07585a31a93beae4",
+      "image_ids": [
+        "df65b3ce-c5a6-4651-abad-79e05d8e76d2"
+      ]
+    },
+    {
+      "notion_id": "e140221954bc82ada3cd813cb4071c3d",
+      "service": "식단",
+      "title": "5-6. (Android / iOS) 알림설정_식단사진 업로드_토글",
+      "path": "event-log/06-식단/5-6.-(Android-iOS)-알림설정_식단사진-업로드_토글.md",
+      "notion_url": "https://app.notion.com/p/e140221954bc82ada3cd813cb4071c3d",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:25.631Z",
+      "source_body_sha256": "9748b010db103f3d3b612163f48e562c7feb270f866b5a245e95113e9c46ebdc",
+      "output_sha256": "d3bd72c7724c4d9c0cf1de0681b358a42c5529063ce55f273ae596d7456f7316",
+      "image_ids": [
+        "bcc65981-4aa3-4e55-87c1-1d90599bca63"
+      ]
+    },
+    {
+      "notion_id": "42a0221954bc826ca46e0103871c84da",
+      "service": "식단",
+      "title": "[레거시] 메인_식단_더보기버튼_클릭(확인필요)",
+      "path": "event-log/06-식단/[레거시]-메인_식단_더보기버튼_클릭(확인필요).md",
+      "notion_url": "https://app.notion.com/p/42a0221954bc826ca46e0103871c84da",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "진행 중",
+      "source_last_edited_at": "2026-11-23T13:38:21.875Z",
+      "source_body_sha256": "0748f00f2aa4af0764f409bb2b5fc8efd25025325b9b04786b31254e35db64f7",
+      "output_sha256": "91cdf76bd526564f7199e0e7497208c80f7f846483760ff7e0853fc1db8662f8",
+      "image_ids": [
+        "20eec2fe-c331-46c5-b824-240264438c10",
+        "a748c053-7a0b-4348-a404-4ba86108b413"
+      ]
+    }
+  ],
+  "blank_pages": []
+}

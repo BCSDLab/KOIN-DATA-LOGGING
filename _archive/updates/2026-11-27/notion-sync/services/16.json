@@ -1,0 +1,288 @@
+{
+  "service": "다국어 지원",
+  "pages": [
+    {
+      "notion_id": "de00221954bc82b8b29a01a2e277e344",
+      "service": "다국어 지원",
+      "title": "1-1 언어 메뉴 열기 클릭 (웹)",
+      "path": "event-log/21-다국어-지원/1-1-1-언어-메뉴-열기-클릭-(웹).md",
+      "notion_url": "https://app.notion.com/p/de00221954bc82b8b29a01a2e277e344",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:03.873Z",
+      "source_body_sha256": "f6b32905fd07141d462debb78fdd2c4bc349cee93af0663a20e92dfa5d16bf7f",
+      "output_sha256": "2005820ac9c651c7dce1924bc98950fb7b01611b03294526e0aecbbdfda8e808",
+      "image_ids": [
+        "86fcde57-b698-4f2b-8c9a-5aad0cf8464e"
+      ]
+    },
+    {
+      "notion_id": "e430221954bc82b7aed7012619922fa2",
+      "service": "다국어 지원",
+      "title": "1-1 언어 설정 진입 클릭 (모바일)",
+      "path": "event-log/21-다국어-지원/1-1-언어-설정-진입-클릭-(모바일).md",
+      "notion_url": "https://app.notion.com/p/e430221954bc82b7aed7012619922fa2",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB(모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:03.941Z",
+      "source_body_sha256": "97cc6ecc7e8ae06e7cbcebc77c35e2ba7e14c5f2014ce5ee4b5bd6f670aba707",
+      "output_sha256": "2c83de4c72f1c318c0fdae0c59ea7d6e02b221295d221f97d7a949271de92c5d",
+      "image_ids": [
+        "9a84a889-1fb0-48a8-873a-25689f630763"
+      ]
+    },
+    {
+      "notion_id": "0800221954bc82bd90db811323f5b7c2",
+      "service": "다국어 지원",
+      "title": "1-2 언어 선택 (모바일)",
+      "path": "event-log/21-다국어-지원/1-2-언어-선택-(모바일).md",
+      "notion_url": "https://app.notion.com/p/0800221954bc82bd90db811323f5b7c2",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB(모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:04.016Z",
+      "source_body_sha256": "2f1e7abda38c16699963bfb06a965fda7e3b1f428952e7d243dad35408affe52",
+      "output_sha256": "3741d8b4abb55bb355c41caaab927a0c224b34f7bd0fdfddc6174270f4a9f119",
+      "image_ids": [
+        "efa8ffc4-8709-452f-ba69-6cdad01bbd10"
+      ]
+    },
+    {
+      "notion_id": "05a0221954bc838faa21015722f42b78",
+      "service": "다국어 지원",
+      "title": "1-2 언어 선택 (웹)",
+      "path": "event-log/21-다국어-지원/1-2-1-언어-선택-(웹).md",
+      "notion_url": "https://app.notion.com/p/05a0221954bc838faa21015722f42b78",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:04.089Z",
+      "source_body_sha256": "d4fd2e2c72cfcf2e2b7ae44994c12b23d5181a0bf9b9756648725d8becc34cc3",
+      "output_sha256": "2e4389c5c835d1da6d0728724c36952d5b6a22674d8cfe4bb97559539a56850b",
+      "image_ids": [
+        "f255472f-7e80-4d01-bc5e-bcf83d49c0c3"
+      ]
+    },
+    {
+      "notion_id": "3180221954bc8234be98017522a6369b",
+      "service": "다국어 지원",
+      "title": "2-1 공지사항 번역 클릭",
+      "path": "event-log/21-다국어-지원/2-1-공지사항-번역-클릭.md",
+      "notion_url": "https://app.notion.com/p/3180221954bc8234be98017522a6369b",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:04.166Z",
+      "source_body_sha256": "5e094af6908dac44319e41ceae86f21e10c25cb33665fc80cc867e1f20b30bb9",
+      "output_sha256": "553fbb7a1a8e6dbfeb2453da7c92157ede39cca53597895e2ef100697872d20b",
+      "image_ids": [
+        "0db4f314-950c-4ab1-bf32-722048b5faf2",
+        "2ac7f114-a281-4f1a-90ec-e74bb6c22839"
+      ]
+    },
+    {
+      "notion_id": "d4f0221954bc82629999818265f824a1",
+      "service": "다국어 지원",
+      "title": "2-2 공지사항 원문보기 클릭",
+      "path": "event-log/21-다국어-지원/2-2-공지사항-원문보기-클릭.md",
+      "notion_url": "https://app.notion.com/p/d4f0221954bc82629999818265f824a1",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:04.235Z",
+      "source_body_sha256": "b0c9a2889bc4d925b0e87e286fd4d44e6199cbef52005959c469894b34437b35",
+      "output_sha256": "0ab73c583d58cc107769836408fbf1e5206ad8f862bae19002f94e4e5f16007e",
+      "image_ids": [
+        "7f5faab9-ecc1-4c3a-a91c-043e6e1de44a",
+        "d9f1c7a3-a006-40ab-b1d2-e321e7658bb9"
+      ]
+    },
+    {
+      "notion_id": "4cf0221954bc83a3b7f8819555b4b8a6",
+      "service": "다국어 지원",
+      "title": "3-1 분실물 번역 클릭",
+      "path": "event-log/21-다국어-지원/3-1-분실물-번역-클릭.md",
+      "notion_url": "https://app.notion.com/p/4cf0221954bc83a3b7f8819555b4b8a6",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:04.308Z",
+      "source_body_sha256": "0d6d37ae19038846db970292400333c4a6bfd888135f592cda8404913c619930",
+      "output_sha256": "10711a13835194c6390417ba5118d6601ffdf4ae13889a3781cb3829529372c9",
+      "image_ids": [
+        "ad709ea7-e5ff-4937-8c5b-ec0a967f0414",
+        "86512541-bf08-4f32-9319-3c34c37f6cd3"
+      ]
+    },
+    {
+      "notion_id": "3200221954bc82c3b61d01d3d27fdfc0",
+      "service": "다국어 지원",
+      "title": "3-2 분실물 원문보기 클릭",
+      "path": "event-log/21-다국어-지원/3-2-분실물-원문보기-클릭.md",
+      "notion_url": "https://app.notion.com/p/3200221954bc82c3b61d01d3d27fdfc0",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:04.878Z",
+      "source_body_sha256": "cf08476d27196796b4a2797f7972e1fbc008c89f66be91d496e40823bb9a47ff",
+      "output_sha256": "50cb002f27d09636afb527dd84111e7f6e11d58c5d8ed76793c97e1bae5aec0d",
+      "image_ids": [
+        "0ec90faf-57a8-41c2-9013-cfb9c1f2edd3",
+        "0cf74312-0f9d-47dd-a276-f8b23cb38e89"
+      ]
+    },
+    {
+      "notion_id": "e4d0221954bc83a59aa1015e5a077191",
+      "service": "다국어 지원",
+      "title": "4-1 팀원모집 번역 클릭",
+      "path": "event-log/21-다국어-지원/4-1-팀원모집-번역-클릭.md",
+      "notion_url": "https://app.notion.com/p/e4d0221954bc83a59aa1015e5a077191",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:04.960Z",
+      "source_body_sha256": "d784343bcee49de0a6a6ae1e589a0d1ff6ed08216dc9fb2162df3cca74c863e8",
+      "output_sha256": "0e9ebd7490fe08d9e64134873f8026d973ac8b08667914b283c0352c891ef6f5",
+      "image_ids": [
+        "f79e4be3-e049-4bb3-a13d-9b5e47cb1d9b",
+        "8dc3abe5-7613-4dbb-b511-47c7d8bc425b"
+      ]
+    },
+    {
+      "notion_id": "da00221954bc8327a04801e5ec56317e",
+      "service": "다국어 지원",
+      "title": "4-2 팀원모집 원문보기 클릭",
+      "path": "event-log/21-다국어-지원/4-2-팀원모집-원문보기-클릭.md",
+      "notion_url": "https://app.notion.com/p/da00221954bc8327a04801e5ec56317e",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:05.081Z",
+      "source_body_sha256": "d6b1b07ff11ceec8f35a067e6c21035efce6abe7c398daf0130dbedf4336ea3a",
+      "output_sha256": "2b4ee775ad90d7c312f55a99b782e5bf81b71a87748ade6227b45e7e6d4ba9f2",
+      "image_ids": [
+        "87c55ba5-669b-4866-8eda-ded2e72176af",
+        "75e274c5-4e69-47ae-a205-6988f0ab16f4"
+      ]
+    },
+    {
+      "notion_id": "eb80221954bc832fa60301f521c83c14",
+      "service": "다국어 지원",
+      "title": "5-1 콜밴팟 메시지 번역 클릭",
+      "path": "event-log/21-다국어-지원/5-1-콜밴팟-메시지-번역-클릭.md",
+      "notion_url": "https://app.notion.com/p/eb80221954bc832fa60301f521c83c14",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:05.166Z",
+      "source_body_sha256": "0c8c792d7f55e317665e9c099744d032f4ad4c2906ab7d60b8a6fe9e34576cbb",
+      "output_sha256": "6710d5455cab24b8476c5024c4e8fb91e485d579a3dd1c0cfc0397e26c72f50b",
+      "image_ids": [
+        "73a7344f-7151-40db-b2ed-6a30f04c53dc",
+        "a591be8d-fcd4-4003-a1b1-f5cffc8635c9"
+      ]
+    },
+    {
+      "notion_id": "35f0221954bc825aa5d0018b569a4cf5",
+      "service": "다국어 지원",
+      "title": "5-2 콜밴팟 메시지 원문보기 클릭",
+      "path": "event-log/21-다국어-지원/5-2-콜밴팟-메시지-원문보기-클릭.md",
+      "notion_url": "https://app.notion.com/p/35f0221954bc825aa5d0018b569a4cf5",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:05.259Z",
+      "source_body_sha256": "feba21188329b23f741e88ce96f4c3d158be50d016b21846b09dca280cd8cd51",
+      "output_sha256": "b8a05373f433d6a211452345e306fb6239bdc35c3a56312d5a41cf956ac2c2e5",
+      "image_ids": [
+        "824e7405-f9db-4823-9c4d-1c578e428c77",
+        "f5d2f087-16a7-4369-a2f3-4efca40801f6"
+      ]
+    },
+    {
+      "notion_id": "f9d0221954bc83e39f7c01747531c714",
+      "service": "다국어 지원",
+      "title": "6-1 번역 미제공 안내 노출 (공지사항)",
+      "path": "event-log/21-다국어-지원/6-1-번역-미제공-안내-노출-(공지사항).md",
+      "notion_url": "https://app.notion.com/p/f9d0221954bc83e39f7c01747531c714",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:05.350Z",
+      "source_body_sha256": "73891d2ff326ab3c4b62a2788fe15691e107ab7085a35357ee5444b8426a32dc",
+      "output_sha256": "aa3cfda7d9a77dd613fc7e1246f5419991700e918496b30143ccdb6d2b3a0860",
+      "image_ids": [
+        "2381390d-0408-47c4-b99b-85d396af194e",
+        "80dc345f-a51b-40ba-b101-69b91ced9afc"
+      ]
+    },
+    {
+      "notion_id": "cb60221954bc83f3a0f18166e7c98596",
+      "service": "다국어 지원",
+      "title": "6-2 번역 실패 안내 노출 (공지사항)",
+      "path": "event-log/21-다국어-지원/6-2-번역-실패-안내-노출-(공지사항).md",
+      "notion_url": "https://app.notion.com/p/cb60221954bc83f3a0f18166e7c98596",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB(모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:05.488Z",
+      "source_body_sha256": "3648057d262eba8ffbe66a234e868f3dbc99208ddde252ee32e38fc58a1241a3",
+      "output_sha256": "0a6bb2259495c9a21da5b9bfd21cb4970ff9ff4b955811e7391f126e5c0174a1",
+      "image_ids": [
+        "755abeaf-687a-4b16-bd7e-a22589c0bd68",
+        "c8057274-8c37-4cd3-976c-0b0be9c09ec2"
+      ]
+    }
+  ],
+  "blank_pages": []
+}

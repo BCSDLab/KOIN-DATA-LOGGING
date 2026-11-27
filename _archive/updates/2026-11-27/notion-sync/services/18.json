@@ -1,0 +1,180 @@
+{
+  "service": "로그인/회원가입/정보수정 - 레거시",
+  "pages": [
+    {
+      "notion_id": "73a0221954bc82cda2a7812ab5d6a959",
+      "service": "로그인/회원가입/정보수정 - 레거시",
+      "title": "1-1 회원가입 진입(클릭)",
+      "path": "event-log/14-로그인-회원가입-정보수정-레거시/1-1-회원가입-진입(클릭).md",
+      "notion_url": "https://app.notion.com/p/73a0221954bc82cda2a7812ab5d6a959",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.689Z",
+      "source_body_sha256": "878e21a3955e1d0dbbdaac29bb9821695e1c4f6f800e97bdbb0ad93ac17854aa",
+      "output_sha256": "b4a52e4d72b12c167ecdff25527471543a79bc3d2e90d9b6f53e7f5956a7e35f",
+      "image_ids": [
+        "0e83c001-29ca-431f-85ee-9d2b0416b08a"
+      ]
+    },
+    {
+      "notion_id": "6840221954bc83e8870201a4124f7382",
+      "service": "로그인/회원가입/정보수정 - 레거시",
+      "title": "1-1. (웹) 회원가입 (클릭)",
+      "path": "event-log/14-로그인-회원가입-정보수정-레거시/1-1.-(웹)-회원가입-(클릭).md",
+      "notion_url": "https://app.notion.com/p/6840221954bc83e8870201a4124f7382",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.413Z",
+      "source_body_sha256": "157c0a878843029b5a7d7f28da90a4ee8e2a64468ee803e3de455101810b7282",
+      "output_sha256": "f80769b807abda67f43165b425cf52c8e6da597ccaff4b1a76883c742eb0f646",
+      "image_ids": []
+    },
+    {
+      "notion_id": "4030221954bc83f4843e011fe427736d",
+      "service": "로그인/회원가입/정보수정 - 레거시",
+      "title": "1-12. (앱, 웹) 회원가입 완료 성공 ",
+      "path": "event-log/14-로그인-회원가입-정보수정-레거시/1-12.-(앱,-웹)-회원가입-완료-성공.md",
+      "notion_url": "https://app.notion.com/p/4030221954bc83f4843e011fe427736d",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.323Z",
+      "source_body_sha256": "ab8d0df0b52adf6afc80a061dfe547fee6d70a1f64b7e0d5680fd6e26fa9d0f3",
+      "output_sha256": "e074f30a82a2e038e356ff3c3de3e95bb5c6cc5a6730d8f8b94761b6e8d08651",
+      "image_ids": []
+    },
+    {
+      "notion_id": "ae50221954bc83269a9a81bd9e8b9fca",
+      "service": "로그인/회원가입/정보수정 - 레거시",
+      "title": "1-2. (웹) 로그인 (클릭)",
+      "path": "event-log/14-로그인-회원가입-정보수정-레거시/1-2.-(웹)-로그인-(클릭).md",
+      "notion_url": "https://app.notion.com/p/ae50221954bc83269a9a81bd9e8b9fca",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.480Z",
+      "source_body_sha256": "b413dc8749f5e7d3f945755b77f0b00a54efb95e830acdecc9918ffaeafce305",
+      "output_sha256": "ccca92ed798390e95af10b649a20894027cbce5308ce4360055fff4a6d13dd0b",
+      "image_ids": []
+    },
+    {
+      "notion_id": "8fc0221954bc8378b8e501735c3d4ef2",
+      "service": "로그인/회원가입/정보수정 - 레거시",
+      "title": "1-3. (웹) 정보수정 (클릭)",
+      "path": "event-log/14-로그인-회원가입-정보수정-레거시/1-3.-(웹)-정보수정-(클릭).md",
+      "notion_url": "https://app.notion.com/p/8fc0221954bc8378b8e501735c3d4ef2",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.554Z",
+      "source_body_sha256": "ac9cd7dfa95a9b9ec188b6f652f0c7cbfcd1a43978d03d80e2e1b348c50c4632",
+      "output_sha256": "aee012a7d38d84b7b8d60e78238bc8ba7ea6009c6f2de2b301f77a7e527fa389",
+      "image_ids": []
+    },
+    {
+      "notion_id": "8280221954bc8372813881b37edd2902",
+      "service": "로그인/회원가입/정보수정 - 레거시",
+      "title": "1-5. (앱, 반응형 웹) 햄버거_로그인 (클릭)",
+      "path": "event-log/14-로그인-회원가입-정보수정-레거시/1-5.-(앱,-반응형-웹)-햄버거_로그인-(클릭).md",
+      "notion_url": "https://app.notion.com/p/8280221954bc8372813881b37edd2902",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.754Z",
+      "source_body_sha256": "040495f0b9db73d61a216c40a0b705857de003eeaa9d21083fcd83323d1bb132",
+      "output_sha256": "08406dd87e4e7ea85b98159a2c728f01dc743a3a8c6144b5ae7dfb78c41f6459",
+      "image_ids": []
+    },
+    {
+      "notion_id": "eec0221954bc82bf89cd815df45d49f5",
+      "service": "로그인/회원가입/정보수정 - 레거시",
+      "title": "1-6. (앱, 반응형 웹) 햄버거_내정보 (로그인 이후) (클릭)",
+      "path": "event-log/14-로그인-회원가입-정보수정-레거시/1-6.-(앱,-반응형-웹)-햄버거_내정보-(로그인-이후)-(클릭).md",
+      "notion_url": "https://app.notion.com/p/eec0221954bc82bf89cd815df45d49f5",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.822Z",
+      "source_body_sha256": "aac42b481c22dec7b8e26f504fc2d699e671d64a3ce45026edf046431b3809eb",
+      "output_sha256": "e9da510635bc7aaafb9d1407aa62bd0f64548e3a50786e194c9e5b2a25f9fb22",
+      "image_ids": []
+    },
+    {
+      "notion_id": "d630221954bc83b9bb9901110217e3d3",
+      "service": "로그인/회원가입/정보수정 - 레거시",
+      "title": "1-7. (앱, 반응형 웹) 햄버거_로그아웃 (클릭)",
+      "path": "event-log/14-로그인-회원가입-정보수정-레거시/1-7.-(앱,-반응형-웹)-햄버거_로그아웃-(클릭).md",
+      "notion_url": "https://app.notion.com/p/d630221954bc83b9bb9901110217e3d3",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.890Z",
+      "source_body_sha256": "05812b96619431107dad311fce28c06dc07d7c287d3356b4da733d270ddd1aa5",
+      "output_sha256": "6ef10de12414218e684c1659c3015f4925aee2bae9550cc76ede9710fbe32059",
+      "image_ids": []
+    },
+    {
+      "notion_id": "fa30221954bc8391b2b5819310d58639",
+      "service": "로그인/회원가입/정보수정 - 레거시",
+      "title": "1-8~11. 로그인 페이지 속에서 (클릭)",
+      "path": "event-log/14-로그인-회원가입-정보수정-레거시/1-8~11.-로그인-페이지-속에서-(클릭).md",
+      "notion_url": "https://app.notion.com/p/fa30221954bc8391b2b5819310d58639",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.261Z",
+      "source_body_sha256": "c6dc45557374a5be859360394e7ca7a2606b0ac19496343a87e98776c01c2f7a",
+      "output_sha256": "fb2b70b1b59ae491e9f33cba479581e48392232cf4e5195f24927d504f3609f0",
+      "image_ids": []
+    },
+    {
+      "notion_id": "c4d0221954bc82a4a04801bf6c431e6c",
+      "service": "로그인/회원가입/정보수정 - 레거시",
+      "title": "2-1. (웹, 모바일) 로그인 유입",
+      "path": "event-log/14-로그인-회원가입-정보수정-레거시/2-1.-(웹,-모바일)-로그인-유입.md",
+      "notion_url": "https://app.notion.com/p/c4d0221954bc82a4a04801bf6c431e6c",
+      "platforms": [],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:14.440Z",
+      "source_body_sha256": "a6f9e57759539c210e4bd3f307507d9ad0442e96b4abb07cc0eb225f7a046eb5",
+      "output_sha256": "db8792594611d244af87b14392b6d096c2e5d8b9118c4f9bc206b3d9eab33ac2",
+      "image_ids": [
+        "72d10c87-9a63-4c83-a5a0-3dfea32b9e5d",
+        "ad4adaca-1125-4e79-99c6-2da2fa413ae9",
+        "f17c195a-b1b1-4b7c-a600-3bd27b325d8c",
+        "574162c2-f4ab-4b52-82e2-c5c267c60746",
+        "e976b6e6-8d35-4a06-b2fe-dfac3f86a651",
+        "80112ada-aea1-437c-9e0a-3467a37a3e2c",
+        "b70dbc3d-2993-4c7e-89e2-5d91a4ac953c",
+        "f7901799-3803-494f-a3c2-0b6b7f9bf6b3"
+      ]
+    }
+  ],
+  "blank_pages": [
+    {
+      "notion_id": "6fd0221954bc82c8a5bf0157a9b1c605",
+      "title": "새 페이지",
+      "service": "로그인/회원가입/정보수정 - 레거시",
+      "url": "https://app.notion.com/p/6fd0221954bc82c8a5bf0157a9b1c605"
+    }
+  ]
+}

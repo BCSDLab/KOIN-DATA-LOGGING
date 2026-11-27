@@ -1,0 +1,539 @@
+{
+  "service": "시간표",
+  "pages": [
+    {
+      "notion_id": "cd10221954bc83c582eb01b7addb1ff0",
+      "service": "시간표",
+      "title": "2-10. 시간표 탈출_뒤로가기버튼",
+      "path": "event-log/16-시간표/2-10.-시간표-탈출_뒤로가기버튼.md",
+      "notion_url": "https://app.notion.com/p/cd10221954bc83c582eb01b7addb1ff0",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:02.362Z",
+      "source_body_sha256": "361e1335a97b5540e8ec8f2c92142aaee2ed9841b86daaa2c9cb5f140960214b",
+      "output_sha256": "35f1d87b16d1d8d1af70bbefb2363004272ad146aa627ab98b26a17cdf9f4454",
+      "image_ids": [
+        "f501d462-b5d9-42f2-b163-c93de63c9c50"
+      ]
+    },
+    {
+      "notion_id": "9a90221954bc8280ae0c81fa98e7da77",
+      "service": "시간표",
+      "title": "2-11. 시간표 탈출_OS스와이프",
+      "path": "event-log/16-시간표/2-11.-시간표-탈출_OS스와이프.md",
+      "notion_url": "https://app.notion.com/p/9a90221954bc8280ae0c81fa98e7da77",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:59.791Z",
+      "source_body_sha256": "d2d3ae13fbd358f916ed7287b5ba2e9bdb456a3defebbe0b261604e0d28da786",
+      "output_sha256": "749f6a359865ccd5626080c5f61d36b99de1ed7d5b3fa1009f7c1647eae02e9c",
+      "image_ids": []
+    },
+    {
+      "notion_id": "9b60221954bc8227941681d5bd8f7c97",
+      "service": "시간표",
+      "title": "2-12. 시간표 탈출_햄버거로 기능이동",
+      "path": "event-log/16-시간표/2-12.-시간표-탈출_햄버거로-기능이동.md",
+      "notion_url": "https://app.notion.com/p/9b60221954bc8227941681d5bd8f7c97",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:59.902Z",
+      "source_body_sha256": "3ad9997366e0936b44e7ecb111d2228fc62058d10b7ae1907669311b3185268f",
+      "output_sha256": "d9e5e385e1374fcfb4b4bc9bcde397405df2b3b117bb2ae4fee25fdb3b9ba0fc",
+      "image_ids": []
+    },
+    {
+      "notion_id": "5d00221954bc8298851e8118d242aa2b",
+      "service": "시간표",
+      "title": "2-13. (웹, 반응형 앱) 시간표_학기 추가 (클릭)",
+      "path": "event-log/16-시간표/2-13.-(웹,-반응형-앱)-시간표_학기-추가-(클릭).md",
+      "notion_url": "https://app.notion.com/p/5d00221954bc8298851e8118d242aa2b",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB (모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:58.026Z",
+      "source_body_sha256": "824c235d6839d6027458c7b0020a8647bb6ff5642cd6189cf348fd2aa3573e6f",
+      "output_sha256": "6fe66630b494902a5b1afe153675c7cf700faee69d1088e2acd47f6a2ab7b87c",
+      "image_ids": [
+        "e3f67734-99fa-45b2-b2f3-b57cc2466157",
+        "00e34172-3c05-445b-ab2a-596f48d2afb1",
+        "f7b1d6f2-e009-424f-855b-e70eb363d9ec",
+        "44c27f05-7f59-40df-bb51-c2a27f4c0469"
+      ]
+    },
+    {
+      "notion_id": "4ea0221954bc836ca63981aaaecc3080",
+      "service": "시간표",
+      "title": "2-14. (웹, 반응형 앱) 시간표_학기 삭제_확정 (클릭)",
+      "path": "event-log/16-시간표/2-14.-(웹,-반응형-앱)-시간표_학기-삭제_확정-(클릭).md",
+      "notion_url": "https://app.notion.com/p/4ea0221954bc836ca63981aaaecc3080",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "WEB (모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:58.276Z",
+      "source_body_sha256": "fe9b5da4ac016d1df058735d77b130bfc4cebcc7ffd985bcdf65eacd03cfeb9e",
+      "output_sha256": "035d9102996b1edf472f267afe00d8af32dc81e6191a384bbc262de34e20996a",
+      "image_ids": [
+        "2313f54e-879a-4a07-bc14-aa5f0568f312",
+        "53189603-944e-4da1-b788-1c0e3c908972",
+        "5d87d7a8-9c8b-4736-a212-82815ac70d54",
+        "276903ad-073f-4438-bf83-da31c08559d8",
+        "5cc23c64-57ae-4163-a600-fca722fc3043"
+      ]
+    },
+    {
+      "notion_id": "afd0221954bc82259bc7014eee6721ea",
+      "service": "시간표",
+      "title": "2-15. (웹) 시간표_저장 (클릭)",
+      "path": "event-log/16-시간표/2-15.-(웹)-시간표_저장-(클릭).md",
+      "notion_url": "https://app.notion.com/p/afd0221954bc82259bc7014eee6721ea",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:59.620Z",
+      "source_body_sha256": "0678f43790bedfc038322688e1837eed5cb05288db0719dadf5f872a2d20b885",
+      "output_sha256": "44b963b988ffe0e773c404fc752eb70baa6526b63b0b136d7fe10d13bb80fc7f",
+      "image_ids": [
+        "16e402e4-f05b-40c7-a3fe-e00421b11a0c",
+        "15aef390-8811-40b1-8bf1-b3f829f47080",
+        "7daede12-3b76-4399-bcbe-eb6872374978"
+      ]
+    },
+    {
+      "notion_id": "70e0221954bc83869adc0113067f1335",
+      "service": "시간표",
+      "title": "2-16. (웹) 시간표_삭제 (클릭)",
+      "path": "event-log/16-시간표/2-16.-(웹)-시간표_삭제-(클릭).md",
+      "notion_url": "https://app.notion.com/p/70e0221954bc83869adc0113067f1335",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:59.733Z",
+      "source_body_sha256": "d2677995061d46fd332329465da7ab36a36fd6e59f4c0844dfa0831f4ffeb20e",
+      "output_sha256": "1482b4df5b82711ea9e345a6e4e188ab435c812d7640d06c54ae6086eb3669be",
+      "image_ids": [
+        "cf47c2fa-819d-461e-a9f4-1f17d93e3345",
+        "1ab494f7-d745-4616-8dbc-d0bd54ad5b07",
+        "a8a410ed-5ff2-417b-a1eb-d88484252600"
+      ]
+    },
+    {
+      "notion_id": "3e40221954bc839c8b588186f5899cde",
+      "service": "시간표",
+      "title": "2-17. (웹) 시간표_수정 완료 (클릭)",
+      "path": "event-log/16-시간표/2-17.-(웹)-시간표_수정-완료-(클릭).md",
+      "notion_url": "https://app.notion.com/p/3e40221954bc839c8b588186f5899cde",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:59.839Z",
+      "source_body_sha256": "95cfe4ec6d9adbf83d7734de107ee5c0e986624a87cf570f406125f302b2de26",
+      "output_sha256": "14b14d09583eb1e02054c3e592a2c45c42bb49049a4f0ce86c1006ca16e4f011",
+      "image_ids": [
+        "b217d748-c60f-4c29-a805-b8de54a167a8",
+        "13fc80d0-0012-4b86-90ce-7f2f0cd9002f"
+      ]
+    },
+    {
+      "notion_id": "9c50221954bc825aa4340128de6ed9df",
+      "service": "시간표",
+      "title": "2-18. (웹) 시간표_수정_과목 선택 (클릭)",
+      "path": "event-log/16-시간표/2-18.-(웹)-시간표_수정_과목-선택-(클릭).md",
+      "notion_url": "https://app.notion.com/p/9c50221954bc825aa4340128de6ed9df",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:59.968Z",
+      "source_body_sha256": "1bb3ac8708eca62dabc3b0eb69a49d8b9a0b8b9e2aac266ea6a86fc76e871d17",
+      "output_sha256": "426cd79eeca972d5f26f01abfcf9e24c48d2687996c6a503382e54e3d0f10e67",
+      "image_ids": [
+        "f7091e3b-8a8a-4753-9be2-324b88dbcab0",
+        "919d75f7-4364-46ee-9c4a-57de96256336"
+      ]
+    },
+    {
+      "notion_id": "1af0221954bc82029b9101a650dee45d",
+      "service": "시간표",
+      "title": "2-19. (웹) 시간표_수정_일정 저장 (클릭)",
+      "path": "event-log/16-시간표/2-19.-(웹)-시간표_수정_일정-저장-(클릭).md",
+      "notion_url": "https://app.notion.com/p/1af0221954bc82029b9101a650dee45d",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:00.072Z",
+      "source_body_sha256": "e371cc4d5f8c0aa49d97f134213912d0067adc9e3a7c72979c5d35c8bd0d7e55",
+      "output_sha256": "3b3711c82d880f103f0098034d893b567d647c9937109483bb33f236583eae18",
+      "image_ids": [
+        "8995462a-c301-40c5-bc42-53e16357081f",
+        "37dc4f14-e0de-497e-8a2c-cc4ae9d2fe81"
+      ]
+    },
+    {
+      "notion_id": "9100221954bc822094c201ad81ee613f",
+      "service": "시간표",
+      "title": "2-1~2. (웹) 메인_시간표",
+      "path": "event-log/16-시간표/2-1~2.-(웹)-메인_시간표.md",
+      "notion_url": "https://app.notion.com/p/9100221954bc822094c201ad81ee613f",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:38:59.905Z",
+      "source_body_sha256": "91981ebe50c1bee51b8bd4808c81e5faf246ac18e0c60c8ea86c51693b88de1b",
+      "output_sha256": "80c17b2aea15e32639e86cde5fb8f8a6db97cde30aad0a6cdcd83842fa9c198d",
+      "image_ids": [
+        "cc9b655c-7a23-4ecf-8f87-983991c13737",
+        "4d041539-950a-4535-9997-243249c254b4"
+      ]
+    },
+    {
+      "notion_id": "ffa0221954bc82ad99a101da637ff4b1",
+      "service": "시간표",
+      "title": "2-20. (웹) 시간표_수정_해당 학부 (클릭)",
+      "path": "event-log/16-시간표/2-20.-(웹)-시간표_수정_해당-학부-(클릭).md",
+      "notion_url": "https://app.notion.com/p/ffa0221954bc82ad99a101da637ff4b1",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:38:59.794Z",
+      "source_body_sha256": "aa52c4a1bd58ca14e9d4b3afb5c3c36d90dd0ca438004b8614d528713382115f",
+      "output_sha256": "41ef37611ff7c9478a74080f69c029dfc0e745a34c737033fd6777d25ca02a65",
+      "image_ids": [
+        "97c576bb-75a0-497b-9bcc-ab4df658718f",
+        "7240e7ea-760d-4071-8e88-08e771652bd0"
+      ]
+    },
+    {
+      "notion_id": "7560221954bc82d9a5f88156d19ee8ac",
+      "service": "시간표",
+      "title": "2-23. (웹, 반응형 앱) 시간표_시간표 수정 (클릭) - 추가된 로깅",
+      "path": "event-log/16-시간표/2-23.-(웹,-반응형-앱)-시간표_시간표-수정-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/7560221954bc82d9a5f88156d19ee8ac",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:00.153Z",
+      "source_body_sha256": "3c484b07a2f95ad9b078ebd103ffb08ece5ff5fdae8af3d0d52effa5e0b2ddd5",
+      "output_sha256": "db0a08f9bd15ce7f493a637b90eb5636c37cf6110bc9fc9c4599f435b3121d3c",
+      "image_ids": [
+        "f01fecf4-9151-425e-9f4f-f552abac32e1",
+        "90fc6894-6c49-4d4c-b793-fca21bc51777"
+      ]
+    },
+    {
+      "notion_id": "c010221954bc823d9c1e0169d1a71a63",
+      "service": "시간표",
+      "title": "2-24. (웹) 시간표_시간표 추가하기 (클릭) - 추가된 로깅",
+      "path": "event-log/16-시간표/2-24.-(웹)-시간표_시간표-추가하기-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/c010221954bc823d9c1e0169d1a71a63",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:02.400Z",
+      "source_body_sha256": "e623b4804c76c8df8eefceda80432d00fdf1e39c777a6e7c44594dbb1727e996",
+      "output_sha256": "e542563d15d2f900d83d8c5ef02873a1addd0216551664393a92dc0a43921ee0",
+      "image_ids": [
+        "54e07b20-6318-449e-9fe7-80315124ffe1"
+      ]
+    },
+    {
+      "notion_id": "c650221954bc83e7a3550135505ce410",
+      "service": "시간표",
+      "title": "2-25. (웹) 시간표_설정 (클릭) - 추가된 로깅",
+      "path": "event-log/16-시간표/2-25.-(웹)-시간표_설정-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/c650221954bc83e7a3550135505ce410",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:02.181Z",
+      "source_body_sha256": "8a4877ebebc419f7413bff0194e4a94ef979d4d98d7d738bae31f42b99aac689",
+      "output_sha256": "53995aa48f2d49af742c9421625e704a3e8f09a20337873cf09664a6e9fcac45",
+      "image_ids": [
+        "9c796f2b-f956-49d3-9a98-63ab11af0766"
+      ]
+    },
+    {
+      "notion_id": "d2d0221954bc82b8983d812c7d19405f",
+      "service": "시간표",
+      "title": "2-26. (앱, 반응형 웹) 시간표_학기 시간표 선택 (클릭) - 추가된 로깅",
+      "path": "event-log/16-시간표/2-26.-(앱,-반응형-웹)-시간표_학기-시간표-선택-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/d2d0221954bc82b8983d812c7d19405f",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB (모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:00.277Z",
+      "source_body_sha256": "7e2178110f25005638b7c5aa3f801cbba2a9d7ca214de552d604beee2fe624fb",
+      "output_sha256": "b7c40e7f7fa2f60b46000d0bb701018f4901fea48e346134f015751b8638f37d",
+      "image_ids": [
+        "08e7468d-2224-4c47-90bb-abac20922a32"
+      ]
+    },
+    {
+      "notion_id": "00c0221954bc8205b87c017295f8d83c",
+      "service": "시간표",
+      "title": "2-27. (앱, 반응형 웹) 시간표 목록_시간표 선택 (클릭) - 추가된 로깅",
+      "path": "event-log/16-시간표/2-27.-(앱,-반응형-웹)-시간표-목록_시간표-선택-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/00c0221954bc8205b87c017295f8d83c",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB (모바일)"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:01.976Z",
+      "source_body_sha256": "47e07248e40586d325c74f8862d4fa40f18a7b3f7ba55f4f733c1f0994ad2ed8",
+      "output_sha256": "3d128513f86afdf4f70a693d3e6aba717ede16470b2f6d17297775b9c3ca5e9e",
+      "image_ids": [
+        "41e54f47-a990-4faa-b312-245e351e3b57"
+      ]
+    },
+    {
+      "notion_id": "3ea0221954bc832ca61b81ffecb9b150",
+      "service": "시간표",
+      "title": "2-28. (웹) 시간표_로그인 팝업_로그인하기 (클릭) - 추가된 로깅",
+      "path": "event-log/16-시간표/2-28.-(웹)-시간표_로그인-팝업_로그인하기-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/3ea0221954bc832ca61b81ffecb9b150",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:02.107Z",
+      "source_body_sha256": "ac632442043f23bb4e18d42350172b60322e16d7675bd04da76605ad7b2b058e",
+      "output_sha256": "d57172e4f4d60ab0853f22f9daf0b0b81c826d20e0fa2ba2c22a29df32948db6",
+      "image_ids": [
+        "ef1ca26f-dce1-4d12-b3fe-3155bbbbd4ef"
+      ]
+    },
+    {
+      "notion_id": "f8d0221954bc834ab4d1015a588bad7c",
+      "service": "시간표",
+      "title": "2-29. (웹) 시간표_로그인 팝업_취소하기 (클릭) - 추가된 로깅",
+      "path": "event-log/16-시간표/2-29.-(웹)-시간표_로그인-팝업_취소하기-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/f8d0221954bc834ab4d1015a588bad7c",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:02.821Z",
+      "source_body_sha256": "7190c61611349fdcd6a5239ccbe7d703bf9a509fbff798690eeed033ec938f4a",
+      "output_sha256": "9614acc04eec09f4f5a09a60e33f3686dc24daa615e6f51b2f329752d845b7d2",
+      "image_ids": [
+        "f11b0db0-ae80-4ef5-abc6-74338de5a5ad"
+      ]
+    },
+    {
+      "notion_id": "3e20221954bc83d6890b81d1c1bcc92d",
+      "service": "시간표",
+      "title": "2-3. (웹) 헤더_시간표",
+      "path": "event-log/16-시간표/2-3.-(웹)-헤더_시간표.md",
+      "notion_url": "https://app.notion.com/p/3e20221954bc83d6890b81d1c1bcc92d",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:00.002Z",
+      "source_body_sha256": "b98d34b669a4eaff89837a78e6962c7b1f287a11f8bf2726bf96800f31bbef24",
+      "output_sha256": "3b8bf2053cb0bfb1b9435ddb12292ed57f367bc534961627f146a65023031f4a",
+      "image_ids": [
+        "faadd61e-d382-4153-8184-a808bb1b433e",
+        "df3db8a2-d26e-4352-b5ad-74a74c14cd8f"
+      ]
+    },
+    {
+      "notion_id": "f160221954bc82188d3601e6c0c68464",
+      "service": "시간표",
+      "title": "2-30. (웹) 시간표 수정_탭 (클릭) - 추가된 로깅",
+      "path": "event-log/16-시간표/2-30.-(웹)-시간표-수정_탭-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/f160221954bc82188d3601e6c0c68464",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:00.030Z",
+      "source_body_sha256": "278a7b5694ce28b2f7e2e92331cda45859bee1600c96edd4ae7b3e46fcb4db9d",
+      "output_sha256": "a31c0dd1135a97651dbeffdddd0661818997191d36d0532b1ed2f61bc0561f28",
+      "image_ids": [
+        "8d662854-03c9-42db-80c9-218e1432f210"
+      ]
+    },
+    {
+      "notion_id": "d780221954bc835b9ce8811174f4fcb2",
+      "service": "시간표",
+      "title": "2-4. (웹) 푸터_시간표",
+      "path": "event-log/16-시간표/2-4.-(웹)-푸터_시간표.md",
+      "notion_url": "https://app.notion.com/p/d780221954bc835b9ce8811174f4fcb2",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:00.098Z",
+      "source_body_sha256": "10eac36982369432b659a923b1dedc7deee44d1d2355f99882294bca0870f668",
+      "output_sha256": "7d99efb7eaa36cc42047035b0507288611c6051a48fe252c03cb5e0d10c6c041",
+      "image_ids": [
+        "b0d3571e-df73-41bf-b063-e72649a3f58e",
+        "a7ab93fe-8521-497a-a0a5-1f140e30006d"
+      ]
+    },
+    {
+      "notion_id": "f170221954bc82f1ae6c811a499d60fa",
+      "service": "시간표",
+      "title": "2-6. 시간표_이미지 저장 (클릭)",
+      "path": "event-log/16-시간표/2-6.-시간표_이미지-저장-(클릭).md",
+      "notion_url": "https://app.notion.com/p/f170221954bc82f1ae6c811a499d60fa",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:00.344Z",
+      "source_body_sha256": "6a727308d1811574da60eca30950bd94fb8452f330b35d5bcd11d1d189e0fd3e",
+      "output_sha256": "cd018a0819a66917f5c8d41b69e9acc108669d14495171502c692f31d587677a",
+      "image_ids": [
+        "92de46ce-f082-4e70-841b-d1d673914788",
+        "44fd3303-9fed-497e-90c9-0f615b202004",
+        "6f968512-95cf-43f8-a5a6-1b6d898f3477"
+      ]
+    },
+    {
+      "notion_id": "5240221954bc833283d98127b097a84a",
+      "service": "시간표",
+      "title": "2-7. 시간표_학기 드롭다운 (클릭)",
+      "path": "event-log/16-시간표/2-7.-시간표_학기-드롭다운-(클릭).md",
+      "notion_url": "https://app.notion.com/p/5240221954bc833283d98127b097a84a",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:01.775Z",
+      "source_body_sha256": "47a17b4b37cb4ee61177658bab500ea3a676507a007197b8d0d1542b454d55f5",
+      "output_sha256": "e5d8dc0fac7f759d10aa33ab11881af999de163e004d4e5a1e1abea5cb351fdd",
+      "image_ids": [
+        "2de44cee-2f44-4e08-a2f5-112163dbbef4",
+        "cb33518a-3466-4aef-8805-5b7b20bd89ca"
+      ]
+    },
+    {
+      "notion_id": "50c0221954bc828ab2e501134fa6bb43",
+      "service": "시간표",
+      "title": "2-8. 시간표_커리큘럼 (클릭)",
+      "path": "event-log/16-시간표/2-8.-시간표_커리큘럼-(클릭).md",
+      "notion_url": "https://app.notion.com/p/50c0221954bc828ab2e501134fa6bb43",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:01.939Z",
+      "source_body_sha256": "79febecbe5b85ac9507bb191ee69930e7e5f2a5b569f5e4ec7b7ff6f28234510",
+      "output_sha256": "659f9a16f25ca28221c5985e78f86a867d11da5a74b6474ec589aa19179e8dc9",
+      "image_ids": [
+        "79075aa8-2a49-476e-8b75-04128acca1db",
+        "fa1c17c3-d992-4ffc-bbd0-3d44c2a3ef8f"
+      ]
+    },
+    {
+      "notion_id": "f590221954bc8245839d815022d80f1d",
+      "service": "시간표",
+      "title": "2-9. 시간표 검색_돋보기 (클릭)",
+      "path": "event-log/16-시간표/2-9.-시간표-검색_돋보기-(클릭).md",
+      "notion_url": "https://app.notion.com/p/f590221954bc8245839d815022d80f1d",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:02.129Z",
+      "source_body_sha256": "e240ef2901b7fddacbc551d421a28e5a33559f6ea1fc0389800f2ae1e1d54621",
+      "output_sha256": "06aa3f403cffafeb4a0bb3fb8cfc4579fc3ba1297a2bff8e287f9ddd647f5d3e",
+      "image_ids": [
+        "5a53b951-f90f-44a2-819b-5d66932ad035",
+        "2e22de10-6e2c-4037-afd5-34fe93149d13"
+      ]
+    },
+    {
+      "notion_id": "9d40221954bc837fa57201c1f0cf166c",
+      "service": "시간표",
+      "title": "[레거시·이관 원문] 2-5. (앱, 반응형 웹) 햄버거_시간표",
+      "path": "event-log/16-시간표/[레거시·이관-원문]-2-5.-(앱,-반응형-웹)-햄버거_시간표.md",
+      "notion_url": "https://app.notion.com/p/9d40221954bc837fa57201c1f0cf166c",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:00.224Z",
+      "source_body_sha256": "d0a44791914db384fdda6e5b11e4fa88e62143f72e45635f453a8d3b907608cd",
+      "output_sha256": "256bbf12f0302abde8084cf63ce815359d8bdf8facffbb41d701a12c7180fcfb",
+      "image_ids": [
+        "adb5ccff-e38f-47b2-a78d-38752b711eb6",
+        "38d146b4-15cd-4eae-b4d5-c48bb127c521"
+      ]
+    },
+    {
+      "notion_id": "5cc0221954bc820cbc628127334ac8a1",
+      "service": "시간표",
+      "title": "[레거시·중복 명세] 2-22. (웹) 시간표_모의 수강신청 (클릭)",
+      "path": "event-log/16-시간표/[레거시·중복-명세]-2-22.-(웹)-시간표_모의-수강신청-(클릭).md",
+      "notion_url": "https://app.notion.com/p/5cc0221954bc820cbc628127334ac8a1",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:00.412Z",
+      "source_body_sha256": "d3c5c1c82a089c31b65785d193a7ca885ac7b5ae6fda559420fdee21682dac23",
+      "output_sha256": "de28946a810a6d2fb195b76ee83d581f1f922cfcac7855273c7a9b3a629b81a9",
+      "image_ids": [
+        "db4c232f-3e83-4ad6-a7af-429a8a82efd2"
+      ]
+    },
+    {
+      "notion_id": "98b0221954bc83efaf6501e4310311c5",
+      "service": "시간표",
+      "title": "[레거시·중복 원문] 2-21. (앱, 반응형 웹) 카테고리_시간표 진입 (클릭) - 추가된 로깅",
+      "path": "event-log/16-시간표/[레거시·중복-원문]-2-21.-(앱,-반응형-웹)-카테고리_시간표-진입-(클릭)-추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/98b0221954bc83efaf6501e4310311c5",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:01.962Z",
+      "source_body_sha256": "c1e847238a00e5671752009e13402531111df41bf9b64fa127b0b2f33d6dca46",
+      "output_sha256": "9b0368753eaf388055bdadbd2136616fe058db1b84f29a82ae6c24b0374fca8b",
+      "image_ids": [
+        "c51627a7-a8b7-4a1a-aed3-eace160358c6"
+      ]
+    }
+  ],
+  "blank_pages": []
+}

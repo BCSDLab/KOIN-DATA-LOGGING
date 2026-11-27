@@ -1,0 +1,318 @@
+{
+  "service": "복덕방 (레거시)",
+  "pages": [
+    {
+      "notion_id": "bbe0221954bc8334a4d881f54738091c",
+      "service": "복덕방 (레거시)",
+      "title": "1-1 헤더_복덕방 진입(클릭)",
+      "path": "event-log/22-복덕방-레거시/1-1-헤더_복덕방-진입(클릭).md",
+      "notion_url": "https://app.notion.com/p/bbe0221954bc8334a4d881f54738091c",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:21.755Z",
+      "source_body_sha256": "b240441767d179df9f7d5e7d0b95a4dd24115a51cc416774d8add60183adc084",
+      "output_sha256": "b04924c46a79cdfeae1a3925a86c5e6f9de0183ffa667413a1717458fa458507",
+      "image_ids": [
+        "dd468bd3-ab95-4dc4-9f25-c5367f44c76e"
+      ]
+    },
+    {
+      "notion_id": "6800221954bc832b8d9201be10a3ddec",
+      "service": "복덕방 (레거시)",
+      "title": "1-2 푸터_복덕방 진입 (클릭)",
+      "path": "event-log/22-복덕방-레거시/1-2-푸터_복덕방-진입-(클릭).md",
+      "notion_url": "https://app.notion.com/p/6800221954bc832b8d9201be10a3ddec",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:21.883Z",
+      "source_body_sha256": "8eda86da52ddafe58c5f5aebb2151376464916cc0a288b203a8663841b8fb117",
+      "output_sha256": "d896246af318290f15660994000bd9a79c2a35569b385300dfd9ce91466b720b",
+      "image_ids": [
+        "912663bc-9350-4d5b-80f3-c286cb362485"
+      ]
+    },
+    {
+      "notion_id": "f3f0221954bc83d0b49d81a68a5988ff",
+      "service": "복덕방 (레거시)",
+      "title": "2-1 복덕방 목록_방 카드 (클릭) - 추가된 로깅",
+      "path": "event-log/22-복덕방-레거시/2-1-복덕방-목록_방-카드-(클릭)---추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/f3f0221954bc83d0b49d81a68a5988ff",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:24.075Z",
+      "source_body_sha256": "1292553dacead416bafe2096952696960d13d3a57f871d923785b703b10260dd",
+      "output_sha256": "419b53cd5a1228f33996e3b77349352028dbc452cc63dab929262d79a7069809",
+      "image_ids": [
+        "afaf8a3c-be6f-4c45-b42b-853a02950cdc",
+        "b97c7882-fac9-49f8-b5c3-5612a5ef2df3"
+      ]
+    },
+    {
+      "notion_id": "2320221954bc83a0b7b2819e9b0099e8",
+      "service": "복덕방 (레거시)",
+      "title": "2-2 복덕방 목록_검색창 클릭",
+      "path": "event-log/22-복덕방-레거시/2-2-복덕방-목록_검색창-클릭.md",
+      "notion_url": "https://app.notion.com/p/2320221954bc83a0b7b2819e9b0099e8",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:23.727Z",
+      "source_body_sha256": "5abb5e6178203d0d1ddbc652603d26faf8b2cd1316001e5c425ddd6d2c844463",
+      "output_sha256": "142e54712d8954736ff2d2d2207da68eb279e543aaa98afec3302916a157a237",
+      "image_ids": [
+        "67b5dd5f-a938-4dad-ac52-bb35420ac025"
+      ]
+    },
+    {
+      "notion_id": "27b0221954bc83d480fd812c1a61717e",
+      "service": "복덕방 (레거시)",
+      "title": "2-3 복덕방 목록_검색 실행",
+      "path": "event-log/22-복덕방-레거시/2-3-복덕방-목록_검색-실행.md",
+      "notion_url": "https://app.notion.com/p/27b0221954bc83d480fd812c1a61717e",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:24.006Z",
+      "source_body_sha256": "e9f751bb059c85c00b3479b0bcf56c814d3f0580c3ae829539cb30bccd91a256",
+      "output_sha256": "ba2132d71a8c59e16e974afc80d2189de685860910d20f3fc7890c7df91dd643",
+      "image_ids": [
+        "7a688c99-c47a-4054-895e-15652f797152"
+      ]
+    },
+    {
+      "notion_id": "0bb0221954bc82d4a36581f4f824e83f",
+      "service": "복덕방 (레거시)",
+      "title": "2-4 복덕방 목록_추천 검색어 선택",
+      "path": "event-log/22-복덕방-레거시/2-4-복덕방-목록_추천-검색어-선택.md",
+      "notion_url": "https://app.notion.com/p/0bb0221954bc82d4a36581f4f824e83f",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:22.354Z",
+      "source_body_sha256": "d5f54820fcb5432a5523497d9469adf3531aa6fa24ad80f5613e9de320e503f4",
+      "output_sha256": "724d00333c32f7b8c7819aa21ff6b909f8ffb693e4e9611f4ea7457905c9e836",
+      "image_ids": [
+        "bec3d6b7-5d2f-4ca2-9da1-0a9a0bc1ee02"
+      ]
+    },
+    {
+      "notion_id": "0c90221954bc825b8a3e81003cda3a84",
+      "service": "복덕방 (레거시)",
+      "title": "2-5 복덕방 목록_거래 유형 필터 선택",
+      "path": "event-log/22-복덕방-레거시/2-5-복덕방-목록_거래-유형-필터-선택.md",
+      "notion_url": "https://app.notion.com/p/0c90221954bc825b8a3e81003cda3a84",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:22.421Z",
+      "source_body_sha256": "e2cd69bee49bd44e2e31ecf61557afb1b43394c778fcdcbcfeaae40b652288b4",
+      "output_sha256": "5dd0d9bb5749d73bfd10b4c8c1588a79858444c7366f84b4475d16e19d738a88",
+      "image_ids": [
+        "1f2f0f21-f2cd-4d41-ad26-e8fe9976405f"
+      ]
+    },
+    {
+      "notion_id": "fe50221954bc821db23a01319250d1ea",
+      "service": "복덕방 (레거시)",
+      "title": "2-6 복덕방 목록_지도 묶음 마커 클릭",
+      "path": "event-log/22-복덕방-레거시/2-6-복덕방-목록_지도-묶음-마커-클릭.md",
+      "notion_url": "https://app.notion.com/p/fe50221954bc821db23a01319250d1ea",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:23.673Z",
+      "source_body_sha256": "fd435cb1b7950f297c3c2928694bc2c00828ef3ee2ebdf1e83feca96e07013e0",
+      "output_sha256": "5f461737f839c3cd0b9468e161df8389937b533593ded421f16ca1dc7e507ad4",
+      "image_ids": [
+        "3e86a460-c16a-4dbd-af78-57f3f68eefae",
+        "20dda0e7-541f-43aa-ba4c-74e31663ac39",
+        "181e5f3a-a7cf-42b0-b145-09fa9e03ec35"
+      ]
+    },
+    {
+      "notion_id": "6e70221954bc832bbf2501a6326bdfed",
+      "service": "복덕방 (레거시)",
+      "title": "2-7 복덕방 목록_지도 확대·축소 버튼 클릭",
+      "path": "event-log/22-복덕방-레거시/2-7-복덕방-목록_지도-확대·축소-버튼-클릭.md",
+      "notion_url": "https://app.notion.com/p/6e70221954bc832bbf2501a6326bdfed",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:22.215Z",
+      "source_body_sha256": "4e51b1897dad0f521775cbb52391b6c06b676db2db61857920bd5993aea2bab9",
+      "output_sha256": "5f397adb25e4ea302572604fc5c31d2c5246a95c169afe197a3f881fab287613",
+      "image_ids": [
+        "f14f6ab0-9a13-4b65-9b11-40176d9e7bf0"
+      ]
+    },
+    {
+      "notion_id": "3af0221954bc82e2947901c8639f7e05",
+      "service": "복덕방 (레거시)",
+      "title": "3-1 복덕방 상세_사진 넘기기 (클릭) - 추가된 로깅",
+      "path": "event-log/22-복덕방-레거시/3-1-복덕방-상세_사진-넘기기-(클릭)---추가된-로깅.md",
+      "notion_url": "https://app.notion.com/p/3af0221954bc82e2947901c8639f7e05",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:25.127Z",
+      "source_body_sha256": "e5abc836765d117f6d5d538a598c590a341e81e3a98d861db460d2dc1b1cb438",
+      "output_sha256": "899bb97bff0e4cc5fd550988e98094ed3cfb498d9058ec2ed42d4c38f9d4e970",
+      "image_ids": [
+        "948251a7-ac2b-4b4d-8f3b-c54da7688718",
+        "a00e3e64-0ee9-4b9f-abd3-b578c7c336a3"
+      ]
+    },
+    {
+      "notion_id": "a350221954bc83d89009013cefd1f9fa",
+      "service": "복덕방 (레거시)",
+      "title": "3-2 복덕방 상세_사진 크게 보기 클릭",
+      "path": "event-log/22-복덕방-레거시/3-2-복덕방-상세_사진-크게-보기-클릭.md",
+      "notion_url": "https://app.notion.com/p/a350221954bc83d89009013cefd1f9fa",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:23.841Z",
+      "source_body_sha256": "72498b6d468057f987db21b07cccd6657215ccf05fd207a45526573cf0a37634",
+      "output_sha256": "983f2f17eaeb182462672b8e085495fc305333e691f2211f6a11be3f68c22c39",
+      "image_ids": [
+        "aa311b11-50bf-4f6f-a225-7c3e3777f2db"
+      ]
+    },
+    {
+      "notion_id": "f6a0221954bc8202a72b0172a7b184d6",
+      "service": "복덕방 (레거시)",
+      "title": "3-3 복덕방 확대 사진_이전·다음 클릭",
+      "path": "event-log/22-복덕방-레거시/3-3-복덕방-확대-사진_이전·다음-클릭.md",
+      "notion_url": "https://app.notion.com/p/f6a0221954bc8202a72b0172a7b184d6",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:22.487Z",
+      "source_body_sha256": "a15769976c4263df9586fd23a37dc205f9619efa0224f5a36f81a44972b841f3",
+      "output_sha256": "8185ed3ca21596543d29b3a328a80c6d7050d6f6fbbd6ccb65ed42e7b96269a2",
+      "image_ids": [
+        "2c3281a0-959a-4ed2-b91d-2d5006fbf2f3"
+      ]
+    },
+    {
+      "notion_id": "2df0221954bc834f97e7811101f52523",
+      "service": "복덕방 (레거시)",
+      "title": "3-4 복덕방 확대 사진_닫기 클릭",
+      "path": "event-log/22-복덕방-레거시/3-4-복덕방-확대-사진_닫기-클릭.md",
+      "notion_url": "https://app.notion.com/p/2df0221954bc834f97e7811101f52523",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:23.783Z",
+      "source_body_sha256": "89795b077c35c099f2a9c0c124cceba47cea050210fb8eb1ea365a092f12d722",
+      "output_sha256": "992cf2b9471bf8d2d020795b76a4903ca4ebf04e19044a01052c347698649396",
+      "image_ids": [
+        "525c9f24-5e00-4199-8bb3-119c93c926a6"
+      ]
+    },
+    {
+      "notion_id": "3150221954bc837ab723815697d0945a",
+      "service": "복덕방 (레거시)",
+      "title": "4-1 복덕방 목록_데이터 조회 오류 안내 노출",
+      "path": "event-log/22-복덕방-레거시/4-1-복덕방-목록_데이터-조회-오류-안내-노출.md",
+      "notion_url": "https://app.notion.com/p/3150221954bc837ab723815697d0945a",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:23.901Z",
+      "source_body_sha256": "b5c57355ead89d862f183ba144f84aed9410a94c2be1261c0098579a4a73cb2a",
+      "output_sha256": "fda35fcc0eb57c756c4edee5e74d8ba5c41c8dd95db09edc2f31d760469beedb",
+      "image_ids": [
+        "1273fd26-7fa7-45d3-910c-1aa50beb64b0"
+      ]
+    },
+    {
+      "notion_id": "2020221954bc83c78219016cc4549a98",
+      "service": "복덕방 (레거시)",
+      "title": "4-2 복덕방 목록_오류 다시 시도하기 클릭",
+      "path": "event-log/22-복덕방-레거시/4-2-복덕방-목록_오류-다시-시도하기-클릭.md",
+      "notion_url": "https://app.notion.com/p/2020221954bc83c78219016cc4549a98",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:23.952Z",
+      "source_body_sha256": "b877a3c3473190c2472ddb665efeb9ee2e2e9f5615a0abb71398efc27e8b1653",
+      "output_sha256": "140668e4f708e3839cbfc97f9a99b2c4b32591303e90e5b37a89b7abebe5634a",
+      "image_ids": [
+        "b0680d5c-e0db-4f9a-8dfe-5d854af5be89"
+      ]
+    },
+    {
+      "notion_id": "9190221954bc838db8ee81cda15f812e",
+      "service": "복덕방 (레거시)",
+      "title": "4-3 복덕방 목록_검색 결과 없음 안내 노출",
+      "path": "event-log/22-복덕방-레거시/4-3-복덕방-목록_검색-결과-없음-안내-노출.md",
+      "notion_url": "https://app.notion.com/p/9190221954bc838db8ee81cda15f812e",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:22.144Z",
+      "source_body_sha256": "6e8403e5a971ab42d4ca738d73aa617377818b82ce3829bfb65c848990af9cde",
+      "output_sha256": "ddd16ec093d2a018c5fce0692e9b6e3de3b3e6f6a4fe93b9b0704029c22e2ed3",
+      "image_ids": [
+        "eac693e5-79a2-4cde-994d-0d40f0570d09"
+      ]
+    },
+    {
+      "notion_id": "a5d0221954bc82d3bfd3813293b484d6",
+      "service": "복덕방 (레거시)",
+      "title": "4-4 복덕방 목록_검색 결과 없음에서 돌아가기 클릭",
+      "path": "event-log/22-복덕방-레거시/4-4-복덕방-목록_검색-결과-없음에서-돌아가기-클릭.md",
+      "notion_url": "https://app.notion.com/p/a5d0221954bc82d3bfd3813293b484d6",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:22.286Z",
+      "source_body_sha256": "f8861db6fb229191ad01a590c386f83987744c045161eff7ea56c530375eb109",
+      "output_sha256": "d5b54e8374d5db958a310b6f7fe68ad1f80719241ce867e0860afc19c803571b",
+      "image_ids": [
+        "43057da1-4127-472c-9c2e-6addac23e144"
+      ]
+    },
+    {
+      "notion_id": "e950221954bc8290b4338129a7a4e1b8",
+      "service": "복덕방 (레거시)",
+      "title": "[레거시] 1-3 햄버거_복덕방 진입 (클릭)",
+      "path": "event-log/22-복덕방-레거시/[레거시]-1-3-햄버거_복덕방-진입-(클릭).md",
+      "notion_url": "https://app.notion.com/p/e950221954bc8290b4338129a7a4e1b8",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:21.994Z",
+      "source_body_sha256": "70aa28e6179fb02e07577090a621a5f2ae71f08b63efbfea352b179eea85c7ba",
+      "output_sha256": "bc7c306ce2553ca9eff3c2604ee6e5a04121ed5c21c7b413e1d3f7de0430cefc",
+      "image_ids": []
+    }
+  ],
+  "blank_pages": []
+}

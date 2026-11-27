@@ -1,0 +1,1455 @@
+{
+  "service": "새 주변상점 - 레거시",
+  "pages": [
+    {
+      "notion_id": "97f0221954bc83b1978a81c2ad59d60d",
+      "service": "새 주변상점 - 레거시",
+      "title": "1-1 메인 → 상점 카테고리 (클릭) ",
+      "path": "event-log/04-새-주변상점-레거시/1-1-메인-→-상점-카테고리-(클릭).md",
+      "notion_url": "https://app.notion.com/p/97f0221954bc83b1978a81c2ad59d60d",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:07.998Z",
+      "source_body_sha256": "46d8ff2f5d84d82bb83c4ca79ef62a2cde02738ad8dde7a0f02501110c72e6be",
+      "output_sha256": "f92369ea08b0b8804de213059a83dbc9ab51a64a45180c000c91cb24f232605d",
+      "image_ids": []
+    },
+    {
+      "notion_id": "7760221954bc8228862b81e5bbbc35e2",
+      "service": "새 주변상점 - 레거시",
+      "title": "1-2 햄버거 → 상점 카테고리 (클릭)",
+      "path": "event-log/04-새-주변상점-레거시/1-2-햄버거-→-상점-카테고리-(클릭).md",
+      "notion_url": "https://app.notion.com/p/7760221954bc8228862b81e5bbbc35e2",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.089Z",
+      "source_body_sha256": "0114e94d3956744574a15676f65e628062e0de9d5e292813aefdb62ad4d4955d",
+      "output_sha256": "2ee769e4d8af3265ca91f0aa2387981494063d47725b52c3fbf51faf2d3262df",
+      "image_ids": []
+    },
+    {
+      "notion_id": "2610221954bc83a78d8e8127915c22fd",
+      "service": "새 주변상점 - 레거시",
+      "title": "1-3 헤더 → 주변상점 (클릭)",
+      "path": "event-log/04-새-주변상점-레거시/1-3-헤더-→-주변상점-(클릭).md",
+      "notion_url": "https://app.notion.com/p/2610221954bc83a78d8e8127915c22fd",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.163Z",
+      "source_body_sha256": "6dde023c6fb84343d033346895cfbd5d058ddfea5167cabbba10b8a99c0c06bf",
+      "output_sha256": "a9288ef0e8f33f3881d60e45d09445de6bb0dd78b5ad39e28957ce23117b30c4",
+      "image_ids": []
+    },
+    {
+      "notion_id": "5bb0221954bc8385957901420efd0e85",
+      "service": "새 주변상점 - 레거시",
+      "title": "1-4 푸터 → 주변상점 (클릭) ",
+      "path": "event-log/04-새-주변상점-레거시/1-4-푸터-→-주변상점-(클릭).md",
+      "notion_url": "https://app.notion.com/p/5bb0221954bc8385957901420efd0e85",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.238Z",
+      "source_body_sha256": "546b05572344f38a5c3a61575044a479cf33318b632abfb17eb904d9588ba640",
+      "output_sha256": "d36df765ad7565c947384b652502887a50ba5dc2fc6a0c1c61e2d053d2f04ff2",
+      "image_ids": []
+    },
+    {
+      "notion_id": "2210221954bc8361ba5f81c6759f3e1f",
+      "service": "새 주변상점 - 레거시",
+      "title": "2-1 상점 카테고리 → 상점 카테고리 (클릭) ",
+      "path": "event-log/04-새-주변상점-레거시/2-1-상점-카테고리-→-상점-카테고리-(클릭).md",
+      "notion_url": "https://app.notion.com/p/2210221954bc8361ba5f81c6759f3e1f",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.328Z",
+      "source_body_sha256": "f70a9249dd51659c488232d689dfd6fc8f4503a993fefc41315e637c4ead8b39",
+      "output_sha256": "51e8c44744314eb1368239f8b8b650033c9f7bb415c4e99bbe3fc99aabac79f9",
+      "image_ids": []
+    },
+    {
+      "notion_id": "50e0221954bc8395b3bc8134eb20b019",
+      "service": "새 주변상점 - 레거시",
+      "title": "2-10 상점 카테고리 이탈",
+      "path": "event-log/04-새-주변상점-레거시/2-10-상점-카테고리-이탈.md",
+      "notion_url": "https://app.notion.com/p/50e0221954bc8395b3bc8134eb20b019",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.055Z",
+      "source_body_sha256": "df20410963cbabebca789c463c2a70889255262c147b2b349aa85f9c5768a411",
+      "output_sha256": "338a6fdfe7514532e2946043eab8a6eecf27ec84d26fc62d47abfd106fd98430",
+      "image_ids": [
+        "c9acc000-775c-432d-b3d4-c5947b25ddbc"
+      ]
+    },
+    {
+      "notion_id": "9720221954bc832a9325018a298d1377",
+      "service": "새 주변상점 - 레거시",
+      "title": "2-2 상점 카테고리 (스크롤)",
+      "path": "event-log/04-새-주변상점-레거시/2-2-상점-카테고리-(스크롤).md",
+      "notion_url": "https://app.notion.com/p/9720221954bc832a9325018a298d1377",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.415Z",
+      "source_body_sha256": "6bf7d2aad0e7c0df8e84c91093453ce10c7e02dcaba3c3fb0e7876e5a5742303",
+      "output_sha256": "225ce621d5933fc9a7badbc56b7e196c486fbca0c75df02f3a79eac548cab30f",
+      "image_ids": []
+    },
+    {
+      "notion_id": "e2f0221954bc8316b8298147cbc92b55",
+      "service": "새 주변상점 - 레거시",
+      "title": "2-3 상점카테고리 이벤트 (클릭) ",
+      "path": "event-log/04-새-주변상점-레거시/2-3-상점카테고리-이벤트-(클릭).md",
+      "notion_url": "https://app.notion.com/p/e2f0221954bc8316b8298147cbc92b55",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.509Z",
+      "source_body_sha256": "70d15533088dc2b9f2ae5ec313d66d631c15bb43d667c9ecf8d7f023ae12eb68",
+      "output_sha256": "c9471e48a9fa68ab1a9390cfa8790ebb9918566710dbbe3d16aae895a887c6e5",
+      "image_ids": [
+        "0661efdc-ba14-42e3-9a53-7fafa441a1c9"
+      ]
+    },
+    {
+      "notion_id": "5dd0221954bc8237b4a781520eb99bfb",
+      "service": "새 주변상점 - 레거시",
+      "title": "2-4 상점카테고리 검색 (클릭) ",
+      "path": "event-log/04-새-주변상점-레거시/2-4-상점카테고리-검색-(클릭).md",
+      "notion_url": "https://app.notion.com/p/5dd0221954bc8237b4a781520eb99bfb",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.600Z",
+      "source_body_sha256": "6ff72f230a068f5d6057cb109411326db3f47540ae369220e02b8b35a028da9b",
+      "output_sha256": "27597dd779509292d33749ed4b6674dc92263e7e604a37978391c06794227b05",
+      "image_ids": []
+    },
+    {
+      "notion_id": "4630221954bc82c3b1c1813db23b9cc6",
+      "service": "새 주변상점 - 레거시",
+      "title": "2-5 상점카테고리 검색 후 상점 진입",
+      "path": "event-log/04-새-주변상점-레거시/2-5-상점카테고리-검색-후-상점-진입.md",
+      "notion_url": "https://app.notion.com/p/4630221954bc82c3b1c1813db23b9cc6",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.679Z",
+      "source_body_sha256": "4cde52aad516c0abcca9e339729e8f6636cb9eeeb582ee30a0c88564e04eaff6",
+      "output_sha256": "7c7b9380f7af517d3ed847499e5ea67f7495d569ac88f6d20a6b79ba938da79c",
+      "image_ids": []
+    },
+    {
+      "notion_id": "5ce0221954bc824a9a2281adcae049b7",
+      "service": "새 주변상점 - 레거시",
+      "title": "2-6~9 상점 카테고리 정렬 ",
+      "path": "event-log/04-새-주변상점-레거시/2-6~9-상점-카테고리-정렬.md",
+      "notion_url": "https://app.notion.com/p/5ce0221954bc824a9a2281adcae049b7",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:07.953Z",
+      "source_body_sha256": "5b401f113cf06ec4ddfad0d7741c945162c8cbb2a02ec9c2284e140adda1d262",
+      "output_sha256": "b64bbe554b5034bd9bb8f8f43bb91e878cb01f441b38e06ea30832c12210141a",
+      "image_ids": [
+        "9dcf5252-a6a1-450e-b903-121bdfbcc762",
+        "bb51140f-91be-403d-a532-6841aeae0e0f",
+        "db2a5336-9706-4a86-b105-88ddacaf48f4"
+      ]
+    },
+    {
+      "notion_id": "13b0221954bc8208b7bd01f4787a81ff",
+      "service": "새 주변상점 - 레거시",
+      "title": "3-1 메뉴추가 ",
+      "path": "event-log/04-새-주변상점-레거시/3-1-메뉴추가.md",
+      "notion_url": "https://app.notion.com/p/13b0221954bc8208b7bd01f4787a81ff",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.134Z",
+      "source_body_sha256": "4552d87243f7b5917bf70edd05d7f9cbed87997b6e7e0f3a33d130dfe9418471",
+      "output_sha256": "3ffabb9212b30395c88bade094bac279863130044203906c81ce7d76f19ce52b",
+      "image_ids": []
+    },
+    {
+      "notion_id": "fe30221954bc830a975b81be2605ea95",
+      "service": "새 주변상점 - 레거시",
+      "title": "3-1 상점 카테고리 → 상점상세 (클릭) ",
+      "path": "event-log/04-새-주변상점-레거시/3-1-상점-카테고리-→-상점상세-(클릭).md",
+      "notion_url": "https://app.notion.com/p/fe30221954bc830a975b81be2605ea95",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.214Z",
+      "source_body_sha256": "a4c20234ba87f67d1f36fc871c1f60af84ba507bf648066f1f5e3d4e1f720764",
+      "output_sha256": "51b91268b4452524e10ab0c786d44d2ebee0d19f49957a7581f25264cefda596",
+      "image_ids": []
+    },
+    {
+      "notion_id": "38b0221954bc830195ef819bea1bee14",
+      "service": "새 주변상점 - 레거시",
+      "title": "3-2 메뉴추가 - 확인",
+      "path": "event-log/04-새-주변상점-레거시/3-2-메뉴추가-확인.md",
+      "notion_url": "https://app.notion.com/p/38b0221954bc830195ef819bea1bee14",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.286Z",
+      "source_body_sha256": "dcba400e4d050de65196a6637a58994591a7835722ac88b0f6f561b7c33abc22",
+      "output_sha256": "c7018b884acc31a5c5431ec4c992060a9693e66673b6629edc39314b9833d96d",
+      "image_ids": []
+    },
+    {
+      "notion_id": "2600221954bc83e5961d813b0b9ee934",
+      "service": "새 주변상점 - 레거시",
+      "title": "3-2 상점상세 뒤로 가기 ",
+      "path": "event-log/04-새-주변상점-레거시/3-2-상점상세-뒤로-가기.md",
+      "notion_url": "https://app.notion.com/p/2600221954bc83e5961d813b0b9ee934",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.393Z",
+      "source_body_sha256": "7f33444adb84057520e99a78c54d248f65214d6311ea3652e2f3a234ccab1635",
+      "output_sha256": "123f1ffcaccfde18bb517d72e49102e9d3113d392c233a945456fdf8e4ffee5b",
+      "image_ids": []
+    },
+    {
+      "notion_id": "a170221954bc82bc86a0014cbbc616ef",
+      "service": "새 주변상점 - 레거시",
+      "title": "3-3 메뉴추가 - 취소",
+      "path": "event-log/04-새-주변상점-레거시/3-3-메뉴추가-취소.md",
+      "notion_url": "https://app.notion.com/p/a170221954bc82bc86a0014cbbc616ef",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "진행 중",
+      "source_last_edited_at": "2026-11-23T13:39:08.476Z",
+      "source_body_sha256": "9d3df8a2a0fd05ba806450761693c67160df8f86358210df8696dbd41667057e",
+      "output_sha256": "79d67da4aaab79922385e80961f407b112b82e8f78b2d89f4085ece038b09d9a",
+      "image_ids": []
+    },
+    {
+      "notion_id": "6ad0221954bc83d8ac9281a2ffb17ddf",
+      "service": "새 주변상점 - 레거시",
+      "title": "3-3 상점 상세 스크롤 상점정보",
+      "path": "event-log/04-새-주변상점-레거시/3-3-상점-상세-스크롤-상점정보.md",
+      "notion_url": "https://app.notion.com/p/6ad0221954bc83d8ac9281a2ffb17ddf",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.584Z",
+      "source_body_sha256": "0268035ade5f9842690cc12b4e8b252360b505abd54df2ec94ac7b1961decb1e",
+      "output_sha256": "14668c1056565d448128f4bed5c68e6db91828de7ef2f0fc25e3f9e2251cc139",
+      "image_ids": [
+        "74d7854b-0ed0-4b24-bbf6-b576114c8dd6"
+      ]
+    },
+    {
+      "notion_id": "31a0221954bc82bba53a8118df9d0cd4",
+      "service": "새 주변상점 - 레거시",
+      "title": "3-4 메뉴추가 - 메뉴사진",
+      "path": "event-log/04-새-주변상점-레거시/3-4-메뉴추가-메뉴사진.md",
+      "notion_url": "https://app.notion.com/p/31a0221954bc82bba53a8118df9d0cd4",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.666Z",
+      "source_body_sha256": "7d05fae092602e5da9e15749a5a61f0e37a41fcd298406c670d85af5155444c2",
+      "output_sha256": "0d527087d365029c337d4ecf1044b9e4497b84b37573749c3be6d8d882e10924",
+      "image_ids": []
+    },
+    {
+      "notion_id": "fec0221954bc837796c1011d9b17a7c7",
+      "service": "새 주변상점 - 레거시",
+      "title": "3-4 상점 전화하기",
+      "path": "event-log/04-새-주변상점-레거시/3-4-상점-전화하기.md",
+      "notion_url": "https://app.notion.com/p/fec0221954bc837796c1011d9b17a7c7",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.810Z",
+      "source_body_sha256": "fc4a8f9e14bb0fae64dee630b822177b558c7f14799cb117d40799c313155aac",
+      "output_sha256": "36c49a5f504a4247933c224be7cd4e5e094e38d5fbb7be25b4aba8aef5b290b1",
+      "image_ids": []
+    },
+    {
+      "notion_id": "fd20221954bc838ebdc381545efb5e7c",
+      "service": "새 주변상점 - 레거시",
+      "title": "4-1 상점상세 리뷰 (클릭) ",
+      "path": "event-log/04-새-주변상점-레거시/4-1-상점상세-리뷰-(클릭).md",
+      "notion_url": "https://app.notion.com/p/fd20221954bc838ebdc381545efb5e7c",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:07.909Z",
+      "source_body_sha256": "222929f01e012a26f73446dd9127d81bbb461384cffb0fa1f8958d946dbbdba5",
+      "output_sha256": "267f8be5961652bb6e553c59eb7258ccc0d01a4d9f4fcf17e2bb89354c63e63f",
+      "image_ids": [
+        "aea2be2a-30bf-4d02-9595-0de3cf9c219a"
+      ]
+    },
+    {
+      "notion_id": "8810221954bc836e8d54016d6c536fd2",
+      "service": "새 주변상점 - 레거시",
+      "title": "4-1 전화 주문 혜택 클릭 (메인 페이지)",
+      "path": "event-log/04-새-주변상점-레거시/4-1-전화-주문-혜택-클릭-(메인-페이지).md",
+      "notion_url": "https://app.notion.com/p/8810221954bc836e8d54016d6c536fd2",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.003Z",
+      "source_body_sha256": "755c565755aae9091a89b870486933a875e4dfd7f4b792586eb28614ebc8a1fc",
+      "output_sha256": "130fa2bc512a747df30d06043edb3b9e93bb424e4a0dd2709e5d499930f7543a",
+      "image_ids": [
+        "e8a27d5e-a721-4f19-ba9f-82255a52e054"
+      ]
+    },
+    {
+      "notion_id": "2d40221954bc82118f9c016949515962",
+      "service": "새 주변상점 - 레거시",
+      "title": "4-2 상점상세 리뷰 (스크롤) ",
+      "path": "event-log/04-새-주변상점-레거시/4-2-상점상세-리뷰-(스크롤).md",
+      "notion_url": "https://app.notion.com/p/2d40221954bc82118f9c016949515962",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.091Z",
+      "source_body_sha256": "b77243681a05fa7db70e89b0f53b7b164fe91195e513f6435510b60c586cf281",
+      "output_sha256": "f399b4b70168a0b1c2f3879d4a666af4d12ca95ae93f6d1ae511c2b037e13d88",
+      "image_ids": []
+    },
+    {
+      "notion_id": "e6f0221954bc83c0982801a6e39c255a",
+      "service": "새 주변상점 - 레거시",
+      "title": "4-2 전화 주문 혜택 페이지 버튼 → 버튼 ",
+      "path": "event-log/04-새-주변상점-레거시/4-2-전화-주문-혜택-페이지-버튼-→-버튼.md",
+      "notion_url": "https://app.notion.com/p/e6f0221954bc83c0982801a6e39c255a",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.182Z",
+      "source_body_sha256": "abc5df2ab2a247f9cd7cd9067770cf197cdbb490bf8e958a800a7cb10ae89fb8",
+      "output_sha256": "c994a2982dbcf47518b2c22055fc43d6a21e0c55ecdcb3b197bda489df80efb9",
+      "image_ids": [
+        "a912b803-fb91-42bd-a8f5-5ce2312560f9"
+      ]
+    },
+    {
+      "notion_id": "0070221954bc831ab57b81fc0bb0e03d",
+      "service": "새 주변상점 - 레거시",
+      "title": "4-3 상점상세 리뷰 작성 들어간 후 작성하기 (클릭)  ",
+      "path": "event-log/04-새-주변상점-레거시/4-3-상점상세-리뷰-작성-들어간-후-작성하기-(클릭).md",
+      "notion_url": "https://app.notion.com/p/0070221954bc831ab57b81fc0bb0e03d",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.266Z",
+      "source_body_sha256": "5aab86528f3335d4e4a958c4239dd4ae82bd740bd1cc2df8e26aa8d6652680c8",
+      "output_sha256": "2dab516bbe6ec544897a5f873bb0c1686d78b5283a51d6a5a8e9792096d137bf",
+      "image_ids": [
+        "477b98a4-270d-422d-a810-cd0a08cf4d3d"
+      ]
+    },
+    {
+      "notion_id": "7220221954bc834398de81f3236bb23c",
+      "service": "새 주변상점 - 레거시",
+      "title": "4-3 카테고리에서 혜택페이지(클릭) ",
+      "path": "event-log/04-새-주변상점-레거시/4-3-카테고리에서-혜택페이지(클릭).md",
+      "notion_url": "https://app.notion.com/p/7220221954bc834398de81f3236bb23c",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.348Z",
+      "source_body_sha256": "27c9d7a986fa6266d3559ce15f6b6267b59a617923941cf29b9bd9e25ba07e53",
+      "output_sha256": "69a6173f043eebcf87d9b129a8d63b036c500ee39307652ab9aad45e04cdda98",
+      "image_ids": [
+        "cac470c3-4aae-4736-858d-57a2a7f9e08b"
+      ]
+    },
+    {
+      "notion_id": "b180221954bc8383acb18116adecd8bd",
+      "service": "새 주변상점 - 레거시",
+      "title": "4-4 상점상세 리뷰 신고 (클릭) ",
+      "path": "event-log/04-새-주변상점-레거시/4-4-상점상세-리뷰-신고-(클릭).md",
+      "notion_url": "https://app.notion.com/p/b180221954bc8383acb18116adecd8bd",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.471Z",
+      "source_body_sha256": "6633be5dac5f60026f1afe40971dc2e42631e86475d833adc0c6680da3f17ad1",
+      "output_sha256": "2a68f32c2b4fd34d5415367fecc08ea354cd90807fea4f2ae34e6394eda83bb0",
+      "image_ids": [
+        "ba8b4a51-a83e-44d9-b816-fbdaad47a17e"
+      ]
+    },
+    {
+      "notion_id": "5b10221954bc83ccac1701fed6128367",
+      "service": "새 주변상점 - 레거시",
+      "title": "4-4 전화 주문 혜택 상점상세 페이지(클릭)",
+      "path": "event-log/04-새-주변상점-레거시/4-4-전화-주문-혜택-상점상세-페이지(클릭).md",
+      "notion_url": "https://app.notion.com/p/5b10221954bc83ccac1701fed6128367",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.551Z",
+      "source_body_sha256": "7426951032e796bc818e21a550a4322c7c563c9609870d9e06022ffdb59a8a14",
+      "output_sha256": "b6861100eb52989c6c76b90c2e9f9c84160851a353266dd763bc78ddce11228b",
+      "image_ids": []
+    },
+    {
+      "notion_id": "1620221954bc83ccb0c301e658c293a9",
+      "service": "새 주변상점 - 레거시",
+      "title": "4-5 상점상세 리뷰 탭 탈출 ",
+      "path": "event-log/04-새-주변상점-레거시/4-5-상점상세-리뷰-탭-탈출.md",
+      "notion_url": "https://app.notion.com/p/1620221954bc83ccb0c301e658c293a9",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.656Z",
+      "source_body_sha256": "bb45535b9b2f4eb122b3a3413759700af09504e5f4df67a542562bd01ed0e33b",
+      "output_sha256": "80f2a977f62856dea30c4b09df9cc995e482b56abbd8b575361e5272310dd68a",
+      "image_ids": []
+    },
+    {
+      "notion_id": "d440221954bc82398bf801426f531bc0",
+      "service": "새 주변상점 - 레거시",
+      "title": "4-5 전화 주문 혜택 상점상세 전화 (클릭) ",
+      "path": "event-log/04-새-주변상점-레거시/4-5-전화-주문-혜택-상점상세-전화-(클릭).md",
+      "notion_url": "https://app.notion.com/p/d440221954bc82398bf801426f531bc0",
+      "platforms": [
+        "WEB",
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:08.733Z",
+      "source_body_sha256": "6353417c9d10bbefcdbf6a52fd08e3b584fb09d5f28830f161284f172fc17b86",
+      "output_sha256": "38c708528156670139f5e56925ca5bf70950dbff39ed1167a734d35584438a11",
+      "image_ids": []
+    },
+    {
+      "notion_id": "e6d0221954bc83a697a881a4e21bb4e6",
+      "service": "새 주변상점 - 레거시",
+      "title": "4-6 상점상세 리뷰 삭제하기  (클릭) ",
+      "path": "event-log/04-새-주변상점-레거시/4-6-상점상세-리뷰-삭제하기-(클릭).md",
+      "notion_url": "https://app.notion.com/p/e6d0221954bc83a697a881a4e21bb4e6",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:09.578Z",
+      "source_body_sha256": "d14803daf767b06e1e666de42537091fa7b520701c6252fc0fe651e84bbee6ad",
+      "output_sha256": "8e94d8ceb97ed00acd0ddb12b143bdfd4c84d57c9569c3872f0e57938deeed4f",
+      "image_ids": []
+    },
+    {
+      "notion_id": "67c0221954bc823ab9ae81ab5050b401",
+      "service": "새 주변상점 - 레거시",
+      "title": "4-7 상점상세 리뷰 최종삭제하기  (클릭) ",
+      "path": "event-log/04-새-주변상점-레거시/4-7-상점상세-리뷰-최종삭제하기-(클릭).md",
+      "notion_url": "https://app.notion.com/p/67c0221954bc823ab9ae81ab5050b401",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:09.949Z",
+      "source_body_sha256": "2ed0e7d128a1e4d3264bedfa5af15d329abb645c8b81adf7bf11661d6789b80a",
+      "output_sha256": "addb79b6097a8b447725a05a387e19c7830b8606d07e7b3c63d56b30a32d36d2",
+      "image_ids": []
+    },
+    {
+      "notion_id": "27d0221954bc82e0bde28151b25617b3",
+      "service": "새 주변상점 - 레거시",
+      "title": "4-8 상점상세 리뷰 정렬",
+      "path": "event-log/04-새-주변상점-레거시/4-8-상점상세-리뷰-정렬.md",
+      "notion_url": "https://app.notion.com/p/27d0221954bc82e0bde28151b25617b3",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "완료",
+      "source_last_edited_at": "2026-11-23T13:39:10.050Z",
+      "source_body_sha256": "7ae9dc90b465aacef1e24072bfc581b1dcf3de33fb68c0e5672e0bc2361e0a1b",
+      "output_sha256": "425b4ee1bbda1a6256f3fd502720b723cd935b166a4d259f499f56116a100fdd",
+      "image_ids": [
+        "bc057465-41ed-4c7a-915e-6e6cc9b3bbaa",
+        "4423a5d9-19e5-4229-9c85-9d5cc4970b3b"
+      ]
+    },
+    {
+      "notion_id": "f1b0221954bc82e2a9a9011a2abf35b5",
+      "service": "새 주변상점 - 레거시",
+      "title": "5.0 혜택 페이지 진입",
+      "path": "event-log/04-새-주변상점-레거시/5.0-혜택-페이지-진입.md",
+      "notion_url": "https://app.notion.com/p/f1b0221954bc82e2a9a9011a2abf35b5",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:10.169Z",
+      "source_body_sha256": "a8abcb6cb2637c19f29b5f97e07105a47cf524e7596ca92320e7110408020c5e",
+      "output_sha256": "eba580f5c57bd7d9cb3b032ee2103b511a550aeb8988f20409ee2eef6daa88ab",
+      "image_ids": [
+        "335908dd-5ba4-423c-849d-d4eca4f268a7"
+      ]
+    },
+    {
+      "notion_id": "5150221954bc836e9f2e0190ab753d43",
+      "service": "새 주변상점 - 레거시",
+      "title": "5.1 혜택 페이지 이탈",
+      "path": "event-log/04-새-주변상점-레거시/5.1-혜택-페이지-이탈.md",
+      "notion_url": "https://app.notion.com/p/5150221954bc836e9f2e0190ab753d43",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:10.237Z",
+      "source_body_sha256": "0b1ae98a0e80e5fc01e04a3a57c3eb09e851038180e84ee2fb1181b569f71b4b",
+      "output_sha256": "95f65e91077e0a2deaac945d17389bd0a2f250c82d7b3467080729ed4d56130f",
+      "image_ids": [
+        "99c68a2e-adde-4989-9db2-048d97bf41e4"
+      ]
+    },
+    {
+      "notion_id": "5a50221954bc820c9dcb818c89a0f1a4",
+      "service": "새 주변상점 - 레거시",
+      "title": "5.2 혜택 페이지 상세보기",
+      "path": "event-log/04-새-주변상점-레거시/5.2-혜택-페이지-상세보기.md",
+      "notion_url": "https://app.notion.com/p/5a50221954bc820c9dcb818c89a0f1a4",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:10.320Z",
+      "source_body_sha256": "6021787dbcd0d0bae2fa385dba562bbd1a70d8977b6f5296c6489cd6cdcad794",
+      "output_sha256": "7cfce56d03b282f36bb28d7194c45a8cf4ecb98aa6b3f8c3ae1bf2ae883c4db8",
+      "image_ids": [
+        "65e5ed84-6d01-491e-86c1-3fa7b3a36394"
+      ]
+    },
+    {
+      "notion_id": "46b0221954bc82a49c5f01796327774c",
+      "service": "새 주변상점 - 레거시",
+      "title": "6-1 장바구니 진입 후 뒤로가기",
+      "path": "event-log/04-새-주변상점-레거시/6-1-장바구니-진입-후-뒤로가기.md",
+      "notion_url": "https://app.notion.com/p/46b0221954bc82a49c5f01796327774c",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:09.257Z",
+      "source_body_sha256": "5d2142f0274f8a4194e0ae403e8a27b79b00f5c697697a0aac2356a047c9b231",
+      "output_sha256": "b2545110a791e539fd3ac5379e7c1399ccb9036c53c8d44b98715aba382a3684",
+      "image_ids": [
+        "41dbcb6e-b0c9-488c-8e13-f2eece30a11f"
+      ]
+    },
+    {
+      "notion_id": "3fb0221954bc8242861181f52f98f8a3",
+      "service": "새 주변상점 - 레거시",
+      "title": "6-10 장바구니 더 담으러가기 ",
+      "path": "event-log/04-새-주변상점-레거시/6-10-장바구니-더-담으러가기.md",
+      "notion_url": "https://app.notion.com/p/3fb0221954bc8242861181f52f98f8a3",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:12.191Z",
+      "source_body_sha256": "7e3b13e5281a00f09db80a905bd48c96e94845acb2b7ae3c924cd71eb2529ad0",
+      "output_sha256": "df2efe2abe0073f0df1f042c8da02f006fb0971e9697cea545a2a85d311b5e45",
+      "image_ids": [
+        "d935b668-c605-4ae0-bace-b4f26f240068"
+      ]
+    },
+    {
+      "notion_id": "ad50221954bc82eabf2b01b666e6e461",
+      "service": "새 주변상점 - 레거시",
+      "title": "6-11 장바구니 주문하기 ",
+      "path": "event-log/04-새-주변상점-레거시/6-11-장바구니-주문하기.md",
+      "notion_url": "https://app.notion.com/p/ad50221954bc82eabf2b01b666e6e461",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.132Z",
+      "source_body_sha256": "3fbb5e9b58e10c6dd93fb89747eb4a02ca935860646df25d9bea38b9501e2a8a",
+      "output_sha256": "38a5183614f0d8e9fde87368fad819a2009473e038d524317a38c6cbe1e54948",
+      "image_ids": [
+        "d935b668-c605-4ae0-bace-b4f26f240068"
+      ]
+    },
+    {
+      "notion_id": "0e60221954bc8293814e01a42ac967e6",
+      "service": "새 주변상점 - 레거시",
+      "title": "6-12 장바구니 주문하기 실패",
+      "path": "event-log/04-새-주변상점-레거시/6-12-장바구니-주문하기-실패.md",
+      "notion_url": "https://app.notion.com/p/0e60221954bc8293814e01a42ac967e6",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.279Z",
+      "source_body_sha256": "7d1384796a5d0e5f1e6ac53834681efef4f6da268532e0a9d11bf0f5e9f0a610",
+      "output_sha256": "ab082efdd40c0f7a8b1cb21cc21a3764bbf51b530eec69af3ec30a64e86bf141",
+      "image_ids": [
+        "ac5389de-7d6c-42fd-a44b-b00c89a7b071"
+      ]
+    },
+    {
+      "notion_id": "eec0221954bc8257a83c0160156e32c0",
+      "service": "새 주변상점 - 레거시",
+      "title": "6-13 장바구니 비로그인 모달",
+      "path": "event-log/04-새-주변상점-레거시/6-13-장바구니-비로그인-모달.md",
+      "notion_url": "https://app.notion.com/p/eec0221954bc8257a83c0160156e32c0",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.401Z",
+      "source_body_sha256": "8dc586a2fb9d4467541a10921d7453c53771cd3fc259956655005a7d4eec21b4",
+      "output_sha256": "8d2c2def27284e9b1016f106b43a5631f277c1c2317c20a285bd275b16bfb806",
+      "image_ids": [
+        "49931c81-27ac-4ec4-9cc8-e0dd24222b24"
+      ]
+    },
+    {
+      "notion_id": "6a60221954bc8221a7e3012855cec68e",
+      "service": "새 주변상점 - 레거시",
+      "title": "6-2 장바구니 삭제 ",
+      "path": "event-log/04-새-주변상점-레거시/6-2-장바구니-삭제.md",
+      "notion_url": "https://app.notion.com/p/6a60221954bc8221a7e3012855cec68e",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:09.353Z",
+      "source_body_sha256": "30cb743d8de41197e1aa47bd5b8e0d762e39c5d4a4a384b221c869585ffd4437",
+      "output_sha256": "14305c671e4e004850f31207712cb5276825559a98980c91b7f3d46dc33c75a0",
+      "image_ids": [
+        "3748ee95-1320-4996-a4c1-90c62d54e7bb"
+      ]
+    },
+    {
+      "notion_id": "8360221954bc8236bbd4013a078da2d3",
+      "service": "새 주변상점 - 레거시",
+      "title": "6-3 빈 장바구니 메뉴 추가",
+      "path": "event-log/04-새-주변상점-레거시/6-3-빈-장바구니-메뉴-추가.md",
+      "notion_url": "https://app.notion.com/p/8360221954bc8236bbd4013a078da2d3",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:09.442Z",
+      "source_body_sha256": "3f09a5c39510c20d1965d8cbedde715e6518c6320ca5ab2ca60d26b954312f70",
+      "output_sha256": "364689ed643f8d14a2151c19f17eb62bdc373a17a17768854beae3cd7ae0b124",
+      "image_ids": [
+        "3748ee95-1320-4996-a4c1-90c62d54e7bb"
+      ]
+    },
+    {
+      "notion_id": "fb70221954bc83cb9fbe011f0ad03815",
+      "service": "새 주변상점 - 레거시",
+      "title": "6-4 장바구니 배달 여부 선택",
+      "path": "event-log/04-새-주변상점-레거시/6-4-장바구니-배달-여부-선택.md",
+      "notion_url": "https://app.notion.com/p/fb70221954bc83cb9fbe011f0ad03815",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:09.513Z",
+      "source_body_sha256": "a580941fd6402676dc439b0b9e1e25427834bf12f70bb58363a96eff22aa97e2",
+      "output_sha256": "a5de94148e099f0a90365240caa1f317f5ce3f2198c6e7942ceb86b2e4bd4945",
+      "image_ids": [
+        "bcb6c8bf-e7ea-4b64-b4a9-b51ef871fd4b"
+      ]
+    },
+    {
+      "notion_id": "ddd0221954bc82f1bc7381ae230fedfb",
+      "service": "새 주변상점 - 레거시",
+      "title": "6-5 장바구니 포장 여부 선택",
+      "path": "event-log/04-새-주변상점-레거시/6-5-장바구니-포장-여부-선택.md",
+      "notion_url": "https://app.notion.com/p/ddd0221954bc82f1bc7381ae230fedfb",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.577Z",
+      "source_body_sha256": "7553c56eeeeb84d09da61ae4144201c4e6e82f0c32df42496d3134f6691fb4a1",
+      "output_sha256": "9fb8ef9d9c96aefb3f86853ad5853b41d35ebd006c9d1a96cccb7f4b8002bb88",
+      "image_ids": [
+        "bcb6c8bf-e7ea-4b64-b4a9-b51ef871fd4b"
+      ]
+    },
+    {
+      "notion_id": "7640221954bc824ebc8401f68d7ca67f",
+      "service": "새 주변상점 - 레거시",
+      "title": "6-6 장바구니 상점 클릭",
+      "path": "event-log/04-새-주변상점-레거시/6-6-장바구니-상점-클릭.md",
+      "notion_url": "https://app.notion.com/p/7640221954bc824ebc8401f68d7ca67f",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.696Z",
+      "source_body_sha256": "02a218ce070053a0769a390fff651876d3d35b49a6c74c4f852b317de3ca7a34",
+      "output_sha256": "369deed3095ab259890071713268153731830215c67ea159a8e0f974f75cdba4",
+      "image_ids": [
+        "bcb6c8bf-e7ea-4b64-b4a9-b51ef871fd4b"
+      ]
+    },
+    {
+      "notion_id": "1ca0221954bc8279bfcb81bf10f20afc",
+      "service": "새 주변상점 - 레거시",
+      "title": "6-7 장바구니 옵션 변경",
+      "path": "event-log/04-새-주변상점-레거시/6-7-장바구니-옵션-변경.md",
+      "notion_url": "https://app.notion.com/p/1ca0221954bc8279bfcb81bf10f20afc",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.835Z",
+      "source_body_sha256": "4346c5cf84b18b6531912a6054d8238aaab7402ba9a68ce7bc37fc7b53ec0fa2",
+      "output_sha256": "c30dff6b8dcce52a190c3b8393a33ac29dba7f5d977f65537348bf857519efa9",
+      "image_ids": [
+        "bcb6c8bf-e7ea-4b64-b4a9-b51ef871fd4b"
+      ]
+    },
+    {
+      "notion_id": "c620221954bc82f99dec81c30048d820",
+      "service": "새 주변상점 - 레거시",
+      "title": "6-8 장바구니 메뉴 수량 추가 ",
+      "path": "event-log/04-새-주변상점-레거시/6-8-장바구니-메뉴-수량-추가.md",
+      "notion_url": "https://app.notion.com/p/c620221954bc82f99dec81c30048d820",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.937Z",
+      "source_body_sha256": "83535b56875767b587b128c20aae01c6cb535525b207f26aa59185b0ecbf390c",
+      "output_sha256": "0e0e41f224337a26936f58123eec6b516da8670d3dc72cccb588e18f8e2e1578",
+      "image_ids": [
+        "bcb6c8bf-e7ea-4b64-b4a9-b51ef871fd4b"
+      ]
+    },
+    {
+      "notion_id": "d180221954bc832cbf3601c5702e3ab5",
+      "service": "새 주변상점 - 레거시",
+      "title": "6-9 장바구니 메뉴 수량 감소",
+      "path": "event-log/04-새-주변상점-레거시/6-9-장바구니-메뉴-수량-감소.md",
+      "notion_url": "https://app.notion.com/p/d180221954bc832cbf3601c5702e3ab5",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:12.069Z",
+      "source_body_sha256": "1160e1ae897466f965c0556616534e7fbc45c06b7feace25341baf7274db4de2",
+      "output_sha256": "4db4df9ff050ffaff9af7f32dd48f7f3932957358f9d77f51e63cb35948a6d61",
+      "image_ids": [
+        "bcb6c8bf-e7ea-4b64-b4a9-b51ef871fd4b"
+      ]
+    },
+    {
+      "notion_id": "cf00221954bc827c98da817f69356abf",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-1 결제 페이지 이탈",
+      "path": "event-log/04-새-주변상점-레거시/7-1-결제-페이지-이탈.md",
+      "notion_url": "https://app.notion.com/p/cf00221954bc827c98da817f69356abf",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.519Z",
+      "source_body_sha256": "868ef011e291197eff22ac4eb7af43a7fa95232baafa8bde4bde29787438278f",
+      "output_sha256": "325d732f57f672c75d7efcb63b93249933ed227b0c894e7011d25307666934c5",
+      "image_ids": []
+    },
+    {
+      "notion_id": "0c70221954bc823da095015406794837",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-10 결제 → 교외 주문 페이지 주소 선택 (6월 29일 수정)",
+      "path": "event-log/04-새-주변상점-레거시/7-10-결제-→-교외-주문-페이지-주소-선택-(6월-29일-수정).md",
+      "notion_url": "https://app.notion.com/p/0c70221954bc823da095015406794837",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.428Z",
+      "source_body_sha256": "7a07083dfca3bad294c12e9f8ed038258d1027acf7b0392b00ee4f68cb6a82b5",
+      "output_sha256": "7c1d91ce14d4fa7dc0a7d89f9a6be24f5820e0a70832e2fefa3ee34bb3fc9245",
+      "image_ids": [
+        "61e28371-deb6-46f2-b45b-c0a1157a6cb9"
+      ]
+    },
+    {
+      "notion_id": "6a20221954bc837dbc8101e1c5aef5ae",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-11 결제 → 교외 주문 페이지 주소 재설정",
+      "path": "event-log/04-새-주변상점-레거시/7-11-결제-→-교외-주문-페이지-주소-재설정.md",
+      "notion_url": "https://app.notion.com/p/6a20221954bc837dbc8101e1c5aef5ae",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.546Z",
+      "source_body_sha256": "229cbb8bef722f652f50714df55246a4039dc5fd1d009aa3f996531a2d50ef9a",
+      "output_sha256": "2b8ad972b57ae3bbafbaea72d0e4e2d242c6f7da7ca16ca2c4836654e3b61ccb",
+      "image_ids": [
+        "fb40d456-000a-4bbf-996c-b9f012a030e3"
+      ]
+    },
+    {
+      "notion_id": "7ff0221954bc824c87a2019d19f6d8ad",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-12 결제 → 교외 주문 페이지 배달 불가능 지역",
+      "path": "event-log/04-새-주변상점-레거시/7-12-결제-→-교외-주문-페이지-배달-불가능-지역.md",
+      "notion_url": "https://app.notion.com/p/7ff0221954bc824c87a2019d19f6d8ad",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.664Z",
+      "source_body_sha256": "9107c963bd44a8bef2fadd040478e4a6228e1b5ecf13e9310e6771d9f42c1b8d",
+      "output_sha256": "8262432f67447d876ca393145fff04de39d43ff939b89781ee53138ffbe84711",
+      "image_ids": [
+        "d6bd19d7-2fa5-4bd1-9311-2f11f8af51ab"
+      ]
+    },
+    {
+      "notion_id": "a980221954bc82ffb56981ddc3ba0c53",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-13 결제 → 교내 및 교외 주문 페이지 기사님 요청사항",
+      "path": "event-log/04-새-주변상점-레거시/7-13-결제-→-교내-및-교외-주문-페이지-기사님-요청사항.md",
+      "notion_url": "https://app.notion.com/p/a980221954bc82ffb56981ddc3ba0c53",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.815Z",
+      "source_body_sha256": "9aa6b2e92ea78226df76a67d96ed79f29d3744ce155d25b40ceabddd77c9e43e",
+      "output_sha256": "72465e649eb41fc6e6512f08af842284ddc258832408b7fd4af316c74c03fd97",
+      "image_ids": [
+        "344bc104-6591-4e38-b814-f31928d3573e"
+      ]
+    },
+    {
+      "notion_id": "a830221954bc8301a9f6815e32d808aa",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-14 결제 → 교내 및 교외 주문 페이지 주소 선택",
+      "path": "event-log/04-새-주변상점-레거시/7-14-결제-→-교내-및-교외-주문-페이지-주소-선택.md",
+      "notion_url": "https://app.notion.com/p/a830221954bc8301a9f6815e32d808aa",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.939Z",
+      "source_body_sha256": "011cef5378f1857fd265fdd577a9076a9bf9a0789c728486f78e307399e47a9e",
+      "output_sha256": "895dbde7f4bca468ea85b36f0e13bad33392e964224e1115753d977120e0a3ef",
+      "image_ids": [
+        "b88b06d5-b996-4a11-8fac-200482df2731"
+      ]
+    },
+    {
+      "notion_id": "4b80221954bc82c8b07e813eb4d23b92",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-15 결제 페이지 가게 요청사항 클릭",
+      "path": "event-log/04-새-주변상점-레거시/7-15-결제-페이지-가게-요청사항-클릭.md",
+      "notion_url": "https://app.notion.com/p/4b80221954bc82c8b07e813eb4d23b92",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:12.060Z",
+      "source_body_sha256": "765019b32757a8c4cdbefc34ebf4f6ee5f2a9f41b3e88d76e985af73b524f202",
+      "output_sha256": "95f1438f442ab3f90dd140240060513bd7a18eee121f26853a5b3c00934f066c",
+      "image_ids": [
+        "97913084-f3a9-40ac-9662-f2dbab64abb9"
+      ]
+    },
+    {
+      "notion_id": "b420221954bc83afab2b81e6d234d6a7",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-16 결제 페이지 가게 요청사항 설정",
+      "path": "event-log/04-새-주변상점-레거시/7-16-결제-페이지-가게-요청사항-설정.md",
+      "notion_url": "https://app.notion.com/p/b420221954bc83afab2b81e6d234d6a7",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:12.195Z",
+      "source_body_sha256": "da289ee5ef561a544cd36d671e3cf467e6b1f7212747c4fb1d5487af890b4a59",
+      "output_sha256": "37968893da0499ec3ceb8a7656f24cd55cf417183d5f83e26f79e464962e4674",
+      "image_ids": [
+        "97913084-f3a9-40ac-9662-f2dbab64abb9",
+        "cda48419-f2a8-4481-9b47-66683bc70a1e"
+      ]
+    },
+    {
+      "notion_id": "7910221954bc83fb8f378100284c8523",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-17 결제 페이지 결제 실패 (교외만 배달 가능, 6월 29일 수정)",
+      "path": "event-log/04-새-주변상점-레거시/7-17-결제-페이지-결제-실패-(교외만-배달-가능,-6월-29일-수정).md",
+      "notion_url": "https://app.notion.com/p/7910221954bc83fb8f378100284c8523",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:12.453Z",
+      "source_body_sha256": "e97fb65ca297864f7371aa92c470e38d32b56b91112799d8d405275b8a093b2d",
+      "output_sha256": "13c74b63961f884dec1581985752c709b93481063f7c063d3f7879fc432d1684",
+      "image_ids": [
+        "6f468475-92d1-4863-a19a-a15a31cce813"
+      ]
+    },
+    {
+      "notion_id": "a030221954bc8397af5b0145dcb1e495",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-18 결제 페이지 결제 실패 (교내만 배달 가능, 6월 29일 수정)",
+      "path": "event-log/04-새-주변상점-레거시/7-18-결제-페이지-결제-실패-(교내만-배달-가능,-6월-29일-수정).md",
+      "notion_url": "https://app.notion.com/p/a030221954bc8397af5b0145dcb1e495",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.145Z",
+      "source_body_sha256": "9be342977977aae8afea4d4935f422ae63706a07d6415c481794270bbefd2c90",
+      "output_sha256": "66688c3f6a474df0d8991431e0cc1a6a09284fbb69605b0a39824c193ddb918d",
+      "image_ids": [
+        "de2985e0-352d-4254-8562-aaf838dcd1d5"
+      ]
+    },
+    {
+      "notion_id": "c010221954bc827bbfae01cb9c1cb4ab",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-2 결제 페이지 배달 위치 클릭",
+      "path": "event-log/04-새-주변상점-레거시/7-2-결제-페이지-배달-위치-클릭.md",
+      "notion_url": "https://app.notion.com/p/c010221954bc827bbfae01cb9c1cb4ab",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.661Z",
+      "source_body_sha256": "e8f3f00d2f4827053fdaa96defe680edc2c2f4614c9d6acdbd717820698a1887",
+      "output_sha256": "b9f9d2a6303ca37b0d5b4ab1945a2e2a6080e27a986be9142945ef39af563190",
+      "image_ids": [
+        "8579645c-3401-400e-8dd5-1891e08e61d7"
+      ]
+    },
+    {
+      "notion_id": "3d60221954bc8228812581f9b704aa33",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-3 결제 → 교내 주문 페이지 이탈",
+      "path": "event-log/04-새-주변상점-레거시/7-3-결제-→-교내-주문-페이지-이탈.md",
+      "notion_url": "https://app.notion.com/p/3d60221954bc8228812581f9b704aa33",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.786Z",
+      "source_body_sha256": "f921186579c202ebd8d59e9325c9235435576fd147a520abc0b9aeae14931088",
+      "output_sha256": "a54c8bd4f988836969337a160d167676d523bb799ee35adc2b664442bc6c7dca",
+      "image_ids": [
+        "7f416517-5ba1-4682-b19d-ac29ab53ad49"
+      ]
+    },
+    {
+      "notion_id": "2e40221954bc83beb0ae01e4eef1672a",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-4 결제 → 교내 주문 페이지 교내 주소 맵 설정",
+      "path": "event-log/04-새-주변상점-레거시/7-4-결제-→-교내-주문-페이지-교내-주소-맵-설정.md",
+      "notion_url": "https://app.notion.com/p/2e40221954bc83beb0ae01e4eef1672a",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.906Z",
+      "source_body_sha256": "3b09b90b678ed7df5c6577043a50714d1504c053e3d5a5c8bc10491a5bba7358",
+      "output_sha256": "78a57004d608c13657427d402e9b68f841a4741be6a1c86ce2e783afc488e2df",
+      "image_ids": [
+        "6d73ef60-bacc-48c7-8b40-396d7f06505a"
+      ]
+    },
+    {
+      "notion_id": "7ba0221954bc82f79ad9817ba592b5b9",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-5 결제 → 교내 주문 페이지 기숙사 위치 설정",
+      "path": "event-log/04-새-주변상점-레거시/7-5-결제-→-교내-주문-페이지-기숙사-위치-설정.md",
+      "notion_url": "https://app.notion.com/p/7ba0221954bc82f79ad9817ba592b5b9",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:12.049Z",
+      "source_body_sha256": "05d8e90e00257ebbf8e905d30b96a66ac0a7662957b49dc429875dd6119e16d9",
+      "output_sha256": "dcff828d795f707e90eea0477def2569705d2a2d5d3c4f3111d80b3ece2136ce",
+      "image_ids": [
+        "9d33d43b-3ff8-4707-b723-9e3b7b52c646",
+        "419189b9-9188-48e4-a5a1-701e28bf10ec"
+      ]
+    },
+    {
+      "notion_id": "ee00221954bc82728bd181d04717d5ef",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-6 결제 → 교내 주문 페이지 공학관 위치 설정",
+      "path": "event-log/04-새-주변상점-레거시/7-6-결제-→-교내-주문-페이지-공학관-위치-설정.md",
+      "notion_url": "https://app.notion.com/p/ee00221954bc82728bd181d04717d5ef",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:12.163Z",
+      "source_body_sha256": "48ed1cb41eae7b415b4e24647eac7c866a3f44f879ad4e57b7027433ce374a36",
+      "output_sha256": "863b9855610104fc06c03e8abcbf5f8874025882be07a5f8a649df092d953199",
+      "image_ids": [
+        "9d33d43b-3ff8-4707-b723-9e3b7b52c646"
+      ]
+    },
+    {
+      "notion_id": "c420221954bc83a48a4481cb23ac282c",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-7 결제 → 교내 주문 페이지 기타 지역 위치 설정",
+      "path": "event-log/04-새-주변상점-레거시/7-7-결제-→-교내-주문-페이지-기타-지역-위치-설정.md",
+      "notion_url": "https://app.notion.com/p/c420221954bc83a48a4481cb23ac282c",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:12.282Z",
+      "source_body_sha256": "56d921032edbc00720664430cedb97fcfea1a5053f8ace36a9b19bb7ee6e463a",
+      "output_sha256": "f7d3e348a59f053c94c10beb64fd8ab43c937d5dc5c62b9f7bc756505ddbdd00",
+      "image_ids": [
+        "9d33d43b-3ff8-4707-b723-9e3b7b52c646"
+      ]
+    },
+    {
+      "notion_id": "91d0221954bc8375baf78193d675f579",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-8 결제 → 교외 주문 페이지 이탈 ",
+      "path": "event-log/04-새-주변상점-레거시/7-8-결제-→-교외-주문-페이지-이탈.md",
+      "notion_url": "https://app.notion.com/p/91d0221954bc8375baf78193d675f579",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.148Z",
+      "source_body_sha256": "550cf2969789e6848d2b98ead08e32d90f7c84e73bc11d8bbed2aace86c865b1",
+      "output_sha256": "05833f783aac871e5bb82172209f34a50836e1a5fb4d2860dd24add4cc380aae",
+      "image_ids": [
+        "5aba979d-df87-4918-922c-fb1fb38d67cc"
+      ]
+    },
+    {
+      "notion_id": "c1a0221954bc83519f6781c0f3499394",
+      "service": "새 주변상점 - 레거시",
+      "title": "7-9 결제 → 교외 주문 페이지 주소 검색 클릭(6월 29일 수정)",
+      "path": "event-log/04-새-주변상점-레거시/7-9-결제-→-교외-주문-페이지-주소-검색-클릭(6월-29일-수정).md",
+      "notion_url": "https://app.notion.com/p/c1a0221954bc83519f6781c0f3499394",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.304Z",
+      "source_body_sha256": "a82f3f99080f42f15a786146e2c5454d1433b91b3343fc674c80a123f7ed3830",
+      "output_sha256": "633160de7dfc412f8fea9af20f0517de023c8a9fc7214e90ee37b2ebb3735171",
+      "image_ids": [
+        "5aba979d-df87-4918-922c-fb1fb38d67cc"
+      ]
+    },
+    {
+      "notion_id": "9a00221954bc832e90b681d4d6f83586",
+      "service": "새 주변상점 - 레거시",
+      "title": "8-1 주문 완료 페이지 이탈",
+      "path": "event-log/04-새-주변상점-레거시/8-1-주문-완료-페이지-이탈.md",
+      "notion_url": "https://app.notion.com/p/9a00221954bc832e90b681d4d6f83586",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.360Z",
+      "source_body_sha256": "c7abafe06bed9e5f5642db10a7ab39495e0b80a435af93131d23b79f4928db4f",
+      "output_sha256": "caa317bde17946f79ff13aa6743ffe042e4f3b0c1c05bcbd4409bbeeab22fe6f",
+      "image_ids": [
+        "baacb062-c048-4f3d-85f1-ae4d4f94654f"
+      ]
+    },
+    {
+      "notion_id": "2c80221954bc8320992201e0a5be41a4",
+      "service": "새 주변상점 - 레거시",
+      "title": "8-2 주문 완료 페이지 주문 취소하기(6월 29일 수정)",
+      "path": "event-log/04-새-주변상점-레거시/8-2-주문-완료-페이지-주문-취소하기(6월-29일-수정).md",
+      "notion_url": "https://app.notion.com/p/2c80221954bc8320992201e0a5be41a4",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.515Z",
+      "source_body_sha256": "494f11c00fb29d1dab21ffbbfe6d1c492352dd7495c09e73d0f253c7cd0c7a05",
+      "output_sha256": "28a0607bf86055733ebc19e6cabb29fbd39ca9e96590a4930d6cbbc02e3c0e55",
+      "image_ids": [
+        "4c80ede6-1243-4cfe-8036-facaae704778",
+        "7095807c-9e93-44e5-99cd-504a90b5d5ca",
+        "8aef40ff-61ef-401c-9b93-fe6db47c58db"
+      ]
+    },
+    {
+      "notion_id": "0510221954bc8295aa98010b191d8fc5",
+      "service": "새 주변상점 - 레거시",
+      "title": "8-3 주문 완료 페이지 배달 완료",
+      "path": "event-log/04-새-주변상점-레거시/8-3-주문-완료-페이지-배달-완료.md",
+      "notion_url": "https://app.notion.com/p/0510221954bc8295aa98010b191d8fc5",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.631Z",
+      "source_body_sha256": "b1534cc428b3b719aca28307145cfb784d4e67d3eecc74bc723a96a8d7de99f6",
+      "output_sha256": "dc1abbbbf0759091f01b7bb09b60888fc6153443b8c5b2b43a53b69010df7e63",
+      "image_ids": [
+        "d39832f8-5ed5-4745-8bed-af2fc313cb7a"
+      ]
+    },
+    {
+      "notion_id": "f570221954bc83108a90011c54907a40",
+      "service": "새 주변상점 - 레거시",
+      "title": "8-4 주문 완료 페이지 배달 미도착 이탈",
+      "path": "event-log/04-새-주변상점-레거시/8-4-주문-완료-페이지-배달-미도착-이탈.md",
+      "notion_url": "https://app.notion.com/p/f570221954bc83108a90011c54907a40",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.792Z",
+      "source_body_sha256": "7191c71354d8f7edfa67640dc8e5d35dcc55c93be6b85bb2bc4a3dcb7a5a5693",
+      "output_sha256": "b47f4eef1c40b8813292268ed5065fe8702c0967fa1a36a3779c43bfb87eeb02",
+      "image_ids": [
+        "d39832f8-5ed5-4745-8bed-af2fc313cb7a",
+        "69ee3d1d-70b0-4ac1-af6b-1602e4f0637a"
+      ]
+    },
+    {
+      "notion_id": "ad80221954bc83baa9ed8104bbdffcf1",
+      "service": "새 주변상점 - 레거시",
+      "title": "8-5 주문 완료 페이지 배달 미도착 전화",
+      "path": "event-log/04-새-주변상점-레거시/8-5-주문-완료-페이지-배달-미도착-전화.md",
+      "notion_url": "https://app.notion.com/p/ad80221954bc83baa9ed8104bbdffcf1",
+      "platforms": [
+        "WEB"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:11.962Z",
+      "source_body_sha256": "ff720fdaa8338d5273d08f5283ef038852535c9f37777c9ade7f5cce5df2b751",
+      "output_sha256": "a2c0782e393e6ef4b7e8f6aa985c3ca8d7a168a05f74b6fec76674271637d5a0",
+      "image_ids": [
+        "d39832f8-5ed5-4745-8bed-af2fc313cb7a",
+        "69ee3d1d-70b0-4ac1-af6b-1602e4f0637a"
+      ]
+    },
+    {
+      "notion_id": "fc50221954bc828495ad01b35599cc50",
+      "service": "새 주변상점 - 레거시",
+      "title": "9-1 주문내역 상단 탭",
+      "path": "event-log/04-새-주변상점-레거시/9-1-주문내역-상단-탭.md",
+      "notion_url": "https://app.notion.com/p/fc50221954bc828495ad01b35599cc50",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:12.085Z",
+      "source_body_sha256": "fcea4dab048bb8498d5802629d20af011b8d540921bc2e6273df2b52d53efa9d",
+      "output_sha256": "096e5eb5891b368b08a1eede8888357268944edb58a2a4154295e6a0866057f6",
+      "image_ids": [
+        "53009e69-4fc9-46b6-919b-d0560ea7c78a"
+      ]
+    },
+    {
+      "notion_id": "83f0221954bc8370a72901d97f23cd3d",
+      "service": "새 주변상점 - 레거시",
+      "title": "9-10 주문내역 이탈",
+      "path": "event-log/04-새-주변상점-레거시/9-10-주문내역-이탈.md",
+      "notion_url": "https://app.notion.com/p/83f0221954bc8370a72901d97f23cd3d",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.793Z",
+      "source_body_sha256": "88bd9656088c1a3000ee2ace7053ace63f25bdcbe84865023417cdfa8955e725",
+      "output_sha256": "fa3bdf6eadab7e290c0fc7e2721044fb69b150ddb91fe1e41e8ab9533900899a",
+      "image_ids": []
+    },
+    {
+      "notion_id": "77e0221954bc832dab5f81b5d9a3de87",
+      "service": "새 주변상점 - 레거시",
+      "title": "9-2 주문내역 검색",
+      "path": "event-log/04-새-주변상점-레거시/9-2-주문내역-검색.md",
+      "notion_url": "https://app.notion.com/p/77e0221954bc832dab5f81b5d9a3de87",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:12.205Z",
+      "source_body_sha256": "4e0ec136bda6ff9dc3d1a1d59adb3e9e15a10acdc7b0216881d4b3367b3595ce",
+      "output_sha256": "dbe7d2a7ac61acbfdbd5bbc443683c8fab0371063203362bceaefd7fd9fcd49f",
+      "image_ids": []
+    },
+    {
+      "notion_id": "ef00221954bc827488c2011caabcda64",
+      "service": "새 주변상점 - 레거시",
+      "title": "9-3 주문내역 검색창 리뷰쓰기",
+      "path": "event-log/04-새-주변상점-레거시/9-3-주문내역-검색창-리뷰쓰기.md",
+      "notion_url": "https://app.notion.com/p/ef00221954bc827488c2011caabcda64",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.257Z",
+      "source_body_sha256": "df7d367e7f44eb6bc645f3a2bed151bf88a7d99056692cce1184124748c1912a",
+      "output_sha256": "c4d32d67907879fbbf51d3bf99ebbb452f9423c2712bcaaa9b14ce5aed58f4d9",
+      "image_ids": [
+        "2fc76aea-3913-4910-b017-863e0cd903f1"
+      ]
+    },
+    {
+      "notion_id": "e700221954bc82d9b3b001a938989798",
+      "service": "새 주변상점 - 레거시",
+      "title": "9-4 주문내역 검색창 같은 메뉴 담기",
+      "path": "event-log/04-새-주변상점-레거시/9-4-주문내역-검색창-같은-메뉴-담기.md",
+      "notion_url": "https://app.notion.com/p/e700221954bc82d9b3b001a938989798",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.321Z",
+      "source_body_sha256": "af73156ce668ce0602263fd7e1f1eeaeb29664be38aff5f0ce66320dc0bb9497",
+      "output_sha256": "bfc69c8b1331dd89e63881839417874d0f5a152ebafff9defad99d333b22172a",
+      "image_ids": [
+        "560a523f-0985-413d-9950-b57e3c2aab77"
+      ]
+    },
+    {
+      "notion_id": "45d0221954bc83fbbfe38151a6d33e7b",
+      "service": "새 주변상점 - 레거시",
+      "title": "9-5 주문내역 필터 적용하기",
+      "path": "event-log/04-새-주변상점-레거시/9-5-주문내역-필터-적용하기.md",
+      "notion_url": "https://app.notion.com/p/45d0221954bc83fbbfe38151a6d33e7b",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.434Z",
+      "source_body_sha256": "00c38e139359046b3da214cfe5229377f08b37195033a8a6a9c01615dff29ee6",
+      "output_sha256": "66c8c536e441aa7bf2f60df8b79198456ff75e69b9fdbb0b35bf70fd18bf6bd8",
+      "image_ids": [
+        "c403bc56-7dcc-4fbe-a006-505c1b00cea2"
+      ]
+    },
+    {
+      "notion_id": "6950221954bc82e3ab7b817fa69a5ebc",
+      "service": "새 주변상점 - 레거시",
+      "title": "9-6 주문내역 리뷰쓰기",
+      "path": "event-log/04-새-주변상점-레거시/9-6-주문내역-리뷰쓰기.md",
+      "notion_url": "https://app.notion.com/p/6950221954bc82e3ab7b817fa69a5ebc",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.507Z",
+      "source_body_sha256": "366593b6ac14becd2e362a489e0a8d02c768e2f3611c822246364f17e7fecf83",
+      "output_sha256": "43bd676150064db99e128bea4ab2f34e1e09089eabdeea677f9da823fcc7eef4",
+      "image_ids": [
+        "a64ea47a-5e45-4425-a61a-850a234d240c"
+      ]
+    },
+    {
+      "notion_id": "afd0221954bc829e8bd581c95f60c67f",
+      "service": "새 주변상점 - 레거시",
+      "title": "9-7 주문내역 같은 메뉴 담기",
+      "path": "event-log/04-새-주변상점-레거시/9-7-주문내역-같은-메뉴-담기.md",
+      "notion_url": "https://app.notion.com/p/afd0221954bc829e8bd581c95f60c67f",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.577Z",
+      "source_body_sha256": "bf0a6fc1d892314b481c047414b4183d76ec7551718acf8fc154ed53650df24f",
+      "output_sha256": "0ddc785aed2f99e51e23c168828af46c68152bda3e722f43b550dcdf130756a4",
+      "image_ids": [
+        "0be36757-2400-4450-bdea-bac50be0d2b7"
+      ]
+    },
+    {
+      "notion_id": "c410221954bc83d9bf328124220d6eae",
+      "service": "새 주변상점 - 레거시",
+      "title": "9-8 주문내역 준비 중 주문 상세보기 ",
+      "path": "event-log/04-새-주변상점-레거시/9-8-주문내역-준비-중-주문-상세보기.md",
+      "notion_url": "https://app.notion.com/p/c410221954bc83d9bf328124220d6eae",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.651Z",
+      "source_body_sha256": "f5b05c6fda7f4a3a8bef94df028c08f6b1e11a75a53d9b4410830ecd3a7504d8",
+      "output_sha256": "aa02e6bf9ebfaa58a5e2d810e9eb48243e5d2ae7b3edf701b8b6d90e6f1595c5",
+      "image_ids": [
+        "42c6eae7-afc4-45ab-89c6-80a9304d8ee4"
+      ]
+    },
+    {
+      "notion_id": "ac80221954bc8369aae70146c35c81e5",
+      "service": "새 주변상점 - 레거시",
+      "title": "9-9 주문내역 장바구니 진입",
+      "path": "event-log/04-새-주변상점-레거시/9-9-주문내역-장바구니-진입.md",
+      "notion_url": "https://app.notion.com/p/ac80221954bc8369aae70146c35c81e5",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "status": "로깅 필요",
+      "source_last_edited_at": "2026-11-23T13:39:14.717Z",
+      "source_body_sha256": "4d6ca345ad3d00cab92962b0a7058c2533beeebbbbfd7625da55444c35bb2ab6",
+      "output_sha256": "b1ce948a93c29dd906bf50983dec0df769f0d3c6fa13776cc4117d79c5328269",
+      "image_ids": [
+        "0df6b6ec-3e17-4ed3-a4a4-7f75e70fa078"
+      ]
+    }
+  ],
+  "blank_pages": [
+    {
+      "notion_id": "1420221954bc82239e4d01c498b540be",
+      "title": "7-30 ~ 결제 수단 (확정 시 명세)",
+      "service": "새 주변상점 - 레거시",
+      "url": "https://app.notion.com/p/1420221954bc82239e4d01c498b540be"
+    },
+    {
+      "notion_id": "57b0221954bc82aab676016e6e7c6bd3",
+      "title": "7-31 ~  결제 페이지 동의 클릭  (동의 페이지 확정시 명세)",
+      "service": "새 주변상점 - 레거시",
+      "url": "https://app.notion.com/p/57b0221954bc82aab676016e6e7c6bd3"
+    },
+    {
+      "notion_id": "33b0221954bc83a3866881ccede13dde",
+      "title": "새 페이지",
+      "service": "새 주변상점 - 레거시",
+      "url": "https://app.notion.com/p/33b0221954bc83a3866881ccede13dde"
+    },
+    {
+      "notion_id": "74a0221954bc831daa3d81356c1934bb",
+      "title": "새 페이지",
+      "service": "새 주변상점 - 레거시",
+      "url": "https://app.notion.com/p/74a0221954bc831daa3d81356c1934bb"
+    },
+    {
+      "notion_id": "9b00221954bc83e9a95b8152aecf954c",
+      "title": "새 페이지",
+      "service": "새 주변상점 - 레거시",
+      "url": "https://app.notion.com/p/9b00221954bc83e9a95b8152aecf954c"
+    }
+  ]
+}

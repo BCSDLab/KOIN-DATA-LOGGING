@@ -1,24 +1,22 @@
 # 3-5-2 상점상세 뒤로 가기 (Click)
 
-[← 주변상점 로깅 목록](README.md)
+[← 주변상점 목록](README.md)
 
-플랫폼: ANDROID · IOS  
-원문 상태: 완료
+플랫폼: ANDROID, IOS  
+원문 상태: 완료  
+[Notion 기준 명세](https://app.notion.com/p/dbb0221954bc8329b877817365757ca7)  
+원본 ID: `dbb0221954bc8329b877817365757ca7`
 
-과거 로깅·새 로깅과 각 참고사진은 원문의 구간별 연결을 유지합니다.
-
-<!-- logging-section:past:start -->
+<!-- notion-body:start -->
 ## 과거 로깅
 
 event\_params.key
 
 - event\_label : shop\_detail\_view\_back
+- value : \{상점이름\}
+- event\_category :
 
-- value : \{상점이름\} 
-
-- event\_category : 
-
-- click 
+    - click
 
 - current\_page : \{돌아간 카테고리\}
 - duration\_time : 상점 상세보기에서 카테고리로 돌아간 시간.
@@ -31,11 +29,7 @@ event\_params.key
 
 시간 관련 주의 사항: 
 
-<ol>
-
-- 상점 상세보기 페이지에서 어떠한 행위를 해도 상관이 없음. <br />즉 상점 상세보기를 들어온 시간부터 상점 상세보기를 떠난 시간까지 측정 
-
-</ol>
+- 상점 상세보기 페이지에서 어떠한 행위를 해도 상관이 없음. <br />즉 상점 상세보기를 들어온 시간부터 상점 상세보기를 떠난 시간까지 측정
 
 ---
 
@@ -53,11 +47,8 @@ swipe → click
 
 ---
 
-[해결 (2)](../../_archive/original/notion/pages/28e0221954bc83dbbe0181d287e7bec5.md)
+[해결 (2)](https://app.notion.com/p/c870221954bc82c3902001306139bd0e)
 
-<!-- logging-section:past:end -->
-
-<!-- logging-section:new:start -->
 ## 새 로깅
 
 - 설명: 상점 상세 화면에서 나가는 경우
@@ -69,26 +60,40 @@ swipe → click
 
 ### 참고사진 (상점 상세 뒤로가기)
 
-#### 웹
+<b>웹</b>
+
+<b>참고사진 · 웹</b>
 
 웹 — 상점목록 버튼 클릭 (출처: stage 실제 캡처, 빨간 네모 = 클릭 위치)
 
 ![참고사진](../../assets/e7648d5e-7bce-47c8-80e4-34d1b7269d9a.png)
 
-#### 모바일
+<b>모바일</b>
+
+<b>참고사진 · 모바일</b>
 
 모바일 — 뒤로가기 클릭 (출처: stage 실제 캡처, 빨간 네모 = 클릭 위치)
 
 ![참고사진](../../assets/38e99e50-c7fb-40f5-9cda-dc49028c4257.png)
-
-<!-- logging-section:new:end -->
-
----
+<!-- notion-body:end -->
 
 <details>
-<summary>원문 정보</summary>
+<summary>Notion 원문 속성 전체</summary>
 
-원본 ID: `0e00221954bc8252b9020148f1ed3238`  
-[보존 원문](../../_archive/original/notion/pages/0e00221954bc8252b9020148f1ed3238.md)
+```json
+{
+  "platform": [
+    "ANDROID",
+    "IOS"
+  ],
+  "url": "https://app.notion.com/p/dbb0221954bc8329b877817365757ca7",
+  "상태": "완료",
+  "생성일": "2026-11-23T13:38:19.249Z",
+  "이벤트 이름": "3-5-2 상점상세 뒤로 가기 (Click)",
+  "태그": [
+    "3. 상점 상세 페이지"
+  ]
+}
+```
 
 </details>

@@ -1,69 +1,65 @@
 # 동아리 - 레거시
 
-> **레거시 서비스** · 과거 구현과 로깅을 확인하기 위한 보존 자료입니다.
-
 [← 전체 서비스](../../README.md)
 
-명세를 누르면 한 페이지에서 로그 정의와 해당 이미지를 함께 확인할 수 있습니다. 과거·새 로깅은 원문 구간대로 구분합니다. 상태는 원문 표기이며 구현·배포 승인을 뜻하지 않습니다.
+Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 목록입니다.
 
-## 로깅 목록
-
-| 명세 | 원문 상태 | 플랫폼 |
+| 명세 | 플랫폼 | Notion |
 | --- | --- | --- |
-| [레거시 0.코인_메인화면_동아리진입](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-0.%EC%BD%94%EC%9D%B8_%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4_%EB%8F%99%EC%95%84%EB%A6%AC%EC%A7%84%EC%9E%85.md) | 레거시 | ANDROID · IOS |
-| [레거시 1-1. 동아리_동아리 진입](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-1.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EC%A7%84%EC%9E%85.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 1-2.동아리_인기동아리 바로가기](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-2.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%9D%B8%EA%B8%B0%EB%8F%99%EC%95%84%EB%A6%AC-%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 1-3.동아리_동아리추가 바로가기](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-3.%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC%EC%B6%94%EA%B0%80-%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0.md) | 레거시 | WEB |
-| [레거시 1-4.동아리_헤더](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-4.%EB%8F%99%EC%95%84%EB%A6%AC_%ED%97%A4%EB%8D%94.md) | 레거시 | WEB |
-| [레거시 1-5.동아리_푸터](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-5.%EB%8F%99%EC%95%84%EB%A6%AC_%ED%91%B8%ED%84%B0.md) | 레거시 | WEB |
-| [레거시 1-6.동아리_햄버거](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-6.%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%84%EB%B2%84%EA%B1%B0.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 2-1. 동아리_동아리 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2-1.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB · ANDROID · IOS |
-| [레거시 2-2.동아리_동아리 생성하기 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2-2.%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB · ANDROID · IOS |
-| [레거시 2-3.동아리_동아리 카테고리 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2-3.%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB · ANDROID · IOS |
-| [레거시 2-4.동아리_동아리 메인화면 좋아요 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2-4.%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4-%EC%A2%8B%EC%95%84%EC%9A%94-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB · ANDROID · IOS |
-| [레거시 2-5.동아리_동아리 메인화면 좋아요 해제](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2-5.%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4-%EC%A2%8B%EC%95%84%EC%9A%94-%ED%95%B4%EC%A0%9C.md) | 레거시 | WEB · ANDROID · IOS |
-| [레거시 2.6 동아리_모집 중인 동아리 토글 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2.6-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91-%EC%A4%91%EC%9D%B8-%EB%8F%99%EC%95%84%EB%A6%AC-%ED%86%A0%EA%B8%80-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 2.7 동아리_동아리 검색](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2.7-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EA%B2%80%EC%83%89.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 3-1. 동아리_동아리 생성취소](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-3-1.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EC%83%9D%EC%84%B1%EC%B7%A8%EC%86%8C.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 3-2. 동아리_동아리 생성요청](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-3-2.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EC%83%9D%EC%84%B1%EC%9A%94%EC%B2%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 3-3. 동아리_동아리 생성요청_확인](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-3-3.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EC%83%9D%EC%84%B1%EC%9A%94%EC%B2%AD_%ED%99%95%EC%9D%B8.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 3-4. 동아리_동아리 권한요청](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-3-4.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EA%B6%8C%ED%95%9C%EC%9A%94%EC%B2%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 4-1. 동아리_Q&A추가](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-4-1.-%EB%8F%99%EC%95%84%EB%A6%AC_Q%26A%EC%B6%94%EA%B0%80.md) | 레거시 | ANDROID · IOS |
-| [레거시 4-2. 동아리_Q&A추가_확인](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-4-2.-%EB%8F%99%EC%95%84%EB%A6%AC_Q%26A%EC%B6%94%EA%B0%80_%ED%99%95%EC%9D%B8.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 4-3. 동아리_댓글 삭제](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-4-3.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8C%93%EA%B8%80-%EC%82%AD%EC%A0%9C.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 5-1.동아리_수정하기 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-1.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 5-2.동아리_정보수정 저장](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-2.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%A0%95%EB%B3%B4%EC%88%98%EC%A0%95-%EC%A0%80%EC%9E%A5.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 5-3.동아리_정보수정 취소](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-3.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%A0%95%EB%B3%B4%EC%88%98%EC%A0%95-%EC%B7%A8%EC%86%8C.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 5-4.동아리_권한위임 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-4.%EB%8F%99%EC%95%84%EB%A6%AC_%EA%B6%8C%ED%95%9C%EC%9C%84%EC%9E%84-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 5-5.동아리_권한위임 확인](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-5.%EB%8F%99%EC%95%84%EB%A6%AC_%EA%B6%8C%ED%95%9C%EC%9C%84%EC%9E%84-%ED%99%95%EC%9D%B8.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 5-6.동아리_탭 클릭(추가사항)](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-6.%EB%8F%99%EC%95%84%EB%A6%AC_%ED%83%AD-%ED%81%B4%EB%A6%AD%28%EC%B6%94%EA%B0%80%EC%82%AC%ED%95%AD%29.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 5-7.동아리_상세소개 수정하기 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-7.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%83%81%EC%84%B8%EC%86%8C%EA%B0%9C-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB |
-| [레거시 5-8.동아리_상세소개 수정하기_저장 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-8.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%83%81%EC%84%B8%EC%86%8C%EA%B0%9C-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0_%EC%A0%80%EC%9E%A5-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB |
-| [레거시 5-9.동아리_상세소개 수정하기_취소 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-9.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%83%81%EC%84%B8%EC%86%8C%EA%B0%9C-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0_%EC%B7%A8%EC%86%8C-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB |
-| [레거시 5-10.동아리_상세소개 수정하기_저장하기 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-10.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%83%81%EC%84%B8%EC%86%8C%EA%B0%9C-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0_%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB |
-| [레거시 5-11.동아리_상세소개 수정하기_취소하기 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-11.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%83%81%EC%84%B8%EC%86%8C%EA%B0%9C-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0_%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB |
-| [레거시 5-12.동아리_상세소개 좋아요 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-12.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%83%81%EC%84%B8%EC%86%8C%EA%B0%9C-%EC%A2%8B%EC%95%84%EC%9A%94-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 5-13.동아리_상세소개 좋아요 해제](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-13.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%83%81%EC%84%B8%EC%86%8C%EA%B0%9C-%EC%A2%8B%EC%95%84%EC%9A%94-%ED%95%B4%EC%A0%9C.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 5.14동아리_모집알림 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5.14%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%95%8C%EB%A6%BC-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS |
-| [레거시 5.15동아리_모집알림 받기](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5.15%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%95%8C%EB%A6%BC-%EB%B0%9B%EA%B8%B0.md) | 레거시 | ANDROID · IOS |
-| [레거시 5.16동아리_모집알림 취소](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5.16%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%95%8C%EB%A6%BC-%EC%B7%A8%EC%86%8C.md) | 레거시 | ANDROID · IOS |
-| [레거시 6.1동아리_행사 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.1%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 6.2동아리_행사필터 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.2%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%ED%95%84%ED%84%B0-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 6.3동아리_행사생성 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.3%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%83%9D%EC%84%B1-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 6.4동아리_행사생성확정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.4%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%83%9D%EC%84%B1%ED%99%95%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 6.5동아리_행사생성취소 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.5%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%83%9D%EC%84%B1%EC%B7%A8%EC%86%8C-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 6.6동아리_행사수정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.6%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%88%98%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 6.7동아리_행사수정확정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.7%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%88%98%EC%A0%95%ED%99%95%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 6.8동아리_행사수정취소 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.8%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%88%98%EC%A0%95%EC%B7%A8%EC%86%8C-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 6.9동아리_행사삭제 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.9%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%82%AD%EC%A0%9C-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 6.10동아리_행사삭제확정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.10%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%82%AD%EC%A0%9C%ED%99%95%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB |
-| [레거시 7.1동아리_모집생성 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.1%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%83%9D%EC%84%B1-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 7.2동아리_모집생성확정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.2%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%83%9D%EC%84%B1%ED%99%95%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 7.3동아리_모집생성취소 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.3%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%83%9D%EC%84%B1%EC%B7%A8%EC%86%8C-%ED%81%B4%EB%A6%AD.md) | 레거시 | ANDROID · IOS · WEB |
-| [레거시 7.4동아리_모집수정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.4%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%88%98%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB · ANDROID · IOS |
-| [레거시 7.5동아리_모집수정확정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.5%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%88%98%EC%A0%95%ED%99%95%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB · ANDROID · IOS |
-| [레거시 7.6동아리_모집수정취소 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.6%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%88%98%EC%A0%95%EC%B7%A8%EC%86%8C-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB · ANDROID · IOS |
-| [레거시 7.7동아리_모집삭제 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.7%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%82%AD%EC%A0%9C-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB · ANDROID · IOS |
-| [레거시 7.8동아리_모집삭제확정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.8%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%82%AD%EC%A0%9C%ED%99%95%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | 레거시 | WEB · ANDROID · IOS |
-
-과거 Event Log 전체·템플릿·빈 페이지·수집 검증 기록은 [보존 자료](../../_archive/README.md)에서 확인할 수 있습니다.
+| [[레거시] 0.코인_메인화면_동아리진입](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-0.%EC%BD%94%EC%9D%B8_%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4_%EB%8F%99%EC%95%84%EB%A6%AC%EC%A7%84%EC%9E%85.md) | ANDROID, IOS | [원문](https://app.notion.com/p/a460221954bc825b843001dfcb0cce96) |
+| [[레거시] 1-1. 동아리_동아리 진입](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-1.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EC%A7%84%EC%9E%85.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/19f0221954bc823a98b8816d3852d86f) |
+| [[레거시] 1-2.동아리_인기동아리 바로가기](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-2.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%9D%B8%EA%B8%B0%EB%8F%99%EC%95%84%EB%A6%AC-%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/70a0221954bc8391832c0182d9fa4a58) |
+| [[레거시] 1-3.동아리_동아리추가 바로가기](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-3.%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC%EC%B6%94%EA%B0%80-%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0.md) | WEB | [원문](https://app.notion.com/p/2fa0221954bc8376808c01a62ed06429) |
+| [[레거시] 1-4.동아리_헤더](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-4.%EB%8F%99%EC%95%84%EB%A6%AC_%ED%97%A4%EB%8D%94.md) | WEB | [원문](https://app.notion.com/p/bae0221954bc82f38372016fdebf364d) |
+| [[레거시] 1-5.동아리_푸터](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-5.%EB%8F%99%EC%95%84%EB%A6%AC_%ED%91%B8%ED%84%B0.md) | WEB | [원문](https://app.notion.com/p/8440221954bc83ee999e81d1f9fa8e32) |
+| [[레거시] 1-6.동아리_햄버거](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-6.%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%84%EB%B2%84%EA%B1%B0.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/c910221954bc8320967a816cc3f8a8e2) |
+| [[레거시] 2-1. 동아리_동아리 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2-1.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%ED%81%B4%EB%A6%AD.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/9330221954bc8398bd53813438067b42) |
+| [[레거시] 2-2.동아리_동아리 생성하기 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2-2.%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0-%ED%81%B4%EB%A6%AD.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/b0d0221954bc838189d681eb6e5c9274) |
+| [[레거시] 2-3.동아리_동아리 카테고리 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2-3.%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%ED%81%B4%EB%A6%AD.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/ab50221954bc8361abae01aa01e306b5) |
+| [[레거시] 2-4.동아리_동아리 메인화면 좋아요 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2-4.%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4-%EC%A2%8B%EC%95%84%EC%9A%94-%ED%81%B4%EB%A6%AD.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/67e0221954bc8325850e814fce2aa79b) |
+| [[레거시] 2-5.동아리_동아리 메인화면 좋아요 해제](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2-5.%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4-%EC%A2%8B%EC%95%84%EC%9A%94-%ED%95%B4%EC%A0%9C.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/fcb0221954bc832f811d01195c2c92d2) |
+| [[레거시] 2.6 동아리_모집 중인 동아리 토글 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2.6-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91-%EC%A4%91%EC%9D%B8-%EB%8F%99%EC%95%84%EB%A6%AC-%ED%86%A0%EA%B8%80-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/1030221954bc83d0995601cca207320e) |
+| [[레거시] 2.7 동아리_동아리 검색](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-2.7-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EA%B2%80%EC%83%89.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/ebd0221954bc828da16b018d36ed13e5) |
+| [[레거시] 3-1. 동아리_동아리 생성취소](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-3-1.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EC%83%9D%EC%84%B1%EC%B7%A8%EC%86%8C.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/ecb0221954bc83f59f0a0165a3dc63f5) |
+| [[레거시] 3-2. 동아리_동아리 생성요청](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-3-2.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EC%83%9D%EC%84%B1%EC%9A%94%EC%B2%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/fe70221954bc82d29d320194b017643f) |
+| [[레거시] 3-3. 동아리_동아리 생성요청_확인](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-3-3.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EC%83%9D%EC%84%B1%EC%9A%94%EC%B2%AD_%ED%99%95%EC%9D%B8.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/d100221954bc83818ef80136de68800e) |
+| [[레거시] 3-4. 동아리_동아리 권한요청](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-3-4.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8F%99%EC%95%84%EB%A6%AC-%EA%B6%8C%ED%95%9C%EC%9A%94%EC%B2%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/db80221954bc82ec840b811ab1572088) |
+| [[레거시] 4-1. 동아리_Q&A추가](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-4-1.-%EB%8F%99%EC%95%84%EB%A6%AC_Q%26A%EC%B6%94%EA%B0%80.md) | ANDROID, IOS | [원문](https://app.notion.com/p/7380221954bc820fabbb01a135d45979) |
+| [[레거시] 4-2. 동아리_Q&A추가_확인](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-4-2.-%EB%8F%99%EC%95%84%EB%A6%AC_Q%26A%EC%B6%94%EA%B0%80_%ED%99%95%EC%9D%B8.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/5170221954bc82778c0d8155d70293d2) |
+| [[레거시] 4-3. 동아리_댓글 삭제](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-4-3.-%EB%8F%99%EC%95%84%EB%A6%AC_%EB%8C%93%EA%B8%80-%EC%82%AD%EC%A0%9C.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/b230221954bc826bb0b0813764b31be7) |
+| [[레거시] 5-1.동아리_수정하기 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-1.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/5e80221954bc8304b6b9814e8683f204) |
+| [[레거시] 5-10.동아리_상세소개 수정하기_저장하기 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-10.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%83%81%EC%84%B8%EC%86%8C%EA%B0%9C-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0_%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0-%ED%81%B4%EB%A6%AD.md) | WEB | [원문](https://app.notion.com/p/1640221954bc83d997b68147d9338478) |
+| [[레거시] 5-11.동아리_상세소개 수정하기_취소하기 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-11.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%83%81%EC%84%B8%EC%86%8C%EA%B0%9C-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0_%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0-%ED%81%B4%EB%A6%AD.md) | WEB | [원문](https://app.notion.com/p/c100221954bc82579dac01665c4de516) |
+| [[레거시] 5-12.동아리_상세소개 좋아요 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-12.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%83%81%EC%84%B8%EC%86%8C%EA%B0%9C-%EC%A2%8B%EC%95%84%EC%9A%94-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/2820221954bc82f9ac748148effdac09) |
+| [[레거시] 5-13.동아리_상세소개 좋아요 해제](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-13.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%83%81%EC%84%B8%EC%86%8C%EA%B0%9C-%EC%A2%8B%EC%95%84%EC%9A%94-%ED%95%B4%EC%A0%9C.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/6730221954bc83d9928001a5879cf882) |
+| [[레거시] 5-2.동아리_정보수정 저장](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-2.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%A0%95%EB%B3%B4%EC%88%98%EC%A0%95-%EC%A0%80%EC%9E%A5.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/f2f0221954bc83c79744017f7ee5aaf3) |
+| [[레거시] 5-3.동아리_정보수정 취소](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-3.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%A0%95%EB%B3%B4%EC%88%98%EC%A0%95-%EC%B7%A8%EC%86%8C.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/a190221954bc8229ac7901abd0a6540e) |
+| [[레거시] 5-4.동아리_권한위임 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-4.%EB%8F%99%EC%95%84%EB%A6%AC_%EA%B6%8C%ED%95%9C%EC%9C%84%EC%9E%84-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/e490221954bc82b4b38b81572a6f959c) |
+| [[레거시] 5-5.동아리_권한위임 확인](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-5.%EB%8F%99%EC%95%84%EB%A6%AC_%EA%B6%8C%ED%95%9C%EC%9C%84%EC%9E%84-%ED%99%95%EC%9D%B8.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/9140221954bc8253a500818ccf2a95af) |
+| [[레거시] 5-6.동아리_탭 클릭(추가사항)](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-6.%EB%8F%99%EC%95%84%EB%A6%AC_%ED%83%AD-%ED%81%B4%EB%A6%AD%28%EC%B6%94%EA%B0%80%EC%82%AC%ED%95%AD%29.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/9db0221954bc832fad1581f3640e91b6) |
+| [[레거시] 5-7.동아리_상세소개 수정하기 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-7.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%83%81%EC%84%B8%EC%86%8C%EA%B0%9C-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0-%ED%81%B4%EB%A6%AD.md) | WEB | [원문](https://app.notion.com/p/3540221954bc82a0a2a481bbf7372f2f) |
+| [[레거시] 5-8.동아리_상세소개 수정하기_저장 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-8.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%83%81%EC%84%B8%EC%86%8C%EA%B0%9C-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0_%EC%A0%80%EC%9E%A5-%ED%81%B4%EB%A6%AD.md) | WEB | [원문](https://app.notion.com/p/4780221954bc83f1bf5801d43ba98d07) |
+| [[레거시] 5-9.동아리_상세소개 수정하기_취소 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5-9.%EB%8F%99%EC%95%84%EB%A6%AC_%EC%83%81%EC%84%B8%EC%86%8C%EA%B0%9C-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0_%EC%B7%A8%EC%86%8C-%ED%81%B4%EB%A6%AD.md) | WEB | [원문](https://app.notion.com/p/5c70221954bc82d79a15819cd3e7e88e) |
+| [[레거시] 5.14동아리_모집알림 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5.14%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%95%8C%EB%A6%BC-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/9a80221954bc83af880b812c50d0537e) |
+| [[레거시] 5.15동아리_모집알림 받기](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5.15%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%95%8C%EB%A6%BC-%EB%B0%9B%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/2930221954bc83549c2a01209f3c1773) |
+| [[레거시] 5.16동아리_모집알림 취소](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-5.16%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%95%8C%EB%A6%BC-%EC%B7%A8%EC%86%8C.md) | ANDROID, IOS | [원문](https://app.notion.com/p/1de0221954bc8357b3b2014e5e7b4e0c) |
+| [[레거시] 6.10동아리_행사삭제확정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.10%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%82%AD%EC%A0%9C%ED%99%95%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | WEB | [원문](https://app.notion.com/p/d5e0221954bc8338946d817d4932b1b9) |
+| [[레거시] 6.1동아리_행사 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.1%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/d430221954bc83ec9b4581af06e8ad06) |
+| [[레거시] 6.2동아리_행사필터 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.2%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%ED%95%84%ED%84%B0-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/39a0221954bc837eb48a812a0b716c4e) |
+| [[레거시] 6.3동아리_행사생성 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.3%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%83%9D%EC%84%B1-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/a970221954bc8217a68d81996d99d7f0) |
+| [[레거시] 6.4동아리_행사생성확정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.4%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%83%9D%EC%84%B1%ED%99%95%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/8cb0221954bc8237bf1b018ddb4d42d1) |
+| [[레거시] 6.5동아리_행사생성취소 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.5%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%83%9D%EC%84%B1%EC%B7%A8%EC%86%8C-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/ef90221954bc821394be81ac284764d6) |
+| [[레거시] 6.6동아리_행사수정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.6%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%88%98%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/3f80221954bc832c9e3481b44e1084d8) |
+| [[레거시] 6.7동아리_행사수정확정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.7%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%88%98%EC%A0%95%ED%99%95%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/cfd0221954bc83f7a6a9813c9897e6ed) |
+| [[레거시] 6.8동아리_행사수정취소 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.8%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%88%98%EC%A0%95%EC%B7%A8%EC%86%8C-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/1ef0221954bc824fb156816c79ddd4b4) |
+| [[레거시] 6.9동아리_행사삭제 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-6.9%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%82%AD%EC%A0%9C-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/f800221954bc82959bda01d4279eb422) |
+| [[레거시] 7.1동아리_모집생성 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.1%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%83%9D%EC%84%B1-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/e1e0221954bc827d9ecf01fbf22bf12a) |
+| [[레거시] 7.2동아리_모집생성확정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.2%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%83%9D%EC%84%B1%ED%99%95%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/ca80221954bc83b098f20183ff60ddca) |
+| [[레거시] 7.3동아리_모집생성취소 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.3%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%83%9D%EC%84%B1%EC%B7%A8%EC%86%8C-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/f5b0221954bc82219d2701bb55af8582) |
+| [[레거시] 7.4동아리_모집수정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.4%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%88%98%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/d940221954bc8208b53b018692aadd78) |
+| [[레거시] 7.5동아리_모집수정확정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.5%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%88%98%EC%A0%95%ED%99%95%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/98c0221954bc83c5bf9b81420b9d3b7a) |
+| [[레거시] 7.7동아리_모집삭제 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.7%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%82%AD%EC%A0%9C-%ED%81%B4%EB%A6%AD.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/5110221954bc82b9af0c0104096f1769) |
+| [[레거시] 7.8동아리_모집삭제확정 클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.8%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%82%AD%EC%A0%9C%ED%99%95%EC%A0%95-%ED%81%B4%EB%A6%AD.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/4760221954bc836794eb0157928db74a) |
+| [[레거시] <p>
+7.6동아리_모집수정취소 클릭
+</p>](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-7.6%EB%8F%99%EC%95%84%EB%A6%AC_%EB%AA%A8%EC%A7%91%EC%88%98%EC%A0%95%EC%B7%A8%EC%86%8C-%ED%81%B4%EB%A6%AD.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/71f0221954bc8220b9a101b5d8dd5600) |
