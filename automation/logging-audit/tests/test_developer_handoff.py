@@ -68,3 +68,12 @@ class ReadableDetailTest(unittest.TestCase):
         self.assertIn('조회 불완전 · 판정 불가', detail_markdown({'stage': report}))
         report['complete'] = True
         self.assertIn('수집 없음 · 판정 없음', detail_markdown({'stage': report}))
+
+
+class SpecificationLocationTest(unittest.TestCase):
+    def test_handoff_labels_source_with_decoded_service_and_page(self):
+        from koin_weekly_audit.handoff import specification_link
+        url = 'https://github.com/BCSDLab/KOIN-DATA-LOGGING/blob/sha/event-log/16-%EB%8B%A4%EA%B5%AD%EC%96%B4/%EC%96%B8%EC%96%B4-%EB%B3%80%EA%B2%BD.md'
+        result = specification_link(url)
+        self.assertIn('[16-다국어/언어-변경.md]', result)
+        self.assertIn('](' + url + ')', result)
