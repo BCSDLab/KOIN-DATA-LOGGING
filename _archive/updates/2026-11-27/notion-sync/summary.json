@@ -245,5 +245,18 @@
       "archive_path": "_archive/updates/2026-11-27/notion-sync/pre-sync/event-log/18-강제-업데이트/6.-강제-업데이트-화면-이탈.md"
     }
   ],
-  "boundary": "Documentation only. No edits to source Notion specifications, operating data changes, Slack delivery, paid AI API, or merge."
+  "boundary": "Notion source value fields updated for 16 pages by explicit user instruction; related common-guide rules and personal list aligned. No SDK edits, operating data changes, Slack delivery, paid AI API, or merge.",
+  "value_definition_update": {
+    "date": "2026-11-27",
+    "source_pages_changed": 16,
+    "fixed_string_contracts": 18,
+    "previous_marker_remaining": 0,
+    "android_observed_events": {
+      "Stage": 308,
+      "Production": 134
+    },
+    "android_value_keys_present": 0,
+    "sdk_deployed": false,
+    "operating_data_modified": false
+  }
 }
