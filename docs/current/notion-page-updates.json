@@ -1,5 +1,5 @@
 {
-  "reason": "2026-11-27 사용자 확인: 콜밴팟 알림 3종 IOS 지원 포함. 원본 동기화 스냅샷은 보존한다.",
+  "reason": "2026-11-27 사용자 확인에 따른 현재 원문 수정. 원본 동기화 스냅샷은 보존한다.",
   "pages": [
     {
       "source": {
@@ -133,6 +133,46 @@
         "image_ids": [
           "587901d8-cfef-4bd8-8dda-93421e1243f6",
           "587901d8-cfef-4bd8-8dda-93421e1243f6"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "6310221954bc825f8599010867d0f47a",
+        "title": "3-1 복덕방 상세_사진 넘기기 클릭",
+        "service": "복덕방",
+        "url": "https://app.notion.com/p/6310221954bc825f8599010867d0f47a",
+        "original_body": "<toggle>\n새 로깅\n\n<ul>\n<li>\n설명: 웹 복덕방 상세 화면의 방 사진 슬라이드에서 이전 / 다음 화살표를 클릭하는 경우\n</li>\n<li>\nscreen\\_view: <code>room_detail</code>\n</li>\n<li>\nevent\\_name: <code>DA1</code>\n</li>\n<li>\nevent\\_label: \n\n<ul>\n<li>\n웹 <code>real_estate__room_detail__photo_view__slide__click</code> \n</li>\n<li>\n모바일<code>real_estate__room_detail__photo_view__slide__swipe</code>\n</li>\n</ul>\n</li>\n<li>\nvalue: 이전 / 다음 (예: 다음)\n</li>\n<li>\nevent\\_category: \n\n- 웹 : <code>click</code>\n- 모바일 : <code>swipe</code>\n</li>\n</ul>\n\n### 적용 범위\n\n- 원문 platform 속성은 WEB이다. 웹 화살표 클릭은 click 계약으로 구분한다.\n- 본문에 명시된 모바일 photo\\_view slide swipe 라벨은 존재하지만, 모바일 웹과 ANDROID·IOS 앱 중 적용 대상은 현재 속성·설명만으로 확정되지 않는다. 이 swipe 계약은 플랫폼 정의 확인 대기로 두고, 명세 미등록이나 정상 수집으로 자동 판정하지 않는다.\n- 모바일 참고사진과 수집 관측만으로 ANDROID·IOS 지원을 임의로 추가하지 않는다. iOS의 click 전송과 Android·Web의 swipe 전송을 같은 동작이라고 자동 치환하지 않는다. 플랫폼별 담당자가 동작 방식과 적용 범위를 확인한 뒤 계약을 확정한다.\n\n### 참고사진 (사진 슬라이드 다음 화살표)\n\n<columns>\n<column ratio=\"50\">\n<b>웹</b>\n\n<b>참고사진 · 웹</b>\n\n<image source=\"notion-file-block://79102219-54bc-820a-b2a9-817fe25b6c9d/948251a7-ac2b-4b4d-8f3b-c54da7688718?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=boxed_3-1_detail_slide.png\">\n웹 — 빨간 네모가 이 명세의 클릭 대상이다. 같은 화면의 다른 동작은 표시하지 않았다. 사용자 제공 WEB 디자인을 편집한 참고사진이며 실기기·SDK 검증 사진은 아니다.\n</image>\n</column>\n<column ratio=\"50\">\n<b>모바일</b>\n\n<b>참고사진 · 모바일</b>\n\n<image source=\"notion-file-block://1de02219-54bc-8249-bf68-017832034836/51199bff-7250-4c4a-ada9-c72780e200d3?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=m_3-1_photo_reference.png\">\n모바일 — 빨간 네모 = 사진 표시 영역 보조 참고(화살표 클릭을 뜻하지 않음). 사용자 제공 디자인을 편집한 참고사진이며 플랫폼별 SDK 구현·실수집 검증 사진은 아니다.\n</image>\n</column>\n</columns>\n</toggle>",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/6310221954bc825f8599010867d0f47a",
+          "상태": "로깅 필요",
+          "생성일": "2026-11-23T13:39:06.000Z",
+          "이벤트 이름": "3-1 복덕방 상세\\_사진 넘기기 클릭"
+        },
+        "last_edited_time": "2026-11-27T07:39:17.495Z"
+      },
+      "manifest": {
+        "notion_id": "6310221954bc825f8599010867d0f47a",
+        "service": "복덕방",
+        "title": "3-1 복덕방 상세_사진 넘기기 클릭",
+        "path": "event-log/02-복덕방/3-1-복덕방-상세_사진-넘기기-(클릭)-추가된-로깅.md",
+        "notion_url": "https://app.notion.com/p/6310221954bc825f8599010867d0f47a",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-27T07:39:17.495Z",
+        "source_body_sha256": "db61d73f4e8fab23631f6aa093b507acec4588161aa52460886f13dafcf97daf",
+        "output_sha256": "8bf9e5b122ed93907c7d8e9646569fc85ecce7f3d6d755603daa3de6e97e25a6",
+        "image_ids": [
+          "948251a7-ac2b-4b4d-8f3b-c54da7688718",
+          "51199bff-7250-4c4a-ada9-c72780e200d3"
         ]
       }
     }

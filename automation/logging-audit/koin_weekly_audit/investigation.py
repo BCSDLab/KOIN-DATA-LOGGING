@@ -6,6 +6,7 @@ from .normalization import normalize_observation
 
 GROUPS = ('event_date', 'app_version', 'event_name', 'screen_view', 'event_category')
 CHECKS = {
+    'previous_naming_label': 'Android 선행 네이밍과 연결된 현행 계약을 비교하세요. 정상 별칭으로 허용하지 않으며 실제 적용 버전은 별도 확인합니다.',
     'unregistered_label': '고정된 명세 커밋의 현행·과거 목록과 SDK의 label 철자를 확인하세요.',
     'historical_label_still_collected': '관측 버전의 배포일과 새 로깅 전환 범위를 확인하세요. 과거 데이터는 자동 수정하지 않습니다.',
     'legacy_event_name': 'CAMPUS·BUSINESS·USER의 신규 전송 경로와 해당 버전의 전환 계획을 확인하세요.',
@@ -71,13 +72,16 @@ def investigate(catalog, report, rows, limit=4):
     for label, platform in selected:
         evidence_rows = row_index[(label, platform)]
         reasons = sorted(groups[(label, platform)], key=lambda f: f['reason'])
-        contracts = [c for c in catalog['by_label'].get(label, [])
+        correspondence = next((f.get('naming_correspondence') for f in reasons if f.get('naming_correspondence')), None)
+        reference_label = correspondence['current_label'] if correspondence else label
+        contracts = [c for c in catalog['by_label'].get(reference_label, [])
                      if not c['platforms'] or platform in c['platforms']]
         fields = ('names', 'screens', 'categories', 'platforms', 'status', 'url')
         dates = sorted({r['event_date'] for r in evidence_rows
                         if re.fullmatch(r'\d{8}', str(r.get('event_date', '')))})
         investigations.append(dict(
             id='R' + str(len(investigations) + 1), label=identifier(label), platform=identifier(platform),
+            naming_correspondence=correspondence,
             observed_events=sum(int(r['event_count']) for r in evidence_rows),
             largest_single_rule_events=max(f['platform_counts'][platform] for f in reasons),
             reasons=[dict(reason=f['reason'], events=f['platform_counts'][platform]) for f in reasons],
