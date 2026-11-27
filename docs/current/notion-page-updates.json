@@ -1,5 +1,5 @@
 {
-  "reason": "2026-11-27 사용자 확정: 현행 swipe 계약은 IOS 전용. 혼합 페이지의 click은 개별 범위를 보존하며 원본 동기화 스냅샷은 변경하지 않는다.; 2026-11-28 프로필 시간표 명세에 PC 홈의 별도 계약 연결",
+  "reason": "2026-11-27 사용자 확정: 현행 swipe 계약은 IOS 전용. 혼합 페이지의 click은 개별 범위를 보존하며 원본 동기화 스냅샷은 변경하지 않는다.; 2026-11-28 프로필 시간표 명세에 PC 홈의 별도 계약 연결; 2026-11-28 구형 WEB 햄버거 레거시 안내의 실제 적용 범위 정정",
   "pages": [
     {
       "source": {
@@ -605,6 +605,52 @@
           "903187d9-a83c-4623-bab3-72e21857ccff",
           "5e5cd343-caaf-4df9-8379-58cb0830ecc2"
         ]
+      }
+    },
+    {
+      "source": {
+        "id": "b150221954bc8281b86e81d96cf14724",
+        "title": "1-2 햄버거 → 상점 카테고리 (클릭) - 레거시",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/b150221954bc8281b86e81d96cf14724",
+        "platforms": [
+          "WEB",
+          "ANDROID",
+          "IOS"
+        ],
+        "properties": {
+          "platform": [
+            "WEB",
+            "ANDROID",
+            "IOS"
+          ],
+          "url": "https://app.notion.com/p/b150221954bc8281b86e81d96cf14724",
+          "상태": "완료",
+          "생성일": "2026-11-23T13:38:16.060Z",
+          "이벤트 이름": "1-2 햄버거 → 상점 카테고리 (클릭) - 레거시",
+          "태그": [
+            "1. 메인 -> 카테고리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n<span color=\"orange\">event\\_params.key</span>\n\n<ul>\n<li>\nevent\\_label : hamburger\n</li>\n<li>\nvalue : 주변상점 \n</li>\n<li>\nevent\\_category : click <br />\n</li>\n</ul>\n\n<p>\n햄버거 토글을 누른뒤 주변상점을 클릭하는 이벤트 입니다. \n</p>\n\n<p />\n\n<p>\n안드로이드 \n</p>\n\n<p>\nevent\\_label : hambuger\\_shop 으로 나오고 있음. \n</p>\n\n- 레거시: 구형 햄버거 로그는 삭제 대상이다. <date start=\"2026-11-28\" /> 확인 시 현재 모바일 WEB 홈·시간표에는 햄버거가 없지만 일부 구형 화면의 WEB 패널 코드는 남아 있다. 해당 패널의 로그만 제거하고 메뉴 기능·과거 수집분을 보존한다. Android·iOS 및 홈 하단 카테고리 로그를 같은 이유로 일괄 삭제하지 않는다. <mention url=\"https://app.notion.com/p/4250221954bc8179ad6ddc9414495902\">모바일 WEB 햄버거 패널 로깅 — 레거시</mention>를 따른다.\n\n### 참고사진 (기능)\n\n<columns>\n<column ratio=\"50\">\n<b>웹</b>\n\n<b>참고사진 · 웹</b>\n\n해당 없음 (레거시)\n</column>\n<column ratio=\"50\">\n<b>모바일</b>\n\n<b>참고사진 · 모바일</b>\n\n해당 없음 (레거시)\n</column>\n</columns>\n</toggle>\n\n<toggle>\n새 로깅\n\n레거시.\n</toggle>",
+        "last_edited_at": "2026-11-27T15:38:59.464Z"
+      },
+      "manifest": {
+        "notion_id": "b150221954bc8281b86e81d96cf14724",
+        "title": "1-2 햄버거 → 상점 카테고리 (클릭) - 레거시",
+        "service": "주변상점",
+        "path": "event-log/01-주변상점/1-2-햄버거-→-상점-카테고리-(클릭)-레거시.md",
+        "notion_url": "https://app.notion.com/p/b150221954bc8281b86e81d96cf14724",
+        "platforms": [
+          "WEB",
+          "ANDROID",
+          "IOS"
+        ],
+        "status": "완료",
+        "source_last_edited_at": "2026-11-27T15:38:59.464Z",
+        "source_body_sha256": "62b7e89b69de01d2e60e8776701de865945b739c9e06e94ec8512b7a23af716e",
+        "output_sha256": "5eccb35e17d50f4c052202d551730de3e834b28e5e0edc59de1a52af981b2a4f",
+        "image_ids": []
       }
     }
   ]
