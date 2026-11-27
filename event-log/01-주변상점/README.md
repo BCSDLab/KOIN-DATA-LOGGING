@@ -64,3 +64,15 @@ Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 
 | [4-5 전화 주문 혜택 상점상세 전화 (클릭) ](4-5-%EC%A0%84%ED%99%94-%EC%A3%BC%EB%AC%B8-%ED%98%9C%ED%83%9D-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EC%A0%84%ED%99%94-%28%ED%81%B4%EB%A6%AD%29.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/d270221954bc821d95768159502d9ad2) |
 | [4-6 상점 혜택 화면 뒤로가기 (Click · Swipe)](4-6-%EC%83%81%EC%A0%90-%ED%98%9C%ED%83%9D-%ED%99%94%EB%A9%B4-%EB%92%A4%EB%A1%9C%EA%B0%80%EA%B8%B0-%28Click-%C2%B7-Swipe%29.md) | IOS, ANDROID | [원문](https://app.notion.com/p/6010221954bc83ecaa0d01f8bb852fea) |
 | [4-7 상점 혜택 문구 펼치기 (클릭)](4-7-%EC%83%81%EC%A0%90-%ED%98%9C%ED%83%9D-%EB%AC%B8%EA%B5%AC-%ED%8E%BC%EC%B9%98%EA%B8%B0-%28%ED%81%B4%EB%A6%AD%29.md) | IOS, ANDROID | [원문](https://app.notion.com/p/ee70221954bc82c69fdc01063313bb55) |
+| [해결  · 하위 이슈 기록 · 8f102219](%ED%95%B4%EA%B2%B0-8f102219.md) |  | [원문](https://app.notion.com/p/8f10221954bc8205b0bd01e687232cc5) |
+| [해결 (1) · 하위 이슈 기록 · 8a902219](%ED%95%B4%EA%B2%B0-%281%29-8a902219.md) |  | [원문](https://app.notion.com/p/8a90221954bc82429e7901ca01aef8d2) |
+| [해결 (1) · 하위 이슈 기록 · 37202219](%ED%95%B4%EA%B2%B0-%281%29-37202219.md) |  | [원문](https://app.notion.com/p/3720221954bc829494e8817700c89d0c) |
+| [해결 (1) · 하위 이슈 기록 · 82d02219](%ED%95%B4%EA%B2%B0-%281%29-82d02219.md) |  | [원문](https://app.notion.com/p/82d0221954bc828db13081821c421e0c) |
+| [해결 (1) · 하위 이슈 기록 · 96202219](%ED%95%B4%EA%B2%B0-%281%29-96202219.md) |  | [원문](https://app.notion.com/p/9620221954bc821d96770147757a0471) |
+| [해결 (1) · 하위 이슈 기록 · d5202219](%ED%95%B4%EA%B2%B0-%281%29-d5202219.md) |  | [원문](https://app.notion.com/p/d520221954bc831e95ec818df511e605) |
+| [해결 (1) · 하위 이슈 기록 · 51702219](%ED%95%B4%EA%B2%B0-%281%29-51702219.md) |  | [원문](https://app.notion.com/p/5170221954bc82808ffb81b81fbd7cf9) |
+| [해결 (1) · 하위 이슈 기록 · 4bf02219](%ED%95%B4%EA%B2%B0-%281%29-4bf02219.md) |  | [원문](https://app.notion.com/p/4bf0221954bc835f97e901a671bd0cf9) |
+| [해결 (1) · 하위 이슈 기록 · ef302219](%ED%95%B4%EA%B2%B0-%281%29-ef302219.md) |  | [원문](https://app.notion.com/p/ef30221954bc828e9dcd810b198746b6) |
+| [해결 (2) · 하위 이슈 기록 · c8702219](%ED%95%B4%EA%B2%B0-%282%29-c8702219.md) |  | [원문](https://app.notion.com/p/c870221954bc82c3902001306139bd0e) |
+| [해결 (4) · 하위 이슈 기록 · 3ca02219](%ED%95%B4%EA%B2%B0-%284%29-3ca02219.md) |  | [원문](https://app.notion.com/p/3ca0221954bc836fadf401d7f03dd980) |
+| [해결 (3) · 하위 이슈 기록 · cda02219](%ED%95%B4%EA%B2%B0-%283%29-cda02219.md) |  | [원문](https://app.notion.com/p/cda0221954bc821e98e10152ba778f43) |

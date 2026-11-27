@@ -87,3 +87,7 @@ Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 
 | [9-7 주문내역 같은 메뉴 담기](9-7-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EA%B0%99%EC%9D%80-%EB%A9%94%EB%89%B4-%EB%8B%B4%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/afd0221954bc829e8bd581c95f60c67f) |
 | [9-8 주문내역 준비 중 주문 상세보기 ](9-8-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EC%A4%80%EB%B9%84-%EC%A4%91-%EC%A3%BC%EB%AC%B8-%EC%83%81%EC%84%B8%EB%B3%B4%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/c410221954bc83d9bf328124220d6eae) |
 | [9-9 주문내역 장바구니 진입](9-9-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%A7%84%EC%9E%85.md) | ANDROID, IOS | [원문](https://app.notion.com/p/ac80221954bc8369aae70146c35c81e5) |
+| [해결  · 하위 이슈 기록 · 7a502219](%ED%95%B4%EA%B2%B0-7a502219.md) |  | [원문](https://app.notion.com/p/7a50221954bc837da8d48136269b2ff0) |
+| [해결 (1) · 하위 이슈 기록 · b3302219](%ED%95%B4%EA%B2%B0-%281%29-b3302219.md) |  | [원문](https://app.notion.com/p/b330221954bc82a8be5d8122eb9cc100) |
+| [해결 (1) · 하위 이슈 기록 · d5102219](%ED%95%B4%EA%B2%B0-%281%29-d5102219.md) |  | [원문](https://app.notion.com/p/d510221954bc82f4a15581a2282b795b) |
+| [해결 (1) · 하위 이슈 기록 · 83402219](%ED%95%B4%EA%B2%B0-%281%29-83402219.md) |  | [원문](https://app.notion.com/p/8340221954bc8302851b013308f1228f) |

@@ -55,7 +55,8 @@ export function verifyCurrent(root,{imageCache}={}){
  check(pages.length===summary.nonblank_pages,'Page count');
  check(blankPages.length===summary.blank_pages,'Blank page count');
  const additionalPath='docs/current/additional-notion-pages.json';
- const additional=fs.existsSync(safe(additionalPath))?json(additionalPath).pages:[];
+ const additionalState=fs.existsSync(safe(additionalPath))?json(additionalPath):{pages:[]};
+ const additional=additionalState.pages;
  for(const item of additional){
   const s=item.source,m=item.manifest;
   check(!sourceMap.has(s.id),'Duplicate additional source ID '+s.id);
@@ -72,6 +73,12 @@ export function verifyCurrent(root,{imageCache}={}){
   }
  }
  check(images.size===summary.images.unique_files,'Unique image count');
+ for(const image of additionalState.images||[]){
+  const previous=images.get(image.id);
+  check(!previous||(previous.git_blob_sha===image.git_blob_sha&&previous.sha256===image.sha256),'Additional image identity '+image.id);
+  if(!previous)images.set(image.id,image);
+ }
+
  let references=0,notionLinks=0;
  for(const m of pages){
   check(!ids.has(m.notion_id),'Duplicate page ID '+m.notion_id);ids.add(m.notion_id);
@@ -144,7 +151,7 @@ export function verifyCurrent(root,{imageCache}={}){
   }
  }
  check(ids.size===sources.length,'All source pages accounted for');
- check(references===summary.images.occurrences,'Image reference count');
+ check(references===summary.images.occurrences+additional.reduce((n,x)=>n+x.manifest.image_ids.length,0),'Image reference count');
  let imagesChecked=0;
  for(const image of images.values()){
   try{
