@@ -13,8 +13,8 @@ on:
         description: 'Stage 채널에 Stage/Prod 결과 전송'
         type: boolean
         default: true
-      api_smoke_only:
-        description: '합성 계약으로 AI API만 시험 (BigQuery·Slack 실행 안 함)'
+      offline_check:
+        description: '합성 데이터로 규칙 상세 분석 시험 (BigQuery·Slack 실행 안 함)'
         type: boolean
         default: false
 
@@ -42,7 +42,7 @@ jobs:
           cache: pip
           cache-dependency-path: automation/logging-audit/requirements.txt
       - name: 검수 주 결정
-        if: ${{ !inputs.api_smoke_only }}
+        if: ${{ !inputs.offline_check }}
         id: week
         env:
           REQUESTED_WEEK: ${{ inputs.week_start }}
@@ -52,7 +52,7 @@ jobs:
           week="$(python run.py --print-week-start "${args[@]}")"
           echo "start=$week" >> "$GITHUB_OUTPUT"
       - name: 전송 상태 복원
-        if: ${{ !inputs.api_smoke_only }}
+        if: ${{ !inputs.offline_check }}
         id: receipt
         uses: actions/cache/restore@v4
         with:
@@ -61,9 +61,10 @@ jobs:
           restore-keys: |
             logging-audit-delivery-${{ steps.week.outputs.start }}-
       - name: 검사 의존성 설치
+        if: ${{ !inputs.offline_check }}
         run: python -m pip install -r requirements.txt
       - name: Google Cloud 인증 (Workload Identity)
-        if: ${{ !inputs.api_smoke_only && vars.GCP_AUDIT_WIF_PROVIDER != '' && vars.GCP_AUDIT_SERVICE_ACCOUNT != '' }}
+        if: ${{ !inputs.offline_check && vars.GCP_AUDIT_WIF_PROVIDER != '' && vars.GCP_AUDIT_SERVICE_ACCOUNT != '' }}
         id: wif
         continue-on-error: true
         uses: google-github-actions/auth@v3
@@ -71,18 +72,16 @@ jobs:
           workload_identity_provider: ${{ vars.GCP_AUDIT_WIF_PROVIDER }}
           service_account: ${{ vars.GCP_AUDIT_SERVICE_ACCOUNT }}
       - name: Google Cloud 인증 (기존 전용 계정 키)
-        if: ${{ !inputs.api_smoke_only && vars.GCP_AUDIT_WIF_PROVIDER == '' }}
+        if: ${{ !inputs.offline_check && vars.GCP_AUDIT_WIF_PROVIDER == '' }}
         id: key
         continue-on-error: true
         uses: google-github-actions/auth@v3
         with:
           credentials_json: ${{ secrets.GCP_AUDIT_CREDENTIALS_JSON }}
-      - name: GitHub main 명세·Stage/Prod DA1·DA2 및 기존 event_name 검사
-        if: ${{ always() && !inputs.api_smoke_only && steps.week.outcome == 'success' }}
+      - name: GitHub 명세·Stage/Prod 플랫폼별 규칙 검수 및 상세 분석
+        if: ${{ always() && !inputs.offline_check && steps.week.outcome == 'success' }}
         env:
           SLACK_LOGGING_AUDIT_STAGE_WEBHOOK: ${{ secrets.SLACK_LOGGING_AUDIT_STAGE_WEBHOOK }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_AGENT_MODEL: ${{ vars.OPENAI_AGENT_MODEL || 'gpt-6-astra' }}
           GH_ACTIONS_READ_TOKEN: ${{ github.token }}
           AUDIT_WEEK: ${{ steps.week.outputs.start }}
           SEND_SLACK: ${{ github.event_name == 'schedule' || inputs.send_slack }}
@@ -90,15 +89,14 @@ jobs:
           args=()
           if [[ "$SEND_SLACK" == "true" ]]; then args+=(--send); fi
           python run.py --week-start "$AUDIT_WEEK" "${args[@]}"
-      - name: AI API 합성 계약 시험 (Slack·BigQuery 없음)
-        if: ${{ inputs.api_smoke_only }}
+      - name: 규칙 상세 분석 합성 시험 (외부 조회·Slack 없음)
+        if: ${{ inputs.offline_check }}
         timeout-minutes: 6
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_AGENT_MODEL: ${{ vars.OPENAI_AGENT_MODEL || 'gpt-6-astra' }}
-        run: python api_smoke.py
+        run: |
+          python -m unittest discover -s tests
+          python offline_check.py
       - name: 전송 상태 보존
-        if: ${{ always() && !inputs.api_smoke_only && steps.week.outcome == 'success' && steps.receipt.outputs.cache-hit != 'true' && hashFiles('automation/logging-audit/.audit-state/**') != '' }}
+        if: ${{ always() && !inputs.offline_check && steps.week.outcome == 'success' && steps.receipt.outputs.cache-hit != 'true' && hashFiles('automation/logging-audit/.audit-state/**') != '' }}
         uses: actions/cache/save@v4
         with:
           path: automation/logging-audit/.audit-state
@@ -107,7 +105,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: logging-audit-results-${{ steps.week.outputs.start }}
+          name: logging-audit-results-${{ steps.week.outputs.start || 'offline' }}
           path: automation/logging-audit/reports/
           if-no-files-found: warn
           retention-days: 35

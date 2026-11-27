@@ -10,7 +10,7 @@ from koin_weekly_audit.bigquery_source import fetch
 from koin_weekly_audit.contracts import build_catalog, compare
 from koin_weekly_audit.notion_source import NotionSource, IncompleteSource
 from koin_weekly_audit.notify import send_once, slack_text, slack_payload, detail_markdown
-from koin_weekly_audit.agent import investigate
+from koin_weekly_audit.investigation import investigate
 from koin_weekly_audit.github_source import GitHubSource
 from koin_weekly_audit.actions import summary_url
 from koin_weekly_audit.handoff import developer_handoff
@@ -106,14 +106,11 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
             report.update(source_kind=source.get('source_kind') or ('notion' if isinstance(collector, NotionSource) else 'unknown'),
                           source_revision=source.get('source_revision'))
         try:
-            if investigator is investigate:
-                checkpoint = lambda result: (output / f'{environment}-agent.json').write_text(
-                    json.dumps(result, ensure_ascii=False, indent=2), encoding='utf8')
-                report['agent'] = investigator(catalog, report, primary, checkpoint=checkpoint)
-            else:
-                report['agent'] = investigator(catalog, report, primary)
+            report['investigation'] = investigator(catalog, report, primary)
         except Exception as exc:
-            report['agent'] = dict(status='failed', failure_type=type(exc).__name__)
+            report['investigation'] = dict(mode='rules', status='failed', failure_type=type(exc).__name__, external_ai_called=False)
+        (output / f'{environment}-investigation.json').write_text(
+            json.dumps(report['investigation'], ensure_ascii=False, indent=2), encoding='utf8')
         if detail_url:
             report['detail_url'] = detail_url
         message = slack_text(environment, start.isoformat(), end.isoformat(), report)
@@ -164,10 +161,9 @@ def main(argv=None):
         return 0
     reports = audit(start, args.output, args.state, send=args.send)
     summary = {k: {**{field: r.get(field) for field in ('complete', 'events', 'observed_labels', 'failure_type', 'delivery_status', 'delivery_reused', 'delivery_payload_matches', 'delivery_current_confirmed', 'delivery_sent_at', 'source_diagnostics', 'version_scope')},
-                   'agent_status': r.get('agent', {}).get('status'),
-                   'agent_failure_type': r.get('agent', {}).get('failure_type'),
-                   'agent_failure_code': r.get('agent', {}).get('failure_code'),
-                   'agent_failure_diagnostics': r.get('agent', {}).get('failure_diagnostics'),
+                   'investigation_mode': r.get('investigation', {}).get('mode'),
+                   'investigation_status': r.get('investigation', {}).get('status'),
+                   'investigation_failure_type': r.get('investigation', {}).get('failure_type'),
                    'missing_daily_tables': r.get('missing_daily_tables'),
                    'coverage': r.get('coverage')} for k, r in reports.items()}
     print(json.dumps(summary, ensure_ascii=False))
@@ -177,9 +173,9 @@ def main(argv=None):
     for environment, report in reports.items():
         if report.get('delivery_reused'):
             print(f'::warning title=Slack 전송 기록 재사용::{environment}: 새 전송이 아닙니다. 현재 알림 내용과 기존 영수증의 일치 여부를 확인하세요.')
-        if report.get('agent', {}).get('status') != 'completed':
-            print(f'::warning title=AI 추가 조사 미완료::{environment}: 규칙 검수 결과와 별도로 AI 추가 조사를 완료하지 못했습니다. 상세 보고서를 확인하세요.')
-    # Findings are audit results, not execution failures. Optional AI is separate.
+        if report.get('investigation', {}).get('status') != 'completed':
+            print(f'::warning title=규칙 기반 상세 분석 미완료::{environment}: 기본 검수와 별도로 상세 분석 상태를 확인하세요.')
+    # Findings are audit results, not execution failures.
     return 0 if reports and all(r.get('complete') and
                    (not args.send or (r.get('delivery_status') == 'sent' and
                     r.get('delivery_current_confirmed') is not False)) for r in reports.values()) else 1

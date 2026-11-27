@@ -43,24 +43,25 @@ class DeliveryEvidenceTest(unittest.TestCase):
             self.assertTrue(result['reused'])
             self.assertFalse(result['payload_matches'])
 
-    def test_ai_failure_and_actual_spec_source_visible_without_changing_findings(self):
+    def test_rule_analysis_and_actual_spec_source_visible_without_changing_findings(self):
         result = report()
         result['source_kind'] = 'github'
-        result['agent'] = {'status': 'failed', 'failure_type': 'APIError'}
+        result['investigation'] = {'mode': 'rules', 'status': 'completed'}
         result['normalization'] = {'android_debug_events': 1624}
         message = slack_text('stage', result['start'], result['end'], result)
-        self.assertIn('AI 추가 조사: 미완료', message)
+        self.assertIn('상세 분석: 규칙 기반 · 완료', message)
+        self.assertIn('AI API: 사용 안 함', message)
         self.assertIn('GitHub main · Notion 직접 대조 미실행', message)
         self.assertIn('디버그 1624건', message)
         self.assertIn('Android: 이상 없음', message)
         self.assertNotIn('APIError', message)
-        self.assertIn('AI 추가 조사: 미완료', json.dumps(slack_payload('stage', result['start'], result['end'], result), ensure_ascii=False))
+        self.assertIn('상세 분석: 규칙 기반 · 완료', json.dumps(slack_payload('stage', result['start'], result['end'], result), ensure_ascii=False))
 
-    def test_quota_is_ai_status_not_platform_logging_anomaly(self):
+    def test_analysis_failure_is_separate_from_platform_logging_anomaly(self):
         result = report()
-        result['agent'] = dict(status='failed', failure_diagnostics=dict(category='quota'))
+        result['investigation'] = dict(mode='rules', status='failed')
         message = slack_text('stage', result['start'], result['end'], result)
-        self.assertIn('사용량·결제 한도 확인 필요', message)
+        self.assertIn('상세 분석: 규칙 기반 · 미완료', message)
         self.assertIn('Android: 이상 없음', message)
 
 

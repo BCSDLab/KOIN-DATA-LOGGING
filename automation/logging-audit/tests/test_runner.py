@@ -37,14 +37,14 @@ class RunnerTest(unittest.TestCase):
             sender.assert_not_called()
             self.assertTrue(all(r['delivery_status'] == 'secret_missing' for r in reports.values()))
 
-    def test_exit_status_preserves_failures_but_optional_ai_is_warning(self):
+    def test_exit_status_preserves_query_and_delivery_failures(self):
         cases = [
-            (dict(complete=True, delivery_status='sent', agent=dict(status='failed')), True, 0),
-            (dict(complete=True, delivery_status='sent', delivery_current_confirmed=False, agent=dict(status='completed')), True, 1),
-            (dict(complete=True, delivery_status='not_requested', agent=dict(status='failed')), False, 0),
-            (dict(complete=False, delivery_status='sent', agent=dict(status='completed')), True, 1),
-            (dict(complete=True, delivery_status='failed', agent=dict(status='completed')), True, 1),
-            (dict(complete=True, delivery_status='secret_missing', agent=dict(status='completed')), True, 1),
+            (dict(complete=True, delivery_status='sent', investigation=dict(status='failed')), True, 0),
+            (dict(complete=True, delivery_status='sent', delivery_current_confirmed=False, investigation=dict(status='completed')), True, 1),
+            (dict(complete=True, delivery_status='not_requested', investigation=dict(status='failed')), False, 0),
+            (dict(complete=False, delivery_status='sent', investigation=dict(status='completed')), True, 1),
+            (dict(complete=True, delivery_status='failed', investigation=dict(status='completed')), True, 1),
+            (dict(complete=True, delivery_status='secret_missing', investigation=dict(status='completed')), True, 1),
         ]
         for report, send, expected in cases:
             with self.subTest(report=report), patch('run.audit', return_value={'stage':report}), patch.dict('os.environ', {}, clear=True):

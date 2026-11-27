@@ -61,10 +61,9 @@ def audit_context(report):
     lines = ['명세 기준: ' + source]
     if source == 'GitHub main':
         lines[-1] += ' · Notion 직접 대조 미실행'
-    status = report.get('agent', {}).get('status')
-    lines.append('AI 추가 조사: ' + ('완료' if status == 'completed' else '미완료 · 규칙 검수 결과와 별도'))
-    if status != 'completed' and report.get('agent', {}).get('failure_diagnostics', {}).get('category') == 'quota':
-        lines.append('AI API: 사용량·결제 한도 확인 필요')
+    status = report.get('investigation', {}).get('status')
+    lines.append('상세 분석: 규칙 기반 · ' + ('완료' if status == 'completed' else '미완료'))
+    lines.append('AI API: 사용 안 함')
     debug = report.get('normalization', {}).get('android_debug_events', 0)
     if debug:
         lines.append('Android 디버그 ' + str(debug) + '건: 접미사 제외 후 명세 대조')
@@ -83,7 +82,7 @@ def slack_payload(environment, start, end, report):
     blocks = [dict(type='header', text=dict(type='plain_text', text=('[Stage]' if environment == 'stage' else '[Prod]') + ' 주간 로깅 검수')),
               dict(type='context', elements=[dict(type='mrkdwn', text=f'{start} ~ {end} · KST')])]
     for section in notification_sections(report):
-        # Each platform is independent; never show AI failure as an event error.
+        # Analysis status does not change the independent platform findings.
         blocks.append(dict(type='section', text=dict(type='mrkdwn', text=section[:2900])))
     blocks.append(dict(type='context', elements=[dict(type='mrkdwn', text='\n'.join(audit_context(report)))]))
     if report.get('detail_url'):
@@ -104,21 +103,30 @@ def detail_markdown(reports):
                   '명세 커밋: `' + (report.get('source_revision') or '미확인') + '`',
                   'BigQuery 조회 job: `' + str(report.get('query_job_id') or '미확인') + '`', '']
         lines += audit_context(report) + ['']
-        agent = report.get('agent', {})
-        if agent.get('failure_diagnostics'):
-            diagnostic = agent['failure_diagnostics']
-            lines += ['AI 진단: ' + safe(diagnostic.get('category')) +
-                      ' · HTTP ' + safe(diagnostic.get('http_status')) +
-                      ' · API code ' + safe(diagnostic.get('api_code')), '']
-        if agent.get('status') == 'completed':
-            lines += ['### AI 추가 조사 (원인 가설)', '']
-            for note in agent.get('analysis', {}).get('investigations', []):
-                for key, title in (('observation', '관측'), ('hypothesis', '원인 가설'), ('next_action', '확인할 사항')):
-                    lines.append('- ' + title + ': ' + html.escape(str(note.get(key, ''))).replace('\n', ' '))
-                lines.append('- 근거: ' + ', '.join(safe(ref) for ref in note.get('evidence_ids', [])))
-            for limitation in agent.get('analysis', {}).get('limitations', []):
-                lines.append('- 조사 한계: ' + html.escape(str(limitation)).replace('\n', ' '))
-            lines += ['근거별 집계는 해당 환경의 agent.json 및 report.json에 보존됩니다.', '']
+        investigation = report.get('investigation', {})
+        if investigation.get('status') == 'completed':
+            lines += ['### 규칙 기반 상세 분석', '',
+                      '날짜·버전·명세를 추가 집계한 결과입니다. 확인 항목은 고정된 안내이며 원인 확정이나 AI 추론이 아닙니다.', '']
+            for item in investigation.get('investigations', []):
+                lines += ['#### ' + safe(item['id']) + ' · ' + safe(item['platform']) + ' · ' + safe(item['label']), '',
+                          '- 이 label 관측: ' + str(item['observed_events']) + '건 (오류 건수와 다름)',
+                          '- 사유별 발생: ' + ', '.join(safe(REASONS.get(r['reason'], r['reason'])) + ' ' + str(r['events']) + '건' for r in item['reasons']),
+                          '- 조회 범위 내 관측일: ' + safe(item['first_observed_date']) + ' ~ ' + safe(item['last_observed_date']), '']
+                lines += ['| 집계 기준 | 실제 값과 건수 |', '| --- | --- |']
+                for field, grouped in item['breakdowns'].items():
+                    values = '; '.join(safe(g['key']) + ' (' + str(g['events']) + '건)' for g in grouped['groups'])
+                    if grouped['omitted_groups']:
+                        values += '; 나머지 ' + str(grouped['omitted_groups']) + '개 값 · ' + str(grouped['omitted_events']) + '건'
+                    lines.append('| ' + safe(field) + ' | ' + values.replace('|', '&#124;') + ' |')
+                lines += ['']
+                for contract in item['contracts']:
+                    lines.append('- 명세: ' + '; '.join(safe(field) + '=' + safe(', '.join(contract.get(field, []))) for field in ('names', 'screens', 'categories', 'platforms')))
+                for check in item['checks']:
+                    lines.append('- 확인할 사항: ' + safe(check))
+                lines += ['']
+            for limitation in investigation.get('limitations', []):
+                lines.append('- 분석 한계: ' + html.escape(str(limitation)).replace('\n', ' '))
+            lines += ['근거·명세 출처·query job ID는 해당 환경의 investigation.json 및 report.json에 보존됩니다.', '']
         if not report.get('complete'):
             lines += notification_sections(report) + ['']
         for platform, name in PLATFORM_NAMES:
@@ -156,7 +164,7 @@ def detail_markdown(reports):
             lines += ['관측 없음 또는 조회 불완전']
         lines += ['']
         scope = report.get('version_scope', {})
-        lines += ['### 구버전·기타 버전 참고 (이상 판정 제외)', '', '모바일 검수 기준은 담당자가 확인한 버전입니다. Web은 전체 수집을 검사합니다. 구버전 및 기준 외 버전은 아래 집계로만 보존하며 AI 조사와 이상 알림에서 제외합니다.', '', '| 플랫폼 | 버전 | 구분 | 수집 건수 | label 수 |', '| --- | --- | --- | ---: | ---: |']
+        lines += ['### 구버전·기타 버전 참고 (이상 판정 제외)', '', '모바일 검수 기준은 담당자가 확인한 버전입니다. Web은 전체 수집을 검사합니다. 구버전 및 기준 외 버전은 아래 집계로만 보존하며 상세 분석과 이상 알림에서 제외합니다.', '', '| 플랫폼 | 버전 | 구분 | 수집 건수 | label 수 |', '| --- | --- | --- | ---: | ---: |']
         for row in scope.get('reference', []):
             kind = {'older':'구버전', 'newer_or_other':'기준보다 높은 버전·기타 빌드', 'unknown':'버전 미확인'}[row['classification']]
             lines.append('| ' + ' | '.join([safe(row['platform']), safe(row['app_version']), kind, str(row['events']), str(row['labels'])]) + ' |')
@@ -165,7 +173,7 @@ def detail_markdown(reports):
         lines += ['']
         previous = report.get('previous_period_recheck', {})
         lines += ['이전 기간 재검사: ' + ('완료' if previous.get('complete') else '불완전') + ' · 누락 ' + ', '.join(previous.get('missing_daily_tables', [])),
-                  'AI 추가 조사: ' + report.get('agent', {}).get('status', '미확인') + ' · ' + report.get('agent', {}).get('failure_type', ''), '']
+                  '규칙 기반 상세 분석: ' + report.get('investigation', {}).get('status', '미확인'), '']
     comparison = compare_environments(reports)
     lines += ['<a name="audit-environments"></a>', '', '## Stage · Prod 실제 수집 비교', '']
     if not comparison['complete']:
