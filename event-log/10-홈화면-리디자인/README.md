@@ -4,11 +4,17 @@
 
 Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 목록입니다.
 
+PC 홈 시간표는 1-14 제목 클릭(value=`시간표`)과 1-15 위젯 본문 클릭(value=`시간표 위젯`)으로 구분합니다. 두 계약 모두 WEB PC 전용·DA1이며, 4-1 프로필의 내 시간표와 별개입니다. 빨간 네모가 각 클릭 대상을 표시합니다. 명세 추가 상태는 로깅 필요이며 SDK 배포·수집 검증 완료를 의미하지 않습니다.
+
+PC 홈 시간표는 1-14 제목 클릭(value=`시간표`)과 1-15 위젯 본문 클릭(value=`시간표 위젯`)으로 구분합니다. 두 계약 모두 WEB PC 전용·DA1이며, 4-1 프로필의 내 시간표와 별개입니다. 빨간 네모가 각 클릭 대상을 표시합니다. 명세 추가 상태는 로깅 필요이며 SDK 배포·수집 검증 완료를 의미하지 않습니다.
+
 | 명세 | 플랫폼 | Notion |
 | --- | --- | --- |
 | [1-1 알림 클릭](1-1-%EC%95%8C%EB%A6%BC-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/0f20221954bc836fb2c10178919a2a43) |
 | [1-10 많이 찾는 상점 둘러보기 클릭](1-10-%EB%A7%8E%EC%9D%B4-%EC%B0%BE%EB%8A%94-%EC%83%81%EC%A0%90-%EB%91%98%EB%9F%AC%EB%B3%B4%EA%B8%B0-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/b2e0221954bc8234869c0157e41a0f06) |
 | [1-13 고정 배너 하단 점 선택](1-13-%EA%B3%A0%EC%A0%95-%EB%B0%B0%EB%84%88-%ED%95%98%EB%8B%A8-%EC%A0%90-%EC%84%A0%ED%83%9D.md) | WEB | [원문](https://app.notion.com/p/ba90221954bc83d2b27301fe44d60405) |
+| [1-14 PC 홈 시간표 제목 클릭](1-14-PC-%ED%99%88-%EC%8B%9C%EA%B0%84%ED%91%9C-%EC%A0%9C%EB%AA%A9-%ED%81%B4%EB%A6%AD.md) | WEB (PC 전용) | [원문](https://app.notion.com/p/4250221954bc810f9793d1c2659c9dfa) |
+| [1-15 PC 홈 시간표 위젯 본문 클릭](1-15-PC-%ED%99%88-%EC%8B%9C%EA%B0%84%ED%91%9C-%EC%9C%84%EC%A0%AF-%EB%B3%B8%EB%AC%B8-%ED%81%B4%EB%A6%AD.md) | WEB (PC 전용) | [원문](https://app.notion.com/p/4250221954bc818ba87dff2bbcf8d6a2) |
 | [1-2 알림 클릭 내부](1-2-%EC%95%8C%EB%A6%BC-%ED%81%B4%EB%A6%AD-%EB%82%B4%EB%B6%80.md) | ANDROID, IOS | [원문](https://app.notion.com/p/4fe0221954bc836e824c016c36ef659d) |
 | [1-2-1 알림 클릭 내부](1-2-1-%EC%95%8C%EB%A6%BC-%ED%81%B4%EB%A6%AD-%EB%82%B4%EB%B6%80.md) | ANDROID, IOS | [원문](https://app.notion.com/p/3c60221954bc8340b26181442675cd08) |
 | [1-2-2 알림 클릭 내부 ](1-2-2-%EC%95%8C%EB%A6%BC-%ED%81%B4%EB%A6%AD-%EB%82%B4%EB%B6%80.md) | ANDROID, IOS | [원문](https://app.notion.com/p/9090221954bc8323811b81a79ba224d3) |

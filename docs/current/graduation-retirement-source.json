@@ -1,0 +1,27 @@
+{
+  "reason": "2026-11-28 사용자 요청: WEB /graduation 라우트·전용 로그 제거, 과거 명세와 데이터 보존",
+  "pages": [
+    {
+      "source": {
+        "id": "4700221954bc82738723811d2d7f3cdf",
+        "title": "졸업학점 계산기 - 레거시",
+        "service": "공통 문서",
+        "url": "https://app.notion.com/p/4700221954bc82738723811d2d7f3cdf",
+        "platforms": [],
+        "properties": {
+          "title": "졸업학점 계산기 - 레거시"
+        },
+        "original_body": "<callout icon=\"🗃️\" color=\"gray_bg\">\n<b>레거시 — 현행 로깅 적용 대상에서 제외</b>\n\n- 분류일: <date start=\"2026-10-15\" />. 기존 로깅 16개 항목의 상태를 레거시로 분류.\n- 사유: 현재 웹 시간표·서비스 메뉴에서 졸학계 진입점을 확인할 수 없고, 사용자가 서비스 제거로 판단해 레거시 분류를 지시함.\n- 과거 로그·명세·사진은 보존. 2026-10-14 리네이밍 초안은 과거 참고 자료로 전환하고 신규 구현·활성 화면 정의에 적용하지 않음.\n- <date start=\"2026-11-28\" /> 사용자 추가 결정: WEB의 <code>/graduation</code> 페이지 라우트와 졸업학점 계산기 전용 로그 호출을 제거한다. 전용 화면·훅과 공유 헤더·푸터·학기 선택기의 졸업학점 계산기 분기를 정리한다. 일반 시간표 기능과 로그, 공유 학사정보 API, 과거 데이터·명세·사진은 보존한다.\n- 적용 상태: 코드 제거는 리뷰용 PR로 진행한다. 병합·배포·운영 수집 종료는 아직 확인하지 않았다. 위 2026-10-15 사유는 당시의 분류 이력이다.\n</callout>\n\n<callout icon=\"💡\" color=\"gray_bg\">\n<toggle>\nFirebase (<b>screen\\_view</b>)\n</toggle>\n</callout>\n\n<database url=\"https://app.notion.com/p/87b0221954bc8388a2db010e0d19d37a\" data-source-url=\"collection://3fa02219-54bc-8399-a5c9-874d905b7ac4\" inline=\"true\">\n버스 로깅 (1)\n</database>",
+        "last_edited_at": "2026-11-27T15:48:44.008Z"
+      },
+      "manifest": {
+        "notion_id": "4700221954bc82738723811d2d7f3cdf",
+        "title": "졸업학점 계산기 - 레거시",
+        "path": "docs/current/graduation-retirement.md",
+        "notion_url": "https://app.notion.com/p/4700221954bc82738723811d2d7f3cdf",
+        "source_body_sha256": "631a8a60a53011cada4f19af0dbd0502f3cb324e00a872b5a292b08b52ac8741",
+        "output_sha256": "2bd9bd5d261c72580db4863cbf250b765126873759f29ffd8799f3c46b5a89c4"
+      }
+    }
+  ]
+}
