@@ -66,10 +66,3 @@ Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 
 | [8-2. 지금 인기있는 공지 배너_클릭](8-2.-%EC%A7%80%EA%B8%88-%EC%9D%B8%EA%B8%B0%EC%9E%88%EB%8A%94-%EA%B3%B5%EC%A7%80-%EB%B0%B0%EB%84%88_%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/d030221954bc833fb65381e12a2e407b) |
 | [8-3. 키워드 관리 진입 배너_클릭](8-3.-%ED%82%A4%EC%9B%8C%EB%93%9C-%EA%B4%80%EB%A6%AC-%EC%A7%84%EC%9E%85-%EB%B0%B0%EB%84%88_%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/6dd0221954bc82a8847501645ef8ec98) |
 | [9-1. 키워드 게시물_알림](9-1.-%ED%82%A4%EC%9B%8C%EB%93%9C-%EA%B2%8C%EC%8B%9C%EB%AC%BC_%EC%95%8C%EB%A6%BC.md) | ANDROID, IOS | [원문](https://app.notion.com/p/a5d0221954bc83a793f801071c4eadcb) |
-
-## 본문이 없는 Notion 항목
-
-로깅 계약으로 추정하지 않고 원문 링크만 보존합니다.
-
-- [새 페이지](https://app.notion.com/p/b3c0221954bc83d698df81fd6c79a9e4)
-- [새 페이지](https://app.notion.com/p/8a20221954bc83e5a71881fa3f5a0ab9)

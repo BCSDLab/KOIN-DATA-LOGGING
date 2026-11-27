@@ -70,10 +70,3 @@ Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 
 | [6.9동아리_행사삭제 클릭](6.9%EB%8F%99%EC%95%84%EB%A6%AC_%ED%96%89%EC%82%AC%EC%82%AD%EC%A0%9C-%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS, WEB | [원문](https://app.notion.com/p/2830221954bc82248a99814370e9b303) |
 | [[레거시] 1-1 메인 → 콜밴팟 모집 보기](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-1-%EB%A9%94%EC%9D%B8-%E2%86%92-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%EB%AA%A8%EC%A7%91-%EB%B3%B4%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/aa70221954bc83f0b9c301f5cbbadf5a) |
 | [[레거시] 1-3 카테고리 → 콜밴팟 모집](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-1-3-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%E2%86%92-%EC%BD%9C%EB%B0%B4%ED%8C%9F-%EB%AA%A8%EC%A7%91.md) | ANDROID, IOS | [원문](https://app.notion.com/p/9270221954bc8315a1b901f156c7d7d7) |
-
-## 본문이 없는 Notion 항목
-
-로깅 계약으로 추정하지 않고 원문 링크만 보존합니다.
-
-- [새 페이지](https://app.notion.com/p/29f0221954bc8363b576819bcce4d68e)
-- [새 페이지](https://app.notion.com/p/b3a0221954bc83429c30017b91b839ec)

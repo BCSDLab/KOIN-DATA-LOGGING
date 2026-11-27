@@ -100,15 +100,3 @@ Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 
 | [9-8 주문내역 준비 중 주문 상세보기 ](9-8-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EC%A4%80%EB%B9%84-%EC%A4%91-%EC%A3%BC%EB%AC%B8-%EC%83%81%EC%84%B8%EB%B3%B4%EA%B8%B0.md) | ANDROID, IOS | [원문](https://app.notion.com/p/0890221954bc83af95af01a733bfd2f4) |
 | [9-9 주문내역 장바구니 진입](9-9-%EC%A3%BC%EB%AC%B8%EB%82%B4%EC%97%AD-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EC%A7%84%EC%9E%85.md) | ANDROID, IOS | [원문](https://app.notion.com/p/de10221954bc82a694eb0193a4bf7c07) |
 | [해결 (1)](%ED%95%B4%EA%B2%B0-%281%29-fb602219.md) |  | [원문](https://app.notion.com/p/4030221954bc8390a35281f0c4b348b1) |
-
-## 본문이 없는 Notion 항목
-
-로깅 계약으로 추정하지 않고 원문 링크만 보존합니다.
-
-- [7-30 ~ 결제 수단 (확정 시 명세)](https://app.notion.com/p/1d40221954bc83e3bf25817045b9a75e)
-- [7-31 ~  결제 페이지 동의 클릭  (동의 페이지 확정시 명세)](https://app.notion.com/p/9150221954bc82c1926201a3dde71a4d)
-- [새 페이지](https://app.notion.com/p/37c0221954bc82e7a49601a906330dc8)
-- [새 페이지](https://app.notion.com/p/fd40221954bc82efa9c481378146ad70)
-- [새 페이지](https://app.notion.com/p/8440221954bc821fbbce814412789ef7)
-- [새 페이지](https://app.notion.com/p/a6f0221954bc82a5bb18818418529729)
-- [새 페이지](https://app.notion.com/p/04f0221954bc83beabde81be25f52793)

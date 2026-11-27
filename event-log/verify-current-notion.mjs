@@ -113,12 +113,25 @@ export function verifyCurrent(root,{imageCache}={}){
   }
   check(!/X-Amz-(?:Signature|Credential)=|[?&]sig=/i.test(text),'Signed URL '+m.path);
  }
+ const retirementPath='docs/current/removed-blank-pages.json';
+ const retirements=fs.existsSync(safe(retirementPath))?json(retirementPath).pages:[];
+ const retired=new Set();
+ for(const item of retirements){
+  const known=blankPages.find(b=>b.notion_id===item.notion_id);
+  check(!retired.has(item.notion_id),'Duplicate retired blank source '+item.notion_id);
+  check(Boolean(known)&&sourceMap.get(item.notion_id)?.original_body==='','Retirement must reference a known blank source '+item.notion_id);
+  check(item.status==='in_trash'&&item.source_body_empty===true,'Retirement confirmation '+item.notion_id);
+  retired.add(item.notion_id);
+ }
  for(const b of blankPages){
   check(!ids.has(b.notion_id),'Duplicate blank source ID '+b.notion_id);ids.add(b.notion_id);
   const s=sourceMap.get(b.notion_id);check(s?.original_body==='','Blank source '+b.notion_id);
   const m=pages.find(m=>m.service===b.service);
   check(Boolean(m),'Blank source service '+b.notion_id);
-  if(m)check(read(path.posix.dirname(m.path)+'/README.md').toString().includes(b.url),'Blank page link '+b.notion_id);
+  if(m){
+   const listed=read(path.posix.dirname(m.path)+'/README.md').toString().includes(b.url);
+   check(retired.has(b.notion_id)?!listed:listed,(retired.has(b.notion_id)?'Retired blank still linked ':'Blank page link ')+b.notion_id);
+  }
  }
  check(ids.size===sources.length,'All source pages accounted for');
  check(references===summary.images.occurrences,'Image reference count');
@@ -145,7 +158,7 @@ export function verifyCurrent(root,{imageCache}={}){
  const known=new Set([...files,...summary.previous_exports.map(p=>p.previous_path)]);
  function walk(dir){for(const name of fs.readdirSync(safe(dir))){const rel=path.posix.join(dir,name);if(fs.statSync(safe(rel)).isDirectory())walk(rel);else if(rel.endsWith('.md')&&name!=='README.md')check(known.has(rel),'Unmapped reader document '+rel);}}
  walk('event-log');
- return {pages:pages.length,blankPages:blankPages.length,sourceRows:sources.length,services:manifests.length,imageReferences:references,imagesChecked,notionLinks,errors};
+ return {pages:pages.length,blankPages:blankPages.length,activeBlankPages:blankPages.length-retired.size,retiredBlankPages:retired.size,sourceRows:sources.length,services:manifests.length,imageReferences:references,imagesChecked,notionLinks,errors};
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const root=process.argv[2]||path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
