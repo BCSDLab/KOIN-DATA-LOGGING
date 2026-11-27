@@ -51,6 +51,10 @@ def developer_handoff(reports, reasons=None):
                 versions = sorted({v for f in issues for v in f.get('platform_versions', {}).get(platform, [])})
                 dates = sorted({d for f in issues for d in f.get('platform_dates', {}).get(platform, [])})
                 urls = sorted({u for f in issues for u in f.get('specification_urls', []) if u.startswith('https://github.com/BCSDLab/KOIN-DATA-LOGGING/')})
+                correspondence = next((f.get('naming_correspondence') for f in issues if f.get('naming_correspondence')), None)
+                if correspondence:
+                    lines += ['', '**선행 네이밍 대응:** ' + text(correspondence['current_label']) + ' · [Android 릴리스 코드](' + correspondence['source_url'] + ')',
+                              '대응 관계를 확인한 것으로 정상 별칭으로 허용한 것은 아닙니다. 현재 라벨과 다른 필드는 계속 확인 대상입니다.']
                 lines += ['', '버전: ' + text(', '.join(versions) or '미확인') + ' · 관측일: ' + text(', '.join(dates) or '미확인'), '', '**명세 바로가기:** ' + (' · '.join(specification_link(u) for u in urls) or '등록된 명세 없음 — 계약 등록 또는 SDK label 확인 필요'), '', '<details>', '<summary>필드별 원문·날짜·재현 근거 펼치기</summary>', '']
                 for f in issues:
                     issue_id = hashlib.sha256('|'.join((env, platform, f['label'], f['reason'])).encode()).hexdigest()[:10]

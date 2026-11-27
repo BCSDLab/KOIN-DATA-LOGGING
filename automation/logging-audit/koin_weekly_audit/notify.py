@@ -12,6 +12,7 @@ from .handoff import developer_handoff
 
 
 REASONS = {
+    'previous_naming_label': '선행 네이밍 — 현행 라벨과 다름',
     'event_label_missing': 'event_label 누락', 'unregistered_label': '명세에 없는 label',
     'historical_label_still_collected': '과거 명세 label 수집', 'legacy_event_name': '과거 event_name 수집',
     'specification_conflict': '명세 충돌·미확정 — 담당자 확인 필요',
