@@ -69,3 +69,19 @@ test('retired blank links must disappear from current indexes',t=>{
  f.write('docs/current/removed-blank-pages.json',JSON.stringify({pages:[{notion_id:id,status:'in_trash',source_body_empty:true}]}));
  assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Retired blank still linked')));
 });
+
+function supplementalFixture(f){
+ const id='cccccccccccccccccccccccccccccccc',doc='event-log/01-service/legacy-notice.md',url='https://app.notion.com/p/'+id;
+ const properties={title:'Legacy notice'},source={id,title:'Legacy notice',service:'주변상점',url,platforms:[],properties,original_body:'레거시 보존 안내'};
+ const tick=String.fromCharCode(96),output='# Legacy notice\n\n플랫폼: \n[Notion 기준 명세]('+url+')\n원본 ID: '+tick+id+tick+'\n\n<!-- notion-body:start -->\n레거시 보존 안내\n<!-- notion-body:end -->\n'+tick.repeat(3)+'json\n'+JSON.stringify(properties)+'\n'+tick.repeat(3)+'\n';
+ const manifest={notion_id:id,title:source.title,service:source.service,path:doc,notion_url:url,platforms:[],source_body_sha256:sha256(source.original_body),output_sha256:sha256(output),image_ids:[]};
+ const item={source,manifest};f.write(doc,output);f.write('docs/current/additional-notion-pages.json',JSON.stringify({pages:[item]}));f.write('event-log/01-service/README.md',f.read('event-log/01-service/README.md')+'[Legacy notice](legacy-notice.md)\n');return {doc,item};
+}
+test('additional source uses all normal page checks without rewriting the initial snapshot',t=>{
+ const f=fixture(t);supplementalFixture(f);const r=verifyCurrent(f.root);assert.deepEqual(r.errors,[]);assert.equal(r.pages,2);assert.equal(r.sourceRows,3);
+});
+test('additional source text cannot change even after refreshing its output hash',t=>{
+ const f=fixture(t),s=supplementalFixture(f),changed=f.read(s.doc).replace('레거시 보존 안내','원문과 다른 내용');
+ f.write(s.doc,changed);s.item.manifest.output_sha256=sha256(changed);f.write('docs/current/additional-notion-pages.json',JSON.stringify({pages:[s.item]}));
+ assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Source prose')));
+});

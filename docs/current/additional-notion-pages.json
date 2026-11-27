@@ -1,0 +1,770 @@
+{
+  "date": "2026-11-27",
+  "reason": "필터 없는 데이터소스 전수조회와 하위 페이지 재귀조회에서 발견한 레거시 안내 2개·이슈 기록 21개",
+  "pages": [
+    {
+      "source": {
+        "id": "53e0221954bc83f2aebe01244944f9f4",
+        "title": "[레거시] 새 페이지",
+        "service": "동아리 - 레거시",
+        "url": "https://app.notion.com/p/53e0221954bc83f2aebe01244944f9f4",
+        "platforms": [],
+        "properties": {
+          "url": "https://app.notion.com/p/53e0221954bc83f2aebe01244944f9f4",
+          "상태": "레거시",
+          "이름": "\\[레거시\\] 새 페이지"
+        },
+        "original_body": "<callout icon=\"🗃️\" color=\"gray_bg\">\n<b>레거시 — 동아리 로깅 전체 현행 적용 제외</b>\n\n- <date start=\"2026-11-04\" /> 사용자 지시로 동아리 로깅 전체를 레거시로 보존한다. 이 페이지는 신규 구현·추가 전송·새 네이밍 적용의 기준이 아니다.\n- 기존 event\\_name·event\\_label·value·category·사진·플랫폼과 원문을 그대로 보존한다. 새 라벨을 만들거나 DA1/DA2로 재배정하지 않는다.\n- 서비스 전체 기준: <mention url=\"https://app.notion.com/p/f2b0221954bc8289af3f812cfbbe9ca8\">동아리 - 레거시</mention>. 실제 SDK 수집 종료 여부는 별도 확인 대상이다.\n</callout>",
+        "last_edited_at": "2026-11-23T13:39:22.321Z"
+      },
+      "manifest": {
+        "notion_id": "53e0221954bc83f2aebe01244944f9f4",
+        "title": "[레거시] 새 페이지",
+        "service": "동아리 - 레거시",
+        "path": "event-log/20-동아리-레거시/[레거시]-새-페이지-53e02219.md",
+        "notion_url": "https://app.notion.com/p/53e0221954bc83f2aebe01244944f9f4",
+        "platforms": [],
+        "status": "레거시",
+        "source_last_edited_at": "2026-11-23T13:39:22.321Z",
+        "source_body_sha256": "c6451e84c92962f0a13d0578846b49103624e9f12421d538afa7a84b029f1ad3",
+        "output_sha256": "594973d79c9751ae5ddbd0a1b8ec315aadd7ee7e457dd4e3e40ba736fd0e34be",
+        "image_ids": []
+      }
+    },
+    {
+      "source": {
+        "id": "2770221954bc83ac9cf3017b53f9d266",
+        "title": "[레거시] 새 페이지",
+        "service": "동아리 - 레거시",
+        "url": "https://app.notion.com/p/2770221954bc83ac9cf3017b53f9d266",
+        "platforms": [],
+        "properties": {
+          "url": "https://app.notion.com/p/2770221954bc83ac9cf3017b53f9d266",
+          "상태": "레거시",
+          "이름": "\\[레거시\\] 새 페이지"
+        },
+        "original_body": "<callout icon=\"🗃️\" color=\"gray_bg\">\n<b>레거시 — 동아리 로깅 전체 현행 적용 제외</b>\n\n- <date start=\"2026-11-04\" /> 사용자 지시로 동아리 로깅 전체를 레거시로 보존한다. 이 페이지는 신규 구현·추가 전송·새 네이밍 적용의 기준이 아니다.\n- 기존 event\\_name·event\\_label·value·category·사진·플랫폼과 원문을 그대로 보존한다. 새 라벨을 만들거나 DA1/DA2로 재배정하지 않는다.\n- 서비스 전체 기준: <mention url=\"https://app.notion.com/p/f2b0221954bc8289af3f812cfbbe9ca8\">동아리 - 레거시</mention>. 실제 SDK 수집 종료 여부는 별도 확인 대상이다.\n</callout>",
+        "last_edited_at": "2026-11-23T13:38:12.541Z"
+      },
+      "manifest": {
+        "notion_id": "2770221954bc83ac9cf3017b53f9d266",
+        "title": "[레거시] 새 페이지",
+        "service": "동아리 - 레거시",
+        "path": "event-log/20-동아리-레거시/[레거시]-새-페이지-27702219.md",
+        "notion_url": "https://app.notion.com/p/2770221954bc83ac9cf3017b53f9d266",
+        "platforms": [],
+        "status": "레거시",
+        "source_last_edited_at": "2026-11-23T13:38:12.541Z",
+        "source_body_sha256": "c6451e84c92962f0a13d0578846b49103624e9f12421d538afa7a84b029f1ad3",
+        "output_sha256": "1a7e79037e43f5bff1eab05cf70054da57e53df570eea5f97fba3b64210f31b2",
+        "image_ids": []
+      }
+    },
+    {
+      "source": {
+        "id": "2db0221954bc8281b49881f9c2794a59",
+        "title": "해결 ",
+        "service": "미래의 주변상점 - 레거시",
+        "url": "https://app.notion.com/p/2db0221954bc8281b49881f9c2794a59",
+        "platforms": [],
+        "properties": {
+          "title": "해결 "
+        },
+        "original_body": "<p />\n\n<p>\n웹 : \n</p>\n\n<p>\n주변상점에서 메인페이지로 나갔다가 들어온 뒤 카테고리를 누르면 체류 시간이 0 혹은 1로 나오는 이슈 \n</p>\n\n<image source=\"notion-file-block://30002219-54bc-836a-9736-010ccf509b69/cd09f6a0-d386-4633-b4bb-af8a6f16a016?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p />\n\n<p>\n→ 뒤로가기를 한 뒤 다시 들어와도 시간이 찍히게 바꿔주시면 감사하겠습니다. \n</p>\n\n<p />\n\n---\n\n<p />\n\n<p>\n안드로이드 : \n</p>\n\n<p>\n시간 : ms → S \n</p>",
+        "last_edited_at": "2026-11-23T13:39:16.415Z"
+      },
+      "manifest": {
+        "notion_id": "2db0221954bc8281b49881f9c2794a59",
+        "title": "해결 ",
+        "service": "미래의 주변상점 - 레거시",
+        "path": "event-log/05-미래의-주변상점-레거시/해결-2db02219.md",
+        "notion_url": "https://app.notion.com/p/2db0221954bc8281b49881f9c2794a59",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "7430221954bc8355af8801c7b7a85722",
+        "source_last_edited_at": "2026-11-23T13:39:16.415Z",
+        "source_body_sha256": "bf5086c124d1522a698c05bcef3c30e1e1d9c1cedc13f58ecfdcf192ac319c2c",
+        "output_sha256": "8459088991a427af5f21a183e4cfd43a3605ef93c60cc36cf5ebaa2e00ed1bca",
+        "image_ids": [
+          "cd09f6a0-d386-4633-b4bb-af8a6f16a016"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "7a50221954bc837da8d48136269b2ff0",
+        "title": "해결 ",
+        "service": "새 주변상점 - 레거시",
+        "url": "https://app.notion.com/p/7a50221954bc837da8d48136269b2ff0",
+        "platforms": [],
+        "properties": {
+          "title": "해결 "
+        },
+        "original_body": "<p />\n\n<p>\n웹 : \n</p>\n\n<p>\n주변상점에서 메인페이지로 나갔다가 들어온 뒤 카테고리를 누르면 체류 시간이 0 혹은 1로 나오는 이슈 \n</p>\n\n<image source=\"notion-file-block://0e002219-54bc-83ff-a055-816ec10ace70/cd09f6a0-d386-4633-b4bb-af8a6f16a016?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p />\n\n<p>\n→ 뒤로가기를 한 뒤 다시 들어와도 시간이 찍히게 바꿔주시면 감사하겠습니다. \n</p>\n\n<p />\n\n---\n\n<p />\n\n<p>\n안드로이드 : \n</p>\n\n<p>\n시간 : ms → S \n</p>",
+        "last_edited_at": "2026-11-23T13:39:11.134Z"
+      },
+      "manifest": {
+        "notion_id": "7a50221954bc837da8d48136269b2ff0",
+        "title": "해결 ",
+        "service": "새 주변상점 - 레거시",
+        "path": "event-log/04-새-주변상점-레거시/해결-7a502219.md",
+        "notion_url": "https://app.notion.com/p/7a50221954bc837da8d48136269b2ff0",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "97f0221954bc83b1978a81c2ad59d60d",
+        "source_last_edited_at": "2026-11-23T13:39:11.134Z",
+        "source_body_sha256": "d08ecd8c63fd5fca6c696f5886fcfc005368b6d4689603da892f1b1e7664236a",
+        "output_sha256": "887d14876d7c47659b4afa700a2ddf023b1b08897cb159200b29e7b4ef9f021c",
+        "image_ids": [
+          "cd09f6a0-d386-4633-b4bb-af8a6f16a016"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "b330221954bc82a8be5d8122eb9cc100",
+        "title": "해결 (1)",
+        "service": "새 주변상점 - 레거시",
+        "url": "https://app.notion.com/p/b330221954bc82a8be5d8122eb9cc100",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (1)"
+        },
+        "original_body": "<p />\n\n<p />\n\n<p />\n\n<p />\n\n---\n\n<p>\nIOS \n</p>\n\n1. 이전 카테고리가 나오지 않는 이슈 <br />\n\n<image source=\"notion-file-block://7b602219-54bc-831d-aac9-81a86e395fa4/ab90687a-e93d-4afe-bd60-d7d28efb9f9d?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p />\n\n→ 전 카테고리가 나오도록 찍히게 해주세요.\n\nAnd\n\n<ol>\n<li>\n이전 페이지가 겹치는 이슈 발생. \n</li>\n</ol>\n\n<p>\n웹 : \n</p>\n\n<ol>\n<li>\n시간이 중복으로 쌓이는 오류 \n</li>\n</ol>\n\n<image source=\"notion-file-block://06502219-54bc-8252-8692-01ee95bab49e/d3967865-8988-4b7c-a18b-2eca10bd9752?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p>\n→ 도시락에서 족발로 이동하면 \n</p>\n\n<p>\n도시락에서 쌓여있던 시간은 리셋하고 족발에서 다시 카운트 해주시면 감사하겠습니다. \n</p>\n\n<p />\n\n<ol start=\"2\">\n<li>\n헤더나 푸터를 통해 들어왔을때 이전 카테고리에 공백이 들어오게 됨. \n</li>\n</ol>\n\n<image source=\"notion-file-block://81402219-54bc-83a2-84e3-8152e9d25e1a/bf883ba2-a680-4321-bbd0-277ad061bccc?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p>\n→ 전체보기로 설정해주시면 감사하겠습니다! \n</p>\n\n<p />\n\n<p>\n상점카테고리에서 상점 카테고리로의 시간을 파악하고자 합니다. \n</p>\n\n<p />\n\n<p>\n주의사항 : \n</p>\n\n<ol>\n<li>\nscroll 이벤트에는  아래 3개의 키값은 안보내야함. \n</li>\n<li>\n웹에서 배달가능, 카드 가능을 누르게 될경우 페이지가 다르게 잡히는데 이 경우 이벤트가 보내져서는 안됨.  \n</li>\n</ol>\n\n<p />\n\n<p />\n\n---\n\n<p>\n안드 \n</p>\n\n<p>\n3개 파라미터 추가 안됨. \n</p>\n\n<p />\n\n<p />",
+        "last_edited_at": "2026-11-23T13:39:11.270Z"
+      },
+      "manifest": {
+        "notion_id": "b330221954bc82a8be5d8122eb9cc100",
+        "title": "해결 (1)",
+        "service": "새 주변상점 - 레거시",
+        "path": "event-log/04-새-주변상점-레거시/해결-(1)-b3302219.md",
+        "notion_url": "https://app.notion.com/p/b330221954bc82a8be5d8122eb9cc100",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "2210221954bc8361ba5f81c6759f3e1f",
+        "source_last_edited_at": "2026-11-23T13:39:11.270Z",
+        "source_body_sha256": "4078badd79868cdf3f1b7f450ec514436b7ab7806d329e4504a0bb8a794aa539",
+        "output_sha256": "b5752d152716c1ced9cddb09e6ace407b60e4fffce0d610a891fe19356f6ae9f",
+        "image_ids": [
+          "ab90687a-e93d-4afe-bd60-d7d28efb9f9d",
+          "d3967865-8988-4b7c-a18b-2eca10bd9752",
+          "bf883ba2-a680-4321-bbd0-277ad061bccc"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "d510221954bc82f4a15581a2282b795b",
+        "title": "해결 (1)",
+        "service": "새 주변상점 - 레거시",
+        "url": "https://app.notion.com/p/d510221954bc82f4a15581a2282b795b",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (1)"
+        },
+        "original_body": "<p />\n\n<p>\n웹: \n</p>\n\n<ol>\n<li>\n헤더나 푸터를 통하여 주변상점을 들어가게 될때 생기는 문제 \n</li>\n</ol>\n\n<image source=\"notion-file-block://14402219-54bc-8292-a5a0-81eaf489cef3/7ab8e130-5a21-4e20-a52d-742225bb8610?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p />\n\n<p>\n→ 헤더나 푸터를 통하여 들어가게 되면 undefined가 아닌 전체보기를 넣어주시면 감사하겠습니다. \n</p>\n\n<p />\n\n<ol start=\"2\">\n<li>\n스크롤 이후 카테고리를 변경하면 자동으로 스크롤 이벤트가 감지되고 있는 이슈 \n</li>\n</ol>\n\n<image source=\"notion-file-block://7b802219-54bc-8301-b9df-81e616e45fc7/228dc1c2-9830-46df-b0f6-b79ecace91df?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n→ 카테고리 변경할 때 안 생기게 처리해주시면 감사하겠습니다…!\n\n<p />",
+        "last_edited_at": "2026-11-23T13:39:11.365Z"
+      },
+      "manifest": {
+        "notion_id": "d510221954bc82f4a15581a2282b795b",
+        "title": "해결 (1)",
+        "service": "새 주변상점 - 레거시",
+        "path": "event-log/04-새-주변상점-레거시/해결-(1)-d5102219.md",
+        "notion_url": "https://app.notion.com/p/d510221954bc82f4a15581a2282b795b",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "9720221954bc832a9325018a298d1377",
+        "source_last_edited_at": "2026-11-23T13:39:11.365Z",
+        "source_body_sha256": "a69c8d467ec93f84944cf71eac5d2b43e30e39e9d98d68e6b5483a89a9e88aff",
+        "output_sha256": "60534f184512f24b9644acbe352c5db193789ca10c3fabd6382eca2a1a8986f9",
+        "image_ids": [
+          "7ab8e130-5a21-4e20-a52d-742225bb8610",
+          "228dc1c2-9830-46df-b0f6-b79ecace91df"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "8340221954bc8302851b013308f1228f",
+        "title": "해결 (1)",
+        "service": "새 주변상점 - 레거시",
+        "url": "https://app.notion.com/p/8340221954bc8302851b013308f1228f",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (1)"
+        },
+        "original_body": "<p>\n웹: \n</p>\n\n<ol>\n<li>\n헤더나 푸터를 이용하여 주변상점을 들어온뒤 검색 버튼을 누르면 에러가 남. \n</li>\n</ol>\n\n<image source=\"notion-file-block://0b802219-54bc-82d9-92c2-8192cb6b631b/8ac2b14e-be76-400f-8799-12fe1d2d81da?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p>\n→ 전체 보기값 을  넣어서 처리해주시면 될 거 같습니다. \n</p>\n\n<p />\n\n<p />",
+        "last_edited_at": "2026-11-23T13:39:11.462Z"
+      },
+      "manifest": {
+        "notion_id": "8340221954bc8302851b013308f1228f",
+        "title": "해결 (1)",
+        "service": "새 주변상점 - 레거시",
+        "path": "event-log/04-새-주변상점-레거시/해결-(1)-83402219.md",
+        "notion_url": "https://app.notion.com/p/8340221954bc8302851b013308f1228f",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "5dd0221954bc8237b4a781520eb99bfb",
+        "source_last_edited_at": "2026-11-23T13:39:11.462Z",
+        "source_body_sha256": "6a1e49694d72190c97cd89f4c7ee093484a12b2ec1d671605ebfd6d06598a74f",
+        "output_sha256": "df673dcebbb98a1c6927e9ad8649b77d542a3b1ea7459b4e11eb275c1aab1a1d",
+        "image_ids": [
+          "8ac2b14e-be76-400f-8799-12fe1d2d81da"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "8f10221954bc8205b0bd01e687232cc5",
+        "title": "해결 ",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/8f10221954bc8205b0bd01e687232cc5",
+        "platforms": [],
+        "properties": {
+          "title": "해결 "
+        },
+        "original_body": "<p />\n\n<p>\n웹 : \n</p>\n\n<p>\n주변상점에서 메인페이지로 나갔다가 들어온 뒤 카테고리를 누르면 체류 시간이 0 혹은 1로 나오는 이슈 \n</p>\n\n<image source=\"notion-file-block://6c802219-54bc-82ba-8837-814e98b4a856/cd09f6a0-d386-4633-b4bb-af8a6f16a016?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p />\n\n<p>\n→ 뒤로가기를 한 뒤 다시 들어와도 시간이 찍히게 바꿔주시면 감사하겠습니다. \n</p>\n\n<p />\n\n---\n\n<p />\n\n<p>\n안드로이드 : \n</p>\n\n<p>\n시간 : ms → S \n</p>",
+        "last_edited_at": "2026-11-23T13:38:20.309Z"
+      },
+      "manifest": {
+        "notion_id": "8f10221954bc8205b0bd01e687232cc5",
+        "title": "해결 ",
+        "service": "주변상점",
+        "path": "event-log/01-주변상점/해결-8f102219.md",
+        "notion_url": "https://app.notion.com/p/8f10221954bc8205b0bd01e687232cc5",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "75b0221954bc82b5be7c01a52d64be29",
+        "source_last_edited_at": "2026-11-23T13:38:20.309Z",
+        "source_body_sha256": "57c9ad73be683475f63a566fbd4ddbcba6cbd4f03387eccf543f93a83e7d91b8",
+        "output_sha256": "5ea622f99ee81b7175883a78d236bfbb1e459343b71d09d1eec6a9c6b1fc3740",
+        "image_ids": [
+          "cd09f6a0-d386-4633-b4bb-af8a6f16a016"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "8a90221954bc82429e7901ca01aef8d2",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/8a90221954bc82429e7901ca01aef8d2",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (1)"
+        },
+        "original_body": "<p />\n\n<p />\n\n<p />\n\n<p />\n\n---\n\n<p>\nIOS \n</p>\n\n1. 이전 카테고리가 나오지 않는 이슈 <br />\n\n<image source=\"notion-file-block://36502219-54bc-8368-8770-01af61357cf9/ab90687a-e93d-4afe-bd60-d7d28efb9f9d?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p />\n\n→ 전 카테고리가 나오도록 찍히게 해주세요.\n\nAnd\n\n<ol>\n<li>\n이전 페이지가 겹치는 이슈 발생. \n</li>\n</ol>\n\n<p>\n웹 : \n</p>\n\n<ol>\n<li>\n시간이 중복으로 쌓이는 오류 \n</li>\n</ol>\n\n<image source=\"notion-file-block://13b02219-54bc-8283-9a18-81aaa4c3c488/d3967865-8988-4b7c-a18b-2eca10bd9752?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p>\n→ 도시락에서 족발로 이동하면 \n</p>\n\n<p>\n도시락에서 쌓여있던 시간은 리셋하고 족발에서 다시 카운트 해주시면 감사하겠습니다. \n</p>\n\n<p />\n\n<ol start=\"2\">\n<li>\n헤더나 푸터를 통해 들어왔을때 이전 카테고리에 공백이 들어오게 됨. \n</li>\n</ol>\n\n<image source=\"notion-file-block://1bc02219-54bc-8219-a582-01e0d138ab61/bf883ba2-a680-4321-bbd0-277ad061bccc?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p>\n→ 전체보기로 설정해주시면 감사하겠습니다! \n</p>\n\n<p />\n\n<p>\n상점카테고리에서 상점 카테고리로의 시간을 파악하고자 합니다. \n</p>\n\n<p />\n\n<p>\n주의사항 : \n</p>\n\n<ol>\n<li>\nscroll 이벤트에는  아래 3개의 키값은 안보내야함. \n</li>\n<li>\n웹에서 배달가능, 카드 가능을 누르게 될경우 페이지가 다르게 잡히는데 이 경우 이벤트가 보내져서는 안됨.  \n</li>\n</ol>\n\n<p />\n\n<p />\n\n---\n\n<p>\n안드 \n</p>\n\n<p>\n3개 파라미터 추가 안됨. \n</p>\n\n<p />\n\n<p />",
+        "last_edited_at": "2026-11-23T13:38:24.590Z"
+      },
+      "manifest": {
+        "notion_id": "8a90221954bc82429e7901ca01aef8d2",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "path": "event-log/01-주변상점/해결-(1)-8a902219.md",
+        "notion_url": "https://app.notion.com/p/8a90221954bc82429e7901ca01aef8d2",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "38d0221954bc82ba94db81315f8eb685",
+        "source_last_edited_at": "2026-11-23T13:38:24.590Z",
+        "source_body_sha256": "1e0f2bdbab820f90890981f280cb06301f378b4e682d4726d6606cadb451cfab",
+        "output_sha256": "7f639459fdc3d11d92fdfebc401557d6fb8fef464647dcdc520147a6391c4a41",
+        "image_ids": [
+          "ab90687a-e93d-4afe-bd60-d7d28efb9f9d",
+          "d3967865-8988-4b7c-a18b-2eca10bd9752",
+          "bf883ba2-a680-4321-bbd0-277ad061bccc"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "3720221954bc829494e8817700c89d0c",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/3720221954bc829494e8817700c89d0c",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (1)"
+        },
+        "original_body": "<p />\n\n<p>\n웹: \n</p>\n\n<ol>\n<li>\n헤더나 푸터를 통하여 주변상점을 들어가게 될때 생기는 문제 \n</li>\n</ol>\n\n<image source=\"notion-file-block://e8002219-54bc-83f9-ac5e-01ff4ae93fd0/7ab8e130-5a21-4e20-a52d-742225bb8610?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p />\n\n<p>\n→ 헤더나 푸터를 통하여 들어가게 되면 undefined가 아닌 전체보기를 넣어주시면 감사하겠습니다. \n</p>\n\n<p />\n\n<ol start=\"2\">\n<li>\n스크롤 이후 카테고리를 변경하면 자동으로 스크롤 이벤트가 감지되고 있는 이슈 \n</li>\n</ol>\n\n<image source=\"notion-file-block://c2f02219-54bc-82ea-8b33-017aadb04ac5/228dc1c2-9830-46df-b0f6-b79ecace91df?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n→ 카테고리 변경할 때 안 생기게 처리해주시면 감사하겠습니다…!\n\n<p />",
+        "last_edited_at": "2026-11-23T13:38:20.690Z"
+      },
+      "manifest": {
+        "notion_id": "3720221954bc829494e8817700c89d0c",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "path": "event-log/01-주변상점/해결-(1)-37202219.md",
+        "notion_url": "https://app.notion.com/p/3720221954bc829494e8817700c89d0c",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "9280221954bc82e18ceb81dfdcfc292a",
+        "source_last_edited_at": "2026-11-23T13:38:20.690Z",
+        "source_body_sha256": "4f6e937ac1a3515afec84bc910ec059d9d04a3dbd62b47fe13d6085333a0ad18",
+        "output_sha256": "9c1f1188a9c1ff4401c3813d958e35477e7197b34a6cd6c092d744ea66382300",
+        "image_ids": [
+          "7ab8e130-5a21-4e20-a52d-742225bb8610",
+          "228dc1c2-9830-46df-b0f6-b79ecace91df"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "82d0221954bc828db13081821c421e0c",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/82d0221954bc828db13081821c421e0c",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (1)"
+        },
+        "original_body": "<p>\n웹: \n</p>\n\n<ol>\n<li>\n헤더나 푸터를 이용하여 주변상점을 들어온뒤 검색 버튼을 누르면 에러가 남. \n</li>\n</ol>\n\n<image source=\"notion-file-block://30302219-54bc-83fa-9d75-8152f5f98180/8ac2b14e-be76-400f-8799-12fe1d2d81da?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p>\n→ 전체 보기값 을  넣어서 처리해주시면 될 거 같습니다. \n</p>\n\n<p />\n\n<p />",
+        "last_edited_at": "2026-11-23T13:38:20.382Z"
+      },
+      "manifest": {
+        "notion_id": "82d0221954bc828db13081821c421e0c",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "path": "event-log/01-주변상점/해결-(1)-82d02219.md",
+        "notion_url": "https://app.notion.com/p/82d0221954bc828db13081821c421e0c",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "2d90221954bc82c1bd0d0158452708c6",
+        "source_last_edited_at": "2026-11-23T13:38:20.382Z",
+        "source_body_sha256": "463d0fff081949c85d65381ec8ded613a867347a47cb61ca473ab32413c4a1b7",
+        "output_sha256": "1a6998fbb0305d0fc5a84b48c23dd064b4088a5bf5e6a635fcb6172238628871",
+        "image_ids": [
+          "8ac2b14e-be76-400f-8799-12fe1d2d81da"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "9620221954bc821d96770147757a0471",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/9620221954bc821d96770147757a0471",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (1)"
+        },
+        "original_body": "<p />\n\n<p>\n웹 \n</p>\n\n<ol>\n<li>\n체크 표시를 풀때 이벤트가 발생 \n</li>\n</ol>\n\n<image source=\"notion-file-block://62f02219-54bc-83e8-9be6-010d34c07e40/6159717a-eed8-4762-a660-52710eb8fd5a?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p>\n→ 토글을 누를때 바로 이벤트가 생성되게 해주시면 되겠습니다. \n</p>\n\n<p>\n추가로 토글을 해제할때는 이벤트가 생성 되지 않아도 됩니다. \n</p>\n\n<p />\n\n<ol start=\"2\">\n<li>\n헤더나 푸터를 통해 들어올때 이슈 발생 \n</li>\n</ol>\n\n<image source=\"notion-file-block://61902219-54bc-8282-85e4-8121f8914af9/4e40fb40-32ed-4c56-8821-684d529584ff?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p>\n→ 전체보기 값으로 들어오면 될거 같습니다! \n</p>\n\n<p />\n\n<p />\n\n<ol start=\"3\">\n<li>\n반응형 웹 이슈 \n</li>\n</ol>\n\n<p>\n반응형 웹에서는 토글 자체를 이벤트를 측정하지 못하고 있습니다. \n</p>\n\n추가해주시면 감사하겠습니다! → 신규 이벤트로 넣어주시면 되겠습니다!\n\n<p />",
+        "last_edited_at": "2026-11-23T13:38:21.578Z"
+      },
+      "manifest": {
+        "notion_id": "9620221954bc821d96770147757a0471",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "path": "event-log/01-주변상점/해결-(1)-96202219.md",
+        "notion_url": "https://app.notion.com/p/9620221954bc821d96770147757a0471",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "1de0221954bc82a283ab0113f045affa",
+        "source_last_edited_at": "2026-11-23T13:38:21.578Z",
+        "source_body_sha256": "c55bc167d87a00fe6c9d4aa9224f54716ee8176b08ddf0c212605204d5590ee2",
+        "output_sha256": "76e9ade7a21461d5568fa87b410c0b1f09bf0db5d46a7259a259443fa2aeb2b3",
+        "image_ids": [
+          "6159717a-eed8-4762-a660-52710eb8fd5a",
+          "4e40fb40-32ed-4c56-8821-684d529584ff"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "d520221954bc831e95ec818df511e605",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/d520221954bc831e95ec818df511e605",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (1)"
+        },
+        "original_body": "<p />\n\n<p>\n웹: \n</p>\n\n<ol>\n<li>\n카테고리 이동 후 상점을 클릭하면 체류 시간이 중첩되어 적힙니다. \n</li>\n</ol>\n\n<image source=\"notion-file-block://03d02219-54bc-8202-93b6-81e3da5fd249/7cb53457-570f-4a61-9134-c701cf3c2f24?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p>\n→ 카테고리 이동을 하면 타이머를 리셋하고 상점으로 들어가는 시간을 체크 해주시면 되겠습니다. \n</p>\n\n<p />\n\n---\n\n<p>\n안드로이드 \n</p>\n\n<p>\n상점에서 나갔다가 다시 들어와도 시간이 중복되는 이슈 \n</p>\n\n<p />",
+        "last_edited_at": "2026-11-23T13:38:23.444Z"
+      },
+      "manifest": {
+        "notion_id": "d520221954bc831e95ec818df511e605",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "path": "event-log/01-주변상점/해결-(1)-d5202219.md",
+        "notion_url": "https://app.notion.com/p/d520221954bc831e95ec818df511e605",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "75e0221954bc825f89bc01b07bb7c890",
+        "source_last_edited_at": "2026-11-23T13:38:23.444Z",
+        "source_body_sha256": "f4b39c5503bc5ca2dc3a3e47d57fec9f0074ce64744c06dea5d8bb04ed115ef3",
+        "output_sha256": "23a6f2669d922d44c042956c323cdfe4d27cafdd165352d1f64a92f4d39655c3",
+        "image_ids": [
+          "7cb53457-570f-4a61-9134-c701cf3c2f24"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "5170221954bc82808ffb81b81fbd7cf9",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/5170221954bc82808ffb81b81fbd7cf9",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (1)"
+        },
+        "original_body": "<p>\n웹 : \n</p>\n\n1. store\\_detail\\_call\\_number\n\n<p>\n→ 삭제 해주시면 감사하겠습니다. \n</p>\n\n<p />",
+        "last_edited_at": "2026-11-23T13:38:20.761Z"
+      },
+      "manifest": {
+        "notion_id": "5170221954bc82808ffb81b81fbd7cf9",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "path": "event-log/01-주변상점/해결-(1)-51702219.md",
+        "notion_url": "https://app.notion.com/p/5170221954bc82808ffb81b81fbd7cf9",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "fc80221954bc83c3b7ef819c98fc6913",
+        "source_last_edited_at": "2026-11-23T13:38:20.761Z",
+        "source_body_sha256": "bd3dae6213babb853426c4a0decf7494972109b1204cf60dd58971a73fa5cc20",
+        "output_sha256": "9d68cae93db7d267d27d17f93fe0a2455c993a8c93585f21bfb751f6ba566650",
+        "image_ids": []
+      }
+    },
+    {
+      "source": {
+        "id": "4bf0221954bc835f97e901a671bd0cf9",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/4bf0221954bc835f97e901a671bd0cf9",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (1)"
+        },
+        "original_body": "<p>\n웹: \n</p>\n\n<ol>\n<li>\n현재 이벤트가 찍혀 있지 않음. ? \n</li>\n</ol>\n\n<image source=\"notion-file-block://e4602219-54bc-8388-bc8f-011b9ce3bfa5/3dace308-f1c3-4c55-8810-2d03644d1f4e?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p>\n→ 혹은 이벤트 카테고리를 button에서 scroll로 바꾸시는걸 깜빡하신게 아닐까… \n</p>\n\n<p />\n\n<ol start=\"2\">\n<li>\n추가로 스크롤 이벤트 말고 click 이벤트도 추가해주실수 있나요? <br />ex) 리뷰 탭에서 메뉴 탭으로 이동하면 \n</li>\n</ol>\n\n<toggle>\n예시\n\n<ul>\n<li>\nevent\\_label : shop\\_detail\\_view\n</li>\n<li>\nvalue : \\{상점이름\\} \n</li>\n<li>\nevent\\_category : click\n</li>\n</ul>\n</toggle>\n\n<p />\n\n<p />",
+        "last_edited_at": "2026-11-23T13:38:20.544Z"
+      },
+      "manifest": {
+        "notion_id": "4bf0221954bc835f97e901a671bd0cf9",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "path": "event-log/01-주변상점/해결-(1)-4bf02219.md",
+        "notion_url": "https://app.notion.com/p/4bf0221954bc835f97e901a671bd0cf9",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "f410221954bc8337a87c015d4bcdf9de",
+        "source_last_edited_at": "2026-11-23T13:38:20.544Z",
+        "source_body_sha256": "a4ecdaf68efb5e4e86d4728e1ee9d156037e8e4791adc104dad5b02f8264b3b9",
+        "output_sha256": "8997a2edb12b47b01a0dec78d4057ed3283d012074cf07fc82d7f9a0a8499ed7",
+        "image_ids": [
+          "3dace308-f1c3-4c55-8810-2d03644d1f4e"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "ef30221954bc828e9dcd810b198746b6",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/ef30221954bc828e9dcd810b198746b6",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (1)"
+        },
+        "original_body": "<p>\n안드 \n</p>\n\n<ol>\n<li>\n시간이 안찍히는 이슈 \n</li>\n</ol>\n\n<p>\n웹 : \n</p>\n\n<ol>\n<li>\nOS 기준으로 뒤로 가기 방법인  SWIPE 이벤트가 없습니다!\n</li>\n<li>\n뒤로 가게 되면 카테고리가 풀려 undefined 상태가 되는데 이때 전체보기 찍히게 해주시면 감사하겠습니다. \n</li>\n<li>\n이벤트 카테고리 값이 전체적으로 button으로 되어 있습니다…! 확인 부탁드립니다! \n</li>\n</ol>\n\n<p />\n\n<p />\n\n<p />",
+        "last_edited_at": "2026-11-23T13:38:20.619Z"
+      },
+      "manifest": {
+        "notion_id": "ef30221954bc828e9dcd810b198746b6",
+        "title": "해결 (1)",
+        "service": "주변상점",
+        "path": "event-log/01-주변상점/해결-(1)-ef302219.md",
+        "notion_url": "https://app.notion.com/p/ef30221954bc828e9dcd810b198746b6",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "6f00221954bc83b480bc81c89b26bfb3",
+        "source_last_edited_at": "2026-11-23T13:38:20.619Z",
+        "source_body_sha256": "5705a9a3879b4f4d8918f643301ec5658305f011b28d65f49a6aa947bb8288f6",
+        "output_sha256": "91e0c7bc3b0040cb10a5f49376edef5afdb790a0fea72e58e7c60cf9fdbded74",
+        "image_ids": []
+      }
+    },
+    {
+      "source": {
+        "id": "c870221954bc82c3902001306139bd0e",
+        "title": "해결 (2)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/c870221954bc82c3902001306139bd0e",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (2)"
+        },
+        "original_body": "<p>\n안드 \n</p>\n\n<ol>\n<li>\n시간이 안찍히는 이슈 \n</li>\n</ol>\n\n<p>\n웹 : \n</p>\n\n<ol>\n<li>\nOS 기준으로 뒤로 가기 방법인  SWIPE 이벤트가 없습니다!\n</li>\n<li>\n뒤로 가게 되면 카테고리가 풀려 undefined 상태가 되는데 이때 전체보기 찍히게 해주시면 감사하겠습니다. \n</li>\n<li>\n이벤트 카테고리 값이 전체적으로 button으로 되어 있습니다…! 확인 부탁드립니다! \n</li>\n</ol>\n\n<p />\n\n<p />\n\n<p />",
+        "last_edited_at": "2026-11-23T13:38:21.421Z"
+      },
+      "manifest": {
+        "notion_id": "c870221954bc82c3902001306139bd0e",
+        "title": "해결 (2)",
+        "service": "주변상점",
+        "path": "event-log/01-주변상점/해결-(2)-c8702219.md",
+        "notion_url": "https://app.notion.com/p/c870221954bc82c3902001306139bd0e",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "dbb0221954bc8329b877817365757ca7",
+        "source_last_edited_at": "2026-11-23T13:38:21.421Z",
+        "source_body_sha256": "5705a9a3879b4f4d8918f643301ec5658305f011b28d65f49a6aa947bb8288f6",
+        "output_sha256": "77e974b971665bf537dcae6be9bf644ae4bec914d57ef3e40b07cd056eb6a11f",
+        "image_ids": []
+      }
+    },
+    {
+      "source": {
+        "id": "3ca0221954bc836fadf401d7f03dd980",
+        "title": "해결 (4)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/3ca0221954bc836fadf401d7f03dd980",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (4)"
+        },
+        "original_body": "<p>\n안드 \n</p>\n\n<ol>\n<li>\n시간이 안찍히는 이슈 \n</li>\n</ol>\n\n<p>\n웹 : \n</p>\n\n<ol>\n<li>\nOS 기준으로 뒤로 가기 방법인  SWIPE 이벤트가 없습니다!\n</li>\n<li>\n뒤로 가게 되면 카테고리가 풀려 undefined 상태가 되는데 이때 전체보기 찍히게 해주시면 감사하겠습니다. \n</li>\n<li>\n이벤트 카테고리 값이 전체적으로 button으로 되어 있습니다…! 확인 부탁드립니다! \n</li>\n</ol>\n\n<p />\n\n<p />\n\n<p />",
+        "last_edited_at": "2026-11-23T13:38:20.461Z"
+      },
+      "manifest": {
+        "notion_id": "3ca0221954bc836fadf401d7f03dd980",
+        "title": "해결 (4)",
+        "service": "주변상점",
+        "path": "event-log/01-주변상점/해결-(4)-3ca02219.md",
+        "notion_url": "https://app.notion.com/p/3ca0221954bc836fadf401d7f03dd980",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "4220221954bc8218826a0190e9857ccb",
+        "source_last_edited_at": "2026-11-23T13:38:20.461Z",
+        "source_body_sha256": "5705a9a3879b4f4d8918f643301ec5658305f011b28d65f49a6aa947bb8288f6",
+        "output_sha256": "920cb4609e286becd9c0ffb5a8607ceaf0a095dec4a9662ccbb7344448bec94b",
+        "image_ids": []
+      }
+    },
+    {
+      "source": {
+        "id": "cda0221954bc821e98e10152ba778f43",
+        "title": "해결 (3)",
+        "service": "주변상점",
+        "url": "https://app.notion.com/p/cda0221954bc821e98e10152ba778f43",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (3)"
+        },
+        "original_body": "<p>\n안드 \n</p>\n\n<ol>\n<li>\n시간이 안찍히는 이슈 \n</li>\n</ol>\n\n<p>\n웹 : \n</p>\n\n<ol>\n<li>\nOS 기준으로 뒤로 가기 방법인  SWIPE 이벤트가 없습니다!\n</li>\n<li>\n뒤로 가게 되면 카테고리가 풀려 undefined 상태가 되는데 이때 전체보기 찍히게 해주시면 감사하겠습니다. \n</li>\n<li>\n이벤트 카테고리 값이 전체적으로 button으로 되어 있습니다…! 확인 부탁드립니다! \n</li>\n</ol>\n\n<p />\n\n<p />\n\n<p />",
+        "last_edited_at": "2026-11-23T13:38:20.835Z"
+      },
+      "manifest": {
+        "notion_id": "cda0221954bc821e98e10152ba778f43",
+        "title": "해결 (3)",
+        "service": "주변상점",
+        "path": "event-log/01-주변상점/해결-(3)-cda02219.md",
+        "notion_url": "https://app.notion.com/p/cda0221954bc821e98e10152ba778f43",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "9d30221954bc83d1b16f0105e92d5c52",
+        "source_last_edited_at": "2026-11-23T13:38:20.835Z",
+        "source_body_sha256": "5705a9a3879b4f4d8918f643301ec5658305f011b28d65f49a6aa947bb8288f6",
+        "output_sha256": "c744bc126db33d513c15ffaa89c7c13f1cc7f85d3a3482ecb5944d507776e220",
+        "image_ids": []
+      }
+    },
+    {
+      "source": {
+        "id": "a860221954bc82e18c06814233be1f3a",
+        "title": "해결 (1)",
+        "service": "미래의 주변상점 - 레거시",
+        "url": "https://app.notion.com/p/a860221954bc82e18c06814233be1f3a",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (1)"
+        },
+        "original_body": "<p />\n\n<p />\n\n<p />\n\n<p />\n\n---\n\n<p>\nIOS \n</p>\n\n1. 이전 카테고리가 나오지 않는 이슈 <br />\n\n<image source=\"notion-file-block://ba002219-54bc-8307-85d9-819cc4e3550d/ab90687a-e93d-4afe-bd60-d7d28efb9f9d?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p />\n\n→ 전 카테고리가 나오도록 찍히게 해주세요.\n\nAnd\n\n<ol>\n<li>\n이전 페이지가 겹치는 이슈 발생. \n</li>\n</ol>\n\n<p>\n웹 : \n</p>\n\n<ol>\n<li>\n시간이 중복으로 쌓이는 오류 \n</li>\n</ol>\n\n<image source=\"notion-file-block://af702219-54bc-8302-8d4b-014f125d81b9/d3967865-8988-4b7c-a18b-2eca10bd9752?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p>\n→ 도시락에서 족발로 이동하면 \n</p>\n\n<p>\n도시락에서 쌓여있던 시간은 리셋하고 족발에서 다시 카운트 해주시면 감사하겠습니다. \n</p>\n\n<p />\n\n<ol start=\"2\">\n<li>\n헤더나 푸터를 통해 들어왔을때 이전 카테고리에 공백이 들어오게 됨. \n</li>\n</ol>\n\n<image source=\"notion-file-block://65902219-54bc-83df-9714-011e419b3c1c/bf883ba2-a680-4321-bbd0-277ad061bccc?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p>\n→ 전체보기로 설정해주시면 감사하겠습니다! \n</p>\n\n<p />\n\n<p>\n상점카테고리에서 상점 카테고리로의 시간을 파악하고자 합니다. \n</p>\n\n<p />\n\n<p>\n주의사항 : \n</p>\n\n<ol>\n<li>\nscroll 이벤트에는  아래 3개의 키값은 안보내야함. \n</li>\n<li>\n웹에서 배달가능, 카드 가능을 누르게 될경우 페이지가 다르게 잡히는데 이 경우 이벤트가 보내져서는 안됨.  \n</li>\n</ol>\n\n<p />\n\n<p />\n\n---\n\n<p>\n안드 \n</p>\n\n<p>\n3개 파라미터 추가 안됨. \n</p>\n\n<p />\n\n<p />",
+        "last_edited_at": "2026-11-23T13:39:17.492Z"
+      },
+      "manifest": {
+        "notion_id": "a860221954bc82e18c06814233be1f3a",
+        "title": "해결 (1)",
+        "service": "미래의 주변상점 - 레거시",
+        "path": "event-log/05-미래의-주변상점-레거시/해결-(1)-a8602219.md",
+        "notion_url": "https://app.notion.com/p/a860221954bc82e18c06814233be1f3a",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "3860221954bc82a690c981afe39600b2",
+        "source_last_edited_at": "2026-11-23T13:39:17.492Z",
+        "source_body_sha256": "28f8487e49c37d76fe7046bcdee7f10733a8f38515b29e92a0d9719989cf40b1",
+        "output_sha256": "7bf284a6abf8f5bb90cdd8aee1a83f6a3cab737e361fa36f3d5a67ff1c890dc1",
+        "image_ids": [
+          "ab90687a-e93d-4afe-bd60-d7d28efb9f9d",
+          "d3967865-8988-4b7c-a18b-2eca10bd9752",
+          "bf883ba2-a680-4321-bbd0-277ad061bccc"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4b00221954bc83f09e840162c4a0c857",
+        "title": "해결 (1)",
+        "service": "미래의 주변상점 - 레거시",
+        "url": "https://app.notion.com/p/4b00221954bc83f09e840162c4a0c857",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (1)"
+        },
+        "original_body": "<p>\n웹: \n</p>\n\n<ol>\n<li>\n헤더나 푸터를 이용하여 주변상점을 들어온뒤 검색 버튼을 누르면 에러가 남. \n</li>\n</ol>\n\n<image source=\"notion-file-block://24202219-54bc-83ff-99f0-818de2879354/8ac2b14e-be76-400f-8799-12fe1d2d81da?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p>\n→ 전체 보기값 을  넣어서 처리해주시면 될 거 같습니다. \n</p>\n\n<p />\n\n<p />",
+        "last_edited_at": "2026-11-23T13:39:16.491Z"
+      },
+      "manifest": {
+        "notion_id": "4b00221954bc83f09e840162c4a0c857",
+        "title": "해결 (1)",
+        "service": "미래의 주변상점 - 레거시",
+        "path": "event-log/05-미래의-주변상점-레거시/해결-(1)-4b002219.md",
+        "notion_url": "https://app.notion.com/p/4b00221954bc83f09e840162c4a0c857",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "4a60221954bc8219894681eef86cef5e",
+        "source_last_edited_at": "2026-11-23T13:39:16.491Z",
+        "source_body_sha256": "f645c7ca771b82e7b0fa4974df27f71ee13131474077d8f7b0281e7b7e6882d0",
+        "output_sha256": "8f8916acf751586e520e2ac402a0bbfce364d952418c8b02beda9999f4a0d63d",
+        "image_ids": [
+          "8ac2b14e-be76-400f-8799-12fe1d2d81da"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "ddd0221954bc82f0805c01bcfb2f7111",
+        "title": "해결 (1)",
+        "service": "미래의 주변상점 - 레거시",
+        "url": "https://app.notion.com/p/ddd0221954bc82f0805c01bcfb2f7111",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (1)"
+        },
+        "original_body": "<p />\n\n<p>\n웹: \n</p>\n\n<ol>\n<li>\n카테고리 이동 후 상점을 클릭하면 체류 시간이 중첩되어 적힙니다. \n</li>\n</ol>\n\n<image source=\"notion-file-block://a7f02219-54bc-82fd-9636-010459c8045b/7cb53457-570f-4a61-9134-c701cf3c2f24?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p>\n→ 카테고리 이동을 하면 타이머를 리셋하고 상점으로 들어가는 시간을 체크 해주시면 되겠습니다. \n</p>\n\n<p />\n\n---\n\n<p>\n안드로이드 \n</p>\n\n<p>\n상점에서 나갔다가 다시 들어와도 시간이 중복되는 이슈 \n</p>\n\n<p />",
+        "last_edited_at": "2026-11-23T13:39:16.581Z"
+      },
+      "manifest": {
+        "notion_id": "ddd0221954bc82f0805c01bcfb2f7111",
+        "title": "해결 (1)",
+        "service": "미래의 주변상점 - 레거시",
+        "path": "event-log/05-미래의-주변상점-레거시/해결-(1)-ddd02219.md",
+        "notion_url": "https://app.notion.com/p/ddd0221954bc82f0805c01bcfb2f7111",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "4280221954bc833a8e9c014068363aa4",
+        "source_last_edited_at": "2026-11-23T13:39:16.581Z",
+        "source_body_sha256": "685be7abbae0b97c7824b7af16baa5254adb9a00c5313603163b4037e860092b",
+        "output_sha256": "c39b15a4193dbabf41268d18ccf9fc5d5a756e193ac0b0c0a57f2ed34c1c0e69",
+        "image_ids": [
+          "7cb53457-570f-4a61-9134-c701cf3c2f24"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "84b0221954bc83528d6a014c7d77e545",
+        "title": "해결 (2)",
+        "service": "미래의 주변상점 - 레거시",
+        "url": "https://app.notion.com/p/84b0221954bc83528d6a014c7d77e545",
+        "platforms": [],
+        "properties": {
+          "title": "해결 (2)"
+        },
+        "original_body": "<p>\n안드 \n</p>\n\n<ol>\n<li>\n시간이 안찍히는 이슈 \n</li>\n</ol>\n\n<p>\n웹 : \n</p>\n\n<ol>\n<li>\nOS 기준으로 뒤로 가기 방법인  SWIPE 이벤트가 없습니다!\n</li>\n<li>\n뒤로 가게 되면 카테고리가 풀려 undefined 상태가 되는데 이때 전체보기 찍히게 해주시면 감사하겠습니다. \n</li>\n<li>\n이벤트 카테고리 값이 전체적으로 button으로 되어 있습니다…! 확인 부탁드립니다! \n</li>\n</ol>\n\n<p />\n\n<p />\n\n<p />",
+        "last_edited_at": "2026-11-23T13:39:16.658Z"
+      },
+      "manifest": {
+        "notion_id": "84b0221954bc83528d6a014c7d77e545",
+        "title": "해결 (2)",
+        "service": "미래의 주변상점 - 레거시",
+        "path": "event-log/05-미래의-주변상점-레거시/해결-(2)-84b02219.md",
+        "notion_url": "https://app.notion.com/p/84b0221954bc83528d6a014c7d77e545",
+        "platforms": [],
+        "status": null,
+        "parent_notion_id": "fdf0221954bc82349b82010d993caf12",
+        "source_last_edited_at": "2026-11-23T13:39:16.658Z",
+        "source_body_sha256": "5705a9a3879b4f4d8918f643301ec5658305f011b28d65f49a6aa947bb8288f6",
+        "output_sha256": "bcde32f9d9256667be14502e159cdf734f3b3881325efd95d878c1e9826a65c2",
+        "image_ids": []
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "cd09f6a0-d386-4633-b4bb-af8a6f16a016",
+      "asset": "assets/cd09f6a0-d386-4633-b4bb-af8a6f16a016.png",
+      "bytes": 50018,
+      "sha256": "22c71e1879abe5a4e565797b8d1a4a85fdd247d567dbbdda949b8ec0bcec3bdf",
+      "git_blob_sha": "a6d0c5dd534d65fc2b6c6d731c92ffbab80d27ff"
+    },
+    {
+      "id": "ab90687a-e93d-4afe-bd60-d7d28efb9f9d",
+      "asset": "assets/ab90687a-e93d-4afe-bd60-d7d28efb9f9d.png",
+      "bytes": 8612,
+      "sha256": "dca92ac551b79c1b87de09e39c44c3aa1a0bedf66761bb95b112219d164c4537",
+      "git_blob_sha": "6a85b561333b6908407272278365a58716772e5c"
+    },
+    {
+      "id": "d3967865-8988-4b7c-a18b-2eca10bd9752",
+      "asset": "assets/d3967865-8988-4b7c-a18b-2eca10bd9752.png",
+      "bytes": 76161,
+      "sha256": "cd32bf9b56dcc0dc46574ca8452e1eda6093e7a508840c29cf5f2bb2f3903f3b",
+      "git_blob_sha": "e493fac258ee8a0c8fb66fd8aca6101981d8418f"
+    },
+    {
+      "id": "bf883ba2-a680-4321-bbd0-277ad061bccc",
+      "asset": "assets/bf883ba2-a680-4321-bbd0-277ad061bccc.png",
+      "bytes": 19319,
+      "sha256": "ebcdcc8393805daac9245dfb8c564acd0e4f34f07da5d44ae783601418c88712",
+      "git_blob_sha": "a350840c73ece95fa6654f9b363521a565367111"
+    },
+    {
+      "id": "7ab8e130-5a21-4e20-a52d-742225bb8610",
+      "asset": "assets/7ab8e130-5a21-4e20-a52d-742225bb8610.png",
+      "bytes": 21307,
+      "sha256": "21eeee34b92aef2bafa28a54a539c7f2cc6e63bbce8be06859dc1ab4417ebe9b",
+      "git_blob_sha": "268f4621bd5214d77764eb38be0e66a08dd9deea"
+    },
+    {
+      "id": "228dc1c2-9830-46df-b0f6-b79ecace91df",
+      "asset": "assets/228dc1c2-9830-46df-b0f6-b79ecace91df.png",
+      "bytes": 41310,
+      "sha256": "73d76801655d111fffddf27deab63d78a8bcd852af9594953d01aa20e0b7e98f",
+      "git_blob_sha": "7db7259dfda6d6306506649a85ee86170c80749b"
+    },
+    {
+      "id": "8ac2b14e-be76-400f-8799-12fe1d2d81da",
+      "asset": "assets/8ac2b14e-be76-400f-8799-12fe1d2d81da.png",
+      "bytes": 13328,
+      "sha256": "84b8a445d9f56ca3f464281a408db8e1d3e0caef0e276e0cb3d6c90c3ab82e9e",
+      "git_blob_sha": "dd837af995778941907ef40fb7b0c00329045c15"
+    },
+    {
+      "id": "6159717a-eed8-4762-a660-52710eb8fd5a",
+      "asset": "assets/6159717a-eed8-4762-a660-52710eb8fd5a.png",
+      "bytes": 81472,
+      "sha256": "e7d609ddb17a57e2aeba19a9e8aeb3012e23a5c4870440fcaa10b27d9428db46",
+      "git_blob_sha": "1f2afa2dc8e2a8005ab58186ac3ed5eb1bdc294c"
+    },
+    {
+      "id": "4e40fb40-32ed-4c56-8821-684d529584ff",
+      "asset": "assets/4e40fb40-32ed-4c56-8821-684d529584ff.png",
+      "bytes": 21604,
+      "sha256": "5df59de4280be9d3731936c22de96ab29f2fd2f6f24425b2a35bed8da8bf93ea",
+      "git_blob_sha": "f093ee6876b2387db3cad8577c94b44fd6da3121"
+    },
+    {
+      "id": "7cb53457-570f-4a61-9134-c701cf3c2f24",
+      "asset": "assets/7cb53457-570f-4a61-9134-c701cf3c2f24.png",
+      "bytes": 40363,
+      "sha256": "7ca471c4bdbe5cf4cfb9ae25fa07bf69e923462a26d2741792ba723822b37f53",
+      "git_blob_sha": "d6469ad8a2c8af978c606723271700ceafaeafd5"
+    },
+    {
+      "id": "3dace308-f1c3-4c55-8810-2d03644d1f4e",
+      "asset": "assets/3dace308-f1c3-4c55-8810-2d03644d1f4e.png",
+      "bytes": 20007,
+      "sha256": "ca8a2c36c1152a423bafea56529b0fd2050781966987e953d887eb7e15b84e5d",
+      "git_blob_sha": "2e1c6dff58584289af3cc22754bc880fb6c450dd"
+    }
+  ]
+}

@@ -54,6 +54,17 @@ export function verifyCurrent(root,{imageCache}={}){
  const pages=manifests.flatMap(s=>s.pages),blankPages=manifests.flatMap(s=>s.blank_pages);
  check(pages.length===summary.nonblank_pages,'Page count');
  check(blankPages.length===summary.blank_pages,'Blank page count');
+ const additionalPath='docs/current/additional-notion-pages.json';
+ const additionalState=fs.existsSync(safe(additionalPath))?json(additionalPath):{pages:[]};
+ const additional=additionalState.pages;
+ for(const item of additional){
+  const s=item.source,m=item.manifest;
+  check(!sourceMap.has(s.id),'Duplicate additional source ID '+s.id);
+  check(s.id===m.notion_id&&Boolean(s.original_body),'Additional source must be a nonblank page '+s.id);
+  check(manifests.some(group=>group.service===s.service),'Additional source service '+s.id);
+  sources.push(s);sourceMap.set(s.id,s);pages.push(m);
+ }
+
  check(new Set(manifests.map(s=>s.service)).size===summary.services.length,'Service uniqueness');
  const ids=new Set(),files=new Set(),images=new Map();
  for(const name of fs.readdirSync(safe(META+'/images')).filter(n=>n.endsWith('.json'))){
@@ -62,6 +73,12 @@ export function verifyCurrent(root,{imageCache}={}){
   }
  }
  check(images.size===summary.images.unique_files,'Unique image count');
+ for(const image of additionalState.images||[]){
+  const previous=images.get(image.id);
+  check(!previous||(previous.git_blob_sha===image.git_blob_sha&&previous.sha256===image.sha256),'Additional image identity '+image.id);
+  if(!previous)images.set(image.id,image);
+ }
+
  let references=0,notionLinks=0;
  for(const m of pages){
   check(!ids.has(m.notion_id),'Duplicate page ID '+m.notion_id);ids.add(m.notion_id);
@@ -134,7 +151,7 @@ export function verifyCurrent(root,{imageCache}={}){
   }
  }
  check(ids.size===sources.length,'All source pages accounted for');
- check(references===summary.images.occurrences,'Image reference count');
+ check(references===summary.images.occurrences+additional.reduce((n,x)=>n+x.manifest.image_ids.length,0),'Image reference count');
  let imagesChecked=0;
  for(const image of images.values()){
   try{
