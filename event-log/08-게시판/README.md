@@ -4,6 +4,8 @@
 
 Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 목록입니다.
 
+[현행 게시판 개요·항목 번호](../../docs/current/board-overview.md) · [공통 가이드](../../docs/current/logging-guide.md)
+
 | 명세 | 플랫폼 | Notion |
 | --- | --- | --- |
 | [1-1.메인_공지사항_더보기_클](1-1.%EB%A9%94%EC%9D%B8_%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD_%EB%8D%94%EB%B3%B4%EA%B8%B0_%ED%81%B4.md) | WEB | [원문](https://app.notion.com/p/6170221954bc83d1b83b81e11602d971) |
