@@ -5,6 +5,7 @@ on:
       - event-log/**
       - _archive/updates/2026-11-27/notion-sync/**
       - docs/current/additional-notion-pages.json
+      - docs/current/notion-page-updates.json
       - automation/logging-audit/**
       - .github/workflows/*logging-audit*.yml
   push:
@@ -13,6 +14,7 @@ on:
       - event-log/**
       - _archive/updates/2026-11-27/notion-sync/**
       - docs/current/additional-notion-pages.json
+      - docs/current/notion-page-updates.json
       - automation/logging-audit/**
       - .github/workflows/*logging-audit*.yml
 permissions:

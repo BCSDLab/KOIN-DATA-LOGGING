@@ -36,6 +36,17 @@ class GitHubSource:
             index = {item['path']: item for item in entries}
             if len(index) != len(entries) or not index:
                 raise ValueError('Duplicate or empty document index')
+            updates_path = self.root / 'docs/current/notion-page-updates.json'
+            if updates_path.is_file():
+                seen_updates = set()
+                for update in json.loads(updates_path.read_text(encoding='utf8'))['pages']:
+                    item, source = update['manifest'], update['source']
+                    previous = index.get(item['path'])
+                    if (not previous or item['notion_id'] in seen_updates or
+                            previous['notion_id'] != item['notion_id'] or source['id'] != item['notion_id']):
+                        raise ValueError('Invalid current page update identity')
+                    seen_updates.add(item['notion_id'])
+                    index[item['path']] = item
             for rel, item in index.items():
                 if not rel.startswith('event-log/') or not rel.endswith('.md') or Path(rel).name == 'README.md':
                     raise ValueError('Invalid canonical document path')
