@@ -98,3 +98,31 @@ class CanonicalGitHubSourceTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+class CurrentPageUpdateTest(unittest.TestCase):
+    setup_repo = CanonicalGitHubSourceTest.setup_repo
+    def test_current_platform_update_replaces_known_record_and_checks_hash(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root, paths, alias = self.setup_repo(folder)
+            original = (root / '_archive/updates/2026-11-27/notion-sync/service.json').read_bytes()
+            rel = paths[0]
+            body = '# Sample\n플랫폼: ANDROID, IOS\n## 새 로깅\n- event_name: DA1\n'
+            (root / rel).write_text(body)
+            item = dict(path=rel,notion_id='0'*32,platforms=['ANDROID','IOS'],output_sha256=hashlib.sha256(body.encode()).hexdigest())
+            updates = root/'docs/current/notion-page-updates.json';updates.parent.mkdir(parents=True)
+            updates.write_text(json.dumps({'pages':[{'source':{'id':'0'*32},'manifest':item}]}))
+            result = GitHubSource(root,'a'*40,paths+[alias]).collect()
+            target = next(p for p in result['pages'] if p['id']==rel)
+            self.assertEqual(target['platforms'],['ANDROID','IOS'])
+            self.assertEqual((root / '_archive/updates/2026-11-27/notion-sync/service.json').read_bytes(),original)
+            (root / rel).write_text(body+'tampered')
+            with self.assertRaisesRegex(IncompleteSource,'Canonical specification content changed'):
+                GitHubSource(root,'a'*40,paths+[alias]).collect()
+
+    def test_unknown_page_update_cannot_extend_the_registry(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root,paths,alias=self.setup_repo(folder)
+            updates=root/'docs/current/notion-page-updates.json';updates.parent.mkdir(parents=True)
+            updates.write_text(json.dumps({'pages':[{'source':{'id':'x'*32},'manifest':{'path':paths[0],'notion_id':'x'*32}}]}))
+            with self.assertRaisesRegex(IncompleteSource,'Canonical document manifest invalid'):
+                GitHubSource(root,'a'*40,paths+[alias]).collect()

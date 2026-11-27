@@ -85,3 +85,22 @@ test('additional source text cannot change even after refreshing its output hash
  f.write(s.doc,changed);s.item.manifest.output_sha256=sha256(changed);f.write('docs/current/additional-notion-pages.json',JSON.stringify({pages:[s.item]}));
  assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Source prose')));
 });
+
+
+test('current platform update preserves archived snapshot and validates reader against new source',t=>{
+ const f=fixture(t),snapshot=f.read(META+'/source-pages.json.gz');
+ const sources=JSON.parse(zlib.gunzipSync(fs.readFileSync(path.join(f.root,META+'/source-pages.json.gz'))));
+ const old=sources[0],source={...old,platforms:['ANDROID','IOS'],properties:{...old.properties,platform:['ANDROID','IOS']}};
+ const body=f.read(f.doc).replace('플랫폼: ANDROID','플랫폼: ANDROID, IOS').replace(JSON.stringify(old.properties),JSON.stringify(source.properties));
+ f.write(f.doc,body);
+ const manifest={...f.manifest.pages[0],platforms:source.platforms,output_sha256:sha256(body)};
+ f.write('docs/current/notion-page-updates.json',JSON.stringify({pages:[{source,manifest}]}));
+ assert.deepEqual(verifyCurrent(f.root).errors,[]);
+ assert.equal(f.read(META+'/source-pages.json.gz'),snapshot);
+ f.write(f.doc,body.replace('새 값','오류 값'));
+ assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Output body hash')||e.includes('Source prose')));
+});
+test('unknown current page update is rejected',t=>{
+ const f=fixture(t);f.write('docs/current/notion-page-updates.json',JSON.stringify({pages:[{source:{id:'unknown'},manifest:{notion_id:'unknown',path:f.doc}}]}));
+ assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Invalid current page update identity')));
+});

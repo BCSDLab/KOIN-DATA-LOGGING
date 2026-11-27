@@ -65,6 +65,22 @@ export function verifyCurrent(root,{imageCache}={}){
   sources.push(s);sourceMap.set(s.id,s);pages.push(m);
  }
 
+ const updatesPath='docs/current/notion-page-updates.json';
+ const updatedIds=new Set();
+ if(fs.existsSync(safe(updatesPath))){
+  for(const item of json(updatesPath).pages){
+   const s=item.source,m=item.manifest,previous=sourceMap.get(s.id);
+   const at=pages.findIndex(p=>p.notion_id===s.id);
+   const valid=Boolean(previous&&at>=0&&m.notion_id===s.id&&m.path===pages[at].path&&
+    s.title===previous.title&&s.service===previous.service&&s.url===previous.url&&
+    s.original_body&&!updatedIds.has(s.id));
+   check(valid,'Invalid current page update identity '+s.id);
+   if(!valid)continue;
+   updatedIds.add(s.id);sourceMap.set(s.id,s);
+   sources[sources.findIndex(p=>p.id===s.id)]=s;pages[at]=m;
+  }
+ }
+
  check(new Set(manifests.map(s=>s.service)).size===summary.services.length,'Service uniqueness');
  const ids=new Set(),files=new Set(),images=new Map();
  for(const name of fs.readdirSync(safe(META+'/images')).filter(n=>n.endsWith('.json'))){
@@ -182,4 +198,5 @@ if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.ur
  const index=process.argv.indexOf('--image-cache'),imageCache=index<0?undefined:process.argv[index+1];
  try{const result=verifyCurrent(root,{imageCache});console.log(JSON.stringify(result,null,2));if(result.errors.length)process.exitCode=1;}catch(error){console.error(error);process.exitCode=1;}
 }
+
 
