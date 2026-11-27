@@ -64,10 +64,3 @@ Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 
 | [4-5 전화 주문 혜택 상점상세 전화 (클릭) ](4-5-%EC%A0%84%ED%99%94-%EC%A3%BC%EB%AC%B8-%ED%98%9C%ED%83%9D-%EC%83%81%EC%A0%90%EC%83%81%EC%84%B8-%EC%A0%84%ED%99%94-%28%ED%81%B4%EB%A6%AD%29.md) | WEB, ANDROID, IOS | [원문](https://app.notion.com/p/d270221954bc821d95768159502d9ad2) |
 | [4-6 상점 혜택 화면 뒤로가기 (Click · Swipe)](4-6-%EC%83%81%EC%A0%90-%ED%98%9C%ED%83%9D-%ED%99%94%EB%A9%B4-%EB%92%A4%EB%A1%9C%EA%B0%80%EA%B8%B0-%28Click-%C2%B7-Swipe%29.md) | IOS, ANDROID | [원문](https://app.notion.com/p/6010221954bc83ecaa0d01f8bb852fea) |
 | [4-7 상점 혜택 문구 펼치기 (클릭)](4-7-%EC%83%81%EC%A0%90-%ED%98%9C%ED%83%9D-%EB%AC%B8%EA%B5%AC-%ED%8E%BC%EC%B9%98%EA%B8%B0-%28%ED%81%B4%EB%A6%AD%29.md) | IOS, ANDROID | [원문](https://app.notion.com/p/ee70221954bc82c69fdc01063313bb55) |
-
-## 본문이 없는 Notion 항목
-
-로깅 계약으로 추정하지 않고 원문 링크만 보존합니다.
-
-- [새 페이지](https://app.notion.com/p/78b0221954bc837584bb81100f425d46)
-- [새 페이지](https://app.notion.com/p/5b70221954bc822a982081e2833db28d)

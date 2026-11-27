@@ -48,3 +48,24 @@ test('duplicate body markers are rejected',t=>{const f=fixture(t);f.mutate(s=>s+
 test('changed Notion source snapshot is rejected',t=>{const f=fixture(t);f.write(META+'/source-pages.json.gz',zlib.gzipSync('[]'));assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Source snapshot file hash')));});
 test('percent-encoded parentheses in a valid service-list filename are accepted',t=>{const f=fixture(t);const renamed='event-log/01-service/(sample).md';f.write(renamed,f.read(f.doc));fs.unlinkSync(path.join(f.root,f.doc));f.manifest.pages[0].path=renamed;f.write(META+'/services/01.json',JSON.stringify(f.manifest));f.write('event-log/01-service/README.md',f.read('event-log/01-service/README.md').replace('sample.md','%28sample%29.md'));assert.deepEqual(verifyCurrent(f.root).errors,[]);});
 
+
+test('confirmed blank retirement permits removing only the blank link',t=>{
+ const f=fixture(t),id=f.manifest.blank_pages[0].notion_id;
+ f.write('docs/current/removed-blank-pages.json',JSON.stringify({pages:[{notion_id:id,status:'in_trash',source_body_empty:true}]}));
+ f.write('event-log/01-service/README.md','[Sample](sample.md)\n');
+ const result=verifyCurrent(f.root);assert.deepEqual(result.errors,[]);assert.equal(result.activeBlankPages,0);assert.equal(result.retiredBlankPages,1);
+});
+test('unrecorded removal of a blank link fails',t=>{
+ const f=fixture(t);f.write('event-log/01-service/README.md','[Sample](sample.md)\n');
+ assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Blank page link')));
+});
+test('a nonblank page cannot be retired as blank',t=>{
+ const f=fixture(t);
+ f.write('docs/current/removed-blank-pages.json',JSON.stringify({pages:[{notion_id:f.manifest.pages[0].notion_id,status:'in_trash',source_body_empty:true}]}));
+ assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('known blank source')));
+});
+test('retired blank links must disappear from current indexes',t=>{
+ const f=fixture(t),id=f.manifest.blank_pages[0].notion_id;
+ f.write('docs/current/removed-blank-pages.json',JSON.stringify({pages:[{notion_id:id,status:'in_trash',source_body_empty:true}]}));
+ assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Retired blank still linked')));
+});

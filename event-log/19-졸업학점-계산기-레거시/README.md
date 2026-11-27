@@ -22,9 +22,3 @@ Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 
 | [3-7. 졸업학점 계산기_엑셀파일 추가 (경로 지정)](3-7.-%EC%A1%B8%EC%97%85%ED%95%99%EC%A0%90-%EA%B3%84%EC%82%B0%EA%B8%B0_%EC%97%91%EC%85%80%ED%8C%8C%EC%9D%BC-%EC%B6%94%EA%B0%80-%28%EA%B2%BD%EB%A1%9C-%EC%A7%80%EC%A0%95%29.md) | WEB | [원문](https://app.notion.com/p/b310221954bc827b842481a0e4e0f533) |
 | [3-8. 졸업학점 계산기_엑셀파일 추가 (드래그&드롭)](3-8.-%EC%A1%B8%EC%97%85%ED%95%99%EC%A0%90-%EA%B3%84%EC%82%B0%EA%B8%B0_%EC%97%91%EC%85%80%ED%8C%8C%EC%9D%BC-%EC%B6%94%EA%B0%80-%28%EB%93%9C%EB%9E%98%EA%B7%B8%26%EB%93%9C%EB%A1%AD%29.md) | WEB | [원문](https://app.notion.com/p/5110221954bc82f4b2778145161f0bb1) |
 | [3-9. 졸업학점 계산기_교양 개설 목록 (클릭)](3-9.-%EC%A1%B8%EC%97%85%ED%95%99%EC%A0%90-%EA%B3%84%EC%82%B0%EA%B8%B0_%EA%B5%90%EC%96%91-%EA%B0%9C%EC%84%A4-%EB%AA%A9%EB%A1%9D-%28%ED%81%B4%EB%A6%AD%29.md) | WEB | [원문](https://app.notion.com/p/b6c0221954bc836ba26e8197fce3cc05) |
-
-## 본문이 없는 Notion 항목
-
-로깅 계약으로 추정하지 않고 원문 링크만 보존합니다.
-
-- [새 페이지](https://app.notion.com/p/6b60221954bc82d097b681182f976479)

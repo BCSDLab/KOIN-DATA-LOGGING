@@ -83,10 +83,3 @@ Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 
 | [[레거시] 10-3. 카테고리_교내 시설물 정보_클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-10-3.-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC_%EA%B5%90%EB%82%B4-%EC%8B%9C%EC%84%A4%EB%AC%BC-%EC%A0%95%EB%B3%B4_%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/fc20221954bc83e4b00b81ddea5deb74) |
 | [[레거시] 11-15.카테고리_채팅(쪽지)_클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%5D-11-15.%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC_%EC%B1%84%ED%8C%85%28%EC%AA%BD%EC%A7%80%29_%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/25b0221954bc82128e37012207cdd581) |
 | [[레거시·중복 원문] 11-21. 카테고리_분실물_클릭](%5B%EB%A0%88%EA%B1%B0%EC%8B%9C%C2%B7%EC%A4%91%EB%B3%B5-%EC%9B%90%EB%AC%B8%5D-11-21.-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC_%EB%B6%84%EC%8B%A4%EB%AC%BC_%ED%81%B4%EB%A6%AD.md) | ANDROID, IOS | [원문](https://app.notion.com/p/8520221954bc824885bc81f310b96d29) |
-
-## 본문이 없는 Notion 항목
-
-로깅 계약으로 추정하지 않고 원문 링크만 보존합니다.
-
-- [새 페이지](https://app.notion.com/p/7140221954bc827a9dc701276dfb287f)
-- [새 페이지](https://app.notion.com/p/3d90221954bc82a6b9738153cf08aef1)
