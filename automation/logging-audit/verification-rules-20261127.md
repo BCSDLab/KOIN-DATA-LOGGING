@@ -9,4 +9,6 @@
 - 주간 예약·원천 범위·모바일 기준 버전·지정 Slack 목적지를 유지한다. root README와 자동 검수 설명도 실제 GitHub 기준·규칙 분석으로 갱신했다.
 - 과거 실제 API 시험은 verification-20261127.md에 이력으로 보존했다. 이번 경로에서는 API를 재시험하지 않는다.
 
-GitHub Actions 합성 시험 결과는 별도 실행 링크와 함께 갱신한다. main 병합 전에는 기존 main 예약 코드가 자동으로 교체되지 않는다. 이번 작업은 테스트 브랜치·Draft PR 갱신이며 실데이터 읽기 재검증·새 Slack 수신·운영 반영은 하지 않았다.
+GitHub Actions 합성 시험 성공: https://github.com/BCSDLab/KOIN-DATA-LOGGING/actions/runs/45921069640 (코드 커밋 69061b137235aa9f86cb933354d8ef05897cb66c). 원격 검사 106개 통과, Stage·Production 합성 분석 완료. 의존성 설치·Google Cloud 인증·실제 주간 조회·전송 cache 복원 및 저장은 모두 건너뛰었다. OpenAI 키·모델을 워크플로에 전달하지 않았다.
+
+main 병합 전에는 기존 main 예약 코드가 자동으로 교체되지 않는다. 이번 작업은 테스트 브랜치·Draft PR 갱신이며 실데이터 읽기 재검증·새 Slack 수신·운영 반영은 하지 않았다.
