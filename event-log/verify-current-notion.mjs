@@ -54,6 +54,16 @@ export function verifyCurrent(root,{imageCache}={}){
  const pages=manifests.flatMap(s=>s.pages),blankPages=manifests.flatMap(s=>s.blank_pages);
  check(pages.length===summary.nonblank_pages,'Page count');
  check(blankPages.length===summary.blank_pages,'Blank page count');
+ const additionalPath='docs/current/additional-notion-pages.json';
+ const additional=fs.existsSync(safe(additionalPath))?json(additionalPath).pages:[];
+ for(const item of additional){
+  const s=item.source,m=item.manifest;
+  check(!sourceMap.has(s.id),'Duplicate additional source ID '+s.id);
+  check(s.id===m.notion_id&&Boolean(s.original_body),'Additional source must be a nonblank page '+s.id);
+  check(manifests.some(group=>group.service===s.service),'Additional source service '+s.id);
+  sources.push(s);sourceMap.set(s.id,s);pages.push(m);
+ }
+
  check(new Set(manifests.map(s=>s.service)).size===summary.services.length,'Service uniqueness');
  const ids=new Set(),files=new Set(),images=new Map();
  for(const name of fs.readdirSync(safe(META+'/images')).filter(n=>n.endsWith('.json'))){
