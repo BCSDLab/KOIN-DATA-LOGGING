@@ -69,6 +69,8 @@ def audit_context(report):
 
 def slack_context(report):
     lines = []
+    if report.get('provisional'):
+        lines.append('임시 검수 · ' + str(report.get('as_of_kst') or '조회 시점') + '까지 · 당일 수집 진행 중')
     debug = report.get('normalization', {}).get('android_debug_events', 0)
     if debug:
         lines.append('Android 디버그 ' + str(debug) + '건: 접미사 제외 후 명세 대조')
@@ -77,14 +79,14 @@ def slack_context(report):
 
 def slack_text(environment, start, end, report):
     title = '[Stage]' if environment == 'stage' else '[Prod]'
-    lines = [f'{title} 주간 로깅 검수 · {start[5:]}~{end[5:]}'] + notification_sections(report) + slack_context(report)
+    lines = [f'{title} ' + ('기간 지정 로깅 검수' if report.get('custom_range') else '주간 로깅 검수') + f' · {start[5:]}~{end[5:]}'] + notification_sections(report) + slack_context(report)
     if report.get('detail_url'):
         lines.append('상세보기: ' + report['detail_url'])
     return '\n'.join(lines)
 
 
 def slack_payload(environment, start, end, report):
-    blocks = [dict(type='header', text=dict(type='plain_text', text=('[Stage]' if environment == 'stage' else '[Prod]') + ' 주간 로깅 검수')),
+    blocks = [dict(type='header', text=dict(type='plain_text', text=('[Stage]' if environment == 'stage' else '[Prod]') + (' 기간 지정 로깅 검수' if report.get('custom_range') else ' 주간 로깅 검수'))),
               dict(type='context', elements=[dict(type='mrkdwn', text=f'{start} ~ {end} · KST')])]
     for section in notification_sections(report):
         # Analysis status does not change the independent platform findings.
@@ -98,8 +100,12 @@ def slack_payload(environment, start, end, report):
 
 
 def detail_markdown(reports):
-    lines = ['# 주간 로깅 검수', '', '기준: GitHub main의 전체 현행·과거 명세. DA1·DA2 및 CAMPUS·BUSINESS·USER를 플랫폼별 대조합니다.',
+    lines = ['# ' + ('기간 지정 로깅 검수' if any(r.get('custom_range') for r in reports.values()) else '주간 로깅 검수'), '', '기준: GitHub main의 전체 현행·과거 명세. DA1·DA2 및 CAMPUS·BUSINESS·USER를 플랫폼별 대조합니다.',
              '미관측 명세는 오류로 판정하지 않습니다. 동적 value는 존재 여부만 검사합니다. 구버전 적용 시점과 명세 충돌은 담당자 확인 대상입니다.', '']
+    for report in reports.values():
+        if report.get('provisional'):
+            lines += ['**' + safe(report['start']) + ' ~ ' + safe(report['end']) + ' · 당일 수집 진행 중 · 조회 시점: ' + safe(report.get('as_of_kst')) + '**', '']
+            break
     lines += ['## 문제 로그 바로가기', '', '[Stage · Prod 실제 수집 비교](#user-content-audit-environments) · [개발자 전달용 상세](#user-content-developer-handoff)', '']
     for env, report in reports.items():
         title = 'Stage' if env == 'stage' else 'Prod'

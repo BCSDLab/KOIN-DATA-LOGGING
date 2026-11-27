@@ -39,9 +39,21 @@ def week_start(value=None, today=None):
     return today - timedelta(days=today.weekday() + 7)
 
 
-def audit(start, output, state, send=False, collector=None, query=fetch, sender=send_once, investigator=investigate):
-    end = start + timedelta(days=6)
-    output, state = Path(output) / start.isoformat(), Path(state) / start.isoformat()
+def custom_range(start_value, end_value, today=None):
+    today = today or datetime.now(KST).date()
+    if not start_value or not end_value:
+        raise ValueError('Both start-date and end-date are required')
+    start, end = date.fromisoformat(start_value), date.fromisoformat(end_value)
+    if start > end or end > today:
+        raise ValueError('Invalid date range or future end date')
+    return start, end
+
+
+def audit(start, output, state, send=False, collector=None, query=fetch, sender=send_once, investigator=investigate, end=None, include_intraday=False):
+    custom = end is not None
+    end = end or start + timedelta(days=6)
+    period_key = start.isoformat() + ('_to_' + end.isoformat() if custom else '')
+    output, state = Path(output) / period_key, Path(state) / period_key
     output.mkdir(parents=True, exist_ok=True)
     state.mkdir(parents=True, exist_ok=True)
     catalog, source_error, source, source_diagnostics = None, None, None, None
@@ -75,8 +87,9 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
         if source_error is None:
             try:
                 targets = targets_for(environment)
+                query_options = {'include_intraday': True} if include_intraday else {}
                 fetched = query(project, dataset, (start - timedelta(days=3)).isoformat(), end.isoformat(),
-                                max_bytes=int(os.getenv('AUDIT_MAX_BYTES', str(5 * 1024**3))))
+                                max_bytes=int(os.getenv('AUDIT_MAX_BYTES', str(5 * 1024**3))), **query_options)
                 fetched = dict(fetched, rows=[normalize_observation(row) for row in fetched['rows']])
                 primary = [r for r in fetched['rows'] if start.strftime('%Y%m%d') <= r['event_date'] <= end.strftime('%Y%m%d')]
                 late = [r for r in fetched['rows'] if r['event_date'] < start.strftime('%Y%m%d')]
@@ -101,7 +114,9 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
                                             historical_labels=len(catalog['legacy_by_label'])))
             except Exception as exc:
                 report = dict(complete=False, failure_type=type(exc).__name__, snapshot_sha256=catalog['snapshot_sha256'])
-        report.update(environment=environment, start=start.isoformat(), end=end.isoformat())
+        report.update(environment=environment, start=start.isoformat(), end=end.isoformat(),
+                      custom_range=custom, provisional=custom and end == datetime.now(KST).date(),
+                      as_of_kst=datetime.now(KST).isoformat(timespec='seconds'))
         if source:
             report.update(source_kind=source.get('source_kind') or ('notion' if isinstance(collector, NotionSource) else 'unknown'),
                           source_revision=source.get('source_revision'))
@@ -150,16 +165,25 @@ def audit(start, output, state, send=False, collector=None, query=fetch, sender=
 def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument('--week-start')
+    parser.add_argument('--start-date')
+    parser.add_argument('--end-date')
     parser.add_argument('--print-week-start', action='store_true')
     parser.add_argument('--output', default='reports')
     parser.add_argument('--state', default='.audit-state')
     parser.add_argument('--send', action='store_true')
     args = parser.parse_args(argv)
-    start = week_start(args.week_start)
+    range_options = {}
+    if args.start_date or args.end_date:
+        if args.week_start:
+            raise ValueError('Use week-start or custom dates, not both')
+        start, end = custom_range(args.start_date, args.end_date)
+        range_options = dict(end=end, include_intraday=end == datetime.now(KST).date())
+    else:
+        start = week_start(args.week_start)
     if args.print_week_start:
         print(start.isoformat())
         return 0
-    reports = audit(start, args.output, args.state, send=args.send)
+    reports = audit(start, args.output, args.state, send=args.send, **range_options)
     summary = {k: {**{field: r.get(field) for field in ('complete', 'events', 'observed_labels', 'failure_type', 'delivery_status', 'delivery_reused', 'delivery_payload_matches', 'delivery_current_confirmed', 'delivery_sent_at', 'source_diagnostics', 'version_scope')},
                    'investigation_mode': r.get('investigation', {}).get('mode'),
                    'investigation_status': r.get('investigation', {}).get('status'),

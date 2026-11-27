@@ -9,6 +9,14 @@ on:
         description: '검수 대상 주의 월요일 YYYY-MM-DD (비우면 직전 완료 주)'
         required: false
         type: string
+      start_date:
+        description: '수동 검수 시작일 YYYY-MM-DD (end_date와 함께 지정)'
+        required: false
+        type: string
+      end_date:
+        description: '수동 검수 종료일 YYYY-MM-DD (오늘은 실시간 수집 포함)'
+        required: false
+        type: string
       send_slack:
         description: 'Stage 채널에 Stage/Prod 결과 전송'
         type: boolean
@@ -50,9 +58,12 @@ jobs:
         id: week
         env:
           REQUESTED_WEEK: ${{ inputs.week_start }}
+          CUSTOM_START: ${{ inputs.start_date }}
+          CUSTOM_END: ${{ inputs.end_date }}
         run: |
           args=()
           if [[ -n "$REQUESTED_WEEK" ]]; then args+=(--week-start "$REQUESTED_WEEK"); fi
+          if [[ -n "$CUSTOM_START" || -n "$CUSTOM_END" ]]; then args+=(--start-date "$CUSTOM_START" --end-date "$CUSTOM_END"); fi
           week="$(python run.py --print-week-start "${args[@]}")"
           echo "start=$week" >> "$GITHUB_OUTPUT"
       - name: 전송 상태 복원
@@ -91,6 +102,8 @@ jobs:
           SEND_SLACK: ${{ github.event_name == 'schedule' || inputs.send_slack }}
           NOTIFICATION_REVISION: ${{ inputs.notification_revision }}
           AUDIT_EVENT: ${{ github.event_name }}
+          CUSTOM_START: ${{ inputs.start_date }}
+          CUSTOM_END: ${{ inputs.end_date }}
         run: |
           args=()
           if [[ "$SEND_SLACK" == "true" ]]; then args+=(--send); fi
@@ -101,7 +114,12 @@ jobs:
             fi
             args+=(--state ".audit-state/manual-$NOTIFICATION_REVISION")
           fi
-          python run.py --week-start "$AUDIT_WEEK" "${args[@]}"
+          if [[ -n "$CUSTOM_START" || -n "$CUSTOM_END" ]]; then
+            args+=(--start-date "$CUSTOM_START" --end-date "$CUSTOM_END")
+          else
+            args+=(--week-start "$AUDIT_WEEK")
+          fi
+          python run.py "${args[@]}"
       - name: 규칙 상세 분석 합성 시험 (외부 조회·Slack 없음)
         if: ${{ inputs.offline_check }}
         timeout-minutes: 6
