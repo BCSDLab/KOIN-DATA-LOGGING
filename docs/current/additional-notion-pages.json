@@ -766,6 +766,46 @@
           "1c677de1-e590-4413-83b4-928edbbadf2d"
         ]
       }
+    },
+    {
+      "source": {
+        "id": "4250221954bc81519f9ce0161b7528ea",
+        "title": "1-11 PC 홈 고정 배너 이미지 클릭",
+        "service": "홈화면 리디자인",
+        "url": "https://app.notion.com/p/4250221954bc81519f9ce0161b7528ea",
+        "original_body": "<toggle>\n과거 로깅\n\n- event\\_name: <code>CAMPUS</code>\n- event\\_label: <code>main_modal</code>\n- value: \\{배너 제목\\}\n- event\\_category: <code>click</code>\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: PC 홈의 고정 배너 이미지 본문을 직접 클릭해 연결된 콘텐츠나 페이지로 이동을 시도할 때 1회 기록한다. 이전·다음 화살표, 하단 페이지 점, 자동 전환은 포함하지 않는다.\n- 적용 플랫폼: WEB (PC 전용)\n- screen\\_view: <code>main</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>banner__main__fixed_banner__click</code>\n- value: \\{클릭 시 표시 중인 배너 제목\\}\n- event\\_category: <code>click</code>\n\n### 참고사진 · WEB (PC)\n\n<image source=\"notion-file-block://42502219-54bc-8156-bb81-dbb1a8d6f597/dc6de882-c824-4b65-baa7-f466698bd47c?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=1-11_web_stage_marked.png\">\n기존 Stage 실제 캡처 · 빨간 네모의 이미지 본문이 클릭 대상. 겹쳐 보이는 원형 화살표와 하단 점은 별도 계약이며 제외한다.\n</image>\n</toggle>",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4250221954bc81519f9ce0161b7528ea",
+          "구분": "홈화면",
+          "상태": "로깅 필요",
+          "생성일": "2026-11-27T16:16:20.682Z",
+          "이벤트 이름": "1-11 PC 홈 고정 배너 이미지 클릭"
+        },
+        "last_edited_at": "2026-11-27T16:26:00.593Z"
+      },
+      "manifest": {
+        "notion_id": "4250221954bc81519f9ce0161b7528ea",
+        "title": "1-11 PC 홈 고정 배너 이미지 클릭",
+        "service": "홈화면 리디자인",
+        "path": "event-log/10-홈화면-리디자인/1-11-PC-홈-고정-배너-이미지-클릭.md",
+        "notion_url": "https://app.notion.com/p/4250221954bc81519f9ce0161b7528ea",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-27T16:26:00.593Z",
+        "source_body_sha256": "294c79efd11032c8cacd833943e083a1243683da5379c563c478676de12f8cb0",
+        "output_sha256": "8b83d91af00609b9d2c3b305102471e5636564b1373ddadb2b1967ab56999e86",
+        "image_ids": [
+          "dc6de882-c824-4b65-baa7-f466698bd47c"
+        ]
+      }
     }
   ],
   "images": [

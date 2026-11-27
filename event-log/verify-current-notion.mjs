@@ -67,6 +67,7 @@ export function verifyCurrent(root,{imageCache}={}){
 
  const updatesPath='docs/current/notion-page-updates.json';
  const updatedIds=new Set();
+ let updatedImageReferences=0;
  if(fs.existsSync(safe(updatesPath))){
   for(const item of json(updatesPath).pages){
    const s=item.source,m=item.manifest,previous=sourceMap.get(s.id);
@@ -76,6 +77,7 @@ export function verifyCurrent(root,{imageCache}={}){
     s.original_body&&!updatedIds.has(s.id));
    check(valid,'Invalid current page update identity '+s.id);
    if(!valid)continue;
+   updatedImageReferences+=m.image_ids.length-pages[at].image_ids.length;
    updatedIds.add(s.id);sourceMap.set(s.id,s);
    sources[sources.findIndex(p=>p.id===s.id)]=s;pages[at]=m;
   }
@@ -167,7 +169,7 @@ export function verifyCurrent(root,{imageCache}={}){
   }
  }
  check(ids.size===sources.length,'All source pages accounted for');
- check(references===summary.images.occurrences+additional.reduce((n,x)=>n+x.manifest.image_ids.length,0),'Image reference count');
+ check(references===summary.images.occurrences+additional.reduce((n,x)=>n+x.manifest.image_ids.length,0)+updatedImageReferences,'Image reference count');
  let imagesChecked=0;
  for(const image of images.values()){
   try{

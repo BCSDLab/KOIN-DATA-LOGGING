@@ -104,3 +104,15 @@ test('unknown current page update is rejected',t=>{
  const f=fixture(t);f.write('docs/current/notion-page-updates.json',JSON.stringify({pages:[{source:{id:'unknown'},manifest:{notion_id:'unknown',path:f.doc}}]}));
  assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Invalid current page update identity')));
 });
+
+test('current update may remove a misplaced photo without changing the archived snapshot',t=>{
+ const f=fixture(t),snapshot=fs.readFileSync(path.join(f.root,META+'/source-pages.json.gz'));
+ const old=JSON.parse(zlib.gunzipSync(snapshot))[0];
+ const source={...old,original_body:old.original_body.replace(/<image[^>]*22222222-2222-2222-2222-222222222222[^>]*\/>/,'')};
+ const output=f.read(f.doc).replace(f.md(f.b),'');
+ f.write(f.doc,output);
+ const manifest={...f.manifest.pages[0],image_ids:[f.a],source_body_sha256:sha256(source.original_body),output_sha256:sha256(output)};
+ f.write('docs/current/notion-page-updates.json',JSON.stringify({pages:[{source,manifest}]}));
+ assert.deepEqual(verifyCurrent(f.root).errors,[]);
+ assert.deepEqual(fs.readFileSync(path.join(f.root,META+'/source-pages.json.gz')),snapshot);
+});

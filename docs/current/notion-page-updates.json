@@ -652,6 +652,146 @@
         "output_sha256": "5eccb35e17d50f4c052202d551730de3e834b28e5e0edc59de1a52af981b2a4f",
         "image_ids": []
       }
+    },
+    {
+      "source": {
+        "id": "0d50221954bc8277b81781104e8776f9",
+        "title": "2-11  콜밴팟 찾기 이탈",
+        "service": "콜밴팟",
+        "url": "https://app.notion.com/p/0d50221954bc8277b81781104e8776f9",
+        "original_body": "<toggle>\n과거 로깅\n\n<p />\n\n<ul>\n<li>\nevent\\_name : CAMPUS\n</li>\n<li>\nevent\\_category\n\n- click\n- swipe\n- event\\_label : ㅊ\n</li>\n<li>\nvalue : \n</li>\n</ul>\n\n<p />\n\n<image source=\"notion-file-block://9a602219-54bc-8246-b7fd-814a35e1c6c5/f856fbf2-211e-4ad9-ab46-c5d5e70047a6?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n<p />\n</toggle>\n\n<toggle>\n새 로깅\n\n- 설명: ANDROID·IOS·모바일 WEB의 콜밴팟 목록에서 화면 내 뒤로가기 버튼을 클릭해 이탈할 때 1회 기록한다.\n- screen\\_view: <code>callvan_list</code>\n- event\\_label: <code>callvan__callvan_list__navigation__back__click / callvan__callvan_list__navigation__back__swipe (iOS만 해당)</code>\n- event\\_name: <code>DA2</code>\n- value: 뒤로가기\n- event\\_category: <code>click / swipe (iOS만 해당)</code>\n\n### 플랫폼별 계약 범위\n\n| event\\_label | 플랫폼 |\n| --- | --- |\n| callvan\\_\\_callvan\\_list\\_\\_navigation\\_\\_back\\_\\_click | ANDROID, IOS, WEB |\n| callvan\\_\\_callvan\\_list\\_\\_navigation\\_\\_back\\_\\_swipe | IOS |\n\n- 이 표의 WEB은 모바일 WEB만 뜻하며 PC WEB 지원을 추가한 것이 아니다. 화면 내 버튼 클릭과 iOS 뒤로가기 스와이프를 중복 전송하지 않는다.\n- 모바일 WEB의 과거 <code>callvan_back</code>은 화면 내 뒤로가기 버튼에 한해 위 click 계약으로 이관하는 대상이다. 명세 범위 추가이며 구현·배포·실수집 검증 완료를 뜻하지 않는다. 상태는 ‘로깅 필요’를 유지한다.\n\n### 참고사진 (기능 표시)\n\n<b>앱 참고사진 (ANDROID, IOS) / 모바일 WEB 사진은 별도 확인 필요</b>\n\n<b>참고사진 · 모바일</b>\n\n화면 정의의 Android 실제 캡처(2026-10-13), 선명도 개선본. 이번 작업은 기존 캡처를 사용. 박스는 뒤로가기 클릭 대상이며 OS 제스처 위치를 뜻하지 않음.\n\n<image source=\"notion-file-block://b3402219-54bc-8261-ba34-81d9175ed3e2/b98f239c-c74a-41be-a2d7-7090449863d9?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=n13-0.png\" />\n</toggle>",
+        "platforms": [
+          "ANDROID",
+          "IOS",
+          "WEB (모바일)"
+        ],
+        "properties": {
+          "platform": [
+            "ANDROID",
+            "IOS",
+            "WEB (모바일)"
+          ],
+          "url": "https://app.notion.com/p/0d50221954bc8277b81781104e8776f9",
+          "상태": "로깅 필요",
+          "이름": "2-11  콜밴팟 찾기 이탈",
+          "태그": [
+            "2. 콜밴팟 찾기"
+          ]
+        },
+        "last_edited_at": "2026-11-27T16:11:43.669Z"
+      },
+      "manifest": {
+        "notion_id": "0d50221954bc8277b81781104e8776f9",
+        "title": "2-11  콜밴팟 찾기 이탈",
+        "service": "콜밴팟",
+        "path": "event-log/11-콜밴팟/2-11-콜밴팟-찾기-이탈.md",
+        "notion_url": "https://app.notion.com/p/0d50221954bc8277b81781104e8776f9",
+        "platforms": [
+          "ANDROID",
+          "IOS",
+          "WEB (모바일)"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-27T16:11:43.669Z",
+        "source_body_sha256": "19f26f72662e2a9f47e1d041639d9653846211d62b33bf6873571797079670fe",
+        "output_sha256": "08a1b74bfd9a3f0fa9330f4270f264d214ab0c46ca0d758e2c81d3a180dd329e",
+        "image_ids": [
+          "f856fbf2-211e-4ad9-ab46-c5d5e70047a6",
+          "b98f239c-c74a-41be-a2d7-7090449863d9"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "49e0221954bc82e3b43401a38f1ca782",
+        "title": "1-2. 메인_모달_클릭",
+        "service": "배너",
+        "url": "https://app.notion.com/p/49e0221954bc82e3b43401a38f1ca782",
+        "original_body": "<toggle>\n과거 로깅\n\n- 설명: 메인화면 모달을 클릭\n- event\\_name : “CAMPUS”\n- event\\_label : “main\\_modal”\n- value : \\{title값\\}\n- event\\_category : “click”\n- 참고사진\n\n<image source=\"notion-file-block://82302219-54bc-8305-b764-01935bd6bcf3/9f2849a3-bce7-4c1a-aea6-e2e5606d4b8d?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n- 웹 참고사진\n\n<image source=\"notion-file-block://46902219-54bc-82be-9d45-015db1dd10cd/33eb65fd-644b-4f61-b748-02c6489ad097?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n</toggle>\n\n<toggle>\n새 로깅\n\n- 설명: 메인 화면의 배너 모달 본문을 클릭하여 연결된 콘텐츠 또는 서비스로 이동.\n- screen\\_view: <code>main</code>\n- event\\_name: <code>DA2</code>\n- event\\_label: <code>banner__main__modal__click</code>\n- value: \\{배너 ID\\}\n- event\\_category: <code>click</code>\n\n<b>참고사진 · 앱 모달 (ANDROID·IOS)</b>\n\n<image source=\"notion-file-block://48e02219-54bc-83fd-96fc-81b3f6582723/3cf19ffa-1c37-4032-8a2c-ab31a202376d?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n</toggle>",
+        "platforms": [
+          "ANDROID",
+          "IOS"
+        ],
+        "properties": {
+          "platform": [
+            "ANDROID",
+            "IOS"
+          ],
+          "url": "https://app.notion.com/p/49e0221954bc82e3b43401a38f1ca782",
+          "상태": "로깅 필요",
+          "이름": "1-2. 메인\\_모달\\_클릭",
+          "태그": [
+            "1. 메인_모달"
+          ]
+        },
+        "last_edited_at": "2026-11-27T16:23:15.108Z"
+      },
+      "manifest": {
+        "notion_id": "49e0221954bc82e3b43401a38f1ca782",
+        "title": "1-2. 메인_모달_클릭",
+        "service": "배너",
+        "path": "event-log/09-배너/1-2.-메인_모달_클릭.md",
+        "notion_url": "https://app.notion.com/p/49e0221954bc82e3b43401a38f1ca782",
+        "platforms": [
+          "ANDROID",
+          "IOS"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-27T16:23:15.108Z",
+        "source_body_sha256": "236aaeda68ce6c5cdadeb572b85187a6c1ac089d35a290b453cbfceeee1ba798",
+        "output_sha256": "38cdcc37db5b3c0ace893e45a2ce84dac4d1e1bb482fa90cada25dbbf86ccdba",
+        "image_ids": [
+          "9f2849a3-bce7-4c1a-aea6-e2e5606d4b8d",
+          "33eb65fd-644b-4f61-b748-02c6489ad097",
+          "3cf19ffa-1c37-4032-8a2c-ab31a202376d"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "eb70221954bc82048a20811f2461c24e",
+        "title": "1-1. 메인_모달진입",
+        "service": "배너",
+        "url": "https://app.notion.com/p/eb70221954bc82048a20811f2461c24e",
+        "original_body": "<toggle>\n과거 로깅\n\n<ul>\n<li>\n설명: 메인화면 모달이 사용자에게 뜨는 순간 찍히는 로깅\n</li>\n<li>\nevent\\_name : “CAMPUS”\n</li>\n<li>\nevent\\_label : “main\\_modal\\_entry”\n</li>\n<li>\nvalue : \\{title값\\}\n</li>\n<li>\nevent\\_category : “entry” \n</li>\n<li>\n참고사진\n</li>\n</ul>\n\n<image source=\"notion-file-block://f8002219-54bc-8369-9cc7-81d4cb94f503/6181e03f-d715-416f-855e-5a8491c91931?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n\n- 웹 참고사진\n\n<image source=\"notion-file-block://23802219-54bc-83d2-96e0-81f3e3cdd8f9/fcc43c84-e398-4df0-894d-8a268a0f601e?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n</toggle>\n\n<toggle>\n새 로깅\n\n- 설명: 메인 화면의 배너 모달이 사용자에게 실제로 표시되는 순간 기록.\n- screen\\_view: main\n- event\\_name: <code>DA2</code>\n- event\\_label: <code>banner__main__modal__exposure</code>\n- value: \\{배너 ID\\}\n- event\\_category: <code>exposure</code>\n\n<b>참고사진 · 앱 모달 (ANDROID·IOS)</b>\n\n<image source=\"notion-file-block://f8e02219-54bc-838d-823f-01f449e42cea/28876784-88f3-4e70-afd5-0d905b213893?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=image.png\" />\n</toggle>",
+        "platforms": [
+          "ANDROID",
+          "IOS"
+        ],
+        "properties": {
+          "platform": [
+            "ANDROID",
+            "IOS"
+          ],
+          "url": "https://app.notion.com/p/eb70221954bc82048a20811f2461c24e",
+          "상태": "로깅 필요",
+          "이름": "1-1. 메인\\_모달진입",
+          "태그": [
+            "1. 메인_모달"
+          ]
+        },
+        "last_edited_at": "2026-11-27T16:23:15.691Z"
+      },
+      "manifest": {
+        "notion_id": "eb70221954bc82048a20811f2461c24e",
+        "title": "1-1. 메인_모달진입",
+        "service": "배너",
+        "path": "event-log/09-배너/1-1.-메인_모달진입.md",
+        "notion_url": "https://app.notion.com/p/eb70221954bc82048a20811f2461c24e",
+        "platforms": [
+          "ANDROID",
+          "IOS"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-27T16:23:15.691Z",
+        "source_body_sha256": "84ab595f99293f0b859f0dac95d5505b55ae493d2a28fe3568021139c9f78b34",
+        "output_sha256": "6cb7b4d2f93873a4a976c60b97b9df67d06ae3d8b8718670ec91500c2397d9c5",
+        "image_ids": [
+          "6181e03f-d715-416f-855e-5a8491c91931",
+          "fcc43c84-e398-4df0-894d-8a268a0f601e",
+          "28876784-88f3-4e70-afd5-0d905b213893"
+        ]
+      }
     }
   ]
 }

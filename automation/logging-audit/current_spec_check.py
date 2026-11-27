@@ -57,9 +57,10 @@ def check_current_specs(collector=None):
                              event_category=good['event_category'] + '_debug',
                              event_label=good['event_label'] + ' (debug)')
                 require(compare(catalog, [debug])); checks['android_debug_examples'] += 1
-        unsupported = next(p for p in ('IOS', 'ANDROID', 'WEB') if p not in case['platforms'])
-        require(compare(catalog, [observation(c, unsupported, case['value'])]), 'platform_mismatch')
-        checks['unsupported_platform_examples'] += 1
+        unsupported = next((p for p in ('IOS', 'ANDROID', 'WEB') if p not in case['platforms']), None)
+        if unsupported is not None:
+            require(compare(catalog, [observation(c, unsupported, case['value'])]), 'platform_mismatch')
+            checks['unsupported_platform_examples'] += 1
     if len(page_ids) != examples['pages']:
         raise AssertionError('Approved value example pages are missing')
 
