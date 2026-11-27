@@ -6,7 +6,7 @@
 
 ## 현행 공통 문서와 참고 자료
 
-[현행 공통 가이드·게시판 개요·검수 참고문서](docs/current/README.md) · [조회되지 않은 참고 링크 4개](docs/current/reference-status.md)
+[현행 공통 가이드·게시판 개요·검수 참고문서](docs/current/README.md) · [참고 자료·문서 정리 기록](docs/current/reference-status.md)
 
 과거 보존본은 당시 기록입니다. 신규 구현에는 현행 가이드와 서비스별 개별 명세를 사용합니다.
 

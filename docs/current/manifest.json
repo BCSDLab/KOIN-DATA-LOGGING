@@ -9,7 +9,7 @@
       "source_url": "https://app.notion.com/p/3c30221954bc8214b1c481c5bbb6fba5",
       "source_last_edited_at": "2026-11-27T02:35:11.406Z",
       "source_body_sha256": "77bd9cc95acab7561901703ed11c86937416df80bd9db545f470c3d651849a19",
-      "output_sha256": "253b01c173820245ec1ec8adca0cdb90a24cb98704de0b9f497b9ddabffd18d6"
+      "output_sha256": "5e9a6f50667b95527298a8c5793ab1299413e24500d8d494c0614c815f7d5c45"
     },
     {
       "path": "docs/current/board-overview.md",
@@ -18,7 +18,7 @@
       "source_url": "https://app.notion.com/p/69c0221954bc8267b14801439f33c216",
       "source_last_edited_at": "2026-11-23T13:38:12.539Z",
       "source_body_sha256": "f88169fb19507897ea19ec6429a5081ffedcc510e490f8010c04564f08901a8d",
-      "output_sha256": "794bfa40d4408fa44e360b14ed753a6841f14eec1089f05d48aeed0cc3865a74"
+      "output_sha256": "c3ef8ba08d1a0e0047b395f6508001f97d4dc2535f5c4993982cb9931207c1d9"
     },
     {
       "path": "docs/current/team-recruitment-review-20260912.md",
@@ -27,45 +27,7 @@
       "source_url": "https://app.notion.com/p/2d30221954bc820eac2001262e4505e9",
       "source_last_edited_at": "2026-10-21T12:29:26.417Z",
       "source_body_sha256": "324bd91d9547b56b3863f6b7322f3db12bd347d91bbbacfe97403bd106fe8674",
-      "output_sha256": "8dc6ab3ef2d5d5e6aedf15691bee638ac341d2a47c7630fa2a5f0b98cd16cafa"
-    }
-  ],
-  "unavailable_references": [
-    {
-      "id": "2fd9ae650b5980139a17ce89e1272f68",
-      "description": "프론트엔드 Notion→JSON→TS 로깅 생성 파이프라인",
-      "parent": "Event Log / 관련 개발·분석 원문; 로깅 문서 이력 / 관련 개발·분석 자료",
-      "related": null,
-      "url": "https://app.notion.com/p/2fd9ae650b5980139a17ce89e1272f68",
-      "status": "NOT_FOUND",
-      "replacement_confirmed": false
-    },
-    {
-      "id": "fff9ae650b5981788609c2b9d9e3d680",
-      "description": "과거 CAMPUS Log 검수 이슈",
-      "parent": "Event Log / 관련 개발·분석 원문",
-      "related": "https://app.notion.com/p/fc60221954bc8274b9e781fa9b2fb10f",
-      "url": "https://app.notion.com/p/fff9ae650b5981788609c2b9d9e3d680",
-      "status": "NOT_FOUND",
-      "replacement_confirmed": false
-    },
-    {
-      "id": "3e89ae650b598078a348db7cd792e827",
-      "description": "일반인 계정별 과거 관측 로그·명세 대조",
-      "parent": "Event Log / 관련 개발·분석 원문; 로깅 문서 이력 / 관련 개발·분석 자료",
-      "related": "https://app.notion.com/p/d7b0221954bc82fbb20a0196e1ef0662",
-      "url": "https://app.notion.com/p/3e89ae650b598078a348db7cd792e827",
-      "status": "NOT_FOUND",
-      "replacement_confirmed": false
-    },
-    {
-      "id": "1060221954bc827b86350117f28ce771",
-      "description": "이전 팀원모집 기간별 검수 참조",
-      "parent": "로깅 문서 이력 / 관련 개발·분석 자료",
-      "related": "https://app.notion.com/p/2d30221954bc820eac2001262e4505e9",
-      "url": "https://app.notion.com/p/1060221954bc827b86350117f28ce771",
-      "status": "NOT_FOUND",
-      "replacement_confirmed": false
+      "output_sha256": "81deb558a52b8d51751c973c6f4cb5c280c2e9f10ec2303c5aebe02f862e553e"
     }
   ],
   "image": {
@@ -85,5 +47,12 @@
     "event-log individual specifications"
   ],
   "notion_logging_fields_changed": false,
-  "runtime_changed": false
+  "runtime_changed": false,
+  "removed_reference_links": {
+    "count": 4,
+    "reason": "사용자 요청",
+    "scope": "Notion Event Log·문서 이력 및 현행 GitHub 안내",
+    "target_pages_deleted": false,
+    "original_content_verified": false
+  }
 }
