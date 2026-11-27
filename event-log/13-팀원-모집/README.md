@@ -4,6 +4,8 @@
 
 Notion 기준 페이지와 이미지·과거/새 로깅 구간을 함께 옮긴 목록입니다.
 
+[팀원모집 로깅 검수 (09.12) 참고문서](../../docs/current/team-recruitment-review-20260912.md) — 과거 검수 기간의 기록입니다. 오늘의 수집 결과와 구분합니다.
+
 | 명세 | 플랫폼 | Notion |
 | --- | --- | --- |
 | [0-1. 알림 내부_알림 항목 클릭](0-1.-%EC%95%8C%EB%A6%BC-%EB%82%B4%EB%B6%80_%EC%95%8C%EB%A6%BC-%ED%95%AD%EB%AA%A9-%ED%81%B4%EB%A6%AD.md) | IOS, ANDROID, WEB | [원문](https://app.notion.com/p/3af0221954bc83eba43c013ffceb3687) |

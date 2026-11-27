@@ -1,0 +1,58 @@
+{
+  "base_sha": "83dceb33db1f2b48e2a392f92adad792827e5933",
+  "checked_date": "2026-11-27",
+  "pages": [
+    {
+      "path": "docs/current/logging-guide.md",
+      "notion_id": "3c30221954bc8214b1c481c5bbb6fba5",
+      "title": "로깅 통합 가이드",
+      "source_url": "https://app.notion.com/p/3c30221954bc8214b1c481c5bbb6fba5",
+      "source_last_edited_at": "2026-11-27T02:35:11.406Z",
+      "source_body_sha256": "77bd9cc95acab7561901703ed11c86937416df80bd9db545f470c3d651849a19",
+      "output_sha256": "5e9a6f50667b95527298a8c5793ab1299413e24500d8d494c0614c815f7d5c45"
+    },
+    {
+      "path": "docs/current/board-overview.md",
+      "notion_id": "69c0221954bc8267b14801439f33c216",
+      "title": "📋 게시판",
+      "source_url": "https://app.notion.com/p/69c0221954bc8267b14801439f33c216",
+      "source_last_edited_at": "2026-11-23T13:38:12.539Z",
+      "source_body_sha256": "f88169fb19507897ea19ec6429a5081ffedcc510e490f8010c04564f08901a8d",
+      "output_sha256": "c3ef8ba08d1a0e0047b395f6508001f97d4dc2535f5c4993982cb9931207c1d9"
+    },
+    {
+      "path": "docs/current/team-recruitment-review-20260912.md",
+      "notion_id": "2d30221954bc820eac2001262e4505e9",
+      "title": "팀원모집 로깅 검수 (09.12)",
+      "source_url": "https://app.notion.com/p/2d30221954bc820eac2001262e4505e9",
+      "source_last_edited_at": "2026-10-21T12:29:26.417Z",
+      "source_body_sha256": "324bd91d9547b56b3863f6b7322f3db12bd347d91bbbacfe97403bd106fe8674",
+      "output_sha256": "81deb558a52b8d51751c973c6f4cb5c280c2e9f10ec2303c5aebe02f862e553e"
+    }
+  ],
+  "image": {
+    "file": "assets/92a2d17c-bc8c-4e36-811e-c347701f6d2f.png",
+    "bytes": 76731,
+    "sha256": "05c95a66f36fac12c76d65875cec84886d85b0a29760b028cf40a3a21839f1d4",
+    "github_blob_sha": "aeaaff21609d4744a26c0099bf946002b0b528d4"
+  },
+  "blank_page": {
+    "id": "4820221954bc829f9c7a01e317c67ee5",
+    "status": "trashed_at_user_request",
+    "github_previously_listed": false
+  },
+  "preserved_paths": [
+    "_archive/original/",
+    "assets/",
+    "event-log individual specifications"
+  ],
+  "notion_logging_fields_changed": false,
+  "runtime_changed": false,
+  "removed_reference_links": {
+    "count": 4,
+    "reason": "사용자 요청",
+    "scope": "Notion Event Log·문서 이력 및 현행 GitHub 안내",
+    "target_pages_deleted": false,
+    "original_content_verified": false
+  }
+}
