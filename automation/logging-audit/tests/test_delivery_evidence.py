@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch, MagicMock
 
-from koin_weekly_audit.notify import send_once, slack_payload, slack_text
+from koin_weekly_audit.notify import detail_markdown, send_once, slack_payload, slack_text
 from test_slack_payload import report
 
 
@@ -43,25 +43,32 @@ class DeliveryEvidenceTest(unittest.TestCase):
             self.assertTrue(result['reused'])
             self.assertFalse(result['payload_matches'])
 
-    def test_rule_analysis_and_actual_spec_source_visible_without_changing_findings(self):
+    def test_metadata_stays_in_details_and_platform_findings_stay_in_slack(self):
         result = report()
         result['source_kind'] = 'github'
         result['investigation'] = {'mode': 'rules', 'status': 'completed'}
         result['normalization'] = {'android_debug_events': 1624}
         message = slack_text('stage', result['start'], result['end'], result)
-        self.assertIn('상세 분석: 규칙 기반 · 완료', message)
-        self.assertIn('AI API: 사용 안 함', message)
-        self.assertIn('GitHub main · Notion 직접 대조 미실행', message)
+        self.assertNotIn('상세 분석:', message)
+        self.assertNotIn('AI API:', message)
+        self.assertNotIn('명세 기준:', message)
         self.assertIn('디버그 1624건', message)
         self.assertIn('Android: 이상 없음', message)
         self.assertNotIn('APIError', message)
-        self.assertIn('상세 분석: 규칙 기반 · 완료', json.dumps(slack_payload('stage', result['start'], result['end'], result), ensure_ascii=False))
+        payload = json.dumps(slack_payload('stage', result['start'], result['end'], result), ensure_ascii=False)
+        for metadata in ('명세 기준:', '상세 분석:', 'AI API:'):
+            self.assertNotIn(metadata, payload)
+        details = detail_markdown({'stage': result})
+        self.assertIn('상세 분석: 규칙 기반 · 완료', details)
+        self.assertIn('GitHub main · Notion 직접 대조 미실행', details)
+        self.assertIn('AI API: 사용 안 함', details)
 
     def test_analysis_failure_is_separate_from_platform_logging_anomaly(self):
         result = report()
         result['investigation'] = dict(mode='rules', status='failed')
         message = slack_text('stage', result['start'], result['end'], result)
-        self.assertIn('상세 분석: 규칙 기반 · 미완료', message)
+        self.assertNotIn('상세 분석:', message)
+        self.assertIn('상세 분석: 규칙 기반 · 미완료', detail_markdown({'stage': result}))
         self.assertIn('Android: 이상 없음', message)
 
 

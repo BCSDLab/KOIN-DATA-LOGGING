@@ -107,7 +107,7 @@ class InvestigationTest(unittest.TestCase):
             for report in reports.values():
                 self.assertEqual(report['investigation']['status'], 'completed')
                 self.assertNotIn('agent', report)
-                self.assertIn('AI API: 사용 안 함', slack_text('stage', report['start'], report['end'], report))
+                self.assertNotIn('AI API: 사용 안 함', slack_text('stage', report['start'], report['end'], report))
             details = detail_markdown(reports)
             self.assertIn('규칙 기반 상세 분석', details)
             self.assertIn('event_name 불일치 2건', details)
