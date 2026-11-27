@@ -2,10 +2,18 @@
 import hashlib
 import html
 from collections import defaultdict
+from urllib.parse import unquote, urlparse
 
 
 def text(value):
     return html.escape(str(value)).replace('\n',' ').replace('`','')
+
+
+def specification_link(url):
+    """Use the verified repository path as a readable page location."""
+    path = unquote(urlparse(url).path)
+    location = path.split('/event-log/', 1)[-1]
+    return '[' + text(location).replace('[', '&#91;').replace(']', '&#93;') + '](' + url + ')'
 
 
 def developer_handoff(reports, reasons=None):
@@ -43,7 +51,7 @@ def developer_handoff(reports, reasons=None):
                 versions = sorted({v for f in issues for v in f.get('platform_versions', {}).get(platform, [])})
                 dates = sorted({d for f in issues for d in f.get('platform_dates', {}).get(platform, [])})
                 urls = sorted({u for f in issues for u in f.get('specification_urls', []) if u.startswith('https://github.com/BCSDLab/KOIN-DATA-LOGGING/')})
-                lines += ['', '버전: ' + text(', '.join(versions) or '미확인') + ' · 관측일: ' + text(', '.join(dates) or '미확인'), '', '**명세 바로가기:** ' + (' · '.join('[명세 ' + str(i + 1) + '](' + u + ')' for i, u in enumerate(urls)) or '등록된 명세 없음 — 계약 등록 또는 SDK label 확인 필요'), '', '<details>', '<summary>필드별 원문·날짜·재현 근거 펼치기</summary>', '']
+                lines += ['', '버전: ' + text(', '.join(versions) or '미확인') + ' · 관측일: ' + text(', '.join(dates) or '미확인'), '', '**명세 바로가기:** ' + (' · '.join(specification_link(u) for u in urls) or '등록된 명세 없음 — 계약 등록 또는 SDK label 확인 필요'), '', '<details>', '<summary>필드별 원문·날짜·재현 근거 펼치기</summary>', '']
                 for f in issues:
                     issue_id = hashlib.sha256('|'.join((env, platform, f['label'], f['reason'])).encode()).hexdigest()[:10]
                     values = f.get('platform_value_counts', {}).get(platform, {})

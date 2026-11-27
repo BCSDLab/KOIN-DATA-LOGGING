@@ -13,6 +13,10 @@ on:
         description: 'Stage 채널에 Stage/Prod 결과 전송'
         type: boolean
         default: true
+      notification_revision:
+        description: '승인된 갱신 알림 식별자 (동일 식별자는 중복 전송 방지, 비우면 정기 알림)'
+        required: false
+        type: string
       offline_check:
         description: '합성 데이터로 규칙 상세 분석 시험 (BigQuery·Slack 실행 안 함)'
         type: boolean
@@ -85,9 +89,18 @@ jobs:
           GH_ACTIONS_READ_TOKEN: ${{ github.token }}
           AUDIT_WEEK: ${{ steps.week.outputs.start }}
           SEND_SLACK: ${{ github.event_name == 'schedule' || inputs.send_slack }}
+          NOTIFICATION_REVISION: ${{ inputs.notification_revision }}
+          AUDIT_EVENT: ${{ github.event_name }}
         run: |
           args=()
           if [[ "$SEND_SLACK" == "true" ]]; then args+=(--send); fi
+          if [[ -n "$NOTIFICATION_REVISION" ]]; then
+            if [[ "$AUDIT_EVENT" != "workflow_dispatch" || "$SEND_SLACK" != "true" || ! "$NOTIFICATION_REVISION" =~ ^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$ ]]; then
+              echo "Invalid manual notification revision" >&2
+              exit 1
+            fi
+            args+=(--state ".audit-state/manual-$NOTIFICATION_REVISION")
+          fi
           python run.py --week-start "$AUDIT_WEEK" "${args[@]}"
       - name: 규칙 상세 분석 합성 시험 (외부 조회·Slack 없음)
         if: ${{ inputs.offline_check }}
