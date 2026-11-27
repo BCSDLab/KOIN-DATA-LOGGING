@@ -64,6 +64,11 @@ def audit_context(report):
     status = report.get('investigation', {}).get('status')
     lines.append('상세 분석: 규칙 기반 · ' + ('완료' if status == 'completed' else '미완료'))
     lines.append('AI API: 사용 안 함')
+    return lines + slack_context(report)
+
+
+def slack_context(report):
+    lines = []
     debug = report.get('normalization', {}).get('android_debug_events', 0)
     if debug:
         lines.append('Android 디버그 ' + str(debug) + '건: 접미사 제외 후 명세 대조')
@@ -72,7 +77,7 @@ def audit_context(report):
 
 def slack_text(environment, start, end, report):
     title = '[Stage]' if environment == 'stage' else '[Prod]'
-    lines = [f'{title} 주간 로깅 검수 · {start[5:]}~{end[5:]}'] + notification_sections(report) + audit_context(report)
+    lines = [f'{title} 주간 로깅 검수 · {start[5:]}~{end[5:]}'] + notification_sections(report) + slack_context(report)
     if report.get('detail_url'):
         lines.append('상세보기: ' + report['detail_url'])
     return '\n'.join(lines)
@@ -84,7 +89,9 @@ def slack_payload(environment, start, end, report):
     for section in notification_sections(report):
         # Analysis status does not change the independent platform findings.
         blocks.append(dict(type='section', text=dict(type='mrkdwn', text=section[:2900])))
-    blocks.append(dict(type='context', elements=[dict(type='mrkdwn', text='\n'.join(audit_context(report)))]))
+    context = slack_context(report)
+    if context:
+        blocks.append(dict(type='context', elements=[dict(type='mrkdwn', text='\n'.join(context))]))
     if report.get('detail_url'):
         blocks.append(dict(type='section', text=dict(type='mrkdwn', text='<' + report['detail_url'] + '|상세보기>')))
     return dict(text=slack_text(environment, start, end, report), blocks=blocks, unfurl_links=False, unfurl_media=False)
