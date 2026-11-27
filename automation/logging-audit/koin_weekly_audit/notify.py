@@ -98,7 +98,17 @@ def detail_markdown(reports):
         title = 'Stage' if env == 'stage' else 'Prod'
         links = ['[' + name + ' (' + str(len(platform_findings(report, platform))) + '개 항목)](#user-content-audit-' + env + '-' + platform.lower() + ')' for platform, name in PLATFORM_NAMES]
         lines += ['**' + title + '**: ' + ' · '.join(links) + ' · [실제 value 수집 현황](#user-content-values-' + env + ')', '']
+    lines += ['## 플랫폼별 요약', '', '| 환경 · 플랫폼 | 판정 대상 수집 | 확인 label | 상태 |', '| --- | ---: | ---: | --- |']
     for env, report in reports.items():
+        for platform, name in PLATFORM_NAMES:
+            events = report.get('platform_summary', {}).get(platform, {}).get('events', 0)
+            labels = len({f['label'] for f in platform_findings(report, platform)})
+            status = '조회 불완전 · 판정 불가' if not report.get('complete') else '수집 없음 · 판정 없음' if not events else '확인 필요' if labels else '관측 범위 이상 없음'
+            link = '[확인하기](#user-content-audit-' + env + '-' + platform.lower() + ')'
+            lines += ['| ' + ('Stage' if env == 'stage' else 'Prod') + ' · ' + name + ' | ' + str(events) + ' | ' + str(labels) + ' | ' + status + ' · ' + link + ' |']
+    lines += ['', developer_handoff(reports, REASONS), '', '## 전체 분석 근거', '']
+    for env, report in reports.items():
+        lines += ['<details>', '<summary>' + ('Stage' if env == 'stage' else 'Prod') + ' · 전체 분석 근거 펼치기</summary>', '']
         lines += ['## ' + env, '', '기간: ' + report['start'] + ' ~ ' + report['end'],
                   '명세 커밋: `' + (report.get('source_revision') or '미확인') + '`',
                   'BigQuery 조회 job: `' + str(report.get('query_job_id') or '미확인') + '`', '']
@@ -133,7 +143,7 @@ def detail_markdown(reports):
             findings = platform_findings(report, platform)
             target = report.get('version_scope', {}).get('targets', {}).get(platform)
             name = name + (' ' + target if target else '')
-            lines += ['<a name="audit-' + env + '-' + platform.lower() + '"></a>', '', '### ' + ('Stage' if env == 'stage' else 'Prod') + ' · ' + name, '']
+            lines += ['<a name="evidence-' + env + '-' + platform.lower() + '"></a>', '', '### ' + ('Stage' if env == 'stage' else 'Prod') + ' · ' + name, '']
             if not findings:
                 stats = report.get('platform_summary', {}).get(platform)
                 lines += [('이상 없음' if report.get('complete') and stats and stats['events'] else '판정 대상 없음 또는 조회 불완전'), '']
@@ -174,6 +184,7 @@ def detail_markdown(reports):
         previous = report.get('previous_period_recheck', {})
         lines += ['이전 기간 재검사: ' + ('완료' if previous.get('complete') else '불완전') + ' · 누락 ' + ', '.join(previous.get('missing_daily_tables', [])),
                   '규칙 기반 상세 분석: ' + report.get('investigation', {}).get('status', '미확인'), '']
+        lines += ['</details>', '']
     comparison = compare_environments(reports)
     lines += ['<a name="audit-environments"></a>', '', '## Stage · Prod 실제 수집 비교', '']
     if not comparison['complete']:
@@ -188,7 +199,6 @@ def detail_markdown(reports):
             lines += ['| ' + ' | '.join(html.escape(str(c)).replace('\n',' ').replace('|','&#124;') for c in cells) + ' |']
         if not comparison['differences']:
             lines += ['| — | — | — | ' + ('관측한 비교 대상 필드에서 값 차이 없음' if comparison['common_labels'] else '양쪽 공통 관측 없어 비교 대상 없음') + ' | — | — |']
-    lines += ['', developer_handoff(reports, REASONS)]
     return '\n'.join(lines)
 
 
