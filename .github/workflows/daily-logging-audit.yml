@@ -1,0 +1,48 @@
+name: 일별 로깅 검수 보고서
+on:
+  schedule:
+    - cron: '0 0 * * *' # 매일 09:00 KST. Slack은 별도 주간 workflow만 발송.
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+  id-token: write
+concurrency:
+  group: daily-logging-notion-report
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    defaults:
+      run:
+        working-directory: automation/logging-audit
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: automation/logging-audit/requirements.txt
+      - run: python -m pip install -r requirements.txt
+      - uses: google-github-actions/auth@v3
+        if: ${{ vars.GCP_AUDIT_WIF_PROVIDER != '' }}
+        with:
+          workload_identity_provider: ${{ vars.GCP_AUDIT_WIF_PROVIDER }}
+          service_account: ${{ vars.GCP_AUDIT_SERVICE_ACCOUNT }}
+      - uses: google-github-actions/auth@v3
+        if: ${{ vars.GCP_AUDIT_WIF_PROVIDER == '' }}
+        with:
+          credentials_json: ${{ secrets.GCP_AUDIT_CREDENTIALS_JSON }}
+      - name: 일별 읽기 검수와 Notion 요약 갱신 (Slack 없음)
+        env:
+          GH_ACTIONS_READ_TOKEN: ${{ github.token }}
+          NOTION_REPORT_TOKEN: ${{ secrets.NOTION_LOGGING_REPORT_TOKEN || secrets.NOTION_LOGGING_READ_TOKEN }}
+        run: python daily_report.py --publish
+      - name: 상세 결과 보존
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-logging-report-${{ github.run_id }}
+          path: automation/logging-audit/reports/daily/
+          retention-days: 35

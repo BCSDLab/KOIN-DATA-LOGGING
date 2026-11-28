@@ -56,4 +56,6 @@
 
 ## 주간 로깅 검수
 
+[Notion 검수 보고서](https://app.notion.com/p/4230221954bc815fa3e0e2323d99ff8c)는 일별 수집 상태와 개발자 확인 항목을 요약합니다. Slack 알림은 주 1회로 유지합니다.
+
 [GitHub 명세·BigQuery 규칙 검수 및 Slack 연결 설정](automation/logging-audit/README.md) — 매주 월요일 오전 9시(KST), Stage·Production의 IOS·ANDROID·WEB별 미등록·과거 로깅 지속 수집·현행 명세 불일치를 알립니다. DA1·DA2와 Android 디버그를 검사하며 CAMPUS·BUSINESS·USER 수집도 감지합니다. 중요한 항목은 날짜·버전별 집계와 명세 출처·고정된 확인 항목을 붙입니다. 외부 AI API는 사용하지 않습니다. Notion 직접 자동 대조는 미실행이며 실제 명세 기준과 검수 범위는 연결 문서에 명시합니다.
