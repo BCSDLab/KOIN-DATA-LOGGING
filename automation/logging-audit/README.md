@@ -8,9 +8,11 @@ GitHub Actions가 명세와 실제 수집을 비교하고 규칙 기반 상세 �
 
 ## 일정과 수집 범위
 
+일별 자동 BigQuery 조회는 비용 확인 전 비활성입니다. 저장소 변수 `DAILY_LOGGING_REPORT_ENABLED=true`를 사용자 확인 후 설정해야 실행됩니다. 미설정 상태에서는 일별 job을 건너뛰며, 수동 `notion_write_test=true`는 BigQuery·Slack 없이 기존 요약을 동일 내용으로 다시 써서 연결만 확인합니다. 각 BigQuery Job은 최대 1GiB를 허용하지만 프로젝트·결제 계정의 무료 잔여량을 보장하는 한도는 아닙니다.
+
 Notion 보고서는 `daily-logging-audit.yml`이 매일 09:00 KST에 당일 하루 기준으로 갱신합니다. 정상·불일치·미관측·명세 밖 라벨 수와 개발자가 우선 확인할 최대 3개 동작만 요약하고, 실제값·명세값·전체 항목은 해당 실행의 상세 결과에 연결합니다. 당일 수집은 잠정이며 이전 3일 지연 도착 재검사는 상세 결과에서 구분합니다. 일별 실행에는 Slack 웹훅을 전달하지 않고 전송도 호출하지 않습니다. 아래 월요일 Slack 일정은 유지합니다.
 
-Notion 자동화는 보고서 상단의 `일별 로깅 검수 · 자동 갱신`으로 시작하는 문단 1개만 갱신하고 읽어 확인합니다. 상세 페이지·실행 체크·사용자 메모·과거 기록은 수정하거나 삭제하지 않습니다. 표식이 없거나 중복이면 쓰기를 중단합니다. `NOTION_LOGGING_REPORT_TOKEN`을 우선 사용하고 없으면 기존 `NOTION_LOGGING_READ_TOKEN`을 사용하되, 이름이 아닌 실제 보고서 접근·쓰기 시험으로 권한을 판정합니다. 토큰을 코드·출력·artifact에 기록하지 않습니다.
+Notion 자동화는 보고서 상단의 `오늘의 로깅 검수`로 시작하는 문단 1개만 갱신하고 읽어 확인합니다. 상세 페이지·실행 체크·사용자 메모·과거 기록은 수정하거나 삭제하지 않습니다. 표식이 없거나 중복이면 쓰기를 중단합니다. `NOTION_LOGGING_REPORT_TOKEN`을 우선 사용하고 없으면 기존 `NOTION_LOGGING_READ_TOKEN`을 사용하되, 이름이 아닌 실제 보고서 접근·쓰기 시험으로 권한을 판정합니다. 토큰을 코드·출력·artifact에 기록하지 않습니다.
 
 연결만 확인하려면 별도 브랜치에서 기존 workflow에 `offline_check=true`, `probe_notion_report=true`, `send_slack=false`를 지정합니다. Notion 보고서 읽기만 시험하며 BigQuery·Notion 쓰기·Slack은 실행하지 않습니다. Notion 쓰기가 실패하면 일별 예약이 있어도 자동 갱신 완료로 보지 않습니다.
 

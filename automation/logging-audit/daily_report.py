@@ -13,7 +13,7 @@ from run import audit, KST
 from koin_weekly_audit.notify import detail_markdown
 
 PAGE = '4230221954bc815fa3e0e2323d99ff8c'
-MARKER = '일별 로깅 검수 · 자동 갱신'
+MARKER = '오늘의 로깅 검수'
 REASONS = {'value_missing':'value 누락', 'fixed_value_mismatch':'고정 value 불일치',
            'enum_value_mismatch':'허용 value 불일치', 'event_name_mismatch':'event_name 불일치',
            'event_category_mismatch':'category 불일치', 'screen_view_mismatch':'화면 불일치',
@@ -90,6 +90,23 @@ def plain(block):
     return ''.join(t.get('plain_text',t.get('text',{}).get('content','')) for t in block.get('paragraph',{}).get('rich_text',[]))
 
 
+def probe_write(token,request=None):
+    if not token:raise RuntimeError('Notion report token missing')
+    call=request or (lambda method,path,payload=None:notion_request(token,method,path,payload))
+    page=call('GET','blocks/'+PAGE+'/children?page_size=100')
+    if page.get('has_more'):raise RuntimeError('Probe requires a bounded report header')
+    matches=[b for b in page['results'] if b.get('type')=='paragraph' and plain(b).splitlines()[0:1]==[MARKER]]
+    if len(matches)!=1:raise RuntimeError('Expected exactly one managed summary paragraph')
+    block=matches[0];rich=[]
+    for item in block['paragraph']['rich_text']:
+        if item['type']!='text':raise RuntimeError('Probe only supports existing plain-text report summary')
+        rich.append({k:item[k] for k in ('type','text','annotations') if k in item})
+    call('PATCH','blocks/'+block['id'],{'paragraph':{'rich_text':rich}})
+    final=call('GET','blocks/'+block['id'])
+    if plain(final)!=plain(block):raise RuntimeError('Notion probe readback mismatch')
+    return {'notion_write_verified':True,'content_unchanged':True,'bigquery_queried':False,'slack_sent':False}
+
+
 def publish(token,text,detail_url,request=None):
     """Never recurse, append/delete blocks, or touch checklists and history."""
     if not token:raise RuntimeError('Notion report token missing')
@@ -120,7 +137,10 @@ def publish(token,text,detail_url,request=None):
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--output',default='reports/daily');parser.add_argument('--publish',action='store_true')
     parser.add_argument('--probe-notion',action='store_true')
+    parser.add_argument('--probe-notion-write',action='store_true')
     args=parser.parse_args();today=datetime.now(KST).date();start=today
+    if args.probe_notion_write:
+        print(json.dumps(probe_write(os.getenv('NOTION_REPORT_TOKEN',''))));return
     if args.probe_notion:
         token=os.getenv('NOTION_REPORT_TOKEN','')
         if not token:raise RuntimeError('Notion report token missing')

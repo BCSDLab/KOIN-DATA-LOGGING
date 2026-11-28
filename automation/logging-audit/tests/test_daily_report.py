@@ -1,5 +1,5 @@
 import unittest
-from daily_report import summary_text,publish,MARKER,PAGE
+from daily_report import summary_text,publish,probe_write,MARKER,PAGE
 
 
 def reports():
@@ -9,6 +9,15 @@ def reports():
 
 
 class DailyTests(unittest.TestCase):
+    def test_write_probe_keeps_the_existing_text_and_does_not_collect(self):
+        calls=[];paragraph={'id':'managed','type':'paragraph','paragraph':{'rich_text':[{'type':'text','text':{'content':MARKER+'\n기존 요약'},'plain_text':MARKER+'\n기존 요약'}]}}
+        def request(method,path,payload=None):
+            calls.append((method,path,payload))
+            return {'results':[paragraph]} if '/children' in path else paragraph
+        result=probe_write('test',request)
+        self.assertTrue(result['content_unchanged']);self.assertFalse(result['bigquery_queried'])
+        self.assertEqual(sum(c[0]=='PATCH' for c in calls),1)
+
     def test_overlapping_failures_count_one_label(self):
         catalog={'by_label':{'club__club_list__filter__recruiting__click':[{'platforms':['WEB']}]}}
         text=summary_text(reports(),catalog)

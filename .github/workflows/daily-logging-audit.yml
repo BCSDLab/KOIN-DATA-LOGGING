@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: '0 0 * * *' # 매일 09:00 KST. Slack은 별도 주간 workflow만 발송.
   workflow_dispatch:
+    inputs:
+      notion_write_test:
+        description: '기존 요약을 동일 내용으로 다시 써서 연결만 시험 (BigQuery·Slack 없음)'
+        type: boolean
+        default: false
 permissions:
   contents: read
   actions: read
@@ -12,6 +17,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   audit:
+    if: ${{ vars.DAILY_LOGGING_REPORT_ENABLED == 'true' || (github.event_name == 'workflow_dispatch' && inputs.notion_write_test) }}
     runs-on: ubuntu-latest
     timeout-minutes: 110
     defaults:
@@ -25,20 +31,28 @@ jobs:
           cache: pip
           cache-dependency-path: automation/logging-audit/requirements.txt
       - run: python -m pip install -r requirements.txt
+        if: ${{ !inputs.notion_write_test }}
       - uses: google-github-actions/auth@v3
-        if: ${{ vars.GCP_AUDIT_WIF_PROVIDER != '' }}
+        if: ${{ !inputs.notion_write_test && vars.GCP_AUDIT_WIF_PROVIDER != '' }}
         with:
           workload_identity_provider: ${{ vars.GCP_AUDIT_WIF_PROVIDER }}
           service_account: ${{ vars.GCP_AUDIT_SERVICE_ACCOUNT }}
       - uses: google-github-actions/auth@v3
-        if: ${{ vars.GCP_AUDIT_WIF_PROVIDER == '' }}
+        if: ${{ !inputs.notion_write_test && vars.GCP_AUDIT_WIF_PROVIDER == '' }}
         with:
           credentials_json: ${{ secrets.GCP_AUDIT_CREDENTIALS_JSON }}
       - name: 일별 읽기 검수와 Notion 요약 갱신 (Slack 없음)
+        if: ${{ !inputs.notion_write_test }}
         env:
           GH_ACTIONS_READ_TOKEN: ${{ github.token }}
           NOTION_REPORT_TOKEN: ${{ secrets.NOTION_LOGGING_REPORT_TOKEN || secrets.NOTION_LOGGING_READ_TOKEN }}
+          AUDIT_MAX_BYTES: '1073741824'
         run: python daily_report.py --publish
+      - name: Notion 동일 내용 쓰기·읽기 시험 (BigQuery·Slack 없음)
+        if: ${{ inputs.notion_write_test }}
+        env:
+          NOTION_REPORT_TOKEN: ${{ secrets.NOTION_LOGGING_REPORT_TOKEN || secrets.NOTION_LOGGING_READ_TOKEN }}
+        run: python daily_report.py --probe-notion-write
       - name: 상세 결과 보존
         if: always()
         uses: actions/upload-artifact@v4
