@@ -48,6 +48,10 @@ def developer_handoff(reports, reasons=None):
                     cell = lambda v: text(v).replace('|', '&#124;')
                     field = cell(issue.get('field') or issue['reason'])
                     reason = cell((reasons or {}).get(issue['reason'], issue['reason']))
+                    if label == 'real_estate__room_detail__photo_view__slide__click' and platform in ('IOS','ANDROID') and issue['reason']=='platform_mismatch':
+                        field='event_label';reason='동작·전송 라벨 확인'
+                        actual=label+' / '+platform
+                        expected='손으로 넘김: real_estate__room_detail__photo_view__slide__swipe (IOS·ANDROID). WEB 화살표만 click.'
                     count = str(issue.get('platform_counts', {}).get(platform, 0))
                     lines += ['| **' + field + '** · ' + reason + ' · ' + count + '건 | 실제: ' + cell(actual) + '<br>명세: ' + cell(expected) + ' |']
                 versions = sorted({v for f in issues for v in f.get('platform_versions', {}).get(platform, [])})

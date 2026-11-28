@@ -1,4 +1,5 @@
 import unittest
+from koin_weekly_audit.handoff import developer_handoff
 from koin_weekly_audit.contracts import build_catalog,compare,platform_scopes
 from test_weekly_audit import page,OBS
 
@@ -51,6 +52,10 @@ class SwipePlatformPolicyTest(unittest.TestCase):
             result=compare(cat,[dict(OBS,platform=platform,event_label=swipe,event_category='swipe',screen_view='room_detail',value='다음')])
             self.assertEqual([f['reason'] for f in result['findings']],['platform_mismatch'] if platform=='WEB' else [])
         self.assertEqual([f['reason'] for f in compare(cat,[dict(OBS,platform='IOS',event_label=click,event_category='click',screen_view='room_detail',value='다음')])['findings']],['platform_mismatch'])
+        ios=compare(cat,[dict(OBS,platform='IOS',event_label=click,event_category='click',screen_view='room_detail',value='다음')])
+        detail=developer_handoff({'production':dict(ios,start='2026-11-28',end='2026-11-28',complete=True)})
+        self.assertIn('동작·전송 라벨 확인',detail)
+        self.assertIn('앱 사진 넘기기 기능은 지원합니다',detail)
 
     def test_unconfirmed_click_is_not_implicitly_added_to_swipe_platform(self):
         click='callvan__callvan_notification__notification_list__delete__click';swipe=click[:-5]+'swipe'
