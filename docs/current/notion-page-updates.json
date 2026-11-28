@@ -144,20 +144,23 @@
         "url": "https://app.notion.com/p/6310221954bc825f8599010867d0f47a",
         "platforms": [
           "IOS",
-          "WEB"
+          "WEB",
+          "ANDROID"
         ],
         "properties": {
           "platform": [
             "IOS",
-            "WEB"
+            "WEB",
+            "ANDROID"
           ],
           "url": "https://app.notion.com/p/6310221954bc825f8599010867d0f47a",
           "상태": "로깅 필요",
           "생성일": "2026-11-23T13:39:06.000Z",
           "이벤트 이름": "3-1 복덕방 상세\\_사진 넘기기 클릭"
         },
-        "original_body": "### 플랫폼별 계약 범위\n\n2026-11-27 사용자 확정: <b>swipe는 IOS 전용</b>이다. Android·Web의 기존 swipe 수집은 지원 범위 밖 전송으로 검수하며, 과거 기록을 개명하거나 click으로 자동 치환하지 않는다. 아래 표는 이 페이지의 개별 계약 범위이며 페이지 platform 속성은 확정된 범위의 합집합이다. 문서 수정은 SDK 배포·실수집 정상 완료를 뜻하지 않는다.\n\n| event\\_label | platform |\n| --- | --- |\n| <code>real_estate__room_detail__photo_view__slide__click</code> | WEB |\n| <code>real_estate__room_detail__photo_view__slide__swipe</code> | IOS |\n\n<toggle>\n새 로깅\n\n<ul>\n<li>\n설명: 웹 복덕방 상세 화면의 방 사진 슬라이드에서 이전 / 다음 화살표를 클릭하는 경우\n</li>\n<li>\nscreen\\_view: <code>room_detail</code>\n</li>\n<li>\nevent\\_name: <code>DA1</code>\n</li>\n<li>\nevent\\_label: \n\n<ul>\n<li>\n웹 <code>real_estate__room_detail__photo_view__slide__click</code> \n</li>\n<li>\n모바일<code>real_estate__room_detail__photo_view__slide__swipe</code>\n</li>\n</ul>\n</li>\n<li>\nvalue: 이전 / 다음 (예: 다음)\n</li>\n<li>\nevent\\_category: \n\n- 웹 : <code>click</code>\n- 모바일 : <code>swipe</code>\n</li>\n</ul>\n\n### 적용 범위\n\n- 2026-11-27 사용자 확정에 따라 웹 화살표 click은 WEB, 사진 swipe는 IOS에만 적용한다. Android·Web swipe를 정상 계약에 포함하지 않는다.\n- click과 swipe의 라벨·category·발생 조건은 구분한다. 과거 전송을 자동 개명하거나 두 계약을 하나로 합치지 않는다.\n\n### 참고사진 (사진 슬라이드 다음 화살표)\n\n<columns>\n<column ratio=\"50\">\n<b>웹</b>\n\n<b>참고사진 · 웹</b>\n\n<image source=\"notion-file-block://79102219-54bc-820a-b2a9-817fe25b6c9d/948251a7-ac2b-4b4d-8f3b-c54da7688718?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=boxed_3-1_detail_slide.png\">\n웹 — 빨간 네모가 이 명세의 클릭 대상이다. 같은 화면의 다른 동작은 표시하지 않았다. 사용자 제공 WEB 디자인을 편집한 참고사진이며 실기기·SDK 검증 사진은 아니다.\n</image>\n</column>\n<column ratio=\"50\">\n<b>모바일</b>\n\n<b>참고사진 · 모바일</b>\n\n<image source=\"notion-file-block://1de02219-54bc-8249-bf68-017832034836/51199bff-7250-4c4a-ada9-c72780e200d3?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=m_3-1_photo_reference.png\">\n모바일 — 빨간 네모 = 사진 표시 영역 보조 참고(화살표 클릭을 뜻하지 않음). 사용자 제공 디자인을 편집한 참고사진이며 플랫폼별 SDK 구현·실수집 검증 사진은 아니다.\n</image>\n</column>\n</columns>\n</toggle>",
-        "last_edited_time": "2026-11-27T07:50:29.187Z"
+        "original_body": "### 플랫폼별 계약 범위\n\n2026-11-28 사용자 확인: iOS·Android에서 손으로 사진을 넘기는 동작은 swipe다. 이 사진 넘기기 계약에 한해 IOS·ANDROID를 지원하며, 웹 화살표 click은 WEB으로 구분한다. 과거 수집값을 자동 개명하지 않는다.\n\n| event\\_label | platform |\n| --- | --- |\n| <code>real_estate__room_detail__photo_view__slide__click</code> | WEB |\n| <code>real_estate__room_detail__photo_view__slide__swipe</code> | IOS, ANDROID |\n\n<toggle>\n새 로깅\n\n<ul>\n<li>\n설명: 복덕방 상세 사진을 웹 화살표로 넘기면 click, iOS·Android에서 손으로 밀어 넘기면 swipe로 기록한다. value는 이동한 사진 기준 이전 / 다음이며 취소한 제스처나 단순 터치는 제외한다.\n</li>\n<li>\nscreen\\_view: <code>room_detail</code>\n</li>\n<li>\nevent\\_name: <code>DA1</code>\n</li>\n<li>\nevent\\_label: \n\n<ul>\n<li>\n웹 <code>real_estate__room_detail__photo_view__slide__click</code> \n</li>\n<li>\n모바일<code>real_estate__room_detail__photo_view__slide__swipe</code>\n</li>\n</ul>\n</li>\n<li>\nvalue: 이전 / 다음 (예: 다음)\n</li>\n<li>\nevent\\_category: \n\n- 웹 : <code>click</code>\n- 모바일 : <code>swipe</code>\n</li>\n</ul>\n\n### 적용 범위\n\n- 웹 화살표 click: WEB. 손으로 사진 넘기기 swipe: IOS·ANDROID. WEB swipe와 앱 click을 이 계약에 추가하지 않는다.\n- click과 swipe의 라벨·category·발생 조건은 구분한다. 과거 전송을 자동 개명하거나 두 계약을 하나로 합치지 않는다.\n\n### 참고사진 (사진 슬라이드 다음 화살표)\n\n<columns>\n<column ratio=\"50\">\n<b>웹</b>\n\n<b>참고사진 · 웹</b>\n\n<image source=\"notion-file-block://79102219-54bc-820a-b2a9-817fe25b6c9d/948251a7-ac2b-4b4d-8f3b-c54da7688718?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=boxed_3-1_detail_slide.png\">\n웹 — 빨간 네모가 이 명세의 클릭 대상이다. 같은 화면의 다른 동작은 표시하지 않았다. 사용자 제공 WEB 디자인을 편집한 참고사진이며 실기기·SDK 검증 사진은 아니다.\n</image>\n</column>\n<column ratio=\"50\">\n<b>모바일</b>\n\n<b>참고사진 · 모바일</b>\n\n<image source=\"notion-file-block://1de02219-54bc-8249-bf68-017832034836/51199bff-7250-4c4a-ada9-c72780e200d3?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=m_3-1_photo_reference.png\">\n모바일 — 빨간 네모 = 사진 표시 영역 보조 참고(화살표 클릭을 뜻하지 않음). 사용자 제공 디자인을 편집한 참고사진이며 플랫폼별 SDK 구현·실수집 검증 사진은 아니다.\n</image>\n</column>\n</columns>\n</toggle>",
+        "last_edited_time": "2026-11-27T07:50:29.187Z",
+        "last_edited_at": "2026-11-28T05:29:19.812Z"
       },
       "manifest": {
         "notion_id": "6310221954bc825f8599010867d0f47a",
@@ -167,12 +170,13 @@
         "notion_url": "https://app.notion.com/p/6310221954bc825f8599010867d0f47a",
         "platforms": [
           "IOS",
-          "WEB"
+          "WEB",
+          "ANDROID"
         ],
         "status": "로깅 필요",
-        "source_last_edited_at": "2026-11-27T07:50:29.187Z",
-        "source_body_sha256": "143a71e09814d694c748659d271b13a15a7b70f268539acd95deca0e039e613d",
-        "output_sha256": "8e6ba1e799fcc2c7be1d071e5d5780336f0ecf975a1332d774942a2fd2c475b2",
+        "source_last_edited_at": "2026-11-28T05:29:19.812Z",
+        "source_body_sha256": "412abff3e2e78df8b856514cac4865e8e70288b95e5ee1c75b0a7701e2802db5",
+        "output_sha256": "e26acf43369a7ce2614d08b5d39d62d16c594418bde7f9352b42b345b6f8603b",
         "image_ids": [
           "948251a7-ac2b-4b4d-8f3b-c54da7688718",
           "51199bff-7250-4c4a-ada9-c72780e200d3"

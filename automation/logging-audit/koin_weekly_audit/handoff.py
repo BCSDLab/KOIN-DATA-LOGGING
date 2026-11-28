@@ -39,6 +39,8 @@ def developer_handoff(reports, reasons=None):
             # Several field failures can describe the same event. Never sum them.
             for label, issues in sorted(grouped.items(), key=lambda pair: (-max(f.get('platform_counts', {}).get(platform, 0) for f in pair[1]), pair[0])):
                 lines += ['#### ' + text(label), '', str(len(issues)) + '개 확인 항목 · 필드별 건수는 중복될 수 있습니다.', '', '| 필드 · 확인 사항 | 실제 수집 → 명세 기준 |', '| --- | --- |']
+                if label == 'real_estate__room_detail__photo_view__slide__click' and platform in ('IOS','ANDROID'):
+                    lines[-2:-2]=['앱 사진 넘기기 기능은 지원합니다. 손으로 넘긴 동작은 `real_estate__room_detail__photo_view__slide__swipe` 계약입니다. 아래 click 수집은 기능 미지원 확정이 아니라 실제 동작·전송 라벨 확인 대상이며 정상 swipe로 자동 치환하지 않습니다.', '']
                 for issue in issues:
                     counts = issue.get('platform_value_counts', {}).get(platform, {})
                     actual = '; '.join(str(v) + ' (' + str(n) + '건)' for v, n in sorted(counts.items())) or ', '.join(issue.get('platform_observed_values', {}).get(platform, [])) or '근거 확인 필요'
@@ -46,6 +48,10 @@ def developer_handoff(reports, reasons=None):
                     cell = lambda v: text(v).replace('|', '&#124;')
                     field = cell(issue.get('field') or issue['reason'])
                     reason = cell((reasons or {}).get(issue['reason'], issue['reason']))
+                    if label == 'real_estate__room_detail__photo_view__slide__click' and platform in ('IOS','ANDROID') and issue['reason']=='platform_mismatch':
+                        field='event_label';reason='동작·전송 라벨 확인'
+                        actual=label+' / '+platform
+                        expected='손으로 넘김: real_estate__room_detail__photo_view__slide__swipe (IOS·ANDROID). WEB 화살표만 click.'
                     count = str(issue.get('platform_counts', {}).get(platform, 0))
                     lines += ['| **' + field + '** · ' + reason + ' · ' + count + '건 | 실제: ' + cell(actual) + '<br>명세: ' + cell(expected) + ' |']
                 versions = sorted({v for f in issues for v in f.get('platform_versions', {}).get(platform, [])})

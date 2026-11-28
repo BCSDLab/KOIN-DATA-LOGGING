@@ -97,3 +97,5 @@ BigQuery Data Viewer와 query 프로젝트의 BigQuery Job User를 사용하며 
 
 `python current_spec_check.py`는 실제 체크아웃 명세로 카탈로그를 만들고 정상 플랫폼 사례, 사용자 확정 value 16페이지·18계약, value 누락·오류, 미지원 플랫폼, Android 디버그를 검사합니다. 외부 데이터 조회·AI API·Slack 전송은 차단합니다. 이 검사는 코드 CI와 `offline_check=true` 합성 시험에 포함됩니다. 정보가 불충분하거나 충돌하는 라벨은 결과의 `unresolved_labels`에 남기며 임의로 확정하지 않습니다. 실제 BigQuery 수집·main 인증·Slack 수신 검증은 별도입니다.
 
+
+복덕방 상세 사진을 손으로 넘기는 `real_estate__room_detail__photo_view__slide__swipe`는 IOS·ANDROID 지원입니다. 웹 화살표 click은 WEB입니다. 이 정확한 사진 swipe 라벨만 예외이며 다른 swipe는 기존 IOS 전용 정책을 유지합니다. 앱의 사진 click 수집은 기능 미지원 확정이 아니라 동작·전송 라벨 확인 대상입니다.

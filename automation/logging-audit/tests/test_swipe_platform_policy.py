@@ -1,4 +1,5 @@
 import unittest
+from koin_weekly_audit.handoff import developer_handoff
 from koin_weekly_audit.contracts import build_catalog,compare,platform_scopes
 from test_weekly_audit import page,OBS
 
@@ -31,6 +32,30 @@ class SwipePlatformPolicyTest(unittest.TestCase):
         cat=build_catalog([page(text,['ANDROID','IOS','WEB'])]);contract=next(iter(cat['by_label'].values()))[0]
         self.assertEqual(contract['platforms'],['IOS'])
         self.assertEqual(contract['status'],'unresolved')
+
+    def test_photo_swipe_explicitly_supports_android_and_ios_but_not_web(self):
+        click='real_estate__room_detail__photo_view__slide__click';swipe=click[:-5]+'swipe'
+        text=f'''### 플랫폼별 계약 범위
+| {click} | WEB |
+| {swipe} | IOS, ANDROID |
+
+## 새 로깅
+- screen_view: room_detail
+- event_name: DA1
+- event_label: {click} / {swipe}
+- event_category: click / swipe
+- value: 이전 / 다음'''
+        cat=build_catalog([page(text,['IOS','ANDROID','WEB'])])
+        self.assertNotIn(swipe,cat['conflicts'])
+        self.assertEqual(cat['by_label'][swipe][0]['platforms'],['ANDROID','IOS'])
+        for platform in ['ANDROID','IOS','WEB']:
+            result=compare(cat,[dict(OBS,platform=platform,event_label=swipe,event_category='swipe',screen_view='room_detail',value='다음')])
+            self.assertEqual([f['reason'] for f in result['findings']],['platform_mismatch'] if platform=='WEB' else [])
+        self.assertEqual([f['reason'] for f in compare(cat,[dict(OBS,platform='IOS',event_label=click,event_category='click',screen_view='room_detail',value='다음')])['findings']],['platform_mismatch'])
+        ios=compare(cat,[dict(OBS,platform='IOS',event_label=click,event_category='click',screen_view='room_detail',value='다음')])
+        detail=developer_handoff({'production':dict(ios,start='2026-11-28',end='2026-11-28',complete=True)})
+        self.assertIn('동작·전송 라벨 확인',detail)
+        self.assertIn('앱 사진 넘기기 기능은 지원합니다',detail)
 
     def test_unconfirmed_click_is_not_implicitly_added_to_swipe_platform(self):
         click='callvan__callvan_notification__notification_list__delete__click';swipe=click[:-5]+'swipe'
