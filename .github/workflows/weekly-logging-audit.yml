@@ -29,6 +29,10 @@ on:
         description: '합성 데이터로 규칙 상세 분석 시험 (BigQuery·Slack 실행 안 함)'
         type: boolean
         default: false
+      probe_notion_report:
+        description: 'offline_check와 함께 Notion 보고서 읽기 연결만 시험 (쓰기·Slack 없음)'
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -127,6 +131,11 @@ jobs:
           python -m unittest discover -s tests
           python offline_check.py
           python current_spec_check.py
+      - name: Notion 보고서 읽기 연결 시험
+        if: ${{ inputs.offline_check && inputs.probe_notion_report }}
+        env:
+          NOTION_REPORT_TOKEN: ${{ secrets.NOTION_LOGGING_REPORT_TOKEN || secrets.NOTION_LOGGING_READ_TOKEN }}
+        run: python daily_report.py --probe-notion
       - name: 전송 상태 보존
         if: ${{ always() && !inputs.offline_check && steps.week.outcome == 'success' && steps.receipt.outputs.cache-hit != 'true' && hashFiles('automation/logging-audit/.audit-state/**') != '' }}
         uses: actions/cache/save@v4
