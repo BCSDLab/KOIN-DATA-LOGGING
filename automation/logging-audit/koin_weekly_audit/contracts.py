@@ -12,6 +12,8 @@ FIELDS = ('설명', 'screen_view', 'event_name', 'event_label', 'value', 'event_
 LEGACY_EVENT_NAMES = frozenset(('CAMPUS', 'BUSINESS', 'USER'))
 CATEGORIES = ('unregistered', 'legacy_logging', 'current_mismatch')
 PLATFORMS = ('IOS', 'ANDROID', 'WEB')
+# A user-confirmed gesture exception; it never broadens another swipe contract.
+ANDROID_PHOTO_SWIPE = 'real_estate__room_detail__photo_view__slide__swipe'
 
 
 def clean(text):
@@ -160,9 +162,10 @@ def parse_page(page):
             scope_pending = label in scopes and scopes[label] is None
             if label in scopes:
                 platforms = scopes[label] or []
-            swipe_policy_conflict = (action == 'swipe' or cats == ['swipe']) and platforms != ['IOS']
+            permitted_swipe = ['ANDROID','IOS'] if label == ANDROID_PHOTO_SWIPE else ['IOS']
+            swipe_policy_conflict = (action == 'swipe' or cats == ['swipe']) and (not platforms or any(p not in permitted_swipe for p in platforms))
             if action == 'swipe' or cats == ['swipe']:
-                platforms = ['IOS']
+                platforms = sorted(set(platforms)&set(permitted_swipe)) or ['IOS']
             raw_value = fields.get('value', '').strip(' ”“\'"')
             # Only unambiguous single literal values are checked as literals.
             fixed = raw_value if raw_value and len(raw_value) < 65 and not re.search(r'[{}<>/~():：]|예시|예:|ex\)|동적|STRING|INT|선택한|해당하는|실제|→', raw_value, re.I) else None

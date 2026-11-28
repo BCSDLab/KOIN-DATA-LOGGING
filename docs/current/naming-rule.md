@@ -5,6 +5,10 @@
 [Notion 기준 원문](https://app.notion.com/p/4000221954bc81469ea6dbe19c7d8be7) · 조회·동기화 기준일: 2026-11-28.
 
 <!-- notion-body:start -->
+복덕방 사진 넘기기 · 2026-11-28 확정
+
+<code>real_estate__room_detail__photo_view__slide__swipe</code>는 손으로 사진을 넘기는 IOS·ANDROID 계약이다. 웹 화살표는 <code>real_estate__room_detail__photo_view__slide__click</code> / WEB으로 유지한다. 이 사진 넘기기만 기존 IOS 전용 swipe 규칙의 예외이며 뒤로가기 등 다른 swipe 범위는 확대하지 않는다. 앱의 click 수집은 사진 넘기기 기능 미지원이 아니라 동작·전송 라벨 확인 대상으로 안내한다. 과거 수집값·SDK는 변경하지 않는다.
+
 PC WEB 동아리 신규 계약 · 2026-11-28
 
 사용자 요청으로 <a href="https://app.notion.com/p/4260221954bc80ceab95e8c9e4cac8f1">동아리</a>에 Stage PC 동작을 기준으로 정리한 21개 신규 계약을 등록한다. service는 club(로그인 안내는 account), screen\_view는 header·footer·club\_list·club\_detail, event\_name은 새 명세 DA1이다. 플랫폼은 PC WEB만이며 모바일 WEB·ANDROID·IOS·swipe는 포함하지 않는다. 고정 value는 한국어다. 기존 동아리 55개 레거시·사진·전송값은 보존하며 전체를 현행으로 복원하지 않는다. 이전의 동아리 신규 네이밍 전면 제외 설명은 과거 명세 보존 범위를 뜻하고, 이번 PC WEB 계약에는 적용하지 않는다.

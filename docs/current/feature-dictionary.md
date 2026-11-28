@@ -1094,10 +1094,10 @@ detail과 category는 서로 다른 구간이다. 아래 예시의 <code>__</cod
 복덕방·식단·주변상점
 </td>
 <td>
-<code>open</code> → <code>click</code>; <code>slide</code> → <code>click</code>
+<code>open</code> → <code>click</code>; <code>slide</code> → <code>click</code> 또는 <code>swipe</code>
 </td>
 <td>
-원래 value·플랫폼·전송 시점 유지. 실제 구현 검증과 별개.
+복덕방 사진 손넘기기 swipe는 IOS·ANDROID, 웹 화살표 click은 WEB이다. 다른 swipe 플랫폼은 개별 명세를 따른다. 원래 value는 유지한다.
 </td>
 <td>
 <a href="https://app.notion.com/p/1700221954bc827b8c48019d6a980646">3-3 상점상세 사진 (클릭)</a> · <a href="https://app.notion.com/p/35e0221954bc82eebe7201b2af3e755d">4-1. 식단_코너 사진_클릭</a>
@@ -2607,7 +2607,7 @@ detail과 category는 서로 다른 구간이다. 아래 예시의 <code>__</cod
 | <code>shop_list</code> | 상점 목록 스크롤 탐색 | 주변상점 | 없음: category만 사용 | <code>scroll</code> | <a href="https://app.notion.com/p/c9c0221954bc82da8f7b8141ef147047">2-2 상점 카테고리 (스크롤)</a> |
 | <code>shop_benefit</code> | 전화 주문 혜택 상점 모아보기 진입 | 주변상점 | <code>entry</code> | <code>click</code> | <a href="https://app.notion.com/p/19c0221954bc837b85ed813f6a80e9df">4-3 카테고리에서 혜택페이지(클릭)</a> |
 | <code>shop_review</code> | 상점 리뷰 탭 진입과 리뷰 목록 탐색 | 주변상점 | <code>entry</code> | <code>click</code>, <code>scroll</code> | <a href="https://app.notion.com/p/6700221954bc829490bf812977cce992">3-10 상점상세 리뷰 (클릭)</a> · <a href="https://app.notion.com/p/6570221954bc831683fe81c8826bffc4">3-11 상점상세 리뷰 (스크롤)</a> |
-| <code>photo_view</code> | 사진 보기 열기와 사진 슬라이드 이동; 파일 업로드와 구분 | 주변상점·복덕방·식단 | <code>open</code>, <code>slide</code> | <code>click</code> | <a href="https://app.notion.com/p/1700221954bc827b8c48019d6a980646">3-3 상점상세 사진 (클릭)</a> · <a href="https://app.notion.com/p/bf10221954bc82f5995681a6d437697a">3-1 복덕방 상세_사진 넘기기 (클릭) - 추가된 로깅</a> |
+| <code>photo_view</code> | 사진 보기 열기와 사진 슬라이드 이동; 파일 업로드와 구분 | 주변상점·복덕방·식단 | <code>open</code>, <code>slide</code> | <code>click</code>, <code>swipe</code> | <a href="https://app.notion.com/p/1700221954bc827b8c48019d6a980646">3-3 상점상세 사진 (클릭)</a> · <a href="https://app.notion.com/p/6310221954bc825f8599010867d0f47a">3-1 복덕방 상세_사진 넘기기 클릭</a> |
 | <code>shop_entry</code> | 주변상점 서비스 진입; 메인 일반 진입과 카테고리 값 선택 진입 구분 | 주변상점 | <code>main_entry</code>, <code>category_entry</code>, <code>header_entry</code>, <code>footer_entry</code> | <code>click</code> | <a href="https://app.notion.com/p/88c0221954bc8280855881dd07f1c38d">1-1-1 메인 → 주변상점 (클릭) - (레거시)</a> · <a href="https://app.notion.com/p/cb70221954bc82f084078198ab552627">1-1 메인 → 상점 카테고리 (클릭) - 레거시</a> |
 | <code>shop_cart</code> | 장바구니 진입 | 주변상점 | <code>entry</code> | <code>click</code> | <a href="https://app.notion.com/p/b3a0221954bc82b984dd015025c78148">2-9 상점 카테고리 → 카트 - 레거시</a> |
 | <code>real_estate_entry</code> | 복덕방 서비스 진입; 웹 메뉴와 앱 카테고리에서 같은 진입 계약 사용 | 복덕방 | <code>category_entry</code>, <code>header_entry</code>, <code>footer_entry</code> | <code>click</code> | <a href="https://app.notion.com/p/2640221954bc83d6a82901c92388b825">[레거시] 1-3 햄버거_복덕방 진입 (클릭)</a> · <a href="https://app.notion.com/p/1740221954bc83cebc8601faa22ca3a5">1-1 헤더_복덕방 진입(클릭)</a> |

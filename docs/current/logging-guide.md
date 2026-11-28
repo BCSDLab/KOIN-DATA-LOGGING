@@ -5,6 +5,10 @@
 [Notion 기준 원문](https://app.notion.com/p/3c30221954bc8214b1c481c5bbb6fba5) · 조회·동기화 기준일: 2026-11-28.
 
 <!-- notion-body:start -->
+복덕방 사진 넘기기 · 2026-11-28 확정
+
+<code>real_estate__room_detail__photo_view__slide__swipe</code>는 손으로 사진을 넘기는 IOS·ANDROID 계약이다. 웹 화살표는 <code>real_estate__room_detail__photo_view__slide__click</code> / WEB으로 유지한다. 이 사진 넘기기만 기존 IOS 전용 swipe 규칙의 예외이며 뒤로가기 등 다른 swipe 범위는 확대하지 않는다. 앱의 click 수집은 사진 넘기기 기능 미지원이 아니라 동작·전송 라벨 확인 대상으로 안내한다. 과거 수집값·SDK는 변경하지 않는다.
+
 <b>event\_name 현재 기준 · </b><b>2026-11-28</b>
 
 작업 담당자는 서비스별로 고정되지 않는다. 전송·검수 기준은 각 개별 명세에 적힌 event\_name이며 service나 담당자만으로 DA1/DA2를 추정하지 않는다. 다국어 명세의 DA1은 그대로 유지한다. 과거 배정 기록을 이유로 기존 DA2·CAMPUS 등 개별 값이나 수집 데이터를 일괄 변경하지 않는다.
