@@ -1,12 +1,30 @@
-# 로깅 네이밍룰 — 현행
+# 🧭 로깅 네이밍룰 v1.0 — DA1·DA2 공통 확정본
 
 [← 현행 문서와 참고 자료](README.md)
 
-[Notion 기준 원문](https://app.notion.com/p/4000221954bc81469ea6dbe19c7d8be7) · 원문 편집 시각: 2026-11-27T16:10:42.707Z
-
-조회·동기화 기준일: 2026-11-28. 구현·배포·실수집 검증과 구분합니다.
+[Notion 기준 원문](https://app.notion.com/p/4000221954bc81469ea6dbe19c7d8be7) · 조회·동기화 기준일: 2026-11-28.
 
 <!-- notion-body:start -->
+PC WEB 동아리 신규 계약 · 2026-11-28
+
+사용자 요청으로 <a href="https://app.notion.com/p/4260221954bc80ceab95e8c9e4cac8f1">동아리</a>에 Stage PC 동작을 기준으로 정리한 21개 신규 계약을 등록한다. service는 club(로그인 안내는 account), screen\_view는 header·footer·club\_list·club\_detail, event\_name은 새 명세 DA1이다. 플랫폼은 PC WEB만이며 모바일 WEB·ANDROID·IOS·swipe는 포함하지 않는다. 고정 value는 한국어다. 기존 동아리 55개 레거시·사진·전송값은 보존하며 전체를 현행으로 복원하지 않는다. 이전의 동아리 신규 네이밍 전면 제외 설명은 과거 명세 보존 범위를 뜻하고, 이번 PC WEB 계약에는 적용하지 않는다.
+
+작업 담당자는 서비스별로 고정되지 않는다. 기존 계약의 event\_name은 개별 명세의 명시값을 따르며 서비스만으로 DA1/DA2를 일괄 변경하지 않는다. 로그인·관리자 화면과 실제 구현·배포·실수집은 별도 검수 대상이다.
+
+### PC WEB 동아리 기능 등록
+
+| service | feature | detail·category | 범위 |
+| --- | --- | --- | --- |
+| club | club\_entry | header\_entry / footer\_entry · click | PC 공통 헤더·푸터의 동아리 목록 진입 |
+| club | club\_detail | card\_entry / search\_entry · click | 목록 카드 본문·검색 자동완성 결과에서 상세 진입 |
+| club | club\_create | entry · click | 생성하기 버튼 시도. 생성 성공 아님 |
+| club | filter | category / recruiting / tab / event\_status · click, sort · select | 과거 click 유지. 목록 정렬만 새 선택 계약이며 초기 표시·자동 재조회는 제외 |
+| club | search | search\_input / clear · click | 검색창 클릭·검색어 삭제. 검색어 원문 미수집 |
+| club | like | 목록 add / remove · click, 상세 detail 생략 · click | 목록 좋아요 클릭·해제 분리. 서버 성공 이벤트 아님 |
+| club | qna\_write | entry · click | 질의응답 추가 진입 시도. 작성 내용 미수집 |
+| club | navigation | scroll\_top · click | 상세의 맨 위로 버튼. PC 뒤로가기·WEB swipe 없음 |
+| account | login\_popup | login\_entry / close · click | 동아리 발생 논리 화면 club\_list·club\_detail을 유지 |
+
 <b>event\_name 현재 기준 · </b><b>2026-11-28</b>
 
 작업 담당자는 서비스별로 고정되지 않는다. 전송·검수 기준은 각 개별 명세에 적힌 event\_name이며 service나 담당자만으로 DA1/DA2를 추정하지 않는다. 다국어 명세의 DA1은 그대로 유지한다. 과거 배정 기록을 이유로 기존 DA2·CAMPUS 등 개별 값이나 수집 데이터를 일괄 변경하지 않는다.
@@ -102,7 +120,7 @@ snake        := [a-z][a-z0-9]* ( "_" [a-z0-9]+ )*
 
 ### 1-1. 전체 service 목록 · service\_name 조회표
 
-2026-11-02 정리. 현재 TEAM Event Log의 공통 네이밍 문서와 기존 감사 목록을 대조하고, 아래 16개 구분의 대표 명세를 다시 읽어 확인했다. 새/미래 주변상점은 적용 대상에서 제외하며, 팀원 모집은 목록 확인만 하고 개별 명세를 수정하지 않는다. 이 표는 실제 배포·수집되는 service\_name의 전수 목록이나 SDK 적용 완료 선언이 아니다.
+2026-11-02 정리. 현재 TEAM Event Log의 공통 네이밍 문서와 기존 감사 목록을 대조하고, 아래 17개 구분(2026-11-28 PC WEB club 추가)의 대표 명세를 다시 읽어 확인했다. 새/미래 주변상점은 적용 대상에서 제외하며, 팀원 모집은 목록 확인만 하고 개별 명세를 수정하지 않는다. 이 표는 실제 배포·수집되는 service\_name의 전수 목록이나 SDK 적용 완료 선언이 아니다.
 
 이 문서에서 조회 편의를 위해 service\_name이라고 부르는 값은 <b>event\_label 첫 번째 구간인 service</b>다. 별도 GA4/SDK 파라미터 service\_name 신설을 승인하거나 event\_name을 변경하는 결정이 아니다. 기존 service\_name 구조 미채택 기록과 구분한다.
 
@@ -115,6 +133,7 @@ snake        := [a-z][a-z0-9]* ( "_" [a-z0-9]+ )*
 | <code>cafeteria</code> | 식단·학생식당 | 품절 제보·품절 알림 동결 명세는 그대로 유지 | <a href="https://app.notion.com/p/c420221954bc831497240194ccc6ae54">2-1. 헤더_식단_클릭</a> |
 | <code>callvan</code> | 콜밴팟 | 메인 모집 보기와 카테고리 진입 등 page/feature로 구분 | <a href="https://app.notion.com/p/01c0221954bc837eaafa01402f06f32a">1-6 콜벤팟 모집 보기 클릭</a> |
 | <code>chat</code> | 쪽지·채팅 | 게시판 안에 명세가 있어도 쪽지 service는 chat | <a href="https://app.notion.com/p/15d0221954bc82da9b0001cb92292190">11-17.헤더_쪽지_클릭</a> |
+| <code>club</code> | 동아리 | PC WEB에서 확인한 신규 계약만 적용. 기존 동아리 레거시는 보존 | <a href="https://app.notion.com/p/4260221954bc80ceab95e8c9e4cac8f1">동아리</a> |
 | <code>course_practice</code> | 모의수강신청 | course\_application은 feature 어휘이며 service 이름과 구분 | <a href="https://app.notion.com/p/0140221954bc8310a04f013fed656d61">1-5. 모의수강신청_메인으로 클릭</a> |
 | <code>department</code> | 학교 부서 정보 | 부서 분류·검색·전화번호 복사 | <a href="https://app.notion.com/p/2370221954bc83afaba301e35693f565">1-0-1 학교 부서 정보 접근 (푸터 진입)</a> |
 | <code>facility</code> | 교내 시설물 정보 | 시설물 서비스 진입 | <a href="https://app.notion.com/p/29a0221954bc82788e2c81c4dbec50d7">10-1. 헤더_교내 시설물 정보_클릭</a> |
@@ -125,7 +144,7 @@ snake        := [a-z][a-z0-9]* ( "_" [a-z0-9]+ )*
 | <code>team_recruit</code> | 팀원 모집 | 읽기 전용 목록에 포함. 기존 개별 명세는 변경하지 않음 | <a href="https://app.notion.com/p/8ce0221954bc836ca589012bcbd1fc8a">4-2. 모집글 편집</a> |
 | <code>timetable</code> | 시간표 | 일반 시간표·강의·학기 관리; 모의수강신청과 구분 | <a href="https://app.notion.com/p/0a00221954bc83bca117013903d780d7">2-20. (웹) 시간표_수정_해당 학부 (클릭)</a> |
 
-<b>명세에 사용되는 고유 service 구분은 16종</b>이다. 서비스 문서 수·DA 담당 배정 수·개별 이벤트 수와 다르다. 예를 들어 공지사항과 분실물은 board를 공유하고, 쪽지와 시설물은 게시판 DB 안에 있더라도 각각 chat/facility다. 홈 기능도 main 외에 목적 서비스의 shop/callvan/timetable 등을 사용할 수 있다.
+<b>명세에 사용되는 고유 service 구분은 17종</b>이다. 서비스 문서 수·DA 담당 배정 수·개별 이벤트 수와 다르다. 예를 들어 공지사항과 분실물은 board를 공유하고, 쪽지와 시설물은 게시판 DB 안에 있더라도 각각 chat/facility다. 홈 기능도 main 외에 목적 서비스의 shop/callvan/timetable 등을 사용할 수 있다.
 
 복사용 목록:
 
@@ -137,6 +156,7 @@ bus
 cafeteria
 callvan
 chat
+club
 course_practice
 department
 facility
@@ -152,10 +172,10 @@ timetable
 
 | 구분 | 사용 원칙 |
 | --- | --- |
-| label의 service | 위 16개 구분. 이벤트의 명세상 도메인이다. page·feature·value·플랫폼·발생 조건과 함께 해석한다. |
+| label의 service | 위 17개 구분. 이벤트의 명세상 도메인이다. page·feature·value·플랫폼·발생 조건과 함께 해석한다. |
 | Silver의 service\_name | 승인된 분석 분류 결과다. label 첫 구간을 무조건 복사하거나 이름이 같다는 이유로 매핑 검증 완료로 처리하지 않는다. 과거 라벨·화면·플랫폼별 분류와 적용 시점을 함께 대조한다. |
-| Gold v6의 1차 BI 범위 | shop, bus, cafeteria, timetable, board, facility, main 및 과거 grad\_calc 이력. 위 16개 service 전체를 대시보드 범위로 자동 확장하지 않는다. |
-| grad\_calc | Gold v6의 과거 졸업학점 계산기 분석 구분이다. 위 16개 현행 명세 목록에 새 label service로 추가하거나 신규 이벤트를 만들지 않는다. |
+| Gold v6의 1차 BI 범위 | shop, bus, cafeteria, timetable, board, facility, main 및 과거 grad\_calc 이력. 현행 service 전체를 대시보드 범위로 자동 확장하지 않는다. |
+| grad\_calc | Gold v6의 과거 졸업학점 계산기 분석 구분이다. 현행 명세 목록에 새 label service로 추가하거나 신규 이벤트를 만들지 않는다. |
 | unmapped / unknown | 분류 미확인·결측 등을 표현하는 분석 상태값이다. 새 비즈니스 service나 label 접두로 등록하지 않는다. 실제 사용값은 해당 Silver 계약에 따른다. |
 | <b>all</b> | Gold 리텐션의 전체 범위 예약값이다. main·서비스 합계·SDK service 이름과 다르다. |
 
@@ -273,7 +293,7 @@ Gold 연결 기준: <a href="https://app.notion.com/p/40b0221954bc81e29982d9f8db
 
 ## 5. value 규칙
 
-2026-11-04 문서 표기 정리: 표시용 따옴표만 제거하며 한글 고정값·동적 변수·후보·예시·전송 조건은 유지한다. 설명용 예시는 실제 SDK 전송값의 일부가 아니다. 동아리 전체는 사용자 지시에 따라 레거시 보존 대상이며 신규 네이밍 적용에서 제외한다.
+2026-11-04 문서 표기 정리: 표시용 따옴표만 제거하며 한글 고정값·동적 변수·후보·예시·전송 조건은 유지한다. 설명용 예시는 실제 SDK 전송값의 일부가 아니다. 기존 동아리 명세는 레거시로 보존한다. 2026-11-28 사용자 요청으로 새로 확인한 PC WEB 동아리 계약은 별도로 신규 네이밍을 적용하며 모바일 WEB과 앱은 제외한다.
 
 - 한국어, <b>따옴표 없음</b>. 고정 문자열은 그대로, 동적 값은 <code>{…}</code>.
 - 여러 값을 합칠 때 밑줄 <code>_</code> (예: <code>주중_천안역</code>, <code>2026_2학기</code>).

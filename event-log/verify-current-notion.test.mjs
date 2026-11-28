@@ -80,6 +80,35 @@ function supplementalFixture(f){
 test('additional source uses all normal page checks without rewriting the initial snapshot',t=>{
  const f=fixture(t);supplementalFixture(f);const r=verifyCurrent(f.root);assert.deepEqual(r.errors,[]);assert.equal(r.pages,2);assert.equal(r.sourceRows,3);
 });
+
+function newServiceFixture(f){
+ const extra=supplementalFixture(f),group={service:'동아리',path:'event-log/23-club'};
+ const doc=group.path+'/legacy-notice.md';
+ extra.item.source.service=group.service;extra.item.manifest.service=group.service;extra.item.manifest.path=doc;
+ f.write(doc,f.read(extra.doc));fs.unlinkSync(path.join(f.root,extra.doc));
+ f.write(group.path+'/README.md','[Legacy notice](legacy-notice.md)\n');
+ f.write('README.md',f.read('README.md').replace('## 레거시 서비스','[동아리]('+group.path+'/README.md)\n## 레거시 서비스'));
+ const state={services:[group],pages:[extra.item]};
+ f.write('docs/current/additional-notion-pages.json',JSON.stringify(state));return state;
+}
+test('registered new service is validated without rewriting the archived service snapshot',t=>{
+ const f=fixture(t),snapshot=f.read(META+'/summary.json');newServiceFixture(f);
+ const result=verifyCurrent(f.root);assert.deepEqual(result.errors,[]);assert.equal(result.services,2);
+ assert.equal(f.read(META+'/summary.json'),snapshot);
+});
+test('unregistered new service is rejected',t=>{
+ const f=fixture(t),state=newServiceFixture(f);delete state.services;
+ f.write('docs/current/additional-notion-pages.json',JSON.stringify(state));
+ assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Additional source service')));
+});
+test('new service cannot shadow a historical service or use another service directory',t=>{
+ const f=fixture(t),state=newServiceFixture(f);state.services[0].service='주변상점';
+ f.write('docs/current/additional-notion-pages.json',JSON.stringify(state));
+ assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Invalid additional service')));
+ state.services[0].service='동아리';state.services[0].path='event-log/another';f.write('event-log/another/README.md','');
+ f.write('docs/current/additional-notion-pages.json',JSON.stringify(state));
+ assert.ok(verifyCurrent(f.root).errors.some(e=>e.includes('Additional service page path')));
+});
 test('additional source text cannot change even after refreshing its output hash',t=>{
  const f=fixture(t),s=supplementalFixture(f),changed=f.read(s.doc).replace('레거시 보존 안내','원문과 다른 내용');
  f.write(s.doc,changed);s.item.manifest.output_sha256=sha256(changed);f.write('docs/current/additional-notion-pages.json',JSON.stringify({pages:[s.item]}));

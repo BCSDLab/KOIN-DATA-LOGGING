@@ -30,6 +30,7 @@
 | 14 | [모의수강신청](event-log/17-%EB%AA%A8%EC%9D%98%EC%88%98%EA%B0%95%EC%8B%A0%EC%B2%AD/README.md) |
 | 15 | [강제 업데이트](event-log/18-%EA%B0%95%EC%A0%9C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/README.md) |
 | 16 | [다국어 지원](event-log/21-%EB%8B%A4%EA%B5%AD%EC%96%B4-%EC%A7%80%EC%9B%90/README.md) |
+| 17 | [동아리](event-log/23-%EB%8F%99%EC%95%84%EB%A6%AC/README.md) |
 
 ## 레거시 서비스
 
@@ -46,31 +47,13 @@
 
 [이전 원본·검증 자료·코드 생성 파일럿](./_archive/README.md)
 
-2026-11-27 최초 동기화 시 807개 항목을 대조했습니다. 이후 사용자 요청으로 본문이 비어 있음을 재확인한 22개를 Notion 휴지통으로 옮기고 GitHub 현행 서비스 목록에서도 제거했습니다. 현재 동기화 문서는 기존 785개와 전수조회에서 확인한 레거시 안내 2개·하위 이슈 기록 21개, PC 홈 시간표 명세 2개와 PC 고정 배너 명세 1개를 합친 811개이며, 현행 목록의 빈 항목은 0개입니다. 최초 스냅샷과 [빈 항목 삭제 기록](docs/current/removed-blank-pages.json)은 이력으로 보존합니다. 문서 수는 고유 이벤트 수가 아닙니다. 이전 내보내기 중 일대일로 연결되지 않은 문서는 보존본으로 안내합니다.
+2026-11-27 최초 동기화 시 807개 항목을 대조했습니다. 이후 사용자 요청으로 본문이 비어 있음을 재확인한 22개를 Notion 휴지통으로 옮기고 GitHub 현행 서비스 목록에서도 제거했습니다. 현재 동기화 문서는 기존 785개와 추가 보존·이슈 문서 23개, PC 홈 시간표 명세 2개와 PC 고정 배너 명세 1개를 합친 811개에 동아리 PC WEB 명세 21개를 더한 832개이며, 현행 목록의 빈 항목은 0개입니다. 최초 스냅샷과 [빈 항목 삭제 기록](docs/current/removed-blank-pages.json)은 이력으로 보존합니다. 문서 수는 고유 이벤트 수가 아닙니다. 이전 내보내기 중 일대일로 연결되지 않은 문서는 보존본으로 안내합니다.
 
 [2026-11-27 Notion 본문·필드·이미지 대조 결과](_archive/updates/2026-11-27/notion-sync/README.md)
 
 [2026-11-19 Notion ZIP 동기화 범위·검토사항](_archive/updates/2026-11-19/README.md)
 
-## 2026-11-28 명세 보완
-
-- [PC 홈 시간표 제목 클릭](event-log/10-%ED%99%88%ED%99%94%EB%A9%B4-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8/1-14-PC-%ED%99%88-%EC%8B%9C%EA%B0%84%ED%91%9C-%EC%A0%9C%EB%AA%A9-%ED%81%B4%EB%A6%AD.md): value=`시간표`.
-- [PC 홈 시간표 위젯 본문 클릭](event-log/10-%ED%99%88%ED%99%94%EB%A9%B4-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8/1-15-PC-%ED%99%88-%EC%8B%9C%EA%B0%84%ED%91%9C-%EC%9C%84%EC%A0%AF-%EB%B3%B8%EB%AC%B8-%ED%81%B4%EB%A6%AD.md): value=`시간표 위젯`.
-- 두 시간표 계약은 PC WEB 전용·DA1이며, 실제 Stage 화면의 빨간 네모로 클릭 대상을 구분합니다. 기존 프로필 명세는 별도로 유지합니다.
-- [사장님 헤더·푸터 진입 로그 레거시 보존](docs/current/owner-web-entry-legacy.md): 해당 로그는 신규 구현 대상에서 제외합니다. 사장님 서비스 내부의 개별 명세는 유지합니다.
-- 이 변경은 명세와 검수 기준 갱신입니다. 웹 SDK 제거·수정 배포와 운영 수집 검증은 아직 수행하지 않았습니다.
-
-- [모바일 WEB 햄버거 패널 로그 — 레거시](docs/current/mobile-web-hamburger-legacy.md): Notion과 같은 폐기 범위·과거 값 보존. 웹 구형 패널만 대상이며 Android·iOS는 일괄 삭제하지 않습니다.
-
-- [졸업학점 계산기 라우트·로그 종료 결정](docs/current/graduation-retirement.md): WEB `/graduation`과 전용 로그를 제거하는 리뷰용 변경입니다. 과거 명세·사진·데이터와 일반 시간표는 보존합니다.
-
-- [PC 홈 고정 배너 이미지 클릭](event-log/10-%ED%99%88%ED%99%94%EB%A9%B4-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8/1-11-PC-%ED%99%88-%EA%B3%A0%EC%A0%95-%EB%B0%B0%EB%84%88-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%81%B4%EB%A6%AD.md): WEB PC 전용. 앱 모달 클릭·노출과 사진을 구분합니다.
-- [PC 교통 제목 main_to_bus 신규 전송 중단](docs/current/main-to-bus-retirement.md): 기존 버스 노선 조회 카드 계약에 포함하지 않으며 대체 이벤트를 추가하지 않습니다.
-- [현행 네이밍룰](docs/current/naming-rule.md): 서비스별 담당자를 고정하지 않고 개별 계약의 event_name을 따릅니다.
 
 ## 주간 로깅 검수
 
 [GitHub 명세·BigQuery 규칙 검수 및 Slack 연결 설정](automation/logging-audit/README.md) — 매주 월요일 오전 9시(KST), Stage·Production의 IOS·ANDROID·WEB별 미등록·과거 로깅 지속 수집·현행 명세 불일치를 알립니다. DA1·DA2와 Android 디버그를 검사하며 CAMPUS·BUSINESS·USER 수집도 감지합니다. 중요한 항목은 날짜·버전별 집계와 명세 출처·고정된 확인 항목을 붙입니다. 외부 AI API는 사용하지 않습니다. Notion 직접 자동 대조는 미실행이며 실제 명세 기준과 검수 범위는 연결 문서에 명시합니다.
-
-
-[전수조회에서 확인한 레거시 안내 2개·하위 이슈 기록 21개](docs/current/additional-notion-pages.json)

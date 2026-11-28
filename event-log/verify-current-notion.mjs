@@ -57,11 +57,25 @@ export function verifyCurrent(root,{imageCache}={}){
  const additionalPath='docs/current/additional-notion-pages.json';
  const additionalState=fs.existsSync(safe(additionalPath))?json(additionalPath):{pages:[]};
  const additional=additionalState.pages;
+ const extraServices=new Map(),servicePaths=new Set();
+ for(const group of additionalState.services||[]){
+  const valid=typeof group.service==='string'&&group.service.length>0&&
+   !manifests.some(s=>s.service===group.service)&&!extraServices.has(group.service)&&
+   typeof group.path==='string'&&/^event-log\/[^/]+$/.test(group.path)&&
+   group.path!=='event-log/..'&&!servicePaths.has(group.path)&&
+   !pages.some(p=>path.posix.dirname(p.path)===group.path);
+  check(valid,'Invalid additional service registration '+group.service);
+  if(!valid)continue;
+  safe(group.path);extraServices.set(group.service,group);servicePaths.add(group.path);
+  check(fs.existsSync(safe(group.path+'/README.md')),'Additional service index '+group.service);
+ }
  for(const item of additional){
   const s=item.source,m=item.manifest;
   check(!sourceMap.has(s.id),'Duplicate additional source ID '+s.id);
   check(s.id===m.notion_id&&Boolean(s.original_body),'Additional source must be a nonblank page '+s.id);
-  check(manifests.some(group=>group.service===s.service),'Additional source service '+s.id);
+  const extraService=extraServices.get(s.service);
+  check(manifests.some(group=>group.service===s.service)||Boolean(extraService),'Additional source service '+s.id);
+  if(extraService)check(path.posix.dirname(m.path)===extraService.path,'Additional service page path '+s.id);
   sources.push(s);sourceMap.set(s.id,s);pages.push(m);
  }
 
@@ -183,6 +197,12 @@ export function verifyCurrent(root,{imageCache}={}){
  const readme=read('README.md').toString();let last=-1;
  for(const service of ACTIVE){const at=readme.indexOf('['+service+']');check(at>last,'Active service order '+service);last=at;}
  check(readme.indexOf('## 레거시 서비스')>last,'Legacy section placement');
+ for(const group of extraServices.values()){
+  const beforeLegacy=readme.slice(0,readme.indexOf('## 레거시 서비스'));
+  const targets=[...beforeLegacy.matchAll(/\]\(([^)]+)\)/g)].map(m=>decodeURIComponent(m[1]));
+  check(targets.includes(group.path+'/README.md'),'Additional active service link '+group.service);
+  check(additional.some(p=>p.source.service===group.service),'Empty additional service '+group.service);
+ }
  for(const old of summary.previous_exports){
   const stub=read(old.previous_path).toString();
   check(!/새\s*로깅|event[_\\]*label\s*:/.test(stub),'Prior export is still active '+old.previous_path);
@@ -193,7 +213,7 @@ export function verifyCurrent(root,{imageCache}={}){
  const known=new Set([...files,...summary.previous_exports.map(p=>p.previous_path)]);
  function walk(dir){for(const name of fs.readdirSync(safe(dir))){const rel=path.posix.join(dir,name);if(fs.statSync(safe(rel)).isDirectory())walk(rel);else if(rel.endsWith('.md')&&name!=='README.md')check(known.has(rel),'Unmapped reader document '+rel);}}
  walk('event-log');
- return {pages:pages.length,blankPages:blankPages.length,activeBlankPages:blankPages.length-retired.size,retiredBlankPages:retired.size,sourceRows:sources.length,services:manifests.length,imageReferences:references,imagesChecked,notionLinks,errors};
+ return {pages:pages.length,blankPages:blankPages.length,activeBlankPages:blankPages.length-retired.size,retiredBlankPages:retired.size,sourceRows:sources.length,services:manifests.length+extraServices.size,imageReferences:references,imagesChecked,notionLinks,errors};
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const root=process.argv[2]||path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
