@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-27",
-  "reason": "필터 없는 데이터소스 전수조회와 하위 페이지 재귀조회에서 발견한 레거시 안내 2개·이슈 기록 21개; 2026-11-28 사용자 요청 PC 홈 시간표 제목·위젯 명세 2개 추가",
+  "date": "2026-11-28",
+  "reason": "필터 없는 데이터소스 전수조회와 하위 페이지 재귀조회에서 발견한 레거시 안내 2개·이슈 기록 21개; 2026-11-28 사용자 요청 PC 홈 시간표 제목·위젯 명세 2개 추가; 최신 Notion 동아리 PC WEB 21개 계약·이미지 20개 추가",
   "pages": [
     {
       "source": {
@@ -806,6 +806,867 @@
           "dc6de882-c824-4b65-baa7-f466698bd47c"
         ]
       }
+    },
+    {
+      "source": {
+        "id": "4260221954bc80fb8b0bf78cf3b3e222",
+        "title": "0-1 PC 헤더 동아리 진입",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc80fb8b0bf78cf3b3e222",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc80fb8b0bf78cf3b3e222",
+          "상태": "로깅 필요",
+          "이름": "0-1 PC 헤더 동아리 진입",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n원문: <mention url=\"https://app.notion.com/p/bae0221954bc82f38372016fdebf364d\">[레거시] 1-4.동아리_헤더</mention>\n\n- event\\_name: <code>“CAMPUS”</code>\n- event\\_label: <code>“header”</code>\n- value: <code>”동아리”</code>\n- event\\_category: <code>“click”</code>\n\n과거 값과 따옴표·대소문자 표기는 원문 이력이다. 신규 전송값이나 정상 별칭으로 사용하지 않는다. UI 위치 대응이며 SDK 호출 시점·적용 버전의 동일성까지 확정한 것은 아니다.\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: PC 헤더 커뮤니티 메뉴의 동아리 항목을 직접 클릭해 목록으로 이동을 시도할 때 1회 기록한다. 메뉴를 펼치거나 마우스를 올리는 동작은 제외한다.\n- 적용 플랫폼: WEB · PC 웹\n- screen\\_view: <code>header</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__header__club_entry__header_entry__click</code>\n- value: 동아리\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://dd002219-54bc-83b4-bd17-01912aef26e1/a0755164-9529-4a37-985b-d9bc9bca054f?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_header_entry_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:43.514Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc80fb8b0bf78cf3b3e222",
+        "title": "0-1 PC 헤더 동아리 진입",
+        "service": "동아리",
+        "path": "event-log/23-동아리/0-1-PC-헤더-동아리-진입.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc80fb8b0bf78cf3b3e222",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:43.514Z",
+        "source_body_sha256": "7061325306e00de65bf6a7ffe640e8af9aaa90b5b200630683e81d20e1a0cc8a",
+        "output_sha256": "cfe87a252aa36e77ba1a521cc189e1a08dc9e9f1324cbe2960868805446d1e8a",
+        "image_ids": [
+          "a0755164-9529-4a37-985b-d9bc9bca054f"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc8005a0e6e07143be4fd6",
+        "title": "0-2 PC 푸터 동아리 진입",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc8005a0e6e07143be4fd6",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc8005a0e6e07143be4fd6",
+          "상태": "로깅 필요",
+          "이름": "0-2 PC 푸터 동아리 진입",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n원문: <mention url=\"https://app.notion.com/p/8440221954bc83ee999e81d1f9fa8e32\">[레거시] 1-5.동아리_푸터</mention>\n\n- event\\_name: <code>“CAMPUS”</code>\n- event\\_label: <code>“footer”</code>\n- value: <code>”동아리”</code>\n- event\\_category: <code>“click”</code>\n\n과거 값과 따옴표·대소문자 표기는 원문 이력이다. 신규 전송값이나 정상 별칭으로 사용하지 않는다. UI 위치 대응이며 SDK 호출 시점·적용 버전의 동일성까지 확정한 것은 아니다.\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: PC 공통 푸터의 동아리 링크를 직접 클릭해 목록으로 이동을 시도할 때 1회 기록한다. 헤더 클릭과 구분한다.\n- 적용 플랫폼: WEB · PC 웹\n- screen\\_view: <code>footer</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__footer__club_entry__footer_entry__click</code>\n- value: 동아리\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://01602219-54bc-8231-81f5-01557cd3a137/ac39b819-3741-4744-a911-da8cb0c57934?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_footer_entry_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:44.269Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc8005a0e6e07143be4fd6",
+        "title": "0-2 PC 푸터 동아리 진입",
+        "service": "동아리",
+        "path": "event-log/23-동아리/0-2-PC-푸터-동아리-진입.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc8005a0e6e07143be4fd6",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:44.269Z",
+        "source_body_sha256": "4410a42d6a1f72b72a878669f8d2c1c2242cbf2490270495cf57dfb1e71fbe6c",
+        "output_sha256": "cc2bfa97eb0797a16d4546e469ca8e7b1f869c65332ba4b0472a0f960498aaac",
+        "image_ids": [
+          "ac39b819-3741-4744-a911-da8cb0c57934"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc803eb325d61e1e73a305",
+        "title": "1-1 동아리 분과 선택",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc803eb325d61e1e73a305",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc803eb325d61e1e73a305",
+          "상태": "로깅 필요",
+          "이름": "1-1 동아리 분과 선택",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n원문: <mention url=\"https://app.notion.com/p/ab50221954bc8361abae01aa01e306b5\">[레거시] 2-3.동아리_동아리 카테고리 클릭</mention>\n\n- event\\_name: <code>“CAMPUS”</code>\n- event\\_label: <code>“club_main_category”</code>\n- value: <code>{”공연”,”운동”,”종교”,”취미”,”학술”}</code>\n- event\\_category: <code>“click”</code>\n\n과거 값과 따옴표·대소문자 표기는 원문 이력이다. 신규 전송값이나 정상 별칭으로 사용하지 않는다. UI 위치 대응이며 SDK 호출 시점·적용 버전의 동일성까지 확정한 것은 아니다.\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 분과 버튼을 사용자가 직접 클릭할 때 클릭한 분과명을 1회 기록한다. 선택·해제 여부와 관계없이 실제 누른 버튼명(학술·운동·취미·종교·공연)을 사용한다. 초기 표시·API 재조회에는 전송하지 않는다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_list</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_list__filter__category__click</code>\n- value: 학술 또는 운동 또는 취미 또는 종교 또는 공연\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://73602219-54bc-82a0-9a56-010a6fb6e4d3/484bc841-aa66-40d7-96da-b0dc08af9dc2?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_category_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:44.916Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc803eb325d61e1e73a305",
+        "title": "1-1 동아리 분과 선택",
+        "service": "동아리",
+        "path": "event-log/23-동아리/1-1-동아리-분과-선택.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc803eb325d61e1e73a305",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:44.916Z",
+        "source_body_sha256": "16776a3788a05de31295b728c6c8aea1869fb11ef4c42614f4d8832aaffe3b08",
+        "output_sha256": "fea261befec6872a9e76ac0616728947a2bc8782dc747ceeb54a408f39009421",
+        "image_ids": [
+          "484bc841-aa66-40d7-96da-b0dc08af9dc2"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc8068bdebe0cc9a6410ce",
+        "title": "1-2 동아리 검색창 클릭",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc8068bdebe0cc9a6410ce",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc8068bdebe0cc9a6410ce",
+          "상태": "로깅 필요",
+          "이름": "1-2 동아리 검색창 클릭",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 검색 입력창을 사용자가 직접 클릭하거나 탭할 때 1회 기록한다. 자동 focus·키 입력마다·초기 렌더에서는 전송하지 않는다. 검색 실행이나 검색 결과 진입과 구분한다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_list</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_list__search__search_input__click</code>\n- value: 검색창\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://7bd02219-54bc-8249-876a-818a55f8c5d9/6fe64321-0fbb-44ed-808a-4082905a39dc?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_search_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:45.445Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc8068bdebe0cc9a6410ce",
+        "title": "1-2 동아리 검색창 클릭",
+        "service": "동아리",
+        "path": "event-log/23-동아리/1-2-동아리-검색창-클릭.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc8068bdebe0cc9a6410ce",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:45.445Z",
+        "source_body_sha256": "ce0bf32bfa1222deea7c611a03f257c138a3eb966933b71fc3b92faa2b4ee480",
+        "output_sha256": "09393c767d6c10e6b6aadd69f94cb1f7ca877e11ea44dfc49017e7f4230bd482",
+        "image_ids": [
+          "6fe64321-0fbb-44ed-808a-4082905a39dc"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc8031b01cf0ebd7994de7",
+        "title": "1-3 동아리 검색어 삭제",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc8031b01cf0ebd7994de7",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc8031b01cf0ebd7994de7",
+          "상태": "로깅 필요",
+          "이름": "1-3 동아리 검색어 삭제",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n없음\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 검색어가 있는 상태에서 검색어 삭제 버튼을 눌러 입력값을 지울 때 1회 기록한다. 초기 빈 입력·자동 초기화에는 전송하지 않는다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_list</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_list__search__clear__click</code>\n- value: 검색어 삭제\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://b4302219-54bc-827c-af21-818366bfbb11/6887fed8-df19-435d-b6f5-a76d665fbc3a?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_search_clear_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:46.323Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc8031b01cf0ebd7994de7",
+        "title": "1-3 동아리 검색어 삭제",
+        "service": "동아리",
+        "path": "event-log/23-동아리/1-3-동아리-검색어-삭제.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc8031b01cf0ebd7994de7",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:46.323Z",
+        "source_body_sha256": "49f321d3551b66325ff8ff702ec49b2f29bcfa31cfec01faca46be0a536f7852",
+        "output_sha256": "2800bcc09e9291a4fd0a91c0c6412193279e355c0d81dc601e15bcf0d7606f6a",
+        "image_ids": [
+          "6887fed8-df19-435d-b6f5-a76d665fbc3a"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc805da251ced003dfe859",
+        "title": "1-4 동아리 검색 결과 진입",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc805da251ced003dfe859",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc805da251ced003dfe859",
+          "상태": "로깅 필요",
+          "이름": "1-4 동아리 검색 결과 진입",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n관련 참고: <mention url=\"https://app.notion.com/p/ebd0221954bc828da16b018d36ed13e5\">[레거시] 2.7 동아리_동아리 검색</mention>. 원문은 검색어를 value로 기록하므로 검색창 클릭·삭제·자동완성 결과 진입과 같은 이벤트라고 단정하지 않는다.\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 검색 자동완성 결과의 동아리 항목을 클릭해 해당 상세로 이동을 시도할 때 1회 기록한다. 일반 목록 카드와 구분한다. 검색어 원문이나 질의 문자열은 value로 전송하지 않는다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_list</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_list__club_detail__search_entry__click</code>\n- value: \\{사용자가 클릭한 동아리 이름\\}\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://a3402219-54bc-827c-828a-0190e1b4625a/77f26c78-f2e8-4b39-a486-f4030b56625e?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_search_result_marked.png\">\nPC 웹 실제 Stage 화면 · 빨간 네모가 해당 동작의 대상 위치다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:46.882Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc805da251ced003dfe859",
+        "title": "1-4 동아리 검색 결과 진입",
+        "service": "동아리",
+        "path": "event-log/23-동아리/1-4-동아리-검색-결과-진입.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc805da251ced003dfe859",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:46.882Z",
+        "source_body_sha256": "25a8325f3c5df6b04c53512b2926fcf8532510f2268f857ed57d2796dc147f88",
+        "output_sha256": "20392fe65437340676e3251865f2d8f0d6850b44c40f5d707b60ad79e98cec95",
+        "image_ids": [
+          "77f26c78-f2e8-4b39-a486-f4030b56625e"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc80429979e907dd1260d0",
+        "title": "1-5 모집 중인 동아리 필터",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc80429979e907dd1260d0",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc80429979e907dd1260d0",
+          "상태": "로깅 필요",
+          "이름": "1-5 모집 중인 동아리 필터",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n원문: <mention url=\"https://app.notion.com/p/1030221954bc83d0995601cca207320e\">[레거시] 2.6 동아리_모집 중인 동아리 토글 클릭</mention>\n\n- event\\_name: <code>“CAMPUS”</code>\n- event\\_label: <code>“club_main_recruiting_toggle”</code>\n- value: <code>{on / off} // ‘on’ 또는 ‘off’ 값을 가지는 형태</code>\n- event\\_category: <code>“click”</code>\n\n과거 값과 따옴표·대소문자 표기는 원문 이력이다. 신규 전송값이나 정상 별칭으로 사용하지 않는다. UI 위치 대응이며 SDK 호출 시점·적용 버전의 동일성까지 확정한 것은 아니다.\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 모집 중인 동아리 스위치를 사용자가 직접 클릭할 때 클릭으로 요청한 on/off를 한국어 값(모집 중 보기 설정/해제)으로 1회 기록한다. 초기 표시·단순 노출·재조회는 제외하며 서버 결과를 기다리는 성공 이벤트가 아니다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_list</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_list__filter__recruiting__click</code>\n- value: 모집 중 보기 설정 또는 모집 중 보기 해제\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://13b02219-54bc-835d-936b-014f717aabf9/f7d0f073-6cb8-4ed4-bbbd-1aa8b89a65e2?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_recruit_filter_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:48.134Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc80429979e907dd1260d0",
+        "title": "1-5 모집 중인 동아리 필터",
+        "service": "동아리",
+        "path": "event-log/23-동아리/1-5-모집-중인-동아리-필터.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc80429979e907dd1260d0",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:48.134Z",
+        "source_body_sha256": "6ee7032bfd1bfbdd46faac1236f57e3d70ac6eee35d5ef8aaade2b609aa4205e",
+        "output_sha256": "4945e97c6d59aad27ab6291a85b717d2b235d4f883517433511727f65c082013",
+        "image_ids": [
+          "f7d0f073-6cb8-4ed4-bbbd-1aa8b89a65e2"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc80ca8bdff5fded3fbad2",
+        "title": "1-6 동아리 목록 정렬 선택",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc80ca8bdff5fded3fbad2",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc80ca8bdff5fded3fbad2",
+          "상태": "로깅 필요",
+          "이름": "1-6 동아리 목록 정렬 선택",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n없음\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 열린 정렬 메뉴에서 다른 기준을 선택해 정렬 상태가 변경될 때 변경 후 기준을 1회 기록한다. 드롭다운 열기·현재 항목 재선택·자동 정렬은 제외한다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_list</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_list__filter__sort__select</code>\n- value: 생성순 또는 조회순\n- event\\_category: <code>select</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://e7302219-54bc-821a-b471-01eda4cb692e/202b475a-9e96-438f-b7e0-987787958dcc?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_list_sort_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:48.684Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc80ca8bdff5fded3fbad2",
+        "title": "1-6 동아리 목록 정렬 선택",
+        "service": "동아리",
+        "path": "event-log/23-동아리/1-6-동아리-목록-정렬-선택.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc80ca8bdff5fded3fbad2",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:48.684Z",
+        "source_body_sha256": "802c3c9b64321e1962abbc9d2ce9f8cb876f24fc6e246c670a09ec334c614f21",
+        "output_sha256": "b68347644b260937145e140250e7fac2f99d583a4056c797ba42776c14f1deee",
+        "image_ids": [
+          "202b475a-9e96-438f-b7e0-987787958dcc"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc80a4999de2fccab8dec0",
+        "title": "1-7 동아리 목록 카드 진입",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc80a4999de2fccab8dec0",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc80a4999de2fccab8dec0",
+          "상태": "로깅 필요",
+          "이름": "1-7 동아리 목록 카드 진입",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n원문: <mention url=\"https://app.notion.com/p/9330221954bc8398bd53813438067b42\">[레거시] 2-1. 동아리_동아리 클릭</mention>\n\n- event\\_name: <code>“CAMPUS”</code>\n- event\\_label: <code>“club_main_select”</code>\n- value: <code>{”동아리명”}</code>\n- event\\_category: <code>“click”</code>\n\n과거 값과 따옴표·대소문자 표기는 원문 이력이다. 신규 전송값이나 정상 별칭으로 사용하지 않는다. UI 위치 대응이며 SDK 호출 시점·적용 버전의 동일성까지 확정한 것은 아니다.\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 일반 목록 카드 본문을 클릭해 해당 동아리 상세로 이동을 시도할 때 1회 기록한다. 카드 안 좋아요 버튼·검색 자동완성 결과는 제외하며 이벤트 버블링으로 중복 전송하지 않는다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_list</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_list__club_detail__card_entry__click</code>\n- value: \\{동아리명\\}\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://d9702219-54bc-8233-934c-81940178b98e/cfdcdb70-fb68-4dbf-8be7-385946ae43ae?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_card_body_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:49.501Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc80a4999de2fccab8dec0",
+        "title": "1-7 동아리 목록 카드 진입",
+        "service": "동아리",
+        "path": "event-log/23-동아리/1-7-동아리-목록-카드-진입.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc80a4999de2fccab8dec0",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:49.501Z",
+        "source_body_sha256": "e5af9d1be2bf778d5d99a8dbb73933d7ced2b52cce4561677c996b8e7ab3889b",
+        "output_sha256": "092fd814e3a31032cee284e569d10a9cc179677aa9650ff429d3f4cf57cdc485",
+        "image_ids": [
+          "cfdcdb70-fb68-4dbf-8be7-385946ae43ae"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc80dab2b7e0265a1df887",
+        "title": "1-8-1 동아리 목록 좋아요 클릭",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc80dab2b7e0265a1df887",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc80dab2b7e0265a1df887",
+          "상태": "로깅 필요",
+          "이름": "1-8-1 동아리 목록 좋아요 클릭",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n원문: <mention url=\"https://app.notion.com/p/67e0221954bc8325850e814fce2aa79b\">[레거시] 2-4.동아리_동아리 메인화면 좋아요 클릭</mention>\n\n- event\\_name: <code>“CAMPUS”</code>\n- event\\_label: <code>“club_main_like”</code>\n- value: <code>“동아리명”</code>\n- event\\_category: <code>“click”</code>\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 좋아요하지 않은 목록 카드의 하트 버튼을 눌러 좋아요를 요청할 때 1회 기록한다. 저장 성공 이벤트가 아니며 카드 진입 로그를 함께 보내지 않는다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_list</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_list__like__add__click</code>\n- value: 좋아요\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://7dc02219-54bc-838c-85a3-8141787ec255/04bda7f2-e6c2-4557-ac70-3de33675f711?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_list_like_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:50.135Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc80dab2b7e0265a1df887",
+        "title": "1-8-1 동아리 목록 좋아요 클릭",
+        "service": "동아리",
+        "path": "event-log/23-동아리/1-8-1-동아리-목록-좋아요-클릭.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc80dab2b7e0265a1df887",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:50.135Z",
+        "source_body_sha256": "2ed4a0470bc94bc1cb57cb335c5d03b70c7552a776ec0f12ba25d2dbde0f2923",
+        "output_sha256": "e2d3aa6eaaed9be9493b5f4cbeaf98b310dc0bcd727f2be94d54fd71b6dc0447",
+        "image_ids": [
+          "04bda7f2-e6c2-4557-ac70-3de33675f711"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc80e8bb4ff8f7596a7fd4",
+        "title": "1-8-2 동아리 목록 좋아요 해제",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc80e8bb4ff8f7596a7fd4",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc80e8bb4ff8f7596a7fd4",
+          "상태": "로깅 필요",
+          "이름": "1-8-2 동아리 목록 좋아요 해제",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n원문: <mention url=\"https://app.notion.com/p/fcb0221954bc832f811d01195c2c92d2\">[레거시] 2-5.동아리_동아리 메인화면 좋아요 해제</mention>\n\n- event\\_name: <code>“CAMPUS”</code>\n- event\\_label: <code>“club_main_like_cancel”</code>\n- value: <code>“동아리명”</code>\n- event\\_category: <code>“click”</code>\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 이미 좋아요한 목록 카드의 하트 버튼을 눌러 좋아요 해제를 요청할 때 1회 기록한다. 해제 성공 이벤트가 아니며 카드 진입 로그를 함께 보내지 않는다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_list</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_list__like__remove__click</code>\n- value: 좋아요 해제\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://de402219-54bc-826d-914c-81ea666137a8/04bda7f2-e6c2-4557-ac70-3de33675f711?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_list_like_marked.png\">\nPC 웹 하트 버튼 위치 참고. 좋아요 선택·해제 상태와 로그인 후 실제 전송은 미검증이다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:50.745Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc80e8bb4ff8f7596a7fd4",
+        "title": "1-8-2 동아리 목록 좋아요 해제",
+        "service": "동아리",
+        "path": "event-log/23-동아리/1-8-2-동아리-목록-좋아요-해제.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc80e8bb4ff8f7596a7fd4",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:50.745Z",
+        "source_body_sha256": "4314c9deefe5f106f577eeb5fb3a1721be83dadd449fbae60f928b6ee6035675",
+        "output_sha256": "c81ef4bc9865ce5b187598dcdd6a6f3411ddc2eb83dc4faacf63e104f17ddf14",
+        "image_ids": [
+          "04bda7f2-e6c2-4557-ac70-3de33675f711"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc800e8c01e57fb73ef388",
+        "title": "1-9 동아리 생성 진입 버튼",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc800e8c01e57fb73ef388",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc800e8c01e57fb73ef388",
+          "상태": "로깅 필요",
+          "이름": "1-9 동아리 생성 진입 버튼",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n원문: <mention url=\"https://app.notion.com/p/b0d0221954bc838189d681eb6e5c9274\">[레거시] 2-2.동아리_동아리 생성하기 클릭</mention>\n\n- event\\_name: <code>“CAMPUS”</code>\n- event\\_label: <code>“club_main_create”</code>\n- value: <code>“생성하기”</code>\n- event\\_category: <code>“click”</code>\n\n과거 값과 따옴표·대소문자 표기는 원문 이력이다. 신규 전송값이나 정상 별칭으로 사용하지 않는다. UI 위치 대응이며 SDK 호출 시점·적용 버전의 동일성까지 확정한 것은 아니다.\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 목록의 동아리 생성하기 버튼을 직접 클릭할 때 1회 기록한다. 비로그인은 로그인 안내를 띄우며 생성 성공·생성 요청 제출 이벤트가 아니다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_list</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_list__club_create__entry__click</code>\n- value: 생성하기\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://88102219-54bc-83fa-b4f0-8135dd289bda/4c39acf1-9ff5-4ae3-b72d-9f2502a8858e?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_create_entry_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:51.314Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc800e8c01e57fb73ef388",
+        "title": "1-9 동아리 생성 진입 버튼",
+        "service": "동아리",
+        "path": "event-log/23-동아리/1-9-동아리-생성-진입-버튼.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc800e8c01e57fb73ef388",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:51.314Z",
+        "source_body_sha256": "a860e1b4100c8674c7af3d0d1e8ed951b80d2f3c26861b10bdb855a4e60394dc",
+        "output_sha256": "792711ad9d9c8187db94450eef67773855deb4d1538681398850cf7588b5ffbd",
+        "image_ids": [
+          "4c39acf1-9ff5-4ae3-b72d-9f2502a8858e"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc8015b7c4e1b28b54f62f",
+        "title": "2-1 동아리 상세 탭 선택",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc8015b7c4e1b28b54f62f",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc8015b7c4e1b28b54f62f",
+          "상태": "로깅 필요",
+          "이름": "2-1 동아리 상세 탭 선택",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n원문: <mention url=\"https://app.notion.com/p/9db0221954bc832fad1581f3640e91b6\">[레거시] 5-6.동아리_탭 클릭(추가사항)</mention>\n\n- event\\_name: <code>“CAMPUS”</code>\n- event\\_label: <code>“club_tab_select”</code>\n- value: <code>{”상세 소개”, “Q&amp;A”, “모집”, “행사”}</code>\n- event\\_category: <code>“click”</code>\n\n과거 값과 따옴표·대소문자 표기는 원문 이력이다. 신규 전송값이나 정상 별칭으로 사용하지 않는다. UI 위치 대응이며 SDK 호출 시점·적용 버전의 동일성까지 확정한 것은 아니다.\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 상세 화면에서 사용자가 탭을 직접 클릭할 때 누른 탭값을 1회 기록한다. 첫 진입의 기본 표시·직접 URL 진입·자동 렌더는 제외한다. 이름 정리만으로 과거 click을 select로 바꾸지 않는다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_detail</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_detail__filter__tab__click</code>\n- value: 상세 소개 또는 모집 또는 행사 또는 질의응답\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://66702219-54bc-8255-bc7a-81763a9f0e33/aba59796-4902-4dc4-ba4e-1e60814ddedf?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_tabs_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:51.933Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc8015b7c4e1b28b54f62f",
+        "title": "2-1 동아리 상세 탭 선택",
+        "service": "동아리",
+        "path": "event-log/23-동아리/2-1-동아리-상세-탭-선택.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc8015b7c4e1b28b54f62f",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:51.933Z",
+        "source_body_sha256": "c02ded98b74c4ec7165e17737d2d2d482f539780b3c844c790d92736f5cfd9f6",
+        "output_sha256": "0727ace6f4d31140ba683df21976cbbb48154ad946cba177ab257d0762509a00",
+        "image_ids": [
+          "aba59796-4902-4dc4-ba4e-1e60814ddedf"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc80c587baff9c3e52f5af",
+        "title": "2-2 동아리 상세 좋아요 버튼",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc80c587baff9c3e52f5af",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc80c587baff9c3e52f5af",
+          "상태": "로깅 필요",
+          "이름": "2-2 동아리 상세 좋아요 버튼",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n원문: <mention url=\"https://app.notion.com/p/2820221954bc82f9ac748148effdac09\">[레거시] 5-12.동아리_상세소개 좋아요 클릭</mention>\n\n- event\\_name: <code>“CAMPUS”</code>\n- event\\_label: <code>“club_introduction_like”</code>\n- value: <code>“동아리명”</code>\n- event\\_category: <code>“click”</code>\n\n원문: <mention url=\"https://app.notion.com/p/6730221954bc83d9928001a5879cf882\">[레거시] 5-13.동아리_상세소개 좋아요 해제</mention>\n\n- event\\_name: <code>“CAMPUS”</code>\n- event\\_label: <code>“club_introduction_like_cancel”</code>\n- value: <code>“동아리명”</code>\n- event\\_category: <code>“click”</code>\n\n과거 값과 따옴표·대소문자 표기는 원문 이력이다. 신규 전송값이나 정상 별칭으로 사용하지 않는다. UI 위치 대응이며 SDK 호출 시점·적용 버전의 동일성까지 확정한 것은 아니다.<br />과거 좋아요·해제는 서로 다른 라벨이었다. 원문 value는 동아리명으로만 표시돼 동적 값 여부를 임의 확정하지 않는다. 현재 새 계약은 버튼 클릭 시도이며 두 과거 이벤트의 저장·해제 결과를 대체하지 않는다.\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 상세 요약 영역의 좋아요 버튼을 직접 누른 시도를 1회 기록한다. 비로그인 로그인 안내와 서버의 실제 좋아요 저장·해제 성공을 구분한다. 목록 하트 계약은 전송하지 않는다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_detail</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_detail__like__click</code>\n- value: 좋아요 버튼\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://6f702219-54bc-829d-b5d4-813b5f3eb46b/e2a548f2-db00-4a5a-8466-b1bd2b04aa09?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_detail_like_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:52.474Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc80c587baff9c3e52f5af",
+        "title": "2-2 동아리 상세 좋아요 버튼",
+        "service": "동아리",
+        "path": "event-log/23-동아리/2-2-동아리-상세-좋아요-버튼.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc80c587baff9c3e52f5af",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:52.474Z",
+        "source_body_sha256": "b7db0b6835bdad3c62b0446438779b88be65fe2f8591a55d190a17b69c742cf4",
+        "output_sha256": "e12f0cbfdec752258aa6d3c2a9b7b612624643cc0737d72431625245785ad949",
+        "image_ids": [
+          "e2a548f2-db00-4a5a-8466-b1bd2b04aa09"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc80a98bf1f923ba9af916",
+        "title": "2-5 동아리 질의응답 추가 진입",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc80a98bf1f923ba9af916",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc80a98bf1f923ba9af916",
+          "상태": "로깅 필요",
+          "이름": "2-5 동아리 질의응답 추가 진입",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n원문: <mention url=\"https://app.notion.com/p/7380221954bc820fabbb01a135d45979\">[레거시] 4-1. 동아리_Q&A추가</mention>\n\n- event\\_name: <code>“CAMPUS”</code>\n- event\\_label: <code>“club_Q&amp;A_add”</code>\n- value: <code>“Q&amp;A”</code>\n- event\\_category: <code>“click”</code>\n\n과거 값과 따옴표·대소문자 표기는 원문 이력이다. 신규 전송값이나 정상 별칭으로 사용하지 않는다. UI 위치 대응이며 SDK 호출 시점·적용 버전의 동일성까지 확정한 것은 아니다.\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: Q&A 탭의 Q&A 추가 버튼을 직접 클릭할 때 1회 기록한다. 비로그인 로그인 안내 표시를 포함한 진입 시도이며 질문 작성 제출·서버 저장 성공이 아니다. 질문·답변 원문을 수집하지 않는다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_detail</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_detail__qna_write__entry__click</code>\n- value: 질의응답 추가\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://2e902219-54bc-82a6-9b02-81afae48e199/ac1e7857-5dd8-45e2-bca7-9a8d43cc9111?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_qna_add_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:52.969Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc80a98bf1f923ba9af916",
+        "title": "2-5 동아리 질의응답 추가 진입",
+        "service": "동아리",
+        "path": "event-log/23-동아리/2-5-동아리-질의응답-추가-진입.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc80a98bf1f923ba9af916",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:52.969Z",
+        "source_body_sha256": "4fd3714994735188097c3e4c520b2a2598cbc458a18cbd083ee6b28ec94fb60f",
+        "output_sha256": "f33cada174e8fb9d84e481cf77d8df6957533dd05674fcabedb8c7ca13ee6ba5",
+        "image_ids": [
+          "ac1e7857-5dd8-45e2-bca7-9a8d43cc9111"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc801ab307f79c0d088266",
+        "title": "2-6 동아리 행사 상태 필터",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc801ab307f79c0d088266",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc801ab307f79c0d088266",
+          "상태": "로깅 필요",
+          "이름": "2-6 동아리 행사 상태 필터",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n과거 로깅\n\n원문: <mention url=\"https://app.notion.com/p/39a0221954bc837eb48a812a0b716c4e\">[레거시] 6.2동아리_행사필터 클릭</mention>\n\n- event\\_name: <code>“CAMPUS”</code>\n- event\\_label: <code>“club_event_filter”</code>\n- value: <code>(”행사 진행 중”, “최신 등록순”, “행사 예정”, “종료 행사”)</code>\n- event\\_category: <code>“click”</code>\n\n과거 값과 따옴표·대소문자 표기는 원문 이력이다. 신규 전송값이나 정상 별칭으로 사용하지 않는다. UI 위치 대응이며 SDK 호출 시점·적용 버전의 동일성까지 확정한 것은 아니다.\n</toggle>\n\n<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 행사 탭 드롭다운에서 기준 항목을 사용자가 직접 클릭할 때 누른 표시값을 1회 기록한다. 메뉴 열기·초기 표시·자동 재조회는 제외한다. 이름 정리만으로 과거 click을 select로 바꾸지 않는다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_detail</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_detail__filter__event_status__click</code>\n- value: 최신 등록순 또는 행사 예정 또는 행사 진행 중 또는 종료 행사\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://b3a02219-54bc-83b3-9e9c-012a0495c736/07ce9bcf-4f96-44ff-b0d8-cb026dc69b15?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_event_sort_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:53.540Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc801ab307f79c0d088266",
+        "title": "2-6 동아리 행사 상태 필터",
+        "service": "동아리",
+        "path": "event-log/23-동아리/2-6-동아리-행사-상태-필터.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc801ab307f79c0d088266",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:53.540Z",
+        "source_body_sha256": "d8ed5a62873016091591d603714bf0b9125ce39b935bb4dadba356729515a123",
+        "output_sha256": "71a8c5548e1ec5f6767f34243324ff4b6233268af55fbf14cca1a2544e35b789",
+        "image_ids": [
+          "07ce9bcf-4f96-44ff-b0d8-cb026dc69b15"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc80f1abb5f8c4fefe35bc",
+        "title": "2-7 동아리 상세 맨 위로",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc80f1abb5f8c4fefe35bc",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc80f1abb5f8c4fefe35bc",
+          "상태": "로깅 필요",
+          "이름": "2-7 동아리 상세 맨 위로",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 동아리 상세를 아래로 스크롤한 뒤 표시되는 맨 위로 버튼을 사용자가 직접 클릭할 때 1회 기록한다. 코드 자동 스크롤이나 스크롤 완료를 추가 전송하지 않는다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_detail</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>club__club_detail__navigation__scroll_top__click</code>\n- value: 맨 위로\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://a1f02219-54bc-8356-b052-813f9577ebe9/e07d2eff-edae-4392-8a0f-95db19012f53?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_scroll_top_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:54.077Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc80f1abb5f8c4fefe35bc",
+        "title": "2-7 동아리 상세 맨 위로",
+        "service": "동아리",
+        "path": "event-log/23-동아리/2-7-동아리-상세-맨-위로.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc80f1abb5f8c4fefe35bc",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:54.077Z",
+        "source_body_sha256": "50684526995c0954f1445fd7eaf1ff566f5cbb75075b3fd5f5f49168f880591d",
+        "output_sha256": "f939d4613e1660abc63c2c2376f69a30e754a5934ae903328e026c05c54840b8",
+        "image_ids": [
+          "e07d2eff-edae-4392-8a0f-95db19012f53"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc80719364c2445ebfe360",
+        "title": "3-1-1 목록 로그인 이동",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc80719364c2445ebfe360",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc80719364c2445ebfe360",
+          "상태": "로깅 필요",
+          "이름": "3-1-1 목록 로그인 이동",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 비로그인으로 동아리 기능을 시도해 열린 로그인 안내에서 로그인하기 버튼을 직접 클릭할 때 1회 기록한다. 인증 성공을 뜻하지 않으며 실제 로그인 화면 내부 이벤트는 그 화면의 기존 명세를 따른다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_list</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>account__club_list__login_popup__login_entry__click</code>\n- value: 로그인하기\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://a0602219-54bc-822d-af64-81daa50efe07/a3c51437-f548-4cb1-83b8-c2b810546566?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_list_login_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:54.659Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc80719364c2445ebfe360",
+        "title": "3-1-1 목록 로그인 이동",
+        "service": "동아리",
+        "path": "event-log/23-동아리/3-1-1-목록-로그인-이동.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc80719364c2445ebfe360",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:54.659Z",
+        "source_body_sha256": "de69772ce7b665493ede994dfd0973a2b8235b08d298e2184cd0dfed782f6eee",
+        "output_sha256": "94728181ba0f033f11cb994cdd0275a5e24eff3f4b1d6f871452d1f51f80e209",
+        "image_ids": [
+          "a3c51437-f548-4cb1-83b8-c2b810546566"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc8076912be7b28b6756b2",
+        "title": "3-1-2 목록 로그인 안내 닫기",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc8076912be7b28b6756b2",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc8076912be7b28b6756b2",
+          "상태": "로깅 필요",
+          "이름": "3-1-2 목록 로그인 안내 닫기",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 동아리 기능의 로그인 안내에서 닫기 또는 X 닫기 버튼을 직접 클릭해 안내를 닫을 때 1회 기록한다. 자동 닫힘·바깥 영역 클릭·로그인 이동으로 사라지는 경우는 별도 닫기로 보내지 않는다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_list</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>account__club_list__login_popup__close__click</code>\n- value: 닫기\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://b1c02219-54bc-833a-afc9-81d81e240c91/8284fe17-1bf4-4057-aa82-66fc13bf754e?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_list_login_close_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:55.631Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc8076912be7b28b6756b2",
+        "title": "3-1-2 목록 로그인 안내 닫기",
+        "service": "동아리",
+        "path": "event-log/23-동아리/3-1-2-목록-로그인-안내-닫기.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc8076912be7b28b6756b2",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:55.631Z",
+        "source_body_sha256": "cda02e60983fa8efac5c1ddeec4bdf1f13d7319a50f0dab0e9c765e0edf328af",
+        "output_sha256": "c0ee560f35b73dfa7b7198ac4260b44c713bde0f0c81de486966d68405448f0d",
+        "image_ids": [
+          "8284fe17-1bf4-4057-aa82-66fc13bf754e"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc80de8b7fd744248b4d69",
+        "title": "3-2-1 상세 로그인 이동",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc80de8b7fd744248b4d69",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc80de8b7fd744248b4d69",
+          "상태": "로깅 필요",
+          "이름": "3-2-1 상세 로그인 이동",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 비로그인으로 동아리 기능을 시도해 열린 로그인 안내에서 로그인하기 버튼을 직접 클릭할 때 1회 기록한다. 인증 성공을 뜻하지 않으며 실제 로그인 화면 내부 이벤트는 그 화면의 기존 명세를 따른다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_detail</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>account__club_detail__login_popup__login_entry__click</code>\n- value: 로그인하기\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://a1b02219-54bc-821f-802e-811ad543023b/18a6cec7-25e5-485d-8edd-c4b71d1b316b?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_detail_login_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>\n\n<p />",
+        "last_edited_at": "2026-11-28T04:43:56.151Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc80de8b7fd744248b4d69",
+        "title": "3-2-1 상세 로그인 이동",
+        "service": "동아리",
+        "path": "event-log/23-동아리/3-2-1-상세-로그인-이동.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc80de8b7fd744248b4d69",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:56.151Z",
+        "source_body_sha256": "245466070acc5537a083151d98566221ff3975e52b41834c97b1a3841552bdf3",
+        "output_sha256": "aa82d922a052188679c32654e7ae971fa269e918722a79e4b4c66cf98d13cdf4",
+        "image_ids": [
+          "18a6cec7-25e5-485d-8edd-c4b71d1b316b"
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "4260221954bc80589b28f02e93535f04",
+        "title": "3-2-2 상세 로그인 안내 닫기",
+        "service": "동아리",
+        "url": "https://app.notion.com/p/4260221954bc80589b28f02e93535f04",
+        "platforms": [
+          "WEB"
+        ],
+        "properties": {
+          "platform": [
+            "WEB"
+          ],
+          "url": "https://app.notion.com/p/4260221954bc80589b28f02e93535f04",
+          "상태": "로깅 필요",
+          "이름": "3-2-2 상세 로그인 안내 닫기",
+          "태그": [
+            "1.동아리"
+          ]
+        },
+        "original_body": "<toggle>\n새 로깅 (26.11.28)\n\n- 설명: 동아리 기능의 로그인 안내에서 닫기 또는 X 닫기 버튼을 직접 클릭해 안내를 닫을 때 1회 기록한다. 자동 닫힘·바깥 영역 클릭·로그인 이동으로 사라지는 경우는 별도 닫기로 보내지 않는다.\n- 적용 플랫폼: WEB · PC 웹 전용\n- screen\\_view: <code>club_detail</code>\n- event\\_name: <code>DA1</code>\n- event\\_label: <code>account__club_detail__login_popup__close__click</code>\n- value: 닫기\n- event\\_category: <code>click</code>\n\n### 참고사진 · 실제 Stage 클릭 대상\n\n<image source=\"notion-file-block://e3b02219-54bc-820f-89d0-01cbf41ea0f2/3dc108f9-792a-4032-9d0f-f802a524d002?space_id=00e17904-c460-49e3-92ca-bfb21f542967&name=club_pc_detail_login_close_marked.png\">\nPC 웹 실제 Stage 캡처 · 빨간 네모가 해당 동작의 대상 위치다. 화면 확인이며 SDK 전송·수집 정상 판정을 뜻하지 않는다.\n</image>\n</toggle>",
+        "last_edited_at": "2026-11-28T04:43:56.645Z"
+      },
+      "manifest": {
+        "notion_id": "4260221954bc80589b28f02e93535f04",
+        "title": "3-2-2 상세 로그인 안내 닫기",
+        "service": "동아리",
+        "path": "event-log/23-동아리/3-2-2-상세-로그인-안내-닫기.md",
+        "notion_url": "https://app.notion.com/p/4260221954bc80589b28f02e93535f04",
+        "platforms": [
+          "WEB"
+        ],
+        "status": "로깅 필요",
+        "source_last_edited_at": "2026-11-28T04:43:56.645Z",
+        "source_body_sha256": "0d26ee81c3827fd268045151eca78d923954cc33fc121129e0af55f2eb63ead8",
+        "output_sha256": "0bb74bc966e37fb0965aa26241578abe33092ece36ae23ee1e4dd2403907916a",
+        "image_ids": [
+          "3dc108f9-792a-4032-9d0f-f802a524d002"
+        ]
+      }
     }
   ],
   "images": [
@@ -899,6 +1760,153 @@
       "bytes": 176450,
       "sha256": "7861849229ab54e74f39183bb76e08caca88d85e579fd92804d0d540dab6440a",
       "git_blob_sha": "bee57231e446cc794f4b6a9ee5e7eed9fb932ddb"
+    },
+    {
+      "id": "a0755164-9529-4a37-985b-d9bc9bca054f",
+      "asset": "current-assets/a0755164-9529-4a37-985b-d9bc9bca054f.png",
+      "bytes": 132111,
+      "sha256": "853503357d91a7d2e1a1f621b0ea5dbeadf8638e108de5ad450740ae9f04b55a",
+      "git_blob_sha": "deed59a39d977dc56299d273dc2eeab085598bb0"
+    },
+    {
+      "id": "ac39b819-3741-4744-a911-da8cb0c57934",
+      "asset": "current-assets/ac39b819-3741-4744-a911-da8cb0c57934.png",
+      "bytes": 213429,
+      "sha256": "68ed81cd0212d20dbbb5ad0711f7fcebef1b93c1105ed59c5f1902514ec419c3",
+      "git_blob_sha": "6d4bbeab8907db18d044b2c5097c925caf8fb22e"
+    },
+    {
+      "id": "484bc841-aa66-40d7-96da-b0dc08af9dc2",
+      "asset": "current-assets/484bc841-aa66-40d7-96da-b0dc08af9dc2.png",
+      "bytes": 135945,
+      "sha256": "6eebdbcc19e7f71e1f88b46edc475458bee1e4c66934f8459e2922a67cae177e",
+      "git_blob_sha": "e879a5b2496a149c5cfbbe12fbac7a82c8257790"
+    },
+    {
+      "id": "6fe64321-0fbb-44ed-808a-4082905a39dc",
+      "asset": "current-assets/6fe64321-0fbb-44ed-808a-4082905a39dc.png",
+      "bytes": 135769,
+      "sha256": "321e7e10a5b3b337451b43a02f9c0fda26d3e0f2576181cef7ebf84699dafdf4",
+      "git_blob_sha": "bd6163720d5bc8ab17edfa99f14028cae31692a3"
+    },
+    {
+      "id": "6887fed8-df19-435d-b6f5-a76d665fbc3a",
+      "asset": "current-assets/6887fed8-df19-435d-b6f5-a76d665fbc3a.png",
+      "bytes": 133691,
+      "sha256": "88e0b0f62fa97c5e6de2f15d68e1f0188c75251a525d18a380b800434129fda2",
+      "git_blob_sha": "513e4caf61d2dea6280a01ed0e8e6e7f999a9805"
+    },
+    {
+      "id": "77f26c78-f2e8-4b39-a486-f4030b56625e",
+      "asset": "current-assets/77f26c78-f2e8-4b39-a486-f4030b56625e.png",
+      "bytes": 107093,
+      "sha256": "5a856eae20c2572574c6e2a172ccec4aacd149235db1f3837cc7d85f73f5986c",
+      "git_blob_sha": "23970714a482be968d8932db46d920665a4fe3ae"
+    },
+    {
+      "id": "f7d0f073-6cb8-4ed4-bbbd-1aa8b89a65e2",
+      "asset": "current-assets/f7d0f073-6cb8-4ed4-bbbd-1aa8b89a65e2.png",
+      "bytes": 118069,
+      "sha256": "11f1f8007fee3a22e85d750b560d778eb0c49ec745aed0c5bab7e8f248be7911",
+      "git_blob_sha": "219a7d7fda265f8cc66e7e0b608952275e09f44e"
+    },
+    {
+      "id": "202b475a-9e96-438f-b7e0-987787958dcc",
+      "asset": "current-assets/202b475a-9e96-438f-b7e0-987787958dcc.png",
+      "bytes": 118086,
+      "sha256": "ceff764b50d840476b2152ac924050319edb709cb28b097d9a36d07625da0886",
+      "git_blob_sha": "a74ecc3cb18ae8acb4b474cf81940615c85a42d3"
+    },
+    {
+      "id": "cfdcdb70-fb68-4dbf-8be7-385946ae43ae",
+      "asset": "current-assets/cfdcdb70-fb68-4dbf-8be7-385946ae43ae.png",
+      "bytes": 135767,
+      "sha256": "29a72be873aa4f94ecac8cad231f24ebcf4d9299573d03cb9eaa726606058ff8",
+      "git_blob_sha": "24789aa337a02ef5c06a03cde6c19ecd2191ceb9"
+    },
+    {
+      "id": "04bda7f2-e6c2-4557-ac70-3de33675f711",
+      "asset": "current-assets/04bda7f2-e6c2-4557-ac70-3de33675f711.png",
+      "bytes": 135777,
+      "sha256": "d6f5bc733823f6c61a465d9b6cda5aac613bc7266230316c679bc564ddfbe008",
+      "git_blob_sha": "38d59f76cb2bb55828eb13d0baf5dbd24561bb2a"
+    },
+    {
+      "id": "4c39acf1-9ff5-4ae3-b72d-9f2502a8858e",
+      "asset": "current-assets/4c39acf1-9ff5-4ae3-b72d-9f2502a8858e.png",
+      "bytes": 135764,
+      "sha256": "36a3560719e4975256291e98439128a45d3c9522c5c3116c78251a988ce88d3c",
+      "git_blob_sha": "62d6494455ec45f4a27c756dd5a7f33ea0f45c48"
+    },
+    {
+      "id": "aba59796-4902-4dc4-ba4e-1e60814ddedf",
+      "asset": "current-assets/aba59796-4902-4dc4-ba4e-1e60814ddedf.png",
+      "bytes": 84926,
+      "sha256": "1f351c2154ee2c26ead116f90bfe5b3972a9e5a66999d0ee2e044583934095ec",
+      "git_blob_sha": "d56e2ab809df73a2834878d3f0c5ab6437174c5f"
+    },
+    {
+      "id": "e2a548f2-db00-4a5a-8466-b1bd2b04aa09",
+      "asset": "current-assets/e2a548f2-db00-4a5a-8466-b1bd2b04aa09.png",
+      "bytes": 84951,
+      "sha256": "efd60266ee58a17edd6ba1329ecfb22309856187ddf96d669a9f0c6d1e16c83f",
+      "git_blob_sha": "98a9fe9cefa6334d1e3b327e2a5144b7f0925f80"
+    },
+    {
+      "id": "ac1e7857-5dd8-45e2-bca7-9a8d43cc9111",
+      "asset": "current-assets/ac1e7857-5dd8-45e2-bca7-9a8d43cc9111.png",
+      "bytes": 83956,
+      "sha256": "ae5db389c523409215114bf0dc9c9c457cd72489ae1c21960de7b9db7c9d107f",
+      "git_blob_sha": "daf18cda06d13df7fc5fb3a6ceb6b21dd8e0310f"
+    },
+    {
+      "id": "07ce9bcf-4f96-44ff-b0d8-cb026dc69b15",
+      "asset": "current-assets/07ce9bcf-4f96-44ff-b0d8-cb026dc69b15.png",
+      "bytes": 78048,
+      "sha256": "4daa2eb91d0fc79e52b1f224658297ec4851cb77ab4518ce51e51a2b52084872",
+      "git_blob_sha": "0d0d69a4f886eaf856777d9adb39022bfe87a936"
+    },
+    {
+      "id": "e07d2eff-edae-4392-8a0f-95db19012f53",
+      "asset": "current-assets/e07d2eff-edae-4392-8a0f-95db19012f53.png",
+      "bytes": 69822,
+      "sha256": "d36d12ac6ec77bdc9ac28f68842cf048bd2b6abc740e661dfb3447161f35ba5f",
+      "git_blob_sha": "c463c0cda558c8f2adf078d620a502ce8a2aae85"
+    },
+    {
+      "id": "a3c51437-f548-4cb1-83b8-c2b810546566",
+      "asset": "current-assets/a3c51437-f548-4cb1-83b8-c2b810546566.png",
+      "bytes": 144685,
+      "sha256": "0b6ee514b350b9dbc605528b8c1f75bb8e605b03722e4aea544309a76c500145",
+      "git_blob_sha": "0640e08a4e7c643458289f43c0088013125fbd66"
+    },
+    {
+      "id": "8284fe17-1bf4-4057-aa82-66fc13bf754e",
+      "asset": "current-assets/8284fe17-1bf4-4057-aa82-66fc13bf754e.png",
+      "bytes": 144686,
+      "sha256": "73c7d94e99a7a5c359298e0a688797feee9478c0092be55ae0125bc5fe2c9380",
+      "git_blob_sha": "448d6455f8c18c2a40cdd286fa61b2178724f226"
+    },
+    {
+      "id": "18a6cec7-25e5-485d-8edd-c4b71d1b316b",
+      "asset": "current-assets/18a6cec7-25e5-485d-8edd-c4b71d1b316b.png",
+      "bytes": 103191,
+      "sha256": "088349fa58e2db4c9d9648a3acd47d35fa1b3e60b1d6d48f9ab304822acc7e29",
+      "git_blob_sha": "0936683c11021ab57756f1a0d018e74c780a7eba"
+    },
+    {
+      "id": "3dc108f9-792a-4032-9d0f-f802a524d002",
+      "asset": "current-assets/3dc108f9-792a-4032-9d0f-f802a524d002.png",
+      "bytes": 103200,
+      "sha256": "2f46cd1a221eae88056353a9ce42125374321ee5321221cebb0f3d498b1dfa55",
+      "git_blob_sha": "7aa0b89230a30bc184d522aba8aa69f7122fc5de"
+    }
+  ],
+  "services": [
+    {
+      "service": "동아리",
+      "path": "event-log/23-동아리",
+      "notion_url": "https://app.notion.com/p/4260221954bc80ceab95e8c9e4cac8f1"
     }
   ]
 }
