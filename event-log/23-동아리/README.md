@@ -2,12 +2,6 @@
 
 [← 전체 서비스](../../README.md) · [Notion 기준 목록](https://app.notion.com/p/4260221954bc80ceab95e8c9e4cac8f1)
 
-PC WEB 전용 명세 21개입니다. DA1·태그 `1.동아리`이며 목록 좋아요 클릭·해제와 목록·상세 로그인 이동·닫기를 각각 구분합니다. 앱·모바일 WEB·WEB swipe는 포함하지 않습니다.
-
-빨간 네모는 실제 Stage의 동작 위치입니다. 좋아요 해제는 동일 하트 위치 사진을 참고하며 로그인 후 선택·해제 상태는 미검증입니다. 명세 작성은 SDK 구현·배포·실제 수집 완료를 뜻하지 않습니다.
-
-[동아리 과거 명세·이미지 보존](../20-%EB%8F%99%EC%95%84%EB%A6%AC-%EB%A0%88%EA%B1%B0%EC%8B%9C/README.md) · [플랫폼별 로깅 검수 보고서](https://app.notion.com/p/4230221954bc815fa3e0e2323d99ff8c)
-
 | 명세 | 플랫폼 | Notion |
 | --- | --- | --- |
 | [0-1 PC 헤더 동아리 진입](0-1-PC-%ED%97%A4%EB%8D%94-%EB%8F%99%EC%95%84%EB%A6%AC-%EC%A7%84%EC%9E%85.md) | WEB | [원문](https://app.notion.com/p/4260221954bc80fb8b0bf78cf3b3e222) |
